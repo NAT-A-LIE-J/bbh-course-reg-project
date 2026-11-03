@@ -2,9 +2,10 @@
 """
 Classify USC degree-requirement text into constraint records.
 
-Reads one scraped programme .txt, fills prompt_v1.txt with the taxonomy and the
-requirement text, calls the Claude API, and writes the raw response plus the
-parsed JSON to out/.
+Reads one scraped programme .txt, numbers its lines, fills docs/prompt_v2.txt
+with the taxonomy and the numbered text, calls the Claude API, and writes the
+raw response plus the parsed JSON to out/. The model cites requirements by line
+number (source_lines), so the numbering here must match the file as scraped.
 
 Usage
     export ANTHROPIC_API_KEY=...
@@ -42,7 +43,7 @@ PROGRAMS_DIR = (
     / "usc_undergrad_complete_catalogue_2026_2027"
     / "programs"
 )
-PROMPT_PATH = REPO / "docs" / "prompt_v1.txt"
+PROMPT_PATH = REPO / "docs" / "prompt_v2.txt"  # --prompt docs/prompt_v1.txt for the old format
 TAXONOMY_PATH = Path(__file__).resolve().parent / "constraint_taxonomy.md"
 HERE = Path(__file__).resolve().parent
 
@@ -140,12 +141,25 @@ DEGREE_WORDS = {
 }
 
 
-def program_name_from_stem(stem: str) -> str:
-    """025_astronomy_ba -> 'Astronomy BA'.
+def program_name(stem: str, text: str) -> str:
+    """The scraper writes "Program Name: Economics (BA)" on the first line; use it.
+    Falls back to the filename for a file without that header."""
+    m = re.match(r"Program Name:\s*(.+)", text)
+    return m.group(1).strip() if m else program_name_from_stem(stem)
 
-    Filename-derived, so eyeball the first few. If they read badly, switch to
-    the `name` column of data/.../index.csv instead.
-    """
+
+def number_lines(text: str) -> str:
+    """'L001: first line' and so on, so the model can cite source_lines. Line 1 is
+    the file's first line, which is what check_results.py and spot_check.py count."""
+    lines = text.split("\n")
+    if lines and lines[-1] == "":
+        lines = lines[:-1]
+    width = max(3, len(str(len(lines))))
+    return "\n".join(f"L{n:0{width}d}: {line}" for n, line in enumerate(lines, 1))
+
+
+def program_name_from_stem(stem: str) -> str:
+    """025_astronomy_ba -> 'Astronomy BA'. Only used when the file has no header."""
     parts = stem.split("_")[1:]  # drop the leading number
     if not parts:
         return stem
@@ -338,9 +352,9 @@ def process_stem(i: int, total: int, stem: str, name: str, requirements: str, cl
         failure = True
     else:
         json_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-        n = len(data.get("constraints", []))
+        n = len((data.get("root") or {}).get("all_of", []))
         u = len(data.get("unclassified", []))
-        note = f"ok: {n} constraints, {u} unclassified, status={data.get('status')}"
+        note = f"ok: {n} top-level nodes, {u} unclassified, status={data.get('status')}"
         failure = False
 
     if cache_read:
@@ -379,7 +393,9 @@ def main() -> int:
                     help="parallel API calls; these are I/O bound so threads, not processes (default: 4)")
     ap.add_argument("--price-in", type=float, help="input $/million tokens, for a model not in MODEL_PRICES")
     ap.add_argument("--price-out", type=float, help="output $/million tokens, for a model not in MODEL_PRICES")
+    ap.add_argument("--prompt", help=f"prompt template (default: {PROMPT_PATH.relative_to(REPO)})")
     args = ap.parse_args()
+    prompt_path = (REPO / args.prompt) if args.prompt else PROMPT_PATH
 
     if args.list_models:
         from anthropic import Anthropic
@@ -388,7 +404,7 @@ def main() -> int:
             print(m.id)
         return 0
 
-    for path in (PROMPT_PATH, TAXONOMY_PATH):
+    for path in (prompt_path, TAXONOMY_PATH):
         if not path.exists():
             print(f"missing: {path}", file=sys.stderr)
             return 1
@@ -417,7 +433,7 @@ def main() -> int:
         mode = "off" if args.no_thinking else f"on, effort {args.effort}"
         print(f"Thinking: {mode}\n")
 
-    template = PROMPT_PATH.read_text(encoding="utf-8")
+    template = prompt_path.read_text(encoding="utf-8")
     taxonomy = TAXONOMY_PATH.read_text(encoding="utf-8")
     head_template, tail_template = split_template(template)
     cached_head = head_template + taxonomy
@@ -473,8 +489,10 @@ def main() -> int:
             print(f"[{i}/{len(stems)}] {stem}: already done, use --force to redo")
             continue
 
-        name = program_name_from_stem(stem)
-        requirements = src.read_text(encoding="utf-8")
+        raw = src.read_text(encoding="utf-8")
+        name = program_name(stem, raw)
+        # v1 asked for verbatim source_text, so it gets the file as is; v2 cites line numbers.
+        requirements = raw if prompt_path.name == "prompt_v1.txt" else number_lines(raw)
 
         if args.dry_run:
             prompt = build_prompt(template, taxonomy, name, requirements)

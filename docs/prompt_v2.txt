@@ -1,0 +1,128 @@
+You convert university degree requirements into structured data.
+
+Below you will find (1) a taxonomy that defines how degree requirements are written as a tree
+of JSON nodes, and (2) the degree requirements for one academic programme, copied from the
+USC course catalogue. Every line of the programme text is numbered, like "L021: ...".
+
+Turn the whole programme into one JSON object, following the taxonomy exactly.
+
+RULES
+
+1. One anchored node per heading block or standalone rule sentence. Each heading block, or
+   each standalone sentence that states a rule, becomes an anchored node. Nest anchored nodes
+   the way the catalogue's headings nest: a track's heading is a node inside the choose of
+   tracks. Every node directly under the root is anchored.
+2. Amendments go inside the node they change. If a later passage changes an earlier one (an
+   asterisk pointing to a section further down, "may also be satisfied by"), encode the later
+   passage inside the node it modifies and cite both places in its source_lines. Never let two
+   nodes demand the same course.
+3. Each course fills at most one slot in the whole programme. So an "elective" needs no
+   special encoding: just say which courses are eligible. Sentences that only restate this
+   rule ("courses used above cannot be double-counted", "courses not used may be taken as
+   electives") do not become nodes; mention them in the note of the node they are about. If
+   such a sentence names courses that are not on an elective list, add them to that list.
+4. "Of the N...", "of which...", "of these..." become of_which checks on the node the sentence
+   is about. A check only looks at courses that node already uses; it never asks for more.
+   "Plus...", "additional...", "and N more..." are separate nodes. Anything a check can't
+   express goes in the note.
+5. Cite every anchored node, every check and every unclassified entry. source_lines is a list
+   of [first, last] line ranges, using the L numbers. source_quote is the first few words of
+   the cited text (up to about 10 words), copied exactly, without the "L021:" prefix.
+6. Cover everything. Every sentence that constrains what a student must take or achieve is
+   either encoded in the tree or listed in "unclassified" with a reason. Never drop one
+   silently. An empty "unclassified" list on a complicated programme is a sign you forced
+   something.
+7. Do not invent. Only encode what the text says. If no course list is given, do not make one
+   up: use "unresolved" for the part that can't be checked, and keep every part that can.
+   If a number is not stated, leave it out.
+8. A bare number is a minimum. "Choose three", "four courses", "12 units from" all mean
+   "op": "min". Use "op": "eq" only when the text says "exactly".
+9. Copy course codes as printed, including suffix letters ("MATH 118gx", "PSYC 100Lg",
+   "PPD 497a"). Prefix of 2 to 5 capital letters, a space, then three digits.
+10. The catalogue is inconsistent. The same requirement may be a sentence in one programme and
+    a heading with a bulleted list in another. Encode what it means, not how it was formatted.
+
+NOT REQUIREMENTS
+
+Contact details, faculty names, accreditation notices, course descriptions and programme
+marketing are not requirements. Leave them out entirely; they do not go in "unclassified".
+Advisory statements ("students are encouraged to...", "WRIT 340 is strongly recommended") go
+in "unclassified" with reason "advisory".
+
+OUTPUT
+
+Return only one JSON object with exactly these top-level fields, and no other fields anywhere
+except those the taxonomy shows. No prose before or after it and no markdown code fence.
+
+{
+  "program": "<programme name>",
+  "status": "<ok | partial | failed>",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {"family": "specific_course", "course": "<course code>"},
+          {"family": "count",
+           "eligible_if": {"all": [{"prefix": ["<PREFIX>"]}, {"level_min": 300}]},
+           "thresholds": [{"count_by": "courses", "op": "min", "value": 2}]}
+        ],
+        "id": "<PROGRAM-SLUG-NAME>",
+        "source_lines": [[21, 25]],
+        "source_quote": "<first few words of line 21, copied exactly>",
+        "description": "<one plain sentence saying what this requires>",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {"source_lines": [[30, 30]],
+       "source_quote": "<first few words of the cited text>",
+       "eligible_if": {"level_min": 300},
+       "thresholds": [{"count_by": "units", "op": "min", "value": 24}]}
+    ]
+  },
+  "unclassified": [
+    {"source_lines": [[27, 27]],
+     "source_quote": "<first few words of the cited text>",
+     "reason": "<no_fit | out_of_scope | university_level | advisory>",
+     "why": "<one short sentence>"}
+  ]
+}
+
+FIELD NOTES
+
+- A node is one of: {"all_of": [nodes]}, {"choose": N, "from": [nodes]}, or a leaf with a
+  "family" (specific_course, count, course_reuse, sequencing, manual_review). Groups may nest.
+- An anchored node adds "id", "source_lines", "source_quote", "description", "confidence" and
+  "note" to the node's own fields. Any of those fields makes all six required. Unanchored
+  nodes have none of them.
+- "of_which" may appear on any group, on a count leaf, or on the root. Leave it out when there
+  are no checks; never write an empty list. The same goes for the root's "of_which".
+- eligible_if uses only the terms in the taxonomy: courses, prefix, level_min, level_max,
+  school, ge_category, unresolved, combined with all, any and not. Each term is its own object
+  inside "all" or "any". Never write free text in eligible_if except inside "unresolved".
+- thresholds is always a list of {"count_by", "op", "value"}. count_by is courses, units or
+  departments. op is min, max or eq.
+- course_reuse, sequencing and manual_review leaves have "family", "kind" and "details", as
+  the taxonomy shows.
+- id: a short programme slug plus a name, capitals and hyphens only, unique in the file.
+- status: "partial" if any unclassified entry has reason "no_fit"; "failed" if the text has no
+  usable requirements; otherwise "ok".
+- confidence: "high" | "medium" | "low". Use "low" for a judgment call and explain it in note.
+- note: null unless something needs flagging.
+
+Return only the JSON object. No prose, no code fence.
+
+
+================================ THE TAXONOMY ================================
+
+{{TAXONOMY}}
+
+
+================================ THE PROGRAMME ================================
+
+Program name: {{PROGRAM_NAME}}
+
+Requirements as they appear in the USC catalogue, one numbered line per line of the file:
+
+{{REQUIREMENTS}}

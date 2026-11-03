@@ -1,19 +1,32 @@
 #!/usr/bin/env python3
 """
-Validate classifier output and write a summary CSV.
+Validate classifier output (the tree format) and write a summary CSV.
 
-Checks each out/<stem>.json for:
-  - valid JSON with the top-level fields the prompt specifies
-  - every constraint carrying id, family, source_text, description, details
-  - every `family` value existing in constraint_taxonomy.md (no invented families)
-  - confidence being high / medium / low
-  - source_text appearing verbatim in the scraped programme file
+For each <out-dir>/<stem>.json it checks:
+
+  Errors (the programme fails)
+    - valid JSON that validates against requirement_schema.json
+    - no old-format keys, every eligible_if evaluable by is_eligible, and every
+      node convertible to the solver (the same checks check_taxonomy.py runs)
+    - every source_lines range is inside the programme file, and its
+      source_quote appears in the cited lines (catches wrong line numbers)
+    - no two anchored nodes share an id
+    - every "op": "eq" has "exactly" in its cited text
+    - status agrees with the unclassified reasons (partial iff any no_fit)
+
+  Warnings (worth a look, don't fail)
+    - one specific_course under two different top-level nodes (a missed amendment)
+    - two sibling count leaves whose eligible_if overlap (a missed of_which)
+    - a node nested more than four levels deep
+
+summary.csv has one row per programme: status, node counts by family,
+unresolved terms, unclassified entries by reason, and the problem counts.
 
 Usage
-    python check_results.py
-    python check_results.py --verbose     # list every problem, not just counts
+    python check_results.py --out-dir out_v2
+    python check_results.py --out-dir out_v2 --verbose   # every problem and warning
 
-Exits non-zero if anything failed, so it is usable as a gate.
+Exits non-zero if any programme has an error, so it works as a gate.
 """
 
 from __future__ import annotations
@@ -26,6 +39,9 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from check_taxonomy import check_object, load_schema, validators
+from eligibility import UNKNOWN, is_eligible
+
 REPO = Path(__file__).resolve().parent.parent
 HERE = Path(__file__).resolve().parent
 PROGRAMS_DIR = (
@@ -35,192 +51,242 @@ PROGRAMS_DIR = (
     / "usc_undergrad_complete_catalogue_2026_2027"
     / "programs"
 )
-TAXONOMY_PATH = HERE / "constraint_taxonomy.md"
-OUT_DIR = HERE / "out"
 
-REQUIRED_TOP = ["program", "status", "constraints", "unclassified"]
-REQUIRED_CONSTRAINT = ["id", "family", "source_text", "description", "details"]
-VALID_STATUS = {"ok", "partial", "failed"}
-VALID_CONFIDENCE = {"high", "medium", "low"}
-
-
-def taxonomy_families(path: Path) -> set[str]:
-    """Family names are declared in the taxonomy as: `family`: `"Course Selection"`."""
-    text = path.read_text(encoding="utf-8")
-    names = set(re.findall(r'`family`:\s*`"([^"]+)"`', text))
-    if not names:  # fall back to the JSON examples
-        names = set(re.findall(r'"family":\s*"([^"]+)"', text))
-    return names
+FAMILIES = ["specific_course", "count", "course_reuse", "sequencing", "manual_review"]
+REASONS = ["no_fit", "out_of_scope", "university_level", "advisory"]
+MAX_DEPTH = 4
+ANCHOR_FIELDS = ("source_lines", "source_quote")
+COURSE_IN_TEXT = re.compile(r"[A-Z]{2,5} [0-9]{3}[A-Za-z]{0,3}")
 
 
 def norm(s: str) -> str:
+    """Compare quotes loosely: case, whitespace and curly quotes don't matter."""
+    s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
-def check_file(path: Path, families: set[str], sources: dict[str, str]) -> tuple[dict, list[str]]:
-    problems: list[str] = []
+def children(node: dict) -> list:
+    return node.get("all_of") or node.get("from") or []
+
+
+def walk_nodes(node: dict, path: str, depth: int = 0):
+    """Yields (path, node, depth) for every node in the tree, root first."""
+    yield path, node, depth
+    key = "all_of" if "all_of" in node else "from"
+    for i, child in enumerate(children(node)):
+        if isinstance(child, dict):
+            yield from walk_nodes(child, f"{path}/{key}/{i}", depth + 1)
+
+
+def cited_objects(data: dict):
+    """Every object that cites the catalogue: anchored nodes, checks, unclassified."""
+    root = data.get("root") or {}
+    for path, node, _ in walk_nodes(root, "root"):
+        if "source_lines" in node:
+            yield path, node
+        for j, check in enumerate(node.get("of_which") or []):
+            yield f"{path}/of_which/{j}", check
+    for i, entry in enumerate(data.get("unclassified") or []):
+        yield f"unclassified/{i}", entry
+
+
+def cited_text(lines: list[str], ranges) -> str | None:
+    """The cited lines joined, or None if a range falls outside the file."""
+    out = []
+    for first, last in ranges:
+        if not (1 <= first <= last <= len(lines)):
+            return None
+        out += lines[first - 1 : last]
+    return "\n".join(out)
+
+
+def unresolved_terms(cond) -> int:
+    if isinstance(cond, dict):
+        return ("unresolved" in cond) + sum(unresolved_terms(v) for v in cond.values())
+    if isinstance(cond, list):
+        return sum(unresolved_terms(v) for v in cond)
+    return 0
+
+
+def courses_in(node: dict) -> set[str]:
+    return {n["course"] for _, n, _ in walk_nodes(node, "") if n.get("family") == "specific_course"}
+
+
+def probes(cond) -> list[str]:
+    """Courses to test two eligible_if against: every course they name, plus a
+    100-, 300- and 400-level course for every prefix they name."""
+    text = json.dumps(cond)
+    found = set(COURSE_IN_TEXT.findall(text))
+    for prefixes in re.findall(r'"prefix": \[([^\]]*)\]', text):
+        for p in re.findall(r'"([A-Z]{2,5})"', prefixes):
+            found |= {f"{p} 150", f"{p} 350", f"{p} 450"}
+    return sorted(found)
+
+
+def overlap(a: dict, b: dict) -> str | None:
+    """A course both conditions definitely accept, if there is one."""
+    for course in probes({"a": a, "b": b}):
+        if is_eligible(a, course) is True and is_eligible(b, course) is True:
+            return course
+    return None
+
+
+def check_program(path: Path, vals: dict) -> tuple[dict, list[str], list[str]]:
     stem = path.stem
-    # Column order follows docs/catalogue-classifier-brief.md, which asks for
-    # program / parsed / constraints found / count per family / unclassified /
-    # status. One column per taxonomy family rather than a packed string, so the
-    # CSV can be sorted and summed in a spreadsheet. Every row carries every
-    # family column, including rows that failed to parse, so the header is stable.
-    row = {
-        "file": stem,
-        "parsed": False,
-        "status": "",
-        "constraints": 0,
-        "unclassified": 0,
-        **{family: 0 for family in sorted(families)},
-        "problems": 0,
-        "verbatim_misses": 0,
-        "low_confidence": 0,
-    }
+    row = {"file": stem, "parsed": False, "schema_ok": False, "status": "",
+           "top_nodes": 0, **{f: 0 for f in FAMILIES}, "of_which": 0, "unresolved": 0,
+           "unclassified": 0, **{f"unc_{r}": 0 for r in REASONS},
+           "low_confidence": 0, "errors": 0, "warnings": 0}
+    errors: list[str] = []
+    warnings: list[str] = []
 
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:  # noqa: BLE001
-        problems.append(f"{stem}: invalid JSON ({exc})")
-        row["problems"] = 1
-        return row, problems
+        errors.append(f"{stem}: invalid JSON ({exc})")
+        row["errors"] = len(errors)
+        return row, errors, warnings
     row["parsed"] = True
 
-    for field in REQUIRED_TOP:
-        if field not in data:
-            problems.append(f"{stem}: missing top-level field '{field}'")
+    # Schema, old keys, evaluable eligible_if, converts to the solver.
+    res = check_object(data, vals, stem, expect="program")
+    errors += [f"{stem}: {e}" for e in res.errors]
+    row["schema_ok"] = not res.errors
+    row["status"] = data.get("status", "")
 
-    status = data.get("status", "")
-    row["status"] = status
-    if status and status not in VALID_STATUS:
-        problems.append(f"{stem}: status '{status}' not in {sorted(VALID_STATUS)}")
-
-    constraints = data.get("constraints") or []
-    unclassified = data.get("unclassified") or []
-    row["constraints"] = len(constraints)
+    root = data.get("root") if isinstance(data.get("root"), dict) else {}
+    top = [n for n in root.get("all_of", []) if isinstance(n, dict)]
+    row["top_nodes"] = len(top)
+    unclassified = [u for u in data.get("unclassified") or [] if isinstance(u, dict)]
     row["unclassified"] = len(unclassified)
+    reasons = Counter(u.get("reason") for u in unclassified)
+    for r in REASONS:
+        row[f"unc_{r}"] = reasons.get(r, 0)
 
-    if status == "ok" and unclassified:
-        problems.append(f"{stem}: status is 'ok' but there are {len(unclassified)} unclassified entries")
-    if status == "partial" and not unclassified:
-        problems.append(f"{stem}: status is 'partial' but nothing is unclassified")
-
-    source_text = sources.get(stem)
-    seen_ids = set()
-
-    for idx, c in enumerate(constraints):
-        label = f"{stem}[{idx}]"
-        if not isinstance(c, dict):
-            problems.append(f"{label}: not an object")
-            continue
-
-        for field in REQUIRED_CONSTRAINT:
-            if field not in c:
-                problems.append(f"{label}: missing '{field}'")
-
-        cid = c.get("id")
-        if cid in seen_ids:
-            problems.append(f"{label}: duplicate id '{cid}'")
-        seen_ids.add(cid)
-
-        fam = c.get("family")
-        if fam and fam not in families:
-            problems.append(f"{label}: family '{fam}' is not in the taxonomy")
-        elif fam:
+    # Counts over the tree.
+    ids = Counter()
+    for npath, node, depth in walk_nodes(root, "root"):
+        fam = node.get("family")
+        if fam in FAMILIES:
             row[fam] += 1
-
-        conf = c.get("confidence")
-        if conf is not None and conf not in VALID_CONFIDENCE:
-            problems.append(f"{label}: confidence '{conf}' not in {sorted(VALID_CONFIDENCE)}")
-        if conf == "low":
+        row["of_which"] += len(node.get("of_which") or [])
+        row["unresolved"] += unresolved_terms(node.get("eligible_if"))
+        for check in node.get("of_which") or []:
+            row["unresolved"] += unresolved_terms(check.get("eligible_if"))
+        if node.get("confidence") == "low":
             row["low_confidence"] += 1
+        if "id" in node:
+            ids[node["id"]] += 1
+        if depth > MAX_DEPTH:
+            warnings.append(f"{stem}: {npath} is nested {depth} levels deep (more than {MAX_DEPTH})")
 
-        if not isinstance(c.get("details"), dict):
-            problems.append(f"{label}: details is not an object")
+        # Sibling count leaves that accept the same course: usually a missed of_which.
+        counts = [(i, c) for i, c in enumerate(children(node))
+                  if isinstance(c, dict) and c.get("family") == "count" and isinstance(c.get("eligible_if"), dict)]
+        for x in range(len(counts)):
+            for y in range(x + 1, len(counts)):
+                try:
+                    hit = overlap(counts[x][1]["eligible_if"], counts[y][1]["eligible_if"])
+                except ValueError:
+                    hit = None  # malformed eligible_if is already a schema error
+                if hit:
+                    warnings.append(f"{stem}: {npath} children {counts[x][0]} and {counts[y][0]} "
+                                    f"are count leaves that both accept {hit} (a missed of_which?)")
 
-        st = c.get("source_text") or ""
-        if source_text is not None and st and norm(st) not in norm(source_text):
-            row["verbatim_misses"] += 1
-            problems.append(f"{label}: source_text not found verbatim in the programme file")
+    for cid, n in ids.items():
+        if n > 1:
+            errors.append(f"{stem}: id '{cid}' is used by {n} anchored nodes")
 
-    for idx, u in enumerate(unclassified):
-        if not isinstance(u, dict) or "source_text" not in u:
-            problems.append(f"{stem}.unclassified[{idx}]: missing source_text")
+    # The same specific_course under two top-level nodes: usually a missed amendment.
+    seen: dict[str, str] = {}
+    for node in top:
+        label = node.get("id", "?")
+        for course in courses_in(node):
+            if course in seen and seen[course] != label:
+                warnings.append(f"{stem}: {course} is required under both {seen[course]} and {label} "
+                                f"(a missed amendment?)")
+            seen.setdefault(course, label)
 
-    row["problems"] = len(problems)
-    return row, problems
+    status = data.get("status")
+    if status == "partial" and not reasons.get("no_fit"):
+        errors.append(f"{stem}: status is 'partial' but no unclassified entry has reason no_fit")
+    if status == "ok" and reasons.get("no_fit"):
+        errors.append(f"{stem}: status is 'ok' but {reasons['no_fit']} unclassified entries are no_fit")
+
+    # Citations: inside the file, quote inside the cited lines, eq only with "exactly".
+    src = PROGRAMS_DIR / f"{stem}.txt"
+    if not src.exists():
+        errors.append(f"{stem}: no programme file at {src}, so citations can't be checked")
+    else:
+        lines = src.read_text(encoding="utf-8").split("\n")
+        for cpath, obj in cited_objects(data):
+            ranges = obj.get("source_lines")
+            if not isinstance(ranges, list) or not all(isinstance(r, list) and len(r) == 2 for r in ranges):
+                continue  # a schema error already
+            text = cited_text(lines, ranges)
+            if text is None:
+                errors.append(f"{stem}: {cpath} cites {ranges}, outside the file's {len(lines)} lines")
+                continue
+            quote = obj.get("source_quote") or ""
+            if quote and norm(quote) not in norm(text):
+                errors.append(f"{stem}: {cpath} quote {quote!r} is not in lines {ranges}")
+            if '"op": "eq"' in json.dumps({k: v for k, v in obj.items() if k not in ("all_of", "from")}) \
+                    and "exactly" not in text.lower():
+                errors.append(f"{stem}: {cpath} uses \"op\": \"eq\" but its text doesn't say 'exactly'")
+
+    row["errors"] = len(errors)
+    row["warnings"] = len(warnings)
+    return row, errors, warnings
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--verbose", action="store_true", help="print every problem")
     ap.add_argument("--out-dir", default="out", help="output folder to read (default: out)")
+    ap.add_argument("--verbose", action="store_true", help="print every problem and warning")
     args = ap.parse_args()
-    OUT_DIR = HERE / args.out_dir
+    out_dir = HERE / args.out_dir
 
-    if not TAXONOMY_PATH.exists():
-        print(f"missing {TAXONOMY_PATH}", file=sys.stderr)
-        return 1
-    families = taxonomy_families(TAXONOMY_PATH)
-    if not families:
-        print("Could not find any family names in the taxonomy.", file=sys.stderr)
-        return 1
-    print(f"Taxonomy families ({len(families)}): {', '.join(sorted(families))}\n")
-
-    outputs = sorted(p for p in OUT_DIR.glob("*.json") if p.name != "summary.json")
+    outputs = sorted(p for p in out_dir.glob("*.json"))
     if not outputs:
-        print(f"No .json files in {OUT_DIR}. Run run_classifier.py first.")
+        print(f"No .json files in {out_dir}. Run run_classifier.py first.")
         return 1
 
-    sources: dict[str, str] = {}
+    vals = validators(load_schema())
+    rows, all_errors, all_warnings = [], [], []
     for p in outputs:
-        src = PROGRAMS_DIR / f"{p.stem}.txt"
-        if src.exists():
-            sources[p.stem] = src.read_text(encoding="utf-8")
-
-    rows, all_problems = [], []
-    family_counts: Counter[str] = Counter()
-
-    for p in outputs:
-        row, problems = check_file(p, families, sources)
+        row, errors, warnings = check_program(p, vals)
         rows.append(row)
-        all_problems.extend(problems)
-        try:
-            for c in json.loads(p.read_text(encoding="utf-8")).get("constraints", []):
-                if isinstance(c, dict) and c.get("family"):
-                    family_counts[c["family"]] += 1
-        except Exception:  # noqa: BLE001
-            pass
+        all_errors += errors
+        all_warnings += warnings
 
-    summary = OUT_DIR / "summary.csv"
+    summary = out_dir / "summary.csv"
     with summary.open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
 
-    print(f"{'file':<56} {'status':<8} {'con':>4} {'unc':>4} {'prob':>5}")
+    print(f"{'file':<56} {'status':<8} {'nodes':>5} {'unres':>5} {'unc':>4} {'no_fit':>6} {'err':>4} {'warn':>4}")
     for r in rows:
-        print(f"{r['file']:<56} {r['status']:<8} {r['constraints']:>4} {r['unclassified']:>4} {r['problems']:>5}")
+        print(f"{r['file']:<56} {r['status']:<8} {r['top_nodes']:>5} {r['unresolved']:>5} "
+              f"{r['unclassified']:>4} {r['unc_no_fit']:>6} {r['errors']:>4} {r['warnings']:>4}")
 
-    print("\nConstraints by family:")
-    for fam, n in family_counts.most_common():
-        print(f"  {n:>4}  {fam}")
-    unused = sorted(families - set(family_counts))
-    if unused:
-        print(f"\nFamilies never used: {', '.join(unused)}")
-        print("Not necessarily wrong on a 15-file sample, but worth a look.")
+    passed = sum(1 for r in rows if not r["errors"])
+    totals = {k: sum(r[k] for r in rows) for k in FAMILIES + ["of_which", "unresolved"] + [f"unc_{x}" for x in REASONS]}
+    print(f"\n{passed} of {len(rows)} programmes pass.")
+    print("Totals: " + ", ".join(f"{k} {v}" for k, v in totals.items()))
 
-    if all_problems:
-        print(f"\n{len(all_problems)} problem(s) found.")
-        shown = all_problems if args.verbose else all_problems[:20]
-        for p in shown:
-            print(f"  - {p}")
-        if len(all_problems) > len(shown):
-            print(f"  ... and {len(all_problems) - len(shown)} more (use --verbose)")
-    else:
-        print("\nNo problems found.")
+    for title, items in (("error", all_errors), ("warning", all_warnings)):
+        if not items:
+            continue
+        print(f"\n{len(items)} {title}(s):")
+        shown = items if args.verbose else items[:20]
+        for item in shown:
+            print(f"  - {item}")
+        if len(items) > len(shown):
+            print(f"  ... and {len(items) - len(shown)} more (use --verbose)")
 
     print(f"\nSummary written to {summary}")
-    return 1 if all_problems else 0
+    return 1 if all_errors else 0
 
 
 if __name__ == "__main__":
