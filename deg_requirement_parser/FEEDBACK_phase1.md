@@ -531,30 +531,30 @@ Nobody expects all of this in a week. A suggested order: read Sections 1–5 wit
 
 **The taxonomy (`constraint_taxonomy.md`)**
 
-- [ ] **T1.** Free-text filters replaced by `eligible_if`. *Done when:* no `filter` or `pool_rule` strings remain. (2.2)
-- [ ] **T3.** Vocabulary kept short; additions and misfits logged. *Done when:* `taxonomy_open_questions.md` exists and lists any new term and why. (2.2)
-- [ ] **T4.** `unresolved` added, with its three rules and the history example. (2.2)
-- [ ] **T5.** Normalizing paragraph says "a bare number means `min`; `eq` only for 'exactly'". *Done when:* no example uses `eq` without "exactly". (2.2)
-- [ ] **T6.** `thresholds` is a list; examples with both a course and a unit count encode both. (2.2)
-- [ ] **T7.** Names adopted (`threshold`, `eligible_if`, `count_by`), `pool` / `pool_rule` gone, or a note saying why not. (2.2)
-- [ ] **T8.** `of_which` added, with an example at each level and the wording convention. (4)
-- [ ] **T11.** Out-of-scope items go to `unclassified` with a `reason` instead of being dropped. (5.4)
-- [ ] **T12.** Families re-mapped. (6)
-- [ ] **T13.** Taxonomy rewritten around the tree structure. *Done when:* every example validates against `requirement_schema.json`, and no old-format example remains. (2–6)
+- [x] **T1.** Free-text filters replaced by `eligible_if`. *Done when:* no `filter` or `pool_rule` strings remain. (2.2) *Done. No `filter` or `pool_rule` left; `check_taxonomy.py` fails on them.*
+- [x] **T3.** Vocabulary kept short; additions and misfits logged. *Done when:* `taxonomy_open_questions.md` exists and lists any new term and why. (2.2) *Done. One addition, "any course" as `{"level_min": 0}`, logged as Q7 in `taxonomy_open_questions.md`.*
+- [x] **T4.** `unresolved` added, with its three rules and the history example. (2.2) *Done, with the history example and two more (adviser-selected, list-or-approved).*
+- [x] **T5.** Normalizing paragraph says "a bare number means `min`; `eq` only for 'exactly'". *Done when:* no example uses `eq` without "exactly". (2.2) *Done. No example uses `eq`; both `check_taxonomy.py` and `check_results.py` reject `eq` without "exactly".*
+- [x] **T6.** `thresholds` is a list; examples with both a course and a unit count encode both. (2.2) *Done. CS (4 courses, 16 units), Health track (2 courses, 8 units) and others encode both.*
+- [x] **T7.** Names adopted (`threshold`, `eligible_if`, `count_by`), `pool` / `pool_rule` gone, or a note saying why not. (2.2) *Done. `threshold`, `eligible_if`, `count_by` adopted; `pool` and `pool_rule` gone.*
+- [x] **T8.** `of_which` added, with an example at each level and the wording convention. (4) *Done. Examples on a leaf (Economics, Behavioral Economics, Philanthropy), a group (tracks) and the root (Religion, TAC/CSCI).*
+- [x] **T11.** Out-of-scope items go to `unclassified` with a `reason` instead of being dropped. (5.4) *Done. Four reasons, with examples, in the taxonomy and the prompt.*
+- [x] **T12.** Families re-mapped. (6) *Done. Section 6 of the old plan; Course Reuse `PROHIBITS` and restatements are notes now.*
+- [x] **T13.** Taxonomy rewritten around the tree structure. *Done when:* every example validates against `requirement_schema.json`, and no old-format example remains. (2–6) *Done. 50 of 50 examples validate; no old-format example remains.*
 
 **The prompt and pipeline**
 
-- [ ] **T9.** `run_classifier.py` numbers the lines; `source_lines` + `source_quote` replace `source_text`. (5.2)
-- [ ] **T10.** `prompt_v2.txt` written (v1 kept): new output template, plus the five instructions. (5.3)
+- [x] **T9.** `run_classifier.py` numbers the lines; `source_lines` + `source_quote` replace `source_text`. (5.2) *Done. Lines are numbered `L021:`; `source_lines` + `source_quote` everywhere.*
+- [x] **T10.** `prompt_v2.txt` written (v1 kept): new output template, plus the five instructions. (5.3) *Done. `docs/prompt_v2.txt`, v1 kept (`--prompt docs/prompt_v1.txt`).*
 
 **The code**
 
-- [ ] **T2.** `is_eligible` written and tested on hand-picked courses. (2.2)
-- [ ] **T14.** `check_results.py` validates against the schema and runs the extra checks. *Done when:* every file in `examples/` passes, and a deliberately broken copy fails. (The schema file)
+- [x] **T2.** `is_eligible` written and tested on hand-picked courses. (2.2) *Done earlier (`eligibility.py`, tested in `test_taxonomy.py`).*
+- [x] **T14.** `check_results.py` validates against the schema and runs the extra checks. *Done when:* every file in `examples/` passes, and a deliberately broken copy fails. (The schema file) *Done. All five `examples/` pass; seven deliberately broken copies each fail. Status is now set by the pipeline from `no_fit`, because the model kept marking any unclassified entry as partial.*
 
 **The run**
 
-- [ ] **T15.** Re-run the 15 test files with `prompt_v2.txt`, then review. Start with:
+- [x] **T15.** Re-run the 15 test files with `prompt_v2.txt`, then review. Start with: *Done. 15 of 15 pass `check_results.py`; golden cases right on the model's output; review notes in the README. Then the full 470-programme run.*
   
   - `102_economics_ba` and `183_public_policy_bs`: compare to `examples/`.
   - `162_occupational_therapy_bs`: pairs inside a choice.

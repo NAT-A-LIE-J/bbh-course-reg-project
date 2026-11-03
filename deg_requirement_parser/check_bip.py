@@ -10,7 +10,9 @@ For every program with a golden file in golden/:
      entries, which sit outside the tree by design.
   2. Golden cases. Each case is a hand-made student with a known answer. The
      solver must reach the same verdict (pass / fail / unknown) and, where the
-     case lists them, find the same unmet top-level requirements.
+     case lists them, find the same unmet top-level requirements. The unmet ids
+     are the ones in examples/, so against model output (which names its own
+     ids) only the number of unmet requirements is compared.
 
 Usage
     python check_bip.py                        # programs in examples/
@@ -62,14 +64,19 @@ def check_program(golden_path: Path, program_dir: Path, verbose: bool) -> tuple[
             extra = f" ({i.detail})" if i.detail else ""
             print(f"     {i.status:<12} {i.what}{extra}")
 
+    ids_comparable = program_dir.resolve() == (HERE / "examples").resolve()
     passed = failed = 0
     for case in golden["cases"]:
         verdict = bip.solve(program, taken_courses(case, golden.get("default_units", 4)))
         problems = []
         if verdict.result != case["expect"]:
             problems.append(f"expected {case['expect']}, got {verdict.result}")
-        if "unmet" in case and sorted(verdict.unmet) != sorted(case["unmet"]):
-            problems.append(f"expected unmet {case['unmet']}, got {verdict.unmet}")
+        if "unmet" in case:
+            if ids_comparable and sorted(verdict.unmet) != sorted(case["unmet"]):
+                problems.append(f"expected unmet {case['unmet']}, got {verdict.unmet}")
+            elif not ids_comparable and len(verdict.unmet) != len(case["unmet"]):
+                problems.append(f"expected {len(case['unmet'])} unmet ({case['unmet']} in examples/), "
+                                f"got {verdict.unmet}")
         mark = "ok  " if not problems else "FAIL"
         unmet = f", unmet {verdict.unmet}" if verdict.unmet else ""
         print(f"   {mark} {case['student']}: {verdict.result}{unmet}")
