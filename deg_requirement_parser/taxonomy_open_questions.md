@@ -5,7 +5,11 @@ Vishal. Newest at the bottom of each section.
 
 ## Vocabulary additions
 
-None so far. The `eligible_if` terms are as in `FEEDBACK_phase1.md` 2.2.
+None to the schema. The `eligible_if` terms are as in `FEEDBACK_phase1.md` 2.2.
+
+- **"Any course" (free electives).** Written as `{"level_min": 0}`, which every course passes.
+  Without it, the first v2 run encoded Computer Science's free electives as `unresolved`, which
+  they aren't. A dedicated term (`{"any_course": true}`) would read better; see Q7.
 
 ## Sentences that didn't fit
 
@@ -35,3 +39,5 @@ None so far. The `eligible_if` terms are as in `FEEDBACK_phase1.md` 2.2.
 6. **Running the check automatically.** `check_taxonomy.py` runs in under a second. Do you want it
    as a GitHub Action on PRs that touch `deg_requirement_parser/`? That affects the whole repo, so
    it's your call.
+7. **"Any course".** Free electives are encoded as `{"level_min": 0}` for now. Would you rather
+   add an explicit term to the schema, such as `{"any_course": true}`?

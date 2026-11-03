@@ -221,6 +221,16 @@ def extract_json(text: str):
     return json.loads(candidate[start : end + 1])
 
 
+def set_status(data: dict) -> dict:
+    """status follows from the unclassified reasons (partial iff any no_fit), so the
+    pipeline sets it rather than trusting the model, which tends to mark any
+    unclassified entry as partial. "failed" from the model is kept."""
+    if isinstance(data, dict) and data.get("status") != "failed":
+        reasons = [u.get("reason") for u in data.get("unclassified") or [] if isinstance(u, dict)]
+        data["status"] = "partial" if "no_fit" in reasons else "ok"
+    return data
+
+
 def call_api(client, model: str, content, max_tokens: int, extra: dict, attempts: int = 4):
     """Returns (response, retries) where retries counts transient-error retries.
 
@@ -343,10 +353,27 @@ def process_stem(i: int, total: int, stem: str, name: str, requirements: str, cl
                 f"{elapsed:.1f}s, ${cost:.3f}. Raw kept at {out_label}/{stem}.truncated.txt")
         return {"row": row, "line": line, "failure": True, "cost": cost}
 
+    # Now and then the reply is not valid JSON (a missing bracket). Ask once more.
+    try:
+        extract_json(text)
+    except Exception:  # noqa: BLE001
+        try:
+            again, more_retries = call_api(client, args.model, content, max_tokens_used, extra)
+        except Exception:  # noqa: BLE001
+            again = None
+        if again is not None and again.stop_reason != "max_tokens":
+            resp, retries = again, retries + more_retries + 1
+            text = "".join(block.text for block in resp.content if block.type == "text")
+            cost_again, cache_read, cache_write = usage_cost(resp.usage, price_in, price_out)
+            cost += cost_again  # both calls are billed
+            with budget_lock:
+                budget_state["spent"] += cost_again
+            note_suffix += ", retried after unparseable JSON"
+
     (out_dir / f"{stem}.response.txt").write_text(text, encoding="utf-8")
     json_path = out_dir / f"{stem}.json"
     try:
-        data = extract_json(text)
+        data = set_status(extract_json(text))
     except Exception as exc:  # noqa: BLE001
         note = f"UNPARSEABLE: {exc}. Raw kept at {out_label}/{stem}.response.txt"
         failure = True
@@ -465,7 +492,9 @@ def main() -> int:
             return 1
         from anthropic import Anthropic
 
-        client = Anthropic()
+        # The default 10-minute timeout let a stalled call hold a worker that long;
+        # 3 minutes is well above the slowest normal call, and call_api retries.
+        client = Anthropic(timeout=180.0)
 
     rows = []
     failures = 0

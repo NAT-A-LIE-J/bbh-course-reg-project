@@ -128,6 +128,17 @@ and `{"not": {...}}` (the condition must not hold). Each term is its own object:
  "thresholds": [{"count_by": "courses", "op": "min", "value": 1}]}
 ```
 
+Free electives with no restriction ("any course", "free electives") are checkable: every course
+counts. Write them as `{"level_min": 0}`, which every course passes. They are not `unresolved`.
+
+> 4 units of free electives.
+
+```json
+{"family": "count",
+ "eligible_if": {"level_min": 0},
+ "thresholds": [{"count_by": "units", "op": "min", "value": 4}]}
+```
+
 A list printed under a heading plus a description of a pool ("any ANTH course, or one of the
 following") is an `any` of the two:
 
