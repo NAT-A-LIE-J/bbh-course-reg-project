@@ -1,0 +1,210 @@
+{
+  "program": "Game Art (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 207a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 207b"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 150gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 290"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 489L"
+          }
+        ],
+        "id": "GAMEART-BFA-CORE",
+        "source_lines": [
+          [
+            29,
+            40
+          ]
+        ],
+        "source_quote": "ART 207a Two-Dimensional Art Workshop Units: 2",
+        "description": "Required core courses for the Game Art BFA major.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 491L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 493L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 498"
+          }
+        ],
+        "id": "GAMEART-BFA-CAPSTONE",
+        "source_lines": [
+          [
+            41,
+            44
+          ]
+        ],
+        "source_quote": "Capstone Requirements",
+        "description": "Capstone sequence: CTIN 491L, CTIN 493L and CTIN 498.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 280",
+            "CTAN 420",
+            "CTAN 455L",
+            "CTAN 460",
+            "CTAN 464L",
+            "CTAN 465L",
+            "CTAN 480",
+            "CTAN 485",
+            "CTAN 497L",
+            "CTAN 564L",
+            "CTIN 190",
+            "CTIN 191",
+            "CTIN 289",
+            "CTIN 401L",
+            "CTIN 403L",
+            "CTIN 410L",
+            "CTIN 415",
+            "CTIN 422",
+            "CTIN 433",
+            "CTIN 478",
+            "CTIN 481",
+            "CTPR 524",
+            "CTPR 544",
+            "CTWR 410L",
+            "TAC 115",
+            "TAC 351",
+            "TAC 361",
+            "TAC 371"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 26
+          }
+        ],
+        "id": "GAMEART-BFA-ELECTIVES",
+        "source_lines": [
+          [
+            46,
+            79
+          ]
+        ],
+        "source_quote": "At least 26 units must be taken from the following list",
+        "description": "At least 26 units of electives chosen from the listed CTAN, CTIN, CTPR, CTWR and TAC courses.",
+        "confidence": "high",
+        "note": "Some courses marked with * or ** require a prerequisite, and graduate-level courses (**) require special permission; these notes are procedural and not separately encoded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "The Bachelor of Fine Arts in Game Art requires a minimum of 128 units, with 58 units required for the major.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 58
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Fine Arts in Game Art is a unique four-year program",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Undergraduate students take their pre-professional courses in the USC Dornsife",
+      "reason": "university_level",
+      "why": "General education requirement reused from STARS; not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The degree requires 128 units, including 58 units in the major.",
+      "reason": "university_level",
+      "why": "128-unit total degree requirement is a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Applicants must submit a supplemental application and materials to the",
+      "reason": "out_of_scope",
+      "why": "Admission process; not a course requirement, and contact details are not requirements."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          81
+        ]
+      ],
+      "source_quote": "*Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/permission notes are procedural sequencing details not encoded as separate requirements."
+    }
+  ]
+}

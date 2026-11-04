@@ -1,0 +1,130 @@
+{
+  "program": "Latin Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "LAT"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "of which one may be LAT 222",
+            "eligible_if": {
+              "courses": [
+                "LAT 222"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "at least three must be at the upper-division level",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "LATIN-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Four courses in Latin, of which one may",
+        "description": "Four Latin courses, with at most one being LAT 222 and at least three upper-division.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "LAT"
+              ]
+            },
+            {
+              "prefix": [
+                "CLAS"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LATIN-MINOR-ADDITIONAL",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "One additional upper-division course: either Latin",
+        "description": "One additional upper-division course in Latin or Classics.",
+        "confidence": "high",
+        "note": "Upper-division requirement applied via level_min on eligible_if not separately encoded since no checkable distinct lower bound stated beyond 'upper-division'."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "TOTAL: five courses",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

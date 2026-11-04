@@ -1,0 +1,138 @@
+{
+  "program": "3-D Animation in Cinematic Arts Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTAN 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 452"
+          }
+        ],
+        "id": "3DANIM-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "CTAN 451 History of Animation Units: 2",
+        "description": "Both core courses: CTAN 451 and CTAN 452.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 432",
+            "CTAN 443L",
+            "CTAN 453",
+            "CTAN 454",
+            "CTAN 455L",
+            "CTAN 462",
+            "CTAN 464L",
+            "CTAN 465L",
+            "CTAN 466",
+            "CTAN 485",
+            "CTAN 497L",
+            "CTAN 502L",
+            "CTAN 504L",
+            "CTAN 508",
+            "CTAN 509",
+            "CTAN 511",
+            "CTAN 543",
+            "CTAN 564L",
+            "CTAN 565L",
+            "CTAN 572"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "3DANIM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            58
+          ]
+        ],
+        "source_quote": "Electives (12 Additional Units)",
+        "description": "12 units of electives chosen from the listed CTAN courses.",
+        "confidence": "high",
+        "note": "Enrollment in 500-level courses requires special permission (L058); not independently checkable, kept as a note."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "good academic standing, declared major, and passing completion of CTAN 451 and CTAN 452 prior to admission"
+        },
+        "id": "3DANIM-MINOR-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To apply to the 3-D Animation in Cinematic Arts minor",
+        "description": "Admission requires good academic standing, a declared major, and prior passing completion of CTAN 451 and CTAN 452.",
+        "confidence": "medium",
+        "note": "CTAN 451 and 452 are also the core requirement courses; admission re-states a prerequisite rather than an additional slot."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The program requires 16 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          64,
+          64
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each course",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Applications and information can be obtained by emailing",
+      "reason": "out_of_scope",
+      "why": "Contact information, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "program": "East Asian Languages and Cultures Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 324gw",
+            "EALC 340gp",
+            "EALC 342gp",
+            "EALC 344gp",
+            "EALC 350gp",
+            "EALC 382"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "EALC-MINOR-CULTURAL-STUDIES",
+        "source_lines": [
+          [
+            25,
+            36
+          ]
+        ],
+        "source_quote": "Students are required to take one of these courses",
+        "description": "Choose one upper-division cultural studies course.",
+        "confidence": "high",
+        "note": "Courses used here cannot also be counted as an elective (one-slot rule); restated in L054."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "EALC 206"
+          },
+          {
+            "family": "specific_course",
+            "course": "EALC 217"
+          },
+          {
+            "family": "specific_course",
+            "course": "EALC 222"
+          }
+        ],
+        "id": "EALC-MINOR-LANGUAGE",
+        "source_lines": [
+          [
+            38,
+            48
+          ]
+        ],
+        "source_quote": "Minors must complete four semesters (two years) of",
+        "description": "Complete the fourth semester of one East Asian language (Chinese, Korean, or Japanese), representing completion of four semesters of study.",
+        "confidence": "high",
+        "note": "Encodes only the capstone course of the four-semester sequence as checkable; the full sequencing (first three semesters) is not separately listed with course codes.",
+        "all_of": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "WAIVE",
+          "approver": "placement/diagnostic exam",
+          "applies_to": "Language Requirement"
+        },
+        "id": "EALC-MINOR-LANGUAGE-WAIVER",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "source_quote": "This requirement may be waived by placement exam.",
+        "description": "The language requirement may be waived by diagnostic/placement exam.",
+        "confidence": "medium",
+        "note": "No course substitution list given for waived students."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "EALC 324gw",
+                "EALC 333g",
+                "EALC 340gp",
+                "EALC 342gp",
+                "EALC 344gp",
+                "EALC 346g",
+                "EALC 350gp",
+                "EALC 358g",
+                "EALC 360g",
+                "EALC 374",
+                "EALC 375",
+                "EALC 382",
+                "EALC 385",
+                "KSI 399",
+                "EALC 400",
+                "EALC 402",
+                "EALC 426",
+                "EALC 428",
+                "EALC 430",
+                "EALC 435",
+                "EALC 438",
+                "EALC 450",
+                "EALC 452",
+                "EALC 455",
+                "EALC 460",
+                "EALC 465",
+                "EALC 475",
+                "EALC 485",
+                "EALC 489",
+                "EALC 499",
+                "EALC 304",
+                "EALC 306",
+                "EALC 315",
+                "EALC 317",
+                "EALC 320",
+                "EALC 322",
+                "EALC 404",
+                "EALC 406",
+                "EALC 407",
+                "EALC 409",
+                "EALC 413",
+                "EALC 415",
+                "EALC 417",
+                "EALC 418",
+                "EALC 419",
+                "EALC 422",
+                "EALC 424",
+                "EALC 440"
+              ]
+            },
+            {
+              "unresolved": "one upper-division course on East Asian culture from another department, approved by an adviser"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                86,
+                87
+              ]
+            ],
+            "source_quote": "Up to two third- or fourth-year language courses",
+            "eligible_if": {
+              "courses": [
+                "EALC 304",
+                "EALC 306",
+                "EALC 315",
+                "EALC 317",
+                "EALC 320",
+                "EALC 322",
+                "EALC 404",
+                "EALC 406",
+                "EALC 407",
+                "EALC 409",
+                "EALC 413",
+                "EALC 415",
+                "EALC 417",
+                "EALC 418",
+                "EALC 419",
+                "EALC 422",
+                "EALC 424",
+                "EALC 440"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "EALC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            50,
+            105
+          ]
+        ],
+        "source_quote": "EALC 324gw , EALC 340gp , EALC 342gp ,",
+        "description": "Choose three upper-division elective courses (12 units) from the EALC elective list, with up to two being third/fourth-year language courses, or (with adviser approval) one approved course from another department.",
+        "confidence": "high",
+        "note": "Cultural studies list courses may count as electives only if not already used for the Cultural Studies requirement (one-slot rule); not a separate node."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "for an overall minimum of 16 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Minors are encouraged to explore beyond their individual",
+      "reason": "advisory",
+      "why": "Encouragement to take a broader range of courses, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students minoring in EALC are strongly encouraged",
+      "reason": "advisory",
+      "why": "Recommendation to take a lower-division survey course, not required."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "Our faculty teach new courses every year.",
+      "reason": "advisory",
+      "why": "Informational note about checking the schedule of classes, not a requirement."
+    }
+  ]
+}

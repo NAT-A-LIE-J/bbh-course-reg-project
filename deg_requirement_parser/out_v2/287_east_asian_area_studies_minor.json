@@ -1,0 +1,155 @@
+{
+  "program": "East Asian Area Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EALC 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "EASC 150"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "any of the more than 120 courses offered on East Asia at the university"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    23,
+                    23
+                  ]
+                ],
+                "source_quote": "At least one of these courses must be from",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "HIST"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    23,
+                    23
+                  ]
+                ],
+                "source_quote": "and one from the humanities area.",
+                "eligible_if": {
+                  "unresolved": "a course from the humanities area"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    23,
+                    23
+                  ]
+                ],
+                "source_quote": "At least one course must be taken on two",
+                "eligible_if": {
+                  "unresolved": "courses covering two of China, Japan or Korea"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "departments",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "EAAS-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students are required to take EALC 110 and",
+        "description": "EALC 110, EASC 150, and at least four upper-division (16 units) East Asia-related courses, with distribution requirements.",
+        "confidence": "medium",
+        "note": "No explicit course list is given for the upper-division elective pool or the humanities/region distribution requirements; these are encoded as unresolved pools with checkable thresholds where possible."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Twenty-four units are required from among the more",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "There is no language requirement.",
+      "reason": "out_of_scope",
+      "why": "Statement clarifying absence of a requirement, not an actionable rule."
+    }
+  ]
+}

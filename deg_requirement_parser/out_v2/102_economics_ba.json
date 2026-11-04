@@ -1,0 +1,173 @@
+{
+  "program": "Economics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 318"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    21,
+                    21
+                  ]
+                ],
+                "source_quote": "a minimum of two must be economics courses",
+                "eligible_if": {
+                  "level_min": 400
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "ECON-BA-ELECTIVES",
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "Of the four elective courses (300 level or",
+            "description": "Four ECON electives at 300+, of which at least two at 400+.",
+            "confidence": "medium",
+            "note": "Approval of the two non-400-level electives by the director of undergraduate studies cannot be checked; not encoded."
+          }
+        ],
+        "id": "ECON-BA-MAJOR",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students are required to take ECON 203 ,",
+        "description": "Six named ECON core courses plus four ECON electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125"
+          }
+        ],
+        "id": "ECON-BA-MATH",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "MATH 118gx or MATH 125 is required for",
+        "description": "MATH 118gx or MATH 125.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "TAC 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 101L"
+          }
+        ],
+        "id": "ECON-BA-COMPUTING",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Majors are also required to take at least",
+        "description": "At least one two-unit computing course: TAC 101 or CSCI 101L.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for core courses."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "students are advised to meet the requirement",
+      "reason": "advisory",
+      "why": "Timing advice, not a requirement."
+    }
+  ]
+}

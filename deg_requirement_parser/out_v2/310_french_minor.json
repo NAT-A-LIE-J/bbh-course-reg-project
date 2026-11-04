@@ -1,0 +1,178 @@
+{
+  "program": "French Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "FREN 250",
+        "id": "FREN-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "For the lower division, FREN 250 French IV is required.",
+        "description": "FREN 250 is required for the lower division.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "FREN 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "FREN 330"
+          }
+        ],
+        "id": "FREN-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "The upper-division requirements include two core courses",
+        "description": "Two required upper-division core courses: FREN 300 and FREN 330.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "FREN 305",
+                "FREN 307g",
+                "FREN 309",
+                "FREN 310",
+                "FREN 315",
+                "FREN 318",
+                "FREN 320g",
+                "FREN 340g",
+                "FREN 347g",
+                "FREN 351",
+                "FREN 357",
+                "FREN 360",
+                "FREN 370gm",
+                "FREN 373g",
+                "FREN 375gmw",
+                "FREN 382",
+                "FREN 383",
+                "FREN 392",
+                "FREN 393",
+                "FREN 401",
+                "FREN 402",
+                "FREN 403",
+                "FREN 404",
+                "FREN 410",
+                "FREN 432",
+                "FREN 445",
+                "FREN 446",
+                "FREN 448m",
+                "FREN 449",
+                "FREN 464",
+                "FREN 490x",
+                "FREN 499"
+              ]
+            },
+            {
+              "unresolved": "additional upper-division French courses selected in consultation with the department adviser"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "no more than one of which may be in English",
+            "eligible_if": {
+              "unresolved": "courses taught in English"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ],
+              [
+                47,
+                47
+              ],
+              [
+                55,
+                55
+              ],
+              [
+                81,
+                81
+              ]
+            ],
+            "source_quote": "FREN 310 and FREN 360 may not both be taken",
+            "eligible_if": {
+              "courses": [
+                "FREN 310",
+                "FREN 360"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "FREN-MINOR-ADDITIONAL",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            40,
+            75
+          ]
+        ],
+        "source_quote": "plus an additional three courses to be selected",
+        "description": "Three additional upper-division French courses chosen in consultation with the adviser, with at most one taught in English and not both FREN 310 and FREN 360.",
+        "confidence": "medium",
+        "note": "The 'no more than one in English' condition cannot be checked against the course list since language of instruction isn't encoded in course codes; the pool for the three electives includes the suggested list and an unresolved adviser-approval clause."
+      }
+    ]
+  },
+  "unclassified": []
+}

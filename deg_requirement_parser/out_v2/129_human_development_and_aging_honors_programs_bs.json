@@ -1,0 +1,447 @@
+{
+  "program": "Human Development and Aging, Honors Programs (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GERO 497a",
+            "GERO 497b",
+            "GERO 497c",
+            "GERO 593"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "All honors courses may be applied toward",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 10
+              }
+            ]
+          }
+        ],
+        "id": "HDA-HONORS-COURSES",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "GERO 497a , GERO 497b , GERO 497c and GERO 593",
+        "description": "Honors program requires GERO 497a, 497b, 497c and GERO 593, minimum 10 units, which may also count as upper-division gerontology electives.",
+        "confidence": "high",
+        "note": "Same honors course list is printed again under both degree tracks (L058-61, L108-111); one-slot rule applies, not re-encoded."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "GERO 200"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 320g"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 330"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 340"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 416"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 470"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 491"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 492"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "foreign language or programming coursework"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "prefix": [
+                    "GERO"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "one approved statistics course"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "any": [
+                    {
+                      "prefix": [
+                        "GERO"
+                      ]
+                    },
+                    {
+                      "unresolved": "related disciplines approved as general electives"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 32
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        52,
+                        52
+                      ]
+                    ],
+                    "source_quote": "General electives in gerontology or related disciplines (8 units upper division)",
+                    "eligible_if": {
+                      "level_min": 300
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 8
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "HDA-GENERAL-TRACK",
+            "source_lines": [
+              [
+                35,
+                52
+              ]
+            ],
+            "source_quote": "GERO 200 Gerontology: The Science of Adult Development",
+            "description": "Standard degree required courses: eight named GERO courses, GE, writing, foreign language/programming, gerontology electives, a statistics course, and general electives.",
+            "confidence": "medium",
+            "note": "GE and Writing Requirement units are university-wide and listed in unclassified; GERO 491 unit range (2-8) not otherwise checkable beyond specific_course slot."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 135bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 310"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "GERO 320g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GERO 330"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 340"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 414"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 495"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "any": [
+                    {
+                      "prefix": [
+                        "GERO"
+                      ]
+                    },
+                    {
+                      "unresolved": "related disciplines approved as general electives"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 28
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        102,
+                        102
+                      ]
+                    ],
+                    "source_quote": "General electives in gerontology or related disciplines (8 units upper division)",
+                    "eligible_if": {
+                      "level_min": 300
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 8
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "HDA-HEALTH-SCIENCE-TRACK",
+            "source_lines": [
+              [
+                69,
+                111
+              ]
+            ],
+            "source_quote": "Requirements for Completion of the Health Science Honors Track",
+            "description": "Alternate Health Science track: science/math prerequisite courses, upper-division gerontology core (with a choice between GERO 320g and GERO 330), GE, writing, and general electives.",
+            "confidence": "medium",
+            "note": "Gerontology Elective line (L101, 0-2 units) states no real minimum (0) and is not encoded as a requirement."
+          }
+        ],
+        "id": "HDA-DEGREE-TRACK-CHOICE",
+        "source_lines": [
+          [
+            31,
+            119
+          ]
+        ],
+        "source_quote": "Degree Requirements",
+        "description": "Students complete either the standard Required Courses set or the Health Science Honors Track's required course set.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students begin in the fall or spring of junior year",
+      "reason": "out_of_scope",
+      "why": "Describes timing/sequence and a minimum-grade requirement for GERO 593, which are out of scope for course-pool checks."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Students must have a minimum cumulative GPA of 3.3",
+      "reason": "out_of_scope",
+      "why": "GPA eligibility and completion requirements are grade/GPA rules, out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "GE unit requirement is a university-wide rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "Writing Requirement Units: 8",
+      "reason": "university_level",
+      "why": "Writing requirement is a university-wide rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          63,
+          63
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "Total unit count is the university-wide degree total."
+    },
+    {
+      "source_lines": [
+        [
+          67,
+          67
+        ]
+      ],
+      "source_quote": "Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note for honors courses is a sequencing/admission detail, not a course-pool requirement."
+    },
+    {
+      "source_lines": [
+        [
+          99,
+          99
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "GE unit requirement is a university-wide rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          100,
+          100
+        ]
+      ],
+      "source_quote": "Writing Requirement Units: 8",
+      "reason": "university_level",
+      "why": "Writing requirement is a university-wide rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          113,
+          113
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "Total unit count is the university-wide degree total."
+    },
+    {
+      "source_lines": [
+        [
+          117,
+          117
+        ]
+      ],
+      "source_quote": "Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note for honors courses is a sequencing/admission detail, not a course-pool requirement."
+    }
+  ]
+}

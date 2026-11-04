@@ -1,0 +1,146 @@
+{
+  "program": "Media and Social Change Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTCS 192mg",
+            "CTWR 211g",
+            "IML 295Lm"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MSC-MINOR-INTRO",
+        "source_lines": [
+          [
+            31,
+            39
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following courses:",
+        "description": "Choose 4 units from the introductory courses list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTIN 479",
+            "CTPR 474",
+            "CTXA 470",
+            "IML 419",
+            "IML 420m",
+            "IML 421",
+            "IML 423",
+            "IML 425",
+            "IML 427",
+            "IML 453",
+            "IML 477",
+            "IML 493"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "MSC-MINOR-ELECTIVES-1",
+        "source_lines": [
+          [
+            41,
+            58
+          ]
+        ],
+        "source_quote": "Choose 12 units from the following courses:",
+        "description": "Choose 12 units from the Group I electives list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTCS 400",
+            "CTCS 403",
+            "CTCS 407",
+            "CTCS 408",
+            "CTCS 412",
+            "CTCS 414"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MSC-MINOR-ELECTIVES-2",
+        "source_lines": [
+          [
+            60,
+            71
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following courses:",
+        "description": "Choose 4 units from the Group II electives list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "A total of 20 units is required to complete the minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "All courses must be taken for a letter grade.",
+      "reason": "out_of_scope",
+      "why": "Grading-basis rule, not a course-selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Information about declaring the minor, courses and other",
+      "reason": "out_of_scope",
+      "why": "Contact information, not a requirement."
+    }
+  ]
+}

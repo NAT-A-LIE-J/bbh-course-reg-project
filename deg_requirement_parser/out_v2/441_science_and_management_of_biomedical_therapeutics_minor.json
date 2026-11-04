@@ -1,0 +1,213 @@
+{
+  "program": "Science and Management of Biomedical Therapeutics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "RXRS 402",
+            "RXRS 403",
+            "RXRS 407",
+            "RXRS 416"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "SMBT-CORE",
+        "source_lines": [
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "at least two core courses (selected from the four below) are required",
+        "description": "At least two core courses from the four listed RXRS courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "RXRS 402",
+            "RXRS 403",
+            "RXRS 407",
+            "RXRS 416",
+            "BPSI 405",
+            "RXRS 200",
+            "RXRS 201p",
+            "RXRS 202w",
+            "RXRS 302",
+            "RXRS 405",
+            "RXRS 406",
+            "RXRS 408",
+            "RXRS 410",
+            "RXRS 411",
+            "RXRS 412",
+            "RXRS 413w",
+            "RXRS 414",
+            "RXRS 417",
+            "RXRS 418",
+            "RXRS 421",
+            "RXRS 424",
+            "RXRS 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          },
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "16 of which must be at the 300 or 400 level",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                44,
+                44
+              ]
+            ],
+            "source_quote": "A maximum of 4 units of lower-division course work is permitted",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "A maximum of 4 units can be met by taking Directed Research",
+            "eligible_if": {
+              "courses": [
+                "RXRS 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "SMBT-TOTAL",
+        "source_lines": [
+          [
+            21,
+            23
+          ],
+          [
+            44,
+            63
+          ]
+        ],
+        "source_quote": "consists of a minimum of 20 units of Pharmaceutical and Regulatory Science",
+        "description": "Minimum 20 units (5 courses) of RXRS/BPSI coursework, with 16 units at 300/400 level, up to 4 units lower-division, up to 4 units of RXRS 490x directed research, and the required core courses may count toward the five-course minimum.",
+        "confidence": "high",
+        "note": "Students may select courses from the required core category to complete the five-course minimum, restated here rather than as a separate node."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "declared major",
+            "sophomore standing",
+            "minimum 32 USC units as entering freshman or 16 units as entering transfer student"
+          ]
+        },
+        "id": "SMBT-ADMISSION-GATE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Only students with a declared major are eligible to apply",
+        "description": "Admission to the minor requires a declared major and sophomore standing with minimum unit thresholds.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "unique to this minor and do not overlap with the major",
+      "reason": "university_level",
+      "why": "Minor uniqueness/non-overlap rule is a university-wide rule handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Course work within the minor will focus on domains of pharmacology",
+      "reason": "out_of_scope",
+      "why": "Descriptive text about subject domains, not a specific course rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students will select course work in consultation with an academic adviser",
+      "reason": "advisory",
+      "why": "Advisory guidance about consulting an adviser, not a checkable requirement."
+    }
+  ]
+}

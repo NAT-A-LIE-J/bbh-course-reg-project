@@ -1,0 +1,191 @@
+{
+  "program": "Dance Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DANC 280g"
+          }
+        ],
+        "id": "DANCE-MINOR-LOWER-DIV",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "Required Lower-Division Course (4 Units)",
+        "description": "Requires DANC 280g as the lower-division course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "DANC 312gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 342gp"
+          }
+        ],
+        "id": "DANCE-MINOR-UPPER-DIV",
+        "source_lines": [
+          [
+            31,
+            36
+          ]
+        ],
+        "source_quote": "Required Upper-Division Course (4 Units)",
+        "description": "Requires DANC 312gw or DANC 342gp as the upper-division course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ARTL 310",
+                "DANC 103",
+                "DANC 107",
+                "DANC 140",
+                "DANC 143",
+                "DANC 150",
+                "DANC 155",
+                "DANC 170",
+                "DANC 172",
+                "DANC 175",
+                "DANC 177",
+                "DANC 190",
+                "DANC 191",
+                "DANC 212g",
+                "DANC 285",
+                "DANC 302g",
+                "DANC 305g",
+                "DANC 308g",
+                "DANC 312gw",
+                "DANC 333gw",
+                "DANC 347",
+                "DANC 349",
+                "DANC 350",
+                "DANC 355",
+                "DANC 362",
+                "DANC 363g",
+                "DANC 370",
+                "DANC 372",
+                "DANC 399",
+                "DANC 432",
+                "DANC 442",
+                "DANC 483",
+                "DANC 490x",
+                "DANC 495",
+                "DANC 499",
+                "DANC 180",
+                "DANC 181a",
+                "DANC 181b",
+                "DANC 181c",
+                "DANC 183a",
+                "DANC 183b",
+                "DANC 183c",
+                "DANC 183d",
+                "DANC 184a",
+                "DANC 184b",
+                "DANC 184c",
+                "DANC 184d",
+                "DANC 185a",
+                "DANC 185b",
+                "DANC 186",
+                "DANC 187",
+                "DANC 188a",
+                "DANC 188b",
+                "DANC 189a",
+                "DANC 189b",
+                "DANC 189c"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "DANCE-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            38,
+            106
+          ]
+        ],
+        "source_quote": "Elective Courses (12 Units)",
+        "description": "12 units of elective dance courses, including general electives and dance technique courses.",
+        "confidence": "high",
+        "note": "DANC 312gw may be used here or as the upper-division course but not both, per the one-slot rule. DANC 180-189c technique courses listed separately merged into this elective pool; placement into intermediate/advanced levels requires instructor approval (see note in Dance Technique Courses section)."
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "PLACEMENT_WAIVER",
+          "approver": "instructor",
+          "process": "Prerequisite Waiver Form for placement into intermediate/advanced technique courses"
+        },
+        "id": "DANCE-MINOR-TECHNIQUE-WAIVER",
+        "source_lines": [
+          [
+            83,
+            83
+          ]
+        ],
+        "source_quote": "Students with previous dance experience may place into intermediate",
+        "description": "Students with prior dance experience may place into higher-level technique courses with instructor approval via waiver form.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students must be in good academic standing to be admitted",
+      "reason": "out_of_scope",
+      "why": "Academic standing / admission rule not related to course selection."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "No previous dance experience is required",
+      "reason": "advisory",
+      "why": "Informational statement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          107,
+          107
+        ]
+      ],
+      "source_quote": "Total Units Required: 20",
+      "reason": "university_level",
+      "why": "Restates the sum of the component requirements (4+4+12=20); not a separate rule."
+    }
+  ]
+}

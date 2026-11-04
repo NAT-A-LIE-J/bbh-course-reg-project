@@ -1,0 +1,121 @@
+{
+  "program": "Religion Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "REL 301"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "prefix": [
+                "REL"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    21,
+                    21
+                  ]
+                ],
+                "source_quote": "at least three of which must be upper-division",
+                "eligible_if": {
+                  "level_min": 300
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "REL-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students taking the religion minor must enroll",
+        "description": "REL 301 plus four additional REL courses, at least three upper-division.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "students focusing in Jewish studies",
+          "courses": []
+        },
+        "id": "REL-MINOR-JUDAIC-ROUTE",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Students who wish to focus their minor",
+        "description": "Students wishing a Jewish studies focus must instead minor in Judaic Studies.",
+        "confidence": "medium",
+        "note": "No course list given; routes students to a different minor entirely."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The total unit requirement for the minor is",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "16 of those units must be upper-division.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

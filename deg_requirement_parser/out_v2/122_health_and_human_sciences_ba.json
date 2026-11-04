@@ -1,0 +1,430 @@
+{
+  "program": "Health and Human Sciences (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 150Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 114xg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 242g"
+          }
+        ],
+        "id": "HHS-BA-LOWER-CORE",
+        "source_lines": [
+          [
+            29,
+            43
+          ]
+        ],
+        "source_quote": "Lower-Division Core Requirements (16 Units)",
+        "description": "Lower-division core: a biology intro course, CHEM 105aLg, a math/statistics course, and SOCI 242g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ANTH 125g",
+                "ANTH 305",
+                "PSYC 462m",
+                "SWMS 325",
+                "SWMS 336"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "HHS-BA-MODULE-1",
+            "source_lines": [
+              [
+                51,
+                59
+              ]
+            ],
+            "source_quote": "Health, Gender and Ethnicity",
+            "description": "16 units from the Health, Gender and Ethnicity module list.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "PSYC 100Lg",
+                "PSYC 336L",
+                "PSYC 360",
+                "PSYC 361",
+                "PSYC 367g",
+                "PSYC 462m"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "HHS-BA-MODULE-2",
+            "source_lines": [
+              [
+                61,
+                70
+              ]
+            ],
+            "source_quote": "Health and the Mind",
+            "description": "16 units from the Health and the Mind module list.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ANTH 101g",
+                "ANTH 105g",
+                "ANTH 305",
+                "IR 306",
+                "IR 339",
+                "IR 371",
+                "IR 382w",
+                "SOCI 362"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "HHS-BA-MODULE-3",
+            "source_lines": [
+              [
+                72,
+                83
+              ]
+            ],
+            "source_quote": "International Health",
+            "description": "16 units from the International Health module list.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ANTH 336",
+                "IR 339",
+                "SOCI 200gm",
+                "SOCI 210g",
+                "SOCI 225gw",
+                "SOCI 360m",
+                "SOCI 475"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "HHS-BA-MODULE-4",
+            "source_lines": [
+              [
+                85,
+                95
+              ]
+            ],
+            "source_quote": "Sociology of Health",
+            "description": "16 units from the Sociology of Health module list.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "GERO 321",
+                "GERO 330",
+                "GERO 340",
+                "GERO 437",
+                "GERO 380m",
+                "GERO 416",
+                "GERO 435m"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "HHS-BA-MODULE-5",
+            "source_lines": [
+              [
+                97,
+                108
+              ]
+            ],
+            "source_quote": "Health and Aging",
+            "description": "16 units from the Health and Aging module list.",
+            "confidence": "medium",
+            "note": "GERO 437 is offered at 2 or 4 units, with 4 units required when used here."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "BISC 450L",
+                    "HBIO 300",
+                    "HBIO 301L",
+                    "HBIO 302L",
+                    "BISC 307L"
+                  ]
+                },
+                {
+                  "courses": [
+                    "HBIO 420L"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "HHS-BA-MODULE-6",
+            "source_lines": [
+              [
+                110,
+                119
+              ]
+            ],
+            "source_quote": "Biology of Health",
+            "description": "16 units from the Biology of Health module list (BISC 307L or HBIO 420L as alternatives).",
+            "confidence": "medium",
+            "note": null
+          }
+        ],
+        "id": "HHS-BA-MODULES",
+        "source_lines": [
+          [
+            45,
+            119
+          ]
+        ],
+        "source_quote": "Modules in the Human Sciences (16 Units)",
+        "description": "Choose one of six 16-unit thematic modules in the human sciences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 365",
+            "GERO 495",
+            "MDA 250",
+            "POSC 395",
+            "SOCI 450",
+            "SOCI 472",
+            "SWMS 311"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "HHS-BA-EXPERIENTIAL",
+        "source_lines": [
+          [
+            121,
+            133
+          ]
+        ],
+        "source_quote": "Choose one course from the list below:",
+        "description": "One experiential learning course from the designated list (1-4 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BISC 312x",
+                "CHEM 350",
+                "BISC 325",
+                "BISC 406L",
+                "BISC 421",
+                "BISC 440",
+                "CHEM 322aL",
+                "HBIO 405",
+                "HIST 330",
+                "MDA 320",
+                "PSYC 320",
+                "PSYC 326",
+                "PSYC 337L",
+                "PSYC 355",
+                "REL 460",
+                "SOCI 305m",
+                "SOCI 325",
+                "SOCI 342m",
+                "SOCI 369",
+                "SOCI 431",
+                "SOCI 450",
+                "SSCI 340"
+              ]
+            },
+            {
+              "unresolved": "one upper-division elective from a different module option not already completed"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "HHS-BA-UPPER-ELECTIVES",
+        "source_lines": [
+          [
+            135,
+            163
+          ]
+        ],
+        "source_quote": "Choose two courses from the list below,",
+        "description": "Two upper-division electives (8 units) from the designated list, or one from the list plus one from an unused module.",
+        "confidence": "medium",
+        "note": "The alternative option of using an upper-division elective from a different, uncompleted module cannot be fully resolved against a fixed list."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            165,
+            165
+          ]
+        ],
+        "source_quote": "Total units required for the BA in Health and Human Sciences: 41-44",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 41
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            169,
+            169
+          ]
+        ],
+        "source_quote": "(at least 20 upper-division)",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "This major is open to all students.",
+      "reason": "university_level",
+      "why": "Open admission note, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "every student will be able to choose a semester abroad",
+      "reason": "advisory",
+      "why": "Marketing/advisory statement about study abroad availability, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "program": "Computer Programming Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "TAC 115"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 116"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 165"
+          }
+        ],
+        "id": "CPM-INTRO",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Choose one introductory programming course (2 units)",
+        "description": "Choose one introductory programming course: TAC 115, TAC 116, or TAC 165.",
+        "confidence": "high",
+        "note": "A note recommending TAC 115 or TAC 116 is advisory and not an additional requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 265"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 365"
+          }
+        ],
+        "id": "CPM-CORE",
+        "source_lines": [
+          [
+            34,
+            39
+          ]
+        ],
+        "source_quote": "Complete the following (8 units)",
+        "description": "Complete TAC 265 and TAC 365.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 303",
+            "TAC 341",
+            "TAC 342",
+            "TAC 344",
+            "TAC 345",
+            "TAC 368",
+            "TAC 380",
+            "TAC 435",
+            "TAC 439",
+            "TAC 216",
+            "TAC 259",
+            "TAC 348",
+            "TAC 382",
+            "TAC 404",
+            "TAC 405",
+            "TAC 438",
+            "TAC 449",
+            "TAC 483"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CPM-ELECTIVES",
+        "source_lines": [
+          [
+            41,
+            62
+          ]
+        ],
+        "source_quote": "Choose electives from the following (8 units)",
+        "description": "Choose electives totaling 8 units from the listed TAC courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students with a declared major in computer science, computer science and computer engineering,",
+      "reason": "no_fit",
+      "why": "Eligibility restriction based on other declared programs, not a course requirement."
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "program": "Visual Culture Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AHIS 100g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AHIS 201g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 215g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 220g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 230"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 240g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 250gm"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 255g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 270"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 282"
+              }
+            ]
+          }
+        ],
+        "id": "VISCULT-FOUNDATIONAL",
+        "source_lines": [
+          [
+            25,
+            43
+          ]
+        ],
+        "source_quote": "Foundational Requirements (8 units):",
+        "description": "AHIS 100g plus one additional AHIS course from the listed foundational options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 304gm",
+            "AHIS 319",
+            "AHIS 320",
+            "AHIS 321",
+            "AHIS 322",
+            "AHIS 324",
+            "AHIS 325",
+            "AHIS 363m",
+            "AHIS 364",
+            "AHIS 365m",
+            "AHIS 366g",
+            "AHIS 367g",
+            "AHIS 370g",
+            "AHIS 376",
+            "AHIS 378",
+            "AHIS 381g",
+            "AHIS 382",
+            "AHIS 415",
+            "AHIS 425",
+            "AHIS 427",
+            "AHIS 429",
+            "AHIS 449",
+            "AHIS 465",
+            "AHIS 466",
+            "AHIS 469",
+            "AHIS 470",
+            "AHIS 475m",
+            "AHIS 477",
+            "AHIS 482",
+            "AHIS 486",
+            "AHIS 488",
+            "AHIS 498",
+            "ANTH 263g",
+            "ARCH 442m",
+            "COLT 365",
+            "COLT 480",
+            "COMM 384",
+            "COMM 395m",
+            "COMM 450",
+            "COMM 458m",
+            "COMM 465m",
+            "CTCS 192mg",
+            "CTCS 392",
+            "CTCS 393",
+            "CTCS 394",
+            "CTCS 400",
+            "CTCS 404",
+            "CTCS 412",
+            "FREN 320g",
+            "HIST 225g",
+            "HIST 245mgp",
+            "HIST 380",
+            "HIST 381",
+            "HIST 481",
+            "PHIL 446"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                49,
+                49
+              ]
+            ],
+            "source_quote": "A maximum of two critical electives (8 units) from outside",
+            "eligible_if": {
+              "not": {
+                "prefix": [
+                  "AHIS"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "VISCULT-ADDITIONAL",
+        "source_lines": [
+          [
+            45,
+            105
+          ]
+        ],
+        "source_quote": "Additional Requirements (16 units)",
+        "description": "Four additional courses (16 units) from the approved list, with at most two non-Art-History courses.",
+        "confidence": "high",
+        "note": "AHIS 320's unit value is not printed in the source (L053); assumed to be 4 units like other listed courses."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            107,
+            107
+          ]
+        ],
+        "source_quote": "Total units required: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "More than ever, students of today need",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The minor is open to all undergraduate",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

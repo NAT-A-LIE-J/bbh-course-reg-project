@@ -1,0 +1,210 @@
+{
+  "program": "Customer Analytics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 402"
+          }
+        ],
+        "id": "CA-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "BUAD 307 Marketing Fundamentals Units: 4",
+        "description": "Required courses BUAD 307 and MKT 402.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BAEP 450",
+                "BAEP 451",
+                "DSO 431",
+                "ECON 203g",
+                "ECON 351x",
+                "MKT 405",
+                "MKT 425",
+                "MKT 426",
+                "MKT 445",
+                "MKT 450",
+                "MKT 465",
+                "MKT 488",
+                "BUAD 310g",
+                "BUAD 312g",
+                "PSYC 274Lg",
+                "COMM 301Lg",
+                "DSO 401",
+                "DSO 427",
+                "DSO 428",
+                "JOUR 494",
+                "MKT 401",
+                "TAC 249"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    44,
+                    44
+                  ],
+                  [
+                    46,
+                    67
+                  ]
+                ],
+                "source_quote": "A minimum of 4 units must be taken from each",
+                "eligible_if": {
+                  "courses": [
+                    "BAEP 450",
+                    "BAEP 451",
+                    "DSO 431",
+                    "ECON 203g",
+                    "ECON 351x",
+                    "MKT 405",
+                    "MKT 425",
+                    "MKT 426",
+                    "MKT 445",
+                    "MKT 450",
+                    "MKT 465",
+                    "MKT 488"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    44,
+                    44
+                  ],
+                  [
+                    69,
+                    86
+                  ]
+                ],
+                "source_quote": "A minimum of 4 units must be taken from each",
+                "eligible_if": {
+                  "courses": [
+                    "BUAD 310g",
+                    "BUAD 312g",
+                    "PSYC 274Lg",
+                    "COMM 301Lg",
+                    "DSO 401",
+                    "DSO 427",
+                    "DSO 428",
+                    "JOUR 494",
+                    "MKT 401",
+                    "TAC 249"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "course_reuse",
+            "kind": "UNIQUENESS_FLOOR",
+            "details": {
+              "min_units": 16,
+              "applies_to": "the minor",
+              "includes": [
+                "BUAD 307",
+                "MKT 402"
+              ]
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROGRAM_RULE",
+            "details": {
+              "direction": "EXCLUDES",
+              "applies_to": "courses offered by the student's major department",
+              "min_units": 16
+            }
+          }
+        ],
+        "id": "CA-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            86
+          ]
+        ],
+        "source_quote": "Complete at least 12 units from the lists below",
+        "description": "At least 12 units of electives from two groups, at least 4 units from each group, with uniqueness and major-department constraints.",
+        "confidence": "high",
+        "note": "Asterisked courses (MKT 405, 425, 445, 488) require a prerequisite; not individually checkable beyond course eligibility."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ],
+          [
+            87,
+            87
+          ]
+        ],
+        "source_quote": "This minor requires 20 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "To enroll in this minor, students must have",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit-completion prerequisite, not a course requirement."
+    }
+  ]
+}

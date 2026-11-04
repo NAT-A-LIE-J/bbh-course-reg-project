@@ -1,0 +1,164 @@
+{
+  "program": "Performance Art Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 260"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 462"
+          }
+        ],
+        "id": "PERFART-MIN-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (8 units)",
+        "description": "Two required courses: ART 260 and ART 462.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 361",
+            "ART 362",
+            "ART 460",
+            "ART 461",
+            "ART 463",
+            "ART 484",
+            "CRIT 415",
+            "CRIT 425",
+            "CTAN 452",
+            "CTAN 453",
+            "CTAN 466",
+            "CTAN 495",
+            "CTCS 412",
+            "CTPR 457",
+            "DANC 302g",
+            "DANC 333gw",
+            "DANC 312gw",
+            "DANC 363g",
+            "DANC 342gp",
+            "IML 328",
+            "IML 455",
+            "IML 477",
+            "MUSC 320gmw",
+            "MUSC 372g",
+            "THTR 312",
+            "THTR 395m",
+            "THTR 405m",
+            "THTR 406",
+            "THTR 456",
+            "THTR 460",
+            "THTR 476mw",
+            "THTR 488mw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "PERFART-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            71
+          ]
+        ],
+        "source_quote": "Upper Division Electives* (12 units)",
+        "description": "At least 12 units of upper-division electives from the listed courses across partner schools.",
+        "confidence": "high",
+        "note": "The asterisk recommending a Critical Studies (CRIT) course is advisory, not a requirement; see unclassified."
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "id": "PERFART-MIN-ROSKI-UNIQUENESS",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Roski majors are required to include at least 16 units of electives",
+        "description": "Roski majors must include at least 16 units of electives unique to this minor, not counted toward their major or other Roski courses.",
+        "confidence": "high",
+        "details": {
+          "min_units": 16,
+          "applies_to": "Roski majors, electives unique to this minor"
+        },
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Total number of units required is 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "It is highly recommended to take at least one Critical Studies elective course.",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          38,
+          38
+        ]
+      ],
+      "source_quote": "At least one Critical Studies (CRIT) course highly recommended",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Please consult with your academic adviser before adding this minor.",
+      "reason": "advisory",
+      "why": "Advising suggestion, not a requirement."
+    }
+  ]
+}

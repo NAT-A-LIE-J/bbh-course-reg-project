@@ -1,0 +1,240 @@
+{
+  "program": "Media Arts and Practice (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 150gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 295Lm"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 346"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 466"
+          }
+        ],
+        "id": "MAP-BA-CORE",
+        "source_lines": [
+          [
+            29,
+            42
+          ]
+        ],
+        "source_quote": "CNTV 101 Reality Starts Here Units: 2",
+        "description": "Ten required core studio courses in media arts.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IML 230"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 288"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 328"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 335"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 354"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "IML 400",
+                "IML 404",
+                "IML 428",
+                "IML 430",
+                "IML 435",
+                "IML 436",
+                "IML 454",
+                "IML 481"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "MAP-BA-PLATFORM",
+        "source_lines": [
+          [
+            44,
+            62
+          ]
+        ],
+        "source_quote": "IML 230 Introduction to Visual Design Units: 4",
+        "description": "Six required platform-specific courses plus 8 units from advanced platform electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IML 419",
+            "IML 418",
+            "IML 420m",
+            "IML 421",
+            "IML 422",
+            "IML 423",
+            "IML 424",
+            "IML 425",
+            "IML 427",
+            "IML 450",
+            "IML 452",
+            "IML 453",
+            "IML 455",
+            "IML 456",
+            "IML 458",
+            "IML 460",
+            "IML 475",
+            "IML 477",
+            "IML 493",
+            "IML 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MAP-BA-ELECTIVES",
+        "source_lines": [
+          [
+            64,
+            89
+          ]
+        ],
+        "source_quote": "This requirement allows students to expand their inquiry",
+        "description": "8 units of media arts electives chosen from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "description": "Digital thesis project completed senior year, built from the thesis studio sequence already required."
+        },
+        "id": "MAP-BA-THESIS",
+        "source_lines": [
+          [
+            95,
+            97
+          ]
+        ],
+        "source_quote": "The media arts and practice major culminates in",
+        "description": "Students complete a digital thesis project during senior year as part of the major's culmination.",
+        "confidence": "low",
+        "note": "This largely describes the IML 440/466 thesis studio sequence already counted in Core Studio Courses; no additional checkable requirement."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 66 units is required to",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 66
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "All courses must be taken for a letter",
+      "reason": "out_of_scope",
+      "why": "Grading mode rule, not a course selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          101,
+          101
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) must be",
+      "reason": "out_of_scope",
+      "why": "Grade requirement, handled in Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          105,
+          105
+        ]
+      ],
+      "source_quote": "Media arts and practice majors are expected to",
+      "reason": "advisory",
+      "why": "Advising meeting is a recommendation/procedural expectation, not a course requirement."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "program": "Health Communication Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "COMM 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 385"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 443"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          }
+        ],
+        "id": "HEALTHCOMM-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Required Courses (20 Units)",
+        "description": "Four required courses: COMM 302, COMM 385, COMM 443, and HP 200.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 304",
+            "COMM 308",
+            "COMM 315",
+            "COMM 324mw",
+            "COMM 375",
+            "COMM 402",
+            "COMM 480",
+            "COMM 486",
+            "HP 365gmw",
+            "HP 370g",
+            "HP 401",
+            "HP 402",
+            "HP 408",
+            "HP 420m",
+            "HP 421",
+            "HP 422",
+            "HP 430",
+            "HP 442"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "HEALTHCOMM-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            32,
+            53
+          ]
+        ],
+        "source_quote": "One of the following:",
+        "description": "One additional course chosen from the listed Communication and Health Promotion electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

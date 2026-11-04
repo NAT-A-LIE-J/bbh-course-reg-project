@@ -1,0 +1,396 @@
+{
+  "program": "Astronautical Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "ASTE-BS-MATH",
+        "source_lines": [
+          [
+            46,
+            60
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g, a Calc II option, a Calc III option, and MATH 245.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 162L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 153L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 163L"
+              }
+            ]
+          }
+        ],
+        "id": "ASTE-BS-PHYSICS",
+        "source_lines": [
+          [
+            62,
+            73
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I: Mechanics,",
+        "description": "Three physics sequence courses, each with an honors alternative.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 115aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MASC 110L"
+          }
+        ],
+        "id": "ASTE-BS-CHEM",
+        "source_lines": [
+          [
+            75,
+            81
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4 or",
+        "description": "One chemistry/materials science course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASTE 101L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 331"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 421x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 475"
+          }
+        ],
+        "id": "ASTE-BS-ASTE-CORE",
+        "source_lines": [
+          [
+            87,
+            96
+          ]
+        ],
+        "source_quote": "ASTE 101L Introduction to Astronautics Units: 4",
+        "description": "Six required ASTE courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AME 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 204"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 208"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 308"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 341aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 341bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 441aL"
+          }
+        ],
+        "id": "ASTE-BS-AME-CORE",
+        "source_lines": [
+          [
+            98,
+            110
+          ]
+        ],
+        "source_quote": "AME 201 Statics Units: 4.0",
+        "description": "Nine required AME courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ENGR 102",
+        "id": "ASTE-BS-ENGR",
+        "source_lines": [
+          [
+            112,
+            116
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "ENGR 102 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "TAC 168",
+        "id": "ASTE-BS-TAC",
+        "source_lines": [
+          [
+            118,
+            122
+          ]
+        ],
+        "source_quote": "TAC 168 Introduction to MATLAB Units: 2",
+        "description": "TAC 168 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "unresolved": "any upper division course in engineering except CE 404, CE 412 and ISE 440"
+            },
+            {
+              "all": [
+                {
+                  "unresolved": "upper division course in chemistry, physics or mathematics"
+                },
+                {
+                  "courses": [
+                    "MATH 225"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                128,
+                128
+              ]
+            ],
+            "source_quote": "No more than 3 units of 490 course",
+            "eligible_if": {
+              "unresolved": "490 course work"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "ASTE-BS-TECH-ELECTIVES",
+        "source_lines": [
+          [
+            124,
+            128
+          ]
+        ],
+        "source_quote": "Technical electives consist of (1) any upper",
+        "description": "4 units of technical electives from engineering (excluding certain courses) or from chemistry/physics/math plus MATH 225, with a cap on 490-level units.",
+        "confidence": "medium",
+        "note": "No explicit course list provided; pool described only by rule."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Astronautical Engineering",
+      "reason": "out_of_scope",
+      "why": "Marketing/program description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The requirement for this degree is a",
+      "reason": "university_level",
+      "why": "University-wide total unit count."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "GPA rule; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "See also the common requirements for undergraduate",
+      "reason": "out_of_scope",
+      "why": "Reference to another section, not itself a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          34
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University composition/writing requirement, handled centrally."
+    },
+    {
+      "source_lines": [
+        [
+          36,
+          40
+        ]
+      ],
+      "source_quote": "GE Electives to satisfy the GE-A, B,",
+      "reason": "university_level",
+      "why": "General Education requirement, handled centrally."
+    }
+  ]
+}

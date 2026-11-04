@@ -1,0 +1,348 @@
+{
+  "program": "Applied and Computational Mathematics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "ACM-BA-PREMAJOR",
+        "source_lines": [
+          [
+            21,
+            36
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I",
+        "description": "Calculus I, a Calculus II option, a linear algebra option, and a Calculus III option.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 458"
+          }
+        ],
+        "id": "ACM-BA-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            38,
+            45
+          ]
+        ],
+        "source_quote": "The following two courses are required with a grade",
+        "description": "MATH 407 and MATH 458, each with a grade of C or better.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MATH 408",
+            "MATH 410",
+            "MATH 425a",
+            "MATH 425b",
+            "MATH 430",
+            "MATH 432",
+            "MATH 435",
+            "MATH 445",
+            "MATH 446",
+            "MATH 447",
+            "MATH 466",
+            "MATH 467",
+            "MATH 471",
+            "MATH 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "ACM-BA-MATH-ELECTIVES",
+        "source_lines": [
+          [
+            47,
+            66
+          ]
+        ],
+        "source_quote": "Four MATH courses at the 400-level or above are required",
+        "description": "Four MATH electives at the 400 level or above from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "CSCI 102L",
+                "CSCI 103L",
+                "CSCI 113x",
+                "CSCI 114x",
+                "TAC 115",
+                "TAC 116",
+                "TAC 165",
+                "TAC 168"
+              ]
+            },
+            {
+              "unresolved": "other programming courses approved by academic advisor"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ACM-BA-COMPUTING",
+        "source_lines": [
+          [
+            68,
+            81
+          ]
+        ],
+        "source_quote": "At least one dedicated programming course",
+        "description": "At least one dedicated programming course from the given list or an approved alternative.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AME 301",
+            "AME 404",
+            "ASTE 331a",
+            "ASTE 331b",
+            "ASTR 400",
+            "ASTR 422",
+            "ASTR 424",
+            "BUAD 311",
+            "BUAD 313",
+            "CHE 330",
+            "CHEM 430",
+            "CHEM 431",
+            "CHEM 432",
+            "CSCI 360",
+            "CSCI 467",
+            "CSCI 475",
+            "DSO 424",
+            "DSO 428",
+            "ECON 303",
+            "ECON 305",
+            "ECON 318",
+            "ECON 401",
+            "ECON 404",
+            "ECON 419",
+            "ECON 457",
+            "FBE 435",
+            "FBE 441",
+            "FBE 459",
+            "GEOL 425L",
+            "GEOL 440L",
+            "GEOL 450L",
+            "ISE 330",
+            "ISE 331",
+            "PHYS 304",
+            "PHYS 316",
+            "PHYS 408a",
+            "PHYS 408b",
+            "PSYC 421L",
+            "QBIO 401",
+            "QBIO 478",
+            "AME 201",
+            "AME 204",
+            "ASTE 101L",
+            "ASTE 280",
+            "BME 210",
+            "CE 215",
+            "CE 225",
+            "CHE 120",
+            "CSCI 170",
+            "CSCI 270",
+            "EE 202L",
+            "ISE 220",
+            "ISE 225",
+            "MATH 290",
+            "PHYS 151Lg",
+            "PHYS 152L",
+            "PHYS 153L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                87,
+                87
+              ]
+            ],
+            "source_quote": "At least two of these must be outside the mathematics department",
+            "eligible_if": {
+              "not": {
+                "prefix": [
+                  "MATH"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                87,
+                87
+              ]
+            ],
+            "source_quote": "one of which must be an upper-division course",
+            "eligible_if": {
+              "all": [
+                {
+                  "not": {
+                    "prefix": [
+                      "MATH"
+                    ]
+                  }
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ACM-BA-QUANT-ELECTIVES",
+        "source_lines": [
+          [
+            83,
+            161
+          ]
+        ],
+        "source_quote": "At least three additional courses with significant quantitative content",
+        "description": "At least three courses with significant quantitative content chosen from List A or List B, with at least two outside the math department and at least one of those upper-division.",
+        "confidence": "high",
+        "note": "Courses approved by the department outside the given lists cannot be checked; list limited to printed courses. FBE course prerequisites/waiver note not encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          42,
+          42
+        ]
+      ],
+      "source_quote": "The following two courses are required with a grade of C or better",
+      "reason": "out_of_scope",
+      "why": "Grade requirement; out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          72,
+          72
+        ]
+      ],
+      "source_quote": "contact your academic advisor for requests",
+      "reason": "advisory",
+      "why": "Advisory instruction to contact advisor, not a requirement itself."
+    },
+    {
+      "source_lines": [
+        [
+          138,
+          138
+        ]
+      ],
+      "source_quote": "FBE courses have prerequisites that must be satisfied",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/waiver administrative note, not a degree requirement."
+    }
+  ]
+}

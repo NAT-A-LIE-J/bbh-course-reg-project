@@ -1,0 +1,165 @@
+{
+  "program": "Justice, Voice, and Advocacy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASCJ 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 366"
+          }
+        ],
+        "id": "JVA-MIN-CORE",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "Required Core Courses (8 units)",
+        "description": "Two required core courses: ASCJ 210 and COMM 366.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 307",
+            "COMM 322",
+            "COMM 324mw",
+            "COMM 326",
+            "COMM 360",
+            "COMM 392",
+            "COMM 395m",
+            "COMM 412",
+            "COMM 414",
+            "COMM 415m",
+            "COMM 426",
+            "COMM 450",
+            "COMM 451",
+            "COMM 458m",
+            "COMM 479",
+            "JOUR 465m",
+            "JOUR 466m",
+            "JOUR 467",
+            "JOUR 468",
+            "JOUR 484"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "JVA-MIN-CULTURE-IDENTITY",
+        "source_lines": [
+          [
+            30,
+            55
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following:",
+        "description": "4 units from the Culture and Identity course list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 367",
+            "JOUR 372",
+            "JOUR 406",
+            "JOUR 470",
+            "PR 455"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "JVA-MIN-COMMUNITY-STORYTELLING",
+        "source_lines": [
+          [
+            57,
+            67
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following:",
+        "description": "4 units from the Community Storytelling and Engagement course list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 308",
+            "COMM 310",
+            "COMM 385",
+            "COMM 421",
+            "COMM 465m",
+            "JOUR 460",
+            "JOUR 469",
+            "LAW 320p",
+            "SOCI 408",
+            "SOCI 445"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "JVA-MIN-INSTITUTIONS-POLICY",
+        "source_lines": [
+          [
+            69,
+            84
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following:",
+        "description": "4 units from the Institutions and Policy course list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Requirements for admission are a minimum 3.0 GPA",
+      "reason": "out_of_scope",
+      "why": "GPA and admission standing requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard and",
+      "reason": "out_of_scope",
+      "why": "GPA admission note, not a course requirement."
+    }
+  ]
+}

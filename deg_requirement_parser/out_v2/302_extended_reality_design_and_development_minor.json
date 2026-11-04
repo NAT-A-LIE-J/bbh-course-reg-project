@@ -1,0 +1,103 @@
+{
+  "program": "Extended Reality Design and Development Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 217"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 281"
+          }
+        ],
+        "id": "XRDD-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Students must complete the following 8 units",
+        "description": "Students must complete ACAD 217 and ACAD 281 (8 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 230",
+            "IDSN 539"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "XRDD-TECHCORE",
+        "source_lines": [
+          [
+            34,
+            41
+          ]
+        ],
+        "source_quote": "Students need to complete 4 units from the following",
+        "description": "4 units from ACAD 230 or IDSN 539.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 177",
+            "ACAD 178",
+            "ACAD 180",
+            "ACAD 207",
+            "ACAD 230",
+            "IDSN 537",
+            "IDSN 539"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "XRDD-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            55
+          ]
+        ],
+        "source_quote": "Students need to complete 12 units from the following",
+        "description": "12 units of electives from the listed courses, excluding units already used for the Technical Core.",
+        "confidence": "high",
+        "note": "Technical Core units (ACAD 230, IDSN 539) cannot be double counted toward Electives; enforced by the one-slot rule."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Information on how to apply to the minor",
+      "reason": "out_of_scope",
+      "why": "Application process detail, not a course requirement."
+    }
+  ]
+}

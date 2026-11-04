@@ -1,0 +1,108 @@
+{
+  "program": "Sports Media Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "COMM 381"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 383m"
+          }
+        ],
+        "id": "SMS-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "COMM 381 Issues in Contemporary Sport",
+        "description": "Two required core courses: COMM 381 and COMM 383m.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 300",
+            "COMM 310",
+            "COMM 363",
+            "COMM 387",
+            "COMM 444",
+            "COMM 445",
+            "JOUR 380",
+            "JOUR 432",
+            "MOR 479",
+            "OT 333"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SMS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            49
+          ]
+        ],
+        "source_quote": "Choose four classes from the following:",
+        "description": "Choose four elective courses from the listed Communication, Journalism, Business and Ethics courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            51,
+            51
+          ]
+        ],
+        "source_quote": "Total units: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Requirements for admission are a minimum 3.0 GPA",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit-standing requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard and",
+      "reason": "out_of_scope",
+      "why": "Clarifies admission GPA policy, not a course requirement."
+    }
+  ]
+}

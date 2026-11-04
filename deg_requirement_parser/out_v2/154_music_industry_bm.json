@@ -1,0 +1,517 @@
+{
+  "program": "Music Industry (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPxx 153"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPxx 253"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPxx 353"
+          }
+        ],
+        "id": "MI-BM-INDIVIDUAL-INSTRUCTION",
+        "source_lines": [
+          [
+            55,
+            57
+          ],
+          [
+            41,
+            41
+          ],
+          [
+            136,
+            136
+          ]
+        ],
+        "source_quote": "MPxx 153 Units: 4 units total of individual",
+        "description": "Four units each of individual instruction in primary instrument/voice at the 150, 250 and 350 levels, capped at 16 units of 300-level individual instruction, all in the audition area.",
+        "confidence": "medium",
+        "note": "L041 caps 300-level individual instruction at 16 units total, which does not bind given only MPxx 353 (4 units) is required here; footnote L136 requires all individual instruction be in the student's audition area.",
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                41,
+                41
+              ]
+            ],
+            "source_quote": "Music majors may accumulate a maximum of 16 units",
+            "eligible_if": {
+              "courses": [
+                "MPxx 353"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPKS 250a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 250b"
+          }
+        ],
+        "id": "MI-BM-KEYBOARD",
+        "source_lines": [
+          [
+            58,
+            59
+          ]
+        ],
+        "source_quote": "MPKS 250a Keyboard Instruction I Units: 2",
+        "description": "Keyboard Instruction I, parts a and b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCD 343"
+          }
+        ],
+        "id": "MI-BM-CONDUCTING",
+        "source_lines": [
+          [
+            61,
+            62
+          ]
+        ],
+        "source_quote": "MUCD 340 Choral Conducting I Units: 2 or",
+        "description": "Choral or Instrumental Conducting I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "ensemble electives"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "MI-BM-ENSEMBLE",
+        "source_lines": [
+          [
+            64,
+            64
+          ]
+        ],
+        "source_quote": "Ensemble electives Units: 2 units total",
+        "description": "2 units of ensemble electives, no list given.",
+        "confidence": "low",
+        "note": "No pool of eligible ensemble courses is stated."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          }
+        ],
+        "id": "MI-BM-THEORY-AURAL",
+        "source_lines": [
+          [
+            65,
+            72
+          ]
+        ],
+        "source_quote": "MUCO 132a Aural Skills I Units: 2",
+        "description": "Aural Skills I-II and Theory I-II sequences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUHL 231"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 232"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 331"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 332"
+          }
+        ],
+        "id": "MI-BM-HISTORY",
+        "source_lines": [
+          [
+            73,
+            76
+          ]
+        ],
+        "source_quote": "MUHL 231 Music History Units: 3",
+        "description": "Four music history/culture courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUIN 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 360"
+          }
+        ],
+        "id": "MI-BM-MUIN-CORE",
+        "source_lines": [
+          [
+            77,
+            79
+          ]
+        ],
+        "source_quote": "MUIN 270 Introduction to the Music Industry Units: 4",
+        "description": "Three core Music Industry courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MUIN 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MI-BM-PRACTICUM",
+        "source_lines": [
+          [
+            80,
+            80
+          ]
+        ],
+        "source_quote": "MUIN 450 Practicum in Music Industry Issues",
+        "description": "8 total units of MUIN 450 practicum, variable units per enrollment.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MUIN 370",
+            "MUIN 385",
+            "MUIN 425",
+            "MUIN 430",
+            "MUIN 435",
+            "MUIN 440",
+            "MUIN 443",
+            "MUIN 445",
+            "MUIN 495"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "MI-BM-MUIN-ELECTIVES",
+        "source_lines": [
+          [
+            82,
+            94
+          ]
+        ],
+        "source_quote": "Two courses from the following:",
+        "description": "Two courses from a list of Music Industry electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MTEC 175"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 176"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 275"
+          }
+        ],
+        "id": "MI-BM-MUSIC-TECH-CORE",
+        "source_lines": [
+          [
+            96,
+            102
+          ]
+        ],
+        "source_quote": "MTEC 175 Fundamentals of Audio Recording Units: 2",
+        "description": "Three core Music Technology courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MUIN 287",
+            "MUIN 340",
+            "MTEC 389",
+            "MTEC 392a",
+            "MTEC 392b",
+            "MTEC 442",
+            "MTEC 446a",
+            "MTEC 446b",
+            "MUIN 476a",
+            "MUIN 476b",
+            "MTEC 477",
+            "MTEC 478",
+            "MTEC 479",
+            "MTEC 494",
+            "MUIN 496"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "MI-BM-TECH-ELECTIVES",
+        "source_lines": [
+          [
+            104,
+            122
+          ]
+        ],
+        "source_quote": "6 units from the following:",
+        "description": "6 units from a list of music technology electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "MI-BM-ELECTIVES",
+        "source_lines": [
+          [
+            124,
+            124
+          ]
+        ],
+        "source_quote": "Electives: 6 units",
+        "description": "6 units of free electives.",
+        "confidence": "medium",
+        "note": "No restriction on elective pool is stated."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "requirement": "Junior Recital, 0 units"
+        },
+        "id": "MI-BM-JUNIOR-RECITAL",
+        "source_lines": [
+          [
+            128,
+            128
+          ]
+        ],
+        "source_quote": "Junior Recital: 0 units",
+        "description": "A zero-unit junior recital requirement with no checkable course pool.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "requirement": "Senior recital or culminative project under faculty supervision"
+        },
+        "id": "MI-BM-SENIOR-RECITAL",
+        "source_lines": [
+          [
+            27,
+            29
+          ]
+        ],
+        "source_quote": "All performance majors are required, as indicated",
+        "description": "A senior recital or culminative project, detailed and supervised by department faculty.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "supplementary application, statement of objectives, resume, repertoire list, and performance audition"
+        },
+        "id": "MI-BM-ENTRANCE",
+        "source_lines": [
+          [
+            47,
+            47
+          ]
+        ],
+        "source_quote": "Applicants must submit the Thornton School of Music",
+        "description": "Admission requires application materials and a performance audition.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "It requires eight courses in six Core Literacies,",
+      "reason": "university_level",
+      "why": "University-wide GE requirement restated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "The provost has allowed an exception to the",
+      "reason": "university_level",
+      "why": "GE exceptions for performance/jazz majors are university-level policy, not Music Industry specific."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "In all other respects, students in the Thornton",
+      "reason": "university_level",
+      "why": "Refers students to the general GE requirements page."
+    },
+    {
+      "source_lines": [
+        [
+          53,
+          53
+        ]
+      ],
+      "source_quote": "General education 6 courses",
+      "reason": "university_level",
+      "why": "GE course count is a university-wide requirement sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "Writing 2 courses",
+      "reason": "university_level",
+      "why": "University writing requirement, sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          132,
+          132
+        ]
+      ],
+      "source_quote": "Total required for degree: 132",
+      "reason": "university_level",
+      "why": "Total degree unit count is a university-wide rule."
+    }
+  ]
+}

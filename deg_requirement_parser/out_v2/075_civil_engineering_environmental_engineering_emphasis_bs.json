@@ -1,0 +1,414 @@
+{
+  "program": "Civil Engineering, Environmental Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ],
+            "id": "CE-ENV-CHEM",
+            "source_lines": [
+              [
+                40,
+                45
+              ]
+            ],
+            "source_quote": "CHEM 105aLg General Chemistry Units: 4 * or",
+            "description": "One of CHEM 105aLg or CHEM 115aLg.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 126g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 129"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 226g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 229"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ],
+            "id": "CE-ENV-MATH",
+            "source_lines": [
+              [
+                47,
+                57
+              ]
+            ],
+            "source_quote": "MATH 126g Calculus II Units: 4 * or",
+            "description": "MATH 126g or 129, MATH 226g or 229, and MATH 245.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ],
+            "id": "CE-ENV-PHYSICS",
+            "source_lines": [
+              [
+                59,
+                64
+              ]
+            ],
+            "source_quote": "PHYS 151Lg Fundamentals of Physics I: Mechanics,",
+            "description": "PHYS 151Lg and PHYS 152L.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg",
+            "id": "CE-ENV-BIOLOGY",
+            "source_lines": [
+              [
+                66,
+                72
+              ]
+            ],
+            "source_quote": "BISC 220Lg General Biology: Cell Biology and",
+            "description": "BISC 220Lg, which also satisfies GE-D.",
+            "confidence": "high",
+            "note": "The course also satisfies the GE-D requirement; not separately encoded."
+          }
+        ],
+        "id": "CE-ENV-PREMAJOR",
+        "source_lines": [
+          [
+            36,
+            73
+          ]
+        ],
+        "source_quote": "Pre-Major Requirements",
+        "description": "Chemistry, math, physics and biology pre-major requirements.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGR 102",
+            "id": "CE-ENV-ENGR",
+            "source_lines": [
+              [
+                78,
+                82
+              ]
+            ],
+            "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+            "description": "ENGR 102.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CE 108"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 119"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 215"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 309"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 330"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 358L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 408"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 451"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 456"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 467L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 483"
+              }
+            ],
+            "id": "CE-ENV-CORE",
+            "source_lines": [
+              [
+                84,
+                99
+              ]
+            ],
+            "source_quote": "CE 108 Programming for Civil and Environmental",
+            "description": "Twelve named Civil and Environmental Engineering core courses.",
+            "confidence": "high",
+            "note": "A minimum grade of C in CE 215, CE 225 and CE 309 is required (see L021); grade rule not encoded here."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CE 110"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 363L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 410L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 485"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENE 200"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENE 215"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENE 428"
+              }
+            ],
+            "id": "CE-ENV-EMPHASIS",
+            "source_lines": [
+              [
+                101,
+                111
+              ]
+            ],
+            "source_quote": "CE 110 Introduction to Environmental Engineering Units:",
+            "description": "Seven named Environmental Engineering emphasis courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 330",
+            "id": "CE-ENV-OTHERDEPT",
+            "source_lines": [
+              [
+                113,
+                117
+              ]
+            ],
+            "source_quote": "CHE 330 Chemical Engineering Thermodynamics Units: 4",
+            "description": "CHE 330.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CE 423"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENE 440"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 427"
+              }
+            ],
+            "id": "CE-ENV-ADVCOMPUTING",
+            "source_lines": [
+              [
+                119,
+                127
+              ]
+            ],
+            "source_quote": "Select one course from the following list:",
+            "description": "One course from CE 423, ENE 440, or CE 427.",
+            "confidence": "high",
+            "note": "Students required to take MATH 125g Calculus I are waived from this course; this conditional waiver is not encoded."
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 480",
+            "id": "CE-ENV-CAPSTONE",
+            "source_lines": [
+              [
+                129,
+                133
+              ]
+            ],
+            "source_quote": "CE 480 Civil and Environmental Engineering Capstone",
+            "description": "CE 480 capstone design course.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CE-ENV-MAJOR",
+        "source_lines": [
+          [
+            74,
+            134
+          ]
+        ],
+        "source_quote": "Major Requirements",
+        "description": "Engineering, core, emphasis, other-department, advanced computing, and capstone requirements for the major.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The requirement for the degree with an emphasis",
+      "reason": "university_level",
+      "why": "Total unit count for the degree, a university/program-wide figure."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA/grade rule, out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "a minimum grade of C must be earned",
+      "reason": "out_of_scope",
+      "why": "Per-course grade minimum rule for CE 215, CE 225, CE 309."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See also common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          28
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+      "reason": "university_level",
+      "why": "University-wide writing requirement, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "General Education Units: 20",
+      "reason": "university_level",
+      "why": "University-wide GE requirement."
+    },
+    {
+      "source_lines": [
+        [
+          135,
+          135
+        ]
+      ],
+      "source_quote": "Total units: 134",
+      "reason": "university_level",
+      "why": "Restates the total unit count for the degree."
+    },
+    {
+      "source_lines": [
+        [
+          141,
+          141
+        ]
+      ],
+      "source_quote": "All curricula leading to a degree must be",
+      "reason": "university_level",
+      "why": "Departmental/transfer-credit approval process, procedural and university-level."
+    }
+  ]
+}

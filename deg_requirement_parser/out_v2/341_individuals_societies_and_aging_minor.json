@@ -1,0 +1,97 @@
+{
+  "program": "Individuals, Societies and Aging Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERO 320g"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 340"
+          }
+        ],
+        "id": "ISA-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "GERO 320g Psychology of Adult Development Units: 4",
+        "description": "Three required GERO core courses: GERO 320g, GERO 330, GERO 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GERO 380m",
+            "GERO 416",
+            "GERO 435m",
+            "GERO 437",
+            "GERO 470",
+            "GERO 491"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ISA-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            40
+          ]
+        ],
+        "source_quote": "Select two from the following:",
+        "description": "Select two courses from a list of six GERO electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Upon completion of 20 units and graduation",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor is a fit for students in",
+      "reason": "advisory",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

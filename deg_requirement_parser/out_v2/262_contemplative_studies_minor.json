@@ -1,0 +1,173 @@
+{
+  "program": "Contemplative Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "REL 301",
+        "id": "CONTEMP-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "REL 301 Approaches to the Study of Religion",
+        "description": "Required course REL 301.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 101g",
+            "PHED 120a",
+            "PHED 120b",
+            "PHED 120c",
+            "REL 134g",
+            "REL 135g",
+            "REL 136g",
+            "REL 141g",
+            "REL 146gp"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CONTEMP-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            31,
+            45
+          ]
+        ],
+        "source_quote": "Complete a total of 4 units.",
+        "description": "4 units of lower-division electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 472",
+            "COLT 382gw",
+            "HP 440",
+            "REL 312",
+            "REL 330",
+            "REL 331",
+            "REL 332",
+            "REL 338",
+            "REL 340",
+            "REL 342g",
+            "REL 345p",
+            "REL 350",
+            "REL 415",
+            "REL 431"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CONTEMP-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            47,
+            66
+          ]
+        ],
+        "source_quote": "Complete 8 units.",
+        "description": "8 units of upper-division electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "REL"
+              ]
+            },
+            {
+              "prefix": [
+                "JS"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CONTEMP-MINOR-ADDITIONAL",
+        "source_lines": [
+          [
+            68,
+            72
+          ]
+        ],
+        "source_quote": "Select 4 additional units from Religion or Jewish Studies",
+        "description": "4 additional units from Religion or Jewish Studies chosen in consultation with an adviser.",
+        "confidence": "medium",
+        "note": "Adviser consultation cannot be checked; encoded as prefix-based eligibility only."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Total unit requirement for the minor is 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            74,
+            78
+          ]
+        ],
+        "source_quote": "16 units must be upper-division",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

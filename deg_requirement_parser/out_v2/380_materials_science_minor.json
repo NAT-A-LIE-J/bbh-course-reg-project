@@ -1,0 +1,150 @@
+{
+  "program": "Materials Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "application to Viterbi School of Engineering with departmental approval"
+        },
+        "id": "MASC-MIN-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students must apply to the Viterbi School of",
+        "description": "Students must apply and receive departmental approval to enter the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHE 455"
+              },
+              {
+                "family": "specific_course",
+                "course": "MASC 310L"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 475"
+          },
+          {
+            "family": "specific_course",
+            "course": "MASC 483"
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROGRAM_RULE",
+            "details": {
+              "direction": "ROUTES",
+              "applies_to": "BSAE and BSME students",
+              "courses": [
+                "CHE 455"
+              ]
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROGRAM_RULE",
+            "details": {
+              "direction": "ROUTES",
+              "applies_to": "All other students",
+              "courses": [
+                "MASC 310L"
+              ]
+            }
+          }
+        ],
+        "id": "MASC-MIN-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            34
+          ],
+          [
+            47,
+            51
+          ]
+        ],
+        "source_quote": "CHE 455 Sustainable Materials Units: 4",
+        "description": "Core requirements: CHE 455 or MASC 310L (routed by major), plus CHE 475 and MASC 483.",
+        "confidence": "high",
+        "note": "BSAE/BSME students must take CHE 455 and cannot double-count it as an elective; all other students must take MASC 310L instead. This routing restricts which of the two alternative core courses a student may use."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHE 455",
+            "CHEM 455",
+            "MASC 350L",
+            "MASC 455"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MASC-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            45
+          ]
+        ],
+        "source_quote": "Choose at least 4 units:",
+        "description": "At least 4 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": "CHE 455 cannot be used here if it was already used to satisfy the core requirement, per the one-slot rule; BSAE/BSME students explicitly may not double-count it as an elective."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students are required to complete a minimum of",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A minor in materials science is open to",
+      "reason": "out_of_scope",
+      "why": "Eligibility description of who may take the minor, not a course requirement."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "program": "Popular Music Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MUSC 102gw",
+            "MUSC 200gmw",
+            "MUSC 210g",
+            "MUSC 250gmw",
+            "MUSC 320gmw",
+            "MUSC 373g",
+            "MUSC 422",
+            "MUSC 423",
+            "MUSC 424",
+            "MUSC 444",
+            "MUSC 460",
+            "MUSC 465"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "POPMUSIC-MINOR-COURSES",
+        "source_lines": [
+          [
+            23,
+            40
+          ]
+        ],
+        "source_quote": "Choose 16 units from the following:",
+        "description": "Choose 16 units from the listed MUSC popular music courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students must be in good academic standing to be admitted.",
+      "reason": "university_level",
+      "why": "Academic standing requirement is a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "No previous musical experience is required.",
+      "reason": "advisory",
+      "why": "Informational statement, not a requirement."
+    }
+  ]
+}

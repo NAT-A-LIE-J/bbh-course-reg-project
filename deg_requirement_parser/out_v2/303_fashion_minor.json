@@ -1,0 +1,152 @@
+{
+  "program": "Fashion Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 217",
+            "ACAD 230",
+            "ACAD 245",
+            "ART 110",
+            "DANC 170",
+            "DES 102",
+            "DES 230",
+            "THTR 231",
+            "THTR 233"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "FASHION-MINOR-LOWER",
+        "source_lines": [
+          [
+            35,
+            49
+          ]
+        ],
+        "source_quote": "Complete at least two courses and a minimum of 8 units.",
+        "description": "At least two lower-division courses totaling at least 8 units from the listed fashion-related courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 311",
+            "ART 314",
+            "BAEP 423",
+            "BAEP 450",
+            "BAEP 451",
+            "BAEP 452",
+            "BUAD 307",
+            "COMM 396g",
+            "CRIT 415",
+            "CRIT 425",
+            "DANC 482",
+            "DES 313",
+            "DES 323g",
+            "FDN 405",
+            "FDN 430",
+            "FDN 433",
+            "IDSN 535",
+            "IDSN 537",
+            "IDSN 581",
+            "IDSN 597",
+            "THTR 331",
+            "THTR 418",
+            "THTR 433a",
+            "THTR 433b",
+            "THTR 447",
+            "THTR 448L",
+            "THTR 462"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "FASHION-MINOR-UPPER",
+        "source_lines": [
+          [
+            51,
+            83
+          ]
+        ],
+        "source_quote": "Complete a minimum of 16 units.",
+        "description": "At least 16 units of upper-division courses from the listed fashion-related courses, noting BAEP 450 or BAEP 451 are alternatives.",
+        "confidence": "high",
+        "note": "BAEP 450 and BAEP 451 are presented as alternatives ('or') but both remain eligible list members; choosing either counts toward the unit total."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "The total number of units for the minor is 24.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The combined minor in Fashion recontextualizes the idea",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          27
+        ]
+      ],
+      "source_quote": "ACAD courses introduce students to the ideas",
+      "reason": "out_of_scope",
+      "why": "Descriptive text about course groupings, not an actionable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "The minor also serves as a gateway",
+      "reason": "advisory",
+      "why": "Advisory note about progressive degree options and consulting an adviser."
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "program": "Philosophy, Politics and Economics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 101g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 103g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 174gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 178gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 258g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 260gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 130g"
+          }
+        ],
+        "id": "PPE-BA-LOWERDIV",
+        "source_lines": [
+          [
+            25,
+            37
+          ]
+        ],
+        "source_quote": "Students must complete one of the following courses.",
+        "description": "One lower-division course from the PPE introductory list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 220"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 222g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 452"
+          }
+        ],
+        "id": "PPE-BA-LOGIC",
+        "source_lines": [
+          [
+            39,
+            49
+          ]
+        ],
+        "source_quote": "Students must complete one of the following courses.",
+        "description": "One logic course from the list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 339"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 437"
+          }
+        ],
+        "id": "PPE-BA-PHILECON",
+        "source_lines": [
+          [
+            76,
+            86
+          ]
+        ],
+        "source_quote": "Students must complete one of the following courses.",
+        "description": "One course in Philosophy of Economics, Political or Legal Philosophy.",
+        "confidence": "high",
+        "note": "Courses PHIL 339, PHIL 437 also appear in other lists; one-slot rule applies across requirements."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 311"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 337"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 415"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 416"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 424"
+          }
+        ],
+        "id": "PPE-BA-HISTPHIL",
+        "source_lines": [
+          [
+            87,
+            103
+          ]
+        ],
+        "source_quote": "Students must complete one of the following courses.",
+        "description": "One course in History of Philosophy.",
+        "confidence": "high",
+        "note": "Courses also appear in the Gateway list; the Gateway sentence itself is advisory and not a separate requirement."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 437"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 443"
+          }
+        ],
+        "id": "PPE-BA-MORALPHIL",
+        "source_lines": [
+          [
+            105,
+            114
+          ]
+        ],
+        "source_quote": "Students must complete one of the following courses.",
+        "description": "One course in Moral Philosophy.",
+        "confidence": "high",
+        "note": "PHIL 437 is shared with the Philosophy of Economics list; one-slot rule prevents double counting."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "POSC"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "POSC 390",
+                      "POSC 391",
+                      "POSC 392",
+                      "POSC 395",
+                      "POSC 398L",
+                      "POSC 410x",
+                      "POSC 420",
+                      "POSC 490x"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "courses": [
+                "IR 309"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PPE-BA-UPPERPOSC",
+        "source_lines": [
+          [
+            116,
+            122
+          ]
+        ],
+        "source_quote": "Students must complete any two 4-unit upper-division POSC courses",
+        "description": "Two upper-division POSC courses (excluding internship/research/topics/seminar courses), or IR 309 may substitute.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          }
+        ],
+        "id": "PPE-BA-ECONCORE",
+        "source_lines": [
+          [
+            124,
+            131
+          ]
+        ],
+        "source_quote": "Students must complete the following two courses in economics.",
+        "description": "ECON 203g and ECON 317.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 399
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "ECON 317"
+                    ]
+                  }
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": "ECON 203g and ECON 317",
+              "after": "300-level ECON course"
+            }
+          }
+        ],
+        "id": "PPE-BA-UPPERECON",
+        "source_lines": [
+          [
+            133,
+            137
+          ]
+        ],
+        "source_quote": "Students must complete one 4-unit, 300-level ECON course",
+        "description": "One 300-level ECON course taken after ECON 203g and ECON 317.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 475"
+          },
+          {
+            "family": "manual_review",
+            "kind": "DISCRETIONARY",
+            "details": {
+              "action": "SUBSTITUTE",
+              "approver": "department",
+              "context": "when capstone course is not offered, an acceptable equivalent may be substituted"
+            }
+          }
+        ],
+        "id": "PPE-BA-CAPSTONE",
+        "source_lines": [
+          [
+            139,
+            145
+          ]
+        ],
+        "source_quote": "Students must complete the following capstone course.",
+        "description": "PHIL 475, or an approved equivalent if not offered.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          55,
+          55
+        ]
+      ],
+      "source_quote": "One lower-division POSC course is strongly recommended",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          61,
+          61
+        ]
+      ],
+      "source_quote": "Completing a gateway course is recommended prior",
+      "reason": "advisory",
+      "why": "Recommendation; the listed courses already count toward other requirements where eligible."
+    },
+    {
+      "source_lines": [
+        [
+          151,
+          151
+        ]
+      ],
+      "source_quote": "Majors may graduate with departmental honors by",
+      "reason": "out_of_scope",
+      "why": "Honors GPA/capstone rule, not a core degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          151,
+          151
+        ]
+      ],
+      "source_quote": "we recommend having completed two other 400-level",
+      "reason": "advisory",
+      "why": "Advisory recommendation about course ordering."
+    }
+  ]
+}

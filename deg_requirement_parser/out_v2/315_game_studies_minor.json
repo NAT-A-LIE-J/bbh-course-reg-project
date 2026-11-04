@@ -1,0 +1,205 @@
+{
+  "program": "Game Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "permission from Interactive Media and Games Division and Change of Major/Minor form"
+        },
+        "id": "GAME-MINOR-GATE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To be eligible for the game studies minor",
+        "description": "Students must be in good academic standing, have a declared major, get division permission, and submit a change of major/minor form.",
+        "confidence": "high",
+        "note": "Good academic standing is a university-level rule covered separately."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 190"
+          }
+        ],
+        "id": "GAME-MINOR-LOWER-CORE",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Lower-division Core Units (6 Units)",
+        "description": "Lower-division core: CTIN 101 and CTIN 190.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 462"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 464"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          }
+        ],
+        "id": "GAME-MINOR-UPPER-CORE",
+        "source_lines": [
+          [
+            36,
+            42
+          ]
+        ],
+        "source_quote": "Upper-division Core Units (10 Units)",
+        "description": "Upper-division core: CTIN 462, CTIN 464, CTIN 488.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 363m",
+            "AHIS 429",
+            "ANTH 123gp",
+            "COMM 340",
+            "COMM 350",
+            "CTCS 367",
+            "CTCS 412",
+            "CTCS 469",
+            "CTCS 478",
+            "CTCS 482",
+            "CTIN 289",
+            "CTIN 463",
+            "CTIN 492L",
+            "CTWR 410L",
+            "HIST 380",
+            "IML 466",
+            "JOUR 381",
+            "THTR 395m",
+            "THTR 403",
+            "THTR 405m",
+            "THTR 406",
+            "THTR 488mw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "GAME-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            69
+          ]
+        ],
+        "source_quote": "Electives (8 Additional Units)",
+        "description": "8 additional elective units from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 24 units is required for",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "at least 6 lower-division units and at least 14 upper-division units",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "at least 6 lower-division units and at least 14 upper-division units",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "a student must be in good academic standing",
+      "reason": "university_level",
+      "why": "Good academic standing is a university-wide eligibility rule."
+    },
+    {
+      "source_lines": [
+        [
+          77,
+          77
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each",
+      "reason": "out_of_scope",
+      "why": "Grade requirement."
+    }
+  ]
+}

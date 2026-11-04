@@ -1,0 +1,115 @@
+{
+  "program": "Video Game Production Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 180"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 181"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 393"
+          }
+        ],
+        "id": "VGP-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "Complete the following (8 units)",
+        "description": "Complete TAC 180, TAC 181 and TAC 393.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 409"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 409"
+          }
+        ],
+        "id": "VGP-MINOR-CHOICE",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "Choose one of the following (2 units)",
+        "description": "Choose CTIN 409 or TAC 409.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUAD 304",
+            "BUAD 315x",
+            "COMM 320",
+            "CTIN 190",
+            "CTIN 291",
+            "CTIN 391",
+            "CTIN 404L",
+            "CTIN 458",
+            "CTIN 468",
+            "ISE 315L",
+            "MOR 473",
+            "TAC 101",
+            "TAC 215L",
+            "TAC 249",
+            "TAC 310",
+            "TAC 351",
+            "TAC 361",
+            "TAC 371"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "VGP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            64
+          ]
+        ],
+        "source_quote": "Electives (6 units minimum)",
+        "description": "At least 6 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Video games have become the largest category",
+      "reason": "out_of_scope",
+      "why": "Marketing/introductory text, not a requirement."
+    }
+  ]
+}

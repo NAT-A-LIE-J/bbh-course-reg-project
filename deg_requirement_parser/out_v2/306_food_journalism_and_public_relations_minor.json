@@ -1,0 +1,76 @@
+{
+  "program": "Food Journalism and Public Relations Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 457"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 444"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 445"
+          }
+        ],
+        "id": "FJPR-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "JOUR 457 Food of Our Families Units: 4",
+        "description": "Four required core courses: JOUR 457, JOUR 458, PR 444, PR 445.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 343",
+            "ANTH 312",
+            "ANTH 338g",
+            "COMM 405",
+            "HP 230",
+            "HP 430",
+            "PR 464",
+            "SPAN 385",
+            "SPAN 396",
+            "SPAN 409",
+            "SWMS 389"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "FJPR-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            48
+          ]
+        ],
+        "source_quote": "Choose at least 4 units from the following",
+        "description": "At least 4 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

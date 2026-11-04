@@ -1,0 +1,80 @@
+{
+  "program": "Education Policy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EDUC 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 432"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 315"
+          }
+        ],
+        "id": "EDPOLMIN-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (16 units)",
+        "description": "Four required courses: EDUC 431, EDUC 432, PPD 225 and PPD 315.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PPD 240g",
+            "PPD 300",
+            "PPD 303"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "EDPOLMIN-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            40
+          ]
+        ],
+        "source_quote": "Electives (4 units)",
+        "description": "4 units of electives chosen from the three listed PPD courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The 20-unit minor is designed to equip",
+      "reason": "university_level",
+      "why": "Total unit count for the minor is a programme-wide descriptive statement, not a separately checkable rule."
+    }
+  ]
+}

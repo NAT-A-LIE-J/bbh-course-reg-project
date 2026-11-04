@@ -1,0 +1,231 @@
+{
+  "program": "Game Development and Interactive Design (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 150gw"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CTIN 101"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 165"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 190"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 289"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 290"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 291"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 389"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 391"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 489L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 410L"
+          }
+        ],
+        "id": "GDID-BFA-CORE",
+        "source_lines": [
+          [
+            23,
+            42
+          ]
+        ],
+        "source_quote": "CNTV 101 Reality Starts Here",
+        "description": "Required core courses including a choice between CTIN 101 and TAC 165.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 426",
+            "CTAN 452",
+            "CTIN 401L",
+            "CTIN 404L",
+            "CTIN 406L",
+            "CTIN 409",
+            "CTIN 411",
+            "CTIN 412",
+            "CTIN 420",
+            "CTIN 444",
+            "CTIN 452L",
+            "CTIN 478",
+            "CTIN 480",
+            "CTIN 482",
+            "CTIN 485",
+            "CTIN 486",
+            "CTIN 487",
+            "CTIN 497",
+            "TAC 215L",
+            "TAC 361"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "GDID-BFA-PROFESSIONAL-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            69
+          ]
+        ],
+        "source_quote": "At least 6 units from the following list:",
+        "description": "At least 6 units of professional electives from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTCS 478"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 482"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 462"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 463"
+          }
+        ],
+        "id": "GDID-BFA-THEORY",
+        "source_lines": [
+          [
+            71,
+            80
+          ]
+        ],
+        "source_quote": "At least one of the following courses:",
+        "description": "At least one theory course from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 459L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 491L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 492L"
+          }
+        ],
+        "id": "GDID-BFA-CAPSTONE",
+        "source_lines": [
+          [
+            82,
+            90
+          ]
+        ],
+        "source_quote": "One of the following courses:",
+        "description": "One capstone course from the given list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "including a minimum of 56 units in the major",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 56
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The degree requires 128 units, including a",
+      "reason": "university_level",
+      "why": "University-wide 128-unit total requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Undergraduate students take their pre-professional courses in",
+      "reason": "university_level",
+      "why": "General education requirement, handled separately."
+    }
+  ]
+}

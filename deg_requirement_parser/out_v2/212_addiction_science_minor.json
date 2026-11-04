@@ -1,0 +1,154 @@
+{
+  "program": "Addiction Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ADSC 250"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 410"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "RXRS 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "RXRS 405"
+              },
+              {
+                "family": "specific_course",
+                "course": "RXRS 414"
+              }
+            ]
+          }
+        ],
+        "id": "ASC-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            39
+          ]
+        ],
+        "source_quote": "Required Courses (12 units total)",
+        "description": "ADSC 250, HP 410, and one of RXRS 302/405/414, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROCEDURAL",
+        "details": {
+          "procedure": "Students interested in the research track must complete an online questionnaire declaring their research topic/interests at least one semester before enrolling in Directed Research, so a faculty research supervisor can be assigned."
+        },
+        "id": "ASC-RESEARCH-TRACK",
+        "source_lines": [
+          [
+            41,
+            54
+          ]
+        ],
+        "source_quote": "Students enrolled in the minor in Addiction Science may elect to complete this minor via the research track.",
+        "description": "Optional research track pathway requiring advance declaration of research interests before enrolling in Directed Research (RXRS 490x or HP 490x), which counts toward the elective requirement below.",
+        "confidence": "medium",
+        "note": "The RXRS 490x / HP 490x courses are already captured in the electives pool (ASC-ELECTIVES); this node only encodes the procedural/timing requirement, which cannot be checked from a course list."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "RXRS 490x",
+            "HP 490x",
+            "HP 340Lg",
+            "PSYC 426",
+            "RXRS 201p",
+            "RXRS 202w",
+            "RXRS 302",
+            "RXRS 405",
+            "RXRS 414",
+            "SOWK 417"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ASC-ELECTIVES",
+        "source_lines": [
+          [
+            55,
+            68
+          ]
+        ],
+        "source_quote": "(4-8 units) Any of the above Research Track courses, OR",
+        "description": "8 units of electives from the Research Track courses or the listed elective courses.",
+        "confidence": "high",
+        "note": "Courses taken as required courses cannot be double-counted as electives (L074); since only one of RXRS 302/405/414 is used for the required choice, the other two remain eligible as electives."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor is 20 units in total",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The USC Institute for Addiction Science supports collaborative research",
+      "reason": "out_of_scope",
+      "why": "Programme/institute marketing description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          50,
+          50
+        ]
+      ],
+      "source_quote": "(4 units over two semesters; 2 units per semester)",
+      "reason": "out_of_scope",
+      "why": "Timing/distribution detail of Directed Research units not expressible as a course or unit threshold check."
+    },
+    {
+      "source_lines": [
+        [
+          53,
+          53
+        ]
+      ],
+      "source_quote": "(4 units over two semesters; 2 units per semester)",
+      "reason": "out_of_scope",
+      "why": "Same timing detail repeated for HP 490x."
+    }
+  ]
+}

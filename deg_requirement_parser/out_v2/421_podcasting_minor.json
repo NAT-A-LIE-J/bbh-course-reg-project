@@ -1,0 +1,99 @@
+{
+  "program": "Podcasting Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTPR 404"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 412"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 318"
+          }
+        ],
+        "id": "PODCAST-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "CTPR 404 Practicum in Podcast Production Units: 2",
+        "description": "Five required courses: CTPR 404, CTWR 403, JOUR 407, JOUR 412, THTR 318.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 383m",
+            "COMM 422",
+            "COMM 458m",
+            "CTCS 411",
+            "CTPR 407",
+            "IML 328",
+            "IML 428",
+            "JOUR 411",
+            "JOUR 472",
+            "PR 486",
+            "THTR 306",
+            "THTR 489"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PODCAST-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            50
+          ]
+        ],
+        "source_quote": "Choose at least 4 units from the following",
+        "description": "At least 4 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            52,
+            52
+          ]
+        ],
+        "source_quote": "Units Required: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,103 @@
+{
+  "program": "Russian Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RUSS 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 220"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "RUSS 250"
+              },
+              {
+                "family": "specific_course",
+                "course": "RUSS 255"
+              }
+            ]
+          }
+        ],
+        "id": "RUSS-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Lower-division requirements for the major (RUSS 120",
+        "description": "RUSS 120, RUSS 150, RUSS 220, and either RUSS 250 or RUSS 255.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "RUSS 310",
+            "RUSS 340",
+            "SLL 321",
+            "RUSS 465",
+            "SLL 110g",
+            "SLL 330gp",
+            "SLL 344g",
+            "SLL 345g",
+            "SLL 348g",
+            "SLL 378",
+            "MDA 305"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "RUSS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "plus three elective courses chosen from the following",
+        "description": "Three elective courses from a list spanning four areas (Russian language, Russian literature/culture in Russian, Russian literature/art/culture in translation, and translation), with at least two areas represented.",
+        "confidence": "medium",
+        "note": "The requirement that at least two of the four areas must be represented cannot be expressed with a simple threshold check (it is not 'one from each group' nor a department count), since areas do not correspond to course prefixes; left unchecked and noted here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Minimum units required: 28",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

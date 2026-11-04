@@ -1,0 +1,81 @@
+{
+  "program": "Urban Sustainable Planning Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 245g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 427L"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 425"
+          }
+        ],
+        "id": "USP-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required Core Courses (12 units)",
+        "description": "Three required core courses: PPD 245g, PPD 427L, RED 425.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PPD 227",
+            "PPD 358",
+            "PPD 360",
+            "PPD 361",
+            "PPD 414",
+            "PPD 438",
+            "PPD 439",
+            "RED 417"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "USP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            42
+          ]
+        ],
+        "source_quote": "Electives (8 units)",
+        "description": "8 units of electives chosen from the listed PPD/RED courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The 20-unit minor in urban sustainable planning",
+      "reason": "university_level",
+      "why": "Overall unit total rule, redundant with core+elective sums and reused from STARS."
+    }
+  ]
+}

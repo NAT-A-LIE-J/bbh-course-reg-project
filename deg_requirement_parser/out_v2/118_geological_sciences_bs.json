@@ -1,0 +1,257 @@
+{
+  "program": "Geological Sciences (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GEOL 105Lg",
+            "GEOL 107Lg",
+            "GEOL 108Lg",
+            "GEOL 125Lg",
+            "GEOL 130Lg",
+            "GEOL 150Lg",
+            "GEOL 240Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "GEOL-BS-INTRO",
+        "source_lines": [
+          [
+            25,
+            39
+          ]
+        ],
+        "source_quote": "Any GEOL 100- or 200-level course (4 units)",
+        "description": "One GEOL 100- or 200-level course for 4 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 151Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 152L"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 120Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 220Lg"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 121Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 221Lg"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "GEOL-BS-OTHER-DEPTS",
+        "source_lines": [
+          [
+            41,
+            58
+          ]
+        ],
+        "source_quote": "Required courses from other departments (24 units)",
+        "description": "Chemistry, Calculus I and II, Physics, and Biology sequences from other departments.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GEOL 315L"
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 387ag"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "GEOL 465L"
+              },
+              {
+                "family": "specific_course",
+                "course": "GEOL 490x"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 494x"
+          }
+        ],
+        "id": "GEOL-BS-UPPER-DIV",
+        "source_lines": [
+          [
+            60,
+            70
+          ]
+        ],
+        "source_quote": "Required upper-division courses (12 units)",
+        "description": "GEOL 315L, GEOL 387ag, GEOL 465L or GEOL 490x (4 units), and GEOL 494x.",
+        "confidence": "medium",
+        "note": "GEOL 490x requires 4 units specifically when chosen, per 'Units: 1,2,3,4,5,6,7,8 (4 Units Required)'; not separately checkable as a threshold within a choose."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "MATH 225",
+                "MATH 226"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "GEOL"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ],
+        "id": "GEOL-BS-ELECTIVES",
+        "source_lines": [
+          [
+            72,
+            82
+          ]
+        ],
+        "source_quote": "28 additional units must be selected from MATH",
+        "description": "28 units from MATH 225, MATH 226, or upper-division GEOL courses.",
+        "confidence": "medium",
+        "note": "Asterisk note allows up to two courses from other science departments to be substituted with adviser approval; this is a discretionary substitution not encoded as a separate node."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "Total units: 68",
+      "reason": "university_level",
+      "why": "Total unit count is a university/program-wide total handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Up to two upper-division courses from other science",
+      "reason": "no_fit",
+      "why": "Discretionary substitution approved by adviser cannot be expressed as a course-list check."
+    }
+  ]
+}

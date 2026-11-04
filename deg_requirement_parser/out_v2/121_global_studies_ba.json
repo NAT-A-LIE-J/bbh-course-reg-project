@@ -1,0 +1,194 @@
+{
+  "program": "Global Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ANTH 205g",
+        "id": "GS-BA-INTRO",
+        "source_lines": [
+          [
+            49,
+            53
+          ]
+        ],
+        "source_quote": "ANTH 205g Introduction to Global Studies and Cross-cultural",
+        "description": "Students take ANTH 205g as the introductory course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 375"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 410"
+          }
+        ],
+        "id": "GS-BA-RESEARCH-METHODS",
+        "source_lines": [
+          [
+            55,
+            64
+          ]
+        ],
+        "source_quote": "ANTH 325 Mixed Methods Research for Global and",
+        "description": "ANTH 325 is the required research methods course; ANTH 375 or ANTH 410 may substitute with prior adviser or faculty approval.",
+        "confidence": "medium",
+        "note": "ANTH 375 and ANTH 410 require prior adviser or faculty approval, which cannot be checked."
+      },
+      {
+        "family": "specific_course",
+        "course": "ANTH 415",
+        "id": "GS-BA-GLOBAL-ISSUES",
+        "source_lines": [
+          [
+            66,
+            70
+          ]
+        ],
+        "source_quote": "ANTH 415 Global Issues Seminar Units: 4",
+        "description": "Students take ANTH 415, the Global Issues Seminar.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "humanities and social sciences coursework chosen within the student's thematic or regional focus, including coursework in other departments or study abroad, approved by adviser or faculty"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "GS-BA-ELECTIVES",
+        "source_lines": [
+          [
+            72,
+            80
+          ]
+        ],
+        "source_quote": "Global Studies Majors must complete at least 16",
+        "description": "At least 16 units of elective coursework in humanities and social sciences within the student's thematic or regional focus.",
+        "confidence": "low",
+        "note": "No defined course list; pool is adviser/faculty-approved coursework, possibly from other departments or study abroad."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 485"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 470"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 490x"
+          }
+        ],
+        "id": "GS-BA-CAPSTONE",
+        "source_lines": [
+          [
+            82,
+            94
+          ]
+        ],
+        "source_quote": "ANTH 485 Global Studies Capstone Seminar Units: 4",
+        "description": "ANTH 485 is the capstone seminar; ANTH 411, ANTH 470, or ANTH 490x may substitute with prior adviser or faculty approval.",
+        "confidence": "medium",
+        "note": "Alternate capstone courses require prior adviser or faculty approval, which cannot be checked."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "requirement": "Satisfy level IV, or the equivalent, of at least one foreign language."
+        },
+        "id": "GS-BA-LANGUAGE",
+        "source_lines": [
+          [
+            39,
+            43
+          ]
+        ],
+        "source_quote": "Satisfy level IV, or the equivalent, of",
+        "description": "Students must satisfy level IV (or equivalent) of at least one foreign language.",
+        "confidence": "high",
+        "note": "No course list or checkable rule is given for language proficiency."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "requirement": "Curricular experiential learning, such as a semester of study abroad, an intensive internship, or equivalent."
+        },
+        "id": "GS-BA-EXPERIENTIAL",
+        "source_lines": [
+          [
+            33,
+            37
+          ]
+        ],
+        "source_quote": "students in the Global Studies major are expected",
+        "description": "Students are expected to engage in curricular experiential learning such as study abroad or an internship.",
+        "confidence": "low",
+        "note": "Stated as an expectation with no checkable course-based rule; kept as manual review rather than discarded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "The Global Studies Major requires 8 courses (32",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 8
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "Your academic adviser, or the Anthropology Director",
+      "reason": "advisory",
+      "why": "Advisory statement about seeking guidance, not a requirement."
+    }
+  ]
+}

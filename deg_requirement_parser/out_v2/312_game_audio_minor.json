@@ -1,0 +1,203 @@
+{
+  "program": "Game Audio Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 277x"
+          }
+        ],
+        "id": "GAMEAUDIO-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Lower-division Core Units (6 Units)",
+        "description": "Lower-division core: CTIN 101 and MTEC 277x.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 406L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 444"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 491L"
+          }
+        ],
+        "id": "GAMEAUDIO-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            36,
+            43
+          ]
+        ],
+        "source_quote": "Upper-division Core Units (12 Units)",
+        "description": "Upper-division core: CTIN 406L, CTIN 444, CTIN 488, CTIN 491L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTIN 289",
+            "CTIN 486",
+            "CTIN 492L",
+            "CTIN 493L",
+            "CTPR 473",
+            "MTEC 245",
+            "MTEC 246",
+            "MTEC 446a",
+            "MTEC 474a",
+            "MTEC 478",
+            "MUCO 221ax",
+            "THTR 336"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                45,
+                45
+              ]
+            ],
+            "source_quote": "At Least 4 Upper-division",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "GAMEAUDIO-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            45,
+            60
+          ]
+        ],
+        "source_quote": "Electives (Minimum 6 Additional Units, At Least",
+        "description": "At least 6 additional units of electives from the list, of which at least 4 units must be upper-division.",
+        "confidence": "medium",
+        "note": "Some elective courses (CTIN 493L, MTEC 478) require a prerequisite per the note; not separately encoded as a check."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A minimum of 24 units is required for",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "a minimum of 16 upper-division units",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To be eligible for the Game Audio minor, a student must be in good academic standing",
+      "reason": "out_of_scope",
+      "why": "Admission/standing rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To declare the Game Audio minor a student must get permission from the Interactive Media Division",
+      "reason": "university_level",
+      "why": "Declaration/administrative procedure, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          66,
+          66
+        ]
+      ],
+      "source_quote": "*Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note on electives, not a programme-level requirement to encode."
+    },
+    {
+      "source_lines": [
+        [
+          68,
+          70
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each course is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    }
+  ]
+}

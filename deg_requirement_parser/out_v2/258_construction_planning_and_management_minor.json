@@ -1,0 +1,170 @@
+{
+  "program": "Construction Planning and Management Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CE 460"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 470"
+          }
+        ],
+        "id": "CPM-MINOR-CORE",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "CE 460 Construction Engineering Units: 4",
+        "description": "Both core courses CE 460 and CE 470 are required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 357"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 358"
+              }
+            ],
+            "id": "CPM-MINOR-THEME-ONE",
+            "source_lines": [
+              [
+                42,
+                47
+              ]
+            ],
+            "source_quote": "PPD 357 Government and Business Units: 4",
+            "description": "Theme One: both PPD 357 and PPD 358.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "FBE 400x"
+              },
+              {
+                "family": "specific_course",
+                "course": "FBE 466"
+              }
+            ],
+            "id": "CPM-MINOR-THEME-TWO",
+            "source_lines": [
+              [
+                49,
+                54
+              ]
+            ],
+            "source_quote": "FBE 400x Introduction to Real Estate Finance",
+            "description": "Theme Two: both FBE 400x and FBE 466.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CPM-MINOR-THEME",
+        "source_lines": [
+          [
+            36,
+            40
+          ]
+        ],
+        "source_quote": "Two courses, both from Theme One or",
+        "description": "Students must complete both courses from either Theme One or Theme Two.",
+        "confidence": "high",
+        "note": "Students electing PPD or FBE courses must satisfy prerequisites (see note line 76), not encoded here."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CE 412",
+            "CE 461",
+            "CE 462",
+            "CE 469",
+            "RED 437"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "CPM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            56,
+            66
+          ]
+        ],
+        "source_quote": "Select at least 6 units from the",
+        "description": "At least 6 units of electives from the listed CE/RED courses.",
+        "confidence": "high",
+        "note": "Students electing RED courses must satisfy prerequisites (see note line 76), not encoded here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Six courses consisting of at least 22",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 6
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 22
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Any USC undergraduate who has completed the",
+      "reason": "university_level",
+      "why": "General eligibility rule for pursuing a minor, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          76,
+          76
+        ]
+      ],
+      "source_quote": "Students electing FBE, PPD, or RED courses",
+      "reason": "out_of_scope",
+      "why": "Prerequisite satisfaction rule, not a course-selection requirement."
+    }
+  ]
+}

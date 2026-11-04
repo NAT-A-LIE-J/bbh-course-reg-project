@@ -1,0 +1,383 @@
+{
+  "program": "Animation and Digital Arts (BFA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 101L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 150gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 220"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 438"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 207a"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 201L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 202L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 336"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 401a"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTAN 401b"
+          }
+        ],
+        "id": "ADA-CORE-SEQUENCE",
+        "source_lines": [
+          [
+            31,
+            104
+          ]
+        ],
+        "source_quote": "## Four-Year Major Requirements (59 units)",
+        "description": "The fixed sequence of required core courses across all four years of the program.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHED 104a",
+            "PHED 104b",
+            "PHED 120a",
+            "PHED 120b",
+            "DANC 181a",
+            "DANC 181b",
+            "DANC 184a",
+            "DANC 184b",
+            "DANC 184c",
+            "DANC 188a",
+            "DANC 188b",
+            "DANC 189a",
+            "DANC 189b",
+            "THTR 122",
+            "THTR 216"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ADA-MOVEMENT-ELECTIVE",
+        "source_lines": [
+          [
+            43,
+            43
+          ],
+          [
+            106,
+            139
+          ]
+        ],
+        "source_quote": "Take two units of movement classes from the PHED/DANC/THTR courses listed below",
+        "description": "Two units of movement classes chosen from the listed PHED, DANC, or THTR courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTCS 192mg",
+            "CTCS 392",
+            "CTCS 393",
+            "CTCS 400",
+            "CTCS 403",
+            "CTCS 407",
+            "CTCS 409",
+            "CTCS 411",
+            "CTCS 412",
+            "CTCS 464",
+            "CTCS 469",
+            "CTCS 482"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ADA-CTCS-ELECTIVE",
+        "source_lines": [
+          [
+            89,
+            89
+          ],
+          [
+            140,
+            156
+          ]
+        ],
+        "source_quote": "Take one CTCS course from the *list below",
+        "description": "One CTCS course chosen from the designated list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "UNIT_WINDOW",
+        "details": {
+          "courses": "core animation sequence",
+          "within_units": 59
+        },
+        "id": "ADA-PRESCRIBED-ORDER",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "59 of these units taken in a prescribed sequential order",
+        "description": "59 units of the core sequence must be completed in the prescribed order.",
+        "confidence": "medium",
+        "note": "Cannot verify exact ordering constraints from course list alone."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "SENIOR_PROJECT_ENTRY",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "faculty committee approval to progress into CTAN 401a and CTAN 401b"
+        },
+        "id": "ADA-SENIOR-PROJECT-GATE",
+        "source_lines": [
+          [
+            167,
+            171
+          ]
+        ],
+        "source_quote": "Progression into CTAN 401a , CTAN 401b is contingent upon faculty committee approval.",
+        "description": "Students must obtain faculty committee approval to progress from CTAN 336 into CTAN 401a/401b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROCEDURAL",
+        "details": {
+          "procedure": "Students must submit written and visual documentation of research (paper, website, or interactive DVD) alongside the senior project."
+        },
+        "id": "ADA-SENIOR-PROJECT-DOCUMENTATION",
+        "source_lines": [
+          [
+            179,
+            179
+          ]
+        ],
+        "source_quote": "In addition to completion of the senior project, the student must provide",
+        "description": "Students must provide written/visual documentation of their senior project research.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A total of 128 units is required for the completion",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "There are no spring admissions.",
+      "reason": "out_of_scope",
+      "why": "Admissions logistics, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Each fall, a class of 16 undergraduate animation",
+      "reason": "out_of_scope",
+      "why": "Cohort size is an admissions detail, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Applicants must submit a supplemental application and materials",
+      "reason": "out_of_scope",
+      "why": "Admissions process, not a degree completion requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          29
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, handled separately."
+    },
+    {
+      "source_lines": [
+        [
+          165,
+          165
+        ]
+      ],
+      "source_quote": "Areas of concentration might include character animation",
+      "reason": "advisory",
+      "why": "Describes optional focus areas, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          171,
+          173
+        ]
+      ],
+      "source_quote": "This project will focus on an area of concentration",
+      "reason": "no_fit",
+      "why": "Descriptive narrative about project content, not a checkable course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          175,
+          177
+        ]
+      ],
+      "source_quote": "Completion is defined as a fully rendered",
+      "reason": "no_fit",
+      "why": "Defines qualitative completion criteria for the senior project, not expressible as a course/unit check."
+    },
+    {
+      "source_lines": [
+        [
+          185,
+          185
+        ]
+      ],
+      "source_quote": "A minimum grade of C, 2.0 (A = 4.0), must be earned",
+      "reason": "out_of_scope",
+      "why": "Grade requirement."
+    },
+    {
+      "source_lines": [
+        [
+          187,
+          187
+        ]
+      ],
+      "source_quote": "Students who do not earn the minimum grade of C",
+      "reason": "out_of_scope",
+      "why": "Grade/disqualification rule."
+    },
+    {
+      "source_lines": [
+        [
+          193,
+          193
+        ]
+      ],
+      "source_quote": "Registration in graduate-level courses (numbered 500 and above)",
+      "reason": "out_of_scope",
+      "why": "Approval-based enrollment restriction on optional graduate coursework."
+    },
+    {
+      "source_lines": [
+        [
+          199,
+          199
+        ]
+      ],
+      "source_quote": "Cinematic arts majors are expected to meet with an adviser",
+      "reason": "advisory",
+      "why": "Advising recommendation, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "program": "Advertising Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PR 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 432"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 433"
+          }
+        ],
+        "id": "ADV-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "PR 340 Introduction to Advertising Units: 4",
+        "description": "Four required courses: PR 340, PR 431, PR 432, and PR 433.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MKT 406"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 434"
+          }
+        ],
+        "id": "ADV-MINOR-CHOOSE-ONE",
+        "source_lines": [
+          [
+            32,
+            37
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "Choose one of MKT 406 or PR 434.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MKT 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 405"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 425"
+          }
+        ],
+        "id": "ADV-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            39,
+            45
+          ]
+        ],
+        "source_quote": "Choose one elective:",
+        "description": "Choose one elective from MKT 402, MKT 405, or MKT 425.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            47,
+            47
+          ]
+        ],
+        "source_quote": "Total units: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

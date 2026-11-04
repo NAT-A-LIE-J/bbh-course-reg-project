@@ -1,0 +1,456 @@
+{
+  "program": "Composition (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "faculty selection committee screening"
+        },
+        "id": "COMP-BM-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission requires screening by faculty selection committees per annually published entrance requirements.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "COMP-BM-CORE",
+        "source_lines": [
+          [
+            82,
+            98
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "13 named Core Thornton academic courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MUCO 137a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 137b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 237a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 237b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 337a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 337b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 437a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 437b"
+              }
+            ],
+            "id": "COMP-BM-INDIVIDUAL-INSTRUCTION",
+            "source_lines": [
+              [
+                104,
+                115
+              ]
+            ],
+            "source_quote": "Individual Instruction (24 units)",
+            "description": "Eight Composition I-IV sequence courses totaling 24 units.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "MUEN"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "id": "COMP-BM-ENSEMBLES",
+            "source_lines": [
+              [
+                117,
+                121
+              ]
+            ],
+            "source_quote": "MUEN Ensemble Electives at the 300-level: two",
+            "description": "Two 1-unit MUEN ensemble electives at the 300 level.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MUCO 135"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 235"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 336a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 336b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 434"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MTEC 474a",
+                    "MTEC 474b",
+                    "MTEC 301"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 250a",
+                    "MPKS 250b",
+                    "MPKS 301"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 2
+                  }
+                ],
+                "note": "MPKS 301 Piano may substitute if proficiency equivalent to MPKS 250b is demonstrated by examination; amendment from footnote **."
+              }
+            ],
+            "id": "COMP-BM-PROGRAM-INTENSIVE",
+            "source_lines": [
+              [
+                123,
+                142
+              ],
+              [
+                193,
+                193
+              ]
+            ],
+            "source_quote": "Program Intensive (14 units)",
+            "description": "Five named courses plus two 2-unit selections (MTEC options and MPKS/MPKS301 options) totaling 14 units.",
+            "confidence": "medium",
+            "note": "Footnote ** at L193 amends the MPKS selection to allow MPKS 301 substitution via examination."
+          }
+        ],
+        "id": "COMP-BM-PROGRAM-SPECIFIC",
+        "source_lines": [
+          [
+            100,
+            142
+          ]
+        ],
+        "source_quote": "Program Specific Courses (40 units)",
+        "description": "Individual instruction, ensembles, and program-intensive requirements totaling 40 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "MPGU 145",
+                    "MPGU 150",
+                    "MPPM 120",
+                    "MPPM 240",
+                    "MPPM 250",
+                    "MPPM 370",
+                    "MTEC 245",
+                    "MTEC 246",
+                    "MTEC 248",
+                    "MTEC 249",
+                    "MTEC 277x",
+                    "MUIN 272x",
+                    "MUIN 425",
+                    "MUJZ 141a",
+                    "MUJZ 150",
+                    "MUJZ 218a",
+                    "MUJZ 450",
+                    "MUSC 255"
+                  ]
+                },
+                {
+                  "unresolved": "other Contemporary Division courses in consultation with chair and the Contemporary Division"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "COMP-BM-CONTEMPORARY-ELECTIVES",
+            "source_lines": [
+              [
+                148,
+                174
+              ]
+            ],
+            "source_quote": "Select 4 units from the Contemporary Division",
+            "description": "4 units of Contemporary Division electives from the listed courses or others approved by the chair.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "COMP-BM-GENERAL-ELECTIVES",
+            "source_lines": [
+              [
+                175,
+                177
+              ]
+            ],
+            "source_quote": "General Electives (16 units)",
+            "description": "16 units of unrestricted general electives.",
+            "confidence": "medium",
+            "note": null
+          }
+        ],
+        "id": "COMP-BM-ELECTIVES",
+        "source_lines": [
+          [
+            144,
+            177
+          ]
+        ],
+        "source_quote": "Electives (20 units)",
+        "description": "20 units of electives split between Contemporary Division and General Electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "Senior Recital completed under approved faculty supervision and guidance"
+            }
+          }
+        ],
+        "id": "COMP-BM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            41
+          ],
+          [
+            179,
+            185
+          ]
+        ],
+        "source_quote": "Young Artist Project",
+        "description": "Young Artist Project courses (MUSC 480, 481) plus a faculty-supervised senior recital.",
+        "confidence": "medium",
+        "note": "Detailed recital requirements are set by departmental faculty and cannot be checked from a course list."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            187,
+            187
+          ]
+        ],
+        "source_quote": "Total Required For Degree: 132",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 132
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All USC Thornton undergraduate programs in classical",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/overview, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          31
+        ]
+      ],
+      "source_quote": "USC’s General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "University-wide GE requirements reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          81
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE and writing course requirements are university-wide, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          191,
+          191
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6",
+      "reason": "advisory",
+      "why": "Explanatory planning note, not an additional requirement."
+    }
+  ]
+}

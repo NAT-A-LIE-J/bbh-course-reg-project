@@ -1,0 +1,189 @@
+{
+  "program": "Nanotechnology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "NANO-MINOR-PREREQ",
+        "source_lines": [
+          [
+            23,
+            40
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Prerequisite math, physics, and chemistry sequence required before the minor's required and elective courses; these units do not count toward the minor's 20-unit requirement.",
+        "confidence": "medium",
+        "note": "Prerequisite courses are listed separately from the 20 required units of the minor itself."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MASC 350L"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 325aL"
+              }
+            ]
+          }
+        ],
+        "id": "NANO-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            42,
+            50
+          ]
+        ],
+        "source_quote": "MASC 350L Nanostructured Materials: Design, Synthesis and Processing",
+        "description": "MASC 350L and either CHEM 322aL or CHEM 325aL (Organic Chemistry).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BME 459L",
+            "CHE 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NANO-MINOR-CORE-ELECTIVE",
+        "source_lines": [
+          [
+            52,
+            57
+          ]
+        ],
+        "source_quote": "BME 459L Introduction to Nanomedicine and Drug",
+        "description": "Choose one core elective from BME 459L or CHE 475.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 455",
+            "CHEM 461",
+            "BME 459L",
+            "CHE 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NANO-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            59,
+            66
+          ]
+        ],
+        "source_quote": "Choose one of the following or the one",
+        "description": "Choose one more elective from CHEM 455, CHEM 461, or whichever Core Elective (BME 459L / CHE 475) was not already selected.",
+        "confidence": "medium",
+        "note": "The one-slot rule automatically prevents re-selecting the same Core Elective course used above."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            68,
+            68
+          ]
+        ],
+        "source_quote": "A minor in nanotechnology consisting of 20 required units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

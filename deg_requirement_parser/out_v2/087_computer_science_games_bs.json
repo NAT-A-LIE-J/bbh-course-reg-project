@@ -1,0 +1,405 @@
+{
+  "program": "Computer Science Games (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ENGR 102",
+        "id": "CSGM-BS-ENGR",
+        "source_lines": [
+          [
+            52,
+            56
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "Students must take ENGR 102.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          }
+        ],
+        "id": "CSGM-BS-MATH",
+        "source_lines": [
+          [
+            58,
+            65
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g plus MATH 126g or MATH 129.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 235"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 141L"
+          }
+        ],
+        "id": "CSGM-BS-LINALG",
+        "source_lines": [
+          [
+            67,
+            73
+          ]
+        ],
+        "source_quote": "MATH 225 Linear Algebra and Linear Differential",
+        "description": "One linear algebra course: MATH 225, MATH 235, or EE 141L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          }
+        ],
+        "id": "CSGM-BS-PHYSICS",
+        "source_lines": [
+          [
+            75,
+            80
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "One physics course: PHYS 151Lg or PHYS 161Lg.",
+        "confidence": "high",
+        "note": "PHYS 151Lg also satisfies a GE requirement per footnote; not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 270"
+          }
+        ],
+        "id": "CSGM-BS-CSCORE",
+        "source_lines": [
+          [
+            86,
+            95
+          ]
+        ],
+        "source_quote": "CSCI 102L Introduction to Programming Units: 2",
+        "description": "Six named Computer Science core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 350",
+            "CSCI 353",
+            "CSCI 356",
+            "CSCI 360",
+            "CSCI 420"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CSGM-BS-CSELECTIVES",
+        "source_lines": [
+          [
+            97,
+            107
+          ]
+        ],
+        "source_quote": "Choose at least 8 units:",
+        "description": "At least 8 units from the Computer Science Core Electives list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 190"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 489L"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 380"
+          }
+        ],
+        "id": "CSGM-BS-GAMECORE",
+        "source_lines": [
+          [
+            109,
+            117
+          ]
+        ],
+        "source_quote": "CTIN 190 Introduction to Interactive Entertainment Units: 4",
+        "description": "Four named Game Development Core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 426",
+            "CTAN 452",
+            "CTIN 289",
+            "CTIN 389",
+            "CTIN 404L",
+            "CTIN 406L",
+            "CTIN 478",
+            "CTIN 482",
+            "CTIN 485",
+            "CTIN 492L",
+            "TAC 382",
+            "TAC 481",
+            "TAC 438",
+            "TAC 485"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "CSGM-BS-GAMEELECTIVES",
+        "source_lines": [
+          [
+            118,
+            137
+          ]
+        ],
+        "source_quote": "Choose at least 6 units:",
+        "description": "At least 6 units from the Game Development Core Electives list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 491aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 491bL"
+          }
+        ],
+        "id": "CSGM-BS-CAPSTONE",
+        "source_lines": [
+          [
+            139,
+            144
+          ]
+        ],
+        "source_quote": "CSCI 491aL Advanced Game Project Units: 4",
+        "description": "Both parts of the Game Capstone sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ],
+        "id": "CSGM-BS-FREEELECTIVES",
+        "source_lines": [
+          [
+            146,
+            146
+          ]
+        ],
+        "source_quote": "Free Electives (18 units)",
+        "description": "18 units of free electives, unrestricted.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The requirement for the degree is 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for specific core courses."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Courses with a grade of C- or below",
+      "reason": "out_of_scope",
+      "why": "Repeat policy, not a course selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Departmental approval is required in order to",
+      "reason": "out_of_scope",
+      "why": "Approval process for retaking a course."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Students who do not satisfy the degree",
+      "reason": "out_of_scope",
+      "why": "Disqualification policy, not a requirement to encode."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          40
+        ]
+      ],
+      "source_quote": "Composition/Writing Requirements (8 Units)",
+      "reason": "university_level",
+      "why": "University-wide composition/writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          154,
+          154
+        ]
+      ],
+      "source_quote": "WRIT 340 Advanced Writing (Communication for Engineers)",
+      "reason": "advisory",
+      "why": "Recommendation of a specific WRIT 340 section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          46
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement."
+    },
+    {
+      "source_lines": [
+        [
+          150,
+          150
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "Restates the university-wide total unit requirement."
+    }
+  ]
+}

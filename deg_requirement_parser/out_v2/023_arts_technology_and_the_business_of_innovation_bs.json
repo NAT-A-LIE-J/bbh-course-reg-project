@@ -1,0 +1,519 @@
+{
+  "program": "Arts, Technology and the Business of Innovation (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACAD 174"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "note": "ACAD 174 must be taken twice (2 units each time)."
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACAD 376"
+              },
+              {
+                "family": "manual_review",
+                "kind": "NO_POOL",
+                "details": {
+                  "description": "credit bearing industry internship(s) in lieu of ACAD 376"
+                }
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 475a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 475b"
+          }
+        ],
+        "id": "ATBI-CBRL",
+        "source_lines": [
+          [
+            31,
+            40
+          ]
+        ],
+        "source_quote": "ACAD 174 Innovators Forum Units: 2 (needs to be",
+        "description": "Core Challenge Based Reflective Learning courses: ACAD 174 (twice), ACAD 376 or internship, ACAD 475a, ACAD 475b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 183",
+            "ACAD 184",
+            "ACAD 185"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ATBI-BUSINESS",
+        "source_lines": [
+          [
+            42,
+            51
+          ]
+        ],
+        "source_quote": "Take 8 units from the following:",
+        "description": "8 units from ACAD 183, ACAD 184, or ACAD 185.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 176"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "choose": 1,
+                    "from": [
+                      {
+                        "family": "specific_course",
+                        "course": "ACAD 324g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "ACAD 325"
+                      }
+                    ]
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ACAD 360"
+                  }
+                ],
+                "id": "ATBI-DESIGN-PATH1",
+                "source_lines": [
+                  [
+                    61,
+                    68
+                  ]
+                ],
+                "source_quote": "ACAD 324g The Practice of Design: Ideation to",
+                "description": "Path 1: ACAD 324g or ACAD 325, plus ACAD 360.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ACAD 187",
+                    "ACAD 188",
+                    "ACAD 245",
+                    "ACAD 288",
+                    "ACAD 444",
+                    "ACAD 445"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ],
+                "id": "ATBI-DESIGN-PATH2",
+                "source_lines": [
+                  [
+                    70,
+                    79
+                  ]
+                ],
+                "source_quote": "ACAD 187 Digital Toolbox: 3D Design Units: 2",
+                "description": "Path 2: 8 units from a list of product-design courses.",
+                "confidence": "high",
+                "note": null
+              }
+            ]
+          }
+        ],
+        "id": "ATBI-DESIGN",
+        "source_lines": [
+          [
+            53,
+            79
+          ]
+        ],
+        "source_quote": "Take ACAD 176 and 8 units from within",
+        "description": "ACAD 176 plus 8 units within one design path.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 274"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ACAD 230",
+                    "ACAD 431",
+                    "ACAD 535",
+                    "IDSN 572"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ],
+                "id": "ATBI-TECH-PHYSICAL",
+                "source_lines": [
+                  [
+                    89,
+                    96
+                  ]
+                ],
+                "source_quote": "ACAD 230 Introduction to Interactive Physical Computing",
+                "description": "Physical and Embedded Computing path: 12 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ACAD 191",
+                    "ACAD 220",
+                    "ACAD 222",
+                    "ACAD 490",
+                    "IDSN 543",
+                    "IDSN 544"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ],
+                "id": "ATBI-TECH-AI",
+                "source_lines": [
+                  [
+                    98,
+                    107
+                  ]
+                ],
+                "source_quote": "ACAD 191 Python for Machine Intelligence Units: 2",
+                "description": "Transformative AI path: 12 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ACAD 275",
+                    "ACAD 276",
+                    "ACAD 280",
+                    "ACAD 415",
+                    "TAC 404",
+                    "TAC 405"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ],
+                "id": "ATBI-TECH-WEBDEV",
+                "source_lines": [
+                  [
+                    109,
+                    119
+                  ]
+                ],
+                "source_quote": "ACAD 275 Dev I Units: 4",
+                "description": "Full Stack Web Development path: 12 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ACAD 217",
+                    "ACAD 288",
+                    "IDSN 537",
+                    "IDSN 539",
+                    "IDSN 574"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ],
+                "id": "ATBI-TECH-XR",
+                "source_lines": [
+                  [
+                    121,
+                    129
+                  ]
+                ],
+                "source_quote": "ACAD 217 Extended Reality Design Units: 4",
+                "description": "Extended Reality path: 12 units.",
+                "confidence": "high",
+                "note": null
+              }
+            ]
+          }
+        ],
+        "id": "ATBI-TECH",
+        "source_lines": [
+          [
+            81,
+            129
+          ]
+        ],
+        "source_quote": "Take ACAD 274 and 12 units from within",
+        "description": "ACAD 274 plus 12 units within one technology path.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ACAD 191",
+                "ACAD 220",
+                "ACAD 222",
+                "ACAD 280",
+                "ACAD 422",
+                "ACAD 490",
+                "IDSN 543",
+                "IDSN 544",
+                "TAC 449",
+                "ACAD 183",
+                "ACAD 184",
+                "ACAD 185",
+                "ACAD 302",
+                "ACAD 402",
+                "ACAD 406",
+                "BAEP 474",
+                "BUAD 315x",
+                "COMM 206",
+                "COMM 375",
+                "FBE 403",
+                "FBE 458",
+                "JOUR 200w",
+                "JOUR 210x",
+                "JOUR 472",
+                "RISK 380",
+                "RISK 387",
+                "ACAD 177",
+                "ACAD 178",
+                "ACAD 180",
+                "ACAD 186",
+                "ACAD 187",
+                "ACAD 188",
+                "ACAD 189",
+                "ACAD 190",
+                "ACAD 325",
+                "ACAD 281",
+                "ACAD 307g",
+                "ACAD 350",
+                "ACAD 377",
+                "ACAD 450",
+                "ACAD 480",
+                "IDSN 515",
+                "IDSN 522",
+                "IDSN 523",
+                "ACAD 207",
+                "ACAD 217",
+                "IDSN 537",
+                "IDSN 539",
+                "IDSN 574",
+                "ACAD 260",
+                "ACAD 431",
+                "ACAD 432",
+                "ACAD 463",
+                "BPSI 411",
+                "SOWK 643",
+                "ACAD 230",
+                "ACAD 275",
+                "ACAD 276",
+                "ACAD 415",
+                "AME 201",
+                "AME 204",
+                "AME 301",
+                "IDSN 535",
+                "IDSN 572",
+                "TAC 344",
+                "TAC 365",
+                "TAC 382",
+                "TAC 388",
+                "TAC 404",
+                "TAC 405",
+                "TAC 425",
+                "TAC 460",
+                "TAC 468",
+                "TAC 476",
+                "MASC 310L",
+                "ACAD 245",
+                "ACAD 288",
+                "ACAD 344",
+                "ACAD 444",
+                "ACAD 445",
+                "TAC 308"
+              ]
+            },
+            {
+              "unresolved": "IDSN and PRIN graduate courses selected by advisement through the Academy"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                135,
+                135
+              ]
+            ],
+            "source_quote": "No more than 20 units outside of the",
+            "eligible_if": {
+              "not": {
+                "prefix": [
+                  "ACAD",
+                  "IDSN"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        "id": "ATBI-ELECTIVES",
+        "source_lines": [
+          [
+            131,
+            278
+          ]
+        ],
+        "source_quote": "Complete 36 units from the following.",
+        "description": "36 units of major electives from nine thematic lists, with no more than 20 units outside the school (ACAD and IDSN unrestricted).",
+        "confidence": "medium",
+        "note": "Courses from the design, technology or business requirements cannot be taken for duplicate elective credit (restated one-slot rule)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Iovine and Young Academy Bachelor of Science",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The degree requires a total of at least",
+      "reason": "university_level",
+      "why": "Total unit requirement (128 units) is a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "In consultation with their academic adviser, students",
+      "reason": "out_of_scope",
+      "why": "Discretionary petition process for alternate degree paths, not a fixed checkable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          280,
+          284
+        ]
+      ],
+      "source_quote": "The university's general education program provides a",
+      "reason": "university_level",
+      "why": "GE requirement is university-wide, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          286,
+          391
+        ]
+      ],
+      "source_quote": "Sample Four-Year Program",
+      "reason": "advisory",
+      "why": "Sample schedule, not a binding requirement."
+    }
+  ]
+}

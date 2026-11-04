@@ -1,0 +1,160 @@
+{
+  "program": "East Asian Area Studies (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EALC 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "EASC 150"
+          }
+        ],
+        "id": "EAAS-BA-LOWERDIV-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Requirements for the lower division are: EALC 110 and EASC 150 or the equivalent",
+        "description": "EALC 110 and EASC 150, or their equivalents.",
+        "confidence": "medium",
+        "note": "The 'or the equivalent' alternative cannot be checked without a defined course list; encoded as the named courses only."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "courses in one East Asian language, or proficiency equivalent"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "EAAS-BA-LANGUAGE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "a minimum of four courses in one East Asian language",
+        "description": "At least four courses in one East Asian language (or proficiency equivalent).",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 300
+            },
+            {
+              "unresolved": "upper-division courses approved for the major"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 7
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "Upper-division courses must include those from at least three departments",
+            "eligible_if": {
+              "unresolved": "department-of-each-course"
+            },
+            "thresholds": [
+              {
+                "count_by": "departments",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "one of which must be History",
+            "eligible_if": {
+              "prefix": [
+                "HIST"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "At least one course must be taken on two of the following: China, Japan or Korea",
+            "eligible_if": {
+              "unresolved": "course topical focus on China, Japan, or Korea; not derivable from course list"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "EAAS-BA-UPPERDIV",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "seven upper-division courses approved for the major",
+        "description": "Seven upper-division courses approved for the major, in addition to the language courses, drawn from at least three departments (one History), with regional coverage of at least two of China/Japan/Korea.",
+        "confidence": "low",
+        "note": "One lower-division course other than EALC 110 and EASC 150 may be substituted for one of these seven upper-division courses (L021); this substitution cannot be verified against a defined course list and is flagged here rather than modeled as a separate node."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "One lower-division course other than EALC 110 and EASC 150 may be substituted",
+      "reason": "no_fit",
+      "why": "A substitution exception with no defined course list to check against."
+    }
+  ]
+}

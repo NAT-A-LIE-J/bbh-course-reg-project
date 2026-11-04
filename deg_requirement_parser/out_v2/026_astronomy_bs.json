@@ -1,0 +1,174 @@
+{
+  "program": "Astronomy (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASTR 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 161Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 162L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 163L"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 151L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 152L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 153L"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 190"
+          }
+        ],
+        "id": "ASTR-BS-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            35
+          ],
+          [
+            56,
+            56
+          ]
+        ],
+        "source_quote": "ASTR 110 The Universe for Astronomy Majors",
+        "description": "Required lower-division courses: ASTR 110, MATH 125g, 126g, 226g, 245, PHYS 190, and the PHYS 161L-163L sequence (or PHYS 151L-153L substitute).",
+        "confidence": "high",
+        "note": "PHYS 151L, 152L, 153L may be substituted for PHYS 161L, 162L, 163L, per footnote on L056."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASTR 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTR 400"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTR 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTR 424"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 316"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 492L"
+          }
+        ],
+        "id": "ASTR-BS-UPPERDIV",
+        "source_lines": [
+          [
+            37,
+            50
+          ]
+        ],
+        "source_quote": "ASTR 350 Astrophysics I Units: 4",
+        "description": "Required upper-division courses: ASTR 350, 400, 422, 424, MATH 445, PHYS 304, 316, 408a, 438a, 492L.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            52,
+            52
+          ]
+        ],
+        "source_quote": "Total units: 76",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 76
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is intended primarily for students",
+      "reason": "advisory",
+      "why": "Marketing/descriptive statement, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "program": "Archaeology of California Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 307"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 494L"
+          }
+        ],
+        "id": "ARCHCA-MIN-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "In a single semester, complete these three courses:",
+        "description": "In a single semester, complete ANTH 307, REL 304, and REL 494L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 377g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CLAS 465"
+          }
+        ],
+        "id": "ARCHCA-MIN-ELECTIVE",
+        "source_lines": [
+          [
+            31,
+            36
+          ]
+        ],
+        "source_quote": "and complete one of these courses:",
+        "description": "Complete one of ANTH 377g or CLAS 465.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students gain diverse, long-term perspectives on Los",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Archaeology of California is available",
+      "reason": "out_of_scope",
+      "why": "Eligibility description, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students complete this minor through the archaeology",
+      "reason": "out_of_scope",
+      "why": "Procedural description of program delivery, not a specific requirement."
+    }
+  ]
+}

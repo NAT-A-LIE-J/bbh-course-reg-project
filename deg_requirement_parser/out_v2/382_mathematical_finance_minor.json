@@ -1,0 +1,304 @@
+{
+  "program": "Mathematical Finance Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "students by major",
+          "requires": "four courses outside the student's major department (outside economics, math, or the Marshall School of Business as applicable)"
+        },
+        "id": "MATHFIN-OUTSIDE-MAJOR",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Finally, students must select four courses outside",
+        "description": "Students must take four courses outside their own major department (ECON, MATH, or Marshall), rule varies by major.",
+        "confidence": "medium",
+        "note": "These may be the same courses used for the upper-division/dedicated-course minor rules (not separately encoded)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 102L",
+            "CSCI 103L",
+            "CSCI 113x",
+            "CSCI 114x",
+            "TAC 115",
+            "TAC 116",
+            "TAC 165",
+            "TAC 168"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "MATHFIN-PROGRAMMING",
+        "source_lines": [
+          [
+            25,
+            38
+          ]
+        ],
+        "source_quote": "At least one dedicated programming course.",
+        "description": "At least one programming course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 235"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ]
+          }
+        ],
+        "id": "MATHFIN-MATH",
+        "source_lines": [
+          [
+            40,
+            50
+          ]
+        ],
+        "source_quote": "MATH 126g Calculus II Units: 4 or",
+        "description": "One Calculus II course and one Linear Algebra course from the given options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "ECON 203g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ECON 205g"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "ECON 351x"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ECON 352x"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          }
+        ],
+        "id": "MATHFIN-ECON",
+        "source_lines": [
+          [
+            52,
+            63
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics Units: 4",
+        "description": "Principles sequence (ECON 203g/205g or 351x/352x) plus ECON 303 and ECON 305.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 307"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 308"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 407"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 408"
+              }
+            ]
+          }
+        ],
+        "id": "MATHFIN-PROBSTATS",
+        "source_lines": [
+          [
+            65,
+            77
+          ]
+        ],
+        "source_quote": "ECON 317 Introduction to Statistics for Economists",
+        "description": "One statistics option: ECON 317, EE 364, or the MATH 307/308 or MATH 407/408 sequences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUAD 306",
+            "BUAD 310g",
+            "FBE 421",
+            "FBE 441",
+            "FBE 443",
+            "FBE 459",
+            "FBE 462",
+            "ECON 350",
+            "ECON 357",
+            "ECON 404",
+            "ECON 415",
+            "ECON 452",
+            "ECON 457",
+            "MATH 446",
+            "MATH 447",
+            "MATH 454",
+            "MATH 458",
+            "MATH 467"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "MATHFIN-ELECTIVES",
+        "source_lines": [
+          [
+            79,
+            104
+          ]
+        ],
+        "source_quote": "Choose three courses from the following list:",
+        "description": "Choose three elective courses from the listed Business, Economics, and Math electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This interdisciplinary minor was created for",
+      "reason": "advisory",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "As with all minors, students must include",
+      "reason": "university_level",
+      "why": "Restates the university-wide minor rules on upper-division and unique-course counts, handled by the tool."
+    },
+    {
+      "source_lines": [
+        [
+          106,
+          106
+        ]
+      ],
+      "source_quote": "Total requirements, for students with no prior",
+      "reason": "out_of_scope",
+      "why": "Summary unit range, not an independent requirement."
+    },
+    {
+      "source_lines": [
+        [
+          110,
+          114
+        ]
+      ],
+      "source_quote": "Students majoring in business administration, economics or",
+      "reason": "out_of_scope",
+      "why": "Major-specific substitution/overlap rules for counting major coursework toward the minor; not encodable as course requirements."
+    }
+  ]
+}

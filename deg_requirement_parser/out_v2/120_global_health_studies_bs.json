@@ -1,0 +1,358 @@
+{
+  "program": "Global Health Studies (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 470"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 308gw"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 108g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "GHS-BS-CORE-COURSES",
+        "source_lines": [
+          [
+            46,
+            63
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology and Physiology",
+        "description": "Eight core courses (32 units), with alternatives offered for biology, chemistry, and math.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 350L"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 490x"
+          }
+        ],
+        "id": "GHS-BS-CORE-RESEARCH",
+        "source_lines": [
+          [
+            42,
+            42
+          ],
+          [
+            65,
+            71
+          ]
+        ],
+        "source_quote": "Core Research Courses (10-16 Units)",
+        "description": "HP 340Lg, HP 350L, and HP 490x (directed research, 1-8 units, max 12), with HP 490x required to have a specific international research focus.",
+        "confidence": "high",
+        "note": "L042's requirement that HP 490x have a specific international research focus cannot be checked from a course list."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "HP 300",
+                "HP 365gmw",
+                "HP 370g",
+                "HP 401",
+                "HP 402",
+                "HP 405",
+                "HP 408",
+                "HP 409",
+                "HP 410",
+                "HP 420m",
+                "HP 421",
+                "HP 422",
+                "HP 430",
+                "HP 431",
+                "HP 432",
+                "HP 440",
+                "HP 441",
+                "HP 442",
+                "HP 443",
+                "HP 446",
+                "HP 448",
+                "HP 450",
+                "HP 460",
+                "HP 483"
+              ]
+            },
+            {
+              "courses": [
+                "IR 305w",
+                "IR 306",
+                "IR 307",
+                "IR 309",
+                "IR 315",
+                "IR 316",
+                "IR 323",
+                "IR 325",
+                "IR 339",
+                "IR 344",
+                "IR 349",
+                "IR 371",
+                "IR 422",
+                "IR 424w",
+                "IR 444w"
+              ]
+            },
+            {
+              "courses": [
+                "ADSC 250",
+                "BISC 120Lg",
+                "BISC 121Lg",
+                "BISC 320Lg",
+                "BISC 330L",
+                "CHEM 105bL",
+                "CHEM 115bL",
+                "CHEM 322aL",
+                "CHEM 322bL",
+                "GERO 483",
+                "PHYS 135aLg",
+                "PHYS 151Lg",
+                "PHYS 135bL",
+                "PHYS 152L",
+                "POSC 442m",
+                "POSC 451",
+                "POSC 456",
+                "PPD 250m",
+                "PPD 382",
+                "SOCI 432m",
+                "SOCI 460",
+                "SOCI 470"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                77,
+                77
+              ]
+            ],
+            "source_quote": "At least 8 units must be from HP",
+            "eligible_if": {
+              "courses": [
+                "HP 300",
+                "HP 365gmw",
+                "HP 370g",
+                "HP 401",
+                "HP 402",
+                "HP 405",
+                "HP 408",
+                "HP 409",
+                "HP 410",
+                "HP 420m",
+                "HP 421",
+                "HP 422",
+                "HP 430",
+                "HP 431",
+                "HP 432",
+                "HP 440",
+                "HP 441",
+                "HP 442",
+                "HP 443",
+                "HP 446",
+                "HP 448",
+                "HP 450",
+                "HP 460",
+                "HP 483"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                77,
+                77
+              ]
+            ],
+            "source_quote": "and at least 8 units must be from IR",
+            "eligible_if": {
+              "courses": [
+                "IR 305w",
+                "IR 306",
+                "IR 307",
+                "IR 309",
+                "IR 315",
+                "IR 316",
+                "IR 323",
+                "IR 325",
+                "IR 339",
+                "IR 344",
+                "IR 349",
+                "IR 371",
+                "IR 422",
+                "IR 424w",
+                "IR 444w"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                129,
+                129
+              ]
+            ],
+            "source_quote": "Other Electives (Maximum 8 Units)",
+            "eligible_if": {
+              "courses": [
+                "ADSC 250",
+                "BISC 120Lg",
+                "BISC 121Lg",
+                "BISC 320Lg",
+                "BISC 330L",
+                "CHEM 105bL",
+                "CHEM 115bL",
+                "CHEM 322aL",
+                "CHEM 322bL",
+                "GERO 483",
+                "PHYS 135aLg",
+                "PHYS 151Lg",
+                "PHYS 135bL",
+                "PHYS 152L",
+                "POSC 442m",
+                "POSC 451",
+                "POSC 456",
+                "PPD 250m",
+                "PPD 382",
+                "SOCI 432m",
+                "SOCI 460",
+                "SOCI 470"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "GHS-BS-ELECTIVES",
+        "source_lines": [
+          [
+            77,
+            161
+          ]
+        ],
+        "source_quote": "Students must choose 24 units of elective course work",
+        "description": "24 units of electives from HP, IR, and Other lists, with at least 8 HP units, at least 8 IR units, and at most 8 Other units.",
+        "confidence": "high",
+        "note": "HP 470 is already used as a required core course and cannot also count as an HP elective, so it is excluded from the elective list."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "The Bachelor of Science degree is awarded after",
+      "reason": "university_level",
+      "why": "University-wide 128-unit total and GE/foreign-language requirement, handled by STARS."
+    },
+    {
+      "source_lines": [
+        [
+          38,
+          38
+        ]
+      ],
+      "source_quote": "The university's general education program provides a",
+      "reason": "university_level",
+      "why": "General education requirement, not programme-specific."
+    }
+  ]
+}

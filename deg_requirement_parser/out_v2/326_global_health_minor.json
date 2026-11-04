@@ -1,0 +1,62 @@
+{
+  "program": "Global Health Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 470"
+          }
+        ],
+        "id": "GLOBALHEALTH-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "HP 270 Introduction to Global Health",
+        "description": "Required core courses HP 270 and HP 470.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GERO 483",
+            "HP 365gmw",
+            "HP 401",
+            "HP 402",
+            "HP 422"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "GLOBALHEALTH-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            30,
+            38
+          ]
+        ],
+        "source_quote": "Three of the following:",
+        "description": "Three courses chosen from the listed global health electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

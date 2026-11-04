@@ -1,0 +1,393 @@
+{
+  "program": "Mechanical Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "AME-BS-MATH",
+        "source_lines": [
+          [
+            40,
+            60
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g, a Calculus II option, a Calculus III option, and MATH 245.",
+        "confidence": "high",
+        "note": "The note recommending MATH 129/229 is advisory and listed in unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 171Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 162L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 172L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 153L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 163L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 173L"
+              }
+            ]
+          }
+        ],
+        "id": "AME-BS-PHYSICS",
+        "source_lines": [
+          [
+            62,
+            76
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "Three physics courses, each chosen from a set of equivalent options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 115aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MASC 110L"
+          }
+        ],
+        "id": "AME-BS-CHEM",
+        "source_lines": [
+          [
+            78,
+            86
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "One chemistry/materials elective from CHEM 105aLg, CHEM 115aLg or MASC 110L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AME 101L"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 204"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 208"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 302a"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 308"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 341aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 341bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 441aL"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "AME 408",
+                    "AME 409",
+                    "AME 410",
+                    "AME 415",
+                    "AME 441bL",
+                    "AME 443"
+                  ]
+                },
+                {
+                  "unresolved": "another design elective focused course with the approval of your adviser"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "all": [
+                    {
+                      "prefix": [
+                        "MATH",
+                        "PHYS",
+                        "CHEM"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ]
+                },
+                {
+                  "unresolved": "upper-division engineering courses"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "AME-BS-CORE",
+        "source_lines": [
+          [
+            92,
+            118
+          ]
+        ],
+        "source_quote": "AME 101L Introduction to Mechanical Engineering Units: 4",
+        "description": "AME core courses, an AME design elective (4 units), and technical electives (8 units) in engineering, MATH, PHYS or CHEM.",
+        "confidence": "medium",
+        "note": "Design course and technical elective pools include adviser-approved or unspecified engineering courses that cannot be fully enumerated."
+      },
+      {
+        "family": "specific_course",
+        "course": "MASC 310L",
+        "id": "AME-BS-MATERIALS",
+        "source_lines": [
+          [
+            120,
+            124
+          ]
+        ],
+        "source_quote": "MASC 310L Materials Behavior and Processing Units: 4",
+        "description": "MASC 310L is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "TAC 168",
+        "id": "AME-BS-IT",
+        "source_lines": [
+          [
+            126,
+            130
+          ]
+        ],
+        "source_quote": "TAC 168 Introduction to MATLAB Units: 2",
+        "description": "TAC 168 is required.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The requirement for the degree is 132 units.",
+      "reason": "university_level",
+      "why": "Total unit count is a university-wide figure confirmed by Total units line."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement is out of scope for Phase 1."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See the common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          28
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic",
+      "reason": "university_level",
+      "why": "University-wide writing requirement repeated on program page."
+    },
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "General education Units: 24+",
+      "reason": "university_level",
+      "why": "University-wide GE requirement repeated on program page."
+    },
+    {
+      "source_lines": [
+        [
+          60,
+          60
+        ]
+      ],
+      "source_quote": "The AME Department recommends that AME students",
+      "reason": "advisory",
+      "why": "A recommendation, not a mandatory requirement."
+    },
+    {
+      "source_lines": [
+        [
+          132,
+          132
+        ]
+      ],
+      "source_quote": "Total units: 132",
+      "reason": "university_level",
+      "why": "Restates the total unit requirement for the degree."
+    }
+  ]
+}

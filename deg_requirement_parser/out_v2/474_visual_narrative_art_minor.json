@@ -1,0 +1,203 @@
+{
+  "program": "Visual Narrative Art Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ART 110"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ART 207a"
+              },
+              {
+                "family": "specific_course",
+                "course": "ART 207b"
+              }
+            ]
+          }
+        ],
+        "id": "VNA-MINOR-INTRO",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "Choose one of the following two options",
+        "description": "Choose ART 110, or both ART 207a and ART 207b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 203"
+          }
+        ],
+        "id": "VNA-MINOR-UD-REQUIRED",
+        "source_lines": [
+          [
+            36,
+            41
+          ]
+        ],
+        "source_quote": "Upper-Division Required Courses (4 units)",
+        "description": "ART 314 and DES 203 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 310",
+            "ART 312",
+            "ART 320",
+            "ART 410",
+            "ART 412",
+            "ART 414",
+            "ART 416",
+            "ART 417",
+            "ART 420",
+            "CTAN 420",
+            "CTAN 432",
+            "CTAN 436",
+            "CTAN 443L",
+            "CTAN 452",
+            "CTAN 460",
+            "CTAN 485",
+            "CTAN 503",
+            "CTIN 401L",
+            "CTIN 491L",
+            "CTPR 448",
+            "CTPR 455",
+            "CTPR 456",
+            "ENGL 343m",
+            "ENGL 372",
+            "ENGL 376g",
+            "ENGL 392",
+            "IML 423",
+            "IML 425",
+            "IML 453",
+            "IML 477",
+            "THTR 331",
+            "THTR 407a",
+            "THTR 407b",
+            "THTR 433a",
+            "THTR 433b"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "VNA-MINOR-UD-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            81
+          ]
+        ],
+        "source_quote": "Upper-Division Electives (12 units)",
+        "description": "At least 12 units of upper-division elective courses from the listed set.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_units": 16,
+          "applies_to": "Roski majors; electives unique to this minor (not in major and outside Roski)"
+        },
+        "id": "VNA-MINOR-ROSKI-UNIQUE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Roski majors are required to include at",
+        "description": "Roski majors must have at least 16 units of elective coursework unique to this minor.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_units": 16,
+          "applies_to": "SCA majors; electives unique to this minor (not in major and outside SCA)"
+        },
+        "id": "VNA-MINOR-SCA-UNIQUE",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "SCA majors are required to include at",
+        "description": "SCA majors must have at least 16 units of elective coursework unique to this minor.",
+        "confidence": "medium",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Total number of units required is 20.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Please consult with your academic adviser before",
+      "reason": "advisory",
+      "why": "Advisory suggestion to consult an adviser, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Please consult with your academic adviser before",
+      "reason": "advisory",
+      "why": "Advisory suggestion to consult an adviser, not a requirement."
+    }
+  ]
+}

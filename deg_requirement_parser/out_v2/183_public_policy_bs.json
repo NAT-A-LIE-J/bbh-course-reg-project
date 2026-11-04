@@ -1,0 +1,708 @@
+{
+  "program": "Public Policy (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 117g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 203"
+          }
+        ],
+        "id": "PP-BS-PREMAJOR",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Students must complete the pre-major requirements.",
+        "description": "Pre-major courses MATH 117g and PPD 203.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 240g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 373"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PPD 431"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 497a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 497b"
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "GATE",
+                    "details": {
+                      "stage": "EMPHASIS_ENTRY",
+                      "basis": "NUMERIC_THRESHOLD",
+                      "requires": [
+                        "3.7 GPA in PPD courses",
+                        "3.5 overall GPA"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "id": "PP-BS-CAPSTONE",
+            "source_lines": [
+              [
+                43,
+                44
+              ],
+              [
+                223,
+                225
+              ]
+            ],
+            "source_quote": "*See alternate capstone options in Additional Requirements section, below.",
+            "description": "Capstone fulfilled by PPD 431, or by PPD 497a and PPD 497b (requiring 3.7 PPD GPA and 3.5 overall GPA).",
+            "confidence": "high",
+            "note": "Amends the core curriculum's PPD 431 line with the Additional Requirements capstone passage."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                32,
+                32
+              ]
+            ],
+            "source_quote": "Core Curriculum (30 Units)",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 30
+              }
+            ]
+          }
+        ],
+        "id": "PP-BS-CORE",
+        "source_lines": [
+          [
+            32,
+            44
+          ]
+        ],
+        "source_quote": "Core Curriculum (30 Units)",
+        "description": "Eight core PPD courses (PPD 225, 240g, 300, 301, 303, 315, 373, and a capstone).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 325"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 330"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 357"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 413"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 415"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ACAD 260",
+                    "GERO 416",
+                    "HP 408",
+                    "LAW 403",
+                    "MEDS 220",
+                    "MEDS 405",
+                    "PPD 314",
+                    "PPD 318",
+                    "PPD 320",
+                    "PPD 403",
+                    "PPD 404",
+                    "PPD 407",
+                    "PPD 414",
+                    "PPD 478"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "PP-BS-TRACK-HEALTH",
+            "source_lines": [
+              [
+                52,
+                77
+              ]
+            ],
+            "source_quote": "Required Track Courses (28 units: 20 required, 8 electives)",
+            "description": "Health Policy and Management track: five required courses and two electives.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 353"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 371"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 402"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 407"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 478"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "any": [
+                    {
+                      "courses": [
+                        "BUCO 485",
+                        "IR 371",
+                        "PPD 318",
+                        "PPD 320",
+                        "PPD 357",
+                        "PPD 372m",
+                        "PPD 380a",
+                        "PPD 400",
+                        "PPD 382",
+                        "PPD 404",
+                        "PPD 314",
+                        "PPD 344",
+                        "PPD 415"
+                      ]
+                    },
+                    {
+                      "unresolved": "graduate courses in the subject area approved by the adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        101,
+                        101
+                      ]
+                    ],
+                    "source_quote": "Only one from the following: PPD 314, PPD",
+                    "eligible_if": {
+                      "courses": [
+                        "PPD 314",
+                        "PPD 415",
+                        "PPD 344"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "PP-BS-TRACK-PHILANTHROPY",
+            "source_lines": [
+              [
+                79,
+                105
+              ]
+            ],
+            "source_quote": "Required Track Courses (28 units: 20 required, 8 electives)",
+            "description": "Philanthropy, Nonprofits and Social Innovation track: five required courses and two electives, limited to one of PPD 314/415/344.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 313"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 314"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 342"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "LAW 300"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "POSC 340"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "LAW 200w"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 357"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ECON 434",
+                    "LAW 310w",
+                    "LAW 403",
+                    "LAW 404",
+                    "POSC 444",
+                    "PPD 360",
+                    "PPD 361",
+                    "PPD 371",
+                    "PPD 382",
+                    "PPD 404",
+                    "PPD 410",
+                    "PPD 414",
+                    "PPD 439",
+                    "PPD 478",
+                    "PPD 485m",
+                    "LAW 300",
+                    "POSC 340",
+                    "LAW 200w",
+                    "PPD 357"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "PP-BS-TRACK-LAW",
+            "source_lines": [
+              [
+                107,
+                140
+              ]
+            ],
+            "source_quote": "Required Track Courses (28 units: 20 required, 8 electives)",
+            "description": "Public Policy and Law track: three required courses, two either/or requirements, and two electives.",
+            "confidence": "high",
+            "note": "The unused option from each choice (LAW 300/POSC 340 and LAW 200w/PPD 357) may be taken as a track elective."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 313"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 404"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 427L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "DSCI 250"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 430"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "DSCI 250",
+                    "DSCI 352",
+                    "DSCI 429",
+                    "ECON 303",
+                    "PPD 314",
+                    "PPD 318",
+                    "PPD 342",
+                    "PPD 357",
+                    "PPD 358",
+                    "PPD 361",
+                    "PPD 382",
+                    "PPD 407",
+                    "PPD 415",
+                    "PPD 427L",
+                    "PPD 439"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ]
+              }
+            ],
+            "id": "PP-BS-TRACK-DATA",
+            "source_lines": [
+              [
+                142,
+                180
+              ]
+            ],
+            "source_quote": "Required Track Courses (28 units: 16 required, 12 electives):",
+            "description": "Public Policy and Data Analytics track: four required courses (with a choice between PPD 427L and DSCI 250) and 12 units of electives.",
+            "confidence": "high",
+            "note": "PPD 427L or DSCI 250, whichever is not used for the required choice, may count as an elective; both already appear on the elective list."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 245g"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 344"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 361"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "two courses selected in consultation with adviser"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "any": [
+                    {
+                      "courses": [
+                        "PPD 360",
+                        "PPD 380a",
+                        "PPD 400",
+                        "PPD 410",
+                        "PPD 420",
+                        "PPD 422",
+                        "PPD 430"
+                      ]
+                    },
+                    {
+                      "unresolved": "other elective courses selected in consultation with the adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              }
+            ],
+            "id": "PP-BS-TRACK-URBAN",
+            "source_lines": [
+              [
+                182,
+                200
+              ]
+            ],
+            "source_quote": "Required Track Courses (28 units: 20 required, 8 electives)",
+            "description": "Urban Environmental and Sustainability Policy track: three required courses, two courses chosen with adviser, and two elective courses.",
+            "confidence": "medium",
+            "note": null
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                50,
+                50
+              ]
+            ],
+            "source_quote": "they take 28 units from the track selected.",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 28
+              }
+            ]
+          }
+        ],
+        "id": "PP-BS-TRACKS",
+        "source_lines": [
+          [
+            46,
+            200
+          ]
+        ],
+        "source_quote": "Students select one track for degree emphasis; they take 28 units",
+        "description": "Choice of one of five 28-unit emphasis tracks.",
+        "confidence": "high",
+        "note": "Students may substitute approved electives outside the listed options with adviser approval; not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PPD 313",
+            "PPD 314",
+            "PPD 325",
+            "PPD 342",
+            "PPD 353",
+            "PPD 357",
+            "PPD 371",
+            "PPD 380a",
+            "PPD 400",
+            "PPD 404"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PP-BS-CROSSCUTTING",
+        "source_lines": [
+          [
+            202,
+            217
+          ]
+        ],
+        "source_quote": "Students will be required to take 4 units of a cross-cutting topics course.",
+        "description": "One 4-unit cross-cutting topics course from the given list, distinct from any course already used.",
+        "confidence": "high",
+        "note": "A course already used to satisfy a track or core requirement cannot be double-counted as the cross-cutting course (one-slot rule restated)."
+      },
+      {
+        "family": "manual_review",
+        "kind": "HOURS",
+        "details": {
+          "min_hours": 140,
+          "setting": "internship via PPD 301 or the Washington, D.C., Semester"
+        },
+        "id": "PP-BS-INTERNSHIP",
+        "source_lines": [
+          [
+            227,
+            229
+          ]
+        ],
+        "source_quote": "Public Policy majors are required to complete 140 hours of internship",
+        "description": "140 hours of internship via PPD 301 or the Washington, D.C., Semester internship.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A minimum grade of C, 2.0 (A",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for pre-major courses."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "All pre-major requirements must be taken for",
+      "reason": "out_of_scope",
+      "why": "Letter-grade requirement, not a course selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          50,
+          50
+        ]
+      ],
+      "source_quote": "During advisement, students will be given a list",
+      "reason": "advisory",
+      "why": "Advisory note about recommended elective lists."
+    },
+    {
+      "source_lines": [
+        [
+          50,
+          50
+        ]
+      ],
+      "source_quote": "Students may work with their adviser for approval",
+      "reason": "out_of_scope",
+      "why": "Substitution approval process, not a checkable course rule."
+    },
+    {
+      "source_lines": [
+        [
+          233,
+          235
+        ]
+      ],
+      "source_quote": "Price School honors are available at graduation",
+      "reason": "out_of_scope",
+      "why": "Honors designation rule with GPA thresholds, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          237,
+          239
+        ]
+      ],
+      "source_quote": "The Washington, D.C., Semester program provides",
+      "reason": "advisory",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Public Policy is",
+      "reason": "advisory",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          231,
+          231
+        ]
+      ],
+      "source_quote": "PPD 301 and the internship in a position",
+      "reason": "advisory",
+      "why": "Descriptive statement about internship benefits, not a requirement."
+    }
+  ]
+}

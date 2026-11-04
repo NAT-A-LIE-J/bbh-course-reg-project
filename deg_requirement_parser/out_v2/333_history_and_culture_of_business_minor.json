@@ -1,0 +1,281 @@
+{
+  "program": "History and Culture of Business Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 203g",
+            "ECON 205g",
+            "HIST 215g",
+            "HIST 266gp",
+            "ECON 351",
+            "ECON 352"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HCB-LOWER-DIVISION",
+        "source_lines": [
+          [
+            27,
+            32
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "source_quote": "Choose one course (4 units)*",
+        "description": "Choose one lower-division course from the list, or substitute ECON 351 or ECON 352.",
+        "confidence": "high",
+        "note": "Line 38 amends the list to also allow ECON 351 or ECON 352 as substitutes; folded into this node's eligible courses."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 330",
+            "ECON 348g",
+            "ENST 387",
+            "HIST 348",
+            "HIST 442",
+            "IR 324",
+            "IR 329",
+            "IR 369",
+            "MOR 385gm",
+            "MOR 421",
+            "MOR 466",
+            "COMM 363",
+            "COMM 433",
+            "HIST 380",
+            "MKT 450",
+            "MOR 472",
+            "PSYC 456",
+            "BUCO 333mw",
+            "BUCO 460",
+            "COMM 468",
+            "ECON 340",
+            "ECON 342",
+            "ECON 343",
+            "ECON 344",
+            "ECON 346",
+            "ECON 350",
+            "HIST 424",
+            "IR 325",
+            "IR 331",
+            "IR 333",
+            "IR 360",
+            "IR 363",
+            "IR 364",
+            "IR 367",
+            "IR 439"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                44,
+                44
+              ]
+            ],
+            "source_quote": "at least one from each of the groups below.",
+            "eligible_if": {
+              "courses": [
+                "ECON 330",
+                "ECON 348g",
+                "ENST 387",
+                "HIST 348",
+                "HIST 442",
+                "IR 324",
+                "IR 329",
+                "IR 369",
+                "MOR 385gm",
+                "MOR 421",
+                "MOR 466"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                44,
+                44
+              ]
+            ],
+            "source_quote": "at least one from each of the groups below.",
+            "eligible_if": {
+              "courses": [
+                "COMM 363",
+                "COMM 433",
+                "HIST 380",
+                "MKT 450",
+                "MOR 472",
+                "PSYC 456"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                44,
+                44
+              ]
+            ],
+            "source_quote": "at least one from each of the groups below.",
+            "eligible_if": {
+              "courses": [
+                "BUCO 333mw",
+                "BUCO 460",
+                "COMM 468",
+                "ECON 340",
+                "ECON 342",
+                "ECON 343",
+                "ECON 344",
+                "ECON 346",
+                "ECON 350",
+                "HIST 424",
+                "IR 325",
+                "IR 331",
+                "IR 333",
+                "IR 360",
+                "IR 363",
+                "IR 364",
+                "IR 367",
+                "IR 439"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "HCB-UPPER-DIVISION",
+        "source_lines": [
+          [
+            40,
+            94
+          ]
+        ],
+        "source_quote": "Choose four courses (16 units), at least one",
+        "description": "Choose four upper-division courses (16 units), with at least one from each of the three groups: Corporate Culture, Consumer Culture, and Global and Regional Culture.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Completion of the minor requires 20 units;",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "4 units at the lower division and 16",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "At least 8 units must be from the",
+        "eligible_if": {
+          "prefix": [
+            "HIST"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Interested students should meet with the undergraduate adviser",
+      "reason": "advisory",
+      "why": "Advisory suggestion to meet with an adviser, not a requirement."
+    }
+  ]
+}

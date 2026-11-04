@@ -1,0 +1,91 @@
+{
+  "program": "Business Law Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "FBE 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "FBE 458"
+          }
+        ],
+        "id": "BUSLAW-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "FBE 403 Introduction to the Legal Environment of Business",
+        "description": "FBE 403 and FBE 458 are required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FBE 427",
+            "FBE 428",
+            "FBE 429",
+            "LAW 350"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "BUSLAW-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            45
+          ]
+        ],
+        "source_quote": "Choose two of the following:",
+        "description": "Choose two elective courses from the listed business law electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A minimum of 16 units is required to complete the minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "To enroll, students must have completed a minimum",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit prerequisite rule, not a course requirement."
+    }
+  ]
+}

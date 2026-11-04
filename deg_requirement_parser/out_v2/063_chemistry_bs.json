@@ -1,0 +1,299 @@
+{
+  "program": "Chemistry (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 107Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 108L"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "CHEM-BS-GENCHEM",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "One of three general chemistry sequences: 105a/105b, 107/108, or 115a/115b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          }
+        ],
+        "id": "CHEM-BS-MATH-CORE",
+        "source_lines": [
+          [
+            36,
+            37
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g and MATH 126g required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          }
+        ],
+        "id": "CHEM-BS-MATH-CHOICE",
+        "source_lines": [
+          [
+            39,
+            40
+          ]
+        ],
+        "source_quote": "MATH 225 Linear Algebra and Linear Differential Equations",
+        "description": "MATH 225 or MATH 226g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "CHEM-BS-PHYS",
+        "source_lines": [
+          [
+            42,
+            44
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "Three-course physics sequence: PHYS 151Lg, 152L, 153L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 300L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 332L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 350"
+          }
+        ],
+        "id": "CHEM-BS-UD-CORE",
+        "source_lines": [
+          [
+            50,
+            54
+          ]
+        ],
+        "source_quote": "CHEM 300L Analytical Chemistry Units: 4",
+        "description": "Five named upper-division chemistry core courses.",
+        "confidence": "high",
+        "note": "CHEM 350 also satisfies GE Category D (noted at L021); not encoded as a GE requirement."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 423L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 462L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 463L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 465L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 467L"
+          }
+        ],
+        "id": "CHEM-BS-ADVLAB",
+        "source_lines": [
+          [
+            56,
+            61
+          ]
+        ],
+        "source_quote": "CHEM 423L Advanced Laboratory Techniques in Organic",
+        "description": "One advanced laboratory course totaling 4 units from a choice of five.",
+        "confidence": "high",
+        "note": "Units vary by course (CHEM 463L and 467L are 2 units); total required is 4 units per catalogue note."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 426"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 455"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 461"
+          }
+        ],
+        "id": "CHEM-BS-ADVTHEORY",
+        "source_lines": [
+          [
+            62,
+            64
+          ]
+        ],
+        "source_quote": "CHEM 426 Advanced Organic Chemistry Units: 4",
+        "description": "One of CHEM 426, CHEM 455, or CHEM 461.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 453"
+          }
+        ],
+        "id": "CHEM-BS-PHYSCHEM",
+        "source_lines": [
+          [
+            66,
+            68
+          ]
+        ],
+        "source_quote": "CHEM 430 Physical Chemistry: Thermodynamics and Kinetics",
+        "description": "CHEM 430, CHEM 431 and CHEM 453 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CHEM-BS-RESEARCH",
+        "source_lines": [
+          [
+            69,
+            69
+          ]
+        ],
+        "source_quote": "CHEM 490x Directed Research Units: 1, 2, 3, 4, 5, 6, 7, 8",
+        "description": "CHEM 490x Directed Research, 4 units required (variable-unit course).",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "In addition to the general education, writing, foreign language",
+      "reason": "university_level",
+      "why": "References college-wide GE, writing, foreign language and diversity requirements, not major-specific."
+    }
+  ]
+}

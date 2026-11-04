@@ -1,0 +1,169 @@
+{
+  "program": "Latinx News Media Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 406"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 465m"
+          }
+        ],
+        "id": "LATINX-NEWS-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "JOUR 406 Social Media Storytelling for Latinx Audiences",
+        "description": "Required courses JOUR 406 and JOUR 465m.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 461"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 464"
+          }
+        ],
+        "id": "LATINX-NEWS-CHOICE",
+        "source_lines": [
+          [
+            32,
+            37
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "Choose one of JOUR 461 or JOUR 464.",
+        "confidence": "high",
+        "note": "JOUR 464 may be taken for 2 or 4 units, which affects the electives requirement below."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 128gp",
+            "AHIS 496",
+            "AMST 135gmw",
+            "AMST 305",
+            "ANTH 140g",
+            "ANTH 203g",
+            "ANTH 314g",
+            "ANTH 400",
+            "ANTH 425",
+            "ANTH 450",
+            "COLT 250g",
+            "COMM 326",
+            "HIST 109g",
+            "HIST 272g",
+            "HIST 353m",
+            "HIST 354",
+            "HIST 359",
+            "HIST 368",
+            "HIST 370",
+            "HIST 371",
+            "HIST 372",
+            "HIST 374",
+            "HIST 451",
+            "HIST 473",
+            "IR 364",
+            "IR 365",
+            "IR 366",
+            "IR 425",
+            "PORT 250g",
+            "POSC 350",
+            "SPAN 260",
+            "SPAN 270",
+            "SPAN 290gp",
+            "SPAN 301",
+            "SPAN 302",
+            "SPAN 304",
+            "SPAN 306",
+            "SPAN 308",
+            "SPAN 311",
+            "SPAN 320",
+            "SPAN 321",
+            "SPAN 341",
+            "SPAN 375",
+            "SPAN 380g",
+            "SPAN 381",
+            "SPAN 382",
+            "SPAN 385",
+            "SPAN 391",
+            "SPAN 413m",
+            "SPAN 460",
+            "SPAN 462",
+            "SPAN 464",
+            "SPAN 465",
+            "SPAN 470",
+            "SPAN 472",
+            "SPAN 481",
+            "SPAN 482",
+            "SPAN 483"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "LATINX-NEWS-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            104
+          ]
+        ],
+        "source_quote": "Choose at least 6-8 units from the following.",
+        "description": "At least 6 units of electives from the approved list, with the exact minimum (6 or 8) depending on JOUR 464 units taken.",
+        "confidence": "medium",
+        "note": "If JOUR 464 is taken for 2 units, 8 units of electives are required; if taken for 4 units, 6 units are required. This conditional threshold cannot be fully expressed; minimum of 6 used as base."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor requires at least 16 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          45,
+          45
+        ]
+      ],
+      "source_quote": "If students take JOUR 464 for 2 units",
+      "reason": "no_fit",
+      "why": "Conditional elective-unit requirement depending on which JOUR 464 unit value is taken cannot be expressed as a fixed threshold."
+    }
+  ]
+}

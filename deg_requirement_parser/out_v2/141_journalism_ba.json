@@ -1,0 +1,229 @@
+{
+  "program": "Journalism (BA)*",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 206"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 207"
+          }
+        ],
+        "id": "JOUR-BA-LOWER-DIV",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "JOUR 201 Culture of Journalism: Past, Present",
+        "description": "Required lower-division core courses: JOUR 201, JOUR 206 (2 units required), JOUR 207.",
+        "confidence": "high",
+        "note": "JOUR 206 is listed as 1 unit per offering but 2 units required; likely taken twice, but catalogue gives no explicit repeat instruction."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 307"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 321"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 322"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 372"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 414"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 462"
+          }
+        ],
+        "id": "JOUR-BA-UPPER-DIV",
+        "source_lines": [
+          [
+            33,
+            43
+          ]
+        ],
+        "source_quote": "JOUR 301 The Business of News Units: 2",
+        "description": "Required upper-division core courses: JOUR 301, 307, 321, 322, 372, 414, 462.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ASCJ 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 300"
+          }
+        ],
+        "id": "JOUR-BA-ANNENBERG-EXPERIENCE",
+        "source_lines": [
+          [
+            45,
+            52
+          ]
+        ],
+        "source_quote": "Choose one of the following required core courses",
+        "description": "Choose one required core course: ASCJ 200 or JOUR 300 (4 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 405"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 409"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 435"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 441"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 446"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 447"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 448"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 488"
+          }
+        ],
+        "id": "JOUR-BA-ADVANCED-REPORTING",
+        "source_lines": [
+          [
+            54,
+            73
+          ]
+        ],
+        "source_quote": "Choose one course:",
+        "description": "Choose one advanced reporting elective course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "remaining units required to complete the degree, consult with an advisor"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "JOUR-BA-UPPER-DIV-ELECTIVES",
+        "source_lines": [
+          [
+            75,
+            79
+          ]
+        ],
+        "source_quote": "Consult with an advisor to determine your remaining units",
+        "description": "Remaining upper-division elective units needed to reach the 46-unit major total, as determined with an advisor.",
+        "confidence": "low",
+        "note": "No specific course list or unit amount is given for these electives; cannot be fully checked."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students are required to complete 46 units for the major, including 32 units of required core courses.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 46
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The undergraduate journalism degree at USC Annenberg",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description text, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "program": "Game Entrepreneurism Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "permission from the Interactive Media Division and change of major/minor form"
+        },
+        "id": "GEM-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To be eligible for the game entrepreneurism minor, a student must be",
+        "description": "Admission requires good standing, a declared major, division permission, and a change of major/minor form.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 451"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BAEP 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 458"
+          }
+        ],
+        "id": "GEM-CORE",
+        "source_lines": [
+          [
+            29,
+            36
+          ]
+        ],
+        "source_quote": "Upper-division Core (10 Units)",
+        "description": "BAEP 450 or 451, plus BAEP 452 and CTIN 458, totaling 10 units.",
+        "confidence": "high",
+        "note": "BAEP 452 is marked with an asterisk requiring a prerequisite (see line 56); not separately checkable."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 454",
+            "BAEP 460",
+            "BAEP 465",
+            "BAEP 475",
+            "CTIN 291",
+            "CTIN 463",
+            "CTIN 468",
+            "CTIN 488",
+            "CTIN 497"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "GEM-ELECTIVES",
+        "source_lines": [
+          [
+            38,
+            50
+          ]
+        ],
+        "source_quote": "Electives (6 Additional Units)",
+        "description": "At least 6 additional units chosen from the listed elective courses.",
+        "confidence": "high",
+        "note": "BAEP 454 is marked with an asterisk requiring a prerequisite (see line 56); not separately checkable."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A minimum of 16 units is required for the Game Entrepreneurism minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          58,
+          60
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each course is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    }
+  ]
+}

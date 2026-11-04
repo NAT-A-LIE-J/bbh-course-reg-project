@@ -1,0 +1,106 @@
+{
+  "program": "Sports Law Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LAW 200w"
+              },
+              {
+                "family": "specific_course",
+                "course": "LAW 210p"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 324"
+          }
+        ],
+        "id": "SPORTSLAW-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            33
+          ]
+        ],
+        "source_quote": "LAW 200w Law and Society Units: 4",
+        "description": "Core: LAW 200w or LAW 210p, plus LAW 324.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 381",
+            "COMM 383m",
+            "COMM 387",
+            "JOUR 380",
+            "JOUR 478",
+            "JOUR 485",
+            "LAW 326",
+            "LAW 311",
+            "LAW 350",
+            "OT 333"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "SPORTSLAW-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            48
+          ]
+        ],
+        "source_quote": "COMM 381 Issues in Contemporary Sport Units: 4",
+        "description": "8 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The Minor in Sports Law totals 16 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Minor in Sports Law introduces the legal foundations",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    }
+  ]
+}

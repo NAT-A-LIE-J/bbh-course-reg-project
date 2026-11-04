@@ -1,0 +1,139 @@
+{
+  "program": "Entrepreneurship Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 451"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BAEP 452"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 453"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 454"
+              }
+            ]
+          }
+        ],
+        "id": "ENTR-MIN-CORE",
+        "source_lines": [
+          [
+            25,
+            37
+          ]
+        ],
+        "source_quote": "BAEP 450 Fundamentals of Entrepreneurship Units: 4",
+        "description": "Core requirements: BAEP 450 or 451, BAEP 452, and BAEP 453 or 454.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 423",
+            "BAEP 455",
+            "BAEP 460",
+            "BAEP 465",
+            "BAEP 469",
+            "BAEP 470",
+            "BAEP 474",
+            "BAEP 475",
+            "BAEP 491",
+            "BAEP 495",
+            "BAEP 499",
+            "BUAD 301",
+            "BUAD 302",
+            "BUAD 304",
+            "BUAD 307",
+            "BUAD 315x",
+            "FBE 400x",
+            "FBE 403",
+            "FBE 437"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "ENTR-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            63
+          ]
+        ],
+        "source_quote": "Choose from the following to achieve a total of at least 16 units",
+        "description": "Elective courses chosen to bring the minor's total units to at least 16, given the core already contributes 12 units.",
+        "confidence": "low",
+        "note": "The 4-unit minimum is inferred by subtracting the core's 12 fixed units from the overall 16-unit minimum stated for the minor; the catalogue does not state the elective minimum directly."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor requires a minimum of 16 units to complete.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "students must have completed a minimum of 32 units of college-level course work",
+      "reason": "out_of_scope",
+      "why": "Admission prerequisite about prior units and GPA, not a minor curriculum requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "have a minimum overall GPA of 2.75",
+      "reason": "out_of_scope",
+      "why": "GPA requirement for enrollment, out of scope per taxonomy."
+    }
+  ]
+}

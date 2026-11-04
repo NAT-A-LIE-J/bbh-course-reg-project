@@ -1,0 +1,538 @@
+{
+  "program": "Middle East Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ARAB 252"
+          },
+          {
+            "family": "specific_course",
+            "course": "HEBR 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "IRAN 250"
+          }
+        ],
+        "id": "MDES-LANGUAGE",
+        "source_lines": [
+          [
+            35,
+            43
+          ]
+        ],
+        "source_quote": "All MDES majors must demonstrate fourth semester competency",
+        "description": "Fourth-semester proficiency in Arabic, Hebrew, or Persian, demonstrated via ARAB 252, HEBR 315, or IRAN 250, or by placement/transfer/study abroad.",
+        "confidence": "medium",
+        "note": "Placement or transfer credit may also satisfy this (unresolved alternative path); students who place out must take an additional elective (encoded in note of MDES-ELECTIVE)."
+      },
+      {
+        "family": "specific_course",
+        "course": "MDES 201w",
+        "id": "MDES-REQ-LOWER",
+        "source_lines": [
+          [
+            45,
+            51
+          ]
+        ],
+        "source_quote": "All students must the following course.",
+        "description": "MDES 201w required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MDES 301g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDES 475"
+          }
+        ],
+        "id": "MDES-REQ-UPPER",
+        "source_lines": [
+          [
+            53,
+            60
+          ]
+        ],
+        "source_quote": "All students must take the following two courses.",
+        "description": "MDES 301g and MDES 475 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARAB 300",
+            "ARAB 322",
+            "ARAB 333",
+            "ARAB 334",
+            "ARAB 352",
+            "CLAS 349gp",
+            "CLAS 371",
+            "CLAS 378",
+            "HIST 480",
+            "IRAN 320",
+            "IRAN 325",
+            "IRAN 350",
+            "MDES 312",
+            "MDES 313p",
+            "MDES 316p",
+            "MDES 320g",
+            "MDES 324",
+            "MDES 325g",
+            "MDES 335",
+            "MDES 343g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                66,
+                66
+              ]
+            ],
+            "source_quote": "one of which must be an MDES course.",
+            "eligible_if": {
+              "courses": [
+                "MDES 312",
+                "MDES 313p",
+                "MDES 316p",
+                "MDES 320g",
+                "MDES 324",
+                "MDES 325g",
+                "MDES 335",
+                "MDES 343g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "MDES-CONCENTRATION-I",
+        "source_lines": [
+          [
+            62,
+            87
+          ]
+        ],
+        "source_quote": "Students must take at least two courses from this list,",
+        "description": "At least two courses from Concentration I list, one of which must be an MDES course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 342",
+            "IR 362",
+            "IR 363",
+            "IR 464",
+            "MDES 314p",
+            "MDES 340g",
+            "MDES 342g",
+            "MDES 345p",
+            "MDES 375",
+            "MDES 401",
+            "MDES 403",
+            "MDES 441w",
+            "POSC 351"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                93,
+                93
+              ]
+            ],
+            "source_quote": "one of which must be an MDES course.",
+            "eligible_if": {
+              "courses": [
+                "MDES 314p",
+                "MDES 340g",
+                "MDES 342g",
+                "MDES 345p",
+                "MDES 375",
+                "MDES 401",
+                "MDES 403",
+                "MDES 441w"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "MDES-CONCENTRATION-II",
+        "source_lines": [
+          [
+            89,
+            107
+          ]
+        ],
+        "source_quote": "Students must take at least two courses from this list,",
+        "description": "At least two courses from Concentration II list, one of which must be an MDES course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARAB 300",
+            "ARAB 322",
+            "ARAB 333",
+            "ARAB 334",
+            "ARAB 352",
+            "CLAS 349gp",
+            "CLAS 371",
+            "CLAS 378",
+            "CLAS 420",
+            "ECON 342",
+            "FREN 448m",
+            "HIST 480",
+            "IR 362",
+            "IR 363",
+            "IR 464",
+            "IRAN 320",
+            "IRAN 325",
+            "IRAN 350",
+            "JS 314gp",
+            "MDES 312",
+            "MDES 313p",
+            "MDES 314p",
+            "MDES 316p",
+            "MDES 320g",
+            "MDES 324",
+            "MDES 325g",
+            "MDES 335",
+            "MDES 340g",
+            "MDES 342g",
+            "MDES 343g",
+            "MDES 345p",
+            "MDES 375",
+            "MDES 401",
+            "MDES 403",
+            "MDES 441w",
+            "MDES 475",
+            "POSC 351",
+            "REL 315"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "MDES-ELECTIVE",
+        "source_lines": [
+          [
+            109,
+            152
+          ]
+        ],
+        "source_quote": "Students must also take one upper-division course, chosen from",
+        "description": "One upper-division elective course from the list.",
+        "confidence": "medium",
+        "note": "Students who place out of the language requirement (ARAB 252/HEBR 315/IRAN 250) must take two elective courses instead of one (L039, L113); cannot be checked without knowing placement status. Concentration I/II courses may not be double-counted as electives (L158); already enforced by one-slot rule."
+      },
+      {
+        "family": "course_reuse",
+        "kind": "DOUBLE_COUNT",
+        "details": {
+          "max_courses": 2,
+          "applies_to": "another major"
+        }
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "ENROLL",
+          "approver": "department",
+          "courses": [
+            "MDES 490",
+            "MDES 492"
+          ]
+        },
+        "id": "MDES-490-492-APPROVAL",
+        "source_lines": [
+          [
+            158,
+            158
+          ]
+        ],
+        "source_quote": "MDES 490 and MDES 492 may only be taken",
+        "description": "MDES 490 and MDES 492 require departmental approval to enroll.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IRAN 250",
+            "id": "MDES-IRANIAN-LANGUAGE",
+            "source_lines": [
+              [
+                164,
+                170
+              ]
+            ],
+            "source_quote": "Students wishing to pursue an Iranian Studies concentration must",
+            "description": "Fourth-semester Persian proficiency via IRAN 250 or placement/transfer/study abroad.",
+            "confidence": "medium",
+            "note": "Placement/transfer alternative not independently checkable; placing out requires one additional elective (encoded in note of MDES-IRANIAN-ELECTIVE)."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MDES 201w"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MDES 213gp"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MDES 312"
+                  }
+                ]
+              }
+            ],
+            "id": "MDES-IRANIAN-ORIENTATION",
+            "source_lines": [
+              [
+                172,
+                182
+              ]
+            ],
+            "source_quote": "All students must take the following courses:",
+            "description": "MDES 201w, and either MDES 213gp or MDES 312.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "MDES 313p",
+            "id": "MDES-IRANIAN-UPPER",
+            "source_lines": [
+              [
+                184,
+                190
+              ]
+            ],
+            "source_quote": "All students must take the following course:",
+            "description": "MDES 313p required.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "IR 363",
+                "IRAN 320",
+                "MDES 301g",
+                "MDES 314p",
+                "MDES 340g",
+                "MDES 345p",
+                "MDES 375",
+                "MDES 401",
+                "MDES 403",
+                "MDES 441w",
+                "POSC 351"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "id": "MDES-IRANIAN-TOPICAL",
+            "source_lines": [
+              [
+                192,
+                208
+              ]
+            ],
+            "source_quote": "Students must take at least three courses from this list.",
+            "description": "At least three topical courses from the list.",
+            "confidence": "high",
+            "note": "IR 363, MDES 375 and POSC 351 require departmental approval to count (not independently checkable)."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CLAS 349gp",
+                "ECON 342",
+                "HIST 480",
+                "IR 362",
+                "IR 363",
+                "IR 464",
+                "IRAN 320",
+                "IRAN 325",
+                "IRAN 350",
+                "MDES 312",
+                "MDES 314p",
+                "MDES 316p",
+                "MDES 324",
+                "MDES 325g",
+                "MDES 340g",
+                "MDES 345p",
+                "MDES 375",
+                "MDES 401",
+                "MDES 403",
+                "MDES 441w",
+                "POSC 351"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "MDES-IRANIAN-ELECTIVE",
+            "source_lines": [
+              [
+                210,
+                236
+              ]
+            ],
+            "source_quote": "Students must take one course from the list below.",
+            "description": "One elective course from the list.",
+            "confidence": "medium",
+            "note": "Students who place out of language requirements must take two elective courses instead; not independently checkable. Topical Courses cannot be double counted as electives (L242), enforced by one-slot rule."
+          },
+          {
+            "family": "specific_course",
+            "course": "MDES 475",
+            "id": "MDES-IRANIAN-CAPSTONE",
+            "source_lines": [
+              [
+                244,
+                250
+              ]
+            ],
+            "source_quote": "Students must take the following course.",
+            "description": "MDES 475 Seminar in Middle East Studies as capstone.",
+            "confidence": "high",
+            "note": "Requirement to produce substantial original research using Persian-language sources after an upper-level course cannot be independently checked (manual review)."
+          }
+        ],
+        "id": "MDES-IRANIAN-STUDIES-CONCENTRATION",
+        "source_lines": [
+          [
+            160,
+            250
+          ]
+        ],
+        "source_quote": "Students wishing to pursue an Iranian Studies concentration",
+        "description": "Optional Iranian Studies concentration with its own language, orientation, upper division, topical, elective and capstone requirements.",
+        "confidence": "low",
+        "note": "This is an optional concentration, not required for the base BA; its internal structure is encoded for completeness but should not be treated as mandatory for every student."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "Nine total courses are required for the major.",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 9
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Students participating in USC Overseas Studies programs should",
+      "reason": "advisory",
+      "why": "Advises contacting department, not a rule."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Students must meet with a faculty mentor from",
+      "reason": "out_of_scope",
+      "why": "Procedural advising requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          252,
+          264
+        ]
+      ],
+      "source_quote": "Candidates for the BA in Middle East Studies may",
+      "reason": "out_of_scope",
+      "why": "Honors program is an optional distinction with GPA/application gates, not a degree requirement."
+    }
+  ]
+}

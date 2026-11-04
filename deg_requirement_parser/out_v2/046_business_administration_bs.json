@@ -1,0 +1,303 @@
+{
+  "program": "Business Administration (Entrepreneurship and Innovation) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "one semester in residence at USC",
+            "credit for BAEP 450 or BAEP 451"
+          ]
+        },
+        "id": "BEI-BS-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Admission requires sophomore standing, one semester in residence, and credit for BAEP 450 or 451.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BEI-BS-WRITING",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "A specific WRIT 340 section is recommended but not required; see unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BEI-BS-CORE",
+        "source_lines": [
+          [
+            43,
+            76
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units",
+        "description": "Business core courses, with several either/or choices for finance, statistics, operations, analytics, and calculus.",
+        "confidence": "high",
+        "note": "Placement/waiver conditions for MATH 118gx and A-level credit for MATH 125g are advisory/procedural, not encoded."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BAEP 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "BAEP 451"
+          }
+        ],
+        "id": "BEI-BS-REQUIRED-COURSE",
+        "source_lines": [
+          [
+            89,
+            96
+          ]
+        ],
+        "source_quote": "Complete one of the following courses:",
+        "description": "Emphasis required course: BAEP 450 or BAEP 451.",
+        "confidence": "high",
+        "note": "Whichever of BAEP 450/451 is used here cannot also be used for the elective requirement below (one-slot rule); the other is eligible as an elective."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "BAEP"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "BEI-BS-ELECTIVES",
+        "source_lines": [
+          [
+            98,
+            104
+          ]
+        ],
+        "source_quote": "Complete 8 units of upper-division elective courses",
+        "description": "8 units of upper-division (300/400-level) BAEP elective courses from the Lloyd Greif Center.",
+        "confidence": "high",
+        "note": "BAEP 450/451 cannot be used both as the required course and as an elective (duplicate credit); whichever was not used as the required course may count here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "at least 12 upper-division units in the area",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Students may earn only one emphasis within",
+      "reason": "out_of_scope",
+      "why": "Degree-structure rule about emphasis count, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "students must satisfy all requirements for the Bachelor",
+      "reason": "university_level",
+      "why": "General Education requirement is a university-wide rule handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommends a specific WRIT 340 section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement/prerequisite exam rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advises students to consult advisers about credit; not a requirement."
+    }
+  ]
+}

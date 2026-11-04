@@ -1,0 +1,95 @@
+{
+  "program": "Creative Leadership Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 122"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 474"
+          }
+        ],
+        "id": "CRLEAD-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required Courses (6 units)",
+        "description": "Three required courses: THTR 122, THTR 421, THTR 474.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 105",
+            "THTR 216",
+            "THTR 290",
+            "THTR 304",
+            "THTR 318",
+            "THTR 322",
+            "THTR 395m",
+            "THTR 405m",
+            "THTR 414",
+            "THTR 419",
+            "THTR 426",
+            "THTR 445",
+            "THTR 467",
+            "THTR 479",
+            "THTR 482",
+            "THTR 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "CRLEAD-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            50
+          ]
+        ],
+        "source_quote": "Elective Courses (10 units)",
+        "description": "10 units of electives from the listed THTR courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor is a 16-unit program.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

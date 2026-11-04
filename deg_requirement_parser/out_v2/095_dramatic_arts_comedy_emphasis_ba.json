@@ -1,0 +1,255 @@
+{
+  "program": "Dramatic Arts, Comedy Emphasis (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 122"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 197g"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 307"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 322"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 413"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 470"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 474"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 482"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 290",
+                "THTR 317"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 250",
+                "THTR 342a",
+                "THTR 355",
+                "THTR 397",
+                "THTR 410",
+                "THTR 423",
+                "THTR 424",
+                "THTR 467",
+                "THTR 469",
+                "THTR 473",
+                "THTR 479",
+                "THTR 483",
+                "THTR 497"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          }
+        ],
+        "id": "DA-COMEDY-REQUIRED-PRODUCTION",
+        "source_lines": [
+          [
+            23,
+            63
+          ]
+        ],
+        "source_quote": "Required Comedy/Production Courses for Emphasis (64 units)",
+        "description": "Twelve named required comedy/production courses, plus 2 units from a clowning list and 16 units from a broader elective-style comedy/production list.",
+        "confidence": "medium",
+        "note": "The named courses sum to 32 units; the heading's 64-unit total is not exactly reconcilable from the listed sub-totals (32+2+16=50), so it is not encoded as a separate unit check."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "DA-COMEDY-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            65,
+            97
+          ]
+        ],
+        "source_quote": "Complete the two required courses below.",
+        "description": "Two required critical studies courses, plus one course from List A, plus one more course from either List A or List B.",
+        "confidence": "medium",
+        "note": "The one-slot rule ensures the List-A course satisfying the first sub-requirement cannot also satisfy the second."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ],
+        "id": "DA-COMEDY-ELECTIVES",
+        "source_lines": [
+          [
+            103,
+            103
+          ]
+        ],
+        "source_quote": "Elective Units: 28",
+        "description": "28 units of free electives.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The BA Dramatic Arts, Comedy emphasis encourages students to engage",
+      "reason": "advisory",
+      "why": "General programme description, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          99,
+          99
+        ]
+      ],
+      "source_quote": "Required General Education Units: 36",
+      "reason": "university_level",
+      "why": "GE requirement is university-wide and handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          107,
+          107
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement for the degree."
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "program": "Linguistics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "LING 210g",
+        "id": "LING-BA-LOWER",
+        "source_lines": [
+          [
+            21,
+            25
+          ]
+        ],
+        "source_quote": "LING 210g Introduction to Linguistics",
+        "description": "Required lower-division course LING 210g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LING 301",
+            "LING 302",
+            "LING 303",
+            "LING 415"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "LING-BA-UPPER-CORE",
+        "source_lines": [
+          [
+            27,
+            36
+          ]
+        ],
+        "source_quote": "Select three courses (12 units).",
+        "description": "Select three of the four listed upper-division core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "LING"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    42,
+                    42
+                  ]
+                ],
+                "source_quote": "At least one course (4 units) must be at the 400 level",
+                "eligible_if": {
+                  "level_min": 400
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "all": [
+                    {
+                      "prefix": [
+                        "LING"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ]
+                },
+                {
+                  "unresolved": "related field upper-division course"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "LING-BA-ELECTIVES",
+        "source_lines": [
+          [
+            38,
+            43
+          ]
+        ],
+        "source_quote": "Three upper-division LING courses. At least one",
+        "description": "Three upper-division LING electives (at least one at 400 level) plus one additional upper-division course in linguistics or a related field.",
+        "confidence": "medium",
+        "note": "The 'related field' pool for the additional elective is not defined in the catalogue beyond this phrase."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 497"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 490"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "LING"
+                      ]
+                    },
+                    {
+                      "level_min": 400
+                    },
+                    {
+                      "unresolved": "course involving a research paper"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "A poster presented at the USC UG Symposium or at a conference."
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "A summer internship related to the degree."
+            }
+          }
+        ],
+        "id": "LING-BA-CAPSTONE",
+        "source_lines": [
+          [
+            45,
+            55
+          ]
+        ],
+        "source_quote": "The major requires a capstone experience, which",
+        "description": "Capstone fulfilled by a research paper (Honors Thesis, Directed Research, or 400-level course paper), a conference/symposium poster, or a related summer internship.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "HONORS_ENTRY",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "3.5 GPA in major requirements",
+            "LING 497 Honors Thesis with grade of B+ or better"
+          ]
+        },
+        "id": "LING-BA-HONORS",
+        "source_lines": [
+          [
+            57,
+            61
+          ]
+        ],
+        "source_quote": "The linguistics major with honors requires the",
+        "description": "Optional honors track requiring 3.5 GPA and a B+ or better in LING 497 Honors Thesis.",
+        "confidence": "medium",
+        "note": "This is an optional additional credential, not a requirement for the base BA."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          61,
+          61
+        ]
+      ],
+      "source_quote": "Intent to complete the linguistics major with honors",
+      "reason": "out_of_scope",
+      "why": "Procedural deadline for registering honors intent, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          61,
+          61
+        ]
+      ],
+      "source_quote": "with a GPA of 3.5 or above",
+      "reason": "out_of_scope",
+      "why": "GPA rule."
+    }
+  ]
+}

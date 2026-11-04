@@ -1,0 +1,931 @@
+{
+  "program": "Jazz Studies (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "USC admission process with faculty selection committee screening"
+        },
+        "id": "JAZZ-BM-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission is through the USC admission process and faculty selection committee screening.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 496"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 350g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 250gmw"
+                  }
+                ],
+                "id": "JAZZ-BM-NG-CORE",
+                "source_lines": [
+                  [
+                    76,
+                    87
+                  ]
+                ],
+                "source_quote": "Core Thornton Academic Courses (24 units)",
+                "description": "Eight required Core Thornton academic courses totaling 24 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 153"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 253"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 353"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 453"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "JAZZ-BM-NG-INDIVIDUAL",
+                    "source_lines": [
+                      [
+                        93,
+                        104
+                      ]
+                    ],
+                    "source_quote": "4 units total of MUJZ 153 in your primary",
+                    "description": "4 units each of MUJZ 153, 253, 353 and 453 in the primary instrument, 16 units total.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MUEN 305",
+                        "MUEN 326",
+                        "MUEN 329",
+                        "MUEN 332",
+                        "MUJZ 311"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 14
+                      }
+                    ],
+                    "id": "JAZZ-BM-NG-ENSEMBLES",
+                    "source_lines": [
+                      [
+                        106,
+                        117
+                      ]
+                    ],
+                    "source_quote": "Select 14 units from the following as directed",
+                    "description": "14 units of ensembles chosen as directed by the department.",
+                    "confidence": "medium",
+                    "note": "Vocal Jazz students complete only 12 units of ensemble plus MUJZ 311 as the remaining 2 units; cannot be checked generically."
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "choose": 1,
+                        "from": [
+                          {
+                            "family": "count",
+                            "eligible_if": {
+                              "courses": [
+                                "MUJZ 195L"
+                              ]
+                            },
+                            "thresholds": [
+                              {
+                                "count_by": "units",
+                                "op": "min",
+                                "value": 4
+                              }
+                            ]
+                          },
+                          {
+                            "all_of": [
+                              {
+                                "family": "specific_course",
+                                "course": "MUJZ 197a"
+                              },
+                              {
+                                "family": "specific_course",
+                                "course": "MUJZ 197b"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MPPM 240"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUIN 270"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 141a"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 305a"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 305b"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 395"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 400"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPGU 415",
+                            "MUJZ 443"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MTEC 245",
+                            "MTEC 246",
+                            "MTEC 248",
+                            "MTEC 249",
+                            "MTEC 443",
+                            "MTEC 444",
+                            "MTEC 445",
+                            "MTEC 446a",
+                            "MTEC 446b",
+                            "MTEC 474a"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "JAZZ-BM-NG-INTENSIVE",
+                    "source_lines": [
+                      [
+                        119,
+                        152
+                      ]
+                    ],
+                    "source_quote": "Complete 4 units of MUJZ 195 or MUJZ",
+                    "description": "Program intensive courses: elements sequence, fixed courses, pedagogy choice and MTEC technology choice, totaling 28 units.",
+                    "confidence": "high",
+                    "note": null
+                  }
+                ],
+                "id": "JAZZ-BM-NG-SPECIFIC",
+                "source_lines": [
+                  [
+                    89,
+                    152
+                  ]
+                ],
+                "source_quote": "Program Specific Courses (58 units)",
+                "description": "58 units of program specific courses: individual instruction, ensembles, and program intensive courses.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "electives, no course pool specified"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 18
+                  }
+                ],
+                "id": "JAZZ-BM-NG-ELECTIVES",
+                "source_lines": [
+                  [
+                    154,
+                    154
+                  ]
+                ],
+                "source_quote": "Electives (18 units)",
+                "description": "18 units of electives, pool unspecified.",
+                "confidence": "low",
+                "note": "No course list or category given for electives."
+              },
+              {
+                "family": "manual_review",
+                "kind": "GATE",
+                "details": {
+                  "stage": "CAPSTONE",
+                  "basis": "QUALITATIVE_REVIEW",
+                  "process": "senior recital or senior project approved by faculty, projects approved by Jazz faculty"
+                },
+                "id": "JAZZ-BM-NG-CAPSTONE",
+                "source_lines": [
+                  [
+                    33,
+                    35
+                  ],
+                  [
+                    158,
+                    162
+                  ]
+                ],
+                "source_quote": "A senior recital or senior project must be",
+                "description": "A faculty-supervised senior recital or project; senior projects require Jazz faculty approval.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "JAZZ-BM-NONGUITAR",
+            "source_lines": [
+              [
+                37,
+                168
+              ]
+            ],
+            "source_quote": "Curriculum Requirements for Non-Guitar",
+            "description": "Non-Guitar track curriculum: core, program specific, electives and capstone.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 496"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 350g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 250gmw"
+                  }
+                ],
+                "id": "JAZZ-BM-GU-CORE",
+                "source_lines": [
+                  [
+                    211,
+                    222
+                  ]
+                ],
+                "source_quote": "Core Thornton Academic Courses (24 units)",
+                "description": "Eight required Core Thornton academic courses totaling 24 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 153"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 253"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 353"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 453"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "JAZZ-BM-GU-INDIVIDUAL",
+                    "source_lines": [
+                      [
+                        228,
+                        239
+                      ]
+                    ],
+                    "source_quote": "4 units total of MUJZ 153 (Guitar)",
+                    "description": "4 units each of MUJZ 153, 253, 353 and 453 for Guitar, 16 units total.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 326"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 305",
+                            "MUEN 326",
+                            "MUEN 329",
+                            "MUEN 332"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "JAZZ-BM-GU-ENSEMBLES",
+                    "source_lines": [
+                      [
+                        241,
+                        251
+                      ]
+                    ],
+                    "source_quote": "2 units total of MUEN 326",
+                    "description": "2 units of MUEN 326 plus 4 units from the ensemble list, 6 units total.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "specific_course",
+                        "course": "MPPM 240"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUIN 270"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 195L"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 305a"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 305b"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUJZ 395"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUJZ 400"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPGU 415",
+                            "MUJZ 443"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MTEC 245",
+                            "MTEC 246",
+                            "MTEC 248",
+                            "MTEC 249",
+                            "MTEC 443",
+                            "MTEC 444",
+                            "MTEC 445",
+                            "MTEC 446a",
+                            "MTEC 446b",
+                            "MTEC 474a"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "JAZZ-BM-GU-INTENSIVE",
+                    "source_lines": [
+                      [
+                        253,
+                        279
+                      ]
+                    ],
+                    "source_quote": "Program Intensive Courses (26 units)",
+                    "description": "Program intensive courses for Guitar: fixed courses, pedagogy choice and MTEC technology choice, totaling 26 units.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "specific_course",
+                        "course": "MPGU 160a"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MPGU 160b"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MPGU 260"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPGU 420",
+                            "MPGU 460",
+                            "MPGU 462"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "JAZZ-BM-GU-GUITARINTENSIVE",
+                    "source_lines": [
+                      [
+                        281,
+                        291
+                      ]
+                    ],
+                    "source_quote": "Guitar Intensive Courses (10 units)",
+                    "description": "Guitar-specific intensive courses, 10 units total.",
+                    "confidence": "high",
+                    "note": null
+                  }
+                ],
+                "id": "JAZZ-BM-GU-SPECIFIC",
+                "source_lines": [
+                  [
+                    224,
+                    291
+                  ]
+                ],
+                "source_quote": "Program Specific Courses (58 units)",
+                "description": "58 units of program specific courses for the Guitar track.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "electives, no course pool specified"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 18
+                  }
+                ],
+                "id": "JAZZ-BM-GU-ELECTIVES",
+                "source_lines": [
+                  [
+                    293,
+                    293
+                  ]
+                ],
+                "source_quote": "Electives (18 units)",
+                "description": "18 units of electives, pool unspecified.",
+                "confidence": "low",
+                "note": "No course list or category given for electives."
+              },
+              {
+                "family": "manual_review",
+                "kind": "GATE",
+                "details": {
+                  "stage": "CAPSTONE",
+                  "basis": "QUALITATIVE_REVIEW",
+                  "process": "senior recital or senior project approved by faculty, projects approved by Jazz faculty"
+                },
+                "id": "JAZZ-BM-GU-CAPSTONE",
+                "source_lines": [
+                  [
+                    33,
+                    35
+                  ],
+                  [
+                    297,
+                    301
+                  ]
+                ],
+                "source_quote": "A senior recital or senior project must be",
+                "description": "A faculty-supervised senior recital or project; senior projects require Jazz faculty approval.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "JAZZ-BM-GUITAR",
+            "source_lines": [
+              [
+                170,
+                307
+              ]
+            ],
+            "source_quote": "Curriculum Requirements for Guitar",
+            "description": "Guitar track curriculum: core, program specific (including guitar intensive), electives and capstone.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "JAZZ-BM-TRACKS",
+        "source_lines": [
+          [
+            37,
+            307
+          ]
+        ],
+        "source_quote": "Curriculum Requirements for Non-Guitar",
+        "description": "Students follow either the Non-Guitar or Guitar curriculum track.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The Bachelor of Music in Jazz Studies consists",
+      "reason": "university_level",
+      "why": "Programme overview, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Specific entrance requirements are reviewed on an",
+      "reason": "advisory",
+      "why": "Points to external site, not a stated requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "In cases in which a performance venue is",
+      "reason": "out_of_scope",
+      "why": "Operational/logistics rule about reserving venues."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "University-wide GE requirement description."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          75
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "University-wide GE core literacies, global perspectives and writing requirements (Non-Guitar track)."
+    },
+    {
+      "source_lines": [
+        [
+          174,
+          209
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "University-wide GE core literacies, global perspectives and writing requirements (Guitar track)."
+    },
+    {
+      "source_lines": [
+        [
+          164,
+          164
+        ]
+      ],
+      "source_quote": "Total required for degree: 132",
+      "reason": "university_level",
+      "why": "Overall degree unit total, university-level aggregation (Non-Guitar track)."
+    },
+    {
+      "source_lines": [
+        [
+          303,
+          303
+        ]
+      ],
+      "source_quote": "Total required for degree: 132",
+      "reason": "university_level",
+      "why": "Overall degree unit total, university-level aggregation (Guitar track)."
+    },
+    {
+      "source_lines": [
+        [
+          168,
+          168
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "advisory",
+      "why": "Planning note about outside units, not a distinct requirement (Non-Guitar track)."
+    },
+    {
+      "source_lines": [
+        [
+          307,
+          307
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "advisory",
+      "why": "Planning note about outside units, not a distinct requirement (Guitar track)."
+    },
+    {
+      "source_lines": [
+        [
+          162,
+          162
+        ]
+      ],
+      "source_quote": "Senior Recital or Senior Project: 0 units",
+      "reason": "out_of_scope",
+      "why": "Restates the capstone already captured as a manual_review gate; zero-unit notation."
+    },
+    {
+      "source_lines": [
+        [
+          301,
+          301
+        ]
+      ],
+      "source_quote": "Senior Recital or Senior Project: 0 units",
+      "reason": "out_of_scope",
+      "why": "Restates the capstone already captured as a manual_review gate; zero-unit notation."
+    }
+  ]
+}

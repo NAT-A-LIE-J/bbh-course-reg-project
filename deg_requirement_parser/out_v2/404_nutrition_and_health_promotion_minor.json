@@ -1,0 +1,69 @@
+{
+  "program": "Nutrition and Health Promotion Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 230"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 431"
+          }
+        ],
+        "id": "NHP-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "HP 230 Nutrition and Health Units: 4",
+        "description": "Three required core courses: HP 230, HP 430, HP 431.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HP 365gmw",
+            "HP 370g",
+            "HP 401",
+            "HP 402",
+            "HP 420m",
+            "HP 432",
+            "HP 460",
+            "HP 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "NHP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            42
+          ]
+        ],
+        "source_quote": "Two of the following:",
+        "description": "Two courses chosen from a list of nutrition/health electives.",
+        "confidence": "high",
+        "note": "HP 490x is variable-unit (1-8 units, max 12) directed research; unit count not further specified for threshold purposes."
+      }
+    ]
+  },
+  "unclassified": []
+}

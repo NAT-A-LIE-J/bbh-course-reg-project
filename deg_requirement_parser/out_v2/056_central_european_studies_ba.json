@@ -1,0 +1,240 @@
+{
+  "program": "Central European Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RUSS 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 220"
+          }
+        ],
+        "id": "CES-BA-RUSSIAN-CORE",
+        "source_lines": [
+          [
+            29,
+            29
+          ],
+          [
+            31,
+            37
+          ]
+        ],
+        "source_quote": "The fundamental linguistic background of the major is Russian",
+        "description": "Core Russian language sequence: RUSS 120, RUSS 150, RUSS 220, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "RUSS 250"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "RUSS 310"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "RUSS 340"
+                  }
+                ]
+              }
+            ],
+            "id": "CES-BA-TRACK-RUSSIAN",
+            "source_lines": [
+              [
+                45,
+                52
+              ]
+            ],
+            "source_quote": "RUSS 250 Intermediate Russian II",
+            "description": "Further Russian: RUSS 250 plus RUSS 310 or RUSS 340.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "GERM 101"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERM 102"
+              }
+            ],
+            "id": "CES-BA-TRACK-GERMAN",
+            "source_lines": [
+              [
+                54,
+                59
+              ]
+            ],
+            "source_quote": "GERM 101 German I",
+            "description": "A year of German: GERM 101 and GERM 102.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "SLL 122"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 152"
+              }
+            ],
+            "id": "CES-BA-TRACK-POLISH",
+            "source_lines": [
+              [
+                61,
+                66
+              ]
+            ],
+            "source_quote": "SLL 122 Elementary Polish I",
+            "description": "A year of Polish: SLL 122 and SLL 152.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CES-BA-LANGUAGE-TRACK",
+        "source_lines": [
+          [
+            43,
+            43
+          ]
+        ],
+        "source_quote": "Beyond the second year of Russian, students may choose from among three options",
+        "description": "Beyond second-year Russian, choose further Russian, a year of German, or a year of Polish (8 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 345",
+            "IR 346",
+            "IR 385"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CES-BA-IR-UPPER",
+        "source_lines": [
+          [
+            72,
+            76
+          ]
+        ],
+        "source_quote": "Required upper-division courses in international relations: two courses",
+        "description": "Two upper-division IR courses chosen from IR 345, IR 346, IR 385, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HIST 323",
+            "HIST 365",
+            "HIST 414",
+            "HIST 416",
+            "HIST 417",
+            "HIST 422",
+            "HIST 427",
+            "IR 369",
+            "IR 439",
+            "IR 468",
+            "POSC 366",
+            "POSC 371",
+            "POSC 463",
+            "RUSS 465",
+            "SLL 110g",
+            "SLL 302g",
+            "SLL 303",
+            "SLL 310gw",
+            "SLL 330gp",
+            "SLL 397p",
+            "IR 490x",
+            "SLL 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                82,
+                82
+              ]
+            ],
+            "source_quote": "At least one course must be at the 400 level",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "CES-BA-ELECTIVES",
+        "source_lines": [
+          [
+            82,
+            103
+          ]
+        ],
+        "source_quote": "In addition three electives are required from among the following",
+        "description": "Three electives from the listed History/IR/POSC/RUSS/SLL courses (at least one at 400 level), totaling 12 units; IR 490x or SLL 490x may substitute for one with prior approval.",
+        "confidence": "medium",
+        "note": "Substitution of IR 490x or SLL 490x for one elective requires prior approval, which cannot be verified automatically; courses added to eligible list."
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,358 @@
+{
+  "program": "Stage Management (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPKS 150a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHED 161"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 332"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 333"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 336"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 397"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 443"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 453"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 491"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 493a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 493b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 497"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "THTR 305a"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 309"
+              }
+            ],
+            "id": "STMGT-BFA-ONECOURSE-1",
+            "source_lines": [
+              [
+                56,
+                61
+              ]
+            ],
+            "source_quote": "One course (4 units) from:",
+            "description": "One course from THTR 305a or THTR 309.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "THTR 330"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 331"
+              }
+            ],
+            "id": "STMGT-BFA-ONECOURSE-2",
+            "source_lines": [
+              [
+                63,
+                68
+              ]
+            ],
+            "source_quote": "One course (4 units) from:",
+            "description": "One course from THTR 330 or THTR 331.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "STMGT-BFA-REQUIRED-COURSES",
+        "source_lines": [
+          [
+            33,
+            68
+          ]
+        ],
+        "source_quote": "Required Courses for the Stage Management BFA (60 units)",
+        "description": "Required 60-unit list of core production, design, and management courses, plus one choice from two pairs of courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "STMGT-BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            70,
+            104
+          ]
+        ],
+        "source_quote": "Complete the two required courses below.",
+        "description": "Two required Critical Studies courses, plus one course from List A and one course from either List A or List B.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "STMGT-BFA-ELECTIVES",
+        "source_lines": [
+          [
+            109,
+            109
+          ]
+        ],
+        "source_quote": "Electives Units: 16",
+        "description": "16 units of free electives.",
+        "confidence": "medium",
+        "note": "No restriction given on elective subject."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "A total of 128 units of course work is required",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 128
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A total of 128 units of course work is required",
+      "reason": "university_level",
+      "why": "University-wide total unit rule repeated on programme page."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All BFA students are required to earn a grade point average",
+      "reason": "out_of_scope",
+      "why": "GPA rule; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "BFA students who fail to earn a GPA of 2.75",
+      "reason": "out_of_scope",
+      "why": "Probation rule, GPA-related."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A student disqualified from continued study in the BFA program",
+      "reason": "out_of_scope",
+      "why": "Disqualification/transfer policy, GPA-related."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          29
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a coherent",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, handled by STARS."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Note that courses within the program will also satisfy",
+      "reason": "advisory",
+      "why": "Advisory note about advising on GE overlap."
+    },
+    {
+      "source_lines": [
+        [
+          105,
+          105
+        ]
+      ],
+      "source_quote": "General Education Units: 36",
+      "reason": "university_level",
+      "why": "GE unit total, university-wide requirement."
+    }
+  ]
+}

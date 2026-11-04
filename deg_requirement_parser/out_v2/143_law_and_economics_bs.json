@@ -1,0 +1,305 @@
+{
+  "program": "Law and Economics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "LE-BS-ECON-CORE",
+        "source_lines": [
+          [
+            66,
+            76
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics",
+        "description": "Required economics core: ECON 203g, ECON 303, ECON 317, and MATH 118gx or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 200w"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          }
+        ],
+        "id": "LE-BS-LAW-CORE",
+        "source_lines": [
+          [
+            77,
+            82
+          ]
+        ],
+        "source_quote": "LAW 200w Law and Society",
+        "description": "Required law courses: LAW 200w and LAW 210p.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 318",
+            "ECON 332",
+            "ECON 333",
+            "ECON 379",
+            "ECON 404",
+            "ECON 415",
+            "ECON 434",
+            "LAW 352",
+            "ECON 474",
+            "ECON 480",
+            "ECON 487"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LE-BS-ECON-ELECTIVES",
+        "source_lines": [
+          [
+            84,
+            100
+          ]
+        ],
+        "source_quote": "ECON 318 Introduction to Econometrics",
+        "description": "Two economics elective courses (8 units) from the listed options, including LAW 352 as an alternative to ECON 434.",
+        "confidence": "high",
+        "note": "Students must choose between LAW 352 and ECON 434 across all electives; see root-level check restricting both to one credited course."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "LAW 101w",
+                "LAW 201w",
+                "LAW 206",
+                "LAW 208w",
+                "LAW 212",
+                "LAW 300",
+                "LAW 305",
+                "LAW 306",
+                "LAW 350",
+                "LAW 352",
+                "ECON 434",
+                "LAW 406",
+                "LAW 407",
+                "LAW 498"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "courses": [
+                    "LAW 222",
+                    "LAW 225"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                106,
+                106
+              ]
+            ],
+            "source_quote": "At least 4 units must be at the upper-division level.",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "LE-BS-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            102,
+            126
+          ]
+        ],
+        "source_quote": "At least 4 units must be at the",
+        "description": "16 units of law electives from the listed courses (LAW 222 and LAW 225 count together as a pair), with at least 4 units upper-division; LAW 352 and ECON 434 are alternatives.",
+        "confidence": "medium",
+        "note": "LAW 222 and LAW 225 are joined by 'AND' and together form one 4-unit option. Students must choose between LAW 352 and ECON 434; see root-level check."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ENST 387",
+            "GERO 452",
+            "IR 326",
+            "IR 427",
+            "PHIL 339",
+            "PHIL 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LE-BS-INTERDISC-ELECTIVES",
+        "source_lines": [
+          [
+            128,
+            137
+          ]
+        ],
+        "source_quote": "ENST 387 Economics for Natural Resources",
+        "description": "8 units of interdisciplinary electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "personal statement reviewed by Gould School of Law's Office of Undergraduate Programs"
+        },
+        "id": "LE-BS-ADMISSION-GATE",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "must submit a personal statement to the",
+        "description": "Current USC students must submit a personal statement for review to enter the program.",
+        "confidence": "medium",
+        "note": "GPA 3.0 requirement cited in same sentence is unclassified as out_of_scope."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            100,
+            100
+          ],
+          [
+            125,
+            125
+          ]
+        ],
+        "source_quote": "Students must choose between LAW 352 and ECON 434",
+        "eligible_if": {
+          "courses": [
+            "LAW 352",
+            "ECON 434"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Current USC students must have a cumulative GPA of 3.0",
+      "reason": "out_of_scope",
+      "why": "GPA requirement for admission into the major."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          53
+        ]
+      ],
+      "source_quote": "Eight courses in six Core Literacies, plus two",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement, sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          55,
+          60
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University-wide writing requirement, sourced from STARS."
+    }
+  ]
+}

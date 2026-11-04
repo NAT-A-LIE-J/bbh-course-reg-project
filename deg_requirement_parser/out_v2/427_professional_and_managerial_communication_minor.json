@@ -1,0 +1,114 @@
+{
+  "program": "Professional and Managerial Communication Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "COMM 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 375"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 385"
+          }
+        ],
+        "id": "PMC-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "COMM 320 Small Group and Team Communication",
+        "description": "Three required core communication courses: COMM 320, COMM 375, COMM 385.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 302",
+            "COMM 304",
+            "COMM 308",
+            "COMM 315",
+            "COMM 321",
+            "COMM 322",
+            "COMM 324mw",
+            "COMM 345",
+            "COMM 388",
+            "COMM 431",
+            "COMM 486",
+            "COMM 487"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "PMC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            46
+          ]
+        ],
+        "source_quote": "Electives-Choose Three From The Following:",
+        "description": "Choose three elective courses from the listed COMM courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            48,
+            48
+          ]
+        ],
+        "source_quote": "Total units: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Requirements for admission are a minimum 3.0 GPA",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit requirements are not course requirements."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard and",
+      "reason": "out_of_scope",
+      "why": "Admission policy clarification, not a course requirement."
+    }
+  ]
+}

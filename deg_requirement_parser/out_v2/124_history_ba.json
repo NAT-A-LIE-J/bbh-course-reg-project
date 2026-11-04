@@ -1,0 +1,648 @@
+{
+  "program": "History (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "HIST 201",
+        "id": "HIST-BA-LOWERDIV",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "All majors are required to complete HIST 201",
+        "description": "HIST 201 Approaches to History is required of all majors.",
+        "confidence": "high",
+        "note": "Up to three additional lower-division survey courses are permitted but not required (students may take upper-division courses instead); not encoded as a requirement. AP substitution rule for one lower-division course is out of scope (see unclassified)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "HIST"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "of which at least two must be 400-levels",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "No more than 4 units of HIST 490x Directed Research",
+            "eligible_if": {
+              "courses": [
+                "HIST 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "HIST-BA-UPPERDIV",
+        "source_lines": [
+          [
+            35,
+            37
+          ]
+        ],
+        "source_quote": "Six upper-division courses are required",
+        "description": "Six upper-division HIST courses, at least two at the 400 level, with a cap on HIST 490x units counted.",
+        "confidence": "high",
+        "note": "Geographic and Temporal breadth courses are expected to be drawn from this same upper-division pool; overlap between geographic/temporal and upper-division is not explicitly forbidden."
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HIST 100mg",
+                "HIST 109g",
+                "HIST 210gw",
+                "HIST 211gp",
+                "HIST 225g",
+                "HIST 235g",
+                "HIST 240gp",
+                "HIST 241gp",
+                "HIST 245mgp",
+                "HIST 271g",
+                "HIST 272g",
+                "HIST 317gmp",
+                "HIST 320p",
+                "HIST 343",
+                "HIST 349",
+                "HIST 351",
+                "HIST 352",
+                "HIST 353m",
+                "HIST 354",
+                "HIST 355",
+                "HIST 357",
+                "HIST 358",
+                "HIST 359",
+                "HIST 361",
+                "HIST 362",
+                "HIST 368",
+                "HIST 370",
+                "HIST 372",
+                "HIST 373",
+                "HIST 374",
+                "HIST 378m",
+                "HIST 379",
+                "HIST 380",
+                "HIST 386",
+                "HIST 392",
+                "HIST 393g",
+                "HIST 451",
+                "HIST 452",
+                "HIST 453",
+                "HIST 455",
+                "HIST 456",
+                "HIST 457",
+                "HIST 459",
+                "HIST 460",
+                "HIST 473",
+                "HIST 487"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "HIST-BA-GEO-AMERICAS",
+            "source_lines": [
+              [
+                57,
+                108
+              ]
+            ],
+            "source_quote": "All majors must take ONE course in this area",
+            "description": "One course from the Americas geographic list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HIST 106g",
+                "HIST 107gp",
+                "HIST 108g",
+                "HIST 110g",
+                "HIST 111g",
+                "HIST 185g",
+                "HIST 266gp",
+                "HIST 301",
+                "HIST 334",
+                "HIST 335",
+                "HIST 336",
+                "HIST 337",
+                "HIST 340",
+                "HIST 364",
+                "HIST 366",
+                "HIST 377",
+                "HIST 389",
+                "HIST 391",
+                "HIST 394p",
+                "HIST 437",
+                "HIST 438",
+                "HIST 448",
+                "HIST 467",
+                "HIST 480"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "HIST-BA-GEO-ASIA-AFRICA-MIDEAST",
+            "source_lines": [
+              [
+                110,
+                139
+              ]
+            ],
+            "source_quote": "All majors must take ONE course in this area",
+            "description": "One course from the Africa, Asia and the Middle East geographic list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HIST 101gp",
+                "HIST 102gm",
+                "HIST 103gp",
+                "HIST 104gp",
+                "HIST 237gp",
+                "HIST 306",
+                "HIST 307",
+                "HIST 308",
+                "HIST 309",
+                "HIST 312",
+                "HIST 314",
+                "HIST 315",
+                "HIST 316",
+                "HIST 319",
+                "HIST 321",
+                "HIST 323",
+                "HIST 325",
+                "HIST 326",
+                "HIST 327",
+                "HIST 329",
+                "HIST 350",
+                "HIST 385",
+                "HIST 395",
+                "HIST 397",
+                "HIST 396",
+                "HIST 403",
+                "HIST 405",
+                "HIST 407",
+                "HIST 408",
+                "HIST 411",
+                "HIST 417",
+                "HIST 422",
+                "HIST 427",
+                "HIST 429"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "HIST-BA-GEO-EUROPE-MEDITERRANEAN",
+            "source_lines": [
+              [
+                141,
+                180
+              ]
+            ],
+            "source_quote": "All majors must take ONE course in this area",
+            "description": "One course from the Europe and Mediterranean geographic list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HIST 190g",
+                "HIST 250g",
+                "HIST 251gp",
+                "HIST 278gp",
+                "HIST 322",
+                "HIST 330",
+                "HIST 331",
+                "HIST 363",
+                "HIST 371",
+                "HIST 381",
+                "HIST 398",
+                "HIST 413",
+                "HIST 430",
+                "HIST 431",
+                "HIST 433",
+                "HIST 443",
+                "HIST 444",
+                "HIST 446",
+                "HIST 447",
+                "HIST 479",
+                "HIST 482"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "HIST-BA-GEO-GLOBAL-TRANSNATIONAL",
+            "source_lines": [
+              [
+                182,
+                208
+              ]
+            ],
+            "source_quote": "All majors must take ONE course in this area",
+            "description": "One course from the Global or Transnational geographic list.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "HIST-BA-GEOGRAPHIC",
+        "source_lines": [
+          [
+            39,
+            41
+          ]
+        ],
+        "source_quote": "For geographic breadth, majors must take at least one course from four geographic areas",
+        "description": "At least one course from each of four geographic areas (Americas; Africa/Asia/Middle East; Europe and Mediterranean; Global or Transnational).",
+        "confidence": "high",
+        "note": "A single course may fulfill both a geographic and a temporal requirement, per text."
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HIST 101gp",
+                "HIST 102gm",
+                "HIST 103gp",
+                "HIST 106g",
+                "HIST 110g",
+                "HIST 185g",
+                "HIST 190g",
+                "HIST 271g",
+                "HIST 272g",
+                "HIST 273g",
+                "HIST 278gp",
+                "HIST 301",
+                "HIST 306",
+                "HIST 307",
+                "HIST 308",
+                "HIST 309",
+                "HIST 314",
+                "HIST 315",
+                "HIST 316",
+                "HIST 319",
+                "HIST 321",
+                "HIST 325",
+                "HIST 331",
+                "HIST 334",
+                "HIST 335",
+                "HIST 349",
+                "HIST 350",
+                "HIST 351",
+                "HIST 370",
+                "HIST 371",
+                "HIST 377",
+                "HIST 385",
+                "HIST 394p",
+                "HIST 396",
+                "HIST 403",
+                "HIST 405",
+                "HIST 407",
+                "HIST 411",
+                "HIST 456",
+                "HIST 438"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "id": "HIST-BA-TEMPORAL-PRE1800",
+            "source_lines": [
+              [
+                210,
+                255
+              ]
+            ],
+            "source_quote": "All majors must take TWO courses from this period",
+            "description": "Two courses from the pre-1800 list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HIST 100mg",
+                "HIST 104gp",
+                "HIST 107gp",
+                "HIST 108g",
+                "HIST 109g",
+                "HIST 111g",
+                "HIST 210gw",
+                "HIST 211gp",
+                "HIST 225g",
+                "HIST 235g",
+                "HIST 237gp",
+                "HIST 240gp",
+                "HIST 241gp",
+                "HIST 245mgp",
+                "HIST 250g",
+                "HIST 251gp",
+                "HIST 266gp",
+                "HIST 312",
+                "HIST 317gmp",
+                "HIST 320p",
+                "HIST 323",
+                "HIST 326",
+                "HIST 327",
+                "HIST 329",
+                "HIST 330",
+                "HIST 336",
+                "HIST 337",
+                "HIST 340",
+                "HIST 343",
+                "HIST 352",
+                "HIST 353m",
+                "HIST 354",
+                "HIST 355",
+                "HIST 357",
+                "HIST 358",
+                "HIST 359",
+                "HIST 361",
+                "HIST 362",
+                "HIST 363",
+                "HIST 364",
+                "HIST 366",
+                "HIST 368",
+                "HIST 372",
+                "HIST 373",
+                "HIST 374",
+                "HIST 378m",
+                "HIST 379",
+                "HIST 380",
+                "HIST 381",
+                "HIST 386",
+                "HIST 389",
+                "HIST 391",
+                "HIST 392",
+                "HIST 393g",
+                "HIST 395",
+                "HIST 397",
+                "HIST 398",
+                "HIST 408",
+                "HIST 413",
+                "HIST 417",
+                "HIST 422",
+                "HIST 427",
+                "HIST 429",
+                "HIST 430",
+                "HIST 433",
+                "HIST 437",
+                "HIST 443",
+                "HIST 444",
+                "HIST 446",
+                "HIST 448",
+                "HIST 451",
+                "HIST 452",
+                "HIST 453",
+                "HIST 455",
+                "HIST 457",
+                "HIST 459",
+                "HIST 460",
+                "HIST 467",
+                "HIST 479",
+                "HIST 482",
+                "HIST 487"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "id": "HIST-BA-TEMPORAL-POST1800",
+            "source_lines": [
+              [
+                257,
+                343
+              ]
+            ],
+            "source_quote": "All majors must take TWO courses from this period",
+            "description": "Two courses from the post-1800 list.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "HIST-BA-TEMPORAL",
+        "source_lines": [
+          [
+            39,
+            41
+          ]
+        ],
+        "source_quote": "Majors must also take two class that focus on the period before 1800",
+        "description": "Two pre-1800 courses and two post-1800 courses for temporal breadth.",
+        "confidence": "high",
+        "note": "A single course may fulfill both a geographic and a temporal requirement, per text."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HIST 492"
+              },
+              {
+                "family": "sequencing",
+                "kind": "UNIT_WINDOW",
+                "details": {
+                  "courses": "HIST 492",
+                  "within_units": null,
+                  "note": "Must be taken both fall and spring semester."
+                }
+              },
+              {
+                "family": "manual_review",
+                "kind": "GATE",
+                "details": {
+                  "stage": "EMPHASIS_ENTRY",
+                  "basis": "NUMERIC_THRESHOLD",
+                  "requires": [
+                    "3.5 or higher GPA in all USC history coursework (waivable in certain cases)"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROCEDURAL",
+            "details": {
+              "procedure": "History Capstone Exercise: reflection form/essay and attendance at a Capstone Conversation event"
+            }
+          }
+        ],
+        "id": "HIST-BA-CAPSTONE",
+        "source_lines": [
+          [
+            43,
+            49
+          ],
+          [
+            345,
+            353
+          ]
+        ],
+        "source_quote": "All history majors must complete a capstone course",
+        "description": "A capstone fulfilled either by the History Honors Thesis (HIST 492, fall and spring, 3.5 GPA gate) or the History Capstone Exercise.",
+        "confidence": "medium",
+        "note": "Exceptions allowing juniors to take the capstone earlier are a timing note, not separately encoded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "requires students to take 10 courses (40 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 10
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "The Department of History will accept scores of 4 or 5",
+      "reason": "no_fit",
+      "why": "AP credit substitution for one lower-division course has no course-pool mechanism in this taxonomy."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "It is recommended that students complete HIST 201 early",
+      "reason": "advisory",
+      "why": "Timing advice, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Students can take up to three additional lower-division",
+      "reason": "advisory",
+      "why": "Describes an optional path, not a mandatory requirement."
+    },
+    {
+      "source_lines": [
+        [
+          351,
+          351
+        ]
+      ],
+      "source_quote": "To apply for the Honors program, students need a 3.5",
+      "reason": "out_of_scope",
+      "why": "GPA threshold rule; handled as gate detail but underlying GPA policy itself is out of scope."
+    }
+  ]
+}

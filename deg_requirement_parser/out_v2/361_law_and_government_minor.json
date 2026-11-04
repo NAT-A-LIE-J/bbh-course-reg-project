@@ -1,0 +1,122 @@
+{
+  "program": "Law and Government Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "LAW 201w",
+        "id": "LAWGOV-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "LAW 201w Law and Politics Units: 4",
+        "description": "Required core course LAW 201w.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 200w",
+            "LAW 207",
+            "LAW 210p",
+            "LAW 225",
+            "LAW 301",
+            "LAW 305",
+            "LAW 406",
+            "LAW 407",
+            "LAW 498"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "LAWGOV-MINOR-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            43
+          ]
+        ],
+        "source_quote": "LAW Electives (a minimum of 4 or maximum of 8 units)",
+        "description": "At least 4, at most 8 units of LAW elective courses from the listed set.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 309",
+            "POSC 335",
+            "POSC 360",
+            "POSC 395",
+            "POSC 425",
+            "POSC 499",
+            "PPD 240g",
+            "PPD 314",
+            "PPD 342",
+            "PPD 357",
+            "SCDC 435"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "LAWGOV-MINOR-OTHER-ELECTIVES",
+        "source_lines": [
+          [
+            45,
+            59
+          ]
+        ],
+        "source_quote": "Other Electives (a minimum of 4 or maximum of 8 units)",
+        "description": "At least 4, at most 8 units of electives from other departments (IR, POSC, PPD, SCDC).",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor totals 16 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

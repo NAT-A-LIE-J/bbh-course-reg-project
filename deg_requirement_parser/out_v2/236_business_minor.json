@@ -1,0 +1,226 @@
+{
+  "program": "Business Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "Marshall School of Business students"
+        },
+        "id": "BUSMIN-ELIGIBILITY",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor in business is available to students in all schools",
+        "description": "The minor is open to students in all schools except Marshall School of Business.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 200x"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 201x"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 351"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 352"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 203g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 205g"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 303"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 305"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 351x"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 352x"
+              }
+            ]
+          }
+        ],
+        "id": "BUSMIN-FOUNDATION",
+        "source_lines": [
+          [
+            31,
+            54
+          ]
+        ],
+        "source_quote": "Choose one of the following six options: (units 2-8)",
+        "description": "Choose one of six foundation options covering economics/business fundamentals.",
+        "confidence": "high",
+        "note": "An AP exam waiver for this requirement (line 54) is noted but not encoded as a course rule; see unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACCT 410x"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 280"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 305"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 315x"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          }
+        ],
+        "id": "BUSMIN-ADDITIONAL",
+        "source_lines": [
+          [
+            56,
+            75
+          ]
+        ],
+        "source_quote": "Additional Required Course Work:",
+        "description": "Required accounting, finance, communication, organizational behavior, marketing and operations management courses, each with alternates.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Successful completion of the business minor requires at least 23 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 23
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To enroll in the business minor, students must have completed a minimum of 32 units",
+      "reason": "out_of_scope",
+      "why": "Admission/eligibility unit and GPA threshold for entering the minor."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "with a minimum cumulative GPA of 2.0 in the courses applied to the minor",
+      "reason": "out_of_scope",
+      "why": "GPA requirement, not a course-selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "Students who have earned scores of 4 or 5 on both the AP",
+      "reason": "out_of_scope",
+      "why": "AP exam-based waiver/substitution rule, not checkable from a course list."
+    }
+  ]
+}

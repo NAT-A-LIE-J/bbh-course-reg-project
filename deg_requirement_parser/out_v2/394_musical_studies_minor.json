@@ -1,0 +1,181 @@
+{
+  "program": "Musical Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "MUCO 130ax",
+        "id": "MUSTUDIES-MIN-THEORY1",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "MUCO 130ax Basics of Music Theory Units: 3",
+        "description": "MUCO 130ax, Basics of Music Theory.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "MUCO 130bx",
+        "id": "MUSTUDIES-MIN-THEORY2",
+        "source_lines": [
+          [
+            28,
+            28
+          ]
+        ],
+        "source_quote": "MUCO 130bx Basics of Music Theory Units: 3",
+        "description": "MUCO 130bx, Basics of Music Theory.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MUEN"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "MUSTUDIES-MIN-ENSEMBLE",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "MUEN 300–499 Units: 2 units total",
+        "description": "Two units of ensemble coursework from MUEN 300-499.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "MUSC 115gp",
+        "id": "MUSTUDIES-MIN-HISTORY",
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "MUSC 115gp Western Music as Sounding History Units: 4",
+        "description": "MUSC 115gp, Western Music as Sounding History.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "Individual Instruction at the 301 level"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "MUSTUDIES-MIN-INDIVIDUAL",
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "Individual Instruction at the 301 level Units: 6",
+        "description": "Six units of Individual Instruction at the 301 level.",
+        "confidence": "low",
+        "note": "No course prefix or list given for 'Individual Instruction'; cannot be resolved to a checkable course pool."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "audition"
+        },
+        "id": "MUSTUDIES-MIN-AUDITION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "An audition is required for this minor,",
+        "description": "An audition is required for admission to the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "music majors"
+        },
+        "id": "MUSTUDIES-MIN-EXCLUSION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "which is not available to music majors.",
+        "description": "The minor is not available to students majoring in music.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "Total Units: 18",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students may enter the program in their",
+      "reason": "advisory",
+      "why": "Describes optional timing for entry, not a requirement."
+    }
+  ]
+}

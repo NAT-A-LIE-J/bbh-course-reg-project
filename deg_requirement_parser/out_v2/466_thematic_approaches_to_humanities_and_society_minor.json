@@ -1,0 +1,289 @@
+{
+  "program": "Thematic Approaches to Humanities and Society Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CLAS 150gp",
+            "CLAS 151gp",
+            "CORE 102gp",
+            "HIST 101gp",
+            "HIST 102gm",
+            "REL 132g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "TAHS-LOWER-DIVISION",
+        "source_lines": [
+          [
+            25,
+            34
+          ]
+        ],
+        "source_quote": "Requirements, Lower-Division (Choose One, 4 Units)",
+        "description": "Choose one lower-division elective from the list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CORE 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "CORE 301"
+          }
+        ],
+        "id": "TAHS-CORE",
+        "source_lines": [
+          [
+            36,
+            41
+          ]
+        ],
+        "source_quote": "Course Requirements (6 Units)",
+        "description": "CORE 200 Liberal Arts Reading Salon and CORE 301 Modes of Inquiry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CLAS 310",
+            "CLAS 320gmp",
+            "CLAS 333",
+            "CLAS 470",
+            "EALC 340gp",
+            "EALC 345",
+            "EALC 350gp",
+            "EALC 355",
+            "EALC 365",
+            "REL 311g",
+            "REL 315",
+            "REL 317g",
+            "COLT 426",
+            "COLT 445",
+            "EALC 332",
+            "EALC 335m",
+            "EALC 342gp",
+            "EALC 352g",
+            "EALC 354g",
+            "FREN 446",
+            "GERM 370",
+            "GERM 372g",
+            "PHIL 337",
+            "PHIL 437",
+            "REL 340",
+            "SLL 330gp",
+            "SLL 344g",
+            "COLT 448",
+            "COLT 475",
+            "ENGL 373g",
+            "ENGL 374m",
+            "FREN 370gm",
+            "REL 366",
+            "REL 462",
+            "SLL 345g",
+            "SLL 348g",
+            "CLAS 380",
+            "COLT 391",
+            "COLT 454",
+            "ENGL 372",
+            "ENGL 379",
+            "ENGL 380",
+            "LING 466",
+            "PHIL 361",
+            "PHIL 445",
+            "ANTH 372",
+            "HIST 201",
+            "HIST 329",
+            "IR 325",
+            "POSC 381",
+            "POSC 476",
+            "SOCI 350",
+            "SOCI 360m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                47,
+                47
+              ]
+            ],
+            "source_quote": "at least one from List A, one from List B",
+            "eligible_if": {
+              "courses": [
+                "CLAS 310",
+                "CLAS 320gmp",
+                "CLAS 333",
+                "CLAS 470",
+                "EALC 340gp",
+                "EALC 345",
+                "EALC 350gp",
+                "EALC 355",
+                "EALC 365",
+                "REL 311g",
+                "REL 315",
+                "REL 317g",
+                "COLT 426",
+                "COLT 445",
+                "EALC 332",
+                "EALC 335m",
+                "EALC 342gp",
+                "EALC 352g",
+                "EALC 354g",
+                "FREN 446",
+                "GERM 370",
+                "GERM 372g",
+                "PHIL 337",
+                "PHIL 437",
+                "REL 340",
+                "SLL 330gp",
+                "SLL 344g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                47,
+                47
+              ]
+            ],
+            "source_quote": "one from List B and not more than one",
+            "eligible_if": {
+              "courses": [
+                "COLT 448",
+                "COLT 475",
+                "ENGL 373g",
+                "ENGL 374m",
+                "FREN 370gm",
+                "REL 366",
+                "REL 462",
+                "SLL 345g",
+                "SLL 348g",
+                "CLAS 380",
+                "COLT 391",
+                "COLT 454",
+                "ENGL 372",
+                "ENGL 379",
+                "ENGL 380",
+                "LING 466",
+                "PHIL 361",
+                "PHIL 445"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                47,
+                47
+              ]
+            ],
+            "source_quote": "not more than one from List C",
+            "eligible_if": {
+              "courses": [
+                "ANTH 372",
+                "HIST 201",
+                "HIST 329",
+                "IR 325",
+                "POSC 381",
+                "POSC 476",
+                "SOCI 350",
+                "SOCI 360m"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                47,
+                47
+              ]
+            ],
+            "source_quote": "Not more than two may come from any one department.",
+            "thresholds": [
+              {
+                "count_by": "departments",
+                "op": "max",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "TAHS-UPPER-DIVISION",
+        "source_lines": [
+          [
+            43,
+            137
+          ]
+        ],
+        "source_quote": "Requirements, Upper-Division (16 Units)",
+        "description": "Four upper-division electives from Lists A, B, and C, with at least one from List A, one from List B, no more than one from List C, and no more than two from any one department.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "Courses must be chosen in consultation with a Thematic Option adviser.",
+      "reason": "advisory",
+      "why": "Advisory procedural guidance about consulting an adviser, not a checkable course requirement."
+    }
+  ]
+}

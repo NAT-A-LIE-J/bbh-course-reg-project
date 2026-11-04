@@ -1,0 +1,130 @@
+{
+  "program": "Music Recording Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "personal interview and completion of MTEC 277x with a B or better; ENGR majors with 3.0 GPA may be admitted before completing MTEC 277x"
+        },
+        "id": "MRM-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            25
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Acceptance into the program might require a personal interview",
+        "description": "Admission to the minor requires an interview and successful completion of (or exception for) MTEC 277x.",
+        "confidence": "medium",
+        "note": "GPA threshold (2.0 overall, 3.0 for ENGR majors) is listed in unclassified as out_of_scope."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MTEC 275"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 277x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 446a"
+          }
+        ],
+        "id": "MRM-REQUIRED",
+        "source_lines": [
+          [
+            31,
+            37
+          ],
+          [
+            59,
+            59
+          ]
+        ],
+        "source_quote": "MTEC 275 Fundamentals of Audio Engineering Units: 4",
+        "description": "Three required courses: MTEC 275, MTEC 277x, and MTEC 446a.",
+        "confidence": "high",
+        "note": "Music Industry majors may substitute MTEC 175 and MTEC 176 for MTEC 277x; this substitution is not encoded as a separate requirement since it amends MTEC 277x's slot."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MTEC 378",
+            "MTEC 389",
+            "MTEC 392a",
+            "MTEC 430",
+            "MTEC 446b",
+            "MTEC 477",
+            "MTEC 478",
+            "MTEC 479",
+            "MTEC 491",
+            "MTEC 493",
+            "MUIN 340"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MRM-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            53
+          ]
+        ],
+        "source_quote": "8 units from the following:",
+        "description": "8 units chosen from a list of elective recording courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            55,
+            55
+          ]
+        ],
+        "source_quote": "Total units: 18",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students admitted to this minor will be expected to have a minimum GPA",
+      "reason": "out_of_scope",
+      "why": "GPA and grade-maintenance rule for the minor."
+    }
+  ]
+}

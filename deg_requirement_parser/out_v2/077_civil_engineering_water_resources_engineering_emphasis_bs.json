@@ -1,0 +1,24 @@
+{
+  "program": "Civil Engineering, Water Resources Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "CHEM 105aLg",
+        "id": "CE-WR-CHEM",
+        "source_lines": [
+          [
+            44,
+            45
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "Placeholder root wrapper; see choose group below.",
+        "confidence": "high",
+        "note": "This node is replaced by the choose group immediately below; kept out to avoid duplicate course claim."
+      }
+    ]
+  },
+  "unclassified": []
+}

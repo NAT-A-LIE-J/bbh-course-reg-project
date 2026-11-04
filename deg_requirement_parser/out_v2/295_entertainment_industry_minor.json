@@ -1,0 +1,231 @@
+{
+  "program": "Entertainment Industry Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "good academic standing",
+            "declared major",
+            "CTCS 190g or CTCS 191 with C or better"
+          ]
+        },
+        "id": "EIM-ELIGIBILITY",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "To be eligible for the entertainment industry minor, a student must be in good academic standing",
+        "description": "Students must be in good academic standing, have a declared major, and have completed CTCS 190g or CTCS 191 with a C or better to be eligible for the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 375"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 475"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 495"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 458"
+          }
+        ],
+        "id": "EIM-CORE",
+        "source_lines": [
+          [
+            27,
+            35
+          ]
+        ],
+        "source_quote": "CNTV 375 Breaking Into the Entertainment Industry",
+        "description": "Four required courses: CNTV 375, CNTV 475, CNTV 495, and CTPR 458.",
+        "confidence": "high",
+        "note": "CNTV 495 must be taken for exactly two (2) units, per the catalogue note."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 473"
+          }
+        ],
+        "id": "EIM-BUSINESS-CHOICE",
+        "source_lines": [
+          [
+            37,
+            42
+          ]
+        ],
+        "source_quote": "One of the following:",
+        "description": "One of CNTV 440 or CNTV 473.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTCS 466"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 467"
+          }
+        ],
+        "id": "EIM-SYMPOSIUM-CHOICE",
+        "source_lines": [
+          [
+            44,
+            49
+          ]
+        ],
+        "source_quote": "One of the following:",
+        "description": "One of CTCS 466 or CTCS 467.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTWR 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 416"
+          }
+        ],
+        "id": "EIM-SCRIPT-ANALYSIS-CHOICE",
+        "source_lines": [
+          [
+            51,
+            56
+          ]
+        ],
+        "source_quote": "One of the following:",
+        "description": "One of CTWR 411 or CTWR 416.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CNTV 457",
+            "CNTV 474",
+            "CNTV 522",
+            "CNTV 523",
+            "CNTV 524",
+            "CNTV 525",
+            "CNTV 562",
+            "CNTV 563",
+            "CTAN 432",
+            "CTAN 451",
+            "CTIN 412",
+            "CTIN 458",
+            "CTIN 463",
+            "CTPR 386",
+            "CTPR 410",
+            "CTPR 425",
+            "CTPR 438",
+            "CTPR 460",
+            "CTPR 461",
+            "CTPR 491",
+            "CTPR 496",
+            "CTWR 430",
+            "CTWR 417",
+            "CTWR 431",
+            "CTWR 432",
+            "IML 466"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "EIM-ELECTIVES",
+        "source_lines": [
+          [
+            58,
+            89
+          ]
+        ],
+        "source_quote": "Four units from:",
+        "description": "Four units chosen from the listed elective courses.",
+        "confidence": "medium",
+        "note": "Some listed courses (CNTV 522-563) require special permission as graduate-level courses, and CTPR 438 requires a prerequisite; these conditions are not separately checkable and are not encoded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "A total of 20 upper-division units is required",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "To declare the minor, a student must submit a Change of Major/Minor form",
+      "reason": "out_of_scope",
+      "why": "Administrative declaration procedure, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          95,
+          97
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each course is required.",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule, handled separately from course selection logic."
+    }
+  ]
+}

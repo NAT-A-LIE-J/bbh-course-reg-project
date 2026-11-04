@@ -1,0 +1,96 @@
+{
+  "program": "Substance Abuse Prevention Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 410"
+          }
+        ],
+        "id": "SAP-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "HP 200 Introduction to Health Promotion and Disease Prevention",
+        "description": "Three required core courses: HP 200, HP 300 and HP 410.",
+        "confidence": "high",
+        "note": "HP 300 includes a prerequisite per the note marked [*]; not separately encoded as it is not checkable as a course requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HP 365gmw",
+            "HP 370g",
+            "HP 401",
+            "HP 402",
+            "HP 421"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "SAP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            39
+          ]
+        ],
+        "source_quote": "Two of the following:",
+        "description": "Two courses chosen from a list of five electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Required Courses (24 Units*)",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          45,
+          45
+        ]
+      ],
+      "source_quote": "Including prerequisite",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note on HP 300, a sequencing detail not tied to a checkable course list."
+    }
+  ]
+}

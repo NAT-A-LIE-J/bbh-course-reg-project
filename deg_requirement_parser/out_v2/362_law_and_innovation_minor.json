@@ -1,0 +1,133 @@
+{
+  "program": "Law and Innovation Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 220"
+          }
+        ],
+        "id": "LAWINNOV-CORE",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "ACAD 360 Design Strategy: Problem Solving for Organizations",
+        "description": "Required core courses: ACAD 360, LAW 210p, and LAW 220 totaling 10 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 181g",
+            "ACAD 183",
+            "ACAD 220",
+            "ACAD 222",
+            "ACAD 245",
+            "ACAD 274",
+            "ACAD 302",
+            "ACAD 324g",
+            "ACAD 325"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "LAWINNOV-ACAD-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            46
+          ]
+        ],
+        "source_quote": "Academy Electives (4 units)",
+        "description": "4 units of elective coursework from the Iovine and Young Academy elective list.",
+        "confidence": "high",
+        "note": "ACAD 360 is excluded here because it is already used as a required core course (one-slot rule)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 206",
+            "LAW 207",
+            "LAW 211",
+            "LAW 306",
+            "LAW 311",
+            "LAW 350",
+            "LAW 401",
+            "LAW 453"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "LAWINNOV-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            48,
+            59
+          ]
+        ],
+        "source_quote": "Law Electives (4 units)",
+        "description": "4 units of elective coursework from the Gould Law elective list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor in Law and Innovation totals 18 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Law and Innovation introduces students",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

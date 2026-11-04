@@ -1,0 +1,304 @@
+{
+  "program": "Environmental Science and Health (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "ESH-BS-BISC-INTRO",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology and",
+        "description": "Introductory biology sequence: BISC 120Lg/220Lg or BISC 121Lg/221Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          }
+        ],
+        "id": "ESH-BS-BISC-UPPER",
+        "source_lines": [
+          [
+            33,
+            35
+          ]
+        ],
+        "source_quote": "BISC 320Lg Molecular Biology Units: 4",
+        "description": "Molecular Biology and Biochemistry courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "ESH-BS-CHEM-GEN",
+        "source_lines": [
+          [
+            36,
+            41
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "General chemistry sequence: CHEM 105aLg/105bL or CHEM 115aLg/115bL.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 325aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 325bL"
+              }
+            ]
+          }
+        ],
+        "id": "ESH-BS-CHEM-ORGANIC",
+        "source_lines": [
+          [
+            42,
+            47
+          ]
+        ],
+        "source_quote": "CHEM 322aL Organic Chemistry Units: 4",
+        "description": "Organic chemistry sequence: CHEM 322aL/322bL or CHEM 325aL/325bL.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 135bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ]
+          }
+        ],
+        "id": "ESH-BS-PHYS",
+        "source_lines": [
+          [
+            48,
+            53
+          ]
+        ],
+        "source_quote": "PHYS 135aLg Physics for the Life Sciences Units:",
+        "description": "Physics sequence: PHYS 135aLg/135bL or PHYS 151Lg/152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          }
+        ],
+        "id": "ESH-BS-QUANT",
+        "source_lines": [
+          [
+            54,
+            56
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g and HP 340Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ENST 335"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 408"
+          }
+        ],
+        "id": "ESH-BS-ENVHEALTH",
+        "source_lines": [
+          [
+            57,
+            60
+          ]
+        ],
+        "source_quote": "ENST 335 Science, Health and the Environment Units:",
+        "description": "ENST 335 or HP 408.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENST 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 344"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 387"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 495"
+          }
+        ],
+        "id": "ESH-BS-ENST-CORE",
+        "source_lines": [
+          [
+            61,
+            65
+          ]
+        ],
+        "source_quote": "ENST 320a Water and Soil Sustainability; Energy",
+        "description": "ENST 320a, 320b, 344, 387 and 495.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            67,
+            67
+          ]
+        ],
+        "source_quote": "Total units: 72",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 72
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Environmental Science and Health BS degree combines",
+      "reason": "advisory",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

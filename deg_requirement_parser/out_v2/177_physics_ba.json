@@ -1,0 +1,195 @@
+{
+  "program": "Physics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 114xg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "other 4-unit quantitative STEM course not already required"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 162L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 163L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 190"
+          }
+        ],
+        "id": "PHYS-BA-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            35
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "source_quote": "- CHEM 105aLg General Chemistry Units: 4",
+        "description": "Required lower-division courses, with CHEM 105aLg substitutable by CHEM 115aLg, MATH 114xg, MATH 208x, or another 4-unit quantitative STEM course.",
+        "confidence": "high",
+        "note": "The ** note amends the CHEM 105aLg requirement with substitution options."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 316"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 492L"
+          }
+        ],
+        "id": "PHYS-BA-UPPERDIV",
+        "source_lines": [
+          [
+            37,
+            46
+          ]
+        ],
+        "source_quote": "- MATH 445 Mathematics of Physics and Engineering",
+        "description": "Required upper-division courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 408b"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438b"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 493L"
+          }
+        ],
+        "id": "PHYS-BA-ELECTIVE",
+        "source_lines": [
+          [
+            48,
+            57
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "Choose one upper-division elective from the listed physics courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            59,
+            59
+          ]
+        ],
+        "source_quote": "Total units: 64",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 64
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is intended for students with",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

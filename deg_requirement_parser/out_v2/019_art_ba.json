@@ -1,0 +1,267 @@
+{
+  "program": "Art (BA)*",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 106"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 110"
+          }
+        ],
+        "id": "ART-BA-FOUNDATION",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "Three 4-unit foundation courses are required for",
+        "description": "Three foundation studio courses: ART 105, 106, 110.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 380"
+          }
+        ],
+        "id": "ART-BA-CRITIQUE",
+        "source_lines": [
+          [
+            41,
+            46
+          ]
+        ],
+        "source_quote": "Two 2-unit Studio Critique courses are required",
+        "description": "ART 280 and ART 380, studio critique courses taken in second and third year.",
+        "confidence": "high",
+        "note": "Timing (second/third year) not encoded as a sequencing constraint."
+      },
+      {
+        "family": "specific_course",
+        "course": "ART 485",
+        "id": "ART-BA-CAPSTONE",
+        "source_lines": [
+          [
+            48,
+            52
+          ]
+        ],
+        "source_quote": "In the senior year, the following 4-unit",
+        "description": "ART 485 Studio Capstone, taken senior year.",
+        "confidence": "high",
+        "note": "Timing (senior year) not encoded as a sequencing constraint."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CRIT 150gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 160g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 350gw"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "CRIT"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ART-BA-CRITICALSTUDIES",
+        "source_lines": [
+          [
+            54,
+            62
+          ]
+        ],
+        "source_quote": "The following Critical Studies courses are required:",
+        "description": "Three named Critical Studies courses plus one 400-level Critical Studies seminar.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ART",
+                    "DES"
+                  ]
+                },
+                {
+                  "level_max": 299
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ART",
+                    "DES"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        "id": "ART-BA-ARTELECTIVES",
+        "source_lines": [
+          [
+            64,
+            68
+          ]
+        ],
+        "source_quote": "Select 12 additional units from any lower-division",
+        "description": "12 units of lower-division ART/DES electives and 20 units of upper-division ART/DES electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "id": "ART-BA-FREEELECTIVES",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "BA students have a minimum of 24",
+        "description": "At least 24 non-specific elective units chosen from any university courses.",
+        "confidence": "high",
+        "note": "Clustering in a minor is advisory, not a requirement."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "68 units of major requirements (52 units in",
+        "eligible_if": {
+          "prefix": [
+            "ART",
+            "DES",
+            "CRIT"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 68
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts (BA) requires a",
+      "reason": "university_level",
+      "why": "Total 128-unit degree requirement is a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "based on their personal and professional goals",
+      "reason": "advisory",
+      "why": "Advisory language about consulting with an academic adviser to choose electives."
+    },
+    {
+      "source_lines": [
+        [
+          70,
+          74
+        ]
+      ],
+      "source_quote": "The university's general education program provides a",
+      "reason": "university_level",
+      "why": "General education requirements are university-wide and handled separately."
+    }
+  ]
+}

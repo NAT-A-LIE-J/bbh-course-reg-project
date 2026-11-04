@@ -1,0 +1,194 @@
+{
+  "program": "Gender and Sexuality Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 2,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "SWMS 210gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 212gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 215gw"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "SWMS 219gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "SWMS 221g"
+              }
+            ]
+          }
+        ],
+        "id": "GSS-BA-LOWER",
+        "source_lines": [
+          [
+            25,
+            36
+          ]
+        ],
+        "source_quote": "For the lower division, two of the following courses",
+        "description": "Choose two options from the lower-division list, where the Feminist/Queer Theory pair counts as one option.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SWMS 308"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 311"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 392"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 410"
+          }
+        ],
+        "id": "GSS-BA-UPPER-CORE",
+        "source_lines": [
+          [
+            42,
+            48
+          ]
+        ],
+        "source_quote": "Of these, students are required to complete SWMS 308",
+        "description": "Four named upper-division SWMS core courses, with SWMS 311 requiring 4 units.",
+        "confidence": "high",
+        "note": "SWMS 311 is offered in 2, 4, or 8 unit versions; 4 units are required here."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "SWMS"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "GSS-BA-UPPER-ELECTIVE",
+        "source_lines": [
+          [
+            42,
+            42
+          ]
+        ],
+        "source_quote": "Thirty-two units of upper-division SWMS courses are required",
+        "description": "Remaining upper-division SWMS units (beyond the four required courses) to reach the 32-unit upper-division total.",
+        "confidence": "medium",
+        "note": "Derived from the 32-unit upper-division total minus the 16 units of required core courses; no specific elective list given."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "requires completion of 40 undergraduate units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            42,
+            42
+          ]
+        ],
+        "source_quote": "Thirty-two units of upper-division SWMS courses are required",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "SWMS"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          50,
+          54
+        ]
+      ],
+      "source_quote": "The Department of Gender and Sexuality Studies offers a two-semester honors program",
+      "reason": "out_of_scope",
+      "why": "Optional honors program with its own GPA/thesis requirements, not part of the core degree requirements."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "Contact the departmental honors director for further",
+      "reason": "advisory",
+      "why": "Procedural/contact advice, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "To graduate with honors, department majors must have",
+      "reason": "out_of_scope",
+      "why": "GPA threshold for an optional honors distinction, not a degree requirement."
+    }
+  ]
+}

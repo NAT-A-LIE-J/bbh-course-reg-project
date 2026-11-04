@@ -1,0 +1,122 @@
+{
+  "program": "Gender and Sexuality Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "SWMS 210gmw",
+            "SWMS 212gp",
+            "SWMS 215gw",
+            "SWMS 219gp",
+            "SWMS 221g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "GSS-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "including one of the following lower-division courses",
+        "description": "One lower-division course chosen from the five listed SWMS courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SWMS 392"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 410"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "prefix": [
+                    "SWMS"
+                  ]
+                },
+                {
+                  "unresolved": "department-approved SWMS courses, including many cross-listed courses"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "GSS-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            33,
+            40
+          ]
+        ],
+        "source_quote": "Four additional upper-division courses are needed, including the following two required courses",
+        "description": "Four upper-division courses: SWMS 392 and SWMS 410 plus two more department-approved SWMS courses.",
+        "confidence": "medium",
+        "note": "The list of department-approved upper-division SWMS courses is not enumerated in the catalogue text."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Twenty units of course work are required for completion",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Department of Gender and Sexuality Studies offers a minor",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

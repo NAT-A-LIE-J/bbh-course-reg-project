@@ -1,0 +1,387 @@
+{
+  "program": "Biopharmaceutical Sciences (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 108g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          }
+        ],
+        "id": "BPS-BA-CALCULUS",
+        "source_lines": [
+          [
+            39,
+            47
+          ]
+        ],
+        "source_quote": "Select one course.",
+        "description": "One calculus course from MATH 108g, MATH 118gx, or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BME 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 305g"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 314Lg"
+          }
+        ],
+        "id": "BPS-BA-STATISTICS",
+        "source_lines": [
+          [
+            49,
+            61
+          ]
+        ],
+        "source_quote": "Select one course.",
+        "description": "One statistics course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "BPS-BA-CHEMISTRY",
+        "source_lines": [
+          [
+            63,
+            72
+          ]
+        ],
+        "source_quote": "Select two courses from either the general chemistry",
+        "description": "Two courses from either the general chemistry series or the advanced general chemistry series.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BPS-BA-BIOLOGY",
+        "source_lines": [
+          [
+            74,
+            83
+          ]
+        ],
+        "source_quote": "Select two courses from either the general biology",
+        "description": "Two courses from either the general biology series or the advanced general biology series.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RXRS 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "BPSI 402"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BPSI 407",
+                "BPSI 414",
+                "BPSI 415"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BPSI 403",
+                "BPSI 410",
+                "BPSI 411",
+                "BPSI 412",
+                "BPSI 413",
+                "RXRS 422"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BPSI 405",
+                "BPSI 406",
+                "BPSI 408",
+                "BPSI 490x",
+                "RXRS 407",
+                "RXRS 412",
+                "RXRS 413w",
+                "RXRS 424",
+                "RXRS 430",
+                "RXRS 431"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "note": "May be a combination of BPSI and RXRS coursework."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                89,
+                89
+              ]
+            ],
+            "source_quote": "Students must complete a minimum of 36 units",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 36
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                89,
+                89
+              ]
+            ],
+            "source_quote": "a minimum of 32 units of upper-division",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 32
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                89,
+                89
+              ]
+            ],
+            "source_quote": "A maximum of 4 units can be met",
+            "eligible_if": {
+              "courses": [
+                "BPSI 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "BPS-BA-BPSIRXRS",
+        "source_lines": [
+          [
+            85,
+            146
+          ]
+        ],
+        "source_quote": "Students must complete a minimum of 36 units",
+        "description": "A combination of RXRS 200, BPSI 402, and further BPSI/RXRS electives totaling at least 36 units, with at least 32 upper-division and at most 4 units from BPSI 490x.",
+        "confidence": "high",
+        "note": "Encodes requirement categories 1 (RXRS 200), 2 (BPSI 402), and electives parts 3-5 as one combined unit pool, per L034 and L089."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 300L",
+            "BISC 307L",
+            "BISC 320Lg",
+            "BISC 330L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "BPS-BA-BISC",
+        "source_lines": [
+          [
+            35,
+            35
+          ],
+          [
+            147,
+            156
+          ]
+        ],
+        "source_quote": "Select two courses.",
+        "description": "Two upper-division Biological Sciences courses (min 8 units) unique to the major.",
+        "confidence": "medium",
+        "note": "The requirement that these units be unique to the major (L035) cannot be checked against other degree programs and is not separately encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students complete 128 units, including at least 70",
+      "reason": "no_fit",
+      "why": "School-based unit distribution (Dornsife vs. Mann) requires knowing each course's school; no reliable mapping is given for all courses."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Biopharmaceutical Sciences requires",
+      "reason": "university_level",
+      "why": "Restates the university 128-unit total."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "General Education, Foreign Language and Writing Requirements",
+      "reason": "university_level",
+      "why": "University-wide GE, foreign language, and writing requirements, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          158,
+          166
+        ]
+      ],
+      "source_quote": "The undergraduate honors in Biopharmaceutical Sciences is awarded",
+      "reason": "out_of_scope",
+      "why": "Optional honors program, not a required part of the degree."
+    }
+  ]
+}

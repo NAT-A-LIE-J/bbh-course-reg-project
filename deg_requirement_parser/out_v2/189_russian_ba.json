@@ -1,0 +1,108 @@
+{
+  "program": "Russian (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RUSS 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 220"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "RUSS 250"
+              },
+              {
+                "family": "specific_course",
+                "course": "RUSS 255"
+              }
+            ]
+          }
+        ],
+        "id": "RUSS-BA-LOWER",
+        "source_lines": [
+          [
+            21,
+            30
+          ]
+        ],
+        "source_quote": "RUSS 120 Beginning Russian I Units: 4",
+        "description": "Lower-division required courses: RUSS 120, RUSS 150, RUSS 220, and RUSS 250 or RUSS 255.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RUSS 310"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "SLL 321"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 330gp"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "RUSS 465"
+          }
+        ],
+        "id": "RUSS-BA-UPPER",
+        "source_lines": [
+          [
+            32,
+            42
+          ]
+        ],
+        "source_quote": "RUSS 310 Advanced Russian in Popular Culture Units: 4",
+        "description": "Upper-division required courses: RUSS 310, SLL 321 or SLL 330gp, RUSS 340, and RUSS 465.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "SELECT_ELECTIVES",
+          "approver": "undergraduate adviser"
+        },
+        "id": "RUSS-BA-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            48
+          ]
+        ],
+        "source_quote": "Two courses approved by the undergraduate adviser",
+        "description": "Two elective courses approved by the undergraduate adviser.",
+        "confidence": "medium",
+        "note": "No course list or department scope given; encoded as discretionary approval rather than a checkable count."
+      }
+    ]
+  },
+  "unclassified": []
+}

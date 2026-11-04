@@ -1,0 +1,134 @@
+{
+  "program": "Global Geodesign (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 114xg"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 381"
+          }
+        ],
+        "id": "GEODESIGN-BS-PREREQ",
+        "source_lines": [
+          [
+            40,
+            42
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics Units: 4",
+        "description": "Three foundational courses: ECON 203g, MATH 114xg, SSCI 381.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214ag"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 227"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 417"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 201g"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 313"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 382L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 383L"
+          }
+        ],
+        "id": "GEODESIGN-BS-CORE",
+        "source_lines": [
+          [
+            44,
+            63
+          ]
+        ],
+        "source_quote": "Global Geodesign Core Requirements",
+        "description": "Fourteen required core courses in architecture, planning, and spatial sciences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "SSCI 412",
+        "id": "GEODESIGN-BS-CAPSTONE",
+        "source_lines": [
+          [
+            65,
+            71
+          ]
+        ],
+        "source_quote": "Culminating capstone class required for degree completion.",
+        "description": "Capstone course SSCI 412 required for degree completion.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          32,
+          32
+        ]
+      ],
+      "source_quote": "The minimum unit requirement for the Bachelor of Science",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement, handled separately."
+    }
+  ]
+}

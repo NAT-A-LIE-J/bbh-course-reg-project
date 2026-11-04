@@ -1,0 +1,193 @@
+{
+  "program": "Religion (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "REL 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 401"
+          }
+        ],
+        "id": "REL-BA-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The department major requires REL 301 Introduction to",
+        "description": "REL 301 and REL 401 are required core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "REL 111g",
+            "REL 112g",
+            "REL 114g",
+            "REL 115g",
+            "REL 116g",
+            "REL 121g",
+            "REL 125gp",
+            "REL 130g",
+            "REL 132g",
+            "REL 134g",
+            "REL 135g",
+            "REL 136g",
+            "REL 137g",
+            "REL 141g",
+            "REL 146gp",
+            "REL 147g",
+            "CLAS 323",
+            "COMM 426",
+            "EALC 431",
+            "JS 321",
+            "JS 361gp",
+            "JS 382g",
+            "JS 467",
+            "PHIL 317",
+            "REL 302",
+            "REL 303Lg",
+            "REL 304",
+            "REL 311g",
+            "REL 312",
+            "REL 315",
+            "REL 316",
+            "REL 317g",
+            "REL 319",
+            "REL 322g",
+            "REL 324g",
+            "REL 325g",
+            "REL 326gp",
+            "REL 327g",
+            "REL 330",
+            "REL 331",
+            "REL 332",
+            "REL 334g",
+            "REL 335",
+            "REL 336w",
+            "REL 338",
+            "REL 339",
+            "REL 340",
+            "REL 341",
+            "REL 342g",
+            "REL 345p",
+            "REL 350",
+            "REL 359g",
+            "REL 361",
+            "REL 363g",
+            "REL 364",
+            "REL 365",
+            "REL 366",
+            "REL 370",
+            "REL 371",
+            "REL 376g",
+            "REL 394",
+            "REL 402",
+            "REL 415",
+            "REL 435",
+            "REL 462",
+            "REL 468",
+            "REL 473",
+            "REL 474",
+            "REL 479",
+            "REL 481",
+            "REL 483",
+            "REL 485",
+            "REL 493",
+            "REL 494L",
+            "REL 495",
+            "REL 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "REL-BA-ADDITIONAL",
+        "source_lines": [
+          [
+            21,
+            107
+          ]
+        ],
+        "source_quote": "Further, students must take six additional courses",
+        "description": "Six additional courses chosen from the lower- and upper-division options lists.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The total unit requirement for the major is",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "(at least 24 units must be upper-division).",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "preferably taken at the beginning of the",
+      "reason": "advisory",
+      "why": "Recommended timing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          113,
+          113
+        ]
+      ],
+      "source_quote": "Students who intend to do graduate work in",
+      "reason": "advisory",
+      "why": "Encourages language study and course concentration for future graduate work, not a degree requirement."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "program": "Managing Human Relations Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 355"
+          }
+        ],
+        "id": "MHR-MINOR-GROUP1",
+        "source_lines": [
+          [
+            32,
+            37
+          ]
+        ],
+        "source_quote": "Choose one course from the following (4 units):",
+        "description": "Choose one course from BUAD 304 or PSYC 355.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "SOCI 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 342m"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 345"
+          }
+        ],
+        "id": "MHR-MINOR-GROUP2",
+        "source_lines": [
+          [
+            39,
+            45
+          ]
+        ],
+        "source_quote": "Choose one course from the following (4 units):",
+        "description": "Choose one course from SOCI 340, SOCI 342m, or SOCI 345.",
+        "confidence": "high",
+        "note": "SOCI 340 also appears in the capstone list; one-slot rule means it can fill only one of these slots."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CLAS 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDA 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDA 365"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 470"
+          }
+        ],
+        "id": "MHR-MINOR-LEADERSHIP",
+        "source_lines": [
+          [
+            47,
+            55
+          ]
+        ],
+        "source_quote": "Choose one course from the following list of classes on leadership",
+        "description": "Choose one leadership course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUCO 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 341"
+          }
+        ],
+        "id": "MHR-MINOR-ETHICS",
+        "source_lines": [
+          [
+            57,
+            64
+          ]
+        ],
+        "source_quote": "Choose one course from the following list of classes on ethics",
+        "description": "Choose one ethics course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ECON 332"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 471"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 471"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 340"
+          }
+        ],
+        "id": "MHR-MINOR-CAPSTONE",
+        "source_lines": [
+          [
+            66,
+            73
+          ]
+        ],
+        "source_quote": "Choose one of the following three capstone classes",
+        "description": "Choose one capstone course from ECON 332, ECON 471, MOR 471, or SOCI 340.",
+        "confidence": "high",
+        "note": "SOCI 340 also appears in Group 2; one-slot rule prevents double use."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            26,
+            26
+          ]
+        ],
+        "source_quote": "students must include at least four upper-division courses",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            81,
+            81
+          ]
+        ],
+        "source_quote": "Total requirements: five courses, 20 units",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          26,
+          26
+        ]
+      ],
+      "source_quote": "four courses dedicated exclusively to this minor",
+      "reason": "university_level",
+      "why": "Standard minor uniqueness rule handled by the tool, not encoded here."
+    },
+    {
+      "source_lines": [
+        [
+          26,
+          26
+        ]
+      ],
+      "source_quote": "students must select four courses outside their major department",
+      "reason": "no_fit",
+      "why": "Requires knowing the student's major department, which cannot be checked from a course list."
+    },
+    {
+      "source_lines": [
+        [
+          26,
+          26
+        ]
+      ],
+      "source_quote": "Students seeking the Bachelor of Arts in Sociology must choose",
+      "reason": "no_fit",
+      "why": "Degree-program-specific exclusion rule not expressible in eligible_if vocabulary."
+    },
+    {
+      "source_lines": [
+        [
+          79,
+          79
+        ]
+      ],
+      "source_quote": "*Course has prerequisite or corequisite",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/corequisite note, not a selection requirement."
+    }
+  ]
+}

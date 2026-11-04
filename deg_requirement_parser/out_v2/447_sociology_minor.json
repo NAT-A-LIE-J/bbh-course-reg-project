@@ -1,0 +1,139 @@
+{
+  "program": "Sociology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "SOCI 200gm",
+            "SOCI 270g",
+            "SOCI 313L",
+            "SOCI 314Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "SOCI-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            34
+          ]
+        ],
+        "source_quote": "All minors are required to take at least two of the core courses",
+        "description": "At least two core sociology courses from SOCI 200gm, SOCI 270g, SOCI 313L, SOCI 314Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "SOCI"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            {
+              "courses": [
+                "AMST 357m",
+                "JS 379gm",
+                "JS 382g",
+                "REL 468",
+                "SOCI 305m",
+                "SOCI 335",
+                "SOCI 340",
+                "SOCI 342m",
+                "SOCI 345",
+                "SOCI 350",
+                "SOCI 351",
+                "SOCI 353",
+                "SOCI 355m",
+                "SOCI 356m",
+                "SOCI 360m",
+                "SOCI 362",
+                "SOCI 369",
+                "SOCI 376m",
+                "SOCI 402",
+                "SOCI 408",
+                "SOCI 410",
+                "SOCI 415",
+                "SOCI 425",
+                "SOCI 429",
+                "SOCI 430m",
+                "SOCI 431",
+                "SOCI 432m",
+                "SOCI 435m",
+                "SOCI 440",
+                "SOCI 445",
+                "SOCI 460",
+                "SOCI 464",
+                "SOCI 465",
+                "SOCI 470",
+                "SOCI 475",
+                "SOCI 480",
+                "SWMS 385m"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "SOCI-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            78
+          ]
+        ],
+        "source_quote": "The remaining three courses may be chosen from among the upper-division elective",
+        "description": "Three remaining courses from upper-division SOCI electives or the listed cross-departmental courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Five courses (20 units) are required to complete the minor",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,109 @@
+{
+  "program": "Public Relations and Advertising (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASCJ 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 209"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 250"
+          }
+        ],
+        "id": "PRAD-BA-LOWER",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "ASCJ 200 Navigating Media and News in the Digital",
+        "description": "Three required lower-division courses: ASCJ 200, PR 209, PR 250.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PR 351a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 427"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 429"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 450"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "PR",
+                    "JOUR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "note": "Elective units chosen in consultation with an adviser; advising process not encoded."
+          }
+        ],
+        "id": "PRAD-BA-UPPER",
+        "source_lines": [
+          [
+            35,
+            43
+          ]
+        ],
+        "source_quote": "PR 351a Multichannel Strategy and Content Creation Units",
+        "description": "Four required upper-division courses plus 16 units of upper-division PR/JOUR electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Total units: 44",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 44
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

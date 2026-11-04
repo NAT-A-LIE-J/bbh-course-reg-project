@@ -1,0 +1,510 @@
+{
+  "program": "Computational Neuroscience (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 103Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ]
+          }
+        ],
+        "id": "CN-BS-GENSCI",
+        "source_lines": [
+          [
+            41,
+            55
+          ]
+        ],
+        "source_quote": "General Science Requirements (24 units)",
+        "description": "General science core: biology, chemistry, calculus I-II, and physics I-II sequences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HP 340Lg",
+            "MATH 208x",
+            "MATH 307",
+            "PSYC 274Lg",
+            "QBIO 305g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CN-BS-STATS",
+        "source_lines": [
+          [
+            56,
+            61
+          ]
+        ],
+        "source_quote": "Statistics Requirement, Choose One (4 units)",
+        "description": "Choose one statistics course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "NEUR 199"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          }
+        ],
+        "id": "CN-BS-NEURO-REQ",
+        "source_lines": [
+          [
+            62,
+            65
+          ]
+        ],
+        "source_quote": "Neuroscience Requirements (9 units)",
+        "description": "Core neuroscience courses: BISC 421, NEUR 199, PSYC 100Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "NEUR 408"
+          }
+        ],
+        "id": "CN-BS-UPPER-CORE",
+        "source_lines": [
+          [
+            66,
+            68
+          ]
+        ],
+        "source_quote": "Upper-division Core Courses (8 units)",
+        "description": "Upper-division core courses: BISC 407 and NEUR 408.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BISC 444",
+                "CSCI 103L",
+                "CSCI 455x",
+                "EE 155L",
+                "TAC 115",
+                "TAC 116",
+                "TAC 168",
+                "TAC 249"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BISC 406L",
+                "BME 202",
+                "BME 210",
+                "BISC 461",
+                "CSCI 360",
+                "CSCI 445L",
+                "CSCI 467",
+                "DSCI 352",
+                "TAC 310",
+                "TAC 365",
+                "TAC 449",
+                "MATH 308",
+                "PSYC 434",
+                "PSYC 450",
+                "QBIO 401",
+                "QBIO 478",
+                "QBIO 481"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "CN-BS-COMP-AREA",
+        "source_lines": [
+          [
+            70,
+            113
+          ]
+        ],
+        "source_quote": "Students are to take a total of three courses",
+        "description": "Three computational-area courses: one basic computational skills course plus two computational courses.",
+        "confidence": "high",
+        "note": "Only one introductory programming course counts toward the major; this is enforced by the one-slot/choose-1 structure of the basic skills course."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 423",
+            "BISC 424",
+            "BISC 461",
+            "BISC 462",
+            "BISC 490x",
+            "GERO 414",
+            "HBIO 435",
+            "HP 409",
+            "MEDS 330",
+            "MEDS 340",
+            "QBIO 481",
+            "RXRS 403",
+            "RXRS 405"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CN-BS-BIO-AREA",
+        "source_lines": [
+          [
+            115,
+            133
+          ]
+        ],
+        "source_quote": "Choose one to two courses from the options",
+        "description": "One to two courses from the Biological Area list totaling at least 4 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 405",
+            "LING 385Lg",
+            "MEDS 330",
+            "MEDS 340",
+            "PSYC 301L",
+            "PSYC 304L",
+            "PSYC 326",
+            "PSYC 420",
+            "PSYC 424",
+            "PSYC 425",
+            "PSYC 426",
+            "PSYC 437",
+            "PSYC 438",
+            "PSYC 440",
+            "RXRS 405"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CN-BS-BEHAV-AREA",
+        "source_lines": [
+          [
+            135,
+            153
+          ]
+        ],
+        "source_quote": "Behavioral Area (4 units)",
+        "description": "Course(s) from the Behavioral Area list totaling at least 4 units.",
+        "confidence": "medium",
+        "note": "No explicit 'choose' wording given for this list; inferred minimum of one course meeting the 4-unit target."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BISC 444",
+                "CSCI 103L",
+                "CSCI 455x",
+                "EE 155L",
+                "TAC 115",
+                "TAC 116",
+                "TAC 168",
+                "TAC 249",
+                "BISC 406L",
+                "BME 202",
+                "BME 210",
+                "BISC 461",
+                "CSCI 360",
+                "CSCI 445L",
+                "CSCI 467",
+                "DSCI 352",
+                "TAC 310",
+                "TAC 365",
+                "TAC 449",
+                "MATH 308",
+                "PSYC 434",
+                "PSYC 450",
+                "QBIO 401",
+                "QBIO 478",
+                "QBIO 481",
+                "BISC 423",
+                "BISC 424",
+                "BISC 462",
+                "BISC 490x",
+                "GERO 414",
+                "HBIO 435",
+                "HP 409",
+                "MEDS 330",
+                "MEDS 340",
+                "RXRS 403",
+                "RXRS 405",
+                "ECON 405",
+                "LING 385Lg",
+                "PSYC 301L",
+                "PSYC 304L",
+                "PSYC 326",
+                "PSYC 420",
+                "PSYC 424",
+                "PSYC 425",
+                "PSYC 426",
+                "PSYC 437",
+                "PSYC 438",
+                "PSYC 440"
+              ]
+            },
+            {
+              "courses": [
+                "CSCI 170",
+                "MATH 225",
+                "MATH 226g",
+                "MATH 245",
+                "NEUR 490x"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CN-BS-OTHER-ELECTIVES",
+        "source_lines": [
+          [
+            155,
+            165
+          ]
+        ],
+        "source_quote": "Take one additional course from the Computational, Biological",
+        "description": "One additional course from the Computational, Biological, or Behavioral area, or 4 units of NEUR 490x research.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "SUBSTITUTE",
+          "approver": "co-directors and instructor, with minimum 3.3 GPA",
+          "courses": [
+            "BME 502",
+            "BME 575",
+            "CSCI 561",
+            "CSCI 662",
+            "EE 559",
+            "NSCI 524",
+            "NSCI 531",
+            "NSCI 532",
+            "PSYC 506",
+            "PSYC 540",
+            "PSYC 544",
+            "PSYC 545",
+            "PSYC 547",
+            "PSYC 551",
+            "PSYC 555"
+          ]
+        },
+        "id": "CN-BS-GRAD-SUB",
+        "source_lines": [
+          [
+            167,
+            187
+          ]
+        ],
+        "source_quote": "A graduate class from the following list may",
+        "description": "A graduate course may substitute for an undergraduate computational course with co-director/instructor approval and a 3.3 GPA.",
+        "confidence": "medium",
+        "note": "GPA threshold noted here but not separately checkable as a transcript-level condition."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "The major requires twelve core courses (45 units)",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 67
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "A grade of C- or higher is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement, not a course-selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "The degree requires a minimum of 128 units.",
+      "reason": "university_level",
+      "why": "University-wide unit total rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "students are encouraged to engage in research",
+      "reason": "advisory",
+      "why": "Encouragement to pursue research, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          74,
+          74
+        ]
+      ],
+      "source_quote": "Only one introductory programming course will be counted",
+      "reason": "no_fit",
+      "why": "Restates one-slot rule already enforced structurally; not independently encodable beyond the note."
+    }
+  ]
+}

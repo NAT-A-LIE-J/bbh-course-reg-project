@@ -1,0 +1,523 @@
+{
+  "program": "Environmental Studies (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ENST 100g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENST 320a"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENST 320b"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENST 344"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENST 387"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENST 495"
+              }
+            ],
+            "id": "ENVS-BS-CORE-EXPERIENCES",
+            "source_lines": [
+              [
+                29,
+                38
+              ]
+            ],
+            "source_quote": "Environmental Studies Core Experiences:",
+            "description": "Six required ENST core courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 103Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 103Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "GEOL 160Lg"
+              }
+            ],
+            "id": "ENVS-BS-NATURAL-SCIENCE-CORE",
+            "source_lines": [
+              [
+                40,
+                46
+              ]
+            ],
+            "source_quote": "Natural Science Core Experiences:",
+            "description": "Three required natural science courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ENST 360",
+                "IR 309",
+                "IR 323",
+                "IR 349",
+                "MDES 201w",
+                "MDES 401",
+                "POSC 320",
+                "POSC 270",
+                "POSC 347"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "id": "ENVS-BS-POLICY-GOVERNANCE",
+            "source_lines": [
+              [
+                48,
+                63
+              ]
+            ],
+            "source_quote": "Choose two.",
+            "description": "Choose two courses from the Policy/Governance list.",
+            "confidence": "high",
+            "note": "POSC 270 and POSC 347 are presented as alternatives but both are on the eligible list; one-slot rule prevents double counting."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "GEOL 415",
+                "HP 340Lg",
+                "MATH 114xg",
+                "PSYC 274Lg",
+                "QBIO 305g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "ENVS-BS-MATH",
+            "source_lines": [
+              [
+                65,
+                75
+              ]
+            ],
+            "source_quote": "Choose one.",
+            "description": "Choose one statistics/data science course.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "ENVS-BS-COMMON-COURSES",
+        "source_lines": [
+          [
+            25,
+            75
+          ]
+        ],
+        "source_quote": "Common Courses (48 Units)",
+        "description": "48 units of common coursework: core experiences, natural science, policy/governance, and math.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "ENST 432"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ENST 442"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ENST 445"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 351L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 412"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ENST 335",
+                    "ENST 442",
+                    "ENST 443",
+                    "ENST 445",
+                    "GEOL 412",
+                    "ENST 483L",
+                    "ENST 490x",
+                    "ENST 492",
+                    "GEOL 450L",
+                    "GEOL 470L",
+                    "HP 448",
+                    "PPD 427L",
+                    "SSCI 301L"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 3
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        102,
+                        102
+                      ]
+                    ],
+                    "source_quote": "WITH AT LEAST TWO COURSES SELECTED FROM ENST",
+                    "eligible_if": {
+                      "prefix": [
+                        "ENST"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "source_lines": [
+                  [
+                    98,
+                    123
+                  ]
+                ],
+                "source_quote": "Three of the following WITH AT LEAST TWO",
+                "id": "ENVS-BS-CLIMATE-ELECTIVES",
+                "description": "Three elective courses, at least two from ENST, for the Climate and Environment concentration.",
+                "confidence": "medium",
+                "note": "Only one of ENST 445, GEOL 351L, GEOL 412 may count across the required choice and the electives; cannot be enforced across separate lists."
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ECON 203g",
+                    "ECON 205g",
+                    "ENST 360",
+                    "ENST 370",
+                    "ENST 432",
+                    "ENST 442",
+                    "ENST 443",
+                    "ENST 486",
+                    "ENST 490x",
+                    "ENST 492",
+                    "HP 446",
+                    "MDES 401",
+                    "POSC 418",
+                    "POSC 436",
+                    "PPD 373",
+                    "PPD 410",
+                    "PPD 420",
+                    "PSYC 411",
+                    "RISK 380",
+                    "PPD 427L",
+                    "SSCI 301L"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 6
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        129,
+                        129
+                      ]
+                    ],
+                    "source_quote": "WITH AT LEAST THREE COURSES SELECTED FROM ENST",
+                    "eligible_if": {
+                      "prefix": [
+                        "ENST"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "ENVS-BS-CONC-ENV-POLICY",
+            "source_lines": [
+              [
+                125,
+                156
+              ]
+            ],
+            "source_quote": "Six of the following WITH AT LEAST THREE",
+            "description": "Six courses, at least three ENST, for the Environmental Policy concentration.",
+            "confidence": "medium",
+            "note": "ENST 360 and MDES 401 cannot be double-counted with the Policy/Governance Core or Sustainability and Society track."
+          },
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "BISC 315L",
+                    "BISC 419L",
+                    "BISC 431L",
+                    "BISC 457L",
+                    "BISC 469L",
+                    "BISC 473L",
+                    "ENST 310",
+                    "ENST 370",
+                    "ENST 405",
+                    "ENST 413",
+                    "ENST 483L",
+                    "ENST 484",
+                    "ENST 490x",
+                    "ENST 492",
+                    "GEOL 412",
+                    "GEOL 450L",
+                    "GEOL 470L",
+                    "PPD 427L",
+                    "SSCI 301L"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 6
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        162,
+                        162
+                      ]
+                    ],
+                    "source_quote": "WITH AT LEAST THREE FROM ENST COURSES OR",
+                    "eligible_if": {
+                      "prefix": [
+                        "ENST"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "ENVS-BS-CONC-OCEANS-PEOPLE",
+            "source_lines": [
+              [
+                158,
+                189
+              ]
+            ],
+            "source_quote": "Six of the following WITH AT LEAST THREE",
+            "description": "Six courses, at least three ENST, for the Oceans and People concentration.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "ENST 310",
+                    "ENST 360",
+                    "ENST 405",
+                    "ENST 413",
+                    "ENST 432",
+                    "ENST 445",
+                    "ENST 484",
+                    "ENST 486",
+                    "ENST 490x",
+                    "ENST 492",
+                    "MDES 401",
+                    "MDES 441w",
+                    "MOR 466",
+                    "POSC 418",
+                    "PPD 361",
+                    "PSYC 411",
+                    "PPD 427L",
+                    "SSCI 301L"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 6
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        195,
+                        195
+                      ]
+                    ],
+                    "source_quote": "WITH AT LEAST THREE COURSES SELECTED FROM ENST",
+                    "eligible_if": {
+                      "prefix": [
+                        "ENST"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "ENVS-BS-CONC-SUSTAINABILITY-SOCIETY",
+            "source_lines": [
+              [
+                191,
+                218
+              ]
+            ],
+            "source_quote": "Six of the following WITH AT LEAST THREE",
+            "description": "Six courses, at least three ENST, for the Sustainability and Society concentration.",
+            "confidence": "medium",
+            "note": "ENST 360 and MDES 401 cannot be double-counted with the Policy/Governance Core."
+          }
+        ],
+        "id": "ENVS-BS-CONCENTRATION",
+        "source_lines": [
+          [
+            77,
+            218
+          ]
+        ],
+        "source_quote": "Four concentrations are available in the BS",
+        "description": "Students choose one of four concentrations: Climate and Environment, Environmental Policy, Oceans and People, or Sustainability and Society.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            220,
+            220
+          ]
+        ],
+        "source_quote": "Required units: 72",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 72
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Environmental Studies Program offers two undergraduate",
+      "reason": "out_of_scope",
+      "why": "Programme overview/marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Note that some of the field studies opportunities",
+      "reason": "advisory",
+      "why": "Descriptive note about field study conditions, not a requirement."
+    }
+  ]
+}

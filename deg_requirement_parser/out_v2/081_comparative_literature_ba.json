@@ -1,0 +1,415 @@
+{
+  "program": "Comparative Literature (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "COLT 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 303"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "AMST 331gw",
+                    "COLT 101gp",
+                    "COLT 102g",
+                    "COLT 250g",
+                    "COLT 251g",
+                    "COLT 264gp",
+                    "COLT 311",
+                    "COLT 312",
+                    "COLT 324",
+                    "COLT 335",
+                    "COLT 345",
+                    "COLT 346",
+                    "COLT 348",
+                    "COLT 360gp",
+                    "COLT 374gm",
+                    "COLT 382gw",
+                    "COLT 420",
+                    "COLT 426",
+                    "COLT 445",
+                    "COLT 448",
+                    "COLT 472",
+                    "COLT 475",
+                    "COLT 476",
+                    "COLT 485",
+                    "EALC 454",
+                    "EALC 460",
+                    "FREN 272gp",
+                    "ITAL 382g",
+                    "COLT 357",
+                    "COLT 365",
+                    "COLT 373",
+                    "COLT 379",
+                    "COLT 395w",
+                    "COLT 415",
+                    "COLT 462",
+                    "COLT 470",
+                    "COLT 480",
+                    "EALC 255gw",
+                    "CLAS 370",
+                    "COLT 375",
+                    "COLT 377",
+                    "COLT 381",
+                    "COLT 385",
+                    "COLT 391",
+                    "COLT 454",
+                    "COLT 471",
+                    "COLT 474",
+                    "COLT 478",
+                    "COLT 487",
+                    "FREN 393"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 4
+                  }
+                ],
+                "id": "COLT-BA-LMC-CONCENTRATION",
+                "source_lines": [
+                  [
+                    58,
+                    124
+                  ]
+                ],
+                "source_quote": "At least four additional COLT courses in one of the three concentrations.",
+                "description": "At least four additional courses drawn from one of the three concentration lists (literature, media, or critical thought).",
+                "confidence": "medium",
+                "note": "The catalogue requires the four courses come from a single concentration; this cannot be checked from a course list alone, so the pool is the union of all three lists."
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "prefix": [
+                    "COLT"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 4
+                  }
+                ],
+                "id": "COLT-BA-LMC-ADDITIONAL",
+                "source_lines": [
+                  [
+                    126,
+                    130
+                  ]
+                ],
+                "source_quote": "At least four additional COLT courses.",
+                "description": "At least four additional COLT courses beyond the core and concentration requirements.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    41,
+                    41
+                  ]
+                ],
+                "source_quote": "required to complete at least 40 units (10 courses)",
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 10
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 40
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    130,
+                    130
+                  ]
+                ],
+                "source_quote": "No more than two of the 10 courses required for the major may be at the 100 or 200 level.",
+                "eligible_if": {
+                  "level_max": 299
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "max",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "COLT-BA-LMC-TRACK",
+            "source_lines": [
+              [
+                37,
+                130
+              ]
+            ],
+            "source_quote": "Students earn a BA in Comparative Literature and are required to complete at least 40 units",
+            "description": "Literature/Media/Critical Thought track: COLT 302, COLT 303, four courses in one concentration, and four more COLT courses, totaling 40 units with limits on lower-division courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "COLT 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 303"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "prefix": [
+                    "COLT"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 5
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        153,
+                        153
+                      ]
+                    ],
+                    "source_quote": "of which no more than two may be at the 100 or 200 level",
+                    "eligible_if": {
+                      "level_max": 299
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "max",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "id": "COLT-BA-FL-ADDITIONAL",
+                "source_lines": [
+                  [
+                    149,
+                    153
+                  ]
+                ],
+                "source_quote": "At least five additional COLT courses, of which no more than two may be at the 100 or 200 level.",
+                "description": "At least five additional COLT courses, with no more than two at the 100/200 level.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "upper-division courses in the literature or culture of one or more foreign languages, with all readings in that language"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 3
+                  }
+                ],
+                "id": "COLT-BA-FL-LANGUAGE",
+                "source_lines": [
+                  [
+                    155,
+                    159
+                  ]
+                ],
+                "source_quote": "At least three upper-division courses in the literature or culture of one or more foreign languages",
+                "description": "At least three upper-division foreign-language-literature or culture courses with readings in that language.",
+                "confidence": "low",
+                "note": "No department-approved course list is given for this requirement; pool is left unresolved."
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    136,
+                    136
+                  ]
+                ],
+                "source_quote": "required to complete 40 units (10 courses)",
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 10
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 40
+                  }
+                ]
+              }
+            ],
+            "id": "COLT-BA-FL-TRACK",
+            "source_lines": [
+              [
+                132,
+                159
+              ]
+            ],
+            "source_quote": "Students earn a BA in Comparative Literature and are required to complete 40 units",
+            "description": "Foreign Language track: COLT 302, COLT 303, five more COLT courses, and three upper-division foreign-language literature courses, totaling 40 units.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "COLT-BA-TRACK-CHOICE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students may earn the BA in Comparative Literature by satisfying the requirements for either of two tracks.",
+        "description": "Students complete the requirements of one of two tracks: Literature/Media/Critical Thought, or Foreign Language.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The Literature/Media/Critical Thought Track allows students to focus",
+      "reason": "advisory",
+      "why": "Descriptive marketing text about the track, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "This track offers the opportunity to pursue a major",
+      "reason": "advisory",
+      "why": "Advisory text about double majors/minors."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "The Foreign Language Track incorporates the study of at least one literature",
+      "reason": "advisory",
+      "why": "Descriptive text about the track, not an additional requirement beyond what is already encoded."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "are strongly advised to choose this track",
+      "reason": "advisory",
+      "why": "Advisory recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "The requirements for both tracks of the major accommodate very well semesters of study abroad.",
+      "reason": "advisory",
+      "why": "Advisory/marketing statement about study abroad."
+    },
+    {
+      "source_lines": [
+        [
+          165,
+          165
+        ]
+      ],
+      "source_quote": "an overall GPA of at least 3.0 and at least 3.5 in courses counted for major credit is required",
+      "reason": "out_of_scope",
+      "why": "GPA requirement for honors program; grade/GPA rules are out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          165,
+          165
+        ]
+      ],
+      "source_quote": "The decision to enter the Honors Program should be made and discussed",
+      "reason": "advisory",
+      "why": "Advisory timing recommendation."
+    },
+    {
+      "source_lines": [
+        [
+          167,
+          167
+        ]
+      ],
+      "source_quote": "To be awarded honors, majors in comparative literature must complete 4 units of COLT 494",
+      "reason": "out_of_scope",
+      "why": "Optional honors program requirement, not part of base degree requirements."
+    },
+    {
+      "source_lines": [
+        [
+          169,
+          169
+        ]
+      ],
+      "source_quote": "The director of the senior honors thesis must be a member",
+      "reason": "out_of_scope",
+      "why": "Honors thesis administrative rule, out of scope."
+    }
+  ]
+}

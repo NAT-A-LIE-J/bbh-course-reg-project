@@ -1,0 +1,420 @@
+{
+  "program": "Performance (Flute), (Oboe), (Clarinet), (Bassoon), (Saxophone), (French Horn), (Trumpet), (Trombone), (Tuba) or (Percussion) (BM)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "PERF-BM-CORE-THORNTON",
+        "source_lines": [
+          [
+            82,
+            98
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "Thirteen named core Thornton academic courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPWP 153"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPWP 253"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPWP 353"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPWP 453"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "PERF-BM-INDIVIDUAL-INSTRUCTION",
+        "source_lines": [
+          [
+            104,
+            115
+          ]
+        ],
+        "source_quote": "Individual Instruction (16 units)",
+        "description": "4 units each of MPWP 153, 253, 353, and 453 in the primary instrument, totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MUEN 323"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MUEN 325"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "PERF-BM-ENSEMBLES",
+        "source_lines": [
+          [
+            117,
+            124
+          ]
+        ],
+        "source_quote": "Ensembles (16 units)",
+        "description": "8 units of MUEN 323 and 8 units of MUEN 325, each required each semester in residence.",
+        "confidence": "high",
+        "note": "'[**] Required each semester in residence' is procedural timing, not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPKS 250a"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MPKS 250b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUJZ 141a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPPM 250"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MUCD 340"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCD 443"
+              }
+            ]
+          }
+        ],
+        "id": "PERF-BM-PROGRAM-INTENSIVE",
+        "source_lines": [
+          [
+            126,
+            137
+          ]
+        ],
+        "source_quote": "Program Intensive (6 units)",
+        "description": "MPKS 250a plus two units from one keyboard-skills list and two units from one conducting list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "MPGU 145",
+                "MPGU 150",
+                "MPPM 120",
+                "MPPM 240",
+                "MPPM 250",
+                "MPPM 370",
+                "MTEC 245",
+                "MTEC 246",
+                "MTEC 248",
+                "MTEC 249",
+                "MTEC 277x",
+                "MUIN 272x",
+                "MUIN 425",
+                "MUJZ 141a",
+                "MUJZ 150",
+                "MUJZ 218a",
+                "MUJZ 450",
+                "MUSC 255"
+              ]
+            },
+            {
+              "unresolved": "other Contemporary Division courses in consultation with chair and the Contemporary Division"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PERF-BM-CONTEMPORARY-ELECTIVES",
+        "source_lines": [
+          [
+            143,
+            168
+          ]
+        ],
+        "source_quote": "Select 4 units from the Contemporary Division",
+        "description": "4 units of electives from the Contemporary Division list or other approved courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ],
+        "id": "PERF-BM-GENERAL-ELECTIVES",
+        "source_lines": [
+          [
+            170,
+            172
+          ]
+        ],
+        "source_quote": "General Electives (18 units)",
+        "description": "18 units of general electives with no stated restriction.",
+        "confidence": "medium",
+        "note": "No course list or restriction given; treated as free electives."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "Senior Recital (0 units), completed under approved faculty supervision"
+            }
+          }
+        ],
+        "id": "PERF-BM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            41
+          ],
+          [
+            174,
+            180
+          ]
+        ],
+        "source_quote": "A senior recital must be completed under approved",
+        "description": "Young Artist Project courses MUSC 480/481 plus a senior recital with faculty-determined requirements.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Admission to Thornton programs is granted through",
+      "reason": "university_level",
+      "why": "University/school admission process, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Eight courses are required in six Core Literacies",
+      "reason": "university_level",
+      "why": "USC General Education requirements, applied school-wide from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          55,
+          80
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE category requirements are university-wide, not programme specific."
+    },
+    {
+      "source_lines": [
+        [
+          186,
+          186
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units",
+      "reason": "advisory",
+      "why": "Planning advice about overlapping GE and major requirements."
+    },
+    {
+      "source_lines": [
+        [
+          182,
+          182
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count for the degree, a university-wide figure."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          37
+        ]
+      ],
+      "source_quote": "During the junior and senior years of the",
+      "reason": "no_fit",
+      "why": "Describes the nature of the Young Artist Project but adds no checkable course requirement beyond MUSC 480/481."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "program": "Plastics Sustainability Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ENST 100g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENST 150gx"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ENE 200"
+          }
+        ],
+        "id": "PLASTICS-MINOR-ENVIRONMENTAL",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Required Environmental Courses (8 units)",
+        "description": "ENST 100g or ENST 150gx, plus ENE 200, totaling 8 units.",
+        "confidence": "medium",
+        "note": "ENE 200 has a prerequisite requirement noted in the catalogue (line 32); not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHE 475"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 461"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 462L"
+          }
+        ],
+        "id": "PLASTICS-MINOR-POLYMERS",
+        "source_lines": [
+          [
+            34,
+            41
+          ]
+        ],
+        "source_quote": "Required Polymers Courses (8 units)",
+        "description": "CHE 475 or CHEM 461, plus CHEM 462L, totaling 8 units.",
+        "confidence": "medium",
+        "note": "CHEM 461 and CHEM 462L have prerequisite requirements noted (lines 39, 41); not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUAD 301",
+            "CHE 475",
+            "CHEM 461",
+            "ENST 344",
+            "MOR 466"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PLASTICS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            51
+          ],
+          [
+            59,
+            59
+          ]
+        ],
+        "source_quote": "Choose Two Elective Courses (7-8 units)",
+        "description": "Two elective courses from the approved list; CHE 475 and CHEM 461 cannot be used here if already used as a required course.",
+        "confidence": "medium",
+        "note": "CHE 475 and CHEM 461 cannot be double-counted as both an elective and required course (line 59); handled by the one-slot rule, not a separate node."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "*Prerequisite required.",
+      "reason": "advisory",
+      "why": "General note about prerequisites, not a selectable requirement itself."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "program": "Photography Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 149"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 150"
+          }
+        ],
+        "id": "PHOTO-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Two lower-division courses (8 units):",
+        "description": "Two lower-division courses: ART 149 and ART 150.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 450"
+          }
+        ],
+        "id": "PHOTO-MINOR-UPPER-REQUIRED",
+        "source_lines": [
+          [
+            30,
+            35
+          ]
+        ],
+        "source_quote": "Required upper-division course (8 units):",
+        "description": "Required upper-division courses: ART 350 and ART 450.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 373g",
+            "AHIS 469",
+            "ART 362",
+            "ART 450",
+            "ART 460",
+            "CRIT 350gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PHOTO-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            37,
+            46
+          ]
+        ],
+        "source_quote": "One upper-division course (4 units) chosen from the following:",
+        "description": "One upper-division course chosen from a given list.",
+        "confidence": "high",
+        "note": "ART 450 appears both as a required course above and in this list with a note 'max 12', suggesting it may be repeated for credit as the elective choice too; since each course fills one slot, ART 450 here can only be used if not already used for the required upper-division slot."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The total number of units required for the minor is 20.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

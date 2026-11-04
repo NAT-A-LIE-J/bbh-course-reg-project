@@ -1,0 +1,112 @@
+{
+  "program": "Natural Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "natural sciences majors"
+        },
+        "id": "NATSCI-MINOR-EXCLUSION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This minor is not available to majors",
+        "description": "The minor is not available to natural sciences majors.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BISC 120Lg",
+                "BISC 121Lg",
+                "BISC 220Lg",
+                "BISC 221Lg",
+                "CHEM 105aLg",
+                "CHEM 115aLg",
+                "CHEM 105bL",
+                "CHEM 115bL",
+                "PHYS 135aLg",
+                "PHYS 135bL"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 321"
+          }
+        ],
+        "id": "NATSCI-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            50
+          ]
+        ],
+        "source_quote": "Any five courses from among:",
+        "description": "Five foundation courses chosen from paired biology/chemistry/physics options, plus the BISC 321 capstone (22 units total).",
+        "confidence": "medium",
+        "note": "Courses are listed as alternative pairs (e.g. BISC 120Lg or 121Lg); treated as a pool of 10 courses choosing 5, which approximates the 'one from each pair' structure since each course fills its own slot."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "courses offered for major credit by the departments of chemistry, physics, biological sciences and earth sciences"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "NATSCI-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            52,
+            56
+          ]
+        ],
+        "source_quote": "Any two courses chosen from among those offered",
+        "description": "Two elective courses (8 units) from chemistry, physics, biological sciences or earth sciences major-credit offerings.",
+        "confidence": "low",
+        "note": "No explicit course list is given for eligible departmental offerings; encoded as unresolved pool."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Eighteen units toward the natural science minor",
+      "reason": "university_level",
+      "why": "Residency requirement for units completed at USC is a university-wide rule."
+    }
+  ]
+}

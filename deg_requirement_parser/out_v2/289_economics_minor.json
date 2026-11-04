@@ -1,0 +1,190 @@
+{
+  "program": "Economics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ECON 303"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 305"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125"
+              }
+            ]
+          }
+        ],
+        "id": "ECON-MIN-CORE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor includes the core courses ECON 203",
+        "description": "Core courses: ECON 203, ECON 205, ECON 303 or 305, and MATH 118gx or 125.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ECON 317",
+                "ECON 330",
+                "ECON 332",
+                "ECON 434"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "id": "ECON-MIN-TRACK-LAW",
+            "source_lines": [
+              [
+                25,
+                27
+              ]
+            ],
+            "source_quote": "Choose three courses from: ECON 317 , ECON 330",
+            "description": "Law and Political Economy track: three courses from the listed ECON courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ECON 317",
+                "ECON 350",
+                "ECON 357",
+                "ECON 360",
+                "ECON 450",
+                "ECON 452",
+                "ECON 457"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "id": "ECON-MIN-TRACK-FINANCE",
+            "source_lines": [
+              [
+                29,
+                31
+              ]
+            ],
+            "source_quote": "Choose three courses from: ECON 317 , ECON 350",
+            "description": "Finance and Money track: three courses from the listed ECON courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ECON 317",
+                "ECON 330",
+                "ECON 340",
+                "ECON 342",
+                "ECON 343",
+                "ECON 346",
+                "ECON 350"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "id": "ECON-MIN-TRACK-INTL",
+            "source_lines": [
+              [
+                33,
+                35
+              ]
+            ],
+            "source_quote": "Choose three courses from: ECON 317 , ECON 330",
+            "description": "International Economics track: three courses from the listed ECON courses.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "ECON-MIN-TRACKS",
+        "source_lines": [
+          [
+            23,
+            35
+          ]
+        ],
+        "source_quote": "plus three courses chosen from one of the following tracks",
+        "description": "Students choose one of three tracks and complete three courses from it.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students minoring in economics must maintain at least a 2.0 GPA",
+      "reason": "out_of_scope",
+      "why": "GPA requirement, not a course selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students from all disciplines will benefit from an economics minor",
+      "reason": "advisory",
+      "why": "Marketing/descriptive statement, not a requirement."
+    }
+  ]
+}

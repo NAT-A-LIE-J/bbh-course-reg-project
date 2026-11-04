@@ -1,0 +1,114 @@
+{
+  "program": "Law and Technology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "TAC 125L",
+        "id": "LAWTECH-MIN-CORE",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "Take 2 units.",
+        "description": "Required core course TAC 125L (2 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 206",
+            "LAW 207",
+            "LAW 211",
+            "LAW 350",
+            "LAW 401"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LAWTECH-MIN-LAWELECTIVES",
+        "source_lines": [
+          [
+            33,
+            43
+          ]
+        ],
+        "source_quote": "Take 8 units from the following:",
+        "description": "Eight units of Law electives from the listed LAW courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MKT 333",
+            "TAC 325",
+            "TAC 370",
+            "TAC 375",
+            "TAC 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LAWTECH-MIN-OTHERELECTIVES",
+        "source_lines": [
+          [
+            45,
+            55
+          ]
+        ],
+        "source_quote": "Take 8 units from the following:",
+        "description": "Eight units of other electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The Law and Technology minor requires a minimum of 18 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Law and Technology minor studies the intersection",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

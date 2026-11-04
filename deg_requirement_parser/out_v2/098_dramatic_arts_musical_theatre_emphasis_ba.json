@@ -1,0 +1,312 @@
+{
+  "program": "Dramatic Arts, Musical Theatre Emphasis (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 342a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 107"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 201aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 201b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 206aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 206bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 300L"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 306L"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 403L"
+          }
+        ],
+        "id": "DA-MT-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            45
+          ]
+        ],
+        "source_quote": "Required Musical Theatre Emphasis Courses (65 units)",
+        "description": "Eleven required musical theatre emphasis courses totaling 65 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 230",
+            "THTR 231",
+            "THTR 232",
+            "THTR 233",
+            "THTR 333",
+            "THTR 335",
+            "THTR 437",
+            "THTR 439"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "DA-MT-DESIGN-PRODUCTION",
+        "source_lines": [
+          [
+            47,
+            58
+          ]
+        ],
+        "source_quote": "One course in Design and Production (3 units) from:",
+        "description": "One course in Design and Production from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 305a",
+            "THTR 343",
+            "THTR 365",
+            "THTR 366",
+            "THTR 410",
+            "THTR 411",
+            "THTR 416",
+            "THTR 424",
+            "THTR 459",
+            "THTR 480a",
+            "THTR 489",
+            "THTR 492",
+            "THTR 495",
+            "THTE 408L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "DA-MT-ELECTIVES",
+        "source_lines": [
+          [
+            60,
+            77
+          ]
+        ],
+        "source_quote": "Select 12 units from:",
+        "description": "12 units selected from the listed elective courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 397"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "DA-MT-PRACTICUM",
+        "source_lines": [
+          [
+            79,
+            85
+          ]
+        ],
+        "source_quote": "Complete 4 units of THTR 397",
+        "description": "Complete 4 units of THTR 397 Theatre Practicum, approved by faculty mentor.",
+        "confidence": "high",
+        "note": "Assignment approval by faculty mentor cannot be checked."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    91,
+                    91
+                  ]
+                ],
+                "source_quote": "take one course from List A and one course",
+                "eligible_if": {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "DA-MT-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            87,
+            121
+          ]
+        ],
+        "source_quote": "Critical Studies Core (16.0 units)",
+        "description": "Two required critical studies courses, plus one from List A and one from List A or B.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          26
+        ]
+      ],
+      "source_quote": "The university's General Education program provides",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement, not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Note that courses within the major may also",
+      "reason": "advisory",
+      "why": "Advisory note about working with adviser on GE overlap."
+    },
+    {
+      "source_lines": [
+        [
+          122,
+          122
+        ]
+      ],
+      "source_quote": "Required General Education Units: 36",
+      "reason": "university_level",
+      "why": "University-wide GE unit total repeated on programme page."
+    },
+    {
+      "source_lines": [
+        [
+          126,
+          126
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement for the degree."
+    }
+  ]
+}

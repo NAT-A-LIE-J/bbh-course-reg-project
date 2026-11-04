@@ -1,0 +1,105 @@
+{
+  "program": "Performing Social Change Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 122"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 395m"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 488mw"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "PSC-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "THTR 122 Improvisation and Theatre Games",
+        "description": "Required courses: THTR 122, THTR 395m, THTR 488mw, and at least 2 units of THTR 490x Directed Research.",
+        "confidence": "high",
+        "note": "THTR 490x units are variable (1-8); only 2 units required per L031."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 290",
+            "THTR 310",
+            "THTR 312",
+            "THTR 322",
+            "THTR 401",
+            "THTR 405m",
+            "THTR 406",
+            "THTR 421",
+            "THTR 456",
+            "THTR 476mw",
+            "THTR 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "PSC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            47
+          ]
+        ],
+        "source_quote": "Elective Units (8 units from the following):",
+        "description": "8 units of electives chosen from the listed THTR courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            49,
+            49
+          ]
+        ],
+        "source_quote": "Total Units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

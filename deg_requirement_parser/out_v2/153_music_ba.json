@@ -1,0 +1,581 @@
+{
+  "program": "Music (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "application and approval for change of major to BA Music"
+        },
+        "id": "MUSIC-BA-ENTRANCE",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Admission to the Bachelor of Arts in Music",
+        "description": "Students must apply for and be approved for admission to the major.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          }
+        ],
+        "id": "MUSIC-BA-THORNTON-ACADEMIC",
+        "source_lines": [
+          [
+            82,
+            91
+          ]
+        ],
+        "source_quote": "MUCD 348 Instrumental Conducting and Orchestration Units",
+        "description": "Six required Thornton academic courses totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MUCO 232a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 232b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 233a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 233b"
+              }
+            ],
+            "id": "MUSIC-BA-CLASSICAL-CONC",
+            "source_lines": [
+              [
+                99,
+                106
+              ]
+            ],
+            "source_quote": "MUCO 232a Aural Skills II Units: 2",
+            "description": "Classical concentration: four aural skills/theory II courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MUCO 131a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 131b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 232a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCO 232b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 255"
+              }
+            ],
+            "id": "MUSIC-BA-POPULAR-CONC",
+            "source_lines": [
+              [
+                112,
+                116
+              ]
+            ],
+            "source_quote": "MUCO 131a Harmony in Popular Music Units",
+            "description": "Popular Music concentration: five courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MUJZ 195L"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MUJZ 195L"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ],
+                "source_lines": [
+                  [
+                    122,
+                    123
+                  ]
+                ],
+                "source_quote": "4 units total of MUJZ 195"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUJZ 305a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUJZ 305b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUJZ 400"
+              }
+            ],
+            "id": "MUSIC-BA-JAZZ-CONC",
+            "source_lines": [
+              [
+                122,
+                126
+              ]
+            ],
+            "source_quote": "MUJZ 195L Jazz Elements I Units: 2",
+            "description": "Jazz concentration: MUJZ 195L repeated for 4 units total plus other jazz courses.",
+            "confidence": "medium",
+            "note": "The '4 units total of MUJZ 195' line appears to describe repeating MUJZ 195L; encoded as a cumulative units check rather than a separate course to avoid double counting."
+          }
+        ],
+        "id": "MUSIC-BA-MUSICIANSHIP",
+        "source_lines": [
+          [
+            93,
+            126
+          ]
+        ],
+        "source_quote": "Select one concentration from the following:",
+        "description": "Select one of three musicianship concentrations (10 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MPPM 350g",
+            "MUHL 350g",
+            "MUHL 351",
+            "MUJZ 350g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MUSIC-BA-HISTORY",
+        "source_lines": [
+          [
+            132,
+            137
+          ]
+        ],
+        "source_quote": "Select two courses from the following:",
+        "description": "Select two music history courses (8 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MPKS 250a",
+            "MPKS 250b",
+            "MPPM 240",
+            "MPPM 250",
+            "MUJZ 141a"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MUSIC-BA-KEYBOARD-DRUMMING",
+        "source_lines": [
+          [
+            143,
+            149
+          ]
+        ],
+        "source_quote": "Select two courses from the following:",
+        "description": "Select two keyboard/drumming courses (4 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "Individual Instruction at the 153 level in primary instrument/voice"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "MUSIC-BA-INDIV-INSTRUCTION-153",
+            "source_lines": [
+              [
+                159,
+                159
+              ]
+            ],
+            "source_quote": "4 units total of Individual Instruction at the",
+            "description": "4 units of Individual Instruction at the 153 level in the primary instrument/voice.",
+            "confidence": "low",
+            "note": "No explicit course codes given; pool depends on the student's instrument."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "Individual Instruction at the 353 level in primary instrument/voice"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "MUSIC-BA-INDIV-INSTRUCTION-353",
+            "source_lines": [
+              [
+                160,
+                160
+              ]
+            ],
+            "source_quote": "4 units total of Individual Instruction at the",
+            "description": "4 units of Individual Instruction at the 353 level in the primary instrument/voice.",
+            "confidence": "low",
+            "note": "No explicit course codes given; pool depends on the student's instrument."
+          }
+        ],
+        "id": "MUSIC-BA-INDIVIDUAL-INSTRUCTION",
+        "source_lines": [
+          [
+            155,
+            160
+          ]
+        ],
+        "source_quote": "Individual Instruction (8 units)",
+        "description": "8 units of individual instruction at 153 and 353 levels.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MUEN"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MUSIC-BA-ENSEMBLES",
+        "source_lines": [
+          [
+            166,
+            166
+          ]
+        ],
+        "source_quote": "MUEN Ensemble Electives at the 300-level: four",
+        "description": "Four 1-unit MUEN ensemble electives at the 300 level.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "three 4-unit courses in the same foreign language"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "MUSIC-BA-FOREIGN-LANGUAGE",
+        "source_lines": [
+          [
+            172,
+            172
+          ]
+        ],
+        "source_quote": "Three 4-unit courses in the same language",
+        "description": "Three 4-unit courses in the same foreign language (12 units).",
+        "confidence": "low",
+        "note": "No specific language or course codes given."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MUCD",
+                "MUCO",
+                "MUHL",
+                "MUJZ",
+                "MPPM",
+                "MPKS",
+                "MUEN",
+                "MUSC"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "MUSIC-BA-MUSIC-ELECTIVES",
+        "source_lines": [
+          [
+            174,
+            174
+          ]
+        ],
+        "source_quote": "Music Electives at the 300 or 400 Level",
+        "description": "10 units of music electives at the 300 or 400 level.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "id": "MUSIC-BA-ELECTIVES",
+        "source_lines": [
+          [
+            178,
+            178
+          ]
+        ],
+        "source_quote": "Electives (20 units)",
+        "description": "20 units of free electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "Directed Research 490 in the appropriate department"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "source_lines": [
+              [
+                186,
+                186
+              ]
+            ],
+            "source_quote": "Enroll in 4 units total of Directed Research"
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "Senior Thesis capstone project, 0 units",
+              "description": "One or two substantial research papers totaling a minimum of 50 double-spaced pages, with a Senior Thesis adviser."
+            }
+          }
+        ],
+        "id": "MUSIC-BA-CAPSTONE",
+        "source_lines": [
+          [
+            35,
+            37
+          ],
+          [
+            182,
+            187
+          ]
+        ],
+        "source_quote": "The capstone will consist of one or",
+        "description": "Senior Thesis capstone: Directed Research 490 (4 units) plus a written thesis.",
+        "confidence": "medium",
+        "note": "Students must secure a Senior Thesis adviser (procedural, not encoded separately)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Music combines",
+      "reason": "out_of_scope",
+      "why": "Program marketing/overview, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "University-wide GE requirement reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          75,
+          76
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University-wide writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "Students will be required to secure a",
+      "reason": "advisory",
+      "why": "Procedural advising note about securing a thesis adviser."
+    },
+    {
+      "source_lines": [
+        [
+          189,
+          189
+        ]
+      ],
+      "source_quote": "Total required for degree: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          193,
+          193
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units",
+      "reason": "advisory",
+      "why": "Informational planning note, not a requirement."
+    }
+  ]
+}

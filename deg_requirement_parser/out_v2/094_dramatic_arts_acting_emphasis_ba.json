@@ -1,0 +1,376 @@
+{
+  "program": "Dramatic Arts, Acting Emphasis (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 152"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 216"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 252a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 252b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 342a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 352a"
+          }
+        ],
+        "id": "DRAM-ACT-CORE",
+        "source_lines": [
+          [
+            29,
+            41
+          ]
+        ],
+        "source_quote": "Required Acting/Production Courses for Emphasis (71 units)",
+        "description": "Nine required acting/production courses totaling 71 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 230",
+            "THTR 231",
+            "THTR 232",
+            "THTR 233",
+            "THTR 333",
+            "THTR 335",
+            "THTR 437",
+            "THTR 439"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "DRAM-ACT-DESIGN",
+        "source_lines": [
+          [
+            43,
+            54
+          ]
+        ],
+        "source_quote": "One course in Design and Production (3 units) from:",
+        "description": "One course in Design and Production, 3 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 250",
+            "THTR 305a",
+            "THTR 316",
+            "THTR 317",
+            "THTR 342b",
+            "THTR 352b",
+            "THTR 354",
+            "THTR 397",
+            "THTR 408a",
+            "THTR 408b",
+            "THTR 417",
+            "THTR 419",
+            "THTR 442",
+            "THTR 452",
+            "THTR 454",
+            "THTR 455",
+            "THTR 475",
+            "THTR 480a",
+            "THTR 480b",
+            "THTR 484",
+            "THTR 497"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 14
+          }
+        ],
+        "id": "DRAM-ACT-PRACTICE",
+        "source_lines": [
+          [
+            56,
+            80
+          ]
+        ],
+        "source_quote": "Select 14 units in Practice from the following:",
+        "description": "14 units of Practice courses selected from the listed Theatre courses.",
+        "confidence": "high",
+        "note": "THTR 397 also appears in the separate 6-unit THTR 397 requirement; the same course section should not be double-counted across the two requirements."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 290",
+            "THTR 410",
+            "THTR 411",
+            "THTR 424",
+            "THTR 427",
+            "THTR 464",
+            "THTR 472",
+            "THTR 489"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "DRAM-ACT-CAREERPREP",
+        "source_lines": [
+          [
+            82,
+            93
+          ]
+        ],
+        "source_quote": "Select 4 units in Career Preparation from the following:",
+        "description": "4 units of Career Preparation courses selected from the listed Theatre courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 397"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                99,
+                99
+              ]
+            ],
+            "source_quote": "must be completed in 3 of the 4 identified areas",
+            "eligible_if": {
+              "unresolved": "practicum area (Stage, Screen, Voice-Over, Content Creation) coverage cannot be determined from course codes"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "DRAM-ACT-PRACTICUM397",
+        "source_lines": [
+          [
+            95,
+            101
+          ]
+        ],
+        "source_quote": "At least 6 units of THTR 397 Practicum Assignments must be completed",
+        "description": "At least 6 units of THTR 397 completed across 3 of 4 identified practicum areas.",
+        "confidence": "medium",
+        "note": "Area-of-completion requirement cannot be verified from course list alone."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "DRAM-ACT-CRITSTUDIES",
+        "source_lines": [
+          [
+            103,
+            136
+          ]
+        ],
+        "source_quote": "Complete the two required courses below. In addition, take one course from List A and one course from either List A or B.",
+        "description": "Two required Critical Studies courses, plus one from List A, plus one more from List A or B (16 units total).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 21
+          }
+        ],
+        "id": "DRAM-ACT-ELECTIVES",
+        "source_lines": [
+          [
+            142,
+            142
+          ]
+        ],
+        "source_quote": "Elective Units: 21",
+        "description": "21 units of unrestricted elective coursework.",
+        "confidence": "low",
+        "note": "No restriction on elective subject matter stated in the catalogue."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "It requires eight courses in six Core Literacies, plus two courses",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement, handled outside the major."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Please work with your major adviser to determine those courses.",
+      "reason": "advisory",
+      "why": "Advisory statement about consulting an adviser, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          138,
+          138
+        ]
+      ],
+      "source_quote": "Required General Education Units: 36",
+      "reason": "university_level",
+      "why": "University-wide GE unit total, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          146,
+          146
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement for the degree."
+    }
+  ]
+}

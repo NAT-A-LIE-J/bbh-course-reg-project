@@ -1,0 +1,543 @@
+{
+  "program": "International Relations (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 211g"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 212"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 213"
+          },
+          {
+            "family": "sequencing",
+            "kind": "UNIT_WINDOW",
+            "details": {
+              "courses": "IR 210gw, IR 211g, IR 212, IR 213",
+              "within_units": 48
+            }
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": "IR 200-level courses",
+              "after": "IR 400-level courses"
+            }
+          }
+        ],
+        "id": "IR-BA-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "All majors should complete IR 210gw International Relations:",
+        "description": "Four introductory IR core courses, with timing rules on when they must be completed relative to 400-level courses.",
+        "confidence": "high",
+        "note": "The 32-unit and 48-unit timing rules are encoded as sequencing checks since they are not about course selection."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "requirement": "Four semesters of a single foreign language, or equivalent proficiency"
+        },
+        "id": "IR-BA-LANGUAGE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Four semesters of a single foreign language are",
+        "description": "Students must complete four semesters of a single foreign language.",
+        "confidence": "medium",
+        "note": "No specific course list given; cannot be checked against a course pool."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 375",
+            "IR 303",
+            "IR 305w",
+            "IR 306",
+            "IR 309",
+            "IR 310",
+            "IR 315",
+            "IR 316",
+            "IR 321",
+            "IR 339",
+            "IR 344",
+            "IR 371",
+            "IR 382w",
+            "IR 404",
+            "IR 422",
+            "IR 424w",
+            "IR 436",
+            "IR 437",
+            "IR 444w",
+            "IR 449",
+            "IR 463",
+            "POSC 359",
+            "POSC 456",
+            "PPD 382",
+            "SOCI 335",
+            "SOCI 435m",
+            "SOCI 445",
+            "SOCI 460",
+            "SOCI 470",
+            "IR 341",
+            "IR 342",
+            "IR 343",
+            "IR 345",
+            "IR 346",
+            "IR 362",
+            "IR 365",
+            "IR 368",
+            "IR 385",
+            "IR 442",
+            "IR 443",
+            "IR 445",
+            "IR 465",
+            "IR 484",
+            "ECON 450",
+            "ECON 452",
+            "IR 308gw",
+            "IR 324",
+            "IR 325",
+            "IR 326",
+            "IR 328",
+            "IR 329",
+            "IR 330",
+            "IR 331",
+            "IR 332",
+            "IR 349",
+            "IR 363",
+            "IR 364",
+            "IR 420",
+            "IR 425",
+            "IR 427",
+            "IR 428",
+            "IR 430",
+            "IR 439",
+            "IR 454",
+            "IR 457",
+            "POSC 431",
+            "IR 304",
+            "IR 313",
+            "IR 318",
+            "IR 381",
+            "IR 383",
+            "IR 384",
+            "IR 386",
+            "IR 387",
+            "IR 402",
+            "POSC 366",
+            "POSC 448a",
+            "POSC 448b",
+            "FREN 410",
+            "GERM 465",
+            "HIST 312",
+            "HIST 313",
+            "HIST 332",
+            "HIST 414",
+            "HIST 422",
+            "HIST 425",
+            "HIST 427",
+            "IR 369",
+            "IR 389",
+            "IR 468",
+            "POSC 370",
+            "POSC 371",
+            "POSC 463",
+            "SPAN 320",
+            "SPAN 350",
+            "HIST 416",
+            "SLL 330gp",
+            "ANTH 425",
+            "HIST 372",
+            "HIST 374",
+            "IR 366",
+            "IR 466",
+            "POSC 350",
+            "ECON 342",
+            "HIST 480",
+            "IR 367",
+            "REL 402",
+            "ANTH 323",
+            "ANTH 324gw",
+            "EALC 340gp",
+            "EALC 345",
+            "EALC 350gp",
+            "EASC 360",
+            "ECON 343",
+            "HIST 333",
+            "HIST 337",
+            "HIST 340",
+            "IR 333",
+            "IR 360",
+            "IR 361"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "Majors must choose one course from each of",
+            "eligible_if": {
+              "courses": [
+                "EALC 375",
+                "IR 303",
+                "IR 305w",
+                "IR 306",
+                "IR 309",
+                "IR 310",
+                "IR 315",
+                "IR 316",
+                "IR 321",
+                "IR 339",
+                "IR 344",
+                "IR 371",
+                "IR 382w",
+                "IR 404",
+                "IR 422",
+                "IR 424w",
+                "IR 436",
+                "IR 437",
+                "IR 444w",
+                "IR 449",
+                "IR 463",
+                "POSC 359",
+                "POSC 456",
+                "PPD 382",
+                "SOCI 335",
+                "SOCI 435m",
+                "SOCI 445",
+                "SOCI 460",
+                "SOCI 470"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "Majors must choose one course from each of",
+            "eligible_if": {
+              "courses": [
+                "IR 303",
+                "IR 341",
+                "IR 342",
+                "IR 343",
+                "IR 345",
+                "IR 346",
+                "IR 362",
+                "IR 365",
+                "IR 368",
+                "IR 385",
+                "IR 442",
+                "IR 443",
+                "IR 445",
+                "IR 465",
+                "IR 484"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "Majors must choose one course from each of",
+            "eligible_if": {
+              "courses": [
+                "ECON 450",
+                "ECON 452",
+                "IR 308gw",
+                "IR 309",
+                "IR 324",
+                "IR 325",
+                "IR 326",
+                "IR 328",
+                "IR 329",
+                "IR 330",
+                "IR 331",
+                "IR 332",
+                "IR 349",
+                "IR 363",
+                "IR 364",
+                "IR 420",
+                "IR 425",
+                "IR 427",
+                "IR 428",
+                "IR 430",
+                "IR 439",
+                "IR 449",
+                "IR 454",
+                "IR 457",
+                "POSC 431"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "Majors must choose one course from each of",
+            "eligible_if": {
+              "courses": [
+                "IR 303",
+                "IR 304",
+                "IR 310",
+                "IR 313",
+                "IR 318",
+                "IR 321",
+                "IR 332",
+                "IR 342",
+                "IR 381",
+                "IR 382w",
+                "IR 383",
+                "IR 384",
+                "IR 385",
+                "IR 386",
+                "IR 387",
+                "IR 402",
+                "IR 404",
+                "IR 422",
+                "IR 427",
+                "IR 436",
+                "IR 437",
+                "IR 445",
+                "POSC 366",
+                "POSC 448a",
+                "POSC 448b"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "students must complete one course from Regional Studies",
+            "eligible_if": {
+              "courses": [
+                "FREN 410",
+                "GERM 465",
+                "HIST 312",
+                "HIST 313",
+                "HIST 332",
+                "HIST 414",
+                "HIST 422",
+                "HIST 425",
+                "HIST 427",
+                "IR 368",
+                "IR 369",
+                "IR 385",
+                "IR 389",
+                "IR 468",
+                "POSC 370",
+                "POSC 371",
+                "POSC 463",
+                "SPAN 320",
+                "SPAN 350",
+                "HIST 416",
+                "IR 345",
+                "IR 346",
+                "IR 439",
+                "SLL 330gp",
+                "ANTH 425",
+                "HIST 372",
+                "HIST 374",
+                "IR 364",
+                "IR 365",
+                "IR 366",
+                "IR 425",
+                "IR 465",
+                "IR 466",
+                "POSC 350",
+                "POSC 431",
+                "ECON 342",
+                "HIST 480",
+                "IR 362",
+                "IR 363",
+                "IR 367",
+                "IR 463",
+                "POSC 351",
+                "POSC 358",
+                "REL 402",
+                "ANTH 323",
+                "ANTH 324gw",
+                "EALC 340gp",
+                "EALC 345",
+                "EALC 350gp",
+                "EALC 375",
+                "EASC 360",
+                "ECON 343",
+                "HIST 333",
+                "HIST 337",
+                "HIST 340",
+                "IR 333",
+                "IR 360",
+                "IR 361",
+                "IR 384",
+                "IR 442",
+                "POSC 352",
+                "POSC 355",
+                "POSC 356",
+                "POSC 453"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "students must complete one 400-level course of",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "IR-BA-UPPERDIV",
+        "source_lines": [
+          [
+            25,
+            244
+          ]
+        ],
+        "source_quote": "international relations majors are required to take eight",
+        "description": "Eight additional upper-division courses beyond the core, including one from each of four fields, one from Regional Studies, and one 400-level course of choice.",
+        "confidence": "medium",
+        "note": "The two remaining electives beyond the six specified categories may be drawn from any of the field/regional lists; not separately specified by the catalogue. IR 391 and GE/major double-counting notes are restated elsewhere and not separately encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The International Relations major requires a minimum",
+      "reason": "university_level",
+      "why": "Overall unit minimum is a university/college-wide total rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All majors are encouraged to obtain as",
+      "reason": "advisory",
+      "why": "Encouragement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students are encouraged to explore different professional",
+      "reason": "advisory",
+      "why": "Encouragement to take IR 391, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students may receive both general education credit",
+      "reason": "university_level",
+      "why": "Restates the university double-counting rule for GE and major credit."
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "program": "Neuroscience (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 103Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 317"
+              },
+              {
+                "family": "specific_course",
+                "course": "HP 340Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 307"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 407"
+              },
+              {
+                "family": "specific_course",
+                "course": "PSYC 274Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 305g"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "NEUR 199"
+          }
+        ],
+        "id": "NEUR-BA-CORE",
+        "source_lines": [
+          [
+            34,
+            61
+          ]
+        ],
+        "source_quote": "Introductory Requirements (8 units)",
+        "description": "Eight core courses (intro requirements, biology/chemistry/statistics choices, neuroscience core) plus the colloquium.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ADSC 250",
+                "BISC 307L",
+                "BISC 312x",
+                "BISC 313L",
+                "BISC 320Lg",
+                "BISC 325",
+                "BISC 330L",
+                "BISC 403",
+                "BISC 411",
+                "BISC 406L",
+                "BISC 410",
+                "BISC 422L",
+                "BISC 423",
+                "BISC 424",
+                "BISC 425",
+                "BISC 426",
+                "BISC 438",
+                "BISC 444",
+                "BISC 461",
+                "BISC 462",
+                "BISC 466",
+                "BISC 480L",
+                "BISC 499",
+                "BPSI 405",
+                "CHEM 350",
+                "CSCI 360",
+                "CSCI 445L",
+                "ECON 405",
+                "GERO 310",
+                "GERO 320g",
+                "GERO 321",
+                "GERO 414",
+                "GERO 415",
+                "GERO 494",
+                "HBIO 306",
+                "HBIO 308",
+                "HBIO 420L",
+                "HBIO 435",
+                "HP 409",
+                "LING 385Lg",
+                "MEDS 320",
+                "MEDS 340",
+                "MEDS 350",
+                "NEUR 490x",
+                "PSYC 301L",
+                "PSYC 304L",
+                "PSYC 305",
+                "PSYC 320",
+                "PSYC 326",
+                "PSYC 337L",
+                "PSYC 339Lg",
+                "PSYC 420",
+                "PSYC 424",
+                "PSYC 425",
+                "PSYC 426",
+                "PSYC 427",
+                "PSYC 428",
+                "PSYC 432",
+                "PSYC 438",
+                "PSYC 440",
+                "PSYC 450",
+                "PSYC 452",
+                "PSYC 468",
+                "QBIO 481",
+                "RXRS 403",
+                "RXRS 405",
+                "RXRS 412",
+                "SCRM 487"
+              ]
+            },
+            {
+              "courses": [
+                "BME 575",
+                "NSCI 524",
+                "NSCI 531",
+                "NSCI 532",
+                "PSYC 506",
+                "PSYC 540",
+                "PSYC 544",
+                "PSYC 545",
+                "PSYC 547",
+                "PSYC 551",
+                "PSYC 555"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                67,
+                67
+              ]
+            ],
+            "source_quote": "At least one course in the upper-division electives must carry a lab",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "BISC 307L",
+                    "BISC 313L",
+                    "BISC 320Lg",
+                    "BISC 330L",
+                    "BISC 406L",
+                    "BISC 422L",
+                    "BISC 480L",
+                    "CSCI 445L",
+                    "HBIO 420L",
+                    "LING 385Lg",
+                    "PSYC 301L",
+                    "PSYC 304L",
+                    "PSYC 337L",
+                    "PSYC 339Lg"
+                  ]
+                },
+                {
+                  "courses": [
+                    "NEUR 490x"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                67,
+                67
+              ]
+            ],
+            "source_quote": "No more than 4 units of NEUR 490x may be used",
+            "eligible_if": {
+              "courses": [
+                "NEUR 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "NEUR-BA-ELECTIVES",
+        "source_lines": [
+          [
+            63,
+            141
+          ],
+          [
+            143,
+            159
+          ]
+        ],
+        "source_quote": "Four or five upper-division elective courses (minimum 16 units) from the list",
+        "description": "Four or five upper-division elective courses (min 16 units) from the elective list, with a lab/NEUR 490x requirement and a cap on NEUR 490x units; graduate courses may substitute with approval.",
+        "confidence": "medium",
+        "note": "Graduate course substitution requires permission of the co-directors and instructor and a minimum 3.3 GPA (not checkable, see unclassified). Courses already used elsewhere cannot be double-counted as electives (one-slot rule)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          26,
+          26
+        ]
+      ],
+      "source_quote": "A grade of C- or higher is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement, not a course-selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          32,
+          32
+        ]
+      ],
+      "source_quote": "The degree requires a minimum of 128 units.",
+      "reason": "university_level",
+      "why": "University-wide unit total repeated on the program page."
+    },
+    {
+      "source_lines": [
+        [
+          104,
+          104
+        ]
+      ],
+      "source_quote": "*Cannot take GERO 321 if completed GERO 320",
+      "reason": "no_fit",
+      "why": "Mutual-exclusion between two elective courses is not expressible by any taxonomy term."
+    },
+    {
+      "source_lines": [
+        [
+          147,
+          147
+        ]
+      ],
+      "source_quote": "with the permission of the co-directors and instructor and with a minimum GPA of 3.3",
+      "reason": "out_of_scope",
+      "why": "GPA threshold for graduate course substitution is a grade/approval rule."
+    }
+  ]
+}

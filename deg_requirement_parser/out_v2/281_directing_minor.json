@@ -1,0 +1,105 @@
+{
+  "program": "Directing Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 451"
+          }
+        ],
+        "id": "DIRECTING-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "Four required core courses totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 152",
+            "THTR 303",
+            "THTR 309",
+            "THTR 331",
+            "THTR 336",
+            "THTR 395m",
+            "THTR 401",
+            "THTR 403",
+            "THTR 495",
+            "THTR 496"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "DIRECTING-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            32,
+            45
+          ]
+        ],
+        "source_quote": "Choose one 4-unit elective course:",
+        "description": "Choose one 4-unit elective course from the listed options.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            47,
+            47
+          ]
+        ],
+        "source_quote": "Total Units: 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Minor in Directing is a 20-unit minor",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "program": "Geroscience Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERO 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 301"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "GERO 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "family": "sequencing",
+            "kind": "UNIT_WINDOW",
+            "details": {
+              "courses": "GERO 490x",
+              "within_units": null,
+              "note": "Taken 2 units per semester for four semesters, 12 units total including GERO 300/301"
+            }
+          }
+        ],
+        "id": "GERO-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            29,
+            33
+          ]
+        ],
+        "source_quote": "Take GERO 300 (2 units) and GERO 301",
+        "description": "GERO 300, GERO 301, and 8 units of GERO 490x directed research taken over four semesters.",
+        "confidence": "high",
+        "note": "GERO 300 and GERO 301 units shown as 2 in required list but also listed generally above; GERO 490x total required is 8 units per the 16-unit minor total."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GERO 315g",
+            "GERO 330",
+            "GERO 340",
+            "GERO 380m",
+            "GERO 416",
+            "GERO 435m",
+            "GERO 440"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "GERO-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            35,
+            49
+          ]
+        ],
+        "source_quote": "Choose one 4-unit course from the list",
+        "description": "Choose one 4-unit elective course from the listed GERO courses.",
+        "confidence": "high",
+        "note": "GERO 440 requires a prerequisite per catalogue footnote; not independently checkable."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "GERO 300 is an introduction to geroscience research",
+      "reason": "advisory",
+      "why": "Describes course content and advised timing, not a binding requirement beyond the core list."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This course will be taken after a minimum",
+      "reason": "advisory",
+      "why": "Describes recommended timing for GERO 301, a course description/advisory note."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students choose one elective course based on",
+      "reason": "advisory",
+      "why": "Descriptive/marketing guidance about elective selection, not an additional rule."
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "program": "Computer Engineering and Computer Science (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGR 102"
+          }
+        ],
+        "id": "CECS-PREMAJOR-ENGR",
+        "source_lines": [
+          [
+            52,
+            56
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "Pre-major engineering requirement: ENGR 102.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 141L"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 235"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "CECS-PREMAJOR-MATH",
+        "source_lines": [
+          [
+            58,
+            73
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Mathematics pre-major sequence: Calculus I, Calculus II, Linear Algebra, Calculus III.",
+        "confidence": "high",
+        "note": "Some courses satisfy GE requirement per footnote; not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          }
+        ],
+        "id": "CECS-PREMAJOR-STATS",
+        "source_lines": [
+          [
+            74,
+            78
+          ]
+        ],
+        "source_quote": "EE 364 Probability and Statistics for Engineers",
+        "description": "Statistics and probability pre-major requirement: EE 364.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 162L"
+              }
+            ]
+          }
+        ],
+        "id": "CECS-PREMAJOR-PHYSICS",
+        "source_lines": [
+          [
+            80,
+            88
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I",
+        "description": "Physics pre-major sequence: Mechanics/E&M track or Advanced Principles track.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 109L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 250L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 354L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 457"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 360"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 467"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 460"
+              }
+            ]
+          }
+        ],
+        "id": "CECS-CORE",
+        "source_lines": [
+          [
+            90,
+            108
+          ]
+        ],
+        "source_quote": "CSCI 102L Introduction to Programming Units: 2",
+        "description": "Core 42-unit requirement: ten named CSCI/EE courses plus a choice of AI/ML course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 201"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 353"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 451"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 454L"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CSCI 401"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 459Lx"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 496"
+                  }
+                ]
+              }
+            ],
+            "id": "CECS-TRACK-COMPUTING",
+            "source_lines": [
+              [
+                110,
+                127
+              ]
+            ],
+            "source_quote": "CSCI 201 Principles of Software Development Units: 4",
+            "description": "Computing Systems Track: four named courses plus a senior design project choice.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "EE 202L"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 301"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "EE 454L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 477L"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "EE 459Lx"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 496"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "CSCI",
+                        "EE"
+                      ]
+                    },
+                    {
+                      "level_min": 300,
+                      "level_max": 499
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ],
+                "id": "CECS-TRACK-EMBEDDED-TECHELECTIVES",
+                "source_lines": [
+                  [
+                    148,
+                    152
+                  ]
+                ],
+                "source_quote": "A minimum of 4 units of technical electives",
+                "description": "Technical electives: 4 units from 300/400-level CSCI or EE courses.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "CECS-TRACK-EMBEDDED",
+            "source_lines": [
+              [
+                129,
+                152
+              ]
+            ],
+            "source_quote": "EE 202L Linear Circuits Units: 4",
+            "description": "Embedded Systems Track: two named courses, a System-on-Chip/VLSI choice, a senior design choice, and technical electives.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CECS-TRACK-CHOICE",
+        "source_lines": [
+          [
+            110,
+            152
+          ]
+        ],
+        "source_quote": "Computing Systems Track (20 units)",
+        "description": "Student selects one of two 20-unit tracks: Computing Systems or Embedded Systems.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CECS-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            154,
+            158
+          ]
+        ],
+        "source_quote": "4 units of free electives are available",
+        "description": "4 units of free electives toward the degree.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The requirement for the degree is 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade rule for specific core courses."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Courses with a grade of C- or below",
+      "reason": "out_of_scope",
+      "why": "Retake/grade policy."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Departmental approval is required in order to",
+      "reason": "out_of_scope",
+      "why": "Administrative approval process for retaking a course."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Students who do not satisfy the degree",
+      "reason": "out_of_scope",
+      "why": "Disqualification policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          40
+        ]
+      ],
+      "source_quote": "Composition/Writing Requirements (8 Units)",
+      "reason": "university_level",
+      "why": "University-wide writing requirement (WRIT 150/340)."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          46
+        ]
+      ],
+      "source_quote": "General Education (24 Units)",
+      "reason": "university_level",
+      "why": "University-wide GE requirement."
+    },
+    {
+      "source_lines": [
+        [
+          164,
+          164
+        ]
+      ],
+      "source_quote": "WRIT 340 Advanced Writing (Communication for",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          166,
+          166
+        ]
+      ],
+      "source_quote": "Satisfies GE requirement.",
+      "reason": "university_level",
+      "why": "GE-satisfaction footnote, not an independent requirement."
+    }
+  ]
+}

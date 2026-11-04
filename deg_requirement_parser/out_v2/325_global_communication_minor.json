@@ -1,0 +1,181 @@
+{
+  "program": "Global Communication Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "IR 305w",
+        "id": "GCM-REQ-IR",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "IR 305w Managing New Global Problems Units: 4",
+        "description": "Required International Relations course IR 305w.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 303",
+            "IR 325",
+            "IR 326",
+            "IR 330",
+            "IR 333",
+            "IR 345",
+            "IR 360",
+            "IR 361",
+            "IR 362",
+            "IR 363",
+            "IR 365",
+            "IR 367",
+            "IR 368",
+            "IR 369",
+            "IR 383",
+            "IR 384",
+            "IR 385",
+            "IR 439",
+            "IR 442",
+            "IR 468"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "GCM-IR-REGIONAL",
+        "source_lines": [
+          [
+            29,
+            52
+          ]
+        ],
+        "source_quote": "International Relations Regional Courses (Select One)",
+        "description": "Select one IR regional course from the listed options.",
+        "confidence": "high",
+        "note": "IR 325 requires departmental approval and IR 368 is offered in Paris only; these notes cannot be checked and are not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "IR"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "GCM-IR-ELECTIVE",
+        "source_lines": [
+          [
+            54,
+            58
+          ]
+        ],
+        "source_quote": "Select one 300- or 400-level IR course",
+        "description": "One additional 300- or 400-level IR elective.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "COMM 487",
+        "id": "GCM-REQ-COMM",
+        "source_lines": [
+          [
+            60,
+            64
+          ]
+        ],
+        "source_quote": "COMM 487 Communication and Global Organizations Units: 4",
+        "description": "Required Communication course COMM 487.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 324mw",
+            "COMM 339",
+            "COMM 345",
+            "COMM 371",
+            "COMM 385",
+            "COMM 414",
+            "COMM 430",
+            "COMM 431"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "GCM-COMM-ELECTIVES",
+        "source_lines": [
+          [
+            66,
+            77
+          ]
+        ],
+        "source_quote": "Communication Electives (Select Two)",
+        "description": "Select two Communication electives from the listed options.",
+        "confidence": "high",
+        "note": "COMM 430 has a prerequisite of COMM 300, which is a course-level prerequisite not encoded as a program requirement."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            79,
+            79
+          ]
+        ],
+        "source_quote": "Total units: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The rise of global firms and international changes",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/background, not a requirement."
+    }
+  ]
+}

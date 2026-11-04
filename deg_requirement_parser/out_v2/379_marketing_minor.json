@@ -1,0 +1,73 @@
+{
+  "program": "Marketing Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "BUAD 307",
+        "id": "MKTMIN-PREREQ",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "BUAD 307 Marketing Fundamentals must be completed as a required prerequisite.",
+        "description": "BUAD 307 Marketing Fundamentals is a required prerequisite for the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "MKT"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "MKTMIN-ELECTIVES",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Students must successfully complete 16 units of MKT electives",
+        "description": "16 units of MKT elective courses are required to complete the minor.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Eligible students must have completed a minimum of 32 units",
+      "reason": "university_level",
+      "why": "University-wide unit-completion eligibility threshold."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "have a minimum GPA of 2.75",
+      "reason": "out_of_scope",
+      "why": "GPA eligibility rule, not a course requirement."
+    }
+  ]
+}

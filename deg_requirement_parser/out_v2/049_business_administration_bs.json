@@ -1,0 +1,292 @@
+{
+  "program": "Business Administration (Leadership and Innovation) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "EMPHASIS_ENTRY",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "at least one semester in residence at USC",
+            "credit for BUAD 304"
+          ]
+        },
+        "id": "BLDR-BS-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Admission to the emphasis requires sophomore standing, one semester in residence, and credit for BUAD 304.",
+        "confidence": "high",
+        "note": "Only available to current Marshall and Leventhal undergraduates; transfer process not encoded."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "BS in Business Administration majors",
+          "effect": "only one emphasis may be earned"
+        },
+        "id": "BLDR-BS-SINGLE-EMPHASIS",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within",
+        "description": "Students may earn only one emphasis within the BS in Business Administration degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BLDR-BS-WRIT",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BLDR-BS-CORE",
+        "source_lines": [
+          [
+            43,
+            78
+          ]
+        ],
+        "source_quote": "Business Administration majors must complete the business core.",
+        "description": "The Marshall business core courses, with choices for finance, marketing/statistics, operations, analytics, and calculus sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MOR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BLDR-BS-EMPHASIS",
+        "source_lines": [
+          [
+            33,
+            33
+          ],
+          [
+            87,
+            91
+          ]
+        ],
+        "source_quote": "Complete 12 units of upper-division elective courses",
+        "description": "12 units of upper-division MOR electives (300- or 400-level) for the emphasis.",
+        "confidence": "high",
+        "note": "Line 33's '12 upper-division units in the area of emphasis' is the same requirement as the Emphasis Requirements section."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          23
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Business Administration with",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "students must satisfy all requirements for the",
+      "reason": "university_level",
+      "why": "General Education requirements are university-wide and handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled \"Advanced",
+      "reason": "advisory",
+      "why": "Recommendation about which WRIT 340 section to take."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          85,
+          85
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advising about subject credit, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students who wish to transfer to this",
+      "reason": "university_level",
+      "why": "Procedural advising about transferring programs, not a degree requirement."
+    }
+  ]
+}

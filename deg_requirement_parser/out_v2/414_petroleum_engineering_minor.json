@@ -1,0 +1,65 @@
+{
+  "program": "Petroleum Engineering Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "MATH 125g",
+            "MATH 126g",
+            "MATH 226g",
+            "MATH 245",
+            "PHYS 151Lg",
+            "CHEM 105aLg"
+          ],
+          "after": "Petroleum Engineering Minor required courses"
+        },
+        "id": "PTE-MINOR-PREREQS",
+        "source_lines": [
+          [
+            23,
+            32
+          ]
+        ],
+        "source_quote": "Prerequisite courses:",
+        "description": "Students must complete six prerequisite math/science courses before the minor's required courses.",
+        "confidence": "medium",
+        "note": "No list format gives a clear rule statement for ordering; encoded as prerequisite sequencing since these are not counted among the minor's 16 required units."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PTE 461",
+            "PTE 462",
+            "PTE 463L",
+            "PTE 464L",
+            "PTE 465L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "PTE-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            34,
+            44
+          ]
+        ],
+        "source_quote": "PTE 461 Formation Data Sensing with Well Logs",
+        "description": "A minimum of 16 units from the five listed Petroleum Engineering required courses.",
+        "confidence": "medium",
+        "note": "The five listed courses total 19 units while the programme states 16 required units and a total of 16; exact selection rule for which courses count toward the 16 is not specified, so encoded as a minimum unit threshold over the full list."
+      }
+    ]
+  },
+  "unclassified": []
+}

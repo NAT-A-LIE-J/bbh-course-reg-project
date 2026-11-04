@@ -1,0 +1,524 @@
+{
+  "program": "Music Production (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCO 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MPPM 350g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUHL 350g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUJZ 350g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MUHL 351"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 102gw"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 115gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 200gmw"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 210g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 250gmw"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 320gmw"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 371g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 372g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 373g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 460"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 465"
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "MPPM 325a",
+                    "MPPM 325b",
+                    "MUCD 348",
+                    "MUJZ 400",
+                    "MUSC 455",
+                    "SCOR 403",
+                    "SCOR 405"
+                  ]
+                },
+                {
+                  "unresolved": "courses chosen in consultation with the chair of Music Technology"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "note": "Prerequisite required for MPPM 325a/325b per footnote [***]."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                76,
+                76
+              ]
+            ],
+            "source_quote": "Core Thornton Academic Courses (34 units)",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 34
+              }
+            ]
+          }
+        ],
+        "id": "MUSICPROD-BM-CORE-THORNTON",
+        "source_lines": [
+          [
+            76,
+            113
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (34 units)",
+        "description": "Core Thornton music courses including theory, aural skills, music history electives and arranging electives, totaling 34 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPPM 100"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "individual instruction at the 301 level in primary instrument/voice"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "MUSICPROD-BM-INDIVIDUAL-INSTRUCTION",
+            "source_lines": [
+              [
+                119,
+                124
+              ]
+            ],
+            "source_quote": "Individual Instruction and Forum (5 units)",
+            "description": "MPPM 100 Forum plus 4 units of individual instruction in primary instrument/voice.",
+            "confidence": "medium",
+            "note": "No specific course code is given for individual instruction, so it is encoded as unresolved."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "MUEN"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "id": "MUSICPROD-BM-ENSEMBLES",
+            "source_lines": [
+              [
+                126,
+                130
+              ]
+            ],
+            "source_quote": "Ensembles (2 units)",
+            "description": "Two 1-unit MUEN ensemble electives at the 300 level, totaling 2 units.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPPM 250"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 137a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 137b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 237a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 237b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 275"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 337a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 337b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 427"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 430"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 445"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 478"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUIN 270"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 255"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 355"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MTEC 443"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MTEC 444"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "MTEC",
+                        "MUIN"
+                      ]
+                    },
+                    {
+                      "level_min": 200,
+                      "level_max": 499
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              }
+            ],
+            "id": "MUSICPROD-BM-PROGRAM-INTENSIVE",
+            "source_lines": [
+              [
+                132,
+                154
+              ]
+            ],
+            "source_quote": "Program Intensive (44 units)",
+            "description": "Core music production and technology courses plus one of MTEC 443/444 and 8 units of additional MTEC/MUIN 200-499 courses, totaling 44 units.",
+            "confidence": "high",
+            "note": "Keyboardists substitute a class in drums, guitar or voice for MPPM 250 per footnote [****]."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                115,
+                115
+              ]
+            ],
+            "source_quote": "Program Specific Courses (51 units)",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 51
+              }
+            ]
+          }
+        ],
+        "id": "MUSICPROD-BM-PROGRAM-SPECIFIC",
+        "source_lines": [
+          [
+            115,
+            154
+          ]
+        ],
+        "source_quote": "Program Specific Courses (51 units)",
+        "description": "Individual instruction/forum, ensembles, and the program-intensive music production/technology courses, totaling 51 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 14
+          }
+        ],
+        "id": "MUSICPROD-BM-ELECTIVES",
+        "source_lines": [
+          [
+            156,
+            158
+          ]
+        ],
+        "source_quote": "Electives (14 units)",
+        "description": "14 units of free electives.",
+        "confidence": "medium",
+        "note": "No restriction on eligible courses is given in the catalogue."
+      },
+      {
+        "family": "specific_course",
+        "course": "MTEC 498a",
+        "id": "MUSICPROD-BM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            35
+          ],
+          [
+            160,
+            164
+          ]
+        ],
+        "source_quote": "MTEC 498a Senior Project Units: 1",
+        "description": "Capstone Project: MTEC 498a Senior Project.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The Bachelor of Music in Music Production consists",
+      "reason": "out_of_scope",
+      "why": "Programme overview/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Admission to Thornton programs is granted through",
+      "reason": "university_level",
+      "why": "Admission process is a university/school-level entrance rule."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "General description of university-wide GE program."
+    },
+    {
+      "source_lines": [
+        [
+          49,
+          67
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE category requirements are university-wide, sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          73,
+          74
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University-wide writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "A capstone project must be completed under approved",
+      "reason": "out_of_scope",
+      "why": "Describes faculty supervision process for capstone, not a checkable course rule."
+    },
+    {
+      "source_lines": [
+        [
+          170,
+          170
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (six GE",
+      "reason": "advisory",
+      "why": "Planning guidance about overlapping GE/major courses."
+    },
+    {
+      "source_lines": [
+        [
+          166,
+          166
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total degree unit count is a university-wide figure."
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "program": "Environmental Systems Science (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GEOL 160Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 450L"
+          }
+        ],
+        "id": "ESS-BS-GATEWAY-CAPSTONE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Gateway experience",
+        "description": "Gateway course GEOL 160Lg and capstone course GEOL 450L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 103Lgx"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 103Lgx"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320b"
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 415"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          }
+        ],
+        "id": "ESS-BS-FUNDAMENTALS",
+        "source_lines": [
+          [
+            32,
+            42
+          ]
+        ],
+        "source_quote": "BISC 103Lgx General Biology for the Environment",
+        "description": "Seven required courses in biology, chemistry, geoscience and math.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 457L",
+            "CHEM 300L",
+            "GEOL 315L",
+            "GEOL 320L",
+            "GEOL 351L",
+            "GEOL 425L",
+            "GEOL 470L",
+            "SSCI 301L",
+            "SSCI 402"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "ESS-BS-SKILL-BUILDING",
+        "source_lines": [
+          [
+            44,
+            58
+          ]
+        ],
+        "source_quote": "Choose three of the following:",
+        "description": "Choose three courses from the Skill Building Electives list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BISC 315L",
+                "BISC 473L",
+                "BISC 474L",
+                "BISC 483",
+                "CE 363L",
+                "CE 410L",
+                "ENE 440",
+                "ENST 310",
+                "ENST 335",
+                "ENST 413",
+                "ENST 445",
+                "ENST 483L",
+                "GEOL 412",
+                "GEOL 433L",
+                "GEOL 460L",
+                "GEOL 465L"
+              ]
+            },
+            {
+              "courses": [
+                "BISC 490x",
+                "CHEM 490x",
+                "GEOL 490x",
+                "PHYS 490x"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "ESS-BS-ENVIRONMENTAL-PROBLEMS",
+        "source_lines": [
+          [
+            60,
+            86
+          ]
+        ],
+        "source_quote": "Choose at least three, for a total of",
+        "description": "Choose at least three courses totaling 12+ units from the Environmental Problems Electives list, including up to 4 units of 490x directed research in a science discipline.",
+        "confidence": "medium",
+        "note": "The cap of 4 units on 490x directed research courses cannot be expressed as a threshold on this count leaf; not encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 202g",
+            "ANTH 302",
+            "COMM 475",
+            "ENST 344",
+            "ENST 360",
+            "ENST 370",
+            "ENST 387",
+            "HP 408",
+            "HP 448",
+            "IR 323",
+            "MOR 466",
+            "POSC 347",
+            "POSC 436",
+            "PPD 348",
+            "PPD 361",
+            "PPD 420"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ESS-BS-ENVIRONMENT-SOCIETY",
+        "source_lines": [
+          [
+            88,
+            109
+          ]
+        ],
+        "source_quote": "Choose two of the following:",
+        "description": "Choose two courses from the Environment and Society Electives list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Up to 4 units of 490 environmental research",
+      "reason": "no_fit",
+      "why": "A per-category unit cap (4 units max of 490x research) within a count leaf cannot be expressed as a threshold without constraining the whole leaf."
+    }
+  ]
+}

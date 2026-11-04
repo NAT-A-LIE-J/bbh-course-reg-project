@@ -1,0 +1,302 @@
+{
+  "program": "Business Administration (Finance) (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "one semester in residence at USC",
+            "credit for BUAD 306 or BUAD 308"
+          ]
+        },
+        "id": "BFIN-BS-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "This program is available only to current",
+        "description": "Admission gate requiring sophomore standing, one semester in residence, and credit for BUAD 306 or 308.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "other BS Business Administration emphases",
+          "effect": "only one emphasis allowed"
+        },
+        "id": "BFIN-BS-ONE-EMPHASIS",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within",
+        "description": "Students may only earn one emphasis within the BS Business Administration degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BFIN-BS-WRITING",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "A recommended section of WRIT 340 is advisory, not required."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BFIN-BS-CORE",
+        "source_lines": [
+          [
+            41,
+            81
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units",
+        "description": "Business core courses including accounting, management, finance, marketing, statistics, operations, analytics, strategy, economics and calculus requirements with several either/or alternatives.",
+        "confidence": "high",
+        "note": "Placement/waiver details for MATH 118gx/125g (AP, IB, A-level credit) are informational and not encoded as requirements."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "FBE"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            {
+              "courses": [
+                "MKT 333"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BFIN-BS-EMPHASIS",
+        "source_lines": [
+          [
+            31,
+            31
+          ],
+          [
+            87,
+            87
+          ]
+        ],
+        "source_quote": "Complete 12 units of upper-division elective courses",
+        "description": "At least 12 upper-division units in FBE (or MKT 333, crosslisted as FBE 333) for the Finance emphasis.",
+        "confidence": "high",
+        "note": "L031 restates the 12-unit upper-division emphasis requirement given in detail at L087."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Business Administration",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students who wish to transfer to this",
+      "reason": "out_of_scope",
+      "why": "Procedural advising information, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "students must satisfy all requirements for the",
+      "reason": "university_level",
+      "why": "References USC General Education requirements, handled university-wide."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommendation of a specific section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "Placement into MATH 118 gx is contingent",
+      "reason": "no_fit",
+      "why": "Describes placement eligibility and AP/IB waiver conditions, not a checkable course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          81,
+          81
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advises students to consult advisers about subject credit."
+    }
+  ]
+}

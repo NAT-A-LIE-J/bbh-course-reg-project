@@ -1,0 +1,177 @@
+{
+  "program": "Psychology and Law Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LAW 200w"
+              },
+              {
+                "family": "specific_course",
+                "course": "LAW 250w"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          }
+        ],
+        "id": "PSYCLAW-LOWER-DIVISION",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Students must complete LAW 200w or LAW 250",
+        "description": "LAW 200w or LAW 250w, plus PSYC 100Lg.",
+        "confidence": "high",
+        "note": "PSYC 100Lg is stated as a prerequisite to upper-division PSYC courses; this is a sequencing note, not a separate requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 349",
+            "LAW 402",
+            "LAW 403",
+            "LAW 404",
+            "LING 412",
+            "PHIL 431",
+            "POSC 452",
+            "SOWK 350"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PSYCLAW-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            47
+          ]
+        ],
+        "source_quote": "At least two upper-division Law courses from the following list",
+        "description": "At least two upper-division law courses from the listed pool.",
+        "confidence": "medium",
+        "note": "Catalogue states three courses minimum for Psychology majors, but which students are PSYC majors cannot be determined from the course list alone; not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PSYC 301L",
+            "PSYC 304L",
+            "PSYC 355",
+            "PSYC 360",
+            "PSYC 363",
+            "PSYC 365",
+            "PSYC 454"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PSYCLAW-PSYC-ELECTIVES",
+        "source_lines": [
+          [
+            49,
+            59
+          ]
+        ],
+        "source_quote": "At least two upper-division Psychology courses from the following list",
+        "description": "At least two upper-division psychology courses from the listed pool.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "course_reuse",
+        "kind": "DOUBLE_COUNT",
+        "max_courses": 2,
+        "applies_to": "Psychology majors and social sciences majors with a psychology emphasis",
+        "id": "PSYCLAW-DOUBLE-COUNT",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Psychology majors and students majoring in social sciences",
+        "description": "Psychology or social-sciences/psychology-emphasis majors may double count up to two courses toward both the major and minor, but must take at least four courses that do not count toward the major.",
+        "confidence": "medium",
+        "note": "The requirement that at least four courses not apply to the major cannot be checked from a course list; flagged here rather than encoded as a separate count."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Twenty to twenty four units are required for",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "A minimum of 16 upper-division units must",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A minimum of four courses (16 units) must",
+      "reason": "university_level",
+      "why": "University-wide minor uniqueness rule, handled by the tool rather than encoded here."
+    }
+  ]
+}

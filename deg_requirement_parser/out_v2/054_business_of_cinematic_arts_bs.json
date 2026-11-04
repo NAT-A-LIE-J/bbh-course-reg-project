@@ -1,0 +1,452 @@
+{
+  "program": "Business of Cinematic Arts (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "business administration or cinematic arts majors",
+          "effect": "cannot be combined as an additional major"
+        },
+        "id": "BCA-BS-NOCOMBINE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The degree cannot be combined as an additional major",
+        "description": "This degree cannot be combined as an additional major with business administration or cinematic arts.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BCA-BS-WRITING",
+        "source_lines": [
+          [
+            31,
+            37
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "A specific WRIT 340 section is recommended but not required; see unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 280"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 281"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 304"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 306"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 308"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 307"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 310g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 312g"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 311"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 313"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 425"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 427"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 497"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 351x"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 352x"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 118gx"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 125g"
+                  }
+                ]
+              },
+              {
+                "family": "sequencing",
+                "kind": "PREREQUISITE",
+                "details": {
+                  "before": "MATH 117g or acceptable placement exam score",
+                  "after": "MATH 118gx"
+                }
+              }
+            ],
+            "id": "BCA-BS-BUSINESS-CORE",
+            "source_lines": [
+              [
+                43,
+                85
+              ]
+            ],
+            "source_quote": "BUAD 280 Introduction to Financial Accounting",
+            "description": "Required Marshall business core courses (48 units) including accounting, communication, finance, marketing, statistics, operations, analytics, strategy, economics and calculus.",
+            "confidence": "high",
+            "note": "MATH 118gx may be waived with AP Calculus AB/BC 4+ or IB math 5+; see unclassified. MATH 117g, MATH 118gx, MATH 125g satisfy GE Category F (university-wide, not encoded)."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CNTV 428"
+              },
+              {
+                "family": "specific_course",
+                "course": "CNTV 441"
+              },
+              {
+                "family": "specific_course",
+                "course": "CNTV 458"
+              },
+              {
+                "family": "specific_course",
+                "course": "CNTV 463"
+              },
+              {
+                "family": "specific_course",
+                "course": "CNTV 481"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 190g"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTIN 458"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTPR 385"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTPR 410"
+              }
+            ],
+            "id": "BCA-BS-CINEMATIC-CORE",
+            "source_lines": [
+              [
+                87,
+                100
+              ]
+            ],
+            "source_quote": "CNTV 428 Fundamentals of Entertainment Law and Dealmaking",
+            "description": "Nine required Cinematic Arts core courses totaling 24 units.",
+            "confidence": "high",
+            "note": "CTCS 190g satisfies GE Category A (university-wide, not encoded)."
+          }
+        ],
+        "id": "BCA-BS-MAJOR",
+        "source_lines": [
+          [
+            39,
+            100
+          ]
+        ],
+        "source_quote": "Major Requirements (84 Units)",
+        "description": "84 units of major requirements combining Business Requirements (48 units) and Cinematic Arts Requirements (24 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ACCT",
+                        "BAEP",
+                        "BUCO",
+                        "DSO",
+                        "FBE",
+                        "MKT",
+                        "MOR",
+                        "RISK"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ]
+                },
+                {
+                  "unresolved": "courses taken through a Marshall School sponsored international exchange program"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 12
+              }
+            ],
+            "id": "BCA-BS-BUSINESS-ELECTIVES",
+            "source_lines": [
+              [
+                106,
+                110
+              ]
+            ],
+            "source_quote": "Complete at least 8 units of upper-division elective",
+            "description": "At least 8 (up to 12) units of upper-division Marshall electives from listed prefixes, or via an approved international exchange program.",
+            "confidence": "medium",
+            "note": "Business electives (8-12) and Cinematic Arts electives (0-4) together total the 12-unit Electives block."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CNTV 375",
+                "CNTV 457",
+                "CTAN 432",
+                "CTAN 451",
+                "CTCS 367",
+                "CTCS 403",
+                "CTCS 499",
+                "CTPR 425",
+                "CTPR 426",
+                "CTPR 458",
+                "CTPR 460",
+                "CTWR 404",
+                "CTWR 409",
+                "CTWR 411",
+                "CTWR 416",
+                "CTWR 417",
+                "CTWR 422",
+                "CTWR 430",
+                "CTWR 431",
+                "CTWR 432"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ],
+            "id": "BCA-BS-CINEMATIC-ELECTIVES",
+            "source_lines": [
+              [
+                112,
+                135
+              ]
+            ],
+            "source_quote": "Cinematic Arts Electives (0-4 units)",
+            "description": "Up to 4 units of Cinematic Arts elective courses from the listed options.",
+            "confidence": "medium",
+            "note": "Optional 0-4 units; combines with Business Electives to reach 12 total units of major electives."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "id": "BCA-BS-FREE-ELECTIVES",
+            "source_lines": [
+              [
+                137,
+                141
+              ]
+            ],
+            "source_quote": "The curriculum of this program allows for as many",
+            "description": "Up to 12 units of free electives.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BCA-BS-ELECTIVES",
+        "source_lines": [
+          [
+            102,
+            141
+          ]
+        ],
+        "source_quote": "Electives (12 units)",
+        "description": "12 units of electives combining Business Electives, Cinematic Arts Electives, and Free Electives.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "This degree requires at least 128 units including",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA rule, not a course-selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "The section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "A recommendation about which WRIT 340 section to take, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "The MATH 118gx requirement may be waived with",
+      "reason": "out_of_scope",
+      "why": "AP/IB score-based waiver/substitution rule; not a course-selection requirement checkable here."
+    },
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advisory note to consult advisers about subject credit."
+    },
+    {
+      "source_lines": [
+        [
+          85,
+          85
+        ]
+      ],
+      "source_quote": "MATH 117g , MATH 118gx and MATH 125g satisfy",
+      "reason": "university_level",
+      "why": "GE category satisfaction note, handled at the university level."
+    },
+    {
+      "source_lines": [
+        [
+          100,
+          100
+        ]
+      ],
+      "source_quote": "Satisfies GE Category A: The Arts.",
+      "reason": "university_level",
+      "why": "GE category satisfaction note, handled at the university level."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "program": "Logic Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "PHIL 350",
+        "id": "LOGIC-MINOR-FOUNDATIONAL",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "Students must complete the Foundational Logic requirement.",
+        "description": "Students must complete the Foundational Logic requirement, PHIL 350 Intermediate Logic.",
+        "confidence": "high",
+        "note": "Students with sufficient Math/CS background or who have taken PHIL 220 or PHIL 222g may, with instructor permission on a case-by-case basis, substitute this requirement with an additional Advanced Logic course; encoded as a discretionary manual review, not a separate node.",
+        "all_of_manual_review": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "SUBSTITUTE",
+          "approver": "instructor",
+          "condition": "sufficient background in Mathematics or Computer Science, or already taken PHIL 220 or PHIL 222g",
+          "substitute_with": "an additional Advanced Logic course"
+        },
+        "id": "LOGIC-MINOR-FOUNDATIONAL-SUB",
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "Students with sufficient background in Mathematics or",
+        "description": "Permits substituting the Foundational Logic requirement with an extra Advanced Logic course by instructor permission.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 450",
+            "PHIL 451",
+            "PHIL 452",
+            "MATH 425a",
+            "MATH 430",
+            "MATH 450",
+            "PHIL 381",
+            "PHIL 480"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "LOGIC-MINOR-ADVANCED-UD-COMBINED",
+        "source_lines": [
+          [
+            37,
+            57
+          ]
+        ],
+        "source_quote": "Students must complete courses from this category as part of",
+        "description": "At least 3 courses combined from Advanced Logic (PHIL 450/451/452) and Upper-Division Logic, Math, and Philosophy (MATH 425a, MATH 430, MATH 450, PHIL 381, PHIL 480), with at least one from Advanced Logic.",
+        "confidence": "high",
+        "note": null,
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                41,
+                41
+              ]
+            ],
+            "source_quote": "Students must complete at least one course from the following list.",
+            "eligible_if": {
+              "courses": [
+                "PHIL 450",
+                "PHIL 451",
+                "PHIL 452"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 102L",
+            "CSCI 103L",
+            "CSCI 113x",
+            "CSCI 114x",
+            "CSCI 170",
+            "LING 303",
+            "MATH 290",
+            "PHIL 220",
+            "PHIL 222g",
+            "PHIL 258g",
+            "SLL 199",
+            "TAC 115",
+            "TAC 116",
+            "TAC 165",
+            "TAC 168",
+            "TAC 216",
+            "TAC 265"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 0
+          }
+        ],
+        "id": "LOGIC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            59,
+            81
+          ]
+        ],
+        "source_quote": "Students may select from the following courses to count toward the Logic minor.",
+        "description": "Additional elective courses eligible to fill the remaining units needed to reach the 18-unit minor total; no separate minimum is stated beyond the total-unit check.",
+        "confidence": "medium",
+        "note": "No explicit number of electives is stated; they serve to reach the 18-unit total alongside Foundational, Advanced, and Upper-Division courses."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 18 units is required for the minor,",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "at least 16 of which must be upper-division.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

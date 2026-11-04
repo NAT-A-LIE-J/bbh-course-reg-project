@@ -1,0 +1,189 @@
+{
+  "program": "Biophysics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 120Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 162L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 163L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 190"
+          }
+        ],
+        "id": "BIOPHYS-BS-LOWER-DIVISION",
+        "source_lines": [
+          [
+            23,
+            37
+          ],
+          [
+            64,
+            64
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology and Evolution",
+        "description": "Required lower-division courses, with CHEM 105aLg/105bL allowed to substitute for CHEM 115aLg/115bL.",
+        "confidence": "high",
+        "note": "CHEM 105aLg/105bL substitution noted at L064 amends the CHEM 115 sequence listed above."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 316"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 444"
+          }
+        ],
+        "id": "BIOPHYS-BS-UPPER-DIVISION",
+        "source_lines": [
+          [
+            39,
+            52
+          ]
+        ],
+        "source_quote": "BISC 320Lg Molecular Biology Units: 4",
+        "description": "Required upper-division courses in biology, chemistry, math, and physics.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            60,
+            60
+          ]
+        ],
+        "source_quote": "Total units: 84",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 84
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is intended for students with",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          58,
+          58
+        ]
+      ],
+      "source_quote": "For those wishing to pursue an honors degree,",
+      "reason": "out_of_scope",
+      "why": "Optional departmental honors track with GPA-based distinction, not a required course."
+    }
+  ]
+}

@@ -1,0 +1,1469 @@
+{
+  "program": "Performance (Violin), (Viola), (Violoncello), (Double Bass) or (Harp) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUCD 348"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 350g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 351"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 496"
+                  }
+                ],
+                "id": "PERF-VVC-CORE",
+                "source_lines": [
+                  [
+                    82,
+                    98
+                  ]
+                ],
+                "source_quote": "Core Thornton Academic Courses (36 units)",
+                "description": "Thirteen named core Thornton academic courses totaling 36 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 153"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 253"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 353"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 453"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-VVC-INDIV-INSTR",
+                    "source_lines": [
+                      [
+                        104,
+                        115
+                      ]
+                    ],
+                    "source_quote": "Individual Instruction (16 units)",
+                    "description": "4 units each of MPST 153, 253, 353, 453 in primary instrument, totaling 16 units.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 320"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 8
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 327"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 8
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-VVC-ENSEMBLES",
+                    "source_lines": [
+                      [
+                        117,
+                        124
+                      ]
+                    ],
+                    "source_quote": "Ensembles (16 units)",
+                    "description": "8 units of MUEN 320 (required each semester in residence) and 8 units of MUEN 327.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "specific_course",
+                        "course": "MPST 472"
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPKS 481",
+                            "MPKS 482"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPKS 250a",
+                            "MUJZ 141a"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "any": [
+                            {
+                              "courses": [
+                                "DANC 177"
+                              ]
+                            },
+                            {
+                              "prefix": [
+                                "DANC"
+                              ],
+                              "unresolved": "any course from DANC 180-189"
+                            }
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-VVC-PROGRAM-INTENSIVE",
+                    "source_lines": [
+                      [
+                        126,
+                        139
+                      ]
+                    ],
+                    "source_quote": "Program Intensive (8 units)",
+                    "description": "MPST 472 plus two units each from three listed pairs of options.",
+                    "confidence": "medium",
+                    "note": "DANC 180-189 is a range, not an explicit code list; included via unresolved."
+                  }
+                ],
+                "id": "PERF-VVC-PROGRAM-SPECIFIC",
+                "source_lines": [
+                  [
+                    100,
+                    139
+                  ]
+                ],
+                "source_quote": "Program Specific Courses (40 units)",
+                "description": "Individual instruction, ensembles, and program intensive courses totaling 40 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "any": [
+                        {
+                          "courses": [
+                            "MPGU 145",
+                            "MPGU 150",
+                            "MPPM 120",
+                            "MPPM 240",
+                            "MPPM 250",
+                            "MPPM 370",
+                            "MTEC 245",
+                            "MTEC 246",
+                            "MTEC 248",
+                            "MTEC 249",
+                            "MTEC 277x",
+                            "MUIN 272x",
+                            "MUIN 425",
+                            "MUJZ 141a",
+                            "MUJZ 150",
+                            "MUJZ 218a",
+                            "MUJZ 450",
+                            "MUSC 255"
+                          ]
+                        },
+                        {
+                          "unresolved": "other Contemporary Division courses approved by chair and Contemporary Division"
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ],
+                    "id": "PERF-VVC-CONTEMP-ELECTIVES",
+                    "source_lines": [
+                      [
+                        145,
+                        170
+                      ]
+                    ],
+                    "source_quote": "Select 4 units from the Contemporary Division",
+                    "description": "4 units from the listed Contemporary Division courses or other approved courses.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "level_min": 0
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 16
+                      }
+                    ],
+                    "id": "PERF-VVC-GENERAL-ELECTIVES",
+                    "source_lines": [
+                      [
+                        172,
+                        174
+                      ]
+                    ],
+                    "source_quote": "General Electives (16 units)",
+                    "description": "16 units of general electives with no stated restriction.",
+                    "confidence": "medium",
+                    "note": null
+                  }
+                ],
+                "id": "PERF-VVC-ELECTIVES",
+                "source_lines": [
+                  [
+                    141,
+                    174
+                  ]
+                ],
+                "source_quote": "Electives (20 units)",
+                "description": "Contemporary Division and general electives totaling 20 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 480"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 481"
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "PROCEDURAL",
+                    "details": {
+                      "procedure": "Junior and senior recital completed under approved faculty supervision"
+                    }
+                  }
+                ],
+                "id": "PERF-VVC-CAPSTONE",
+                "source_lines": [
+                  [
+                    176,
+                    183
+                  ]
+                ],
+                "source_quote": "Capstone Projects (4 units)",
+                "description": "Young Artist Project I and II plus junior and senior recitals (0 units).",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "PERF-VVC-TRACK",
+            "source_lines": [
+              [
+                43,
+                191
+              ]
+            ],
+            "source_quote": "Curriculum Requirements For Violin, Viola and Violoncello Majors",
+            "description": "Full curriculum for Violin, Viola and Violoncello majors.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUCD 348"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 350g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 351"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 496"
+                  }
+                ],
+                "id": "PERF-DB-CORE",
+                "source_lines": [
+                  [
+                    232,
+                    248
+                  ]
+                ],
+                "source_quote": "Core Thornton Academic Courses (36 units)",
+                "description": "Thirteen named core Thornton academic courses totaling 36 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 153"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 253"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 353"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 453"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPEM 301",
+                            "MPPM 301",
+                            "MUJZ 301"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-DB-INDIV-INSTR",
+                    "source_lines": [
+                      [
+                        254,
+                        269
+                      ]
+                    ],
+                    "source_quote": "Individual Instruction (20 units)",
+                    "description": "4 units each of MPST 153, 253, 353, 453 plus 4 units from MPEM 301/MPPM 301/MUJZ 301, totaling 20 units.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 320"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 8
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 325",
+                            "MUEN 327",
+                            "MUEN 330",
+                            "MUEN 350",
+                            "MPPM 420"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-DB-ENSEMBLES",
+                    "source_lines": [
+                      [
+                        271,
+                        282
+                      ]
+                    ],
+                    "source_quote": "Ensembles (12 units)",
+                    "description": "8 units of MUEN 320 plus 4 units from a listed group of ensembles.",
+                    "confidence": "high",
+                    "note": "If registering for MPPM 420, must take the Pop String Ensemble section (procedural note, not encoded)."
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPKS 481",
+                            "MPKS 482"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPKS 250a",
+                            "MUJZ 141a"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "any": [
+                            {
+                              "courses": [
+                                "DANC 177"
+                              ]
+                            },
+                            {
+                              "prefix": [
+                                "DANC"
+                              ],
+                              "unresolved": "any course from DANC 180-189"
+                            }
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-DB-PROGRAM-INTENSIVE",
+                    "source_lines": [
+                      [
+                        284,
+                        296
+                      ]
+                    ],
+                    "source_quote": "Program Intensive (6 units)",
+                    "description": "Two units each from three listed pairs of options.",
+                    "confidence": "medium",
+                    "note": "DANC 180-189 is a range, not an explicit code list; included via unresolved."
+                  }
+                ],
+                "id": "PERF-DB-PROGRAM-SPECIFIC",
+                "source_lines": [
+                  [
+                    250,
+                    296
+                  ]
+                ],
+                "source_quote": "Program Specific Courses (38 units)",
+                "description": "Individual instruction, ensembles, and program intensive courses totaling 38 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "any": [
+                        {
+                          "courses": [
+                            "MPGU 145",
+                            "MPGU 150",
+                            "MPPM 120",
+                            "MPPM 240",
+                            "MPPM 250",
+                            "MPPM 370",
+                            "MTEC 245",
+                            "MTEC 246",
+                            "MTEC 248",
+                            "MTEC 249",
+                            "MTEC 277x",
+                            "MUIN 272x",
+                            "MUIN 425",
+                            "MUJZ 141a",
+                            "MUJZ 150",
+                            "MUJZ 218a",
+                            "MUJZ 450",
+                            "MUSC 255"
+                          ]
+                        },
+                        {
+                          "unresolved": "other Contemporary Division courses approved by chair and Contemporary Division"
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ],
+                    "id": "PERF-DB-CONTEMP-ELECTIVES",
+                    "source_lines": [
+                      [
+                        302,
+                        327
+                      ]
+                    ],
+                    "source_quote": "Select 4 units from the Contemporary Division",
+                    "description": "4 units from the listed Contemporary Division courses or other approved courses.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "level_min": 0
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 18
+                      }
+                    ],
+                    "id": "PERF-DB-GENERAL-ELECTIVES",
+                    "source_lines": [
+                      [
+                        329,
+                        331
+                      ]
+                    ],
+                    "source_quote": "General Electives (18 units)",
+                    "description": "18 units of general electives with no stated restriction.",
+                    "confidence": "medium",
+                    "note": null
+                  }
+                ],
+                "id": "PERF-DB-ELECTIVES",
+                "source_lines": [
+                  [
+                    298,
+                    331
+                  ]
+                ],
+                "source_quote": "Electives (22 units)",
+                "description": "Contemporary Division and general electives totaling 22 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 480"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 481"
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "PROCEDURAL",
+                    "details": {
+                      "procedure": "Junior and senior recital completed under approved faculty supervision"
+                    }
+                  }
+                ],
+                "id": "PERF-DB-CAPSTONE",
+                "source_lines": [
+                  [
+                    333,
+                    340
+                  ]
+                ],
+                "source_quote": "Capstone Projects (4 units)",
+                "description": "Young Artist Project I and II plus junior and senior recitals (0 units).",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "PERF-DB-TRACK",
+            "source_lines": [
+              [
+                193,
+                350
+              ]
+            ],
+            "source_quote": "Curriculum Requirements For Double Bass Majors",
+            "description": "Full curriculum for Double Bass majors.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUCD 348"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 350g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 351"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 496"
+                  }
+                ],
+                "id": "PERF-HARP-CORE",
+                "source_lines": [
+                  [
+                    391,
+                    407
+                  ]
+                ],
+                "source_quote": "Core Thornton Academic Courses (36 units)",
+                "description": "Thirteen named core Thornton academic courses totaling 36 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 153"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 253"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 353"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPST 453"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-HARP-INDIV-INSTR",
+                    "source_lines": [
+                      [
+                        413,
+                        424
+                      ]
+                    ],
+                    "source_quote": "Individual Instruction (16 units)",
+                    "description": "4 units each of MPST 153, 253, 353, 453 in harp, totaling 16 units.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 320"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 8
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MUEN 325",
+                            "MUEN 327",
+                            "MUEN 330",
+                            "MUEN 350",
+                            "MPPM 420"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-HARP-ENSEMBLES",
+                    "source_lines": [
+                      [
+                        426,
+                        437
+                      ]
+                    ],
+                    "source_quote": "Ensembles (12 units)",
+                    "description": "8 units of MUEN 320 plus 4 units from a listed group of ensembles.",
+                    "confidence": "high",
+                    "note": "If registering for MPPM 420, must take the Pop String Ensemble section (procedural note, not encoded)."
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPKS 481",
+                            "MPKS 482"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "courses": [
+                            "MPKS 250a",
+                            "MUJZ 141a"
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "family": "count",
+                        "eligible_if": {
+                          "any": [
+                            {
+                              "courses": [
+                                "DANC 177"
+                              ]
+                            },
+                            {
+                              "prefix": [
+                                "DANC"
+                              ],
+                              "unresolved": "any course from DANC 180-189"
+                            }
+                          ]
+                        },
+                        "thresholds": [
+                          {
+                            "count_by": "units",
+                            "op": "min",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "PERF-HARP-PROGRAM-INTENSIVE",
+                    "source_lines": [
+                      [
+                        439,
+                        451
+                      ]
+                    ],
+                    "source_quote": "Program Intensive (6 units)",
+                    "description": "Two units each from three listed pairs of options.",
+                    "confidence": "medium",
+                    "note": "DANC 180-189 is a range, not an explicit code list; included via unresolved."
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "unresolved": "Music Electives (6 units), no course list given"
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 6
+                      }
+                    ],
+                    "id": "PERF-HARP-MUSIC-ELECTIVES",
+                    "source_lines": [
+                      [
+                        453,
+                        455
+                      ]
+                    ],
+                    "source_quote": "Music Electives (6 units)",
+                    "description": "6 units of music electives; no course list is given in the catalogue.",
+                    "confidence": "low",
+                    "note": null
+                  }
+                ],
+                "id": "PERF-HARP-PROGRAM-SPECIFIC",
+                "source_lines": [
+                  [
+                    409,
+                    455
+                  ]
+                ],
+                "source_quote": "Program Specific Courses (40 units)",
+                "description": "Individual instruction, ensembles, program intensive and music elective courses totaling 40 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "any": [
+                        {
+                          "courses": [
+                            "MPGU 145",
+                            "MPGU 150",
+                            "MPPM 120",
+                            "MPPM 240",
+                            "MPPM 250",
+                            "MPPM 370",
+                            "MTEC 245",
+                            "MTEC 246",
+                            "MTEC 248",
+                            "MTEC 249",
+                            "MTEC 277x",
+                            "MUIN 272x",
+                            "MUIN 425",
+                            "MUJZ 141a",
+                            "MUJZ 150",
+                            "MUJZ 218a",
+                            "MUJZ 450",
+                            "MUSC 255"
+                          ]
+                        },
+                        {
+                          "unresolved": "other Contemporary Division courses approved by chair and Contemporary Division"
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ],
+                    "id": "PERF-HARP-CONTEMP-ELECTIVES",
+                    "source_lines": [
+                      [
+                        461,
+                        486
+                      ]
+                    ],
+                    "source_quote": "Select 4 units from the Contemporary Division",
+                    "description": "4 units from the listed Contemporary Division courses or other approved courses.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "level_min": 0
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 16
+                      }
+                    ],
+                    "id": "PERF-HARP-GENERAL-ELECTIVES",
+                    "source_lines": [
+                      [
+                        488,
+                        490
+                      ]
+                    ],
+                    "source_quote": "General Electives (16 units)",
+                    "description": "16 units of general electives with no stated restriction.",
+                    "confidence": "medium",
+                    "note": null
+                  }
+                ],
+                "id": "PERF-HARP-ELECTIVES",
+                "source_lines": [
+                  [
+                    457,
+                    490
+                  ]
+                ],
+                "source_quote": "Electives (20 units)",
+                "description": "Contemporary Division and general electives totaling 20 units.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 480"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUSC 481"
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "PROCEDURAL",
+                    "details": {
+                      "procedure": "Junior and senior recital completed under approved faculty supervision"
+                    }
+                  }
+                ],
+                "id": "PERF-HARP-CAPSTONE",
+                "source_lines": [
+                  [
+                    492,
+                    499
+                  ]
+                ],
+                "source_quote": "Capstone Projects (4 units)",
+                "description": "Young Artist Project I and II plus junior and senior recitals (0 units).",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "PERF-HARP-TRACK",
+            "source_lines": [
+              [
+                352,
+                509
+              ]
+            ],
+            "source_quote": "Curriculum Requirements For Harp Majors",
+            "description": "Full curriculum for Harp majors.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "PERF-BM-TRACK-CHOICE",
+        "source_lines": [
+          [
+            43,
+            509
+          ]
+        ],
+        "source_quote": "Curriculum Requirements For Violin, Viola and Violoncello Majors",
+        "description": "Student completes the curriculum for one of the three instrument tracks: Violin/Viola/Violoncello, Double Bass, or Harp.",
+        "confidence": "high",
+        "note": "Each track totals 132 units as stated at the end of its section."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All USC Thornton undergraduate programs in classical",
+      "reason": "out_of_scope",
+      "why": "Marketing/overview language, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Admission to Thornton programs is granted through",
+      "reason": "university_level",
+      "why": "University admission process, not a degree requirement checkable from course lists."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "General education requirements are university-wide and sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          37
+        ]
+      ],
+      "source_quote": "During the junior and senior years of",
+      "reason": "out_of_scope",
+      "why": "Describes the Young Artist Project content, not a checkable course requirement beyond MUSC 480/481."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "A junior and senior recital must be",
+      "reason": "out_of_scope",
+      "why": "Recital logistics/venue reservation process, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ],
+        [
+          189,
+          189
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6",
+      "reason": "university_level",
+      "why": "GE unit-count note is a university-wide planning note."
+    },
+    {
+      "source_lines": [
+        [
+          191,
+          191
+        ]
+      ],
+      "source_quote": "Required each semester in residence.",
+      "reason": "out_of_scope",
+      "why": "Residency/scheduling note on MUEN 320, not a separate requirement."
+    },
+    {
+      "source_lines": [
+        [
+          185,
+          185
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count restates the university-level total-units requirement."
+    },
+    {
+      "source_lines": [
+        [
+          197,
+          197
+        ],
+        [
+          346,
+          346
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6",
+      "reason": "university_level",
+      "why": "GE unit-count note is a university-wide planning note."
+    },
+    {
+      "source_lines": [
+        [
+          342,
+          342
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count restates the university-level total-units requirement."
+    },
+    {
+      "source_lines": [
+        [
+          350,
+          350
+        ]
+      ],
+      "source_quote": "If registering for MPPM 420, you must",
+      "reason": "out_of_scope",
+      "why": "Section-registration logistics, not a course-selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          356,
+          356
+        ],
+        [
+          505,
+          505
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6",
+      "reason": "university_level",
+      "why": "GE unit-count note is a university-wide planning note."
+    },
+    {
+      "source_lines": [
+        [
+          501,
+          501
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count restates the university-level total-units requirement."
+    },
+    {
+      "source_lines": [
+        [
+          509,
+          509
+        ]
+      ],
+      "source_quote": "If registering for MPPM 420 , you",
+      "reason": "out_of_scope",
+      "why": "Section-registration logistics, not a course-selection requirement."
+    }
+  ]
+}

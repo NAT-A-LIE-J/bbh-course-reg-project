@@ -1,0 +1,374 @@
+{
+  "program": "American Studies and Ethnicity (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AMST 200gm"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 350"
+          }
+        ],
+        "id": "ASE-BA-CORE",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Complete the following two courses (8 units).",
+        "description": "Core requirements: AMST 200gm and AMST 350.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AMST 492"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 493"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 498"
+          }
+        ],
+        "id": "ASE-BA-SENIORCORE",
+        "source_lines": [
+          [
+            34,
+            42
+          ]
+        ],
+        "source_quote": "Choose one senior course, based on departmental offerings",
+        "description": "One senior core course from AMST 492, 493, or 498.",
+        "confidence": "high",
+        "note": "Honors thesis note (L048) is advisory/procedural, not a separate requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 250gmw",
+            "AMST 285gm",
+            "AMST 373m",
+            "AMST 378m",
+            "AMST 379",
+            "HIST 100mg",
+            "HIST 354",
+            "HIST 355",
+            "HIST 380",
+            "HIST 457",
+            "HIST 458"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ASE-BA-HISTORY",
+        "source_lines": [
+          [
+            54,
+            72
+          ]
+        ],
+        "source_quote": "One course from each of the following categories:",
+        "description": "One course from the History list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 365m",
+            "AHIS 465",
+            "AHIS 475m",
+            "AMST 205g",
+            "AMST 285gm",
+            "AMST 305",
+            "AMST 385",
+            "AMST 448m",
+            "AMST 449m",
+            "COMM 458m",
+            "ENGL 263g",
+            "ENGL 392",
+            "ENGL 442",
+            "ENGL 445m",
+            "ENGL 446",
+            "GESM 120g",
+            "REL 336w",
+            "REL 483"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ASE-BA-LITCULTURE",
+        "source_lines": [
+          [
+            74,
+            95
+          ]
+        ],
+        "source_quote": "One course from each of the following categories:",
+        "description": "One course from the Literature and Culture list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 101gmw",
+            "AMST 140gw",
+            "AMST 150gw",
+            "AMST 201g",
+            "AMST 202m",
+            "AMST 204g",
+            "AMST 206gm",
+            "AMST 220gmw",
+            "AMST 274mw",
+            "AMST 285gm",
+            "AMST 301gp",
+            "AMST 320",
+            "AMST 325gw",
+            "AMST 330m",
+            "AMST 332m",
+            "AMST 337m",
+            "AMST 340m",
+            "AMST 344m",
+            "AMST 345",
+            "AMST 348m",
+            "AMST 353m",
+            "AMST 357m",
+            "AMST 365",
+            "AMST 389m",
+            "AMST 395m",
+            "AMST 446",
+            "AMST 452m",
+            "AMST 466m",
+            "ANTH 240gm",
+            "GESM 130g",
+            "JOUR 466m",
+            "POSC 320",
+            "POSC 328",
+            "POSC 421",
+            "POSC 424m",
+            "POSC 427",
+            "POSC 428",
+            "PSYC 462m",
+            "REL 333",
+            "SOCI 100gmw",
+            "SOCI 342m",
+            "SOCI 355m",
+            "SOCI 356m",
+            "SOCI 376m",
+            "SOCI 432m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ASE-BA-SOCPOL",
+        "source_lines": [
+          [
+            97,
+            145
+          ]
+        ],
+        "source_quote": "One course from each of the following categories:",
+        "description": "One course from the Social and Political Issues list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AMST 250gmw",
+                "AMST 285gm",
+                "AMST 373m",
+                "AMST 378m",
+                "AMST 379",
+                "HIST 100mg",
+                "HIST 354",
+                "HIST 355",
+                "HIST 380",
+                "HIST 457",
+                "HIST 458",
+                "AHIS 365m",
+                "AHIS 465",
+                "AHIS 475m",
+                "AMST 205g",
+                "AMST 305",
+                "AMST 385",
+                "AMST 448m",
+                "AMST 449m",
+                "COMM 458m",
+                "ENGL 263g",
+                "ENGL 392",
+                "ENGL 442",
+                "ENGL 445m",
+                "ENGL 446",
+                "GESM 120g",
+                "REL 336w",
+                "REL 483",
+                "AMST 101gmw",
+                "AMST 140gw",
+                "AMST 150gw",
+                "AMST 201g",
+                "AMST 202m",
+                "AMST 204g",
+                "AMST 206gm",
+                "AMST 220gmw",
+                "AMST 274mw",
+                "AMST 301gp",
+                "AMST 320",
+                "AMST 325gw",
+                "AMST 330m",
+                "AMST 332m",
+                "AMST 337m",
+                "AMST 340m",
+                "AMST 344m",
+                "AMST 345",
+                "AMST 348m",
+                "AMST 353m",
+                "AMST 357m",
+                "AMST 365",
+                "AMST 389m",
+                "AMST 395m",
+                "AMST 446",
+                "AMST 452m",
+                "AMST 466m",
+                "ANTH 240gm",
+                "GESM 130g",
+                "JOUR 466m",
+                "POSC 320",
+                "POSC 328",
+                "POSC 421",
+                "POSC 424m",
+                "POSC 427",
+                "POSC 428",
+                "PSYC 462m",
+                "REL 333",
+                "SOCI 100gmw",
+                "SOCI 342m",
+                "SOCI 355m",
+                "SOCI 356m",
+                "SOCI 376m",
+                "SOCI 432m",
+                "AMST 392",
+                "AMST 490x",
+                "AMST 499"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "AMST"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "other American Studies and Ethnicity courses with the approval of the department"
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "ASE-BA-UPPERDIV-ELECTIVES",
+        "source_lines": [
+          [
+            147,
+            156
+          ]
+        ],
+        "source_quote": "Additional courses for a total of 16 units",
+        "description": "16 units of 300+ level AMST-certified electives from the lists above or below, or other approved AMST courses.",
+        "confidence": "medium",
+        "note": "The 'no more than two courses outside the college' rule is encoded as a root-level check since it applies to the whole major, not just electives."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            151,
+            151
+          ]
+        ],
+        "source_quote": "No more than two total courses in the major may be taken outside the college.",
+        "eligible_if": {
+          "not": {
+            "school": "Dornsife"
+          }
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Ten courses in American Studies and Ethnicity or courses certified",
+      "reason": "out_of_scope",
+      "why": "Summary restatement of the total course count already captured by the individual component nodes."
+    },
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "Honors students will complete an Honors Thesis in their Senior Core Course.",
+      "reason": "out_of_scope",
+      "why": "Honors-specific provision, not a general major requirement."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "program": "Intermedia Arts Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 260"
+          }
+        ],
+        "id": "IA-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "Required Lower-Division Courses (8 Units)",
+        "description": "Two required lower-division courses, ART 150 and ART 260.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 350",
+            "ART 360",
+            "ART 361",
+            "ART 362",
+            "ART 460",
+            "ART 484",
+            "CRIT 350gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "IA-MINOR-UPPER",
+        "source_lines": [
+          [
+            30,
+            42
+          ]
+        ],
+        "source_quote": "Three Upper-Division Courses (12 units)",
+        "description": "Choose three upper-division courses from the listed options, totaling 12 units.",
+        "confidence": "medium",
+        "note": "ART 362 and ART 460 each list 'max 8' units, suggesting they may be repeated for credit up to 8 units; this repeat-credit detail cannot be expressed as a standard threshold and is not separately encoded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The total number of units required for the minor is 20.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor deals with technology in art",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "program": "Performance (Vocal Arts) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "screening by faculty selection committees as part of USC admission process"
+        },
+        "id": "PERF-VOCAL-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission requires screening by Thornton faculty selection committees.",
+        "confidence": "medium",
+        "note": "Specific entrance requirements vary annually and are published separately; cannot be checked."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "PERF-VOCAL-CORE-ACADEMIC",
+        "source_lines": [
+          [
+            82,
+            98
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "Thirteen required core Thornton academic courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPVA 153"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPVA 253"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPVA 353"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPVA 453"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPVA 301"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "PERF-VOCAL-INDIVIDUAL-INSTRUCTION",
+        "source_lines": [
+          [
+            104,
+            117
+          ]
+        ],
+        "source_quote": "Individual Instruction (18 units)",
+        "description": "4 units each of MPVA 153, 253, 353, 453 (Voice) plus 2 units of MPVA 301 (Vocal Coaching), totaling 18 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MUEN"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 399
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PERF-VOCAL-ENSEMBLES",
+        "source_lines": [
+          [
+            119,
+            123
+          ]
+        ],
+        "source_quote": "MUEN Choral Ensemble at the 300-level: four",
+        "description": "Four 1-unit 300-level MUEN Choral Ensemble courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPKS 250a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 203a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 260"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 261"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 262"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 404"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 438"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 479"
+          }
+        ],
+        "id": "PERF-VOCAL-PROGRAM-INTENSIVE",
+        "source_lines": [
+          [
+            125,
+            136
+          ]
+        ],
+        "source_quote": "Program Intensive (22 units)",
+        "description": "Eight required program intensive courses totaling 22 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "MPGU 145",
+                    "MPGU 150",
+                    "MPPM 120",
+                    "MPPM 240",
+                    "MPPM 250",
+                    "MPPM 370",
+                    "MTEC 245",
+                    "MTEC 246",
+                    "MTEC 248",
+                    "MTEC 249",
+                    "MTEC 277x",
+                    "MUIN 272x",
+                    "MUIN 425",
+                    "MUJZ 141a",
+                    "MUJZ 150",
+                    "MUJZ 218a",
+                    "MUJZ 450",
+                    "MUSC 255"
+                  ]
+                },
+                {
+                  "unresolved": "other Contemporary Division courses selected in consultation with chair and the Contemporary Division"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "PERF-VOCAL-ELECTIVES-CONTEMPORARY",
+            "source_lines": [
+              [
+                142,
+                167
+              ]
+            ],
+            "source_quote": "Select 4 units from the Contemporary Division",
+            "description": "4 units of Contemporary Division electives from the listed courses or others approved by the chair.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "id": "PERF-VOCAL-ELECTIVES-GENERAL",
+            "source_lines": [
+              [
+                169,
+                171
+              ]
+            ],
+            "source_quote": "General Electives (12 units)",
+            "description": "12 units of unrestricted general electives.",
+            "confidence": "medium",
+            "note": "No restriction or list is given for General Electives; treated as free electives."
+          }
+        ],
+        "id": "PERF-VOCAL-ELECTIVES",
+        "source_lines": [
+          [
+            138,
+            171
+          ]
+        ],
+        "source_quote": "Electives (16 units)",
+        "description": "16 units of electives: 4 units Contemporary Division plus 12 units general electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "Junior Recital and Senior Recital under approved faculty supervision, 0 units each"
+            }
+          }
+        ],
+        "id": "PERF-VOCAL-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            41
+          ],
+          [
+            173,
+            180
+          ]
+        ],
+        "source_quote": "Capstone Projects (4 units)",
+        "description": "MUSC 480 and MUSC 481 Young Artist Project courses, plus required Junior and Senior Recitals.",
+        "confidence": "high",
+        "note": "Recitals carry 0 units and have no checkable criteria beyond faculty supervision."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            182,
+            182
+          ]
+        ],
+        "source_quote": "Total Required For Degree: 132",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 132
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All USC Thornton undergraduate programs in classical",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/overview, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Specific entrance requirements are reviewed on an",
+      "reason": "advisory",
+      "why": "Refers students to external annually-updated info, not a stated rule."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "University-wide GE requirements reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          81
+        ]
+      ],
+      "source_quote": "General Education *",
+      "reason": "university_level",
+      "why": "GE category breakdown and Writing courses are university-wide requirements."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          37
+        ]
+      ],
+      "source_quote": "During the junior and senior years of the",
+      "reason": "out_of_scope",
+      "why": "Describes the Young Artist Project qualitatively, not a separate checkable requirement beyond MUSC 480/481."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "A junior and senior recital must be completed",
+      "reason": "out_of_scope",
+      "why": "Recital logistics/venue procedures are not a course-based requirement."
+    },
+    {
+      "source_lines": [
+        [
+          182,
+          182
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count also captured as root check but overall degree-unit rule is university-level bookkeeping."
+    },
+    {
+      "source_lines": [
+        [
+          186,
+          186
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "advisory",
+      "why": "Planning advice about GE/Writing overlap, not an added requirement."
+    }
+  ]
+}

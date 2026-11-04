@@ -1,0 +1,374 @@
+{
+  "program": "Business Administration (Real Estate Finance) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "current Marshall and Leventhal undergraduate",
+            "sophomore standing",
+            "one semester in residence at USC"
+          ]
+        },
+        "id": "BREF-BS-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Admission is limited to current Marshall/Leventhal undergraduates with sophomore standing and one semester in residence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "students pursuing more than one BS Business Administration emphasis"
+        },
+        "id": "BREF-BS-ONE-EMPHASIS",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within the",
+        "description": "Students may earn only one emphasis within the BS in Business Administration degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BREF-BS-WRITING",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+        "description": "Composition/writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "A recommended WRIT 340 section for BREF majors is advisory, not a requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BREF-BS-CORE",
+        "source_lines": [
+          [
+            43,
+            76
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units: 3",
+        "description": "Marshall business core courses, with several either/or options.",
+        "confidence": "high",
+        "note": "MATH 118gx placement/waiver conditions and A-level credit for MATH 125g are not checkable and are not encoded; see unclassified."
+      },
+      {
+        "family": "specific_course",
+        "course": "FBE 391",
+        "id": "BREF-BS-REQUIRED-COURSE",
+        "source_lines": [
+          [
+            89,
+            93
+          ]
+        ],
+        "source_quote": "FBE 391 Real Estate Finance and Investment Units: 4",
+        "description": "Required course FBE 391 Real Estate Finance and Investment.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FBE 427",
+            "FBE 465",
+            "FBE 466",
+            "FBE 467",
+            "FBE 468",
+            "FBE 470",
+            "FBE 489",
+            "FBE 491",
+            "BAEP 423",
+            "DSO 455",
+            "FBE 421",
+            "FBE 423",
+            "FBE 435",
+            "FBE 437",
+            "FBE 441",
+            "FBE 459",
+            "MOR 469"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                99,
+                99
+              ]
+            ],
+            "source_quote": "A minimum of 8 units must come from",
+            "eligible_if": {
+              "courses": [
+                "FBE 427",
+                "FBE 465",
+                "FBE 466",
+                "FBE 467",
+                "FBE 468",
+                "FBE 470",
+                "FBE 489",
+                "FBE 491"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "BREF-BS-ELECTIVES",
+        "source_lines": [
+          [
+            95,
+            126
+          ]
+        ],
+        "source_quote": "A minimum of 8 units must come from",
+        "description": "12 units of electives, at least 8 units from the Real Estate Finance Electives list, remainder from Non-Real Estate Electives list.",
+        "confidence": "high",
+        "note": "Many electives require prerequisites (marked ***); this is advisory/procedural and not encoded as a check."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "16 upper-division units in the emphasis.",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "FBE",
+                "BAEP",
+                "DSO",
+                "MOR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students who wish to pursue the Bachelor of",
+      "reason": "university_level",
+      "why": "Second bachelor's degree university-wide requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "including USC's General Education requirements",
+      "reason": "university_level",
+      "why": "GE requirements are university-wide, handled separately."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommendation of a specific WRIT 340 section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Placement into MATH 118 is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver conditions for MATH 118, not an independent requirement to check."
+    },
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advisory note about subject credit and advising."
+    },
+    {
+      "source_lines": [
+        [
+          127,
+          127
+        ]
+      ],
+      "source_quote": "***Prerequisites required. Plan carefully.",
+      "reason": "advisory",
+      "why": "Advisory note about prerequisites for electives."
+    }
+  ]
+}

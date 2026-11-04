@@ -1,0 +1,133 @@
+{
+  "program": "Future Cinema Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IML 455",
+            "IML 475",
+            "IML 575"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "FC-MINOR-INTRO",
+        "source_lines": [
+          [
+            33,
+            41
+          ]
+        ],
+        "source_quote": "Choose 8 units from the following courses",
+        "description": "Choose 8 units from the Introductory Courses list (IML 455, IML 475, IML 575).",
+        "confidence": "high",
+        "note": "IML 575 requires special permission for graduate course work (line 41); not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CNTV 474",
+            "CTAN 452",
+            "CTAN 502L",
+            "CTAN 504L",
+            "CTAN 564L",
+            "CTCS 482",
+            "CTPR 514",
+            "CTPR 524",
+            "CTPR 544",
+            "CTWR 405",
+            "CTWR 438",
+            "CTXA 575",
+            "CTXA 588",
+            "IML 335",
+            "IML 354",
+            "IML 404",
+            "IML 421",
+            "IML 424",
+            "IML 425",
+            "IML 436",
+            "IML 452",
+            "IML 453",
+            "IML 454",
+            "IML 456",
+            "IML 458",
+            "IML 460",
+            "IML 477",
+            "IML 481",
+            "IML 490x",
+            "IML 427"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "FC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            45,
+            80
+          ]
+        ],
+        "source_quote": "Choose 12 units from the following courses",
+        "description": "Choose 12 units from the Electives course list.",
+        "confidence": "high",
+        "note": "Some courses marked with * require a prerequisite and + indicates graduate enrollment needs special permission (lines 78-79); not separately encoded as these are advisory/procedural footnotes on eligibility."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "A total of 20 units is required to complete the minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "All courses must be taken for a letter grade.",
+      "reason": "out_of_scope",
+      "why": "Grading mode rule, not a course-selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Information about declaring the minor, courses and",
+      "reason": "advisory",
+      "why": "Contact/advisory information, not a requirement."
+    }
+  ]
+}

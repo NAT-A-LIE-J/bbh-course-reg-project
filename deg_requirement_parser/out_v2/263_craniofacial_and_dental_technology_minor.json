@@ -1,0 +1,159 @@
+{
+  "program": "Craniofacial and Dental Technology Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DENT 412"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 410L"
+          }
+        ],
+        "id": "CDT-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            36
+          ]
+        ],
+        "source_quote": "DENT 412 Fundamentals of Craniofacial and Dental Technology",
+        "description": "Four required core courses: DENT 412, BISC 320Lg, BISC 325, and BME 410L, totaling 15 units.",
+        "confidence": "high",
+        "note": "Asterisks on BISC 325, BME 410L, and several electives indicate a prerequisite requirement, not a program requirement; not encoded as a node."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 330L",
+            "BISC 403",
+            "BISC 406L",
+            "BISC 410",
+            "BISC 435",
+            "BME 404",
+            "BME 415",
+            "BME 416L",
+            "BME 451L",
+            "DENT 221",
+            "ENGR 305",
+            "HP 340Lg",
+            "HP 350L",
+            "MASC 310L",
+            "RXRS 416"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CDT-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            64
+          ]
+        ],
+        "source_quote": "Enroll in at least two courses from the following to complete at least 16 units",
+        "description": "At least two elective courses from the listed BISC, BME, DENT, ENGR, HP, MASC, RXRS offerings.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "This minor requires a minimum of 16 units outside your home department",
+        "eligible_if": {
+          "not": {
+            "unresolved": "student's home department"
+          }
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "further, at least 16 units must be unique to the minor",
+      "reason": "university_level",
+      "why": "University-wide minor uniqueness rule is handled automatically, not encoded here."
+    },
+    {
+      "source_lines": [
+        [
+          44,
+          44
+        ]
+      ],
+      "source_quote": "further, at least 16 units must be unique to the minor",
+      "reason": "university_level",
+      "why": "Repeats the university-wide minor uniqueness rule, handled automatically."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Please see a biomedical engineering, biological sciences or Herman Ostrow",
+      "reason": "advisory",
+      "why": "Advisory statement directing students to an adviser, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          72,
+          72
+        ]
+      ],
+      "source_quote": "*Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite notation is a course-level prerequisite detail, not a program requirement to check."
+    },
+    {
+      "source_lines": [
+        [
+          64,
+          64
+        ]
+      ],
+      "source_quote": "Total elective units: 3-8",
+      "reason": "no_fit",
+      "why": "A unit range summary restating the elective count, not a separate checkable requirement."
+    }
+  ]
+}

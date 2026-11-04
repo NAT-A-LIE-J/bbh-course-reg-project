@@ -1,0 +1,277 @@
+{
+  "program": "Dramatic Arts (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "THTR 305a"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 309"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "THTR 230"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 231"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 232"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 233"
+              },
+              {
+                "family": "specific_course",
+                "course": "THTR 335"
+              }
+            ]
+          }
+        ],
+        "id": "DA-BA-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            51
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "THTR 101, THTR 130, plus one course from a directing/dramaturgy pair and one course from a design/construction list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "DA-BA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            53,
+            86
+          ]
+        ],
+        "source_quote": "Complete the two required courses below. In addition, take one course from List A and one course from either List A or B.",
+        "description": "THTR 125 and THTR 225g, plus one course from List A and one more course from List A or List B.",
+        "confidence": "high",
+        "note": "List A courses are distinct slots from the second, possibly-List-A-or-B course; one-slot rule applies so the same course cannot fill both."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "THTR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 30
+          }
+        ],
+        "id": "DA-BA-UD-ELECTIVES",
+        "source_lines": [
+          [
+            88,
+            88
+          ]
+        ],
+        "source_quote": "Required Upper-Division Dramatic Arts Electives: 30",
+        "description": "30 units of upper-division Dramatic Arts electives.",
+        "confidence": "medium",
+        "note": "No specific course list given beyond prior lists; treated as any upper-division THTR course."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 33
+          }
+        ],
+        "id": "DA-BA-ELECTIVE-UNITS",
+        "source_lines": [
+          [
+            96,
+            96
+          ]
+        ],
+        "source_quote": "Elective Units: 33",
+        "description": "33 units of free electives.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A total of 128 units is required for completion of the degree.",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Candidates for the degree must complete the university general education requirements",
+      "reason": "university_level",
+      "why": "References GE requirement, handled at university level."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          27
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a coherent, integrated introduction",
+      "reason": "university_level",
+      "why": "General education requirement text is university-wide, not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          92,
+          92
+        ]
+      ],
+      "source_quote": "General Education Units: 36",
+      "reason": "university_level",
+      "why": "GE unit total is a university-wide requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Please work with your major adviser to determine those courses.",
+      "reason": "advisory",
+      "why": "Advisory statement about consulting an adviser."
+    },
+    {
+      "source_lines": [
+        [
+          100,
+          100
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "Restates the university-wide total unit requirement."
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "program": "American Studies and Ethnicity (Asian American Studies) (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AMST 200gm"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 350"
+          }
+        ],
+        "id": "AAS-BA-CORE",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "Complete the following two courses (8 units).",
+        "description": "Core requirement: AMST 200gm and AMST 350.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AMST 492"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 493"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 498"
+          }
+        ],
+        "id": "AAS-BA-SENIORCORE",
+        "source_lines": [
+          [
+            36,
+            50
+          ]
+        ],
+        "source_quote": "Choose one of the following senior courses, based",
+        "description": "Choose one senior capstone course from AMST 492, AMST 493 or AMST 498.",
+        "confidence": "high",
+        "note": "Honors thesis note for honors students not encoded as a separate requirement (out_of_scope)."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AMST 378m"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 150gw"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 449m"
+              },
+              {
+                "family": "specific_course",
+                "course": "REL 336w"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 220gmw"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 365"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 389m"
+              },
+              {
+                "family": "specific_course",
+                "course": "POSC 328"
+              },
+              {
+                "family": "specific_course",
+                "course": "SOCI 376m"
+              }
+            ]
+          }
+        ],
+        "id": "AAS-BA-REQUIRED-CATEGORIES",
+        "source_lines": [
+          [
+            52,
+            82
+          ]
+        ],
+        "source_quote": "One course from each of the following categories:",
+        "description": "One course each from History, Literature and Culture, and Social and Political Issues categories.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AMST 301gp",
+                "AMST 320",
+                "AMST 348m",
+                "AMST 353m",
+                "AMST 490x",
+                "AMST 499",
+                "COMM 458m",
+                "POSC 424m",
+                "SOCI 432m",
+                "AMST 378m",
+                "AMST 150gw",
+                "AMST 449m",
+                "REL 336w",
+                "AMST 220gmw",
+                "AMST 365",
+                "AMST 389m",
+                "POSC 328",
+                "SOCI 376m"
+              ]
+            },
+            {
+              "unresolved": "other American Studies and Ethnicity courses with the approval of the department, 300-level or higher"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "AAS-BA-ELECTIVES",
+        "source_lines": [
+          [
+            84,
+            98
+          ]
+        ],
+        "source_quote": "Additional courses for a total of 16 units",
+        "description": "Additional elective courses totaling 16 units from the listed courses, unused category courses, or other approved AMST courses at the 300 level or higher.",
+        "confidence": "medium",
+        "note": "Courses from History/Literature/Social lists not used to satisfy the one-per-category requirement may count here (one-slot rule); department-approval pool cannot be fully checked."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            88,
+            88
+          ]
+        ],
+        "source_quote": "No more than two total courses in the major",
+        "eligible_if": {
+          "not": {
+            "school": "Dornsife"
+          }
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Asian American Studies is a multidisciplinary program designed",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          46,
+          50
+        ]
+      ],
+      "source_quote": "Honors students will complete an Honors Thesis",
+      "reason": "out_of_scope",
+      "why": "Honors-specific provision, not a general degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Ten courses in Asian American Studies, or courses",
+      "reason": "out_of_scope",
+      "why": "Summary sentence restating the breakdown encoded in the detailed sections below."
+    }
+  ]
+}

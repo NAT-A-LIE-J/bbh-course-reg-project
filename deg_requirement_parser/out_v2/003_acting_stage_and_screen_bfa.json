@@ -1,0 +1,334 @@
+{
+  "program": "Acting, Stage and Screen (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "audition"
+        },
+        "id": "ASS-BFA-AUDITION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "An audition is required for admission.",
+        "description": "Admission requires an audition.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 115a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 120aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 120b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 140a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 214a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 214b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 220a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 220b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 320b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 339a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 339b"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 397"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6.0
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 420"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 427"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 457"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 471"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 480a"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 497"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2.0
+              }
+            ]
+          }
+        ],
+        "id": "ASS-BFA-ACTING-CORE",
+        "source_lines": [
+          [
+            33,
+            59
+          ]
+        ],
+        "source_quote": "Required Acting Courses for Emphasis (76 units)",
+        "description": "Required acting courses totaling 76 units, including variable-unit practicum courses with minimum unit thresholds.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 105",
+            "THTR 250",
+            "THTR 305a",
+            "THTR 309",
+            "THTR 343",
+            "THTR 365",
+            "THTR 416",
+            "THTR 440",
+            "THTR 464"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "ASS-BFA-ELECTIVES",
+        "source_lines": [
+          [
+            61,
+            75
+          ]
+        ],
+        "source_quote": "Select 4 units from the following list:",
+        "description": "4 units of elective courses from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ASS-BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            77,
+            111
+          ]
+        ],
+        "source_quote": "Complete the two required courses below.",
+        "description": "Two required Critical Studies courses plus one from List A and one from List A or B.",
+        "confidence": "medium",
+        "note": "The second additional course may be the same list as the first (List A) or List B; the one-slot rule prevents reuse of the exact course chosen."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The BFA degree is a four-year, 132-unit, professional",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a discrete requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All BFA Theatre majors are required to earn",
+      "reason": "out_of_scope",
+      "why": "GPA/probation rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A student disqualified from continued study in",
+      "reason": "out_of_scope",
+      "why": "Disqualification/transfer policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          31
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a coherent,",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          112,
+          112
+        ]
+      ],
+      "source_quote": "General Education Units: 36",
+      "reason": "university_level",
+      "why": "University-wide GE unit total."
+    },
+    {
+      "source_lines": [
+        [
+          116,
+          116
+        ]
+      ],
+      "source_quote": "Total Units: 132",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    }
+  ]
+}

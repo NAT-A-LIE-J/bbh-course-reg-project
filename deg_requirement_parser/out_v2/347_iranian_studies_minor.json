@@ -1,0 +1,231 @@
+{
+  "program": "Iranian Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "IRAN 250"
+          },
+          {
+            "family": "manual_review",
+            "kind": "GATE",
+            "details": {
+              "stage": "PLACEMENT",
+              "basis": "QUALITATIVE_REVIEW",
+              "process": "placement, approved transfer credit, or study abroad demonstrating fourth-semester Persian proficiency"
+            }
+          }
+        ],
+        "id": "IRANMIN-LANGUAGE",
+        "source_lines": [
+          [
+            38,
+            40
+          ]
+        ],
+        "source_quote": "Students wishing to minor in Iranian Studies must demonstrate fourth-semester proficiency",
+        "description": "Fourth-semester Persian proficiency via IRAN 250 or placement/transfer/study abroad.",
+        "confidence": "medium",
+        "note": "Students who place out of IRAN 250 must take an additional elective course, reflected as a note on the Elective Courses node; threshold there not conditionally increased because the condition cannot be checked."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MDES 201w"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDES 213gp"
+          }
+        ],
+        "id": "IRANMIN-LOWER-DIV",
+        "source_lines": [
+          [
+            42,
+            50
+          ]
+        ],
+        "source_quote": "All students must take one of the following courses:",
+        "description": "One lower-division course: MDES 201w or MDES 213gp.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MDES 313p"
+          }
+        ],
+        "id": "IRANMIN-UPPER-DIV",
+        "source_lines": [
+          [
+            52,
+            58
+          ]
+        ],
+        "source_quote": "All students must take the following course:",
+        "description": "MDES 313p required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 363",
+            "MDES 314p",
+            "MDES 345p",
+            "MDES 375",
+            "MDES 401",
+            "MDES 403",
+            "MDES 441w",
+            "POSC 351"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IRANMIN-CONCENTRATION",
+        "source_lines": [
+          [
+            60,
+            73
+          ]
+        ],
+        "source_quote": "All students must take one of the following courses. Students may only choose IR 363",
+        "description": "One course from the Iranian Studies Concentration list.",
+        "confidence": "high",
+        "note": "IR 363, MDES 375, and POSC 351 require departmental approval; cannot be checked, kept on the list."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CLAS 349gp",
+            "ECON 342",
+            "HIST 480",
+            "IR 362",
+            "IR 363",
+            "IR 464",
+            "IRAN 320",
+            "IRAN 325",
+            "IRAN 350",
+            "MDES 301g",
+            "MDES 312",
+            "MDES 314p",
+            "MDES 316p",
+            "MDES 324",
+            "MDES 325g",
+            "MDES 340g",
+            "MDES 345p",
+            "MDES 375",
+            "MDES 401",
+            "MDES 403",
+            "MDES 441w",
+            "POSC 351"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IRANMIN-ELECTIVES",
+        "source_lines": [
+          [
+            75,
+            102
+          ]
+        ],
+        "source_quote": "Students must take one course from the list below.",
+        "description": "At least one elective course from the list; two required if a student places out of the language requirement.",
+        "confidence": "medium",
+        "note": "Students who place out of the language requirement must take two elective courses instead of one, and IR 362, IR 363, IR 464, and POSC courses require departmental approval; these conditional/approval clauses cannot be encoded as thresholds."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "Political Science and International Relations majors",
+          "effect": "MDES/IR cross-listed courses may satisfy the four unique courses (16 units) requirement outside their major department"
+        },
+        "id": "IRANMIN-POSC-IR-ACCOMMODATION",
+        "source_lines": [
+          [
+            32,
+            32
+          ]
+        ],
+        "source_quote": "A special accommodation is in place for majors in the Department of Political Science",
+        "description": "Special accommodation allowing MDES/IR cross-listed courses to count toward the unique-course requirement for PoliSci/IR majors.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_courses": 4,
+          "min_units": 16,
+          "applies_to": "the minor (not used to meet major requirements)"
+        },
+        "id": "IRANMIN-UNIQUENESS",
+        "source_lines": [
+          [
+            32,
+            32
+          ]
+        ],
+        "source_quote": "Students will still be required, however, to complete at least four courses",
+        "description": "At least four courses (16 units) unique to the minor, not used for major requirements.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            32,
+            32
+          ]
+        ],
+        "source_quote": "A minimum of 20 units is required.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          30
+        ]
+      ],
+      "source_quote": "Learning Objectives for the Iranian Studies Minor:",
+      "reason": "out_of_scope",
+      "why": "Learning objectives describe goals, not enrollment requirements."
+    }
+  ]
+}

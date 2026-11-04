@@ -1,0 +1,176 @@
+{
+  "program": "Hip-Hop, Street and Social Dance Forms Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "DANC 280g",
+        "id": "HHSSD-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "DANC 280g Introduction to Dance as an Art Form",
+        "description": "Required lower-division course DANC 280g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "DANC 302g",
+        "id": "HHSSD-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            31,
+            35
+          ]
+        ],
+        "source_quote": "DANC 302g Hip Hop Don't Stop: Black Social",
+        "description": "Required upper-division course DANC 302g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARTL 310",
+            "DANC 103",
+            "DANC 107",
+            "DANC 140",
+            "DANC 143",
+            "DANC 150",
+            "DANC 155",
+            "DANC 170",
+            "DANC 172",
+            "DANC 175",
+            "DANC 177",
+            "DANC 180",
+            "DANC 181a",
+            "DANC 181b",
+            "DANC 181c",
+            "DANC 183a",
+            "DANC 183b",
+            "DANC 183c",
+            "DANC 183d",
+            "DANC 184a",
+            "DANC 184b",
+            "DANC 184c",
+            "DANC 184d",
+            "DANC 185a",
+            "DANC 185b",
+            "DANC 186",
+            "DANC 187",
+            "DANC 188a",
+            "DANC 188b",
+            "DANC 189a",
+            "DANC 189b",
+            "DANC 189c",
+            "DANC 190",
+            "DANC 191",
+            "DANC 212g",
+            "DANC 285",
+            "DANC 305g",
+            "DANC 308g",
+            "DANC 312gw",
+            "DANC 333gw",
+            "DANC 342gp",
+            "DANC 347",
+            "DANC 349",
+            "DANC 350",
+            "DANC 355",
+            "DANC 362",
+            "DANC 363g",
+            "DANC 370",
+            "DANC 372",
+            "DANC 399",
+            "DANC 432",
+            "DANC 442",
+            "DANC 483",
+            "DANC 490x",
+            "DANC 495",
+            "DANC 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "HHSSD-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            37,
+            76
+          ],
+          [
+            78,
+            105
+          ]
+        ],
+        "source_quote": "- ARTL 310 Music and Dance In Paris Salon",
+        "description": "8 units of elective courses from the listed Dance and related courses, including the Dance Technique Courses list.",
+        "confidence": "medium",
+        "note": "Dance Technique Courses (DANC 180-189c) expanded into individual course codes from the separate list; placement into intermediate/advanced levels requires a Prerequisite Waiver Form approved by instructor, not encoded as a checkable condition."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            106,
+            106
+          ]
+        ],
+        "source_quote": "Total Units Required: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students must be in good academic standing",
+      "reason": "out_of_scope",
+      "why": "Academic standing requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "No previous dance experience is required.",
+      "reason": "advisory",
+      "why": "Clarifying statement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Students with previous dance experience may place",
+      "reason": "no_fit",
+      "why": "Placement/waiver process for technique course levels has no corresponding leaf family for checkable course eligibility beyond listing the courses."
+    }
+  ]
+}

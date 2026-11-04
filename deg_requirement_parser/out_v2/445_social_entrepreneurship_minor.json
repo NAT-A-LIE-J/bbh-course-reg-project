@@ -1,0 +1,144 @@
+{
+  "program": "Social Entrepreneurship Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "48 units of college level courses",
+            "cumulative USC GPA of at least 2.75"
+          ]
+        },
+        "id": "SOCENT-MIN-GATE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To enroll in this minor, students must have completed",
+        "description": "Admission to the minor requires 48 completed units and a 2.75 GPA.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 451"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BAEP 491"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 460"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 470"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 497"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 371"
+          }
+        ],
+        "id": "SOCENT-MIN-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            38
+          ]
+        ],
+        "source_quote": "BAEP 450 Fundamentals of Entrepreneurship Units: 4 or",
+        "description": "Required courses: BAEP 450 or 451, BAEP 491, one of BAEP 460/470/497, and PPD 371.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 452",
+            "BAEP 471",
+            "BAEP 476",
+            "BUCO 485",
+            "CE 469",
+            "COMM 402",
+            "IR 305w",
+            "IR 308gw",
+            "PPD 478",
+            "PSYC 456",
+            "SOCI 360m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "SOCENT-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            56
+          ]
+        ],
+        "source_quote": "Complete at least 6 units from the following:",
+        "description": "At least 6 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": "Prerequisites for BAEP 452 and PSYC 456 are listed in notes but not encoded as minor requirements."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          62,
+          62
+        ]
+      ],
+      "source_quote": "Prerequisite: the former BAEP 310 or BAEP",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          63,
+          63
+        ]
+      ],
+      "source_quote": "Prerequisite: PSYC 100",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite, not a minor requirement."
+    }
+  ]
+}

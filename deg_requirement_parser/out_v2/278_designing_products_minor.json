@@ -1,0 +1,92 @@
+{
+  "program": "Designing Products Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 176"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 245"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 444"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 445"
+          }
+        ],
+        "id": "DESPROD-MINOR-CORE",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "Students must complete the following 16 units:",
+        "description": "Four required core courses totaling 16 units: ACAD 176, ACAD 245, ACAD 444, ACAD 445.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 188",
+            "ACAD 189",
+            "ACAD 190",
+            "ACAD 288"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "DESPROD-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            49
+          ]
+        ],
+        "source_quote": "Students must complete 8 units from the electives below:",
+        "description": "8 units of electives chosen from the listed ACAD courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Beyond the required core, students will have the discretion",
+      "reason": "advisory",
+      "why": "Describes optional focus areas, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Information on how to apply for the minor",
+      "reason": "out_of_scope",
+      "why": "Procedural application information, not a degree requirement."
+    }
+  ]
+}

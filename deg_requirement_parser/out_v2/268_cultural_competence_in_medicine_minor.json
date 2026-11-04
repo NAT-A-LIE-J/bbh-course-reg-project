@@ -1,0 +1,96 @@
+{
+  "program": "Cultural Competence in Medicine Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 365gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 401"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 420m"
+          }
+        ],
+        "id": "CCM-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Required Courses (20 Units)",
+        "description": "Four required courses: HP 200, HP 365gmw, HP 401, and HP 420m.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "HP 370g"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 460"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 462m"
+          }
+        ],
+        "id": "CCM-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            32,
+            45
+          ]
+        ],
+        "source_quote": "One of the following:",
+        "description": "One elective course chosen from a list of ten HP/PSYC courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

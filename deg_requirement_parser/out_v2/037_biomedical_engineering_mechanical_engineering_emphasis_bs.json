@@ -1,0 +1,417 @@
+{
+  "program": "Biomedical Engineering, Mechanical Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BME-ME-WRITING",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "general education courses"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "id": "BME-ME-GE",
+        "source_lines": [
+          [
+            32,
+            36
+          ]
+        ],
+        "source_quote": "General education Units: 20",
+        "description": "20 units of General Education.",
+        "confidence": "low",
+        "note": "GE category-specific requirements are university-level; only unit total kept."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "BME-ME-MATH",
+        "source_lines": [
+          [
+            42,
+            54
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Math requirement: MATH 125g, MATH 126g or 129, MATH 226g or 229, and MATH 245.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "BME-ME-PHYSICS",
+        "source_lines": [
+          [
+            56,
+            61
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I",
+        "description": "Physics requirements: PHYS 151Lg and PHYS 152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "BME-ME-CHEMISTRY",
+        "source_lines": [
+          [
+            63,
+            71
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4 or",
+        "description": "Chemistry requirements: CHEM 105aLg or 115aLg, and CHEM 105bL or 115bL.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 312x"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 320Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 301L"
+              }
+            ]
+          }
+        ],
+        "id": "BME-ME-BIOLOGY",
+        "source_lines": [
+          [
+            77,
+            85
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology",
+        "description": "Biology requirement: BISC 220Lg plus one of BISC 312x, BISC 320Lg, or HBIO 301L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AME 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 204"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 308"
+          }
+        ],
+        "id": "BME-ME-AME",
+        "source_lines": [
+          [
+            87,
+            94
+          ]
+        ],
+        "source_quote": "AME 201 Statics Units: 4.0",
+        "description": "Aerospace and Mechanical Engineering requirements: AME 201, AME 204, AME 301, TAC 308.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BME 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 403L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 404"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 413"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 415"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 445aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 445bL"
+          }
+        ],
+        "id": "BME-ME-BME-CORE",
+        "source_lines": [
+          [
+            96,
+            109
+          ]
+        ],
+        "source_quote": "BME 101 Introduction to Biomedical Engineering",
+        "description": "Biomedical Engineering core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "EE 202L",
+        "id": "BME-ME-EE",
+        "source_lines": [
+          [
+            111,
+            115
+          ]
+        ],
+        "source_quote": "EE 202L Linear Circuits Units: 4",
+        "description": "Electrical and Computer Engineering requirement: EE 202L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AME 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 416"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "MASC 310L"
+          }
+        ],
+        "id": "BME-ME-ADDITIONAL",
+        "source_lines": [
+          [
+            117,
+            126
+          ]
+        ],
+        "source_quote": "Choose one course from the following:",
+        "description": "Additional course work: choose one of AME 309, AME 416, CHEM 322aL, MASC 310L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "unresolved": "approved department list of technical electives"
+            },
+            {
+              "level_min": 0
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "id": "BME-ME-TECH-ELECTIVES",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "source_quote": "Complete 5 units as needed to complete",
+        "description": "Technical electives (5 units) from an approved department list, to reach 130 total units.",
+        "confidence": "low",
+        "note": "No explicit course list given; pool is approval-based and unresolved."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minimum requirement for the degree with",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 130
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "Grade/GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    }
+  ]
+}

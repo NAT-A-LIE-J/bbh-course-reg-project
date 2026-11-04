@@ -1,0 +1,268 @@
+{
+  "program": "East Asian Languages and Cultures (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 110gp",
+            "EALC 125g",
+            "EALC 130gp",
+            "EALC 150gw",
+            "EALC 250g",
+            "EALC 255gw",
+            "EALC 266"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "EALC-BA-SURVEY",
+        "source_lines": [
+          [
+            25,
+            37
+          ]
+        ],
+        "source_quote": "Cross-Cultural Survey Course (Choose One)",
+        "description": "Choose one cross-cultural survey course, required within the first two years.",
+        "confidence": "high",
+        "note": "The requirement to complete this within the first two years (L029) cannot be checked as a timing constraint; not encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 324gw",
+            "EALC 340gp",
+            "EALC 342gp",
+            "EALC 344gp",
+            "EALC 350gp",
+            "EALC 382"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "EALC-BA-CULTURAL-STUDIES",
+        "source_lines": [
+          [
+            39,
+            50
+          ]
+        ],
+        "source_quote": "Cultural Studies Course (Choose One)",
+        "description": "Choose one cultural studies course.",
+        "confidence": "high",
+        "note": "These six courses may alternatively count as upper-division electives if not used here (see elective node); a course used here cannot also be used as an elective (one-slot rule)."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "EALC 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "EALC 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "EALC 322"
+          }
+        ],
+        "id": "EALC-BA-LANGUAGE",
+        "source_lines": [
+          [
+            52,
+            62
+          ]
+        ],
+        "source_quote": "Majors must complete six semesters (three years) of one East Asian Language",
+        "description": "Complete six semesters of one East Asian language (culminating in EALC 306, 317, or 322), or place out via diagnostic exam.",
+        "confidence": "medium",
+        "note": "The six-semester sequence and diagnostic exam equivalency cannot be fully checked from a course list; encoded as the terminal course of the sequence. Waiver by placement test not separately checkable."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "EALC 324gw",
+                "EALC 332",
+                "EALC 333g",
+                "EALC 340gp",
+                "EALC 342gp",
+                "EALC 344gp",
+                "EALC 346g",
+                "EALC 350gp",
+                "EALC 358g",
+                "EALC 374",
+                "EALC 375",
+                "EALC 380",
+                "EALC 382",
+                "EALC 385",
+                "EALC 387",
+                "KSI 399",
+                "EALC 400",
+                "EALC 402",
+                "EALC 426",
+                "EALC 428",
+                "EALC 430",
+                "EALC 435",
+                "EALC 438",
+                "EALC 450",
+                "EALC 452",
+                "EALC 455",
+                "EALC 460",
+                "EALC 465",
+                "EALC 475",
+                "EALC 485",
+                "EALC 489",
+                "EALC 490x",
+                "EALC 494a",
+                "EALC 494b",
+                "EALC 499",
+                "EALC 404",
+                "EALC 406",
+                "EALC 407",
+                "EALC 409",
+                "EALC 413",
+                "EALC 415",
+                "EALC 417",
+                "EALC 418",
+                "EALC 419",
+                "EALC 422",
+                "EALC 424",
+                "EALC 440"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "EALC"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "additional 300- and 400-level cultural studies courses not listed, including cross-listed courses taught by EALC-affiliated faculty, approved by the EALC Director of Undergraduate Studies"
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                68,
+                68
+              ],
+              [
+                105,
+                105
+              ]
+            ],
+            "source_quote": "A maximum of 8 units of fourth-year language courses may be used",
+            "eligible_if": {
+              "courses": [
+                "EALC 404",
+                "EALC 406",
+                "EALC 407",
+                "EALC 409",
+                "EALC 413",
+                "EALC 415",
+                "EALC 417",
+                "EALC 418",
+                "EALC 419",
+                "EALC 422",
+                "EALC 424",
+                "EALC 440"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "EALC-BA-ELECTIVES",
+        "source_lines": [
+          [
+            64,
+            117
+          ]
+        ],
+        "source_quote": "Upper-Division Electives (Choose Four)",
+        "description": "Four upper-division elective courses (16 units) from the listed EALC/KSI courses, additional department-approved courses, or up to 8 units of fourth-year language courses.",
+        "confidence": "high",
+        "note": "Courses EALC 324gw, 340gp, 342gp, 344gp, 350gp and 382 can only count here if not used to satisfy the Cultural Studies Course requirement (one-slot rule, restated at L068)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Majors are encouraged to explore beyond their individual language focus",
+      "reason": "advisory",
+      "why": "Encouragement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          43,
+          43
+        ]
+      ],
+      "source_quote": "preferably before advancing to more specialized, theme-specific courses",
+      "reason": "advisory",
+      "why": "A preference, not a firm requirement."
+    },
+    {
+      "source_lines": [
+        [
+          68,
+          68
+        ]
+      ],
+      "source_quote": "Our faculty teach new courses every year. Please check the department's",
+      "reason": "advisory",
+      "why": "Advisory note about checking the Schedule of Classes."
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "program": "Classical Perspectives Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AHIS 120gp",
+                "AHIS 201g",
+                "CLAS 150gp",
+                "CLAS 151gp",
+                "CLAS 160gp",
+                "CLAS 170gp",
+                "CLAS 180g",
+                "CLAS 190g",
+                "CLAS 275gp",
+                "CLAS 280gp",
+                "CORE 102gp",
+                "HIST 101gp",
+                "REL 112g",
+                "REL 114g",
+                "REL 121g"
+              ]
+            },
+            {
+              "unresolved": "GE seminars on appropriate topics (consult an adviser)"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CLASS-PERSP-FOUNDATIONAL",
+        "source_lines": [
+          [
+            25,
+            46
+          ]
+        ],
+        "source_quote": "Choose one course from the following list",
+        "description": "Choose one foundational course from the listed options, or an adviser-approved GE seminar.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CLAS 310",
+            "CLAS 320gmp",
+            "CLAS 330",
+            "CLAS 339",
+            "CLAS 340",
+            "CLAS 370",
+            "CLAS 380",
+            "CLAS 415",
+            "CLAS 420",
+            "CLAS 470"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CLASS-PERSP-CORE",
+        "source_lines": [
+          [
+            48,
+            63
+          ]
+        ],
+        "source_quote": "Choose at least one course from the following list (4-12 units)",
+        "description": "Choose at least one core course (4-12 units) from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 301",
+            "AHIS 304gm",
+            "AHIS 321",
+            "AHIS 322",
+            "AHIS 325",
+            "AHIS 420",
+            "AHIS 425",
+            "ANTH 372",
+            "ARCG 323p",
+            "CLAS 300",
+            "CLAS 305",
+            "CLAS 307",
+            "CLAS 310",
+            "CLAS 315",
+            "CLAS 320gmp",
+            "CLAS 321",
+            "CLAS 322",
+            "CLAS 323",
+            "CLAS 324",
+            "CLAS 325",
+            "CLAS 328",
+            "CLAS 333",
+            "CLAS 336",
+            "CLAS 337gp",
+            "CLAS 338",
+            "CLAS 348g",
+            "CLAS 349gp",
+            "CLAS 371",
+            "CLAS 375",
+            "CLAS 378",
+            "CLAS 390",
+            "CLAS 425",
+            "CLAS 465",
+            "CLAS 485",
+            "CLAS 490x",
+            "COLT 311",
+            "COLT 312",
+            "COLT 391",
+            "COMM 330p",
+            "HIST 303",
+            "HIST 305",
+            "HIST 306",
+            "HIST 314",
+            "HIST 316",
+            "HIST 396",
+            "HIST 401",
+            "HIST 403",
+            "HIST 405",
+            "HIST 479",
+            "LING 466",
+            "PHIL 314",
+            "PHIL 315",
+            "PHIL 411",
+            "PHIL 415",
+            "POSC 370",
+            "REL 302",
+            "REL 325g",
+            "REL 326gp",
+            "REL 327g",
+            "THTR 301"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CLASS-PERSP-ELECTIVES",
+        "source_lines": [
+          [
+            65,
+            130
+          ]
+        ],
+        "source_quote": "Choose at least one course from the following list (4-12 units)",
+        "description": "Choose at least one elective course (4-12 units) from the extensive listed options.",
+        "confidence": "high",
+        "note": "CLAS 310 and CLAS 320gmp also appear in the Core Courses list; each course fills only one slot in the overall 20-unit total."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students choose 20 units from the list below",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The interdisciplinary minor in Classical Perspectives provides immersion",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "allows students to double-count General Education and Thematic Option Honors courses",
+      "reason": "out_of_scope",
+      "why": "Restates a double-counting allowance rather than a distinct requirement; no new course slot to encode."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "No more than 12 units may be taken in any one USC Dornsife department or USC school",
+      "reason": "no_fit",
+      "why": "A cap applying to whichever single department/school a student happens to concentrate in cannot be expressed as a fixed eligible_if/threshold pair; the taxonomy has no mechanism for a per-arbitrary-group max."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "in consultation with a Classics faculty member or staff adviser",
+      "reason": "advisory",
+      "why": "Advising guidance, not a course requirement."
+    }
+  ]
+}

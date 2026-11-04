@@ -1,0 +1,166 @@
+{
+  "program": "Cultural Anthropology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 201g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 263g"
+          }
+        ],
+        "id": "CULTANTH-MIN-INTRO",
+        "source_lines": [
+          [
+            29,
+            36
+          ]
+        ],
+        "source_quote": "One introductory course in preparation for the minor",
+        "description": "One introductory course: ANTH 201g or ANTH 263g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ANTH 440",
+        "id": "CULTANTH-MIN-UPPERDIV",
+        "source_lines": [
+          [
+            38,
+            42
+          ]
+        ],
+        "source_quote": "ANTH 440 History of Anthropological Theory",
+        "description": "Upper-division requirement: ANTH 440.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "ANTH"
+              ]
+            },
+            {
+              "courses": [
+                "ANTH 211",
+                "ANTH 304",
+                "ANTH 325"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                48,
+                48
+              ]
+            ],
+            "source_quote": "of which at least one should be upper division",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ANTH"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "CULTANTH-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            54
+          ]
+        ],
+        "source_quote": "Two ANTH electives are required, of which at least one",
+        "description": "Two Anthropology elective courses (8 units), at least one upper-division (300-499); any ANTH course counts, with specific courses recommended.",
+        "confidence": "high",
+        "note": "Recommended electives (ANTH 211, 304, 325) and the general 'any ANTH course' pool are merged; a course counted elsewhere cannot be reused per the one-slot rule."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Departmental minors are required to take four courses",
+      "reason": "university_level",
+      "why": "Restates the university-wide minor unit/course total already covered by the specific requirements below."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Anthropology is the comparative study of human",
+      "reason": "out_of_scope",
+      "why": "Descriptive marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The Cultural Anthropology minor allows students to",
+      "reason": "out_of_scope",
+      "why": "Programme marketing description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "More information about courses and faculty can",
+      "reason": "out_of_scope",
+      "why": "Contact/informational pointer, not a requirement."
+    }
+  ]
+}

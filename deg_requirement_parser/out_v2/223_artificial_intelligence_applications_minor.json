@@ -1,0 +1,132 @@
+{
+  "program": "Artificial Intelligence Applications Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 259"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 359"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 459"
+          }
+        ],
+        "id": "AIAPP-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "Core Requirements (12 units)",
+        "description": "Three required core courses: TAC 259, TAC 359, TAC 459.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 113x"
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 115"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 116"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 216"
+              },
+              {
+                "family": "manual_review",
+                "kind": "DISCRETIONARY",
+                "details": {
+                  "action": "WAIVE",
+                  "approver": "program",
+                  "requires": "demonstrated prior Python programming experience"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "AIAPP-MINOR-PROGRAMMING",
+        "source_lines": [
+          [
+            35,
+            57
+          ]
+        ],
+        "source_quote": "Choose either the CSCI course or the TAC sequence",
+        "description": "Either CSCI 113x, or the TAC sequence of TAC 115/116 plus TAC 216 (the TAC 115/116 course may be waived with prior Python experience).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "EIS 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 429"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 265g"
+          }
+        ],
+        "id": "AIAPP-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            59,
+            67
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "One elective chosen from EIS 370, TAC 429, or PHIL 265g.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor requires a minimum of 18-20 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

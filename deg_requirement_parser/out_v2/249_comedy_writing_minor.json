@@ -1,0 +1,155 @@
+{
+  "program": "Comedy Writing Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTWR 404"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 400"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 406"
+          }
+        ],
+        "id": "COMEDY-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            37,
+            46
+          ]
+        ],
+        "source_quote": "Foundations in structure, writing, and importance",
+        "description": "Three required foundation courses: CTWR 404, CTWR 400, CTWR 406.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTWR 437"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 457"
+          }
+        ],
+        "id": "COMEDY-MINOR-LONGFORM",
+        "source_lines": [
+          [
+            47,
+            55
+          ]
+        ],
+        "source_quote": "Writing an original feature or television pilot with a comedy focus.",
+        "description": "One 4-unit long-form project from CTWR 437 or CTWR 457.",
+        "confidence": "high",
+        "note": "If used here, CTWR 437/457 cannot also count toward electives (one-slot rule)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTWR 324",
+            "CTWR 407",
+            "CTWR 430",
+            "CTWR 437",
+            "CTWR 438",
+            "CTWR 457",
+            "CTWR 467"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "COMEDY-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            56,
+            68
+          ]
+        ],
+        "source_quote": "Please note repeatable courses.",
+        "description": "8 units of electives chosen from the designated list, some repeatable up to stated maximums.",
+        "confidence": "medium",
+        "note": "Per-course repeat maximums (e.g., 'max 6', 'max 8') are stated in the catalogue but cannot be encoded as thresholds; CTWR 437 and CTWR 457 also appear in the Long-Form Requirement and cannot be double-counted (one-slot rule)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            35,
+            35
+          ]
+        ],
+        "source_quote": "A total of 20 units is required",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Focused on the writing of comedy, students will learn",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "a student must be in good academic standing",
+      "reason": "out_of_scope",
+      "why": "Admission standing and declared-major rule; not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Applications and information about the minor can be",
+      "reason": "out_of_scope",
+      "why": "Contact/application procedure details, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Students with a declared Comedy Writing minor will",
+      "reason": "advisory",
+      "why": "Describes advisement support and d-clearance priority, not a requirement."
+    }
+  ]
+}

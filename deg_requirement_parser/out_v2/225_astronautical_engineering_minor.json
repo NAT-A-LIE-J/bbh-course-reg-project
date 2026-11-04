@@ -1,0 +1,168 @@
+{
+  "program": "Astronautical Engineering Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "ASTE-MIN-PREREQ",
+        "source_lines": [
+          [
+            27,
+            37
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Prerequisite math and physics courses required for the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AME 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 331a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 331b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTE 421x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ASTE 470"
+              },
+              {
+                "family": "specific_course",
+                "course": "ASTE 480"
+              }
+            ]
+          }
+        ],
+        "id": "ASTE-MIN-REQUIRED",
+        "source_lines": [
+          [
+            39,
+            50
+          ]
+        ],
+        "source_quote": "AME 310 Engineering Thermodynamics I Units: 4",
+        "description": "Required astronautical engineering core courses, plus a choice between ASTE 470 and ASTE 480.",
+        "confidence": "high",
+        "note": "Line 25's statement that three courses (9 units) at the 400 level count toward the minor describes ASTE 421x and one of ASTE 470/480 plus one more 400-level course already in this list; it is descriptive and not a separate constraint."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Required course work consists of a minimum of 18 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Including prerequisites, the minor requires 46 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 46
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is for USC students who wish",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The space industry employs a wide variety of",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Three courses, or 9 units, at the 400",
+      "reason": "no_fit",
+      "why": "Describes which required courses are at the 400 level but restates courses already counted; no checkable additional constraint."
+    }
+  ]
+}

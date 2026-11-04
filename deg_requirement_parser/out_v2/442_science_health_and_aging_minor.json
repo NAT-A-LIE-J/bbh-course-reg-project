@@ -1,0 +1,139 @@
+{
+  "program": "Science, Health and Aging Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "4 units of prerequisites (BISC 120 or BISC 121)"
+          ]
+        },
+        "id": "SHA-MIN-GATE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Admission to the minor is only available to",
+        "description": "Admission requires completion of 4 units of prerequisites (BISC 120 or BISC 121) as part of major requirements.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERO 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 414"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "GERO 416"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 496"
+              }
+            ]
+          }
+        ],
+        "id": "SHA-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "GERO 310 Physiology of Aging Units: 4",
+        "description": "GERO 310, GERO 414, and either GERO 416 or GERO 496.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GERO 315g",
+            "GERO 415",
+            "GERO 437",
+            "GERO 440",
+            "GERO 475",
+            "GERO 495"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "SHA-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            43
+          ]
+        ],
+        "source_quote": "Select two from the following:",
+        "description": "Select two courses from the listed GERO elective options.",
+        "confidence": "high",
+        "note": "GERO 440 requires a prerequisite (see L043); not separately checkable, flagged here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            45,
+            45
+          ]
+        ],
+        "source_quote": "Total units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The science, health and aging minor is appropriate",
+      "reason": "advisory",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Upon completion of 20 units and graduation,",
+      "reason": "advisory",
+      "why": "Describes transcript notation, not a requirement."
+    }
+  ]
+}

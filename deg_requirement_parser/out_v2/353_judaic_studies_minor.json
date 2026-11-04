@@ -1,0 +1,95 @@
+{
+  "program": "Judaic Studies Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "REL 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "JS 180"
+          }
+        ],
+        "id": "JS-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The following courses are required: REL 301 and JS 180",
+        "description": "REL 301 and JS 180 are required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "JS 321",
+            "JS 340",
+            "JS 361",
+            "JS 375",
+            "JS 382",
+            "JS 383",
+            "JS 415",
+            "REL 312"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "JS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Three additional courses may be chosen from among",
+        "description": "Three additional courses chosen from the listed JS/REL electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "For the minor, 20 units in Judaic Studies and Religion are required",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Successful completion of five 4-unit courses or the equivalent",
+      "reason": "no_fit",
+      "why": "Restates the five-course/20-unit structure in a way that can't be separately checked beyond the existing course and unit requirements."
+    }
+  ]
+}

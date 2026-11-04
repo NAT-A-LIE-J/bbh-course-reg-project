@@ -1,0 +1,186 @@
+{
+  "program": "Product Management Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MOR 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 453"
+          }
+        ],
+        "id": "PMM-CORE",
+        "source_lines": [
+          [
+            35,
+            37
+          ]
+        ],
+        "source_quote": "Complete both of the following courses:",
+        "description": "Complete MOR 452 and MOR 453.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BAEP 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 445"
+          }
+        ],
+        "id": "PMM-CONSUMER",
+        "source_lines": [
+          [
+            38,
+            40
+          ]
+        ],
+        "source_quote": "Complete one of the following courses focused on understanding the consumer:",
+        "description": "One course focused on understanding the consumer: BAEP 450 or MKT 445.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BAEP 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 433"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 454"
+          }
+        ],
+        "id": "PMM-APPLICATIONS",
+        "source_lines": [
+          [
+            41,
+            45
+          ]
+        ],
+        "source_quote": "Complete one of the following courses focused on applications:",
+        "description": "One course focused on applications: BAEP 452, DSO 433, MKT 451, or MOR 454.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 181g",
+            "ACAD 182",
+            "ACAD 406",
+            "BAEP 423",
+            "BAEP 450",
+            "BAEP 452",
+            "BAEP 453",
+            "BAEP 454",
+            "BAEP 455",
+            "BAEP 465",
+            "BUCO 445",
+            "BUCO 458",
+            "DSCI 250",
+            "DSCI 351",
+            "DSCI 352",
+            "DSO 424",
+            "DSO 427",
+            "DSO 428",
+            "DSO 431",
+            "DSO 433",
+            "DSO 445",
+            "DSO 455",
+            "DSO 458",
+            "DSO 459",
+            "DSO 463",
+            "DSO 464",
+            "MKT 401",
+            "MKT 402",
+            "MKT 405",
+            "MKT 425",
+            "MKT 445",
+            "MKT 450",
+            "MKT 451",
+            "MKT 461",
+            "MOR 451",
+            "MOR 454",
+            "MOR 467",
+            "MOR 469",
+            "MOR 473",
+            "TAC 228",
+            "TAC 249",
+            "TAC 259",
+            "TAC 310",
+            "TAC 348",
+            "TAC 349",
+            "TAC 383",
+            "TAC 388",
+            "TAC 393",
+            "TAC 466",
+            "TAC 476"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PMM-ELECTIVES",
+        "source_lines": [
+          [
+            51,
+            102
+          ]
+        ],
+        "source_quote": "Complete 4 units selected from the following if not completed as a requirement above:",
+        "description": "4 units of electives from the listed courses, not already used to satisfy a required slot.",
+        "confidence": "high",
+        "note": "The 'if not completed as a requirement above' clause restates the one-slot rule; courses already used in required slots cannot double-count here."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "To declare this minor, students must have completed a minimum of 32 units",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit threshold for declaring the minor."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Successful completion of the Product Management Minor requires minimum GPA of 2.0",
+      "reason": "out_of_scope",
+      "why": "GPA requirement, not a course requirement."
+    }
+  ]
+}

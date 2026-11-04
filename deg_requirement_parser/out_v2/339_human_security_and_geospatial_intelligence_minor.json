@@ -1,0 +1,116 @@
+{
+  "program": "Human Security and Geospatial Intelligence Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ENST 100g",
+            "ENST 150gx",
+            "ENST 250",
+            "GEOL 108Lg",
+            "IR 101gxw",
+            "IR 150",
+            "IR 210gw",
+            "IR 211g",
+            "NSC 201",
+            "POSC 100g",
+            "POSC 110g",
+            "POSC 120g",
+            "POSC 130g",
+            "POSC 201w",
+            "POSC 248gw",
+            "POSC 265gw",
+            "SSCI 135g",
+            "SSCI 165Lgw",
+            "SSCI 214g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HSGI-MINOR-LOWER-ELECTIVE",
+        "source_lines": [
+          [
+            32,
+            54
+          ]
+        ],
+        "source_quote": "Lower-Division Elective (4 units)",
+        "description": "One lower-division elective course (4 units) from the listed pool.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "IR 304"
+              },
+              {
+                "family": "specific_course",
+                "course": "IR 319"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 420"
+          }
+        ],
+        "id": "HSGI-MINOR-CORE",
+        "source_lines": [
+          [
+            56,
+            65
+          ]
+        ],
+        "source_quote": "Required Core (16 units)",
+        "description": "IR 304 or IR 319, plus SSCI 202, SSCI 301L, and SSCI 420.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "The minor requires at least 20 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,52 @@
+{
+  "program": "Education and Society Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EDUC 421w"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 426"
+          }
+        ],
+        "id": "EDSOC-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "EDUC 421w Global Issues: Impact on Educational Outcomes",
+        "description": "Complete all four upper-division EDUC courses: EDUC 421w, EDUC 422, EDUC 423 and EDUC 426.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The education and society minor seeks to examine",
+      "reason": "out_of_scope",
+      "why": "Programme description and marketing language, not a requirement."
+    }
+  ]
+}

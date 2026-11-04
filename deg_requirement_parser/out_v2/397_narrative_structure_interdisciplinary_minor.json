@@ -1,0 +1,463 @@
+{
+  "program": "Narrative Structure Interdisciplinary Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COLT 101gp",
+            "COLT 264gp",
+            "CTCS 190g",
+            "CTCS 200g",
+            "CTCS 201",
+            "CTIN 190",
+            "EALC 125g",
+            "ENGL 105x",
+            "ENGL 262g",
+            "ENGL 263g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NSM-LOWER-DIVISION",
+        "source_lines": [
+          [
+            25,
+            40
+          ]
+        ],
+        "source_quote": "Choose one course (4 units) from the following list.",
+        "description": "Choose one lower-division course from the listed list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGL 302"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 301gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 378m"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 385"
+              },
+              {
+                "family": "specific_course",
+                "course": "CLAS 325"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 312"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 324"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 345"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 374gm"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 472"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 475"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 476"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 351"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 352g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 361g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 364"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 372"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 375"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 422"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 426"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 440"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 441"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 442"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 447m"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 461"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 465"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 466"
+              },
+              {
+                "family": "specific_course",
+                "course": "FREN 383"
+              },
+              {
+                "family": "specific_course",
+                "course": "FREN 404"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERM 340"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERM 372g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ITAL 350g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ITAL 381"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 302g"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 303"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 344g"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 345g"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 348g"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 304"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 372"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ANTH 365"
+              },
+              {
+                "family": "specific_course",
+                "course": "ANTH 372"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 375"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 382gw"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 332"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 333g"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 342gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 354g"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 358g"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 380"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 385"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 428"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 452"
+              },
+              {
+                "family": "specific_course",
+                "course": "EALC 455"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 333g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 444m"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 445m"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "FREN 375gmw"
+              },
+              {
+                "family": "specific_course",
+                "course": "MDES 343g"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 380g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 325gw"
+              },
+              {
+                "family": "specific_course",
+                "course": "ANTH 263g"
+              },
+              {
+                "family": "specific_course",
+                "course": "CLAS 337gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 373"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 367"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 392"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 393"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 394"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 407"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 409"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 363g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 371g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 381"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 430"
+              },
+              {
+                "family": "specific_course",
+                "course": "FREN 320g"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERM 360g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ITAL 360g"
+              },
+              {
+                "family": "specific_course",
+                "course": "SLL 346"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 301"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 306"
+              }
+            ]
+          }
+        ],
+        "id": "NSM-UPPER-DIVISION",
+        "source_lines": [
+          [
+            42,
+            158
+          ]
+        ],
+        "source_quote": "Choose four courses (16 units) from the lists below, one from each list.",
+        "description": "ENGL 302 plus one course each from the European/American, Global, and Visual Media lists.",
+        "confidence": "high",
+        "note": "Some courses marked with * or ** require a prerequisite or corequisite; not encoded as separate nodes (see unclassified)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Course Requirements: five courses (20 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "As with all minors, students must choose at least four courses",
+      "reason": "university_level",
+      "why": "Restates the standard university-wide minor uniqueness/outside-major rule handled by the tool."
+    },
+    {
+      "source_lines": [
+        [
+          103,
+          103
+        ]
+      ],
+      "source_quote": "*Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite notice, not a program requirement."
+    },
+    {
+      "source_lines": [
+        [
+          105,
+          105
+        ]
+      ],
+      "source_quote": "**Corequisite required",
+      "reason": "out_of_scope",
+      "why": "Course-level corequisite notice, not a program requirement."
+    }
+  ]
+}

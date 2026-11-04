@@ -1,0 +1,262 @@
+{
+  "program": "Mathematics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 235"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "MATH-BS-PREMAJOR",
+        "source_lines": [
+          [
+            21,
+            36
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Pre-major calculus and linear algebra sequence: MATH 125g, a Calculus II option, a linear algebra option, and a Calculus III option.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 290"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 432"
+          }
+        ],
+        "id": "MATH-BS-LOGIC-ELECTIVE",
+        "source_lines": [
+          [
+            38,
+            46
+          ]
+        ],
+        "source_quote": "A course taken to satisfy this requirement may not also be used",
+        "description": "One logical reasoning elective chosen from MATH 290, MATH 430 or MATH 432.",
+        "confidence": "high",
+        "note": "Course used here cannot also count as an upper-division elective (one-slot rule restated)."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 425a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 425b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 471"
+          }
+        ],
+        "id": "MATH-BS-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            48,
+            57
+          ]
+        ],
+        "source_quote": "The following four courses are required with a grade of C or better",
+        "description": "Four required upper-division math core courses: MATH 410, 425a, 425b, 471.",
+        "confidence": "high",
+        "note": "Grade requirement of C or better is a grade rule, not encoded here (see unclassified)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MATH"
+              ]
+            },
+            {
+              "level_min": 400
+            },
+            {
+              "not": {
+                "courses": [
+                  "MATH 450"
+                ]
+              }
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MATH-BS-UPPERDIV-ELECTIVES",
+        "source_lines": [
+          [
+            59,
+            67
+          ]
+        ],
+        "source_quote": "Four MATH courses are required at the 400-level or above",
+        "description": "Four MATH courses at the 400 level or above, at least 3 units each, excluding MATH 450.",
+        "confidence": "medium",
+        "note": "The 'at least 3 units each' constraint on individual courses cannot be expressed as a threshold; not separately checkable. The suggested list (MATH 435, 440, 475) is advisory, not required."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "ASTR",
+                    "BISC",
+                    "CHEM",
+                    "GEOL",
+                    "HBIO",
+                    "QBIO",
+                    "PHYS",
+                    "CSCI"
+                  ]
+                },
+                {
+                  "unresolved": "acceptable for the Bachelor of Science degree in its respective department, selected in consultation with an adviser"
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                73,
+                73
+              ]
+            ],
+            "source_quote": "At least one of these courses must be upper-division.",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "MATH-BS-SCIENCE-ELECTIVES",
+        "source_lines": [
+          [
+            69,
+            73
+          ]
+        ],
+        "source_quote": "A minimum of 16 units are required, selected in consultation",
+        "description": "At least 16 units of science electives from listed departments, approved for the BS degree, with at least one upper-division.",
+        "confidence": "medium",
+        "note": "Which specific courses are 'acceptable for the Bachelor of Science degree in its respective department' is not enumerable from the catalogue text."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          52,
+          52
+        ]
+      ],
+      "source_quote": "The following four courses are required with a grade of C or better",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    },
+    {
+      "source_lines": [
+        [
+          63,
+          63
+        ]
+      ],
+      "source_quote": "Students contemplating a graduate degree in Mathematics are advised",
+      "reason": "advisory",
+      "why": "Advisory suggestion for students considering graduate study, not a requirement."
+    }
+  ]
+}

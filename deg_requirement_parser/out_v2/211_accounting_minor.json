@@ -1,0 +1,242 @@
+{
+  "program": "Accounting Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "students pursuing the Accounting (BS)"
+        },
+        "id": "ACCT-MINOR-ELIGIBILITY",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "A minor in Accounting is available to students",
+        "description": "The minor is open to all students except those pursuing the Accounting (BS).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 200x"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 203g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 205g"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 303"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 305"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 351"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ECON 351x"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 352"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ECON 352x"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "ACCT-MINOR-ECON-FOUNDATION",
+        "source_lines": [
+          [
+            31,
+            50
+          ]
+        ],
+        "source_quote": "Choose one of the following four options:",
+        "description": "Choose one of four economics/business-foundations options, worth 2-8 units.",
+        "confidence": "high",
+        "note": "Asterisk notes an AP-exam waiver and prerequisite requirements, encoded separately in unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACCT 410x"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 305"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 280"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 281"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACCT 370"
+              },
+              {
+                "family": "specific_course",
+                "course": "ACCT 415x"
+              }
+            ]
+          }
+        ],
+        "id": "ACCT-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            52,
+            69
+          ]
+        ],
+        "source_quote": "Required Courses (12 units)",
+        "description": "Required accounting and finance courses totaling 12 units: an accounting-foundations course, a finance course, and a financial-reporting course, each with alternatives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACCT 405",
+            "ACCT 416",
+            "ACCT 451",
+            "ACCT 462"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "ACCT-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            71,
+            78
+          ]
+        ],
+        "source_quote": "Electives: Complete 4 units from the following:",
+        "description": "Complete 4 units of electives from the listed ACCT courses.",
+        "confidence": "high",
+        "note": "Some listed electives require prerequisites per the catalogue's ** note; not separately encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To be approved for the Accounting minor,",
+      "reason": "out_of_scope",
+      "why": "Admission unit and GPA threshold; grade/GPA rule out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Successful completion of the minor requires at",
+      "reason": "university_level",
+      "why": "Minor unit-count and GPA rule handled by the university-wide minor policy."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "Students who have earned scores of 4 or",
+      "reason": "out_of_scope",
+      "why": "AP-score substitution/waiver rule; substitution caps are out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          86,
+          86
+        ]
+      ],
+      "source_quote": "Prerequisites and/or Corequisite required. Plan carefully.",
+      "reason": "advisory",
+      "why": "General advisory note about prerequisites, not an additional requirement."
+    }
+  ]
+}

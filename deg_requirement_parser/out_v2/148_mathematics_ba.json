@@ -1,0 +1,182 @@
+{
+  "program": "Mathematics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 235"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 290"
+          }
+        ],
+        "id": "MATH-BA-PREMAJOR",
+        "source_lines": [
+          [
+            21,
+            38
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Pre-major sequence: MATH 125g, one of MATH 126g/127/129, one of MATH 225/235, one of MATH 226g/227/229, and MATH 290.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 425a"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 434"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 435"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 440"
+              }
+            ]
+          }
+        ],
+        "id": "MATH-BA-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            44,
+            51
+          ]
+        ],
+        "source_quote": "The following three courses are required with a grade",
+        "description": "MATH 410, MATH 425a, and one of MATH 434/435/440, each with a grade of C or better.",
+        "confidence": "high",
+        "note": "The 'grade of C or better' clause is a grade rule and listed separately in unclassified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MATH"
+              ]
+            },
+            {
+              "level_min": 400
+            },
+            {
+              "not": {
+                "courses": [
+                  "MATH 450"
+                ]
+              }
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "MATH-BA-ELECTIVES",
+        "source_lines": [
+          [
+            57,
+            57
+          ]
+        ],
+        "source_quote": "Three MATH courses are required at the 400-level",
+        "description": "Three MATH electives at the 400 level or above, each at least 3 units, excluding MATH 450.",
+        "confidence": "medium",
+        "note": "The 'at least 3 units each' per-course minimum cannot be expressed by a threshold that only sums total units; flagged here."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          44,
+          44
+        ]
+      ],
+      "source_quote": "The following three courses are required with a grade of C or better",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    },
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "Students contemplating a graduate program in Mathematics",
+      "reason": "advisory",
+      "why": "Advisory recommendation to consult an adviser, not a requirement."
+    }
+  ]
+}

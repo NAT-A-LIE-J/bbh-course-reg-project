@@ -1,0 +1,484 @@
+{
+  "program": "Performance (Piano) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "faculty selection committee screening"
+        },
+        "id": "PIANO-BM-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission requires screening by faculty selection committees per annually published entrance requirements.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "PIANO-BM-CORE-THORNTON",
+        "source_lines": [
+          [
+            82,
+            98
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "Thirteen required core Thornton academic courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPKS 153"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPKS 253"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPKS 353"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPKS 453"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "PIANO-BM-INDIVIDUAL-INSTRUCTION",
+        "source_lines": [
+          [
+            104,
+            115
+          ]
+        ],
+        "source_quote": "Individual Instruction (16 units)",
+        "description": "4 units each of MPKS 153, 253, 353, and 453 piano individual instruction, totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MUEN"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 399
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PIANO-BM-ENSEMBLES",
+        "source_lines": [
+          [
+            117,
+            121
+          ]
+        ],
+        "source_quote": "MUEN Ensemble Electives at the 300-level: two",
+        "description": "Two 1-unit 300-level MUEN ensemble electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPKS 160a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 160b"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPKS 228"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 260a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 260b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 360a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 360b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 431a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 431b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 472a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 472b"
+          }
+        ],
+        "id": "PIANO-BM-PROGRAM-INTENSIVE",
+        "source_lines": [
+          [
+            123,
+            138
+          ]
+        ],
+        "source_quote": "Program Intensive (22 units)",
+        "description": "Required keyboard-specific program intensive courses, including 2 units total of MPKS 228, totaling 22 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "MPGU 145",
+                "MPGU 150",
+                "MPPM 120",
+                "MPPM 240",
+                "MPPM 250",
+                "MPPM 370",
+                "MTEC 245",
+                "MTEC 246",
+                "MTEC 248",
+                "MTEC 249",
+                "MTEC 277x",
+                "MUIN 272x",
+                "MUIN 425",
+                "MUJZ 141a",
+                "MUJZ 150",
+                "MUJZ 218a",
+                "MUJZ 450",
+                "MUSC 255"
+              ]
+            },
+            {
+              "unresolved": "other Contemporary Division courses in consultation with chair and Contemporary Division"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PIANO-BM-CONTEMPORARY-ELECTIVES",
+        "source_lines": [
+          [
+            144,
+            169
+          ]
+        ],
+        "source_quote": "Select four units from the Contemporary Division",
+        "description": "4 units of Contemporary Division electives from the listed courses or others approved by the chair.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "PIANO-BM-GENERAL-ELECTIVES",
+        "source_lines": [
+          [
+            171,
+            173
+          ]
+        ],
+        "source_quote": "General Electives (16 units)",
+        "description": "16 units of unrestricted general electives.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "Senior Recital completed under approved faculty supervision"
+            }
+          }
+        ],
+        "id": "PIANO-BM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            41
+          ],
+          [
+            175,
+            181
+          ]
+        ],
+        "source_quote": "Young Artist Project",
+        "description": "Capstone requirement consisting of MUSC 480, MUSC 481, and a faculty-supervised senior recital (0 units).",
+        "confidence": "medium",
+        "note": "Recital has no checkable unit or course pool; encoded as manual_review."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            183,
+            183
+          ]
+        ],
+        "source_quote": "Total Required For Degree: 132",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 132
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All USC Thornton undergraduate programs in classical",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/overview text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Specific entrance requirements are reviewed on an",
+      "reason": "advisory",
+      "why": "Points to externally published info, not a checkable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "General Education requirements are a university-wide rule administered via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          81
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE category and writing requirements are university-wide, handled outside this programme's tree."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          37
+        ]
+      ],
+      "source_quote": "During the junior and senior years of the",
+      "reason": "out_of_scope",
+      "why": "Descriptive narrative of Young Artist Project already covered by MUSC 480/481 courses."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "The faculty of the department of the student's",
+      "reason": "out_of_scope",
+      "why": "Procedural detail about who determines recital requirements, not itself a student requirement."
+    },
+    {
+      "source_lines": [
+        [
+          187,
+          187
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "advisory",
+      "why": "Planning note about GE overlap, not an independent requirement."
+    }
+  ]
+}

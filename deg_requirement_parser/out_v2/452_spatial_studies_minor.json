@@ -1,0 +1,134 @@
+{
+  "program": "Spatial Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SSCI 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 382L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 383L"
+          }
+        ],
+        "id": "SPATIAL-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required Courses (12 Units)",
+        "description": "Three required courses: SSCI 301L, SSCI 382L and SSCI 383L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 201g",
+            "ANTH 202g",
+            "ARCH 105aL",
+            "ARCH 105bL",
+            "ARCH 114",
+            "ARCH 220",
+            "BISC 102Lgx",
+            "BISC 140g",
+            "CLAS 212",
+            "GEOL 108Lg",
+            "GEOL 150Lg",
+            "HIST 240gp",
+            "POSC 265gw",
+            "PPD 245g",
+            "SOCI 100gmw",
+            "SOCI 200gm",
+            "SSCI 135g",
+            "SSCI 165Lgw",
+            "SSCI 175gw",
+            "SSCI 214g",
+            "SSCI 220L",
+            "SSCI 265Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SPATIAL-MINOR-LOWER-ELECTIVE",
+        "source_lines": [
+          [
+            31,
+            56
+          ]
+        ],
+        "source_quote": "Lower-Division Electives (4 Units)",
+        "description": "One lower-division elective (4 units) from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 481L",
+            "ARCH 432",
+            "IR 319",
+            "JOUR 422",
+            "PPD 306",
+            "PPD 427L",
+            "SOCI 314Lg",
+            "SSCI 397"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SPATIAL-MINOR-UPPER-ELECTIVE",
+        "source_lines": [
+          [
+            58,
+            69
+          ]
+        ],
+        "source_quote": "Upper-Division Electives (4 Units)",
+        "description": "One upper-division elective (4 units) from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The Spatial Studies minor requires a minimum of 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

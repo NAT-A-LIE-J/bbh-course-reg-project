@@ -1,0 +1,223 @@
+{
+  "program": "Anthropology (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 201g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 263g"
+          }
+        ],
+        "id": "ANTH-BA-INTRO",
+        "source_lines": [
+          [
+            42,
+            50
+          ]
+        ],
+        "source_quote": "One introductory course in preparation for the major, either:",
+        "description": "One introductory course: ANTH 201g or ANTH 263g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 440"
+          }
+        ],
+        "id": "ANTH-BA-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            52,
+            60
+          ]
+        ],
+        "source_quote": "Three upper-division ANTH courses are required for all majors:",
+        "description": "ANTH 410, ANTH 411 and ANTH 440 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "ANTH"
+              ]
+            },
+            {
+              "unresolved": "courses outside ANTH, or study abroad course work, representing an area of world ethnography, approved by adviser or faculty"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 6
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                68,
+                68
+              ]
+            ],
+            "source_quote": "At least one 4-unit lower-division ANTH course (100-299).",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ANTH"
+                  ]
+                },
+                {
+                  "level_min": 100,
+                  "level_max": 299
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                70,
+                70
+              ]
+            ],
+            "source_quote": "At least two 4-unit upper-division ANTH courses (300-499).",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ANTH"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                72,
+                72
+              ]
+            ],
+            "source_quote": "One or more 4-unit courses representing an area of world ethnography",
+            "eligible_if": {
+              "unresolved": "courses representing an area of world ethnography, including non-ANTH and study abroad courses approved by adviser or faculty"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ANTH-BA-ELECTIVES",
+        "source_lines": [
+          [
+            62,
+            125
+          ]
+        ],
+        "source_quote": "Six Anthropology electives, which must include:",
+        "description": "Six ANTH electives (24 units), including at least one lower-division, two upper-division, and one world-ethnography course.",
+        "confidence": "medium",
+        "note": "Recommended course lists (L074-L125) are illustrative, not exhaustive; eligibility is by prefix/level rather than a closed list."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Anthropology majors are required to take 10 courses (40 units) in Anthropology.",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 10
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          36
+        ]
+      ],
+      "source_quote": "Anthropology majors can pursue a focus in a specific area",
+      "reason": "advisory",
+      "why": "Pursuing a focus area is optional, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          40,
+          40
+        ]
+      ],
+      "source_quote": "An academic adviser, or the Anthropology Director of Undergraduate Studies",
+      "reason": "advisory",
+      "why": "Advisory guidance statement, not a requirement."
+    }
+  ]
+}

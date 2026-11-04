@@ -1,0 +1,458 @@
+{
+  "program": "Cognitive Science (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 246Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 301L"
+          }
+        ],
+        "id": "CGSC-BA-CORE",
+        "source_lines": [
+          [
+            37,
+            46
+          ]
+        ],
+        "source_quote": "Core Requirements (Four Courses)",
+        "description": "Four fixed core courses: PHIL 246Lg, PSYC 100Lg, PSYC 274Lg, PSYC 301L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 230Lgx",
+            "CSCI 103L",
+            "HBIO 200Lg",
+            "LING 210g",
+            "LING 275Lg",
+            "LING 285Lg",
+            "LING 301",
+            "LING 302",
+            "PHIL 220",
+            "PHIL 222g",
+            "PHIL 240g",
+            "PHIL 254gp",
+            "PHIL 258g",
+            "PSYC 304L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CGSC-BA-FLEXCORE-TIER1",
+        "source_lines": [
+          [
+            50,
+            71
+          ]
+        ],
+        "source_quote": "Two courses from:",
+        "description": "Two Tier 1 flexible core courses from the given list.",
+        "confidence": "high",
+        "note": "PHIL 220 or PHIL 222g are both eligible list members, not an additional requirement; * marks a prerequisite requirement, not encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 421",
+            "CSCI 170",
+            "CSCI 270",
+            "CSCI 360",
+            "ECON 405",
+            "HBIO 306",
+            "HBIO 308",
+            "LING 385Lg",
+            "LING 405",
+            "LING 406",
+            "LING 407",
+            "LING 412",
+            "PHIL 336",
+            "PHIL 363",
+            "PHIL 462",
+            "PHIL 463",
+            "PHIL 465",
+            "PHIL 470",
+            "PSYC 305",
+            "PSYC 326",
+            "PSYC 336L",
+            "PSYC 339Lg",
+            "PSYC 422",
+            "PSYC 423",
+            "PSYC 424",
+            "PSYC 425",
+            "PSYC 433",
+            "PSYC 440",
+            "PSYC 450",
+            "PSYC 454"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "CGSC-BA-FLEXCORE-TIER2",
+        "source_lines": [
+          [
+            73,
+            110
+          ]
+        ],
+        "source_quote": "Three courses from:",
+        "description": "Three Tier 2 flexible core courses from the given list.",
+        "confidence": "high",
+        "note": "* marks a prerequisite requirement, not encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 230Lgx",
+            "BISC 421",
+            "BISC 424",
+            "CGSC 490x",
+            "CGSC 498",
+            "CSCI 103L",
+            "CSCI 104L",
+            "CSCI 113x",
+            "CSCI 114x",
+            "CSCI 170",
+            "CSCI 270",
+            "CSCI 360",
+            "ECON 405",
+            "HBIO 200Lg",
+            "HBIO 306",
+            "HBIO 308",
+            "HBIO 406",
+            "LING 210g",
+            "LING 275Lg",
+            "LING 285Lg",
+            "LING 301",
+            "LING 302",
+            "LING 307",
+            "LING 405",
+            "LING 406",
+            "LING 407",
+            "LING 412",
+            "LING 415",
+            "LING 450",
+            "LING 486",
+            "LING 487",
+            "PHIL 220",
+            "PHIL 222g",
+            "PHIL 240g",
+            "PHIL 254gp",
+            "PHIL 258g",
+            "PHIL 336",
+            "PHIL 363",
+            "PHIL 385",
+            "PHIL 422",
+            "PHIL 423",
+            "PHIL 427",
+            "PHIL 428",
+            "PHIL 450",
+            "PHIL 452",
+            "PHIL 462",
+            "PHIL 463",
+            "PHIL 465",
+            "PHIL 470",
+            "PHIL 486",
+            "PSYC 215Lg",
+            "PSYC 304L",
+            "PSYC 305",
+            "PSYC 314L",
+            "PSYC 320",
+            "PSYC 326",
+            "PSYC 336L",
+            "PSYC 339Lg",
+            "PSYC 360",
+            "PSYC 421L",
+            "PSYC 422",
+            "PSYC 423",
+            "PSYC 424",
+            "PSYC 425",
+            "PSYC 428",
+            "PSYC 433",
+            "PSYC 434",
+            "PSYC 436",
+            "PSYC 438",
+            "PSYC 440",
+            "PSYC 450",
+            "PSYC 452",
+            "PSYC 454",
+            "TAC 115",
+            "TAC 116",
+            "TAC 310"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "CGSC-BA-ELECTIVES",
+        "source_lines": [
+          [
+            116,
+            197
+          ]
+        ],
+        "source_quote": "Electives (Three Courses)",
+        "description": "Three elective courses from the given list.",
+        "confidence": "high",
+        "note": "Students focusing on Computer Science should also take CSCI 103L and CSCI 104L (advisory, not a separate requirement). A course listed in multiple categories can only be applied once (one-slot rule); courses used elsewhere are not re-counted here."
+      },
+      {
+        "source_lines": [
+          [
+            196,
+            197
+          ]
+        ],
+        "source_quote": "Students may not complete more than one of the following courses",
+        "eligible_if": {
+          "courses": [
+            "TAC 115",
+            "TAC 116",
+            "CSCI 103L",
+            "CSCI 113x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 1
+          }
+        ],
+        "id": "CGSC-BA-TAC-CSCI-CAP",
+        "description": "No more than one of TAC 115, TAC 116, CSCI 103L, CSCI 113x may be completed.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            209,
+            209
+          ]
+        ],
+        "source_quote": "Students must choose a minimum of 16 upper-division units",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 300
+            },
+            {
+              "courses": [
+                "BISC 421",
+                "CSCI 170",
+                "CSCI 270",
+                "CSCI 360",
+                "ECON 405",
+                "HBIO 306",
+                "HBIO 308",
+                "LING 385Lg",
+                "LING 405",
+                "LING 406",
+                "LING 407",
+                "LING 412",
+                "PHIL 336",
+                "PHIL 363",
+                "PHIL 462",
+                "PHIL 463",
+                "PHIL 465",
+                "PHIL 470",
+                "PSYC 305",
+                "PSYC 326",
+                "PSYC 336L",
+                "PSYC 339Lg",
+                "PSYC 422",
+                "PSYC 423",
+                "PSYC 424",
+                "PSYC 425",
+                "PSYC 433",
+                "PSYC 440",
+                "PSYC 450",
+                "PSYC 454",
+                "BISC 230Lgx",
+                "BISC 424",
+                "CGSC 490x",
+                "CGSC 498",
+                "CSCI 103L",
+                "CSCI 104L",
+                "CSCI 113x",
+                "CSCI 114x",
+                "HBIO 200Lg",
+                "HBIO 406",
+                "LING 210g",
+                "LING 275Lg",
+                "LING 285Lg",
+                "LING 301",
+                "LING 302",
+                "LING 307",
+                "LING 415",
+                "LING 450",
+                "LING 486",
+                "LING 487",
+                "PHIL 220",
+                "PHIL 222g",
+                "PHIL 240g",
+                "PHIL 254gp",
+                "PHIL 258g",
+                "PHIL 385",
+                "PHIL 422",
+                "PHIL 423",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 450",
+                "PHIL 452",
+                "PHIL 486",
+                "PSYC 215Lg",
+                "PSYC 304L",
+                "PSYC 314L",
+                "PSYC 320",
+                "PSYC 360",
+                "PSYC 421L",
+                "PSYC 428",
+                "PSYC 434",
+                "PSYC 436",
+                "PSYC 438",
+                "PSYC 452",
+                "TAC 115",
+                "TAC 116",
+                "TAC 310"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          29
+        ]
+      ],
+      "source_quote": "The cognitive science major with honors requires the student",
+      "reason": "out_of_scope",
+      "why": "Optional honors distinction with GPA and grade requirements; grade/GPA rules are Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Intent to complete the cognitive science major with honors",
+      "reason": "advisory",
+      "why": "Procedural advising note about registering intent, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "Students are encouraged to refer to the suggested",
+      "reason": "advisory",
+      "why": "Recommendation to consult tracks/adviser, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          196,
+          196
+        ]
+      ],
+      "source_quote": "Note: Students that are interested in focusing on",
+      "reason": "advisory",
+      "why": "Advisory note about which CSCI courses to take for a CS focus."
+    },
+    {
+      "source_lines": [
+        [
+          196,
+          196
+        ]
+      ],
+      "source_quote": "units from these courses are outside of the",
+      "reason": "university_level",
+      "why": "College unit-counting rule about non-Dornsife units."
+    },
+    {
+      "source_lines": [
+        [
+          205,
+          205
+        ]
+      ],
+      "source_quote": "Total units: 46–48",
+      "reason": "university_level",
+      "why": "Overall program unit total, derived from component requirements."
+    },
+    {
+      "source_lines": [
+        [
+          209,
+          209
+        ]
+      ],
+      "source_quote": "A course that is listed in multiple categories can",
+      "reason": "out_of_scope",
+      "why": "Restates the one-slot rule; already handled by not double-counting courses across lists."
+    },
+    {
+      "source_lines": [
+        [
+          211,
+          403
+        ]
+      ],
+      "source_quote": "Suggested Tracks",
+      "reason": "advisory",
+      "why": "Tracks are suggestions only, not required and not declared on transcript."
+    }
+  ]
+}

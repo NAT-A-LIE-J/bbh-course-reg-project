@@ -1,0 +1,332 @@
+{
+  "program": "Linguistics and East Asian Languages and Cultures (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "LING 210g",
+        "id": "LEALC-LOWER-DIV",
+        "source_lines": [
+          [
+            21,
+            25
+          ]
+        ],
+        "source_quote": "LING 210g Introduction to Linguistics Units: 4 is required",
+        "description": "LING 210g is required for the lower division.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LING 301",
+            "LING 302",
+            "LING 303",
+            "LING 415"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LEALC-LING-CORE",
+        "source_lines": [
+          [
+            31,
+            38
+          ]
+        ],
+        "source_quote": "Two courses from",
+        "description": "Two courses from LING 301, 302, 303, or 415.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LING 380",
+            "LING 401",
+            "LING 402",
+            "LING 403",
+            "LING 405",
+            "LING 406",
+            "LING 407",
+            "LING 410",
+            "LING 466",
+            "LING 485"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LEALC-LING-UPPER",
+        "source_lines": [
+          [
+            40,
+            53
+          ]
+        ],
+        "source_quote": "Two courses from",
+        "description": "Two courses from a list of upper-division LING electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 304",
+            "EALC 306",
+            "EALC 315",
+            "EALC 317",
+            "EALC 320",
+            "EALC 322",
+            "EALC 400",
+            "EALC 402",
+            "EALC 406",
+            "EALC 407",
+            "EALC 413",
+            "EALC 415",
+            "EALC 417",
+            "EALC 422",
+            "EALC 424",
+            "EALC 426"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LEALC-EALC-LANGUAGE",
+        "source_lines": [
+          [
+            55,
+            74
+          ]
+        ],
+        "source_quote": "Two courses selected from",
+        "description": "Two advanced EALC language courses from the list (Category IV).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 332",
+            "EALC 335m",
+            "EALC 340gp",
+            "EALC 342gp",
+            "EALC 345",
+            "EALC 350gp",
+            "EALC 352g",
+            "EALC 354g",
+            "EALC 355",
+            "EALC 365",
+            "EALC 380",
+            "EALC 386",
+            "EALC 452",
+            "EALC 455",
+            "EALC 460"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LEALC-EALC-LITERATURE",
+        "source_lines": [
+          [
+            76,
+            94
+          ]
+        ],
+        "source_quote": "One EALC literature, civilization or thought course from",
+        "description": "One EALC literature, civilization, or thought course from the list (Category V).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "EALC 304",
+                "EALC 306",
+                "EALC 315",
+                "EALC 317",
+                "EALC 320",
+                "EALC 322",
+                "EALC 400",
+                "EALC 402",
+                "EALC 406",
+                "EALC 407",
+                "EALC 413",
+                "EALC 415",
+                "EALC 417",
+                "EALC 422",
+                "EALC 424",
+                "EALC 426",
+                "EALC 332",
+                "EALC 335m",
+                "EALC 340gp",
+                "EALC 342gp",
+                "EALC 345",
+                "EALC 350gp",
+                "EALC 352g",
+                "EALC 354g",
+                "EALC 355",
+                "EALC 365",
+                "EALC 380",
+                "EALC 386",
+                "EALC 452",
+                "EALC 455",
+                "EALC 460"
+              ]
+            },
+            {
+              "unresolved": "EALC courses not listed, approved via petition after consultation with a department adviser"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LEALC-EALC-ADDITIONAL",
+        "source_lines": [
+          [
+            96,
+            100
+          ]
+        ],
+        "source_quote": "Two additional EALC courses from category IV or V",
+        "description": "Two additional EALC courses from category IV or V, or petitioned unlisted courses.",
+        "confidence": "medium",
+        "note": "Petition process for unlisted EALC courses cannot be fully verified; included as unresolved alternative."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 497"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 490x"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "LING"
+                      ]
+                    },
+                    {
+                      "level_min": 400
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "poster presented at the USC UG symposium or at a conference"
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "a summer internship related to the degree"
+            }
+          }
+        ],
+        "id": "LEALC-CAPSTONE",
+        "source_lines": [
+          [
+            102,
+            112
+          ]
+        ],
+        "source_quote": "The Linguistics and East Asian Languages and Cultures major requires a capstone experience",
+        "description": "A capstone fulfilled by a research paper, a conference/symposium poster, or a summer internship.",
+        "confidence": "medium",
+        "note": "Option A's 'Linguistic 400-level course research paper' is not a specific course; encoded as a count over LING 400+ courses."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "HONORS",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "3.5 GPA overall",
+            "LING 497 Honors Thesis with grade B+ or better"
+          ]
+        },
+        "id": "LEALC-HONORS",
+        "source_lines": [
+          [
+            114,
+            118
+          ]
+        ],
+        "source_quote": "The Linguistics and East Asian Languages and Cultures major with honors requires",
+        "description": "Optional honors track requiring 3.5 GPA and LING 497 with a B+ or better.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          118,
+          118
+        ]
+      ],
+      "source_quote": "Intent to complete the major with honors should be registered",
+      "reason": "advisory",
+      "why": "Procedural/registration timing advice for honors, not a course requirement."
+    }
+  ]
+}

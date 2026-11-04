@@ -1,0 +1,349 @@
+{
+  "program": "Chemical Engineering, Biological and Pharmaceutical Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "CHE-BS-WRIT",
+        "source_lines": [
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "ge_category": "GE-A"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "id": "CHE-BS-GE",
+        "source_lines": [
+          [
+            40,
+            44
+          ]
+        ],
+        "source_quote": "General Education Units: 24",
+        "description": "24 units of General Education.",
+        "confidence": "low",
+        "note": "GE category not specified beyond generic GE; treated as unresolved breakdown across categories, encoded as a broad GE check."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          }
+        ],
+        "id": "CHE-BS-CHEM",
+        "source_lines": [
+          [
+            46,
+            57
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4 or",
+        "description": "General chemistry sequence plus organic and physical chemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "CHE-BS-MATH",
+        "source_lines": [
+          [
+            59,
+            71
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Math sequence through Calculus III and Math of Physics and Engineering I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CHE-BS-PHYS",
+        "source_lines": [
+          [
+            73,
+            78
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "Physics sequence: PHYS 151Lg and PHYS 152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHE 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 443"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444cL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 447"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 460L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 485"
+          }
+        ],
+        "id": "CHE-BS-CHE-CORE",
+        "source_lines": [
+          [
+            80,
+            96
+          ]
+        ],
+        "source_quote": "CHE 120 Introduction to Chemical Engineering Units: 4",
+        "description": "Core chemical engineering courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 320Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 330L"
+              }
+            ],
+            "note": "BISC 320Lg also fulfills 4 of the 24 required GE units; not a separate claim."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BISC 300L",
+                "BISC 406L",
+                "BME 406",
+                "BME 410L",
+                "BME 430",
+                "BME 459L",
+                "BPSI 402",
+                "BPSI 403",
+                "CHE 489",
+                "RXRS 407"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "CHE-BPE-EMPHASIS",
+        "source_lines": [
+          [
+            98,
+            119
+          ]
+        ],
+        "source_quote": "Emphasis in Biological and Pharmaceutical Engineering",
+        "description": "Biological and Pharmaceutical Engineering emphasis: one of BISC 320Lg/BISC 330L plus three electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "biological and pharmaceutical engineering (134 units);",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 134
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Sample student schedules are located on the",
+      "reason": "out_of_scope",
+      "why": "Advisory/marketing pointer to sample schedules, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "See also common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "References university-wide common requirements handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA/grade requirement; not encoded per scope rules."
+    }
+  ]
+}

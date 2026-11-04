@@ -1,0 +1,109 @@
+{
+  "program": "Blockchain Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 256"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 356"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 366"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 456"
+          }
+        ],
+        "id": "BLOCKCHAIN-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Required Courses (16 units)",
+        "description": "Four required courses: TAC 256, TAC 356, TAC 366, and TAC 456.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "TAC 256",
+          "after": "TAC 356"
+        },
+        "id": "BLOCKCHAIN-MINOR-SEQ1",
+        "source_lines": [
+          [
+            28,
+            28
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 256",
+        "description": "TAC 256 must be completed before TAC 356.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "TAC 256",
+          "after": "TAC 366"
+        },
+        "id": "BLOCKCHAIN-MINOR-SEQ2",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 256",
+        "description": "TAC 256 must be completed before TAC 366.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "TAC 356 and TAC 366",
+          "after": "TAC 456"
+        },
+        "id": "BLOCKCHAIN-MINOR-SEQ3",
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 356 and TAC 366",
+        "description": "TAC 356 and TAC 366 must be completed before TAC 456.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Blockchain is a way of recording peer-to-peer transactions",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "program": "Applied AI in Business Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DSO 461"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 458"
+          }
+        ],
+        "id": "AIBUS-MIN-REQUIRED",
+        "source_lines": [
+          [
+            33,
+            41
+          ]
+        ],
+        "source_quote": "Complete the following courses (8 units):",
+        "description": "Complete DSO 461 and MOR 458 (MOR 458 must be taken for 4 units).",
+        "confidence": "high",
+        "note": "MOR 458 is offered for 2 or 4 units, but line 41 specifies 4 units are required for this program."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUAD 301",
+            "BUCO 436",
+            "BUCO 437",
+            "DSO 431",
+            "DSO 433",
+            "DSO 463",
+            "MKT 333",
+            "MKT 402",
+            "MKT 457",
+            "MOR 454",
+            "MOR 457"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "AIBUS-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            61
+          ]
+        ],
+        "source_quote": "Complete two of the following courses (8 units):",
+        "description": "Complete two elective courses from the approved list, totaling 8 units.",
+        "confidence": "high",
+        "note": "MKT 333 requires a prerequisite not included in this program (L061); BUAD 301's 4-unit version is recommended for this program (L050, advisory)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "Successful completion of the Applied AI in Business minor requires 16 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "To declare this minor, students must have completed a minimum of 32 units",
+      "reason": "out_of_scope",
+      "why": "Admission requirement about prior units completed, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "have a minimum overall GPA of 2.75",
+      "reason": "out_of_scope",
+      "why": "GPA admission requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "with a minimum combined GPA of 2.0 in the courses applied to the minor",
+      "reason": "out_of_scope",
+      "why": "GPA requirement rather than course selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          50,
+          50
+        ]
+      ],
+      "source_quote": "(4-unit version recommended for this program)",
+      "reason": "advisory",
+      "why": "A recommendation about which unit version of BUAD 301 to take, not a strict requirement."
+    }
+  ]
+}

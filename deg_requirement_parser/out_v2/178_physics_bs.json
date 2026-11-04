@@ -1,0 +1,253 @@
+{
+  "program": "Physics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 114xg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "other 4-unit quantitative STEM course not already required"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 162L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 163L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 190"
+          }
+        ],
+        "id": "PHYS-BS-LOWER",
+        "source_lines": [
+          [
+            23,
+            35
+          ],
+          [
+            56,
+            56
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "Nine lower-division courses including CHEM 105aLg (or an approved substitute), calculus sequence, linear algebra, and the three-course Advanced Principles of Physics sequence plus Physics Discovery Series.",
+        "confidence": "high",
+        "note": "CHEM 105aLg may be substituted by CHEM 115aLg, CHEM 105bL, MATH 114xg, MATH 208x, or another unspecified 4-unit quantitative STEM course not already required (line 56)."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 316"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408b"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438b"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 440"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "PHYS"
+                      ]
+                    },
+                    {
+                      "level_min": 400,
+                      "level_max": 499
+                    },
+                    {
+                      "not": {
+                        "courses": [
+                          "PHYS 408a",
+                          "PHYS 408b",
+                          "PHYS 438a",
+                          "PHYS 438b",
+                          "PHYS 440",
+                          "PHYS 492L",
+                          "PHYS 493L"
+                        ]
+                      }
+                    },
+                    {
+                      "unresolved": "any 4-unit 400-level Physics course not already listed, excluding seminar and directed research courses"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 492L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 493L"
+          }
+        ],
+        "id": "PHYS-BS-UPPER",
+        "source_lines": [
+          [
+            37,
+            50
+          ],
+          [
+            57,
+            57
+          ]
+        ],
+        "source_quote": "MATH 445 Mathematics of Physics and Engineering",
+        "description": "Ten upper-division courses including MATH 445, core PHYS 304/316/408ab/438ab, PHYS 440 (or an approved 400-level Physics substitute excluding seminar and directed research courses), PHYS 492L and PHYS 493L.",
+        "confidence": "high",
+        "note": "PHYS 440 may be substituted by any other 4-unit 400-level Physics course not already listed, except seminar and directed research courses (line 57); the exclusion cannot be fully checked from a course list."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            52,
+            52
+          ]
+        ],
+        "source_quote": "Total units: 76",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 76
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          59,
+          59
+        ]
+      ],
+      "source_quote": "For those wishing to pursue an honors degree, a senior thesis",
+      "reason": "out_of_scope",
+      "why": "Optional honors thesis requirement, not part of base degree requirements."
+    },
+    {
+      "source_lines": [
+        [
+          59,
+          59
+        ]
+      ],
+      "source_quote": "Students who maintain a GPA of at least 3.5",
+      "reason": "out_of_scope",
+      "why": "GPA-based honors distinction is a grade rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is intended primarily for students who",
+      "reason": "advisory",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

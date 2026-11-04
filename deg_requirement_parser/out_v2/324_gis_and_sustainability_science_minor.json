@@ -1,0 +1,91 @@
+{
+  "program": "GIS and Sustainability Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "SSCI 165Lgw",
+            "SSCI 175gw",
+            "SSCI 265Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "GIS-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            27,
+            35
+          ]
+        ],
+        "source_quote": "Choose one of the following courses:",
+        "description": "Choose one lower-division elective course from a list of three.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SSCI 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 382L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 383L"
+          }
+        ],
+        "id": "GIS-MINOR-CORE",
+        "source_lines": [
+          [
+            37,
+            45
+          ]
+        ],
+        "source_quote": "Complete all of the following courses:",
+        "description": "Complete three named core courses in GIS methods.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SSCI 402"
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": "Core Requirements courses",
+              "after": "SSCI 402"
+            }
+          }
+        ],
+        "id": "GIS-MINOR-CAPSTONE",
+        "source_lines": [
+          [
+            47,
+            53
+          ]
+        ],
+        "source_quote": "Complete the following course after finishing core requirements:",
+        "description": "Complete the capstone course SSCI 402 after finishing the core requirements.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

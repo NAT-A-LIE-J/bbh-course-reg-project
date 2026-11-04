@@ -1,0 +1,186 @@
+{
+  "program": "Choreography for Stage and Screen Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DANC 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 280g"
+          }
+        ],
+        "id": "CHOR-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "Required Lower-Division Courses (7 units)",
+        "description": "Three required lower-division courses: DANC 150, DANC 170, DANC 280g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "DANC 363g",
+        "id": "CHOR-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            33,
+            37
+          ]
+        ],
+        "source_quote": "Required Upper-Division Course (4 units)",
+        "description": "Required upper-division course DANC 363g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARTL 310",
+            "DANC 103",
+            "DANC 107",
+            "DANC 140",
+            "DANC 143",
+            "DANC 155",
+            "DANC 172",
+            "DANC 175",
+            "DANC 177",
+            "DANC 190",
+            "DANC 191",
+            "DANC 212g",
+            "DANC 285",
+            "DANC 302g",
+            "DANC 305g",
+            "DANC 308g",
+            "DANC 312gw",
+            "DANC 333gw",
+            "DANC 342gp",
+            "DANC 347",
+            "DANC 349",
+            "DANC 350",
+            "DANC 355",
+            "DANC 362",
+            "DANC 370",
+            "DANC 372",
+            "DANC 399",
+            "DANC 432",
+            "DANC 442",
+            "DANC 483",
+            "DANC 490x",
+            "DANC 495",
+            "DANC 499",
+            "DANC 180",
+            "DANC 181a",
+            "DANC 181b",
+            "DANC 181c",
+            "DANC 183a",
+            "DANC 183b",
+            "DANC 183c",
+            "DANC 183d",
+            "DANC 184a",
+            "DANC 184b",
+            "DANC 184c",
+            "DANC 184d",
+            "DANC 185a",
+            "DANC 185b",
+            "DANC 186",
+            "DANC 187",
+            "DANC 188a",
+            "DANC 188b",
+            "DANC 189a",
+            "DANC 189b",
+            "DANC 189c"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 7
+          }
+        ],
+        "id": "CHOR-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            76
+          ],
+          [
+            78,
+            104
+          ]
+        ],
+        "source_quote": "Elective Courses (7 units)",
+        "description": "7 units of elective courses from the listed Dance/Arts electives, including the Dance Technique Courses list.",
+        "confidence": "high",
+        "note": "DANC 180-189c (L052) is a placeholder for the individually listed technique courses in the Dance Technique Courses section (L084-L104); both are merged into one eligible list to avoid double counting."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            106,
+            106
+          ]
+        ],
+        "source_quote": "Total Units Required: 18",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students must be in good academic standing to be admitted.",
+      "reason": "out_of_scope",
+      "why": "Academic standing / admission rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "No previous dance experience is required.",
+      "reason": "advisory",
+      "why": "Informational statement, not a requirement to encode."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Students with previous dance experience may place into intermediate",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver procedure for technique courses, not a course-selection requirement."
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "program": "Industrial and Systems Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "ISE-BS-WRITING",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340 composition/writing requirement.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 126g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 129"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 226g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 229"
+                  }
+                ]
+              }
+            ],
+            "id": "ISE-BS-MATH",
+            "source_lines": [
+              [
+                43,
+                55
+              ]
+            ],
+            "source_quote": "MATH 125g Calculus I Units: 4",
+            "description": "Calculus I, Calculus II (or engineering variant), Linear Algebra, and Calculus III (or engineering variant).",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ],
+            "id": "ISE-BS-PHYSICS",
+            "source_lines": [
+              [
+                57,
+                62
+              ]
+            ],
+            "source_quote": "PHYS 151Lg Fundamentals of Physics I",
+            "description": "Physics I and Physics II.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 103Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 104Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 230Lgx"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 205Lgx"
+              }
+            ],
+            "id": "ISE-BS-BIOLOGY-ELECTIVE",
+            "source_lines": [
+              [
+                64,
+                71
+              ]
+            ],
+            "source_quote": "BISC 103Lgx General Biology for the Environment",
+            "description": "One biology elective course from a list of four.",
+            "confidence": "high",
+            "note": "Satisfies GE Category D (L121)."
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MASC 110L"
+              }
+            ],
+            "id": "ISE-BS-CHEMISTRY-ELECTIVE",
+            "source_lines": [
+              [
+                73,
+                79
+              ]
+            ],
+            "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+            "description": "One chemistry (or materials science) elective course from a list of three.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "ISE-BS-PREMAJOR",
+        "source_lines": [
+          [
+            39,
+            79
+          ]
+        ],
+        "source_quote": "### Math Requirement",
+        "description": "Pre-major requirements in math, physics, biology, and chemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGR 102"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 220"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 315L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 370L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 382"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 435L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 495ax"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 495bx"
+          }
+        ],
+        "id": "ISE-BS-MAJOR-CORE",
+        "source_lines": [
+          [
+            81,
+            108
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "Core engineering and ISE department courses required for the major.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "unresolved": "ISE Approved Electives (no list given)"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "ISE-BS-MAJOR-ELECTIVES",
+        "source_lines": [
+          [
+            110,
+            115
+          ]
+        ],
+        "source_quote": "ISE Approved Electives Units: 8",
+        "description": "8 units of ISE-approved electives and 8 units of free electives.",
+        "confidence": "medium",
+        "note": "No list of ISE Approved Electives is given, so it is encoded as unresolved."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The requirement for the degree is 128 units.",
+      "reason": "university_level",
+      "why": "University-wide total unit count."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "Grade/GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          37
+        ]
+      ],
+      "source_quote": "General Education [*] Units: 20",
+      "reason": "university_level",
+      "why": "General education requirement handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          117,
+          117
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "Restates the university-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          121,
+          121
+        ]
+      ],
+      "source_quote": "GE Category D is fulfilled by Biology Elective",
+      "reason": "university_level",
+      "why": "GE category mapping, handled by STARS, not a major requirement."
+    },
+    {
+      "source_lines": [
+        [
+          123,
+          123
+        ]
+      ],
+      "source_quote": "GE Category E is fulfilled by PHYS 151",
+      "reason": "university_level",
+      "why": "GE category mapping, handled by STARS, not a major requirement."
+    },
+    {
+      "source_lines": [
+        [
+          125,
+          125
+        ]
+      ],
+      "source_quote": "GE Category F is fulfilled by MATH 125",
+      "reason": "university_level",
+      "why": "GE category mapping, handled by STARS, not a major requirement."
+    }
+  ]
+}

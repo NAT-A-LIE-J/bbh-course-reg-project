@@ -1,0 +1,156 @@
+{
+  "program": "Law and Biopharmaceutical Sciences Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 412"
+          }
+        ],
+        "id": "LAWBPS-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "8 units",
+        "description": "Required courses LAW 210p and RXRS 412 (8 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 211",
+            "LAW 306",
+            "LAW 350",
+            "LAW 407"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "LAWBPS-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            45
+          ]
+        ],
+        "source_quote": "Minimum of 4 units or a maximum of 8 units",
+        "description": "4 to 8 units of Law electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BPSI 406",
+            "BPSI 407",
+            "BPSI 410",
+            "BPSI 414",
+            "RXRS 407",
+            "RXRS 413w",
+            "RXRS 414",
+            "RXRS 416",
+            "RXRS 421",
+            "RXRS 422"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "LAWBPS-BPS-ELECTIVES",
+        "source_lines": [
+          [
+            47,
+            62
+          ]
+        ],
+        "source_quote": "Minimum of 4 units or a maximum of 8 units",
+        "description": "4 to 8 units of Biopharmaceutical Sciences electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "must have a declared major to apply"
+        },
+        "id": "LAWBPS-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Only students with a declared major are",
+        "description": "Only students with a declared major are eligible to apply.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor consists of a minimum of 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "At least 16 units must be unique to this minor",
+      "reason": "university_level",
+      "why": "University-wide minor uniqueness rule, handled by the tool."
+    }
+  ]
+}

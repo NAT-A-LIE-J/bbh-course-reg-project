@@ -1,0 +1,385 @@
+{
+  "program": "Business Administration (Risk Management) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "EMPHASIS_ENTRY",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "at least one semester in residence at USC",
+            "credit for ACCT 380 or BUAD 308 or RISK 380"
+          ]
+        },
+        "id": "BRSK-ADMISSION-GATE",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Admission to the emphasis requires sophomore standing, one semester in residence, and credit for one of ACCT 380, BUAD 308, or RISK 380.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "BS in Business Administration majors",
+          "effect": "only one emphasis allowed"
+        },
+        "id": "BRSK-ONE-EMPHASIS",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within the",
+        "description": "Students may only earn one emphasis within the BS in Business Administration degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "Risk Management Minor"
+        },
+        "id": "BRSK-NO-MINOR",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Students pursuing this emphasis are not eligible",
+        "description": "Students pursuing this emphasis cannot also earn the Risk Management Minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BRSK-WRITING",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "Recommendation of a specific WRIT 340 section for BRSK majors is advisory, not encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BRSK-BUSINESS-CORE",
+        "source_lines": [
+          [
+            43,
+            78
+          ]
+        ],
+        "source_quote": "Business Administration majors must complete the business core.",
+        "description": "Complete the Marshall business core courses, including choices between finance, statistics, operations, analytics, and calculus options.",
+        "confidence": "high",
+        "note": "MATH placement/waiver conditions (lines 84, 86) are procedural and not encoded as requirement nodes."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RISK 380",
+            "id": "BRSK-REQUIRED-COURSE",
+            "source_lines": [
+              [
+                92,
+                96
+              ]
+            ],
+            "source_quote": "RISK 380 Introduction to Enterprise Risk Management",
+            "description": "Required course: RISK 380.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "RISK 385",
+                    "RISK 386",
+                    "RISK 387",
+                    "RISK 388"
+                  ]
+                },
+                {
+                  "courses": [
+                    "DSO 427",
+                    "DSO 455",
+                    "FBE 437",
+                    "FBE 443",
+                    "FBE 458",
+                    "FBE 459",
+                    "RISK 498",
+                    "RISK 499"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    104,
+                    104
+                  ]
+                ],
+                "source_quote": "Complete 4-12 units from the following courses:",
+                "eligible_if": {
+                  "courses": [
+                    "RISK 385",
+                    "RISK 386",
+                    "RISK 387",
+                    "RISK 388"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "BRSK-ELECTIVES",
+            "source_lines": [
+              [
+                98,
+                118
+              ]
+            ],
+            "source_quote": "Complete at least 12 units of electives.",
+            "description": "At least 12 units of electives, with at least 4 units from the RISK 385-388 list and remaining units from the additional list.",
+            "confidence": "medium",
+            "note": "Line 119 notes a prerequisite outside the major for some electives; not checkable, not encoded."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                33,
+                33
+              ]
+            ],
+            "source_quote": "at least 16 upper-division units in the area",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          }
+        ],
+        "id": "BRSK-EMPHASIS",
+        "source_lines": [
+          [
+            88,
+            118
+          ]
+        ],
+        "source_quote": "Required Course",
+        "description": "Emphasis requirements: RISK 380 plus at least 12 units of electives, with at least 16 upper-division units total in the emphasis.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students who wish to transfer to this program",
+      "reason": "advisory",
+      "why": "Advises visiting an advising office; not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "To complete the program, students must satisfy",
+      "reason": "university_level",
+      "why": "References overall BS degree requirements and USC GE requirements, handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement/prerequisite waiver conditions, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          86,
+          86
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "out_of_scope",
+      "why": "Exam credit substitution rule, not a direct requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A student declaring the emphasis in Risk Management",
+      "reason": "advisory",
+      "why": "Describes an optional mentorship opportunity, not a requirement."
+    }
+  ]
+}

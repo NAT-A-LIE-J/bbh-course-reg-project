@@ -1,0 +1,143 @@
+{
+  "program": "Law and Public Health Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LAW 200w"
+              },
+              {
+                "family": "specific_course",
+                "course": "LAW 210p"
+              }
+            ]
+          }
+        ],
+        "id": "LPH-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (8 units)",
+        "description": "HP 200 plus either LAW 200w or LAW 210p.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HP 270",
+            "HP 365gmw",
+            "HP 405",
+            "HP 420m",
+            "HP 421",
+            "HP 446"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "LPH-MINOR-HP-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            43
+          ]
+        ],
+        "source_quote": "Health Promotion and Disease Prevention Electives (a minimum of 4 or maximum of 8 units)",
+        "description": "4-8 units of health promotion/disease prevention electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 250w",
+            "LAW 402",
+            "LAW 403",
+            "LAW 406",
+            "LAW 407",
+            "LAW 498"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "LPH-MINOR-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            45,
+            54
+          ]
+        ],
+        "source_quote": "LAW Electives (a minimum of 4 or maximum of 8 units)",
+        "description": "4-8 units of LAW electives.",
+        "confidence": "high",
+        "note": "LAW 498 offered for variable units (1-4); unit threshold applies regardless."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor totals 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Minor in Law and Public Health offers an interdisciplinary foundation",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    }
+  ]
+}

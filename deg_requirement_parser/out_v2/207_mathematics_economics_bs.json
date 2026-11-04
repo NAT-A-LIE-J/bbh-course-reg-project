@@ -1,0 +1,243 @@
+{
+  "program": "Mathematics/Economics (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "MATH 125g",
+        "id": "MATHECON-BS-PREMAJOR",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Pre-major requirement: MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 318"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "note": "Electives must be approved by the program advisers (L087); not separately checkable."
+          }
+        ],
+        "id": "MATHECON-BS-ECON",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics Units: 4",
+        "description": "Five named ECON core courses plus two additional ECON courses at the 400 level or above.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 407"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 408"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 307"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 308"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "MATH"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "note": "Electives must be approved by the program advisers (L087); not separately checkable."
+          }
+        ],
+        "id": "MATHECON-BS-MATH",
+        "source_lines": [
+          [
+            40,
+            62
+          ]
+        ],
+        "source_quote": "MATH 126g Calculus II Units: 4 or",
+        "description": "Calculus II or Enhanced, Linear Algebra or Math of Physics, Calculus III or Enhanced, one of two statistics sequences, plus two more MATH courses at 400+.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "TAC 115"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 165"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 249"
+          }
+        ],
+        "id": "MATHECON-BS-IT",
+        "source_lines": [
+          [
+            64,
+            81
+          ]
+        ],
+        "source_quote": "Two courses required.",
+        "description": "One of TAC 115 or TAC 165, plus TAC 249.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students are required to take seven courses",
+      "reason": "no_fit",
+      "why": "Summary sentence restating the counts already encoded in the detailed sections below."
+    },
+    {
+      "source_lines": [
+        [
+          87,
+          87
+        ]
+      ],
+      "source_quote": "Electives must be approved by the program advisers.",
+      "reason": "out_of_scope",
+      "why": "Discretionary approval requirement on elective courses, not independently checkable."
+    }
+  ]
+}

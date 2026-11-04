@@ -1,0 +1,297 @@
+{
+  "program": "Philosophy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 336"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 337"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 385"
+          }
+        ],
+        "id": "PHIL-MINOR-GATEWAY",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "All minors must take a gateway course",
+        "description": "All minors must take one gateway course from a fixed list of PHIL courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "PHIL 311",
+                "PHIL 314",
+                "PHIL 315",
+                "PHIL 317",
+                "PHIL 320",
+                "PHIL 410",
+                "PHIL 411",
+                "PHIL 415",
+                "PHIL 416",
+                "PHIL 421",
+                "PHIL 422",
+                "PHIL 423",
+                "PHIL 424",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 442",
+                "PHIL 473"
+              ]
+            },
+            {
+              "courses": [
+                "PHIL 337",
+                "PHIL 340",
+                "PHIL 347",
+                "PHIL 361",
+                "PHIL 430",
+                "PHIL 431",
+                "PHIL 437",
+                "PHIL 440",
+                "PHIL 442",
+                "PHIL 443",
+                "PHIL 445",
+                "PHIL 446"
+              ]
+            },
+            {
+              "courses": [
+                "PHIL 336",
+                "PHIL 350",
+                "PHIL 360",
+                "PHIL 362",
+                "PHIL 363",
+                "PHIL 385",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 450",
+                "PHIL 452",
+                "PHIL 460",
+                "PHIL 462",
+                "PHIL 463",
+                "PHIL 465",
+                "PHIL 467",
+                "PHIL 470",
+                "PHIL 480",
+                "PHIL 484",
+                "PHIL 485",
+                "PHIL 486"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                27,
+                27
+              ]
+            ],
+            "source_quote": "Students must take at least one course from each of the three categories",
+            "eligible_if": {
+              "courses": [
+                "PHIL 311",
+                "PHIL 314",
+                "PHIL 315",
+                "PHIL 317",
+                "PHIL 320",
+                "PHIL 410",
+                "PHIL 411",
+                "PHIL 415",
+                "PHIL 416",
+                "PHIL 421",
+                "PHIL 422",
+                "PHIL 423",
+                "PHIL 424",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 442",
+                "PHIL 473"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                27,
+                27
+              ]
+            ],
+            "source_quote": "Students must take at least one course from each of the three categories",
+            "eligible_if": {
+              "courses": [
+                "PHIL 337",
+                "PHIL 340",
+                "PHIL 347",
+                "PHIL 361",
+                "PHIL 430",
+                "PHIL 431",
+                "PHIL 437",
+                "PHIL 440",
+                "PHIL 442",
+                "PHIL 443",
+                "PHIL 445",
+                "PHIL 446"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                27,
+                27
+              ]
+            ],
+            "source_quote": "Students must take at least one course from each of the three categories",
+            "eligible_if": {
+              "courses": [
+                "PHIL 336",
+                "PHIL 350",
+                "PHIL 360",
+                "PHIL 362",
+                "PHIL 363",
+                "PHIL 385",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 450",
+                "PHIL 452",
+                "PHIL 460",
+                "PHIL 462",
+                "PHIL 463",
+                "PHIL 465",
+                "PHIL 467",
+                "PHIL 470",
+                "PHIL 480",
+                "PHIL 484",
+                "PHIL 485",
+                "PHIL 486"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "PHIL-MINOR-DISTRIBUTION",
+        "source_lines": [
+          [
+            23,
+            94
+          ]
+        ],
+        "source_quote": "Students must take at least one course from each of the three categories",
+        "description": "At least one course from each of three distribution categories: History of Philosophy, Ethics/Law/Value Theory, and Systematic Topics.",
+        "confidence": "high",
+        "note": "Some courses (e.g. PHIL 442, PHIL 427, PHIL 428) appear in multiple category lists; one-slot rule applies so a course satisfies only one category slot."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "PHIL"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PHIL-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor in philosophy requires the completion of five philosophy courses",
+        "description": "A fifth philosophy course (beyond the gateway and the three distribution courses) to reach the five-course total.",
+        "confidence": "medium",
+        "note": "Derived arithmetically: 5 total courses minus the 1 gateway and 3 distribution courses required elsewhere; not an explicitly separate sentence."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "at least four of which must be upper-division courses",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

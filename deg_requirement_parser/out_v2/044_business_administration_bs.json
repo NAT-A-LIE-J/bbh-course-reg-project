@@ -1,0 +1,370 @@
+{
+  "program": "Business Administration (Cinematic Arts) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "The program is available to entering freshmen only."
+        },
+        "id": "BCA-BS-FRESHMEN-ONLY",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The program is available to entering freshmen only.",
+        "description": "Admission to this program is restricted to entering freshmen.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                27,
+                27
+              ]
+            ],
+            "source_quote": "Composition/Writing Requirements (8 units)",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "BCA-BS-WRITING",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "Composition/Writing Requirements (8 units)",
+        "description": "WRIT 150 and WRIT 340, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ACCT",
+                    "BAEP",
+                    "BUCO",
+                    "DSO",
+                    "FBE",
+                    "MKT",
+                    "MOR",
+                    "RISK"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                65,
+                65
+              ]
+            ],
+            "source_quote": "Total business units: 60",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 60
+              }
+            ]
+          }
+        ],
+        "id": "BCA-BS-BUSINESS",
+        "source_lines": [
+          [
+            35,
+            65
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units: 3",
+        "description": "Core Marshall business courses plus electives, totaling 60 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 441"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 463"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CNTV 467"
+              },
+              {
+                "family": "specific_course",
+                "course": "CNTV 428"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CTCS 191"
+              },
+              {
+                "family": "specific_course",
+                "course": "CNTV 481"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 385"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 410"
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                96,
+                96
+              ]
+            ],
+            "source_quote": "Total Cinematic Arts units: 24",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 24
+              }
+            ]
+          }
+        ],
+        "id": "BCA-BS-CINEMATIC-ARTS",
+        "source_lines": [
+          [
+            76,
+            96
+          ]
+        ],
+        "source_quote": "CNTV 441 Business and Cinematic Arts Entertainment Practicum",
+        "description": "Required cinematic arts business courses, totaling 24 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            100,
+            100
+          ]
+        ],
+        "source_quote": "Total program units: 84",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 84
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "including USC's General Education requirements",
+      "reason": "university_level",
+      "why": "GE requirement is university-wide and handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled \"Advanced",
+      "reason": "advisory",
+      "why": "Recommendation of a specific section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          73,
+          73
+        ]
+      ],
+      "source_quote": "Placement into MATH 118 is contingent on",
+      "reason": "out_of_scope",
+      "why": "Placement/prerequisite rule for course entry, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          74,
+          74
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A",
+      "reason": "advisory",
+      "why": "Credit/advising note, not a requirement to encode."
+    }
+  ]
+}

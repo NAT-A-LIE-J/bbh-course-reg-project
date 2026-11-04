@@ -1,0 +1,327 @@
+{
+  "program": "Accounting (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 351"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 351x"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 352"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 352x"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "ACCT-BS-FOUNDATION",
+        "source_lines": [
+          [
+            65,
+            94
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units: 3",
+        "description": "Business and accounting foundation courses, with several either/or options.",
+        "confidence": "high",
+        "note": "Placement condition for MATH 118gx (line 100) is a prerequisite note, not a separate requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACCT 371"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACCT 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACCT 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACCT 456"
+          }
+        ],
+        "id": "ACCT-BS-REQUIRED",
+        "source_lines": [
+          [
+            106,
+            114
+          ]
+        ],
+        "source_quote": "ACCT 370 External Financial Reporting Issues Units: 4",
+        "description": "Five required accounting courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACCT 377",
+            "ACCT 405",
+            "ACCT 416",
+            "ACCT 462",
+            "ACCT 470",
+            "ACCT 479",
+            "ACCT 493",
+            "ACCT 494"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ACCT-BS-ELECTIVES",
+        "source_lines": [
+          [
+            120,
+            129
+          ]
+        ],
+        "source_quote": "Complete at least 8 units of upper-division elective",
+        "description": "At least 8 units of upper-division accounting electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The BS, Accounting degree is a 128-unit",
+      "reason": "university_level",
+      "why": "University-wide 128-unit total."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "may complete a maximum of 12 units from",
+      "reason": "out_of_scope",
+      "why": "Admission-related unit cap, not a degree course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Acceptance to the program requires completion of at",
+      "reason": "out_of_scope",
+      "why": "Honors program admission/GPA rules, not core degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Students are required to meet with an",
+      "reason": "out_of_scope",
+      "why": "Advisement procedural requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "all students are encouraged to see an",
+      "reason": "advisory",
+      "why": "Encouragement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          43,
+          43
+        ]
+      ],
+      "source_quote": "A maximum of 64 semester units may",
+      "reason": "university_level",
+      "why": "University-wide transfer credit limit."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "Students may transfer two semesters of introductory",
+      "reason": "out_of_scope",
+      "why": "Transfer credit substitution rule, not a direct degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          53,
+          53
+        ]
+      ],
+      "source_quote": "Students are urged to complete all their",
+      "reason": "advisory",
+      "why": "Urging, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "It requires eight courses in six Core",
+      "reason": "university_level",
+      "why": "General education requirement handled separately via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          101,
+          101
+        ]
+      ],
+      "source_quote": "All prerequisites for business and all accounting",
+      "reason": "out_of_scope",
+      "why": "Grading mode rule, not a course selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "A maximum of 24 units of undergraduate",
+      "reason": "out_of_scope",
+      "why": "Pass/no pass unit limits; grading rule."
+    },
+    {
+      "source_lines": [
+        [
+          100,
+          100
+        ]
+      ],
+      "source_quote": "Placement into MATH 118 is contingent on",
+      "reason": "out_of_scope",
+      "why": "Placement/prerequisite condition, not a degree requirement choice."
+    }
+  ]
+}

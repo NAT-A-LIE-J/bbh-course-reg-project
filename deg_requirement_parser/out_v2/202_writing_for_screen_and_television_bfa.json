@@ -1,0 +1,386 @@
+{
+  "program": "Writing for Screen and Television (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "supplemental application and materials submitted to the program office"
+        },
+        "id": "WST-BFA-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Applicants must submit supplemental application and materials",
+        "description": "Applicants must submit a supplemental application to the program office.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CTPR 290",
+        "id": "WST-BFA-CTPR290",
+        "source_lines": [
+          [
+            31,
+            35
+          ],
+          [
+            75,
+            75
+          ]
+        ],
+        "source_quote": "Undergraduate writing students are required to take CTPR 290",
+        "description": "CTPR 290 Cinematic Communication is required, normally taken in the sophomore year.",
+        "confidence": "high",
+        "note": "Also listed in the Year Two, First Semester schedule (4 or 6 units); counted once per the one-slot rule."
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CNTV 101"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 190g"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 100g"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 120"
+              }
+            ],
+            "id": "WST-BFA-Y1S1",
+            "source_lines": [
+              [
+                41,
+                50
+              ]
+            ],
+            "source_quote": "CNTV 101 Reality Starts Here Units: 2",
+            "description": "Year One, First Semester required courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CTCS 150gw"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 191"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 192mg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 201"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 250"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 321"
+              }
+            ],
+            "id": "WST-BFA-Y1S2",
+            "source_lines": [
+              [
+                54,
+                67
+              ]
+            ],
+            "source_quote": "CTCS 150gw The Cinematic Arts in Society Units: 4",
+            "description": "Year One, Second Semester required courses, including a choice of one introductory CTCS course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CTWR 206a"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 316"
+              }
+            ],
+            "id": "WST-BFA-Y2S1",
+            "source_lines": [
+              [
+                71,
+                79
+              ]
+            ],
+            "source_quote": "CTWR 206a Writing the Screenplay Units: 4",
+            "description": "Year Two, First Semester required courses (CTPR 290 counted under Required Production Courses).",
+            "confidence": "high",
+            "note": "CTPR 290 is listed here again (4 or 6 units); already counted once under WST-BFA-CTPR290."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CTWR 206b"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 437"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 439"
+                  }
+                ]
+              }
+            ],
+            "id": "WST-BFA-Y2S2",
+            "source_lines": [
+              [
+                83,
+                91
+              ]
+            ],
+            "source_quote": "CTWR 206b Writing the Screenplay Units: 4",
+            "description": "Year Two, Second Semester required courses, including a choice of pilot-writing course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CTWR 305"
+              }
+            ],
+            "id": "WST-BFA-Y3S1",
+            "source_lines": [
+              [
+                95,
+                101
+              ]
+            ],
+            "source_quote": "CTWR 305 Advanced Screenwriting: The Relationship Screenplay",
+            "description": "Year Three, First Semester required course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 449"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 453"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 403"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 407"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 411"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 412"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 414"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 417"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 464"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTCS 469"
+                  }
+                ]
+              }
+            ],
+            "id": "WST-BFA-Y3S2",
+            "source_lines": [
+              [
+                105,
+                122
+              ]
+            ],
+            "source_quote": "CTWR 449 Rewriting the Original Dramatic Series Pilot Units: 4",
+            "description": "Year Three, Second Semester: a rewriting course and a CTCS topics course, each a choice from a list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CTWR 418a"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 419a"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 420a"
+              }
+            ],
+            "id": "WST-BFA-Y4S1",
+            "source_lines": [
+              [
+                126,
+                134
+              ]
+            ],
+            "source_quote": "CTWR 418a Senior Thesis Units: 4 or",
+            "description": "Year Four, First Semester: one senior thesis course (part a).",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 418b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 419b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CTWR 420b"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 459a"
+              }
+            ],
+            "id": "WST-BFA-Y4S2",
+            "source_lines": [
+              [
+                138,
+                148
+              ]
+            ],
+            "source_quote": "CTWR 418b Senior Thesis Units: 4 or",
+            "description": "Year Four, Second Semester: senior thesis course (part b, matching part a) plus CTWR 459a.",
+            "confidence": "high",
+            "note": "The catalogue does not state that the Senior Thesis part b must match the part a course chosen; this sequencing is implied but not encoded as a separate check."
+          }
+        ],
+        "id": "WST-BFA-MAJOR",
+        "source_lines": [
+          [
+            37,
+            150
+          ]
+        ],
+        "source_quote": "Four-Year Major Requirements (70 units)",
+        "description": "The prescribed, sequential 70-unit, eight-semester major curriculum in writing for screen and television.",
+        "confidence": "high",
+        "note": "L023 states 70 of the 128 total units are taken in this prescribed sequential order; the total-units figure itself is out of scope."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "A total of 128 units is required for",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement for the degree."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          29
+        ]
+      ],
+      "source_quote": "### General Education Requirements",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          152,
+          179
+        ]
+      ],
+      "source_quote": "Suggested electives in Cinematic Arts include:",
+      "reason": "advisory",
+      "why": "Electives are described as suggested, not a stated required list or count."
+    },
+    {
+      "source_lines": [
+        [
+          180,
+          184
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) must be",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule, out of scope for Phase 1."
+    }
+  ]
+}

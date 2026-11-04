@@ -1,0 +1,162 @@
+{
+  "program": "Social Sciences, with an Emphasis in Psychology (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "PSYC 100",
+        "id": "SSPSY-BA-PSYC100",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The required courses are: PSYC 100",
+        "description": "PSYC 100 is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 114"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 218"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 265"
+          }
+        ],
+        "id": "SSPSY-BA-MATH",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "MATH 114 *,",
+        "description": "MATH 114, or MATH 208, MATH 218, or MATH 265 as a substitute.",
+        "confidence": "high",
+        "note": "Amendment at L023 allows MATH 208, MATH 218 or MATH 265 to substitute for MATH 114."
+      },
+      {
+        "family": "specific_course",
+        "course": "PSYC 274L",
+        "id": "SSPSY-BA-PSYC274L",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "PSYC 274L and eight upper-division courses",
+        "description": "PSYC 274L is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 300,
+              "level_max": 499
+            },
+            {
+              "any": [
+                {
+                  "prefix": [
+                    "PSYC"
+                  ]
+                },
+                {
+                  "unresolved": "department in the social sciences division outside Psychology"
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "including five in the Department of Psychology",
+            "eligible_if": {
+              "prefix": [
+                "PSYC"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "three outside the department but within the division",
+            "eligible_if": {
+              "not": {
+                "prefix": [
+                  "PSYC"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "SSPSY-BA-UPPERDIV",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "eight upper-division courses in departments in the social sciences",
+        "description": "Eight upper-division (300/400) social-science courses, five in Psychology and three outside Psychology but within the social sciences division.",
+        "confidence": "medium",
+        "note": "No specific list of 'social sciences division' departments is given beyond Psychology, so the outside-department pool is unresolved."
+      }
+    ]
+  },
+  "unclassified": []
+}

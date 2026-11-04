@@ -1,0 +1,90 @@
+{
+  "program": "Nonprofits, Philanthropy and Volunteerism Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 371"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 478"
+          }
+        ],
+        "id": "NPV-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "PPD 371 The Nonprofit Sector and the Public Interest",
+        "description": "Three required core courses: PPD 371, PPD 402, PPD 478.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUCO 485",
+            "IR 371",
+            "PPD 318",
+            "PPD 353",
+            "PPD 372m",
+            "PR 455"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NPV-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            33,
+            42
+          ]
+        ],
+        "source_quote": "Electives (select one)",
+        "description": "Select one elective from the listed nonprofit-related courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This four-course minor enables students to learn",
+      "reason": "advisory",
+      "why": "Descriptive overview of the minor, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "This minor is intended for students who",
+      "reason": "advisory",
+      "why": "Programme marketing/intent statement, not a requirement."
+    }
+  ]
+}

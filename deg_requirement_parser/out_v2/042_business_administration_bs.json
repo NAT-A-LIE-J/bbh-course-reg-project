@@ -1,0 +1,336 @@
+{
+  "program": "Business Administration (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "Business Administration majors",
+          "effect": "cannot be combined as an additional major"
+        },
+        "id": "BUAD-BS-NOCOMBO",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The degree cannot be combined as an additional major in Business Administration.",
+        "description": "This degree cannot be combined as an additional major in Business Administration.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BUAD-BS-WRITING",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "A WRIT 340 section recommended for business majors is advisory, not a requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BUAD-BS-CORE",
+        "source_lines": [
+          [
+            35,
+            70
+          ]
+        ],
+        "source_quote": "Business Administration majors must complete the business core.",
+        "description": "The business core: accounting, communication, finance, marketing, statistics, operations, analytics, strategy, business economics and calculus courses.",
+        "confidence": "high",
+        "note": "Placement/waiver conditions for MATH 118gx are not checkable and are listed in unclassified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "ACCT",
+                    "BAEP",
+                    "BUCO",
+                    "DSO",
+                    "FBE",
+                    "FIM",
+                    "MKT",
+                    "MOR",
+                    "RISK"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            {
+              "unresolved": "participation in a Marshall School sponsored international exchange program"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BUAD-BS-ELECTIVES",
+        "source_lines": [
+          [
+            80,
+            85
+          ]
+        ],
+        "source_quote": "Business administration majors must complete 12 units of upper-division elective courses",
+        "description": "12 units of upper-division Marshall electives, or through international exchange participation.",
+        "confidence": "medium",
+        "note": "FIM courses are open only to non-degree FIM certificate students, per L084, but FIM remains listed as an eligible prefix per catalogue text."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ],
+        "id": "BUAD-BS-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            95,
+            99
+          ]
+        ],
+        "source_quote": "The business curriculum allows for 32 units of free electives.",
+        "description": "32 units of free electives with no restriction.",
+        "confidence": "high",
+        "note": "Encouragement to pursue a minor, language study, or study abroad is advisory."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "This degree requires at least 128 units including",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommends a particular WRIT 340 section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          76,
+          76
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement exam/AP score waiver rule, not a checkable course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          78,
+          78
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "out_of_scope",
+      "why": "Exam-based subject credit rule."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          85
+        ]
+      ],
+      "source_quote": "Electives should be selected based on a student's",
+      "reason": "advisory",
+      "why": "Advice on selecting electives, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          91,
+          91
+        ]
+      ],
+      "source_quote": "MATH 118gx , WRIT 150 , WRIT 340",
+      "reason": "out_of_scope",
+      "why": "Letter-grade and residency rules; grade/residency policies are Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          93,
+          93
+        ]
+      ],
+      "source_quote": "In addition to meeting university GPA requirements,",
+      "reason": "out_of_scope",
+      "why": "GPA rule; grade-point requirements are Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          99,
+          99
+        ]
+      ],
+      "source_quote": "Students are strongly encouraged to pursue a minor,",
+      "reason": "advisory",
+      "why": "Encouragement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          105,
+          107
+        ]
+      ],
+      "source_quote": "USC offers more than 150 minors, spanning a",
+      "reason": "advisory",
+      "why": "General descriptive/advisory text about minors, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "program": "Chemistry Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "CHEM-MINOR-GENCHEM",
+        "source_lines": [
+          [
+            25,
+            33
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "General chemistry sequence: CHEM 105a/105b or CHEM 115a/115b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CHEM 300L",
+        "id": "CHEM-MINOR-ANALYTICAL",
+        "source_lines": [
+          [
+            35,
+            39
+          ]
+        ],
+        "source_quote": "CHEM 300L Analytical Chemistry Units: 4",
+        "description": "One-semester analytical chemistry course, CHEM 300L.",
+        "confidence": "high",
+        "note": "Also required for Biology majors per L023, which does not create a new slot."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 325aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 325bL"
+              }
+            ]
+          }
+        ],
+        "id": "CHEM-MINOR-ORGANIC",
+        "source_lines": [
+          [
+            41,
+            45
+          ]
+        ],
+        "source_quote": "CHEM 322aL Organic Chemistry Units: 4",
+        "description": "Organic chemistry sequence: CHEM 322a/322b or CHEM 325a/325b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 426"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 453"
+          }
+        ],
+        "id": "CHEM-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            47,
+            48
+          ]
+        ],
+        "source_quote": "one upper-division chemistry elective in either advanced organic",
+        "description": "One upper-division elective in advanced organic (CHEM 426) or advanced inorganic (CHEM 453) chemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "Biology majors",
+          "courses": [
+            "CHEM 300L",
+            "CHEM 426",
+            "CHEM 453"
+          ]
+        },
+        "id": "CHEM-MINOR-BIOLOGY-ROUTE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Biology majors must take CHEM 300L ,",
+        "description": "Biology majors must take CHEM 300L, CHEM 426 and CHEM 453 instead of the alternate options.",
+        "confidence": "medium",
+        "note": "This routes Biology majors to specific courses already covered by the core and elective slots; no new course slot needed."
+      }
+    ]
+  },
+  "unclassified": []
+}

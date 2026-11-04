@@ -1,0 +1,78 @@
+{
+  "program": "News Media and Society Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "JOUR 200w"
+          },
+          {
+            "family": "specific_course",
+            "course": "JOUR 201"
+          }
+        ],
+        "id": "NMS-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "JOUR 200w The Power and Responsibility of the Press",
+        "description": "Required core courses JOUR 200w and JOUR 201.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 371",
+            "JOUR 300",
+            "JOUR 381",
+            "JOUR 460",
+            "JOUR 463",
+            "JOUR 466m",
+            "JOUR 467",
+            "JOUR 484",
+            "JOUR 488"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "NMS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            46
+          ]
+        ],
+        "source_quote": "Choose 12 units from the following:",
+        "description": "Choose 12 units of electives from the listed journalism and communication courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "Total units: 20",
+      "reason": "university_level",
+      "why": "Total unit count for the minor, derivable from the listed requirements; university-level bookkeeping rather than a new requirement."
+    }
+  ]
+}

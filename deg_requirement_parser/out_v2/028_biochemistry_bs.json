@@ -1,0 +1,442 @@
+{
+  "program": "Biochemistry (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BIOC-BS-INTRO-BISC",
+        "source_lines": [
+          [
+            31,
+            36
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology and Evolution",
+        "description": "Introductory biology sequence: BISC 120Lg & 121Lg, or BISC 220Lg & 221Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 435"
+          }
+        ],
+        "id": "BIOC-BS-BISC-CORE",
+        "source_lines": [
+          [
+            37,
+            40
+          ]
+        ],
+        "source_quote": "BISC 320Lg Molecular Biology Units: 4",
+        "description": "Core biology courses: BISC 320Lg, 330L, 403, 435.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 107Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 108L"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "BIOC-BS-CHEM-INTRO",
+        "source_lines": [
+          [
+            42,
+            49
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "Introductory chemistry sequence choice among three pairs of courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CHEM 300L",
+        "id": "BIOC-BS-CHEM300",
+        "source_lines": [
+          [
+            51,
+            51
+          ]
+        ],
+        "source_quote": "CHEM 300L Analytical Chemistry Units: 4",
+        "description": "Analytical Chemistry requirement.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 325aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 325bL"
+              }
+            ]
+          }
+        ],
+        "id": "BIOC-BS-ORGANIC",
+        "source_lines": [
+          [
+            53,
+            57
+          ]
+        ],
+        "source_quote": "CHEM 322aL Organic Chemistry Units: 4",
+        "description": "Organic Chemistry sequence: CHEM 322aL/322bL or CHEM 325aL/325bL.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 432"
+          }
+        ],
+        "id": "BIOC-BS-PCHEM",
+        "source_lines": [
+          [
+            59,
+            60
+          ]
+        ],
+        "source_quote": "CHEM 430 Physical Chemistry: Thermodynamics and Kinetics",
+        "description": "Physical Chemistry requirement: CHEM 430 or CHEM 432.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          }
+        ],
+        "id": "BIOC-BS-MATH-CORE",
+        "source_lines": [
+          [
+            62,
+            63
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Calculus I and II: MATH 125g and MATH 126g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 305g"
+          }
+        ],
+        "id": "BIOC-BS-MATH-STAT",
+        "source_lines": [
+          [
+            65,
+            67
+          ]
+        ],
+        "source_quote": "MATH 208x Elementary Probability and Statistics Units: 4",
+        "description": "Statistics/Calculus III requirement: MATH 208x, MATH 226g, or QBIO 305g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 135bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ]
+          }
+        ],
+        "id": "BIOC-BS-PHYS",
+        "source_lines": [
+          [
+            69,
+            73
+          ]
+        ],
+        "source_quote": "PHYS 135aLg Physics for the Life Sciences Units: 4",
+        "description": "Physics sequence: PHYS 135aLg/135bL or PHYS 151Lg/152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "BISC",
+                "CHEM"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                79,
+                79
+              ]
+            ],
+            "source_quote": "Students enrolled in BISC 490 are limited to",
+            "eligible_if": {
+              "courses": [
+                "BISC 490"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                79,
+                79
+              ]
+            ],
+            "source_quote": "students enrolled in CHEM 490 may complete up",
+            "eligible_if": {
+              "courses": [
+                "CHEM 490"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                79,
+                79
+              ]
+            ],
+            "source_quote": "No more than two seminars (BISC 460 to",
+            "eligible_if": {
+              "courses": [
+                "BISC 460",
+                "BISC 461",
+                "BISC 462"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "BIOC-BS-ELECTIVES",
+        "source_lines": [
+          [
+            79,
+            79
+          ]
+        ],
+        "source_quote": "Eight units of upper-division, non-core course work",
+        "description": "Eight units of upper-division non-core elective coursework in BISC or CHEM, with per-course limits on BISC 490, CHEM 490, and seminar courses.",
+        "confidence": "medium",
+        "note": "Pool is any BISC/CHEM course at 300+ level not already used as core; specific limits encoded as checks."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The general education, writing, foreign language and diversity",
+      "reason": "university_level",
+      "why": "University/college-wide GE and language requirements repeated on programme page."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students must complete each required course in",
+      "reason": "out_of_scope",
+      "why": "Grade and GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          81,
+          95
+        ]
+      ],
+      "source_quote": "A BS degree with honors in biochemistry is",
+      "reason": "out_of_scope",
+      "why": "Optional honors program with GPA/admission thresholds, not a base degree requirement."
+    }
+  ]
+}

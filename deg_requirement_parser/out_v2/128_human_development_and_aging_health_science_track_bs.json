@@ -1,0 +1,328 @@
+{
+  "program": "Human Development and Aging, Health Science Track (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 120Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 105bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 135aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 135bL"
+          }
+        ],
+        "id": "HDAHS-BS-SCIMATH",
+        "source_lines": [
+          [
+            33,
+            47
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology and",
+        "description": "Nine required science and math courses totaling 36 units.",
+        "confidence": "high",
+        "note": null,
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                47,
+                47
+              ]
+            ],
+            "source_quote": "Total units: 36",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 36
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERO 310"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "GERO 320g"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERO 330"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 414"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 495"
+          }
+        ],
+        "id": "HDAHS-BS-GERO-CORE",
+        "source_lines": [
+          [
+            51,
+            64
+          ]
+        ],
+        "source_quote": "GERO 310 Physiology of Aging Units: 4",
+        "description": "Gerontology upper division core courses: GERO 310, 340, 414, 495, and a choice between GERO 320g or GERO 330.",
+        "confidence": "high",
+        "note": null,
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                64,
+                64
+              ]
+            ],
+            "source_quote": "Total units: 20",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "GERO"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "HDAHS-BS-GERO-ELECTIVES",
+        "source_lines": [
+          [
+            74,
+            74
+          ]
+        ],
+        "source_quote": "Gerontology upper division electives Units: 12",
+        "description": "12 units of upper-division gerontology electives.",
+        "confidence": "medium",
+        "note": "No explicit course list given beyond GERO prefix and level 300+."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "GERO"
+              ]
+            },
+            {
+              "courses": [
+                "ANTH 305",
+                "BISC 480L",
+                "HP 402",
+                "LING 405",
+                "PSYC 100Lg",
+                "PSYC 336L",
+                "PSYC 437",
+                "SOCI 305m",
+                "SOCI 369"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                75,
+                75
+              ]
+            ],
+            "source_quote": "(8 units upper division)",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "HDAHS-BS-GENERAL-ELECTIVES",
+        "source_lines": [
+          [
+            75,
+            75
+          ],
+          [
+            85,
+            97
+          ]
+        ],
+        "source_quote": "General electives in gerontology or related disciplines",
+        "description": "28 units of general electives in gerontology or related disciplines, at least 8 units upper division, drawn from GERO courses or the recommended elective list.",
+        "confidence": "medium",
+        "note": "Recommended General Electives list used as the related-disciplines pool since no other list is given."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "USC students interested in this program will",
+      "reason": "out_of_scope",
+      "why": "GPA admission threshold; grade/GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students entering the program from high schools",
+      "reason": "university_level",
+      "why": "University-wide admission standards rule."
+    },
+    {
+      "source_lines": [
+        [
+          72,
+          72
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "GE requirement handled via STARS/university-wide."
+    },
+    {
+      "source_lines": [
+        [
+          73,
+          73
+        ]
+      ],
+      "source_quote": "Writing Requirement Units: 8",
+      "reason": "university_level",
+      "why": "University-wide writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          81,
+          81
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          103,
+          103
+        ]
+      ],
+      "source_quote": "[*]Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note, not a degree requirement to check."
+    }
+  ]
+}

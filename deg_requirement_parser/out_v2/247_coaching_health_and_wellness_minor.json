@@ -1,0 +1,236 @@
+{
+  "program": "Coaching, Health and Wellness Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHED 162"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHED 163"
+          }
+        ],
+        "id": "CHW-COACHING-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Choose one coaching course:",
+        "description": "Choose one coaching course: PHED 162 or PHED 163.",
+        "confidence": "high",
+        "note": "A course used to satisfy this requirement cannot be double counted as an elective (see L128)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHED 102a",
+            "PHED 102b",
+            "PHED 104a",
+            "PHED 104b",
+            "PHED 105",
+            "PHED 106a",
+            "PHED 106b",
+            "PHED 108",
+            "PHED 110a",
+            "PHED 110b",
+            "PHED 114",
+            "PHED 115",
+            "PHED 117",
+            "PHED 118",
+            "PHED 119",
+            "PHED 120a",
+            "PHED 120b",
+            "PHED 120c",
+            "PHED 121",
+            "PHED 122",
+            "PHED 123",
+            "PHED 124",
+            "PHED 125",
+            "PHED 126",
+            "PHED 127",
+            "PHED 129a",
+            "PHED 129b",
+            "PHED 131",
+            "PHED 132",
+            "PHED 133",
+            "PHED 134",
+            "PHED 135",
+            "PHED 138",
+            "PHED 139a",
+            "PHED 139b",
+            "PHED 140a",
+            "PHED 140b",
+            "PHED 140c",
+            "PHED 143a",
+            "PHED 143b",
+            "PHED 144",
+            "PHED 145",
+            "PHED 148a",
+            "PHED 148b",
+            "PHED 150a",
+            "PHED 150b",
+            "PHED 151a",
+            "PHED 151b",
+            "PHED 152",
+            "PHED 153",
+            "PHED 154a",
+            "PHED 154b",
+            "PHED 155a",
+            "PHED 155b",
+            "PHED 156a",
+            "PHED 156b",
+            "PHED 160",
+            "PHED 161",
+            "PHED 162",
+            "PHED 163",
+            "PHED 165"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                128,
+                128
+              ]
+            ],
+            "source_quote": "No more than 4 units of PHED",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "CHW-ACTIVITY",
+        "source_lines": [
+          [
+            32,
+            98
+          ]
+        ],
+        "source_quote": "Choose at least 2 units from this list:",
+        "description": "At least 2 units from the activity-based PHED course list, with no more than 4 PHED activity units counted overall toward the degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "HBIO 401L",
+        "id": "CHW-CAPSTONE",
+        "source_lines": [
+          [
+            100,
+            104
+          ]
+        ],
+        "source_quote": "HBIO 401L Physiology of Movement Units: 4",
+        "description": "Capstone course: HBIO 401L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HBIO 202Lg",
+            "HBIO 205Lgx",
+            "HBIO 250g",
+            "HBIO 301L",
+            "HBIO 309",
+            "HBIO 441L",
+            "HBIO 442L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                110,
+                110
+              ]
+            ],
+            "source_quote": "a maximum of one course at the 200",
+            "eligible_if": {
+              "level_min": 200,
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "CHW-ELECTIVES",
+        "source_lines": [
+          [
+            106,
+            118
+          ]
+        ],
+        "source_quote": "Choose two courses from this list with a maximum of one course at the 200 level:",
+        "description": "Two courses from the elective list, with at most one at the 200 level.",
+        "confidence": "high",
+        "note": "A coaching course cannot be double counted here (see L128)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            120,
+            120
+          ]
+        ],
+        "source_quote": "Minimum Units: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          128,
+          128
+        ]
+      ],
+      "source_quote": "consult an adviser about course selection",
+      "reason": "advisory",
+      "why": "Advisory statement about consulting an adviser, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "program": "Computer Science/Business Administration (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "computer science or business administration majors",
+          "effect": "cannot be combined as an additional major"
+        },
+        "id": "CSBA-BS-NOCOMBINE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The degree cannot also be combined",
+        "description": "This degree cannot be combined as an additional major in computer science or business administration.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGR 102"
+          }
+        ],
+        "id": "CSBA-BS-ENGR",
+        "source_lines": [
+          [
+            52,
+            56
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy",
+        "description": "Pre-major Engineering requirement: ENGR 102.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          }
+        ],
+        "id": "CSBA-BS-MATH",
+        "source_lines": [
+          [
+            58,
+            65
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I",
+        "description": "Pre-major Mathematics: MATH 125g, and MATH 126g or MATH 129.",
+        "confidence": "high",
+        "note": "Footnote ** marks MATH 125g as satisfying a GE requirement; not separately encoded."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 120Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 121Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 115aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          }
+        ],
+        "id": "CSBA-BS-BASICSCI",
+        "source_lines": [
+          [
+            67,
+            76
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology",
+        "description": "Pre-major Basic Science: one 4-unit course from the listed biology, chemistry or physics options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 310g"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 312g"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 407"
+          }
+        ],
+        "id": "CSBA-BS-STATS",
+        "source_lines": [
+          [
+            82,
+            89
+          ]
+        ],
+        "source_quote": "BUAD 310g Applied Business Statistics",
+        "description": "Statistics and Probability: one course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "EE 141L"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 235"
+          }
+        ],
+        "id": "CSBA-BS-LINALG",
+        "source_lines": [
+          [
+            91,
+            97
+          ]
+        ],
+        "source_quote": "EE 141L Applied Linear Algebra for Engineering",
+        "description": "Linear Algebra: one course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 401"
+          }
+        ],
+        "id": "CSBA-BS-CSCORE",
+        "source_lines": [
+          [
+            99,
+            110
+          ]
+        ],
+        "source_quote": "CSCI 102L Introduction to Programming",
+        "description": "Eight required Computer Science core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 410x"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          }
+        ],
+        "id": "CSBA-BS-BUSCORE",
+        "source_lines": [
+          [
+            112,
+            125
+          ]
+        ],
+        "source_quote": "ACCT 410x Foundations of Accounting",
+        "description": "Required Business courses, with BUAD 311 or BUAD 313 as alternatives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "CSCI"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "CSBA-BS-CSELECTIVE",
+            "source_lines": [
+              [
+                131,
+                137
+              ]
+            ],
+            "source_quote": "Take at least one 4-unit 300- or",
+            "description": "One 300- or 400-level CSCI elective course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ACCT",
+                    "BAEP",
+                    "BUCO",
+                    "BUAD",
+                    "DSO",
+                    "FBE",
+                    "MKT",
+                    "MOR",
+                    "RISK"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "CSBA-BS-BUSELECTIVE",
+            "source_lines": [
+              [
+                139,
+                143
+              ]
+            ],
+            "source_quote": "Take at least four units of 300-",
+            "description": "4 units of 300- or 400-level Marshall School elective courses from the listed prefixes.",
+            "confidence": "medium",
+            "note": "Selection 'in consultation with an adviser' cannot be checked; not encoded."
+          }
+        ],
+        "id": "CSBA-BS-TECHELECTIVES",
+        "source_lines": [
+          [
+            127,
+            143
+          ]
+        ],
+        "source_quote": "Students must take one 4-unit course from",
+        "description": "Technical Electives: one CS elective and one Business elective.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The minimum requirement for the degree is",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better",
+      "reason": "out_of_scope",
+      "why": "Grade rule for core courses."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Courses with a grade of C- or",
+      "reason": "out_of_scope",
+      "why": "Grade/retake rule."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Departmental approval is required in order",
+      "reason": "out_of_scope",
+      "why": "Procedural approval for retaking a course."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Students who do not satisfy the",
+      "reason": "out_of_scope",
+      "why": "Disqualification/academic standing rule."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of",
+      "reason": "out_of_scope",
+      "why": "GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          40
+        ]
+      ],
+      "source_quote": "Composition/Writing Requirements (8 Units)",
+      "reason": "university_level",
+      "why": "University-wide composition/writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          149,
+          149
+        ]
+      ],
+      "source_quote": "WRIT 340 Advanced Writing (Communication for",
+      "reason": "advisory",
+      "why": "Recommendation footnote, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          46
+        ]
+      ],
+      "source_quote": "General Education (24 Units)",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement."
+    },
+    {
+      "source_lines": [
+        [
+          151,
+          151
+        ]
+      ],
+      "source_quote": "Satisfies GE requirement.",
+      "reason": "university_level",
+      "why": "GE satisfaction footnote, university-wide rule."
+    }
+  ]
+}

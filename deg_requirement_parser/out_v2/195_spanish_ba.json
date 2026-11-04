@@ -1,0 +1,157 @@
+{
+  "program": "Spanish (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SPAN 260"
+          },
+          {
+            "family": "manual_review",
+            "kind": "DISCRETIONARY",
+            "details": {
+              "action": "WAIVER",
+              "approver": "department",
+              "requires": [
+                "AP score of 5",
+                "IB HL score of 6 or 7",
+                "SAT subject score of 800",
+                "demonstrated advanced proficiency"
+              ]
+            }
+          }
+        ],
+        "id": "SPAN-BA-LOWERDIV",
+        "source_lines": [
+          [
+            21,
+            25
+          ],
+          [
+            49,
+            49
+          ]
+        ],
+        "source_quote": "SPAN 260 Advanced Spanish: Arts and Sciences Units",
+        "description": "SPAN 260 is required, though a departmental waiver may be requested with qualifying proficiency evidence.",
+        "confidence": "high",
+        "note": "Waiver is discretionary and cannot be verified automatically; the lower-division requirement is still encoded as taking SPAN 260."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SPAN 301"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "SPAN"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "SPAN 301"
+                    ]
+                  }
+                },
+                {
+                  "unresolved": "one other SPAN literature, culture, film course"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "SPAN"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "SPAN-BA-UPPERDIV-THREE",
+        "source_lines": [
+          [
+            27,
+            37
+          ]
+        ],
+        "source_quote": "Three of the following courses (12 Units):",
+        "description": "Three upper-division courses: SPAN 301, one other SPAN literature/culture/film course, and one 400-level SPAN course.",
+        "confidence": "medium",
+        "note": "The specific course pool for the literature/culture/film requirement is not listed in the catalogue."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "SPAN"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "id": "SPAN-BA-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            43
+          ]
+        ],
+        "source_quote": "Five other upper-division SPAN courses.",
+        "description": "Five additional upper-division SPAN courses (20 units), not overlapping courses used in other requirements.",
+        "confidence": "high",
+        "note": "Courses already used for the lower-division or three-course requirements cannot also count here, per the one-slot rule."
+      }
+    ]
+  },
+  "unclassified": []
+}

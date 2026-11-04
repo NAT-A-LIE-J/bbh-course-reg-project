@@ -1,0 +1,239 @@
+{
+  "program": "Design (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 106"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 102"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 213"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 230"
+          }
+        ],
+        "id": "DES-BFA-LOWER-DIVISION",
+        "source_lines": [
+          [
+            25,
+            38
+          ]
+        ],
+        "source_quote": "28 units of lower-division Roski DES courses are required",
+        "description": "Eight named lower-division DES/ART courses totaling 28 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DES 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 322"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 323g"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 332a"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 332b"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 413"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 419"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 432"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 494a"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 494b"
+          }
+        ],
+        "id": "DES-BFA-UPPER-DIVISION",
+        "source_lines": [
+          [
+            40,
+            57
+          ]
+        ],
+        "source_quote": "34 units of upper-division Roski DES courses are required",
+        "description": "Twelve named upper-division DES courses totaling 34 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CRIT 150gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 160g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 350gw"
+          }
+        ],
+        "id": "DES-BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            59,
+            67
+          ]
+        ],
+        "source_quote": "The following Critical Studies courses are required for the BFA",
+        "description": "Three required Critical Studies courses that also satisfy GE categories.",
+        "confidence": "high",
+        "note": "These courses also satisfy up to five GE categories; GE itself is handled separately."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 26
+          }
+        ],
+        "id": "DES-BFA-ELECTIVES",
+        "source_lines": [
+          [
+            69,
+            73
+          ]
+        ],
+        "source_quote": "26 units of electives are required, to be chosen from",
+        "description": "26 units of electives from Roski or non-Roski courses university-wide.",
+        "confidence": "high",
+        "note": "Electives may be clustered to complement a minor; this does not add a course list beyond the general pool."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "including 74 units of DES and CRIT requirements",
+        "eligible_if": {
+          "prefix": [
+            "DES",
+            "CRIT"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 74
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "requires a total of 128 units",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "BFA Design students are encouraged to explore",
+      "reason": "advisory",
+      "why": "Encouragement to explore electives, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students should select electives based on their personal",
+      "reason": "advisory",
+      "why": "Advisory guidance on choosing electives."
+    },
+    {
+      "source_lines": [
+        [
+          75,
+          79
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent",
+      "reason": "university_level",
+      "why": "General education requirements are university-wide and handled via STARS."
+    }
+  ]
+}

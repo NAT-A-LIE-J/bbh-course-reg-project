@@ -1,0 +1,111 @@
+{
+  "program": "International Relations Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "IR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    21,
+                    21
+                  ]
+                ],
+                "source_quote": "including at least one regional course and one 400-level course",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "IR"
+                      ]
+                    },
+                    {
+                      "unresolved": "regional course"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    21,
+                    21
+                  ]
+                ],
+                "source_quote": "including at least one regional course and one 400-level course",
+                "eligible_if": {
+                  "level_min": 400
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "IR-MINOR-REQUIREMENTS",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "IR 210gw International Relations: Introductory Analysis and four upper-division courses",
+        "description": "IR 210gw plus four upper-division IR courses, including at least one regional course and one 400-level course.",
+        "confidence": "medium",
+        "note": "The 'regional course' designation has no defined list in the text; encoded as unresolved within the IR prefix pool."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students planning to minor in international relations should see",
+      "reason": "advisory",
+      "why": "Advisory statement about seeing advisers, not a requirement."
+    }
+  ]
+}

@@ -1,146 +1,156 @@
 # deg_requirement_parser
 
-Module 4A, first stage. Turns USC's prose degree requirements into structured constraint
-records that the degree-plan engine can solve over.
+Module 4A, first stage. Turns USC's prose degree requirements into machine-checkable
+requirement trees, one per programme, and combines them into one file for the whole
+catalogue:
 
-## What's here
+**[`catalogue/usc_degree_requirements_2026_2027.json`](catalogue/usc_degree_requirements_2026_2027.json)**
 
-| File | What it is |
-|---|---|
-| `constraint_taxonomy.md` | The taxonomy: five constraint families, each with a description, its `details` shape, and real catalogue sentences paired with their JSON encoding. Fills the `{{TAXONOMY}}` placeholder in `docs/prompt_v1.txt`. |
-| `run_classifier.py` | Reads a scraped programme `.txt`, builds the prompt, calls the Claude API, writes the raw response and the parsed JSON to `out/`. |
-| `check_results.py` | Validates the output and writes `out/summary.csv`. |
-| `check_taxonomy.py` | Validates every JSON example in the taxonomy against `requirement_schema.json`. Run after any taxonomy edit. |
-| `bip.py`, `check_bip.py`, `golden/` | Converts program JSON to a BIP and runs hand-made students (known pass/fail) through the solver. Reports any requirement that didn't convert. |
-| `eligibility.py` | `is_eligible(eligible_if, course_code)`: does one course meet a condition? True, False or `"unknown"`. |
-| `spot_check.py` | Builds `out/review_sheet.md` for checking the output by hand. See *Reviewing output*. |
-| `out/` | Generated. Raw responses, parsed JSON, run log, summary, review sheet. |
+Code can load that file and answer "does this student's course list meet this programme's
+requirements, and what's left?" without an LLM in the loop. Read [Where it might be
+wrong](#where-it-might-be-wrong) before relying on it.
 
-## Input and output
+> [!NOTE]
+> Generated with Claude (Claude Code), directed by Natalie. The taxonomy, prompt and checks
+> follow Vishal's `FEEDBACK_phase1.md`; every task there is ticked with a note.
 
-Input is Francis's catalogue scrape:
-`catalogue_scraper/data/usc_undergrad_complete_catalogue_2026_2027/programs/*.txt`
+## The pipeline
 
-Output per programme:
-`out/<stem>.response.txt` (raw) and `out/<stem>.json` (parsed).
+```
+catalogue_scraper/data/.../programs/*.txt      Francis's scrape: one file per programme (470)
+        │  run_classifier.py                   numbers the lines, sends each file to Claude with
+        │                                      docs/prompt_v2.txt + constraint_taxonomy.md
+        ▼
+out_v2/<stem>.json                             one requirement tree per programme
+        │  check_results.py                    schema, citations, solver conversion, warnings
+        │  check_bip.py, spot_check.py         right answers for test students; human review
+        ▼
+catalogue/usc_degree_requirements_2026_2027.json   build_catalogue.py: every programme that passes
+```
 
-## Running it
+## The format, in one paragraph
 
-Run everything from this folder with the virtual environment active:
+Each programme is a tree (`requirement_schema.json` is the contract; `constraint_taxonomy.md`
+explains it with real examples). Leaves are `specific_course` ("take MATH 125") or `count`
+("take 12 units of MUSC courses at 300 or above": an `eligible_if` in a fixed vocabulary plus
+`thresholds`). Groups are `all_of` and `choose N`, and they nest, so tracks and "this course
+or that pair" work. `of_which` checks put conditions on courses a node already uses ("of the
+four electives, at least two at 400 level"). Each course fills one slot. Every top-level node
+cites the catalogue lines it encodes (`source_lines`, `source_quote`). Anything not encoded is
+listed in `unclassified` with a reason, so nothing is dropped silently.
+
+## What's in the combined file
+
+```json
+{
+  "catalogue_year": "2026-2027", "model": "claude-sonnet-5", "taxonomy_version": "2026-11-03",
+  "counts": {"programmes_in_catalogue": 470, "classified": 470, "included": 0, "not_included": 0},
+  "programmes": [
+    {"stem": "102_economics_ba", "name": "Economics (BA)", "credential": "BA",
+     "catalogue_url": "https://catalogue.usc.edu/preview_program.php?catoid=22&poid=31776",
+     "content_sha256": "37d5dc19…",
+     "requirements": {"program": "Economics (BA)", "status": "ok", "root": {"all_of": []}, "unclassified": []},
+     "review": {"unresolved_terms": 0, "needs_data": [], "not_checked_by_code": [],
+                "unclassified_by_reason": {"no_fit": 0, "out_of_scope": 1, "university_level": 0, "advisory": 1},
+                "low_confidence_nodes": 0, "warnings": []}}
+  ],
+  "not_included": [{"stem": "…", "errors": ["…"]}]
+}
+```
+
+`review` says, per programme, what code can't fully check: `unresolved` pools ("courses approved
+by your adviser"), `needs_data` (pools that depend on `school` or `ge_category`, which need a
+lookup table we don't have yet), and `not_checked_by_code` (the placeholder families
+`course_reuse`, `sequencing`, `manual_review`, which the solver treats as met). A planner built
+on this should say "check with your adviser" for those, never "done".
+
+`content_sha256` is the hash of the scraped file. The line numbers in `source_lines` refer to
+that exact version.
+
+## Regenerating it
+
+Everything runs from this folder. One full run costs about $30 on Sonnet 5 and takes about an
+hour.
 
 ```bash
 cd deg_requirement_parser
-source .venv/bin/activate
-export ANTHROPIC_API_KEY=...           # never commit this
-pip install -r requirements.txt  # anthropic, jsonschema, pulp
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt                  # anthropic, jsonschema, pulp
+export ANTHROPIC_API_KEY=...                     # or put it in a git-ignored .env; never commit it
 
-python run_classifier.py --dry-run     # build prompts, call nothing
-python run_classifier.py --limit 1     # one programme, end to end
-python run_classifier.py               # the 15-programme test set (Sonnet 5 by default)
-python check_results.py                # validate structure, write out/summary.csv
-python spot_check.py                   # review sheet for checking by hand, write out/review_sheet.md
+python check_taxonomy.py                         # the taxonomy's examples are valid (run after any edit)
+python run_classifier.py --dry-run --limit 1     # build one prompt, call nothing; read it in out/
+python run_classifier.py --out-dir out_v2        # the 15-programme test set, about $1
+python check_results.py --out-dir out_v2         # every file must pass
+python check_bip.py --program-dir out_v2         # test students get the right answers
+python spot_check.py --out-dir out_v2            # out_v2/review_sheet.md, to read by hand
+
+python run_classifier.py --all --force --out-dir out_v2 --budget 45 --concurrency 6   # all 470
+python check_results.py --out-dir out_v2
+python build_catalogue.py --out-dir out_v2       # writes catalogue/usc_degree_requirements_2026_2027.json
 ```
 
-After any edit to `constraint_taxonomy.md`, run the taxonomy check. The model copies the taxonomy's
-examples, so each one must validate against `requirement_schema.json`, use no old-format keys, and
-have an `eligible_if` that `eligibility.py` can evaluate:
+`--budget` stops the run before it spends more. Programmes that already have output are
+skipped unless you pass `--force`. A programme that fails (a reply that isn't valid JSON twice,
+or a check error) is left out of the combined file and listed under `not_included`; re-run it
+with `--only <stem> --force`.
+
+**For a new catalogue year:** re-scrape with `catalogue_scraper`, update `PROGRAMS_DIR` in
+`run_classifier.py` and `check_results.py` (and the year in `build_catalogue.py`), and run the
+steps above. Because sources are cited by line number, old output can't be reused against a
+new scrape: the content hash will have changed.
+
+## Where it might be wrong
+
+The checks catch wrong *shapes* and wrong *citations* automatically. They can't catch a wrong
+*reading* of a sentence. These are the known limits, roughly most to least important:
+
+RESULTS_PLACEHOLDER
+
+## Changing the taxonomy
+
+When the output gets a sentence wrong, add that sentence as a new example in
+`constraint_taxonomy.md`, with its correct encoding, rather than adding rules to the prompt.
+The model copies examples. Then:
 
 ```bash
-python check_taxonomy.py               # every JSON example in the taxonomy; exits non-zero on failure
-python check_taxonomy.py --dir examples  # the hand-encoded programs (should always pass)
-python -m unittest test_taxonomy       # tests for the check itself and for is_eligible
+python check_taxonomy.py                              # every example still valid and convertible
+python run_classifier.py --out-dir out_v2 --only <stem> --force
+python check_results.py --out-dir out_v2
 ```
 
-To check that a program's JSON *means* the right thing, not just that it has the right shape, run the
-golden cases. `bip.py` turns the JSON into a binary integer program (PuLP, CBC solver), reports anything
-it couldn't convert, and solves it for hand-made students in `golden/` whose answers are known:
+Change one thing at a time so you can tell what helped. Questions waiting on Vishal are in
+`taxonomy_open_questions.md`.
 
-```bash
-python check_bip.py                         # golden cases against examples/
-python check_bip.py --program-dir out_v2    # the same cases against model output
-python -m unittest test_bip                 # golden cases, plus deliberately wrong encodings that must be caught
-```
+## Files
 
-`--budget` stops the run before it exceeds a dollar figure, default 50. Programmes that already
-have output are skipped unless you pass `--force`.
-
-## Reviewing output
-
-Output is checked in two passes, because they catch different kinds of mistakes.
-
-| Script | What it checks | How |
-|---|---|---|
-| `check_results.py` | **Structure.** Is the JSON valid, are required fields present, is every `family` a real taxonomy family, does `source_text` appear word for word in the catalogue? | Automatically. Exits non-zero on any problem, so it works as a pass/fail gate. |
-| `spot_check.py` | **Meaning.** Did the model put each sentence in the right family, with the right counts, bounds and courses? | By hand. Code can't judge this, so the script lays the output out for a person to read. |
-
-A file can pass `check_results.py` and still be wrong. For example, a Distribution Bounds rule encoded as Course Selection is valid JSON with a real family name, and only a human reading the sentence will catch it.
-
-**What `spot_check.py` produces.** It writes `review_sheet.md` into the output folder. For each programme it shows:
-
-- a summary line: status, number of constraints, number of unclassified items, and the count per family
-- the **unclassified text**, listed first, so you can spot requirements the model skipped
-- a table with one row per constraint: the catalogue sentence, the family and details the model chose, its confidence, and a blank **verdict** column
-
-Rows are sorted low confidence first, since that is where mistakes usually are.
-
-**How to review.**
-
-1. Run `python spot_check.py` (add `--out-dir <folder>` for a specific model run, `--only <stem>` for one programme, or `--low-only` to skip high-confidence rows).
-2. Open `review_sheet.md` and fill in each verdict:
-   - `OK`: family and details both match the sentence
-   - `WRONG FAMILY`: the sentence belongs to a different family
-   - `WRONG DETAILS`: the family is right but a count, bound, pool or course is wrong
-3. Also read the unclassified list. If a skipped sentence is a real requirement, treat it as a wrong row.
-4. Look at the family totals at the top. A large share of Manual Review usually means the taxonomy is missing examples.
-
-**Turning the review into fixes.** Each wrong row becomes a new example in `constraint_taxonomy.md`, placed under the family it should have been, with the sentence and its correct JSON. (see *Tuning* below). Then re-run only the affected programmes with `--only <stem> --force` and review again. Change one thing at a time so you can tell which change helped.
-
-Treat the test set as ready for a full run when `check_results.py` passes and nearly every row on the review sheet is marked `OK`.
+| File | What it is |
+|---|---|
+| `requirement_schema.json` | The contract: exactly what a valid programme looks like. |
+| `constraint_taxonomy.md` | The explanation, with real catalogue sentences and their encodings. Sent to the model on every call. |
+| `examples/` | Five programmes encoded by hand (Vishal). The reference for what's right. |
+| `docs/prompt_v2.txt` (repo root) | The prompt. `prompt_v1.txt` is the old list format, kept for comparison. |
+| `run_classifier.py` | Numbers each file's lines, calls the Claude API, writes `<out-dir>/<stem>.json`. Sets `status` from the unclassified reasons and retries a reply that isn't valid JSON. |
+| `check_results.py` | Every check on the output; writes `summary.csv`. Exits non-zero on any error. |
+| `check_taxonomy.py` | The same checks on every example in the taxonomy. |
+| `bip.py`, `check_bip.py`, `golden/` | Turns a programme into a solvable integer program and runs hand-made students with known answers through it. |
+| `eligibility.py` | `is_eligible(eligible_if, course_code)`: True, False or "unknown". |
+| `spot_check.py` | `review_sheet.md`: each node next to the catalogue text it cites, for reading by hand. |
+| `build_catalogue.py` | Combines a checked run into the single catalogue file. |
+| `out_v2/` | The run behind the combined file: one JSON and raw reply per programme, `summary.csv`, `run_log.csv`. |
+| `catalogue/` | The combined file. |
+| `FEEDBACK_phase1.md`, `taxonomy_rewrite_plan.md`, `taxonomy_open_questions.md` | Vishal's feedback with the task list ticked, the rewrite plan, open questions. |
+| `out_sonnet5_40/` | The earlier 40-programme run in the old list format. Kept for comparison only. |
 
 ## Choosing a model
 
-Prices per million tokens (input / output), with the estimated cost for all 470 programmes:
+Prices per million tokens (input / output). The test set and the full run used Sonnet 5.
 
-| Model | Price | Est. full run |
+| Model | Price | Full run (estimate) |
 |---|---|---|
-| `claude-haiku-4-5` | $1 / $5 | ~$8 |
-| `claude-sonnet-5` (default, recommended) | $2 / $10 | ~$16 |
-| `claude-opus-5` | $5 / $25 | ~$40 |
-| `claude-sonnet-4-5` (previous default) | $3 / $15 | ~$25 |
+| `claude-haiku-4-5` | $1 / $5 | ~$15 |
+| `claude-sonnet-5` (default) | $2 / $10 | ~$30 |
+| `claude-opus-5` | $5 / $25 | ~$75 |
 
-The 15-programme test set costs roughly $1 on Sonnet 5.  Iterate on the test set and do the full `--all` run once.
-
-## Cost tracking
-
-The printed cost and the `--budget` limit (default $50) use the per-model prices in `MODEL_PRICES` at the top of `run_classifier.py`.  If you pass a model that isn't in that table, the script stops and asks for prices.  Either add the model to the table or pass `--price-in` and `--price-out`.  Check the [pricing page](https://platform.claude.com/docs/en/models/overview) when prices change; the numbers only drive the local estimate, not billing.
-
-## Comparing models without overwriting results
-
-`--force` overwrites existing output.  To compare models side by side, give each run its own folder with `--out-dir`, then point the checkers at the same folder:
-
-```bash
-python run_classifier.py --model claude-sonnet-5 --out-dir out_sonnet5
-python run_classifier.py --model claude-opus-5   --out-dir out_opus5
-
-python check_results.py --out-dir out_sonnet5
-python spot_check.py    --out-dir out_sonnet5
-```
-
-Each folder has its own `run_log.csv`, which records the model and cost for every call.  Note that `run_log.csv` is rewritten on each run, so it only covers the programmes processed in the latest run.
-
-## Tuning
-
-When a programme comes back wrong, fix it by adding the failing sentence to
-`constraint_taxonomy.md` as a new example under the right family, not by adding rules to the
-prompt. Change one thing at a time and keep the previous prompt version so the comparison is
-real.
-
-## Known limitations
-
-- `PROGRAMS_DIR` in both scripts hardcodes `catalogue_scraper/`. That folder is due to be
-  renamed to `degree_requirements_scraper`; it is one constant at the top of each file.
-- Programme names are derived from filenames. If any read badly, switch to the `name` column of
-  the scraper's `index.csv`.
-- The classifier is called as a plain message and the JSON is extracted from the response text.
-  Binding a generated JSON Schema to a tool call would enforce the shape rather than check it
-  afterwards; `check_results.py` covers the gap for now.
+The prices only drive the local estimate and `--budget`; check the pricing page when they
+change. To compare models, give each run its own `--out-dir`.

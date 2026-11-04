@@ -1,0 +1,96 @@
+{
+  "program": "Organizational Leadership and Management Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 470"
+          }
+        ],
+        "id": "OLM-MINOR-CORE",
+        "source_lines": [
+          [
+            29,
+            32
+          ]
+        ],
+        "source_quote": "Complete both of the following courses.",
+        "description": "Complete BUAD 304 and MOR 470.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MOR 421",
+            "MOR 451",
+            "MOR 458",
+            "MOR 462",
+            "MOR 466",
+            "MOR 468",
+            "MOR 469",
+            "MOR 471",
+            "MOR 472",
+            "MOR 473",
+            "MOR 492"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "OLM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            50
+          ]
+        ],
+        "source_quote": "Choose three courses from the following (12 units):",
+        "description": "Choose three elective courses from the MOR list, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To enroll, students must have completed a minimum of 32 units",
+      "reason": "out_of_scope",
+      "why": "Admission/enrollment GPA and unit threshold, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Completion of this minor requires a minimum GPA of 2.0",
+      "reason": "out_of_scope",
+      "why": "Grade/GPA rule."
+    }
+  ]
+}

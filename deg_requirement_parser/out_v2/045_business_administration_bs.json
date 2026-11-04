@@ -1,0 +1,271 @@
+{
+  "program": "Business Administration (Communication) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "one semester in residence at USC",
+            "credit for BUAD 302"
+          ]
+        },
+        "id": "BCOM-BS-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Entry to this emphasis requires sophomore standing, one semester in residence, and BUAD 302 credit.",
+        "confidence": "high",
+        "note": "BUAD 302 credit requirement overlaps with the Business Core's BUAD 302 slot; not double-counted here."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "other BS Business Administration emphases",
+          "effect": "only one emphasis may be earned"
+        },
+        "id": "BCOM-BS-SINGLE-EMPHASIS",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within the",
+        "description": "Students may earn only one emphasis within the BS in Business Administration degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BCOM-BS-WRITING",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BCOM-BS-CORE",
+        "source_lines": [
+          [
+            41,
+            76
+          ]
+        ],
+        "source_quote": "Business Administration majors must complete the business core.",
+        "description": "The Marshall business core: BUAD 280, 281, 302, 304, a Finance choice, 307, a Statistics choice, an Operations choice, an Analytics choice, 497, ECON 351x, ECON 352x, and a Calculus choice.",
+        "confidence": "high",
+        "note": "Math placement details (L082) and A-level credit note (L083) are advisory/placement conditions, not separate requirements."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "BUCO"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BCOM-BS-EMPHASIS",
+        "source_lines": [
+          [
+            31,
+            31
+          ],
+          [
+            85,
+            89
+          ]
+        ],
+        "source_quote": "Complete 12 units of upper-division elective courses (typically",
+        "description": "12 units of upper-division BUCO (300/400-level) electives in the Business Communication department.",
+        "confidence": "high",
+        "note": "The 'at least 12 upper-division units in the area of emphasis' in L031 is the same requirement as this emphasis block."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "students must satisfy all requirements for the Bachelor",
+      "reason": "university_level",
+      "why": "General Education and overall BS degree requirements are university/school-wide rules handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled \"Advanced Writing",
+      "reason": "advisory",
+      "why": "Recommends a specific section but does not change the requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver conditions are procedural, not a separate course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advises students to consult advisers about subject credit; not a requirement."
+    }
+  ]
+}

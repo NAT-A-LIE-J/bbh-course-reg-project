@@ -1,0 +1,248 @@
+{
+  "program": "Computational Biology and Bioinformatics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 320Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 401"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "QBIO 305g"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "QBIO 478"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 481"
+              }
+            ]
+          }
+        ],
+        "id": "CBB-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            40
+          ]
+        ],
+        "source_quote": "BISC 320Lg Molecular Biology Units: 4 or",
+        "description": "Seven required courses, with three pairs offering a choice between two courses each.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 230Lgx",
+            "BISC 300L",
+            "BISC 313L",
+            "BISC 320Lg",
+            "BISC 325",
+            "BISC 330L",
+            "BISC 403",
+            "BISC 406L",
+            "BISC 410",
+            "BISC 486",
+            "CSCI 201",
+            "CSCI 270",
+            "CSCI 485",
+            "MATH 126g",
+            "MATH 225",
+            "MATH 226g",
+            "MATH 408",
+            "MATH 432",
+            "MATH 458",
+            "MATH 465",
+            "MATH 466",
+            "MATH 467",
+            "QBIO 401",
+            "QBIO 475",
+            "QBIO 478",
+            "QBIO 479L",
+            "QBIO 481",
+            "QBIO 482"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 0
+          }
+        ],
+        "id": "CBB-ELECTIVES",
+        "source_lines": [
+          [
+            42,
+            78
+          ]
+        ],
+        "source_quote": "Students who have satisfied a required course with AP credit",
+        "description": "Elective courses that substitute for any required course satisfied by AP credit, and fill out the unit total; a selected required course cannot also count as an elective.",
+        "confidence": "medium",
+        "note": "No fixed minimum number stated; electives are only needed to reach 28 total units if AP credit replaces a required course. A required course already used cannot double-count as an elective."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "id": "CBB-OUTSIDE-DEPT",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Four courses (16 units) taken outside the major department",
+        "description": "At least four courses (16 units) in the minor must be outside the student's major department.",
+        "confidence": "low",
+        "note": "Depends on the student's declared major department, which cannot be determined from this text.",
+        "details": {
+          "requirement": "4 courses (16 units) outside the student's major department"
+        }
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students need to take 28 units of the courses listed",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "students must include at least four upper-division courses (16 units)",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor provides essential training in using quantitative skills",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "four courses (16 units) dedicated exclusively to this minor",
+      "reason": "university_level",
+      "why": "Standard minor uniqueness rule handled by the tool."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Other students may need more units to receive the minor",
+      "reason": "advisory",
+      "why": "Advisory note about additional units, not a fixed requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Please contact the minor adviser for specific program requirements",
+      "reason": "advisory",
+      "why": "Advisory contact statement."
+    },
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "A selected required course may not double-count toward electives",
+      "reason": "out_of_scope",
+      "why": "Restates the one-slot rule; captured in the electives node's note."
+    }
+  ]
+}

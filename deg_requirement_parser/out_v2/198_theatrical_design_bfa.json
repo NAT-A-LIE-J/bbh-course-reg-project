@@ -1,0 +1,438 @@
+{
+  "program": "Theatrical Design (BFA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 241"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305a"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 397"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 407a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 493a"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 497"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "TD-BFA-REQUIRED",
+        "source_lines": [
+          [
+            33,
+            49
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "Core required Theatrical Design courses, including THTR 397 (6 units) and THTR 497 (4 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 231",
+            "THTR 232",
+            "THTR 236",
+            "THTR 335"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 9
+          }
+        ],
+        "id": "TD-BFA-SKILLS-I",
+        "source_lines": [
+          [
+            50,
+            59
+          ]
+        ],
+        "source_quote": "Three Courses (9 units) from:",
+        "description": "Three courses (9 units) from the Skills I list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 409",
+            "THTR 435"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "TD-BFA-DRAFTING-I",
+        "source_lines": [
+          [
+            61,
+            68
+          ]
+        ],
+        "source_quote": "One course (3 units) from:",
+        "description": "One course (3 units) from the Drafting I list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 233",
+            "THTR 213",
+            "THTR 308",
+            "THTR 346",
+            "THTR 437",
+            "THTR 439",
+            "THTR 441"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 9
+          }
+        ],
+        "id": "TD-BFA-SKILLS-II",
+        "source_lines": [
+          [
+            70,
+            82
+          ]
+        ],
+        "source_quote": "Three courses (9 units) from:",
+        "description": "Three courses (9 units) from the Skills II list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 303",
+            "THTR 330",
+            "THTR 331",
+            "THTR 332",
+            "THTR 336"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "TD-BFA-DESIGN-I",
+        "source_lines": [
+          [
+            84,
+            94
+          ]
+        ],
+        "source_quote": "Three courses (10-12 units) from:",
+        "description": "Three courses (10-12 units) from the Design I list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 432a",
+            "THTR 433a",
+            "THTR 434a",
+            "THTR 436"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 9
+          }
+        ],
+        "id": "TD-BFA-DESIGN-II",
+        "source_lines": [
+          [
+            96,
+            105
+          ]
+        ],
+        "source_quote": "Three courses (9 units) from:",
+        "description": "Three courses (9 units) from the Design II list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "TD-BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            107,
+            141
+          ]
+        ],
+        "source_quote": "Complete the two required courses below.",
+        "description": "Two required Critical Studies courses plus one course from List A and one more from List A or B.",
+        "confidence": "medium",
+        "note": "The two elective slots (one from List A, one from List A or B) cannot both draw from the same courses in the same node without risk of double counting; encoded as two separate count leaves of 1 course each."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A total of 128 units of course work",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All BFA students are required to earn",
+      "reason": "out_of_scope",
+      "why": "GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "BFA students who fail to earn a GPA",
+      "reason": "out_of_scope",
+      "why": "Probation/GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A student disqualified from continued study in",
+      "reason": "out_of_scope",
+      "why": "Disqualification/transfer policy."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          31
+        ]
+      ],
+      "source_quote": "The university's General Education program provides",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          142,
+          142
+        ]
+      ],
+      "source_quote": "General Education Units: 36",
+      "reason": "university_level",
+      "why": "GE unit total, university-wide."
+    },
+    {
+      "source_lines": [
+        [
+          146,
+          146
+        ]
+      ],
+      "source_quote": "Electives Units: Remaining Units",
+      "reason": "no_fit",
+      "why": "No defined elective pool or amount given; remainder cannot be checked."
+    },
+    {
+      "source_lines": [
+        [
+          150,
+          150
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    }
+  ]
+}

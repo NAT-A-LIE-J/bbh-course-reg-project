@@ -1,0 +1,284 @@
+{
+  "program": "American Studies and Ethnicity (Chicano/Latino Studies) (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AMST 200gm"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 350"
+          }
+        ],
+        "id": "ASE-CLS-CORE",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "Complete the following two courses (8 units)",
+        "description": "Core courses AMST 200gm and AMST 350.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AMST 492"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 493"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 498"
+          }
+        ],
+        "id": "ASE-CLS-SENIOR",
+        "source_lines": [
+          [
+            36,
+            44
+          ]
+        ],
+        "source_quote": "Choose one of the following senior courses",
+        "description": "One senior course from AMST 492, 493, or 498.",
+        "confidence": "high",
+        "note": "Honors thesis note (L050) is advisory/procedural, not a separate requirement."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AMST 373m"
+          },
+          {
+            "family": "specific_course",
+            "course": "HIST 354"
+          }
+        ],
+        "id": "ASE-CLS-HISTORY",
+        "source_lines": [
+          [
+            60,
+            65
+          ]
+        ],
+        "source_quote": "AMST 373m History of the Mexican American",
+        "description": "One course from the History category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AMST 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 448m"
+          },
+          {
+            "family": "specific_course",
+            "course": "SPAN 413m"
+          }
+        ],
+        "id": "ASE-CLS-LITCULTURE",
+        "source_lines": [
+          [
+            67,
+            73
+          ]
+        ],
+        "source_quote": "AMST 305 Art and Performance in the Americas",
+        "description": "One course from the Literature and Culture category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AMST 101gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 140gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 274mw"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 340m"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 357m"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 365"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 389m"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 446"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 428"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 462m"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 333"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 100gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 356m"
+          }
+        ],
+        "id": "ASE-CLS-SOCIALPOLITICAL",
+        "source_lines": [
+          [
+            75,
+            91
+          ]
+        ],
+        "source_quote": "AMST 101gmw Race and Class in Los Angeles",
+        "description": "One course from the Social and Political Issues category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "AMST"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            {
+              "courses": [
+                "COMM 458m",
+                "POSC 424m",
+                "SOCI 432m",
+                "AMST 301gp",
+                "AMST 312",
+                "AMST 320",
+                "AMST 326",
+                "AMST 343",
+                "AMST 348m",
+                "AMST 353m",
+                "AMST 392",
+                "AMST 452m",
+                "AMST 490x",
+                "AMST 499"
+              ]
+            },
+            {
+              "unresolved": "other American Studies and Ethnicity courses with departmental approval, 300-level or higher"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "ASE-CLS-ELECTIVES",
+        "source_lines": [
+          [
+            93,
+            112
+          ]
+        ],
+        "source_quote": "Additional courses for a total of 16 units from the lists above",
+        "description": "Additional 300+ level Chicano/Latino Studies-certified elective courses totaling 16 units.",
+        "confidence": "medium",
+        "note": "Pool combines prefix/level rule, a printed list, and an unresolved department-approval clause."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            97,
+            97
+          ]
+        ],
+        "source_quote": "No more than two total courses in the major may be taken outside the college",
+        "eligible_if": {
+          "not": {
+            "school": "Dornsife"
+          }
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Ten courses in Chicano/Latino Studies, or courses certified",
+      "reason": "out_of_scope",
+      "why": "Restates the overall ten-course structure already encoded by the component nodes; no additional constraint."
+    },
+    {
+      "source_lines": [
+        [
+          46,
+          50
+        ]
+      ],
+      "source_quote": "Honors students will complete an Honors Thesis",
+      "reason": "advisory",
+      "why": "Applies only to honors students, not a general degree requirement."
+    }
+  ]
+}

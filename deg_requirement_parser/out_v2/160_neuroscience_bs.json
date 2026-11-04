@@ -1,0 +1,383 @@
+{
+  "program": "Neuroscience (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BUAD 310g",
+                "ECON 317",
+                "HP 340Lg",
+                "MATH 208x",
+                "MATH 307",
+                "MATH 407",
+                "PSYC 274Lg",
+                "QBIO 305g",
+                "QBIO 310"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "NEURO-BS-GENSCI",
+        "source_lines": [
+          [
+            39,
+            69
+          ]
+        ],
+        "source_quote": "General Science Requirements (36 units)",
+        "description": "General science core: biology, chemistry, math, physics, psychology, and a statistics course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "NEUR 199"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 408"
+          }
+        ],
+        "id": "NEURO-BS-NEUROREQ",
+        "source_lines": [
+          [
+            70,
+            74
+          ]
+        ],
+        "source_quote": "Neuroscience Requirements (13 units)",
+        "description": "Four required neuroscience core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 307L",
+            "BISC 312x",
+            "BISC 313L",
+            "BISC 320Lg",
+            "BISC 325",
+            "BISC 330L",
+            "BISC 403",
+            "BISC 406L",
+            "BISC 410",
+            "BISC 411",
+            "BISC 422L",
+            "BISC 423",
+            "BISC 424",
+            "BISC 425",
+            "BISC 426",
+            "BISC 438",
+            "BISC 444",
+            "BISC 461",
+            "BISC 462",
+            "BISC 466",
+            "BISC 480L",
+            "BISC 499",
+            "BPSI 405",
+            "CHEM 350",
+            "CSCI 360",
+            "CSCI 445L",
+            "ECON 405",
+            "GERO 310",
+            "GERO 320g",
+            "GERO 321",
+            "GERO 414",
+            "GERO 415",
+            "GERO 494",
+            "HBIO 306",
+            "HBIO 308",
+            "HBIO 420L",
+            "HBIO 435",
+            "HP 409",
+            "LING 385Lg",
+            "MEDS 320",
+            "MEDS 340",
+            "MEDS 350",
+            "NEUR 490x",
+            "PSYC 301L",
+            "PSYC 304L",
+            "PSYC 305",
+            "PSYC 320",
+            "PSYC 326",
+            "PSYC 337L",
+            "PSYC 339Lg",
+            "PSYC 420",
+            "PSYC 424",
+            "PSYC 425",
+            "PSYC 426",
+            "PSYC 427",
+            "PSYC 428",
+            "PSYC 432",
+            "PSYC 438",
+            "PSYC 440",
+            "PSYC 450",
+            "PSYC 452",
+            "PSYC 468",
+            "QBIO 481",
+            "RXRS 403",
+            "RXRS 405",
+            "RXRS 412",
+            "SCRM 487"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                80,
+                80
+              ]
+            ],
+            "source_quote": "No more than 4 units of NEUR 490x",
+            "eligible_if": {
+              "courses": [
+                "NEUR 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                80,
+                80
+              ]
+            ],
+            "source_quote": "At least one course in the upper-division electives must carry a lab",
+            "eligible_if": {
+              "unresolved": "course carries a lab (\"L\") designation or is numbered 490"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "NEURO-BS-ELECTIVES",
+        "source_lines": [
+          [
+            76,
+            154
+          ]
+        ],
+        "source_quote": "Five or six upper-division elective courses (minimum of",
+        "description": "Five or six upper-division electives totaling at least 20 units from the approved list, with lab/490 and NEUR 490x limits.",
+        "confidence": "medium",
+        "note": "The lab/490 designation check cannot be verified purely from course codes."
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "SUBSTITUTE",
+          "approver": "co-directors and instructor",
+          "courses": [
+            "BME 575",
+            "NSCI 524",
+            "NSCI 531",
+            "NSCI 532",
+            "PSYC 506",
+            "PSYC 540",
+            "PSYC 544",
+            "PSYC 545",
+            "PSYC 547",
+            "PSYC 551",
+            "PSYC 555"
+          ],
+          "min_gpa": 3.3
+        },
+        "id": "NEURO-BS-GRAD-SUB",
+        "source_lines": [
+          [
+            156,
+            172
+          ]
+        ],
+        "source_quote": "A graduate class from the following list may",
+        "description": "A graduate course may substitute for an upper-division elective with permission and a 3.3 GPA.",
+        "confidence": "medium",
+        "note": "GPA threshold is out of scope for checking; encoded as a detail only."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "for a minimum total of 73 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 73
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A grade of C- or higher is required",
+      "reason": "out_of_scope",
+      "why": "Grade rule for major requirements."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "The degree requires a minimum of 128 units.",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          116,
+          116
+        ]
+      ],
+      "source_quote": "*Cannot take GERO 321 if completed GERO 320",
+      "reason": "no_fit",
+      "why": "Mutual exclusion between two elective courses has no taxonomy term."
+    }
+  ]
+}

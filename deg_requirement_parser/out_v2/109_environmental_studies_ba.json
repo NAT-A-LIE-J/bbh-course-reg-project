@@ -1,0 +1,362 @@
+{
+  "program": "Environmental Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENST 100g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 344"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 387"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 495"
+          }
+        ],
+        "id": "ENVS-BA-CORE-EXPERIENCES",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "ENST 100g Introduction to Environmental Studies",
+        "description": "Six required Environmental Studies core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 103Lgx",
+            "CHEM 103Lgx",
+            "GEOL 160Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ENVS-BA-NATURAL-SCIENCE-CORE",
+        "source_lines": [
+          [
+            40,
+            48
+          ]
+        ],
+        "source_quote": "Choose two.",
+        "description": "Choose two natural science core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ENST 360",
+            "IR 309",
+            "IR 323",
+            "IR 349",
+            "MDES 201w",
+            "MDES 401",
+            "POSC 270",
+            "POSC 320",
+            "POSC 347"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ENVS-BA-POLICY-GOVERNANCE-CORE",
+        "source_lines": [
+          [
+            50,
+            66
+          ]
+        ],
+        "source_quote": "Choose one.",
+        "description": "Choose one policy/governance core experience course.",
+        "confidence": "high",
+        "note": "A course used here cannot be double-counted for the Policy and Management track (see L056, L122); one-slot rule already prevents reuse."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GEOL 415",
+            "HP 340Lg",
+            "MATH 114xg",
+            "PSYC 274Lg",
+            "QBIO 305g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ENVS-BA-MATH-REQUIREMENT",
+        "source_lines": [
+          [
+            68,
+            78
+          ]
+        ],
+        "source_quote": "Choose one.",
+        "description": "Choose one statistics/math course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ENST 310",
+                "ENST 335",
+                "ENST 370",
+                "ENST 413",
+                "ENST 445",
+                "GEOL 412",
+                "ENST 483L",
+                "ENST 490x",
+                "ENST 492",
+                "BISC 315L",
+                "BISC 469L",
+                "BISC 473L",
+                "GEOL 351L",
+                "GEOL 470L",
+                "HP 408",
+                "HP 448",
+                "PPD 427L",
+                "SSCI 301L"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    88,
+                    88
+                  ]
+                ],
+                "source_quote": "WITH AT LEAST TWO COURSES SELECTED FROM ENST",
+                "eligible_if": {
+                  "prefix": [
+                    "ENST"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "ENVS-BA-SCIENCE-AND-MANAGEMENT",
+            "source_lines": [
+              [
+                84,
+                114
+              ]
+            ],
+            "source_quote": "Four of the following WITH AT LEAST TWO COURSES",
+            "description": "Science and Management concentration: four courses, at least two from ENST or cross-listed as ENST.",
+            "confidence": "medium",
+            "note": "Cross-listed ENST courses beyond the named list cannot be checked from the course list alone."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ECON 203g",
+                "ECON 205g",
+                "ENST 360",
+                "ENST 370",
+                "ENST 405",
+                "ENST 432",
+                "ENST 442",
+                "ENST 443",
+                "ENST 484",
+                "ENST 486",
+                "ENST 490x",
+                "ENST 492",
+                "HP 446",
+                "IR 323",
+                "MDES 401",
+                "MOR 466",
+                "POSC 270",
+                "POSC 418",
+                "POSC 436",
+                "PPD 373",
+                "PPD 410",
+                "PSYC 411",
+                "RISK 380",
+                "PPD 427L",
+                "SSCI 301L"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    120,
+                    120
+                  ]
+                ],
+                "source_quote": "WITH AT LEAST TWO COURSES SELECTED FROM ENST",
+                "eligible_if": {
+                  "prefix": [
+                    "ENST"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "ENVS-BA-POLICY-AND-MANAGEMENT",
+            "source_lines": [
+              [
+                116,
+                154
+              ],
+              [
+                56,
+                56
+              ]
+            ],
+            "source_quote": "Four of the following WITH AT LEAST TWO COURSES",
+            "description": "Policy and Management concentration: four courses, at least two from ENST or cross-listed as ENST.",
+            "confidence": "medium",
+            "note": "A course used for the Policy/Governance Core Experience cannot be double counted here (L122); one-slot rule already enforces this since ENST 360, IR 323, MDES 401, POSC 270 appear in both lists."
+          }
+        ],
+        "id": "ENVS-BA-CONCENTRATIONS",
+        "source_lines": [
+          [
+            80,
+            154
+          ]
+        ],
+        "source_quote": "Concentrations",
+        "description": "Choose one of two concentrations: Science and Management or Policy and Management.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            156,
+            156
+          ]
+        ],
+        "source_quote": "Required units: 56",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 56
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Environmental Studies Program offers two undergraduate",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The environmental science and health degrees combine",
+      "reason": "out_of_scope",
+      "why": "Programme description for a different major."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Note that some of the field studies opportunities",
+      "reason": "advisory",
+      "why": "Descriptive warning about field study conditions, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A single 24-unit environmental studies minor is",
+      "reason": "out_of_scope",
+      "why": "Describes a separate minor, not this BA's requirements."
+    }
+  ]
+}

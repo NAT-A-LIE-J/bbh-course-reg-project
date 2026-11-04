@@ -1,0 +1,220 @@
+{
+  "program": "Environmental Science and Health (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "ESH-BA-BISC",
+        "source_lines": [
+          [
+            27,
+            31
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology and Evolution",
+        "description": "BISC 120Lg and 220Lg, or the advanced BISC 121Lg and 221Lg sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "ESH-BA-CHEM",
+        "source_lines": [
+          [
+            33,
+            37
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "CHEM 105a/105b, or the advanced CHEM 115a/115b sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 135aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          }
+        ],
+        "id": "ESH-BA-PHYS",
+        "source_lines": [
+          [
+            39,
+            41
+          ]
+        ],
+        "source_quote": "PHYS 135aLg Physics for the Life Sciences Units:",
+        "description": "PHYS 135aLg or PHYS 151Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "MATH 125g",
+        "id": "ESH-BA-MATH",
+        "source_lines": [
+          [
+            43,
+            43
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g Calculus I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "HP 340Lg",
+        "id": "ESH-BA-HPSTATS",
+        "source_lines": [
+          [
+            44,
+            44
+          ]
+        ],
+        "source_quote": "HP 340Lg Health Behavior Statistical Methods Units:",
+        "description": "HP 340Lg Health Behavior Statistical Methods.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ENST 335"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 408"
+          }
+        ],
+        "id": "ESH-BA-ENVHEALTH",
+        "source_lines": [
+          [
+            46,
+            48
+          ]
+        ],
+        "source_quote": "ENST 335 Science, Health and the Environment Units:",
+        "description": "ENST 335 or HP 408.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENST 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 344"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 387"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 495"
+          }
+        ],
+        "id": "ESH-BA-ENST-CORE",
+        "source_lines": [
+          [
+            50,
+            54
+          ]
+        ],
+        "source_quote": "ENST 320a Water and Soil Sustainability; Energy",
+        "description": "ENST 320a, 320b, 344, 387 and 495, all required.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            56,
+            56
+          ]
+        ],
+        "source_quote": "Total units: 52",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 52
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,80 @@
+{
+  "program": "Sports Media Industries Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "JOUR 350",
+        "id": "SMI-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "JOUR 350 Introduction to Sports Media Units: 4",
+        "description": "Required core course JOUR 350.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 387",
+            "JOUR 380",
+            "JOUR 404",
+            "JOUR 432",
+            "JOUR 441",
+            "JOUR 478",
+            "JOUR 479",
+            "JOUR 480",
+            "JOUR 481",
+            "JOUR 485",
+            "JOUR 486",
+            "PR 453",
+            "PR 454"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "SMI-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            49
+          ]
+        ],
+        "source_quote": "Choose at least 16 units from the following:",
+        "description": "At least 16 units of electives from the listed sports media courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            51,
+            51
+          ]
+        ],
+        "source_quote": "Total units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

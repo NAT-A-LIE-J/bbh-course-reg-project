@@ -1,0 +1,551 @@
+{
+  "program": "Biological Sciences (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BISC-BA-LOWER-CORE",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "Lower-Division BISC Core Courses (8 units)",
+        "description": "Two lower-division BISC sequences: 120/121 and 220/221.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 107Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 108L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ],
+            "id": "BISC-BA-GEN-CHEM",
+            "source_lines": [
+              [
+                37,
+                47
+              ]
+            ],
+            "source_quote": "General Chemistry Requirement: 8 units",
+            "description": "Two-semester general chemistry sequence.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 322aL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 325aL"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 322bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 325bL"
+                  }
+                ]
+              }
+            ],
+            "id": "BISC-BA-ORGANIC-CHEM",
+            "source_lines": [
+              [
+                49,
+                57
+              ]
+            ],
+            "source_quote": "Organic Chemistry Requirement: 8 units",
+            "description": "Two-semester organic chemistry sequence.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g",
+            "id": "BISC-BA-CALC",
+            "source_lines": [
+              [
+                59,
+                63
+              ]
+            ],
+            "source_quote": "Calculus Requirement: 4 units",
+            "description": "MATH 125g Calculus I.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 305g"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              }
+            ],
+            "id": "BISC-BA-STATS",
+            "source_lines": [
+              [
+                65,
+                71
+              ]
+            ],
+            "source_quote": "Statistics Requirement: 4 units",
+            "description": "One statistics course from MATH 208x, QBIO 305g, or QBIO 310.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 151Lg"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 152L"
+                  }
+                ]
+              }
+            ],
+            "id": "BISC-BA-PHYSICS",
+            "source_lines": [
+              [
+                73,
+                81
+              ]
+            ],
+            "source_quote": "Physics Requirement: 8 units",
+            "description": "Two-semester physics sequence.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BISC-BA-COLLATERAL",
+        "source_lines": [
+          [
+            33,
+            81
+          ]
+        ],
+        "source_quote": "Collateral Sciences Courses (32 units)",
+        "description": "Chemistry, calculus, statistics, and physics collateral requirements.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 193",
+            "BISC 194",
+            "BISC 199"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 2
+          }
+        ],
+        "id": "BISC-BA-INTRO-RESEARCH",
+        "source_lines": [
+          [
+            83,
+            91
+          ]
+        ],
+        "source_quote": "Enroll in one or two of the courses below.",
+        "description": "One or two units from BISC 193, 194, or 199.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          }
+        ],
+        "id": "BISC-BA-UPPER-CORE",
+        "source_lines": [
+          [
+            93,
+            99
+          ]
+        ],
+        "source_quote": "Upper-Division BISC Core Courses (12 units)",
+        "description": "BISC 320Lg, BISC 325, BISC 330L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 300L",
+            "BISC 303L",
+            "BISC 307L",
+            "BISC 313L",
+            "BISC 314L",
+            "BISC 315L",
+            "BISC 321",
+            "BISC 326L",
+            "BISC 363L",
+            "BISC 365",
+            "BISC 369L",
+            "BISC 372",
+            "BISC 379L",
+            "BISC 402",
+            "BISC 403",
+            "BISC 404L",
+            "BISC 406L",
+            "BISC 407",
+            "BISC 408",
+            "BISC 410",
+            "BISC 411",
+            "BISC 414",
+            "BISC 419L",
+            "BISC 421",
+            "BISC 423",
+            "BISC 424",
+            "BISC 425",
+            "BISC 427",
+            "BISC 428",
+            "BISC 429",
+            "BISC 431L",
+            "BISC 434",
+            "BISC 435",
+            "BISC 438",
+            "BISC 444",
+            "BISC 445L",
+            "BISC 450L",
+            "BISC 451",
+            "BISC 457L",
+            "BISC 460",
+            "BISC 461",
+            "BISC 462",
+            "BISC 466",
+            "BISC 469L",
+            "BISC 473L",
+            "BISC 480L",
+            "BISC 483",
+            "BISC 485",
+            "BISC 488",
+            "BISC 490x",
+            "BISC 491L",
+            "BISC 493x",
+            "BISC 494x",
+            "ENST 335",
+            "GEOL 412",
+            "GERO 440",
+            "HBIO 301L",
+            "QBIO 401",
+            "QBIO 475",
+            "QBIO 478",
+            "QBIO 481",
+            "QBIO 482",
+            "SCRM 487"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                105,
+                105
+              ]
+            ],
+            "source_quote": "No more than 4 units of BISC 490x may be used",
+            "eligible_if": {
+              "courses": [
+                "BISC 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                105,
+                105
+              ]
+            ],
+            "source_quote": "no more than two seminars (BISC 460 to BISC 462",
+            "eligible_if": {
+              "courses": [
+                "BISC 460",
+                "BISC 461",
+                "BISC 462"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "BISC-BA-UPPER-ELECTIVES",
+        "source_lines": [
+          [
+            101,
+            171
+          ]
+        ],
+        "source_quote": "Eight units of upper-division BISC course work available",
+        "description": "8 units of upper-division BISC (or allied) electives, with caps on BISC 490x and seminars.",
+        "confidence": "high",
+        "note": "Line 107's expected-sequence timing is advisory and not encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "BISC-BA-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            177,
+            177
+          ]
+        ],
+        "source_quote": "Free elective units: 10-11",
+        "description": "10-11 units of free electives.",
+        "confidence": "medium",
+        "note": "Upper bound 11 units not expressible as a max threshold on an unrestricted pool; only the minimum is encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The general education, writing, foreign language and diversity",
+      "reason": "university_level",
+      "why": "GE, writing, and diversity requirements are university/college-wide."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students seeking a more focused curriculum may choose",
+      "reason": "out_of_scope",
+      "why": "Areas of emphasis are optional transcript designations, not described with course requirements here."
+    },
+    {
+      "source_lines": [
+        [
+          173,
+          173
+        ]
+      ],
+      "source_quote": "Total required units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit count."
+    },
+    {
+      "source_lines": [
+        [
+          185,
+          185
+        ]
+      ],
+      "source_quote": "The department requires that students receive a grade",
+      "reason": "out_of_scope",
+      "why": "Grade and GPA requirements."
+    },
+    {
+      "source_lines": [
+        [
+          185,
+          185
+        ]
+      ],
+      "source_quote": "All major core courses must be taken on a letter grade basis.",
+      "reason": "out_of_scope",
+      "why": "Grading basis rule."
+    },
+    {
+      "source_lines": [
+        [
+          191,
+          191
+        ]
+      ],
+      "source_quote": "Honors students are required to take two semesters",
+      "reason": "out_of_scope",
+      "why": "Separate honors program requirements, not part of the base BA."
+    },
+    {
+      "source_lines": [
+        [
+          195,
+          195
+        ]
+      ],
+      "source_quote": "Students may apply to the department for admission",
+      "reason": "out_of_scope",
+      "why": "Honors admission GPA/eligibility rule."
+    },
+    {
+      "source_lines": [
+        [
+          199,
+          199
+        ]
+      ],
+      "source_quote": "For continuation in the honors programs, students must",
+      "reason": "out_of_scope",
+      "why": "Honors continuation GPA rule."
+    }
+  ]
+}

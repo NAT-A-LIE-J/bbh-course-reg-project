@@ -1,0 +1,423 @@
+{
+  "program": "Philosophy, Politics and Law (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "LAW 101w",
+                "LAW 200w",
+                "LAW 210p",
+                "PHIL 101g",
+                "PHIL 166gw",
+                "PHIL 174gw",
+                "PHIL 178gw",
+                "PHIL 240g",
+                "PHIL 254gp",
+                "PHIL 256g",
+                "PHIL 258g",
+                "PHIL 284gp",
+                "POSC 130g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "DISCRETIONARY",
+            "details": {
+              "action": "SUBSTITUTE",
+              "approver": "Director of the School of Philosophy and the undergraduate adviser",
+              "context": "substituting a Thematic Option GE course for the lower-division list"
+            }
+          }
+        ],
+        "id": "PPL-BA-LOWERDIV",
+        "source_lines": [
+          [
+            31,
+            53
+          ]
+        ],
+        "source_quote": "One lower-division course from the following:",
+        "description": "One lower-division course from the listed LAW/PHIL/POSC courses, with a discretionary substitution allowed for a Thematic Option course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 220"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHIL 122a"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHIL 122b"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 222g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 452"
+          }
+        ],
+        "id": "PPL-BA-LOGIC",
+        "source_lines": [
+          [
+            55,
+            67
+          ]
+        ],
+        "source_quote": "One course in logic:",
+        "description": "One course in logic; PHIL 122a and PHIL 122b together count as one option.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PHIL 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 431"
+          }
+        ],
+        "id": "PPL-BA-PHILLAW",
+        "source_lines": [
+          [
+            69,
+            75
+          ]
+        ],
+        "source_quote": "One course in philosophy of law:",
+        "description": "One course in philosophy of law.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 337",
+            "PHIL 340",
+            "PHIL 437",
+            "PHIL 440",
+            "PHIL 442",
+            "PHIL 443",
+            "PHIL 311",
+            "PHIL 314",
+            "PHIL 315",
+            "PHIL 317",
+            "PHIL 320",
+            "PHIL 410",
+            "PHIL 411",
+            "PHIL 415",
+            "PHIL 416",
+            "PHIL 421",
+            "PHIL 422",
+            "PHIL 423",
+            "PHIL 424",
+            "PHIL 427",
+            "PHIL 428",
+            "PHIL 473",
+            "PHIL 336",
+            "PHIL 350",
+            "PHIL 360",
+            "PHIL 362",
+            "PHIL 363",
+            "PHIL 381",
+            "PHIL 385",
+            "PHIL 450",
+            "PHIL 452",
+            "PHIL 460",
+            "PHIL 462",
+            "PHIL 463",
+            "PHIL 465",
+            "PHIL 467",
+            "PHIL 470",
+            "PHIL 480",
+            "PHIL 484",
+            "PHIL 485",
+            "PHIL 486"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                80,
+                80
+              ]
+            ],
+            "source_quote": "one of these courses must be a gateway course",
+            "eligible_if": {
+              "courses": [
+                "PHIL 315",
+                "PHIL 320",
+                "PHIL 336",
+                "PHIL 337",
+                "PHIL 340",
+                "PHIL 360",
+                "PHIL 385"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "PPL-BA-CATEGORIES",
+        "source_lines": [
+          [
+            76,
+            141
+          ]
+        ],
+        "source_quote": "Two courses from Categories A, B and C below",
+        "description": "Two courses from Categories A, B and C (moral/political philosophy, history of philosophy, systematic areas), from different categories, at least one a gateway course.",
+        "confidence": "medium",
+        "note": "The requirement that the two courses belong to different categories cannot be checked from course codes alone, since several courses appear in more than one category; not encoded as a check. Double-counting with other requirements is disallowed per the text, consistent with the one-slot rule."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 406",
+            "POSC 315",
+            "POSC 323",
+            "POSC 335",
+            "POSC 340",
+            "POSC 426",
+            "POSC 444",
+            "POSC 423",
+            "POSC 432"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PPL-BA-CONSTPOL",
+        "source_lines": [
+          [
+            142,
+            154
+          ]
+        ],
+        "source_quote": "One course in constitutional politics:",
+        "description": "One course in constitutional politics.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 345",
+            "IR 307",
+            "IR 309",
+            "IR 349",
+            "POSC 345",
+            "POSC 360",
+            "POSC 370",
+            "POSC 439",
+            "POSC 448a",
+            "POSC 456",
+            "POSC 469"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PPL-BA-COMPARATIVE",
+        "source_lines": [
+          [
+            156,
+            170
+          ]
+        ],
+        "source_quote": "One course in comparative or international politics and law:",
+        "description": "One course in comparative or international politics and law.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 326",
+            "IR 332",
+            "IR 344",
+            "LING 412",
+            "POSC 334",
+            "POSC 347",
+            "POSC 381",
+            "POSC 395",
+            "POSC 443",
+            "POSC 452",
+            "PPD 314",
+            "SWMS 349"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PPL-BA-PUBLICPOLICY",
+        "source_lines": [
+          [
+            172,
+            187
+          ]
+        ],
+        "source_quote": "One course in politics, law, and public policy:",
+        "description": "One course in politics, law, and public policy.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "LAW 300",
+        "id": "PPL-BA-LAW",
+        "source_lines": [
+          [
+            189,
+            193
+          ]
+        ],
+        "source_quote": "One course in law:",
+        "description": "LAW 300, the required law course.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "At least 36 units must be completed",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This interdisciplinary major combines, in a systematic",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The major requires nine classes, one of which",
+      "reason": "no_fit",
+      "why": "Overview restating the nine-class structure and gateway requirement already encoded in the distributed category nodes; the exact gateway list here differs slightly from the one in the Categories section and cannot be reconciled as a separate checkable rule."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "Completing a gateway course is recommended prior",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "Courses taken to satisfy other requirements will",
+      "reason": "no_fit",
+      "why": "Restates the one-slot rule; no separate node needed."
+    },
+    {
+      "source_lines": [
+        [
+          199,
+          199
+        ]
+      ],
+      "source_quote": "Majors may graduate with departmental honors by",
+      "reason": "out_of_scope",
+      "why": "Honors/GPA requirement, out of scope for Phase 1."
+    }
+  ]
+}

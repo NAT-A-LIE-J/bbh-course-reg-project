@@ -1,0 +1,164 @@
+{
+  "program": "Legal Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LAW 220"
+              },
+              {
+                "family": "specific_course",
+                "course": "LAW 225"
+              }
+            ]
+          }
+        ],
+        "id": "LEGALSTUD-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "LAW 210p Fundamentals of the U.S. Legal System",
+        "description": "LAW 210p plus either LAW 220 or LAW 225, totaling 6 required units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 434",
+            "HIST 386",
+            "LAW 101w",
+            "LAW 150w",
+            "LAW 200w",
+            "LAW 201w",
+            "LAW 202",
+            "LAW 203",
+            "LAW 205",
+            "LAW 206",
+            "LAW 207",
+            "LAW 208w",
+            "LAW 223",
+            "LAW 250w",
+            "LAW 275p",
+            "LAW 300",
+            "LAW 301",
+            "LAW 305",
+            "LAW 306",
+            "LAW 307",
+            "LAW 310w",
+            "LAW 311",
+            "LAW 320p",
+            "LAW 324",
+            "LAW 326",
+            "LAW 350",
+            "LAW 352",
+            "LAW 355",
+            "LAW 402",
+            "LAW 403",
+            "LAW 404",
+            "LAW 406",
+            "LAW 407",
+            "LAW 490x",
+            "LAW 492",
+            "LAW 498",
+            "PHIL 430",
+            "PHIL 431",
+            "POSC 345",
+            "PPD 314",
+            "FBE 403",
+            "FBE 427",
+            "FBE 428",
+            "FBE 429",
+            "FBE 458"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                81,
+                91
+              ]
+            ],
+            "source_quote": "A maximum of 4 units from the following FBE courses",
+            "eligible_if": {
+              "prefix": [
+                "FBE"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "LEGALSTUD-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            91
+          ]
+        ],
+        "source_quote": "Choose from the following courses to satisfy the remaining",
+        "description": "16 elective units chosen from a list of Law, History, Economics, Philosophy, Political Science, Public Policy courses, with at most 4 units from the FBE option list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "totals 22 units, consisting of 6 required units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 22
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Legal Studies enables students to deepen",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing language, not a requirement."
+    }
+  ]
+}

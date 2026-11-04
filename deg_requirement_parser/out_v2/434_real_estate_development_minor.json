@@ -1,0 +1,125 @@
+{
+  "program": "Real Estate Development Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RED 200"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PPD 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 245g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 362"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "FBE 400x"
+              },
+              {
+                "family": "specific_course",
+                "course": "RED 375"
+              }
+            ]
+          }
+        ],
+        "id": "RED-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            35
+          ]
+        ],
+        "source_quote": "RED 200 Introduction to Real Estate Units: 4",
+        "description": "Four core courses: RED 200, PPD 227 or PPD 245g, RED 362, and FBE 400x or RED 375.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PPD 358",
+            "PPD 360",
+            "PPD 361",
+            "PPD 364",
+            "PPD 422",
+            "PPD 439",
+            "RED 351",
+            "RED 398",
+            "RED 417",
+            "RED 425",
+            "RED 435",
+            "RED 469"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "RED-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            37,
+            52
+          ]
+        ],
+        "source_quote": "Electives (4 units):",
+        "description": "4 units of electives chosen from the listed PPD and RED courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor requires 20 units, including four core courses",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor is intended for any student with an interest",
+      "reason": "advisory",
+      "why": "Marketing/advisory statement about who the minor is for, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "program": "Race, Ethnicity and Politics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "POSC 421",
+        "id": "REP-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            31
+          ]
+        ],
+        "source_quote": "All students are required to take POSC 421",
+        "description": "Core requirement: POSC 421 Ethnic Politics.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 350",
+            "POSC 351",
+            "POSC 352",
+            "POSC 356",
+            "POSC 358",
+            "POSC 430",
+            "POSC 431",
+            "POSC 452",
+            "POSC 456"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "REP-MINOR-RACE-GENDER",
+        "source_lines": [
+          [
+            33,
+            53
+          ]
+        ],
+        "source_quote": "Race and Gender in a Global Context:",
+        "description": "One course from the Race and Gender in a Global Context list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 320",
+            "POSC 328",
+            "POSC 424m",
+            "POSC 427",
+            "POSC 428",
+            "POSC 441m",
+            "POSC 442m",
+            "POSC 444"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "REP-MINOR-COMP-RACIAL",
+        "source_lines": [
+          [
+            55,
+            66
+          ]
+        ],
+        "source_quote": "Comparative Racial Politics:",
+        "description": "One course from the Comparative Racial Politics list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HIST 265gw",
+            "HIST 341",
+            "HIST 347",
+            "SOCI 142gm",
+            "SOCI 155gm",
+            "SOCI 342m",
+            "SOCI 432m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "REP-MINOR-SOCIAL-HIST",
+        "source_lines": [
+          [
+            68,
+            86
+          ]
+        ],
+        "source_quote": "Social/Historical:",
+        "description": "One course from the Social/Historical list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 301gp",
+            "AMST 320",
+            "AMST 365",
+            "AMST 385"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "REP-MINOR-RACIAL-FORMATION",
+        "source_lines": [
+          [
+            88,
+            96
+          ]
+        ],
+        "source_quote": "Racial Formation:",
+        "description": "One course from the Racial Formation list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "id": "REP-MINOR-POSC-MAJOR-RULE",
+        "source_lines": [
+          [
+            101,
+            103
+          ]
+        ],
+        "source_quote": "Political science majors are required to take seven",
+        "description": "Political science majors face an amended requirement: seven courses (28 units) total, including four courses (at least three upper-division) from the Social/Historical and Racial Formation categories, instead of the standard five-course minor.",
+        "confidence": "medium",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "Political science majors",
+          "courses": []
+        },
+        "note": "This amends the five-course/20-unit requirement above for political science majors specifically; cannot be checked against the standard course list since it changes the counts."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Requirements: Five Courses (20 Units)*",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The interdisciplinary minor in race, ethnicity and",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          103,
+          103
+        ]
+      ],
+      "source_quote": "At least four classes must be unique to",
+      "reason": "university_level",
+      "why": "University-wide minor uniqueness rule handled automatically by the tool."
+    }
+  ]
+}

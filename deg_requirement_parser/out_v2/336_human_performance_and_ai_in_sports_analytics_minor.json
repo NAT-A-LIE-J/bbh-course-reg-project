@@ -1,0 +1,86 @@
+{
+  "program": "Human Performance and AI in Sports Analytics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 221Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 205Lgx"
+          }
+        ],
+        "id": "HPAISA-MIN-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology and Physiology",
+        "description": "One lower-division biology/sport science course: BISC 220Lg, BISC 221Lg, or HBIO 205Lgx.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DSO 478"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 484"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 401L"
+          }
+        ],
+        "id": "HPAISA-MIN-UPPERDIV",
+        "source_lines": [
+          [
+            31,
+            38
+          ]
+        ],
+        "source_quote": "DSO 478 Sports Data Science, AI and Management",
+        "description": "Four upper-division courses: DSO 478, DSO 484, HBIO 309, and HBIO 401L.",
+        "confidence": "high",
+        "note": "DSO 484 is listed with variable units (2 or 4); unit count depends on enrollment option, not encoded separately."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The program requires at least 18 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

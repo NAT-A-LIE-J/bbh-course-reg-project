@@ -1,0 +1,163 @@
+{
+  "program": "Physics/Computer Science (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 162L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 163L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 190"
+          }
+        ],
+        "id": "PHYSCS-BS-LOWER",
+        "source_lines": [
+          [
+            23,
+            39
+          ]
+        ],
+        "source_quote": "CSCI 103L Object Oriented Programming Units: 4",
+        "description": "Required lower-division courses in CS, math and physics.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 356"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408a"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 408b"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 438a"
+          }
+        ],
+        "id": "PHYSCS-BS-UPPER",
+        "source_lines": [
+          [
+            41,
+            51
+          ]
+        ],
+        "source_quote": "CSCI 350 Fundamentals of Operating Systems Units: 4",
+        "description": "Required upper-division courses in CS, math and physics.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            53,
+            53
+          ]
+        ],
+        "source_quote": "Total units: 80",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 80
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "For those wishing to pursue an honors degree, a senior thesis",
+      "reason": "out_of_scope",
+      "why": "Optional honors thesis and GPA-based honors distinction, not a core degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "Students who maintain a GPA of at least 3.5",
+      "reason": "out_of_scope",
+      "why": "GPA-based honors eligibility rule."
+    }
+  ]
+}

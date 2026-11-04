@@ -1,0 +1,257 @@
+{
+  "program": "Musical Theatre (BFA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 386"
+          }
+        ],
+        "id": "MT-BFA-CINEMATIC-ARTS",
+        "source_lines": [
+          [
+            35,
+            43
+          ]
+        ],
+        "source_quote": "8 units required.",
+        "description": "Two required Cinematic Arts courses totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 425",
+            "CTWR 403",
+            "CTWR 409",
+            "CTWR 411",
+            "CTWR 422",
+            "DANC 170",
+            "DANC 342gp",
+            "MUSC 255",
+            "THTR 105",
+            "THTR 318",
+            "THTR 408b",
+            "THTR 410",
+            "THTR 416",
+            "THTR 424",
+            "THTR 442",
+            "THTR 464",
+            "THTR 459"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MT-BFA-REQUIRED-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            66
+          ]
+        ],
+        "source_quote": "Select 4 units from the list below:",
+        "description": "Select 4 units of electives from a specified list of Cinematic Arts/Dramatic Arts courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTE 107"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 201aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 205L"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 206bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 206aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 208"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 306L"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 340L"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 350aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 350bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 354"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 450aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTE 450bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 120aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 120b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 471"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 497"
+          }
+        ],
+        "id": "MT-BFA-DRAMATIC-ARTS",
+        "source_lines": [
+          [
+            68,
+            94
+          ]
+        ],
+        "source_quote": "79 units required.",
+        "description": "Required Dramatic Arts courses totaling 79 units.",
+        "confidence": "medium",
+        "note": "Line 85 '(7 units required)' appears between THTE 354 and THTE 450aL but its referent is unclear and the listed course units do not sum exactly to 79; left unresolved, see unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "MT-BFA-WRITING",
+        "source_lines": [
+          [
+            95,
+            100
+          ]
+        ],
+        "source_quote": "Writing Units: 8",
+        "description": "WRIT 150 and WRIT 340, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "id": "MT-BFA-ELECTIVES",
+        "source_lines": [
+          [
+            106,
+            108
+          ]
+        ],
+        "source_quote": "Elective Units: 5",
+        "description": "5 units of free electives with no stated restriction.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "All BFA theatre majors are required to earn",
+      "reason": "out_of_scope",
+      "why": "GPA requirement and probation/disqualification policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          85,
+          85
+        ]
+      ],
+      "source_quote": "(7 units required)",
+      "reason": "no_fit",
+      "why": "Ambiguous parenthetical note within the Dramatic Arts course list whose referent and meaning cannot be determined."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "Required General Education Units: 28",
+      "reason": "university_level",
+      "why": "University-wide GE requirement repeated on the programme page, sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          110,
+          110
+        ]
+      ],
+      "source_quote": "Total Units: 132",
+      "reason": "university_level",
+      "why": "Total degree unit count is a university-wide figure, not a programme-specific course rule."
+    }
+  ]
+}

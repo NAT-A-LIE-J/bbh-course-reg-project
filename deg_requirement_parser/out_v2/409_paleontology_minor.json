@@ -1,0 +1,89 @@
+{
+  "program": "Paleontology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 120Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 126Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 433L"
+          }
+        ],
+        "id": "PALEO-MIN-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (16 units)",
+        "description": "Four required courses: BISC 120Lg, BISC 220Lg, GEOL 126Lg, GEOL 433L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 404L",
+            "BISC 483",
+            "GEOL 320L",
+            "GEOL 414",
+            "GEOL 435L",
+            "HBIO 314"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "PALEO-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            43
+          ]
+        ],
+        "source_quote": "Elective Courses (choose 16 units)",
+        "description": "Choose 16 units of electives from the listed BISC/GEOL/HBIO courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The Paleontology minor requires at least 32 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

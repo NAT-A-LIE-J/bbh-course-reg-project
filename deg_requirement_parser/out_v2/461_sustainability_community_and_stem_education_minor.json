@@ -1,0 +1,82 @@
+{
+  "program": "Sustainability, Community and STEM Education Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EDUC 477"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 478"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 481"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 483"
+          },
+          {
+            "family": "specific_course",
+            "course": "EDUC 485"
+          }
+        ],
+        "id": "SCSE-MINOR-CORE",
+        "source_lines": [
+          [
+            37,
+            43
+          ],
+          [
+            59,
+            67
+          ]
+        ],
+        "source_quote": "The required course work consists of 20 units",
+        "description": "Five required 4-unit EDUC courses totaling 20 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "candidates enrolled in the SCSE minor must satisfy requirements",
+      "reason": "out_of_scope",
+      "why": "References separate licensure requirements covered elsewhere in the catalogue."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "totaling up to 838 hours of fieldwork",
+      "reason": "no_fit",
+      "why": "A fieldwork hours requirement tied to clinical placements, not a course-based check this taxonomy can express without a defined course pool."
+    },
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "The SCSE minor is open to all USC undergraduates",
+      "reason": "advisory",
+      "why": "Descriptive marketing statement about eligibility and duration, not a specific rule."
+    }
+  ]
+}

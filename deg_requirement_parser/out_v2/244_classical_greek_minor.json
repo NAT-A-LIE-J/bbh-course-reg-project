@@ -1,0 +1,133 @@
+{
+  "program": "Classical Greek Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "GR 220"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "GR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "of which one may be GR 220 and at least three must be at the upper-division level",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "GR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "GRMINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Four courses in Classical Greek, of which one may be GR 220",
+        "description": "Four courses in Classical Greek, one of which may be GR 220, with at least three at the upper-division level.",
+        "confidence": "medium",
+        "note": "No course list given beyond GR 220; eligibility for the Greek prefix is assumed to be 'GR' based on the course code cited."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "GR",
+                "CLAS"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "GRMINOR-ADDITIONAL",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "One additional upper-division course: either Classical Greek or Classics",
+        "description": "One additional upper-division course in Classical Greek (GR) or Classics (CLAS).",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "TOTAL: five courses",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

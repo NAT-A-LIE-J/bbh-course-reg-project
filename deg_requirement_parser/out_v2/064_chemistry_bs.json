@@ -1,0 +1,249 @@
+{
+  "program": "Chemistry (Chemical Biology) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 107Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 108L"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CHEMBIO-BS-CORE-LOWER",
+        "source_lines": [
+          [
+            23,
+            46
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology and Physiology",
+        "description": "Lower-division core: biology, chemistry sequence, calculus, linear algebra/calc III, and physics sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 300L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325bL"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 430"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 432"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 463L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 467L"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CHEM 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "CHEMBIO-BS-CORE-UPPER",
+        "source_lines": [
+          [
+            48,
+            63
+          ]
+        ],
+        "source_quote": "BISC 320Lg Molecular Biology Units: 4",
+        "description": "Upper-division core: molecular biology, analytical and organic chemistry, physical chemistry choice, quantum mechanics, two labs, and 4 units of directed research.",
+        "confidence": "high",
+        "note": "CHEM 490x offers variable unit enrollment (1-8); 4 units are required."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 332L",
+            "CHEM 423L",
+            "CHEM 465L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CHEMBIO-BS-ADV-LAB-ELECTIVE",
+        "source_lines": [
+          [
+            65,
+            71
+          ]
+        ],
+        "source_quote": "Advanced Laboratory Elective, 4 Units From Among:",
+        "description": "4 units from a list of advanced laboratory courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 426",
+            "CHEM 453",
+            "CHEM 519",
+            "CHEM 520a",
+            "CHEM 520b",
+            "CHEM 521"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CHEMBIO-BS-ADV-CHEM-ELECTIVE",
+        "source_lines": [
+          [
+            73,
+            82
+          ]
+        ],
+        "source_quote": "Advanced Chemistry Elective, Eight Units From Among:",
+        "description": "8 units from a list of advanced chemistry courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "In addition to the general education, writing,",
+      "reason": "university_level",
+      "why": "References general education, writing, foreign language, and diversity requirements handled elsewhere."
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "program": "Human Biology (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 120Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 220Lg"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 121Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 221Lg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 120"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 108g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 135aLg"
+          }
+        ],
+        "id": "HBIO-BS-GENERAL-CORE",
+        "source_lines": [
+          [
+            27,
+            49
+          ]
+        ],
+        "source_quote": "General Core (25 Units)",
+        "description": "25-unit general core: a biology sequence, a chemistry sequence, HBIO 120, a math course, and PHYS 135aLg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 301L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 320"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 400L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 408L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 420L"
+              }
+            ],
+            "id": "HBIO-BS-TRACK-APPLIED-PHYSIOLOGY",
+            "source_lines": [
+              [
+                57,
+                67
+              ]
+            ],
+            "source_quote": "The Applied Physiology track explores human movement",
+            "description": "Applied Physiology track: five named HBIO courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 301L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 302L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 407L"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "HBIO 420L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 307L"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 324"
+              }
+            ],
+            "id": "HBIO-BS-TRACK-BIOMEDICAL-SCIENCE",
+            "source_lines": [
+              [
+                69,
+                80
+              ]
+            ],
+            "source_quote": "The Biomedical Science track applies the knowledge",
+            "description": "Biomedical Science track: HBIO 301L, 302L, 407L, 324, plus HBIO 420L or BISC 307L.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 302L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 360L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 370"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 409"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 435"
+              }
+            ],
+            "id": "HBIO-BS-TRACK-HEALTH-AND-DISEASE",
+            "source_lines": [
+              [
+                82,
+                92
+              ]
+            ],
+            "source_quote": "The Health and Disease track explores physiology",
+            "description": "Health and Disease track: five named HBIO courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 200Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 300"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 308"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 406"
+              }
+            ],
+            "id": "HBIO-BS-TRACK-HUMAN-EVOLUTIONARY-BIOLOGY",
+            "source_lines": [
+              [
+                94,
+                104
+              ]
+            ],
+            "source_quote": "The Human Evolution track examines how and",
+            "description": "Human Evolutionary Biology track: five named courses.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "HBIO-BS-MAJOR-TRACK",
+        "source_lines": [
+          [
+            51,
+            104
+          ]
+        ],
+        "source_quote": "Choose one complete track module from below:",
+        "description": "Choose one complete 20-unit thematic track module.",
+        "confidence": "high",
+        "note": "Asterisks denote prerequisites required; not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BISC 300L",
+                "BISC 312x",
+                "BISC 313L",
+                "BISC 325",
+                "BISC 330L",
+                "BISC 406L",
+                "BISC 423",
+                "BISC 435",
+                "BISC 450L",
+                "BISC 490x",
+                "CHEM 322aL",
+                "CHEM 322bL",
+                "CHEM 325aL",
+                "CHEM 325bL",
+                "HBIO 308",
+                "HBIO 309",
+                "HBIO 405",
+                "HBIO 439L",
+                "HBIO 441L",
+                "HBIO 442L",
+                "HBIO 491L",
+                "GERO 310",
+                "GERO 440",
+                "MATH 114xg",
+                "MATH 208x",
+                "PSYC 274Lg",
+                "PHYS 135bL",
+                "PSYC 360",
+                "PSYC 425",
+                "QBIO 305g"
+              ]
+            },
+            {
+              "unresolved": "courses from any other track in the major not already used"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "HBIO-BS-RESTRICTED-ELECTIVES",
+        "source_lines": [
+          [
+            106,
+            142
+          ]
+        ],
+        "source_quote": "A minimum of 16 units is required.",
+        "description": "16 units of restricted electives, from the listed courses or from any unused track.",
+        "confidence": "medium",
+        "note": "HBIO 490x and HBIO 439L have variable units but note 4 units required; one-slot rule applies, no double-counting of track courses."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "No more than two courses may be lower",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Total major requirements: 61 units; total degree",
+      "reason": "university_level",
+      "why": "Restates the sum of already-encoded parts and the university-wide 128-unit total."
+    },
+    {
+      "source_lines": [
+        [
+          148,
+          148
+        ]
+      ],
+      "source_quote": "*Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite notation, not a degree requirement to check."
+    }
+  ]
+}

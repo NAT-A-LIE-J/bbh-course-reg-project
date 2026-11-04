@@ -1,0 +1,190 @@
+{
+  "program": "Middle East Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "MDES 201w",
+        "id": "MDES-MINOR-LOWER",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "All students must take the following course.",
+        "description": "Required lower-division course MDES 201w.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "MDES 301g",
+        "id": "MDES-MINOR-UPPER",
+        "source_lines": [
+          [
+            35,
+            39
+          ]
+        ],
+        "source_quote": "MDES 301g The Global Middle East Units: 4",
+        "description": "Required upper-division course MDES 301g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARAB 252",
+            "ARAB 300",
+            "ARAB 322",
+            "ARAB 333",
+            "ARAB 334",
+            "ARAB 352",
+            "CLAS 349gp",
+            "CLAS 371",
+            "CLAS 378",
+            "CLAS 420",
+            "ECON 342",
+            "HEBR 315",
+            "HIST 480",
+            "IR 362",
+            "IR 363",
+            "IR 464",
+            "IRAN 250",
+            "IRAN 320",
+            "IRAN 325",
+            "IRAN 350",
+            "MDES 312",
+            "MDES 313p",
+            "MDES 314p",
+            "MDES 316p",
+            "MDES 320g",
+            "MDES 324",
+            "MDES 325g",
+            "MDES 335",
+            "MDES 340g",
+            "MDES 342g",
+            "MDES 343g",
+            "MDES 345p",
+            "MDES 375",
+            "MDES 401",
+            "MDES 403",
+            "MDES 441w",
+            "MDES 475",
+            "POSC 351"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                45,
+                45
+              ]
+            ],
+            "source_quote": "only two of which may be language courses",
+            "eligible_if": {
+              "courses": [
+                "ARAB 252",
+                "ARAB 300",
+                "ARAB 322",
+                "ARAB 333",
+                "ARAB 334",
+                "ARAB 352",
+                "HEBR 315",
+                "IRAN 250",
+                "IRAN 320",
+                "IRAN 325",
+                "IRAN 350"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "MDES-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            41,
+            84
+          ]
+        ],
+        "source_quote": "Three courses from the list below, only two",
+        "description": "Three upper-division elective courses from the approved list, with at most two being language courses; students studying a language may substitute ARAB 252, HEBR 315 or IRAN 250 for one of the three.",
+        "confidence": "high",
+        "note": "The substitution sentence in L023 (ARAB 252, HEBR 315, IRAN 250 as substitutes) is already covered since these courses are included in the elective list; no separate node needed."
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_courses": 4,
+          "min_units": 16,
+          "applies_to": "students minoring in Middle East Studies who major in International Relations; MDES/IR cross-listed courses may satisfy the unique-course requirement"
+        },
+        "id": "MDES-MINOR-IR-UNIQUENESS",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "A special accommodation is in place for majors",
+        "description": "IR majors minoring in MDES may use MDES/IR cross-listed courses toward the four unique courses (16 units) required outside the major department, but must still complete at least four courses unique to the minor.",
+        "confidence": "medium",
+        "note": "This encodes a university/college-level uniqueness rule with a programme-specific exception for cross-listed MDES/IR courses."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Twenty units (five courses) are required.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          },
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "However there is no language requirement for the minor.",
+      "reason": "advisory",
+      "why": "Clarifies there is no separate language requirement; not an actionable requirement itself."
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "program": "Performing Arts Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "THTR 395m"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 405m"
+          }
+        ],
+        "id": "PASM-CAPSTONE",
+        "source_lines": [
+          [
+            27,
+            31
+          ]
+        ],
+        "source_quote": "Choose one capstone course:",
+        "description": "Choose one capstone course from THTR 395m, THTR 403, or THTR 405m.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTCS 190g",
+            "CTCS 200g",
+            "CTCS 201",
+            "CTCS 392",
+            "CTCS 393",
+            "CTCS 404",
+            "CTCS 464",
+            "CTCS 469",
+            "DANC 170",
+            "DANC 280g",
+            "DANC 302g",
+            "DANC 312gw",
+            "DANC 342gp",
+            "DANC 363g",
+            "DANC 432",
+            "DANC 442",
+            "MUSC 102gw",
+            "MUSC 115gp",
+            "MUSC 200gmw",
+            "MUSC 210g",
+            "MUSC 250gmw",
+            "MUSC 320gmw",
+            "MUSC 371g",
+            "MUSC 372g",
+            "MUSC 373g",
+            "THTR 301",
+            "THTR 302",
+            "THTR 310",
+            "THTR 312",
+            "THTR 313",
+            "THTR 314",
+            "THTR 400",
+            "THTR 401",
+            "THTR 403",
+            "THTR 405m",
+            "THTR 406",
+            "THTR 456",
+            "THTR 460",
+            "THTR 476mw",
+            "THTR 481",
+            "THTR 493a",
+            "THTR 493b"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "The additional 16 units must be completed outside of",
+            "eligible_if": {
+              "unresolved": "courses outside of the student's own school"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "At least 4 units must be selected from each school.",
+            "eligible_if": {
+              "prefix": [
+                "CTCS"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "At least 4 units must be selected from each school.",
+            "eligible_if": {
+              "prefix": [
+                "DANC"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "At least 4 units must be selected from each school.",
+            "eligible_if": {
+              "prefix": [
+                "MUSC"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                37,
+                37
+              ]
+            ],
+            "source_quote": "At least 4 units must be selected from each school.",
+            "eligible_if": {
+              "prefix": [
+                "THTR"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "PASM-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            80
+          ]
+        ],
+        "source_quote": "Plus four to six courses (16 units) from",
+        "description": "Four to six additional courses (16 units) from the cross-listed cinema, dance, music and theatre list, each school contributing at least 4 units, taken outside the student's own school.",
+        "confidence": "medium",
+        "note": "The 'outside of the student's school' clause cannot be fully checked since student's home school is not derivable from a course list alone; kept as unresolved alongside the checkable per-school minimums."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor in performing arts studies is a 20-unit program.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "It combines the disciplines of cinematic arts, dance,",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

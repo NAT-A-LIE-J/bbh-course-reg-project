@@ -1,0 +1,541 @@
+{
+  "program": "Legal Studies (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 101w"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 200w"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 205"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 220"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LAW 222"
+              },
+              {
+                "family": "specific_course",
+                "course": "LAW 225"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 300"
+          }
+        ],
+        "id": "LEGAL-BS-CORE",
+        "source_lines": [
+          [
+            66,
+            79
+          ]
+        ],
+        "source_quote": "LAW 101w Law and the U.S. Constitution",
+        "description": "24 units of core courses including LAW 101w, 200w, 205, 210p, 220, one of LAW 222/225, and LAW 300.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "LAW 150w",
+                "LAW 201w",
+                "LAW 202",
+                "LAW 203",
+                "LAW 206",
+                "LAW 207",
+                "LAW 208w",
+                "LAW 211",
+                "LAW 212",
+                "LAW 250w",
+                "LAW 275p",
+                "LAW 301",
+                "LAW 305",
+                "LAW 306",
+                "LAW 310w",
+                "LAW 320p",
+                "LAW 355",
+                "LAW 401",
+                "LAW 402",
+                "LAW 403",
+                "LAW 404",
+                "LAW 406",
+                "LAW 407",
+                "PPD 314"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    85,
+                    85
+                  ]
+                ],
+                "source_quote": "At least 16 units must be at the upper-division level.",
+                "eligible_if": {
+                  "level_min": 300
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 16
+                  }
+                ]
+              }
+            ],
+            "id": "LEGAL-BS-TRACK-PUBLIC",
+            "source_lines": [
+              [
+                81,
+                110
+              ]
+            ],
+            "source_quote": "Select 20 units from the courses below.",
+            "description": "Public Law Track: 20 units from the listed courses, at least 16 upper-division.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "FBE 428",
+                "LAW 150w",
+                "LAW 206",
+                "LAW 207",
+                "LAW 208w",
+                "LAW 211",
+                "LAW 306",
+                "LAW 307",
+                "LAW 311",
+                "LAW 324",
+                "LAW 326",
+                "LAW 350",
+                "LAW 352",
+                "LAW 401"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    116,
+                    116
+                  ]
+                ],
+                "source_quote": "At least 16 units must be at the upper-division level.",
+                "eligible_if": {
+                  "level_min": 300
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 16
+                  }
+                ]
+              }
+            ],
+            "id": "LEGAL-BS-TRACK-PRIVATE",
+            "source_lines": [
+              [
+                112,
+                131
+              ]
+            ],
+            "source_quote": "Select 20 units from the courses below.",
+            "description": "Private Law Track: 20 units from the listed courses, at least 16 upper-division.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "LAW 150w",
+                "LAW 202",
+                "LAW 206",
+                "LAW 207",
+                "LAW 211",
+                "LAW 212",
+                "LAW 250w",
+                "LAW 301",
+                "LAW 306",
+                "LAW 352",
+                "LAW 355",
+                "LAW 401",
+                "LAW 402",
+                "LAW 403",
+                "LAW 404",
+                "LAW 407",
+                "PPD 314"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    137,
+                    137
+                  ]
+                ],
+                "source_quote": "At least 16 units must be at the upper-division level.",
+                "eligible_if": {
+                  "level_min": 300
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 16
+                  }
+                ]
+              }
+            ],
+            "id": "LEGAL-BS-TRACK-REGULATORY",
+            "source_lines": [
+              [
+                133,
+                155
+              ]
+            ],
+            "source_quote": "Select 20 units from the courses below.",
+            "description": "Regulatory State Track: 20 units from the listed courses, at least 16 upper-division.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "FBE 428",
+                "LAW 150w",
+                "LAW 201w",
+                "LAW 202",
+                "LAW 203",
+                "LAW 206",
+                "LAW 207",
+                "LAW 208w",
+                "LAW 211",
+                "LAW 212",
+                "LAW 250w",
+                "LAW 275p",
+                "LAW 301",
+                "LAW 305",
+                "LAW 306",
+                "LAW 307",
+                "LAW 310w",
+                "LAW 311",
+                "LAW 320p",
+                "LAW 324",
+                "LAW 326",
+                "LAW 350",
+                "LAW 352",
+                "LAW 355",
+                "LAW 401",
+                "LAW 402",
+                "LAW 403",
+                "LAW 404",
+                "LAW 406",
+                "LAW 407",
+                "PPD 314"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    161,
+                    161
+                  ]
+                ],
+                "source_quote": "At least 16 units must be at the upper-division level.",
+                "eligible_if": {
+                  "level_min": 300
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 16
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    163,
+                    163
+                  ]
+                ],
+                "source_quote": "Must take 8 units from the Public Law Track",
+                "eligible_if": {
+                  "courses": [
+                    "LAW 150w",
+                    "LAW 201w",
+                    "LAW 202",
+                    "LAW 203",
+                    "LAW 206",
+                    "LAW 207",
+                    "LAW 208w",
+                    "LAW 211",
+                    "LAW 212",
+                    "LAW 250w",
+                    "LAW 275p",
+                    "LAW 301",
+                    "LAW 305",
+                    "LAW 306",
+                    "LAW 310w",
+                    "LAW 320p",
+                    "LAW 355",
+                    "LAW 401",
+                    "LAW 402",
+                    "LAW 403",
+                    "LAW 404",
+                    "LAW 406",
+                    "LAW 407",
+                    "PPD 314"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    164,
+                    164
+                  ]
+                ],
+                "source_quote": "Must take 8 units from the Private Law Track",
+                "eligible_if": {
+                  "courses": [
+                    "FBE 428",
+                    "LAW 150w",
+                    "LAW 206",
+                    "LAW 207",
+                    "LAW 208w",
+                    "LAW 211",
+                    "LAW 306",
+                    "LAW 307",
+                    "LAW 311",
+                    "LAW 324",
+                    "LAW 326",
+                    "LAW 350",
+                    "LAW 352",
+                    "LAW 401"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    165,
+                    165
+                  ]
+                ],
+                "source_quote": "Must take 4 units from the Regulatory State Track",
+                "eligible_if": {
+                  "courses": [
+                    "LAW 150w",
+                    "LAW 202",
+                    "LAW 206",
+                    "LAW 207",
+                    "LAW 211",
+                    "LAW 212",
+                    "LAW 250w",
+                    "LAW 301",
+                    "LAW 306",
+                    "LAW 352",
+                    "LAW 355",
+                    "LAW 401",
+                    "LAW 402",
+                    "LAW 403",
+                    "LAW 404",
+                    "LAW 407",
+                    "PPD 314"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "LEGAL-BS-TRACK-GENERAL",
+            "source_lines": [
+              [
+                157,
+                165
+              ]
+            ],
+            "source_quote": "Select 20 units from the categories below.",
+            "description": "General Legal Studies Track: 20 units drawn from the three track lists, with minimums from each, at least 16 upper-division.",
+            "confidence": "medium",
+            "note": "Courses used here overlap with those listed under the individual tracks; one-slot rule applies across the whole programme."
+          }
+        ],
+        "id": "LEGAL-BS-TRACK-CHOICE",
+        "source_lines": [
+          [
+            60,
+            64
+          ]
+        ],
+        "source_quote": "Students must choose one of the tracks listed",
+        "description": "Students select one of four 20-unit tracks: Public Law, Private Law, The Regulatory State, or General Legal Studies.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 498"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 497"
+          }
+        ],
+        "id": "LEGAL-BS-CAPSTONE-INTERNSHIP",
+        "source_lines": [
+          [
+            167,
+            172
+          ]
+        ],
+        "source_quote": "LAW 498 Law Internship Units: 1, 2, 3, 4",
+        "description": "4 units combining LAW 498 Law Internship and LAW 497 Legal Studies Capstone Project.",
+        "confidence": "medium",
+        "note": "LAW 498 is offered for variable units (1-4); the exact unit split with LAW 497 to reach 4 total units is not specified."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "To qualify and to request Departmental Honors,",
+      "reason": "out_of_scope",
+      "why": "Honors designation requirement, not core degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Students must have a minimum 3.5 cumulative",
+      "reason": "out_of_scope",
+      "why": "GPA rule for honors."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Departmental Honors designation is linked to the",
+      "reason": "out_of_scope",
+      "why": "Honors/capstone linkage, discretionary office-set requirements."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          51
+        ]
+      ],
+      "source_quote": "Eight courses in six Core Literacies, plus two",
+      "reason": "university_level",
+      "why": "General Education requirement is a university-wide rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          53,
+          58
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+      "reason": "university_level",
+      "why": "University-wide writing requirement repeated on the programme page."
+    }
+  ]
+}

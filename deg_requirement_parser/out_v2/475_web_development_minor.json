@@ -1,0 +1,92 @@
+{
+  "program": "Web Development Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 104"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 460"
+          }
+        ],
+        "id": "WEBDEV-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Core Requirements (14 units)",
+        "description": "Four required core courses: TAC 104, TAC 301, TAC 304, TAC 460.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 310",
+            "TAC 404",
+            "TAC 405",
+            "TAC 425"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "WEBDEV-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            32,
+            39
+          ]
+        ],
+        "source_quote": "Elective (4 units)",
+        "description": "One elective course (4 units) from the listed options.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Web Development Minor introduces students to technologies,",
+      "reason": "advisory",
+      "why": "Programme description and marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Electives are chosen based on students' academic",
+      "reason": "advisory",
+      "why": "Advisory statement about elective selection, not a binding requirement."
+    }
+  ]
+}

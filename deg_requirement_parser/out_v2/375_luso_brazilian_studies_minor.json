@@ -1,0 +1,125 @@
+{
+  "program": "Luso-Brazilian Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "four semesters of Portuguese language (or equivalent)",
+          "after": "Luso-Brazilian Studies minor coursework"
+        },
+        "id": "LUSO-MINOR-PREREQ",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Building on a solid basis of four semesters",
+        "description": "Four semesters of Portuguese (or equivalent) is a prerequisite for the minor, beyond the 20 required units.",
+        "confidence": "medium",
+        "note": "The prerequisite language sequence is not part of the 20-unit minor count."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PORT 300",
+            "PORT 302",
+            "PORT 316"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LUSO-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "select two of the following three courses",
+        "description": "Select two of PORT 300, PORT 302, PORT 316 (8 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "PORT 342",
+                "SPAN 372",
+                "SPAN 405",
+                "SPAN 482",
+                "AMST 353m",
+                "ANTH 425",
+                "HIST 372",
+                "HIST 456",
+                "IR 364",
+                "IR 365",
+                "IR 425",
+                "IR 465",
+                "IR 466",
+                "POSC 350",
+                "SOCI 470"
+              ]
+            },
+            {
+              "unresolved": "Study Abroad courses and courses offered by other departments at USC where a Portuguese-speaking country or the Lusophone world is among the objects of study, as long as approved"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "LUSO-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            44
+          ],
+          [
+            46,
+            62
+          ]
+        ],
+        "source_quote": "select three from the following list",
+        "description": "Select three elective courses (12 units) from the listed Portuguese/Luso-Brazilian-related electives, study abroad courses, or approved courses from other departments with a Lusophone focus.",
+        "confidence": "medium",
+        "note": "Courses should be selected with guidance of the program director; study abroad/other department courses qualify only if Lusophone-focused, which cannot be fully verified from a fixed list."
+      }
+    ],
+    "of_which": []
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The Luso-Brazilian Studies minor will require 20",
+      "reason": "university_level",
+      "why": "Total unit count restating the sum of required (8) and elective (12) units; not an independent check."
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "program": "Neuroscience Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 421"
+          },
+          {
+            "family": "specific_course",
+            "course": "NEUR 408"
+          }
+        ],
+        "id": "NEUR-MIN-CORE",
+        "source_lines": [
+          [
+            28,
+            34
+          ]
+        ],
+        "source_quote": "Core Requirements (12 Units)",
+        "description": "Three core courses: BISC 407, BISC 421, NEUR 408.",
+        "confidence": "high",
+        "note": "BISC 421 and NEUR 408 require BISC 220 or BISC 221 as prerequisite (not encoded, see L133)."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 310g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 307"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 305g"
+          }
+        ],
+        "id": "NEUR-MIN-STATS",
+        "source_lines": [
+          [
+            36,
+            49
+          ],
+          [
+            131,
+            131
+          ]
+        ],
+        "source_quote": "Choose one course from the following:",
+        "description": "One statistics course from the approved list.",
+        "confidence": "high",
+        "note": "An equivalent course may be substituted with permission (L131); not encoded, requires discretionary approval."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 307L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 312x"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 313L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 406L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 424"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 438"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 444"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 461"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 462"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 466"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 480L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 499"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "BPSI 405"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 445L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 405"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 320g"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 321"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 414"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 415"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 494"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 308"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 420L"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 435"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 409"
+          },
+          {
+            "family": "specific_course",
+            "course": "LING 385Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MEDS 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "MEDS 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "MEDS 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "NEUR 490x"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 304L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 326"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 337L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 339Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 420"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 424"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 426"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 427"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 428"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 432"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 438"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 468"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 481"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 405"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 412"
+          },
+          {
+            "family": "specific_course",
+            "course": "SCRM 487"
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROGRAM_RULE",
+            "details": {
+              "direction": "EXCLUDES",
+              "applies_to": "students who completed GERO 320",
+              "courses": [
+                "GERO 321"
+              ]
+            }
+          }
+        ],
+        "id": "NEUR-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            51,
+            125
+          ]
+        ],
+        "source_quote": "Choose one course from the following:",
+        "description": "One elective course from the approved neuroscience-related list.",
+        "confidence": "high",
+        "note": "BISC 462 can be repeated twice with different topics each semester (L074); GERO 321 cannot be taken if GERO 320 already completed (L087); courses require various prerequisites noted with ** and *** (BISC 220/221, PSYC 100) not encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          26,
+          26
+        ]
+      ],
+      "source_quote": "A grade of C- or higher is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement."
+    },
+    {
+      "source_lines": [
+        [
+          137,
+          137
+        ]
+      ],
+      "source_quote": "Recommended but not required: CHEM 103Lx",
+      "reason": "advisory",
+      "why": "Recommended but not required courses."
+    },
+    {
+      "source_lines": [
+        [
+          139,
+          140
+        ]
+      ],
+      "source_quote": "Students who have not already taken the prerequisites",
+      "reason": "out_of_scope",
+      "why": "Describes variable total unit count depending on prerequisite completion, a background-dependent rule not expressible as a fixed threshold."
+    }
+  ]
+}

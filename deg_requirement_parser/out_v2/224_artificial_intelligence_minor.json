@@ -1,0 +1,151 @@
+{
+  "program": "Artificial Intelligence Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "EIS 370"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "EE 460"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 467"
+              }
+            ]
+          }
+        ],
+        "id": "AI-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            33,
+            42
+          ]
+        ],
+        "source_quote": "CSCI 170 Discrete Methods in Computer Science",
+        "description": "Required courses: CSCI 170, CSCI 360, EIS 370, and either EE 460 or CSCI 467.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 444",
+            "CSCI 445L",
+            "CSCI 461",
+            "CSCI 468",
+            "CSCI 469",
+            "EE 451",
+            "EE 456",
+            "EE 461",
+            "ISE 325",
+            "ISE 470",
+            "TAC 459"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "AI-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            44,
+            60
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "One elective course chosen from the listed AI-related courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "This minor requires 20 units of course work",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          27
+        ]
+      ],
+      "source_quote": "The program assumes that students have a background",
+      "reason": "out_of_scope",
+      "why": "Prerequisite background requirements, not part of the minor's own unit requirements."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "A grade of C or better is required",
+      "reason": "out_of_scope",
+      "why": "Grade and retake rule for prerequisite/CSCI 170 coursework."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Interested students who do not satisfy the prerequisites",
+      "reason": "advisory",
+      "why": "Suggests an alternate minor rather than stating a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "At least 16 units must be unique to the minor",
+      "reason": "university_level",
+      "why": "Standard minor uniqueness rule, handled by the university-level tool, not encoded here."
+    }
+  ]
+}

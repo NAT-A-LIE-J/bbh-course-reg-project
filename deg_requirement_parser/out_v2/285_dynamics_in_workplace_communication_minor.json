@@ -1,0 +1,164 @@
+{
+  "program": "Dynamics in Workplace Communication Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUCO 333mw"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUCO 460"
+              }
+            ]
+          }
+        ],
+        "id": "DWC-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "BUAD 302 Communication Strategy in Business Units",
+        "description": "BUAD 302 plus one of BUCO 333mw or BUCO 460.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BUCO 333mw",
+                "BUCO 425",
+                "BUCO 445",
+                "BUCO 458",
+                "BUCO 460",
+                "BUCO 485"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BAEP 470",
+                "BAEP 472",
+                "BAEP 475",
+                "BAEP 491",
+                "BUCO 450",
+                "MOR 469",
+                "MOR 471"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 0
+              },
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                39,
+                39
+              ]
+            ],
+            "source_quote": "Electives (8 units)",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "DWC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            61
+          ]
+        ],
+        "source_quote": "Complete at least one of the following BUCO courses",
+        "description": "At least one Business Communication elective (4-8 units) plus Free Electives (0-4 units) totaling 8 elective units.",
+        "confidence": "medium",
+        "note": "BUCO 333mw and BUCO 460 may be used as an elective only if not already used to satisfy the required course choice (one-slot rule); not encoded as a separate node."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To declare this minor, students must have",
+      "reason": "out_of_scope",
+      "why": "Admission/GPA declaration requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students taking this minor should, if possible,",
+      "reason": "advisory",
+      "why": "Recommendation about WRIT 340, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Successful completion of the minor requires a",
+      "reason": "out_of_scope",
+      "why": "Minimum GPA rule, not a course-selection requirement."
+    }
+  ]
+}

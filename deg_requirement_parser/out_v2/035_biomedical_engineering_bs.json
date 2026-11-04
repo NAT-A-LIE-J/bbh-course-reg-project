@@ -1,0 +1,424 @@
+{
+  "program": "Biomedical Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BME-BS-WRITING",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 126g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 129"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 226g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 229"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ],
+            "id": "BME-BS-MATH",
+            "source_lines": [
+              [
+                44,
+                56
+              ]
+            ],
+            "source_quote": "MATH 125g Calculus I Units: 4",
+            "description": "Math requirement: MATH 125g, Calculus II choice, Calculus III choice, and MATH 245.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ],
+            "id": "BME-BS-PHYSICS",
+            "source_lines": [
+              [
+                58,
+                63
+              ]
+            ],
+            "source_quote": "PHYS 151Lg Fundamentals of Physics I",
+            "description": "Physics requirement: PHYS 151Lg and PHYS 152L.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ],
+            "id": "BME-BS-CHEMISTRY",
+            "source_lines": [
+              [
+                65,
+                73
+              ]
+            ],
+            "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+            "description": "Chemistry requirement: a General Chemistry I option and a General Chemistry II option.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BME-BS-PREMAJOR",
+        "source_lines": [
+          [
+            40,
+            73
+          ]
+        ],
+        "source_quote": "Math Requirement",
+        "description": "Pre-Major requirements: Math, Physics, Chemistry sequences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 312x"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 320Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "HBIO 301L"
+                  }
+                ]
+              }
+            ],
+            "id": "BME-BS-BIOLOGY",
+            "source_lines": [
+              [
+                79,
+                87
+              ]
+            ],
+            "source_quote": "BISC 220Lg General Biology: Cell Biology",
+            "description": "Biology requirement: BISC 220Lg plus one of three advanced biology options.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              }
+            ],
+            "id": "BME-BS-ORGANICCHEM",
+            "source_lines": [
+              [
+                89,
+                95
+              ]
+            ],
+            "source_quote": "CHEM 322aL Organic Chemistry Units: 4",
+            "description": "Organic Chemistry: CHEM 322aL and CHEM 322bL.",
+            "confidence": "medium",
+            "note": "CHEM 322bL may be replaced by 4 units of additional upper-division BME course work; this substitution option is not separately encoded."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BME 101"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 202"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 210"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 302L"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 403L"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 413"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 415"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 423"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 445aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "BME 445bL"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BME 404"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BME 410L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BME 430"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BME 450"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BME 451L"
+                  }
+                ]
+              }
+            ],
+            "id": "BME-BS-BMECORE",
+            "source_lines": [
+              [
+                97,
+                120
+              ]
+            ],
+            "source_quote": "BME 101 Introduction to Biomedical Engineering",
+            "description": "Biomedical Engineering core courses plus one elective from a listed group.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 202L",
+            "id": "BME-BS-ECE",
+            "source_lines": [
+              [
+                122,
+                126
+              ]
+            ],
+            "source_quote": "EE 202L Linear Circuits Units: 4",
+            "description": "Electrical and Computer Engineering requirement: EE 202L.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BME-BS-MAJOR",
+        "source_lines": [
+          [
+            75,
+            126
+          ]
+        ],
+        "source_quote": "Major Requirements",
+        "description": "Major requirements: Biology, Organic Chemistry, Biomedical Engineering, and ECE courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "technical electives selected from an approved list available in the department office"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "BME-BS-TECHELECTIVES",
+        "source_lines": [
+          [
+            25,
+            25
+          ],
+          [
+            128,
+            132
+          ]
+        ],
+        "source_quote": "Technical electives: Complete 10 units as needed",
+        "description": "10 units of technical electives from an approved department list.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minimum requirement for the degree is 128",
+      "reason": "university_level",
+      "why": "University-wide total unit rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Additionally, there are three possible areas of",
+      "reason": "out_of_scope",
+      "why": "Describes optional emphasis tracks with no stated course requirements."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "See common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          38,
+          38
+        ]
+      ],
+      "source_quote": "General education Units: 20",
+      "reason": "university_level",
+      "why": "GE requirement handled via STARS/university-wide rules."
+    },
+    {
+      "source_lines": [
+        [
+          134,
+          134
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    }
+  ]
+}

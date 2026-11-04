@@ -1,0 +1,177 @@
+{
+  "program": "Video Game Programming Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "TAC 115"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 116"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 165"
+          }
+        ],
+        "id": "VGP-MINOR-INTRO",
+        "source_lines": [
+          [
+            27,
+            33
+          ],
+          [
+            60,
+            60
+          ],
+          [
+            62,
+            62
+          ]
+        ],
+        "source_quote": "Choose one introductory programming course (2 Units)",
+        "description": "Choose one introductory programming course: TAC 115, TAC 116, or TAC 165.",
+        "confidence": "high",
+        "note": "A placement test may waive this requirement for students with prior programming experience; students who complete CSCI 103L and CSCI 104L may also have this requirement waived. Not independently checkable, so not encoded as a separate node."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 265"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 365"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "courses": [
+                        "CSCI 491aL",
+                        "CSCI 491bL",
+                        "TAC 382",
+                        "TAC 435",
+                        "TAC 438",
+                        "TAC 439",
+                        "TAC 481",
+                        "TAC 485"
+                      ]
+                    },
+                    {
+                      "unresolved": "only for students who have completed CSCI 103L and CSCI 104L"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 380"
+          }
+        ],
+        "id": "VGP-MINOR-CORE",
+        "source_lines": [
+          [
+            35,
+            41
+          ],
+          [
+            62,
+            62
+          ]
+        ],
+        "source_quote": "Complete the following (12 Units)",
+        "description": "Complete TAC 265, TAC 365, and TAC 380 (12 units); students who completed CSCI 103L and CSCI 104L may instead replace TAC 265 and TAC 365 with 8 units of elective courses.",
+        "confidence": "medium",
+        "note": "The substitution's prerequisite (completion of CSCI 103L and CSCI 104L) cannot be verified from a course list alone."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 491aL",
+            "CSCI 491bL",
+            "TAC 382",
+            "TAC 435",
+            "TAC 438",
+            "TAC 439",
+            "TAC 481",
+            "TAC 485"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "VGP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            54
+          ]
+        ],
+        "source_quote": "Elective Courses (4 Units)",
+        "description": "At least 4 units of electives from the listed elective courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor requires a minimum of 18 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The video game programming minor integrates the",
+      "reason": "out_of_scope",
+      "why": "Programme description and marketing text, not a requirement."
+    }
+  ]
+}

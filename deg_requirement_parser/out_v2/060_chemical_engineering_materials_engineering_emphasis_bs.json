@@ -1,0 +1,320 @@
+{
+  "program": "Chemical Engineering, Materials Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "CHE-MATE-WRITING",
+        "source_lines": [
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          }
+        ],
+        "id": "CHE-MATE-CHEMISTRY",
+        "source_lines": [
+          [
+            46,
+            57
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4 or",
+        "description": "General chemistry sequence, organic chemistry, and physical chemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "CHE-MATE-MATH",
+        "source_lines": [
+          [
+            59,
+            71
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Calculus I, II, III sequences and Math of Physics and Engineering I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CHE-MATE-PHYSICS",
+        "source_lines": [
+          [
+            73,
+            78
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I",
+        "description": "Two-semester physics sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHE 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 443"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444cL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 447"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 460L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 485"
+          }
+        ],
+        "id": "CHE-MATE-CHE-CORE",
+        "source_lines": [
+          [
+            80,
+            96
+          ]
+        ],
+        "source_quote": "CHE 120 Introduction to Chemical Engineering",
+        "description": "Required chemical engineering core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MASC 310L"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BME 410L",
+                "CHE 455",
+                "CHE 475",
+                "CHEM 453",
+                "CHEM 455",
+                "MASC 334L",
+                "MASC 350L",
+                "MASC 455",
+                "MASC 471",
+                "MASC 483",
+                "PHYS 304"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "CHE-MATE-EMPHASIS",
+        "source_lines": [
+          [
+            98,
+            117
+          ]
+        ],
+        "source_quote": "Students must complete the following course",
+        "description": "Materials Engineering emphasis: MASC 310L plus three electives from the specified list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Additionally, there are four possible areas of emphasis",
+      "reason": "out_of_scope",
+      "why": "Describes alternate emphases, not this programme's requirements."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Sample student schedules are located on",
+      "reason": "advisory",
+      "why": "Informational, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "See also common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          44,
+          44
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "GE requirement handled at university level via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0) is required",
+      "reason": "out_of_scope",
+      "why": "GPA rule, not encoded in course tree."
+    }
+  ]
+}

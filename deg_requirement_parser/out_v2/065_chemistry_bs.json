@@ -1,0 +1,198 @@
+{
+  "program": "Chemistry (Chemical Nanoscience) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 107Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 108L"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "CHEM-NANO-BS-LOWER-CORE",
+        "source_lines": [
+          [
+            23,
+            44
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "Lower-division core: a general chemistry sequence, calculus I-II, linear algebra or calculus III, and the physics sequence.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 300L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 332L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 453"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 455"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 463L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 490x"
+          }
+        ],
+        "id": "CHEM-NANO-BS-UPPER-CORE",
+        "source_lines": [
+          [
+            46,
+            60
+          ]
+        ],
+        "source_quote": "CHEM 300L Analytical Chemistry Units: 4",
+        "description": "Required upper-division core courses, with CHEM 490x requiring 4 units of directed research.",
+        "confidence": "high",
+        "note": "CHEM 490x is offered for variable units (1-8); the catalogue specifies 4 units required."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 461",
+            "CHEM 488",
+            "CHEM 523",
+            "CHEM 532"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CHEM-NANO-BS-ELECTIVE",
+        "source_lines": [
+          [
+            62,
+            69
+          ]
+        ],
+        "source_quote": "Chemical Nanoscience Elective, 4 Units From Among",
+        "description": "4 units from a list of chemical nanoscience elective courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "In addition to the general education, writing and foreign language",
+      "reason": "university_level",
+      "why": "References GE, writing and foreign language requirements handled at university level."
+    }
+  ]
+}

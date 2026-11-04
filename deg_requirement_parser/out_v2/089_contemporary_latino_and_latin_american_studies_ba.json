@@ -1,0 +1,321 @@
+{
+  "program": "Contemporary Latino and Latin American Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "SPAN 245"
+          },
+          {
+            "family": "specific_course",
+            "course": "SPAN 250x"
+          },
+          {
+            "family": "specific_course",
+            "course": "SPAN 261"
+          },
+          {
+            "family": "specific_course",
+            "course": "SPAN 270"
+          },
+          {
+            "family": "manual_review",
+            "kind": "GATE",
+            "details": {
+              "stage": "PLACEMENT",
+              "basis": "QUALITATIVE_REVIEW",
+              "process": "sufficient score on the Spanish placement exam"
+            }
+          }
+        ],
+        "id": "CLLA-BA-LANGUAGE",
+        "source_lines": [
+          [
+            29,
+            39
+          ]
+        ],
+        "source_quote": "Choose one of the following four courses or earn a sufficient score",
+        "description": "One Spanish course from the list, or satisfy via placement exam score.",
+        "confidence": "high",
+        "note": "L039: students who place out must take an additional course from the list below to meet unit requirements; this is a conditional top-up we cannot check from the placement outcome."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "AHIS 127g"
+          },
+          {
+            "family": "specific_course",
+            "course": "AHIS 128gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 135gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 140gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 140g"
+          },
+          {
+            "family": "specific_course",
+            "course": "COLT 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "HIST 273g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUJZ 218a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUJZ 218b"
+          }
+        ],
+        "id": "CLLA-BA-INTRO",
+        "source_lines": [
+          [
+            41,
+            55
+          ]
+        ],
+        "source_quote": "Choose one course from the following list:",
+        "description": "One introductory Latin American culture course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 340m",
+            "HIST 372",
+            "IR 364",
+            "POSC 428"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CLLA-BA-CONTEMPORARY",
+        "source_lines": [
+          [
+            61,
+            70
+          ]
+        ],
+        "source_quote": "Choose two of the following:",
+        "description": "Two courses on Contemporary Latin Americans.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 319",
+            "AMST 448m",
+            "ANTH 425",
+            "COLT 375",
+            "HIST 369",
+            "HIST 370",
+            "HIST 374",
+            "HIST 451",
+            "HIST 470",
+            "REL 333",
+            "REL 334g",
+            "SPAN 301",
+            "SPAN 304",
+            "SPAN 306",
+            "SPAN 308",
+            "SPAN 372",
+            "SPAN 380g",
+            "SPAN 385",
+            "SPAN 462",
+            "SPAN 481",
+            "SPAN 482",
+            "SPAN 483",
+            "SPAN 484",
+            "AMST 340m",
+            "AMST 353m",
+            "AMST 357m",
+            "AMST 373m",
+            "HIST 354",
+            "HIST 372",
+            "IR 364",
+            "IR 365",
+            "IR 366",
+            "IR 425",
+            "IR 465",
+            "IR 466",
+            "POSC 350",
+            "POSC 428",
+            "POSC 430",
+            "POSC 431",
+            "SOCI 356m",
+            "SPAN 320",
+            "AHIS 318",
+            "AHIS 328",
+            "AHIS 428",
+            "AMST 446",
+            "COLT 470",
+            "CTCS 414",
+            "JOUR 465m",
+            "SPAN 302",
+            "SPAN 321",
+            "SPAN 466",
+            "THTR 481"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CLLA-BA-MAJOR-INTEREST",
+        "source_lines": [
+          [
+            72,
+            144
+          ]
+        ],
+        "source_quote": "Choose four additional courses not yet taken from one of the three following lists:",
+        "description": "Four additional courses not already used elsewhere, drawn from one of three thematic lists.",
+        "confidence": "medium",
+        "note": "The 'not yet taken' phrase restates the one-slot rule (courses already used in other requirements cannot be reused here); no separate node needed."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 400"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 450"
+          }
+        ],
+        "id": "CLLA-BA-CAPSTONE",
+        "source_lines": [
+          [
+            146,
+            153
+          ]
+        ],
+        "source_quote": "Students engage in travel or original research by choosing one of the following courses",
+        "description": "One capstone course involving travel or original research.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The major requires nine courses (36 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 9
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "two at the lower-division (100 and 200) level",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "seven at the upper-division (300 and 400) level",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 7
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Contemporary Latino and Latin",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "This curriculum prepares students for careers in business",
+      "reason": "out_of_scope",
+      "why": "Marketing text about career outcomes, not a requirement."
+    }
+  ]
+}

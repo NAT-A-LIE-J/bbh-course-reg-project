@@ -1,0 +1,150 @@
+{
+  "program": "Biopharmaceutical Management and Marketing Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BPSI 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          }
+        ],
+        "id": "BPMM-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (8 units)",
+        "description": "Two required courses: BPSI 410 and BUAD 307.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BPSI 406",
+            "BPSI 407",
+            "BPSI 414",
+            "BPSI 415",
+            "RXRS 407",
+            "RXRS 413w",
+            "RXRS 416",
+            "RXRS 421"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "BPMM-MINOR-BIOPHARM-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            45
+          ]
+        ],
+        "source_quote": "Biopharmaceutical Sciences Electives (minimum 8 units)",
+        "description": "At least 8 units from the Biopharmaceutical Sciences electives list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MKT 401",
+            "MKT 402",
+            "MKT 405",
+            "MKT 410",
+            "MKT 425",
+            "MKT 428",
+            "MKT 445",
+            "MKT 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "BPMM-MINOR-MARSHALL-ELECTIVES",
+        "source_lines": [
+          [
+            47,
+            58
+          ]
+        ],
+        "source_quote": "Marshall Electives (minimum 8 units)",
+        "description": "At least 8 units from the Marshall electives list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "consists of a minimum of 24 units of course work",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Courses must be unique to this minor and may not overlap",
+      "reason": "university_level",
+      "why": "Minor uniqueness/overlap rule handled by the university-wide minor policy."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Only students with a declared major are eligible to apply.",
+      "reason": "out_of_scope",
+      "why": "Eligibility/admission rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students will select course work in consultation with an academic adviser.",
+      "reason": "advisory",
+      "why": "Advisory procedural statement, not a binding course requirement."
+    }
+  ]
+}

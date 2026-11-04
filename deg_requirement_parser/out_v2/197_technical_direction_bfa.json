@@ -1,0 +1,356 @@
+{
+  "program": "Technical Direction (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 236"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 241"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 336"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 332"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 333"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 335"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 397"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 409"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 435"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 437"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 438"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 439"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 493a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 493b"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 497"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "TD-BFA-CORE",
+        "source_lines": [
+          [
+            33,
+            60
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "70 units of required Technical Direction BFA courses, including a 6-unit THTR 397 practicum requirement and a 4-unit THTR 497 advanced practicum requirement.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "TD-BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            62,
+            96
+          ]
+        ],
+        "source_quote": "Complete the two required courses below",
+        "description": "Critical Studies Core: two required courses, plus one course from List A and one course from List A or B.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROCEDURAL",
+        "details": {
+          "procedure": "General Education requirements per university program, with some program courses satisfying Core Literacy requirements per adviser"
+        },
+        "id": "TD-BFA-GE",
+        "source_lines": [
+          [
+            27,
+            31
+          ],
+          [
+            97,
+            99
+          ]
+        ],
+        "source_quote": "The university's General Education program provides a",
+        "description": "36 units of General Education requirements as defined by university GE program.",
+        "confidence": "medium",
+        "note": "GE requirements are university-wide and not encoded in detail; see unclassified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "TD-BFA-ELECTIVES",
+        "source_lines": [
+          [
+            101,
+            101
+          ]
+        ],
+        "source_quote": "Elective Units: 6",
+        "description": "6 units of free electives.",
+        "confidence": "medium",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            105,
+            105
+          ]
+        ],
+        "source_quote": "Total Units: 128",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 128
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A total of 128 units of course work",
+      "reason": "university_level",
+      "why": "Total unit count is a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All BFA students are required to earn",
+      "reason": "out_of_scope",
+      "why": "GPA rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "BFA students who fail to earn a GPA",
+      "reason": "out_of_scope",
+      "why": "Probation policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A student disqualified from continued study in",
+      "reason": "out_of_scope",
+      "why": "Disqualification/transfer policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "It requires eight courses in six Core",
+      "reason": "university_level",
+      "why": "University-wide GE requirement detail."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Note that courses within the program will",
+      "reason": "advisory",
+      "why": "Advisory note directing students to work with adviser."
+    }
+  ]
+}

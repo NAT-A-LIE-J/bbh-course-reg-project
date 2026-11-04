@@ -1,0 +1,69 @@
+{
+  "program": "Internet of Things Engineering Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 109L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 250L"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "EE 355x"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 201"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 451"
+          }
+        ],
+        "id": "IOT-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            33
+          ]
+        ],
+        "source_quote": "Required Courses (24 units)",
+        "description": "Six required courses totaling 24 units: CSCI 430, EE 109L, EE 250L, either EE 355x or CSCI 201, EE 450, and EE 451.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "The Department of Electrical Engineering will accept introductory programming courses",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/corequisite approval policy, not a degree requirement to check."
+    }
+  ]
+}

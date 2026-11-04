@@ -1,0 +1,692 @@
+{
+  "program": "Artificial Intelligence (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGR 102"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENGR 103"
+          }
+        ],
+        "id": "AI-BS-ENGINEERING",
+        "source_lines": [
+          [
+            48,
+            53
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy",
+        "description": "ENGR 102 and ENGR 103.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EE 141L"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "AI-BS-MATH-FOUNDATIONS",
+        "source_lines": [
+          [
+            55,
+            66
+          ],
+          [
+            211,
+            211
+          ]
+        ],
+        "source_quote": "EE 141L Applied Linear Algebra for Engineering",
+        "description": "EE 141L, MATH 125g, MATH 126g or 129, MATH 226g or 229.",
+        "confidence": "high",
+        "note": "Footnote ** requires a grade of C or better and limits retakes; grade rules are out of scope."
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BISC 104Lgx",
+                "BISC 120Lg",
+                "BISC 121Lg",
+                "BISC 220Lg",
+                "BISC 221Lg",
+                "BISC 230Lgx",
+                "HBIO 205Lgx",
+                "PHIL 246Lg"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "AI-BS-BIOLOGY",
+            "source_lines": [
+              [
+                73,
+                86
+              ]
+            ],
+            "source_quote": "Take one of the following courses:",
+            "description": "One biology course from the list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              }
+            ],
+            "id": "AI-BS-PHYSICS",
+            "source_lines": [
+              [
+                88,
+                93
+              ]
+            ],
+            "source_quote": "PHYS 151Lg Fundamentals of Physics I",
+            "description": "PHYS 151Lg or PHYS 161Lg.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "AI-BS-BASIC-SCIENCE",
+        "source_lines": [
+          [
+            69,
+            93
+          ]
+        ],
+        "source_quote": "Basic Science (8 units)",
+        "description": "Biology requirement and Physics requirement.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 113x"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 114x"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 170"
+              }
+            ],
+            "id": "AI-BS-PROGRAMMING",
+            "source_lines": [
+              [
+                99,
+                105
+              ],
+              [
+                213,
+                213
+              ]
+            ],
+            "source_quote": "CSCI 113x Programming Fundamentals for Computing",
+            "description": "CSCI 113x, CSCI 114x, CSCI 170.",
+            "confidence": "high",
+            "note": "Footnote *** requires a grade of C or better, limits retakes, and allows petitioned substitutions for transfer students; not encoded as checkable requirement."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ISE 220"
+              },
+              {
+                "family": "specific_course",
+                "course": "ISE 225"
+              }
+            ],
+            "id": "AI-BS-PROB-STATS",
+            "source_lines": [
+              [
+                111,
+                112
+              ]
+            ],
+            "source_quote": "ISE 220 Foundations of Probability Modeling",
+            "description": "ISE 220 and ISE 225.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 109L",
+            "id": "AI-BS-EMBEDDED",
+            "source_lines": [
+              [
+                118,
+                118
+              ]
+            ],
+            "source_quote": "EE 109L Introduction to Embedded Systems",
+            "description": "EE 109L.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 270"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGR 203"
+              }
+            ],
+            "id": "AI-BS-AI-CORE",
+            "source_lines": [
+              [
+                124,
+                125
+              ]
+            ],
+            "source_quote": "CSCI 270 Introduction to Algorithms and Theory",
+            "description": "CSCI 270 and ENGR 203.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "AI-BS-CORE-LOWER-DIVISION",
+        "source_lines": [
+          [
+            95,
+            125
+          ]
+        ],
+        "source_quote": "Core Lower-Division Requirements (30 units)",
+        "description": "Programming and Discrete Methods, Probability and Statistics, Embedded Systems, and AI Core.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 360"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 467"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 460"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "EIS 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 330"
+          }
+        ],
+        "id": "AI-BS-UPPER-DIVISION",
+        "source_lines": [
+          [
+            127,
+            137
+          ]
+        ],
+        "source_quote": "CSCI 360 Artificial Intelligence: Principles and Foundations",
+        "description": "CSCI 360, CSCI 467 or EE 460, EIS 370, ISE 330.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 201"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 401"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "CSCI 444",
+                    "CSCI 445L",
+                    "CSCI 452",
+                    "CSCI 461",
+                    "CSCI 468",
+                    "CSCI 469",
+                    "EE 456"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "AI-BS-TRACK-COMPUTING",
+            "source_lines": [
+              [
+                143,
+                161
+              ]
+            ],
+            "source_quote": "Computing Foundations and Applications Track",
+            "description": "CSCI 201, CSCI 401, plus four courses from the AI elective list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "EE 250L"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 354L"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 461"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 462L"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 496"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "EE 451"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 454L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 456"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 457"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 477L"
+                  }
+                ]
+              }
+            ],
+            "id": "AI-BS-TRACK-HARDWARE",
+            "source_lines": [
+              [
+                162,
+                180
+              ]
+            ],
+            "source_quote": "Hardware Systems for AI Track",
+            "description": "EE 250L, EE 354L, EE 461, EE 462L, EE 496, plus one more EE course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ISE 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "ISE 325"
+              },
+              {
+                "family": "specific_course",
+                "course": "ISE 382"
+              },
+              {
+                "family": "specific_course",
+                "course": "ISE 430"
+              },
+              {
+                "family": "specific_course",
+                "course": "ISE 480"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "ISE 315L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ISE 435L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ISE 440"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "ISE 470"
+                  }
+                ]
+              }
+            ],
+            "id": "AI-BS-TRACK-SYSTEMS-OPS",
+            "source_lines": [
+              [
+                182,
+                199
+              ]
+            ],
+            "source_quote": "AI Systems and Operations Engineering Track",
+            "description": "ISE 227, ISE 325, ISE 382, ISE 430, ISE 480, plus one more ISE course.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "AI-BS-TRACKS",
+        "source_lines": [
+          [
+            139,
+            199
+          ]
+        ],
+        "source_quote": "Choose one of the following three tracks",
+        "description": "Choose one of three 24-unit tracks.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "AI-BS-FREE-ELECTIVE",
+        "source_lines": [
+          [
+            201,
+            201
+          ]
+        ],
+        "source_quote": "Free Elective (2 units)",
+        "description": "2 units of free electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          3,
+          3
+        ]
+      ],
+      "source_quote": "The minimum requirement for the degree is",
+      "reason": "university_level",
+      "why": "University-wide unit total."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "General admission requirements for the undergraduate program",
+      "reason": "university_level",
+      "why": "Admission rules shared with university/school."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The minimum requirement for the degree is",
+      "reason": "university_level",
+      "why": "University-wide unit total repeated."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for core courses."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Courses with a grade of C– or below",
+      "reason": "out_of_scope",
+      "why": "Repeat policy rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Corresponding departmental approval is required in order",
+      "reason": "out_of_scope",
+      "why": "Approval procedure for retaking courses."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students who do not satisfy the degree",
+      "reason": "out_of_scope",
+      "why": "Disqualification policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Candidates must complete general education requirements;",
+      "reason": "university_level",
+      "why": "General Education is handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          34
+        ]
+      ],
+      "source_quote": "Composition/Writing Requirements (8 units)",
+      "reason": "university_level",
+      "why": "University writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          36,
+          40
+        ]
+      ],
+      "source_quote": "General Education (20 units)",
+      "reason": "university_level",
+      "why": "University-wide GE requirement."
+    },
+    {
+      "source_lines": [
+        [
+          46,
+          46
+        ]
+      ],
+      "source_quote": "In addition to the 20 units of",
+      "reason": "university_level",
+      "why": "GE-D/E/F satisfaction note, not a separate requirement."
+    },
+    {
+      "source_lines": [
+        [
+          67,
+          67
+        ]
+      ],
+      "source_quote": "MATH 129 and MATH 229 are the",
+      "reason": "advisory",
+      "why": "Recommendation for which calculus sequence to take."
+    },
+    {
+      "source_lines": [
+        [
+          209,
+          209
+        ]
+      ],
+      "source_quote": "A WRIT 340 section entitled",
+      "reason": "advisory",
+      "why": "Recommended section of WRIT 340, not required."
+    },
+    {
+      "source_lines": [
+        [
+          211,
+          211
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better",
+      "reason": "out_of_scope",
+      "why": "Grade requirement footnote for Math Foundations."
+    },
+    {
+      "source_lines": [
+        [
+          213,
+          213
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better",
+      "reason": "out_of_scope",
+      "why": "Grade requirement footnote for Programming and Discrete Methods."
+    },
+    {
+      "source_lines": [
+        [
+          213,
+          213
+        ]
+      ],
+      "source_quote": "Students transferring into this program after the",
+      "reason": "out_of_scope",
+      "why": "Petition-based substitution for transfer students; a discretionary exception."
+    }
+  ]
+}

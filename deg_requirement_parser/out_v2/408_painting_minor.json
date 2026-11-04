@@ -1,0 +1,152 @@
+{
+  "program": "Painting Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 120"
+          }
+        ],
+        "id": "PAINT-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "Required lower-division courses (8 units):",
+        "description": "Two required lower-division courses: ART 110 and ART 120.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 312",
+            "ART 320",
+            "ART 370",
+            "ART 415",
+            "ART 420",
+            "ART 470",
+            "CRIT 350gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                34,
+                35
+              ]
+            ],
+            "source_quote": "max 8",
+            "eligible_if": {
+              "courses": [
+                "ART 312"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                39,
+                39
+              ]
+            ],
+            "source_quote": "ART 420 Topics in Advanced Painting Units: 4 (max 12)",
+            "eligible_if": {
+              "courses": [
+                "ART 420"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 12
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                40,
+                40
+              ]
+            ],
+            "source_quote": "ART 470 Topics in Advanced Printmaking Units: 4 (max 12)",
+            "eligible_if": {
+              "courses": [
+                "ART 470"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "id": "PAINT-MINOR-UPPER",
+        "source_lines": [
+          [
+            30,
+            41
+          ]
+        ],
+        "source_quote": "Three upper-division courses (12 units) chosen from",
+        "description": "Three upper-division courses from a list, with per-course unit caps on repeatable courses.",
+        "confidence": "high",
+        "note": "ART 312, ART 420 and ART 470 may be repeated for credit up to their stated unit caps."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "A total of 20 units are required for this minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

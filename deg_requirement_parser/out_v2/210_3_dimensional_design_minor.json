@@ -1,0 +1,100 @@
+{
+  "program": "3-Dimensional Design Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DES 102"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 213"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 230"
+          }
+        ],
+        "id": "3DMINOR-LOWER-DIV",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required lower-division courses (10 units)",
+        "description": "Three required lower-division courses totaling 10 units: DES 102, DES 213, DES 230.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 444",
+            "DES 302",
+            "DES 303",
+            "DES 313",
+            "DES 323g",
+            "DES 330",
+            "DES 332a",
+            "DES 332b",
+            "DES 402"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "3DMINOR-UPPER-DIV",
+        "source_lines": [
+          [
+            31,
+            43
+          ]
+        ],
+        "source_quote": "Upper-division courses (12 units) chosen from the following:",
+        "description": "12 units of upper-division courses chosen from a designated list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            45,
+            45
+          ]
+        ],
+        "source_quote": "Total Minimum Units: 22",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 22
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          49,
+          56
+        ]
+      ],
+      "source_quote": "Optional lower-division course(s) chosen from the following:",
+      "reason": "no_fit",
+      "why": "A list of optional lower-division courses with no stated unit or count requirement tying it to the minor's total; unclear how it factors into the 22-unit minimum."
+    }
+  ]
+}

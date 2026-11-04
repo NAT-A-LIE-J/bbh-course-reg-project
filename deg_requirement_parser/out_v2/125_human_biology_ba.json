@@ -1,0 +1,356 @@
+{
+  "program": "Human Biology (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 200Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 202Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 301L"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 108g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              }
+            ]
+          }
+        ],
+        "id": "HBIO-BA-CORE",
+        "source_lines": [
+          [
+            27,
+            44
+          ]
+        ],
+        "source_quote": "BISC 120Lg General Biology: Organismal Biology and Evolution",
+        "description": "General core of 21 units: a biology intro course, a cell biology course, HBIO 120, HBIO 202Lg, HBIO 301L, and a math course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 302L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 370"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 360L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 407L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 408L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 420L"
+              }
+            ],
+            "id": "HBIO-BA-TRACK-PHYSMETAB",
+            "source_lines": [
+              [
+                52,
+                63
+              ]
+            ],
+            "source_quote": "The Human Physiology and Metabolism track explores human movement",
+            "description": "Choose 16 units (4 courses) from the Human Physiology and Metabolism track list.",
+            "confidence": "high",
+            "note": "Each course in the track list is 4 units; 16 units means 4 of the 6 listed courses, but the exact selection count is not stated numerically beyond units."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 300"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 308"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 403L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 405"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 406"
+              }
+            ],
+            "id": "HBIO-BA-TRACK-EVOBIO",
+            "source_lines": [
+              [
+                65,
+                76
+              ]
+            ],
+            "source_quote": "The Human Evolution track examines how and why humans evolved",
+            "description": "Choose 16 units (4 courses) from the Human Evolutionary Biology track list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 250g"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 320"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 400L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 401L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 441L"
+              }
+            ],
+            "id": "HBIO-BA-TRACK-PERFORMANCE",
+            "source_lines": [
+              [
+                78,
+                88
+              ]
+            ],
+            "source_quote": "The Human Performance track examines the scientific link between",
+            "description": "Choose 16 units (4 courses) from the Human Performance track list.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "HBIO-BA-MAJORTRACK",
+        "source_lines": [
+          [
+            46,
+            50
+          ]
+        ],
+        "source_quote": "Choose 16 units from one of the track modules below.",
+        "description": "Select one of three 16-unit track modules.",
+        "confidence": "medium",
+        "note": "The exact number of courses within a track (16 units) is inferred from 4-unit course sizes; the catalogue states units, not course counts, so a count leaf was not used."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BISC 300L",
+                "BISC 307L",
+                "BISC 312x",
+                "BISC 313L",
+                "BISC 320Lg",
+                "BISC 325",
+                "BISC 421",
+                "BISC 423",
+                "BISC 490x",
+                "CHEM 322aL",
+                "CHEM 322bL",
+                "HBIO 309",
+                "HBIO 409",
+                "HBIO 435",
+                "HBIO 439L",
+                "HBIO 442L",
+                "HBIO 491L",
+                "MATH 114xg",
+                "MATH 208x",
+                "PSYC 274Lg",
+                "PSYC 339Lg",
+                "PSYC 360",
+                "QBIO 305g"
+              ]
+            },
+            {
+              "courses": [
+                "HBIO 302L",
+                "HBIO 370",
+                "HBIO 360L",
+                "HBIO 407L",
+                "HBIO 408L",
+                "HBIO 420L",
+                "HBIO 300",
+                "HBIO 306",
+                "HBIO 308",
+                "HBIO 403L",
+                "HBIO 405",
+                "HBIO 406",
+                "HBIO 250g",
+                "HBIO 320",
+                "HBIO 400L",
+                "HBIO 401L",
+                "HBIO 441L"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "HBIO-BA-RESTRICTED-ELECTIVES",
+        "source_lines": [
+          [
+            90,
+            120
+          ]
+        ],
+        "source_quote": "A minimum of 8 units is required. Courses can be selected",
+        "description": "At least 8 units from the restricted elective list or from any other track module in the major.",
+        "confidence": "high",
+        "note": "Courses used to satisfy the Major Track requirement cannot be reused here (one-slot rule)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Total requirements: 45 units including at least 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 45
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "including at least 24 upper-division.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "No more than one course may be lower division",
+      "reason": "no_fit",
+      "why": "This caps lower-division courses only within the major track and electives combined, excluding the general core, but checks cannot be scoped to a subset of sibling nodes sharing prefixes with the core."
+    },
+    {
+      "source_lines": [
+        [
+          126,
+          126
+        ]
+      ],
+      "source_quote": "*Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite flags on individual courses are a sequencing/registration detail, not a degree requirement to encode here."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The section of Human and Evolutionary Biology within the",
+      "reason": "advisory",
+      "why": "Programmatic description/marketing text, not a requirement."
+    }
+  ]
+}

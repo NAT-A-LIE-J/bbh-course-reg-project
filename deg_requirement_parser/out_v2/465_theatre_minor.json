@@ -1,0 +1,167 @@
+{
+  "program": "Theatre Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          }
+        ],
+        "id": "THTR-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "Three required courses: THTR 101, THTR 125, THTR 130.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 230"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 231"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 233"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 252a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 333"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 336"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 365"
+          }
+        ],
+        "id": "THTR-MINOR-ONEOF",
+        "source_lines": [
+          [
+            31,
+            43
+          ]
+        ],
+        "source_quote": "One of the following:",
+        "description": "One course chosen from a list of introductory/intermediate theatre electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "THTR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "THTR-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            45,
+            45
+          ]
+        ],
+        "source_quote": "Required upper-division THTR electives: 10-12 units",
+        "description": "10-12 units of upper-division THTR electives.",
+        "confidence": "medium",
+        "note": "Catalogue gives a range (10-12 units); encoded as a minimum of 10 since op:min is the closest fit and no max is stated elsewhere in similar programs."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            49,
+            49
+          ]
+        ],
+        "source_quote": "Required theatre units: 24",
+        "eligible_if": {
+          "prefix": [
+            "THTR"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The general minor in theatre invites students to explore",
+      "reason": "advisory",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "All minor students are also eligible to participate",
+      "reason": "advisory",
+      "why": "Describes optional opportunities, not a requirement."
+    }
+  ]
+}

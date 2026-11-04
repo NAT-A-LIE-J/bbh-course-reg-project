@@ -1,0 +1,359 @@
+{
+  "program": "Law, History, and Culture (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "LAW 300",
+        "id": "LHC-BA-CORE1",
+        "source_lines": [
+          [
+            27,
+            27
+          ],
+          [
+            29,
+            33
+          ]
+        ],
+        "source_quote": "One course from Core Competence 1: Legal",
+        "description": "LAW 300, the single course in Core Competence 1: Legal Reasoning.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CLAS 275gp",
+            "CLAS 305",
+            "CLAS 307",
+            "CLAS 333",
+            "CLAS 340",
+            "CLAS 348g",
+            "CLAS 370",
+            "CLAS 470",
+            "HIST 210gw",
+            "HIST 211gp",
+            "HIST 220gp",
+            "HIST 265gw",
+            "HIST 312",
+            "HIST 320p",
+            "HIST 323",
+            "HIST 335",
+            "HIST 351",
+            "HIST 354",
+            "HIST 355",
+            "HIST 359",
+            "HIST 364",
+            "HIST 377",
+            "HIST 385",
+            "HIST 386",
+            "HIST 413",
+            "HIST 444",
+            "HIST 448",
+            "HIST 453",
+            "HIST 455",
+            "HIST 456",
+            "HIST 459",
+            "HIST 460",
+            "HIST 463",
+            "HIST 470",
+            "LAW 101w",
+            "REL 361"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                140,
+                140
+              ]
+            ],
+            "source_quote": "No more than one lower-division (100 or 200",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "LHC-BA-CORE2",
+        "source_lines": [
+          [
+            27,
+            27
+          ],
+          [
+            35,
+            76
+          ]
+        ],
+        "source_quote": "Take three courses from among the following:",
+        "description": "Three courses from the Core Competence 2 Historical Approaches list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COLT 385",
+            "COLT 472",
+            "COLT 475",
+            "COLT 476",
+            "ENGL 355g",
+            "ENGL 374m",
+            "ENGL 381",
+            "JS 342",
+            "PHIL 430",
+            "PHIL 431",
+            "SWMS 349",
+            "SWMS 355",
+            "SWMS 358"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                140,
+                140
+              ]
+            ],
+            "source_quote": "No more than one lower-division (100 or 200",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "LHC-BA-CORE3",
+        "source_lines": [
+          [
+            27,
+            27
+          ],
+          [
+            78,
+            96
+          ]
+        ],
+        "source_quote": "Take two courses from among the following:",
+        "description": "Two courses from the Core Competence 3 Literary, Philosophical and Theoretical Perspectives list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 101gmw",
+            "AMST 320",
+            "AMST 342m",
+            "AMST 344m",
+            "AMST 345",
+            "AMST 353m",
+            "AMST 357m",
+            "AMST 389m",
+            "ANTH 345",
+            "LAW 310w",
+            "LAW 320p",
+            "POSC 130g",
+            "POSC 248gw",
+            "POSC 340",
+            "POSC 345",
+            "POSC 370",
+            "POSC 371",
+            "POSC 375",
+            "POSC 380",
+            "POSC 426",
+            "POSC 441m",
+            "POSC 443",
+            "POSC 444"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                140,
+                140
+              ]
+            ],
+            "source_quote": "No more than one lower-division (100 or 200",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "LHC-BA-CORE4",
+        "source_lines": [
+          [
+            27,
+            27
+          ],
+          [
+            98,
+            126
+          ]
+        ],
+        "source_quote": "Take three courses from among the following:",
+        "description": "Three courses from the Core Competence 4 Social Movements and Social Policy list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "This major requires a minimum of 36 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            140,
+            140
+          ]
+        ],
+        "source_quote": "No more than two of the nine required courses",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "(or 40 units with honors)",
+      "reason": "out_of_scope",
+      "why": "Honors unit variant, tied to optional honors track below."
+    },
+    {
+      "source_lines": [
+        [
+          128,
+          134
+        ]
+      ],
+      "source_quote": "Students wishing to pursue Departmental Honors must",
+      "reason": "out_of_scope",
+      "why": "Optional departmental honors track, not a base major requirement."
+    },
+    {
+      "source_lines": [
+        [
+          140,
+          140
+        ]
+      ],
+      "source_quote": "except with special permission of the LHC major",
+      "reason": "out_of_scope",
+      "why": "Discretionary exception/permission process."
+    },
+    {
+      "source_lines": [
+        [
+          142,
+          142
+        ]
+      ],
+      "source_quote": "Students may petition to substitute a course",
+      "reason": "out_of_scope",
+      "why": "Substitution petition process and cap."
+    },
+    {
+      "source_lines": [
+        [
+          144,
+          144
+        ]
+      ],
+      "source_quote": "Students requesting LHC credit for courses taken",
+      "reason": "out_of_scope",
+      "why": "Transfer/study abroad credit substitution process."
+    },
+    {
+      "source_lines": [
+        [
+          146,
+          146
+        ]
+      ],
+      "source_quote": "Students may request permission to shift one",
+      "reason": "out_of_scope",
+      "why": "Discretionary shifting of courses between areas, with a substitution cap."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "program": "Engineering Innovation for Global Challenges Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ENGR 254",
+        "id": "EIGC-MINOR-ENGR254",
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "ENGR 254 Immersive Storytelling For Engineers, Innovators",
+        "description": "Requires ENGR 254.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ENGR 270w",
+        "id": "EIGC-MINOR-ENGR270W",
+        "source_lines": [
+          [
+            32,
+            32
+          ]
+        ],
+        "source_quote": "ENGR 270w Ethics in Global Engineering and Scientific",
+        "description": "Requires ENGR 270w.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ENGR 365"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 310"
+          }
+        ],
+        "id": "EIGC-MINOR-DESIGN-CHOICE",
+        "source_lines": [
+          [
+            34,
+            35
+          ]
+        ],
+        "source_quote": "ENGR 365 Prototyping for Design and Development of",
+        "description": "Choose ENGR 365 or TAC 310.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ENGR 385",
+        "id": "EIGC-MINOR-ENGR385",
+        "source_lines": [
+          [
+            37,
+            37
+          ]
+        ],
+        "source_quote": "ENGR 385 Human-Systems Integration for Global Engineering",
+        "description": "Requires ENGR 385.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Required Courses (18 units)",
+      "reason": "no_fit",
+      "why": "Stated total of 18 units does not match the sum (14) of the listed required courses; cannot resolve the discrepancy without inventing content."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "It is preferable that students in the minor",
+      "reason": "advisory",
+      "why": "A preference about course sequencing (and mentions ENGR 382 and CE 486ab, not part of the listed requirements), not a binding requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Orientation seminars will be provided to give students",
+      "reason": "advisory",
+      "why": "Describes advisory orientation seminars, not a degree requirement."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "program": "Art History Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 120gp",
+            "AHIS 121gp",
+            "AHIS 125gp",
+            "AHIS 126g",
+            "AHIS 127g",
+            "AHIS 128gp",
+            "AHIS 201g",
+            "AHIS 220g",
+            "AHIS 230",
+            "AHIS 250gm",
+            "AHIS 255g",
+            "AHIS 270",
+            "AHIS 282"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                27,
+                27
+              ]
+            ],
+            "source_quote": "Only One May Be At The 200 Level",
+            "eligible_if": {
+              "level_min": 200,
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "AHIS-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            43
+          ]
+        ],
+        "source_quote": "Choose Two Lower-Division Courses; Only One May",
+        "description": "Choose two lower-division AHIS courses, with at most one at the 200 level.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "AHIS"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                49,
+                49
+              ]
+            ],
+            "source_quote": "At least one course must be at the",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "AHIS-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            45,
+            49
+          ]
+        ],
+        "source_quote": "Choose from 300- and 400-level AHIS courses.",
+        "description": "16 units of 300- or 400-level AHIS courses, with at least one at the 400 level.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

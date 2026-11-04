@@ -1,0 +1,436 @@
+{
+  "program": "Civil Engineering, Structural Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "choose",
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          }
+        ],
+        "id": "CE-STRUCT-CHEM",
+        "source_lines": [
+          [
+            40,
+            45
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "One chemistry course: CHEM 105aLg or CHEM 115aLg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "CE-STRUCT-MATH",
+        "source_lines": [
+          [
+            47,
+            57
+          ]
+        ],
+        "source_quote": "MATH 126g Calculus II Units: 4",
+        "description": "MATH 126g or 129, MATH 226g or 229, and MATH 245.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CE-STRUCT-PHYSICS",
+        "source_lines": [
+          [
+            59,
+            64
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "PHYS 151Lg and PHYS 152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 104Lgx",
+            "BISC 120Lg",
+            "BISC 121Lg",
+            "BISC 220Lg",
+            "BISC 221Lg",
+            "BISC 230Lgx",
+            "HBIO 205Lgx"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CE-STRUCT-BIOLOGY",
+        "source_lines": [
+          [
+            66,
+            78
+          ]
+        ],
+        "source_quote": "Choose one from this list:",
+        "description": "One biology course from the listed options (also satisfies GE-D).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ENGR 102",
+        "id": "CE-STRUCT-ENGR",
+        "source_lines": [
+          [
+            84,
+            88
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units:",
+        "description": "ENGR 102 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CE 106"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 107L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 108"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 119"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 215"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 334L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 358L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 456"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 460"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 467L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 471"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 483"
+          }
+        ],
+        "id": "CE-STRUCT-CIVILCORE",
+        "source_lines": [
+          [
+            90,
+            109
+          ]
+        ],
+        "source_quote": "CE 106 Introduction to Civil Engineering Units:",
+        "description": "Required core civil engineering courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CE 457"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 459"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 482"
+          }
+        ],
+        "id": "CE-STRUCT-EMPHASIS",
+        "source_lines": [
+          [
+            111,
+            118
+          ]
+        ],
+        "source_quote": "CE 457 Structural Design II Units: 4",
+        "description": "Structural Engineering emphasis courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CE 423",
+            "ENE 440",
+            "CE 427"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CE-STRUCT-ADVCOMP",
+        "source_lines": [
+          [
+            120,
+            128
+          ]
+        ],
+        "source_quote": "Choose one advanced computing elective (4 units)",
+        "description": "One advanced computing elective from the listed courses.",
+        "confidence": "high",
+        "note": "Students required to take MATH 125g are waived from this requirement; see note under unclassified/manual_review handling."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "students who must take MATH 125g",
+          "effect": "waived from advanced computing elective"
+        },
+        "id": "CE-STRUCT-MATH125-WAIVER",
+        "source_lines": [
+          [
+            124,
+            124
+          ]
+        ],
+        "source_quote": "Students who must take MATH 125g will be waived",
+        "description": "Students required to take MATH 125g are waived from the advanced computing elective.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CE 480",
+        "id": "CE-STRUCT-CAPSTONE",
+        "source_lines": [
+          [
+            130,
+            134
+          ]
+        ],
+        "source_quote": "CE 480 Civil and Environmental Engineering Capstone",
+        "description": "CE 480 capstone course required.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The requirement for the degree with an emphasis",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 130
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "a minimum grade of C must be earned",
+      "reason": "out_of_scope",
+      "why": "Minimum grade requirement for specific courses; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See also common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          28
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University-wide writing requirement repeated on programme page."
+    },
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "General Education Units: 20",
+      "reason": "university_level",
+      "why": "University-wide GE requirement reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          136,
+          136
+        ]
+      ],
+      "source_quote": "Total units: 130",
+      "reason": "university_level",
+      "why": "Total unit count restated; already captured as root check / university-wide."
+    },
+    {
+      "source_lines": [
+        [
+          140,
+          140
+        ]
+      ],
+      "source_quote": "Satisfies GE requirement.",
+      "reason": "university_level",
+      "why": "GE satisfaction notation, not a separate requirement."
+    },
+    {
+      "source_lines": [
+        [
+          142,
+          142
+        ]
+      ],
+      "source_quote": "All curricula leading to a degree must be",
+      "reason": "out_of_scope",
+      "why": "Administrative approval process, not a course requirement."
+    }
+  ]
+}

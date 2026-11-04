@@ -1,0 +1,615 @@
+{
+  "program": "Classics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "GR 120",
+                    "GR 150",
+                    "GR 220",
+                    "LAT 120",
+                    "LAT 150",
+                    "LAT 222"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 5
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        47,
+                        47
+                      ]
+                    ],
+                    "source_quote": "three courses in one language of their choosing",
+                    "eligible_if": {
+                      "courses": [
+                        "GR 120",
+                        "GR 150",
+                        "GR 220"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "source_lines": [
+                      [
+                        47,
+                        47
+                      ]
+                    ],
+                    "source_quote": "and two in the other language",
+                    "eligible_if": {
+                      "courses": [
+                        "LAT 120",
+                        "LAT 150",
+                        "LAT 222"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "id": "CLAS-BA-T1-LOWERDIV-LANG",
+                "source_lines": [
+                  [
+                    43,
+                    63
+                  ]
+                ],
+                "source_quote": "Students must take three courses in one language",
+                "description": "Three courses in one of Greek/Latin and two in the other, from the listed lower-division courses.",
+                "confidence": "medium",
+                "note": "Exact 3-2 split cannot be fully enforced by min thresholds alone; equivalent placement credit also allowed per line 69 but is not checkable."
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "all": [
+                        {
+                          "prefix": [
+                            "GR",
+                            "LAT"
+                          ]
+                        },
+                        {
+                          "level_min": 300
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ],
+                    "id": "CLAS-BA-T1-UD-LANG-SEMESTERS",
+                    "source_lines": [
+                      [
+                        75,
+                        75
+                      ]
+                    ],
+                    "source_quote": "Four semesters of upper-division language courses in",
+                    "description": "Four upper-division semesters of Greek or Latin language courses.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "all": [
+                        {
+                          "prefix": [
+                            "GR",
+                            "LAT",
+                            "CLAS"
+                          ]
+                        },
+                        {
+                          "level_min": 300
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ],
+                    "id": "CLAS-BA-T1-UD-ADDITIONAL",
+                    "source_lines": [
+                      [
+                        76,
+                        76
+                      ]
+                    ],
+                    "source_quote": "Two additional upper-division courses from Greek, Latin",
+                    "description": "Two additional upper-division courses from Greek, Latin or Classics.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "NO_POOL",
+                    "details": {
+                      "requirement": "Analytical paper, oral presentation, sight reading exam in either Greek or Latin"
+                    }
+                  }
+                ],
+                "id": "CLAS-BA-T1-UPPERDIV",
+                "source_lines": [
+                  [
+                    71,
+                    77
+                  ]
+                ],
+                "source_quote": "Four semesters of upper-division language courses in",
+                "description": "Upper-division language and literature requirements including a sight-reading exam.",
+                "confidence": "medium",
+                "note": null
+              },
+              {
+                "family": "specific_course",
+                "course": "CLAS 410",
+                "id": "CLAS-BA-T1-CAPSTONE",
+                "source_lines": [
+                  [
+                    79,
+                    79
+                  ]
+                ],
+                "source_quote": "Capstone: CLAS 410 Capstone Research Seminar Units:",
+                "description": "Capstone research seminar CLAS 410.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "CLAS-BA-TRACK1",
+            "source_lines": [
+              [
+                27,
+                79
+              ]
+            ],
+            "source_quote": "Track I. Classical Languages and Literatures",
+            "description": "Classical Languages and Literatures track: lower- and upper-division language work, exams, and capstone.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "CLAS 150gp",
+                    "CLAS 151gp",
+                    "CLAS 280gp",
+                    "COLT 101gp",
+                    "CORE 102gp",
+                    "HIST 101gp"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ],
+                "id": "CLAS-BA-T2-BREADTH",
+                "source_lines": [
+                  [
+                    85,
+                    96
+                  ]
+                ],
+                "source_quote": "Any one of the following:",
+                "description": "One breadth course from the listed GE-style offerings.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "GR 220"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "LAT 222"
+                  }
+                ],
+                "id": "CLAS-BA-T2-LANGUAGE",
+                "source_lines": [
+                  [
+                    98,
+                    103
+                  ]
+                ],
+                "source_quote": "GR 220 Greek III Units: 4 or",
+                "description": "Greek III or Latin III.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "all": [
+                        {
+                          "prefix": [
+                            "GR",
+                            "LAT",
+                            "CLAS"
+                          ]
+                        },
+                        {
+                          "level_min": 300
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ],
+                    "id": "CLAS-BA-T2-UD-FOUR",
+                    "source_lines": [
+                      [
+                        109,
+                        109
+                      ]
+                    ],
+                    "source_quote": "Four upper-division courses from Greek, Latin or",
+                    "description": "Four upper-division courses from Greek, Latin or Classics.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "any": [
+                        {
+                          "all": [
+                            {
+                              "prefix": [
+                                "GR",
+                                "LAT",
+                                "CLAS"
+                              ]
+                            },
+                            {
+                              "level_min": 300
+                            }
+                          ]
+                        },
+                        {
+                          "unresolved": "approved list of outside electives maintained by the major adviser"
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ],
+                    "id": "CLAS-BA-T2-UD-TWO-OUTSIDE",
+                    "source_lines": [
+                      [
+                        110,
+                        110
+                      ]
+                    ],
+                    "source_quote": "Two upper-division courses from Greek, Latin or",
+                    "description": "Two upper-division courses from Greek, Latin, Classics, or approved outside electives.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "NO_POOL",
+                    "details": {
+                      "requirement": "Analytical or research paper; oral presentation; oral examination"
+                    }
+                  }
+                ],
+                "id": "CLAS-BA-T2-UPPERDIV",
+                "source_lines": [
+                  [
+                    105,
+                    111
+                  ]
+                ],
+                "source_quote": "Four upper-division courses from Greek, Latin or",
+                "description": "Upper-division requirements including a paper, presentation and oral exam.",
+                "confidence": "medium",
+                "note": null
+              },
+              {
+                "family": "specific_course",
+                "course": "CLAS 410",
+                "id": "CLAS-BA-T2-CAPSTONE",
+                "source_lines": [
+                  [
+                    113,
+                    113
+                  ]
+                ],
+                "source_quote": "Capstone: CLAS 410 Capstone Research Seminar Units:",
+                "description": "Capstone research seminar CLAS 410.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "CLAS-BA-TRACK2",
+            "source_lines": [
+              [
+                81,
+                113
+              ]
+            ],
+            "source_quote": "Track II. Classical Humanities",
+            "description": "Classical Humanities track: breadth course, language requirement, upper-division work, capstone.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CLAS 101gp"
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "family": "specific_course",
+                        "course": "CLAS 150gp"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "CLAS 151gp"
+                      }
+                    ]
+                  }
+                ],
+                "id": "CLAS-BA-T3-INTRO",
+                "source_lines": [
+                  [
+                    119,
+                    122
+                  ]
+                ],
+                "source_quote": "CLAS 101gp State and Society in the Ancient",
+                "description": "CLAS 101gp, or both CLAS 150gp and CLAS 151gp.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "all": [
+                        {
+                          "prefix": [
+                            "CLAS",
+                            "GR",
+                            "LAT"
+                          ]
+                        },
+                        {
+                          "level_min": 300
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 5
+                      }
+                    ],
+                    "id": "CLAS-BA-T3-UD-FIVE",
+                    "source_lines": [
+                      [
+                        128,
+                        128
+                      ]
+                    ],
+                    "source_quote": "Five upper-division courses in Classics, Greek or",
+                    "description": "Five upper-division courses in Classics, Greek or Latin.",
+                    "confidence": "high",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "any": [
+                        {
+                          "all": [
+                            {
+                              "prefix": [
+                                "CLAS"
+                              ]
+                            },
+                            {
+                              "level_min": 300
+                            }
+                          ]
+                        },
+                        {
+                          "unresolved": "approved list of outside electives maintained by the major adviser"
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ],
+                    "id": "CLAS-BA-T3-UD-THREE-OUTSIDE",
+                    "source_lines": [
+                      [
+                        129,
+                        129
+                      ]
+                    ],
+                    "source_quote": "Three upper-division courses in classics or from",
+                    "description": "Three upper-division courses in classics or approved outside electives.",
+                    "confidence": "medium",
+                    "note": null
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "unresolved": "one upper-division course that includes study of a classical civilization other than Greece and Rome"
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 1
+                      }
+                    ],
+                    "id": "CLAS-BA-T3-UD-OTHER-CIV",
+                    "source_lines": [
+                      [
+                        130,
+                        130
+                      ]
+                    ],
+                    "source_quote": "One upper-division course that includes study of",
+                    "description": "One upper-division course on a classical civilization other than Greece and Rome.",
+                    "confidence": "low",
+                    "note": "No course list given; pool unresolved."
+                  },
+                  {
+                    "family": "manual_review",
+                    "kind": "NO_POOL",
+                    "details": {
+                      "requirement": "Research paper, oral presentation."
+                    }
+                  }
+                ],
+                "id": "CLAS-BA-T3-UPPERDIV",
+                "source_lines": [
+                  [
+                    124,
+                    131
+                  ]
+                ],
+                "source_quote": "Five upper-division courses in Classics, Greek or",
+                "description": "Upper-division requirements including a research paper and presentation.",
+                "confidence": "medium",
+                "note": null
+              },
+              {
+                "family": "specific_course",
+                "course": "CLAS 410",
+                "id": "CLAS-BA-T3-CAPSTONE",
+                "source_lines": [
+                  [
+                    133,
+                    133
+                  ]
+                ],
+                "source_quote": "Capstone: CLAS 410 Capstone Research Seminar Units:",
+                "description": "Capstone research seminar CLAS 410.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "CLAS-BA-TRACK3",
+            "source_lines": [
+              [
+                115,
+                133
+              ]
+            ],
+            "source_quote": "Track III. Ancient Civilizations",
+            "description": "Ancient Civilizations track: intro courses, upper-division courses, capstone.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CLAS-BA-TRACKS",
+        "source_lines": [
+          [
+            21,
+            25
+          ]
+        ],
+        "source_quote": "The major in classics has three tracks,",
+        "description": "Students complete one of the three Classics tracks.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          31,
+          41
+        ]
+      ],
+      "source_quote": "Recommended Preparation – any of the following:",
+      "reason": "advisory",
+      "why": "Recommended preparation courses are not required."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All three tracks emphasize critical thinking as",
+      "reason": "advisory",
+      "why": "General programmatic description, not a specific requirement."
+    }
+  ]
+}

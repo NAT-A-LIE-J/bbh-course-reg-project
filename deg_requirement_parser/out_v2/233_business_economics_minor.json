@@ -1,0 +1,129 @@
+{
+  "program": "Business Economics Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 351"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 351x"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 352"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 352x"
+              }
+            ]
+          }
+        ],
+        "id": "BECON-MIN-CORE",
+        "source_lines": [
+          [
+            27,
+            37
+          ]
+        ],
+        "source_quote": "MATH 118gx Calculus for Business and Economics",
+        "description": "MATH 118gx, plus one of BUAD 351/ECON 351x, plus one of BUAD 352/ECON 352x.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FBE 402",
+            "FBE 416",
+            "FBE 424",
+            "FBE 443",
+            "FBE 462"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "BECON-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            49
+          ]
+        ],
+        "source_quote": "Choose two from the list below:",
+        "description": "Two elective courses from the listed FBE offerings.",
+        "confidence": "high",
+        "note": "Asterisked courses require prerequisites; prerequisite checking not encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor is available to students of all",
+      "reason": "no_fit",
+      "why": "Exclusion of economics majors is a program-eligibility rule not expressible as a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "To enroll, students must have completed a minimum",
+      "reason": "out_of_scope",
+      "why": "Entrance unit and GPA requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Completion of this minor requires a minimum GPA",
+      "reason": "out_of_scope",
+      "why": "GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          55,
+          55
+        ]
+      ],
+      "source_quote": "[*]Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite notice, not a selection requirement."
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "program": "Computer Science Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "B grade or higher in CSCI 102L",
+            "B grade or higher in CSCI 103L",
+            "B grade or higher in CSCI 170"
+          ]
+        },
+        "id": "CSCIMINOR-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Admission to the minor requires a B grade or higher in CSCI 102L",
+        "description": "Admission to the minor requires a B grade or higher in CSCI 102L, CSCI 103L and CSCI 170.",
+        "confidence": "high",
+        "note": "The requirement to contact the department to request admission is procedural and not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 201"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 270"
+              }
+            ]
+          }
+        ],
+        "id": "CSCIMINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            37
+          ]
+        ],
+        "source_quote": "Required Courses (18 units)",
+        "description": "Required courses: CSCI 102L, CSCI 103L, CSCI 104L, CSCI 170, and either CSCI 201 or CSCI 270.",
+        "confidence": "high",
+        "note": "CSCI 102L may be waived via a placement exam for students with programming experience; not separately encoded as it does not change the course requirement itself."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 310",
+            "CSCI 350",
+            "CSCI 353",
+            "CSCI 356",
+            "CSCI 360",
+            "CSCI 401",
+            "CSCI 420",
+            "CSCI 430",
+            "CSCI 445L",
+            "CSCI 467",
+            "CSCI 476",
+            "CSCI 485",
+            "CSCI 490x",
+            "CSCI 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "CSCIMINOR-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            58
+          ]
+        ],
+        "source_quote": "12 units of upper-division courses selected from the following list",
+        "description": "12 units of upper-division electives chosen from the listed CSCI courses.",
+        "confidence": "high",
+        "note": "Note at line 72 allows additional elective options with adviser approval; not encoded as no specific pool is given."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            60,
+            60
+          ]
+        ],
+        "source_quote": "Total units: 30",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 30
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The computer science minor introduces the concepts, tools and techniques",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          68,
+          68
+        ]
+      ],
+      "source_quote": "Students interested in a progressive or traditional master's degree",
+      "reason": "advisory",
+      "why": "Advisory recommendation for those interested in a master's degree, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          69,
+          69
+        ]
+      ],
+      "source_quote": "Students with interests in business applications should consider",
+      "reason": "advisory",
+      "why": "Advisory recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          70,
+          70
+        ]
+      ],
+      "source_quote": "Students with interest in AI/Robotics should consider",
+      "reason": "advisory",
+      "why": "Advisory recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          71,
+          71
+        ]
+      ],
+      "source_quote": "Students with interest in networking and security should consider",
+      "reason": "advisory",
+      "why": "Advisory recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          72,
+          72
+        ]
+      ],
+      "source_quote": "Additional elective options may be available with adviser approval.",
+      "reason": "no_fit",
+      "why": "Discretionary expansion of the elective pool with no defined criteria beyond adviser approval."
+    }
+  ]
+}

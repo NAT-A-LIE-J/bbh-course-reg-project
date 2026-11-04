@@ -1,0 +1,171 @@
+{
+  "program": "French (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "FREN 250",
+        "id": "FREN-BA-LOWER",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "For the lower division, FREN 250 French IV",
+        "description": "FREN 250 is required for the lower division.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "FREN 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "FREN 330"
+          }
+        ],
+        "id": "FREN-BA-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "The upper-division requirements include two core courses",
+        "description": "Two required upper-division core courses, FREN 300 and FREN 330.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FREN 305",
+            "FREN 307g",
+            "FREN 309",
+            "FREN 310",
+            "FREN 315",
+            "FREN 318",
+            "FREN 320g",
+            "FREN 340g",
+            "FREN 347g",
+            "FREN 351",
+            "FREN 357",
+            "FREN 360",
+            "FREN 370gm",
+            "FREN 373g",
+            "FREN 375gmw",
+            "FREN 382",
+            "FREN 383",
+            "FREN 392",
+            "FREN 393",
+            "FREN 401",
+            "FREN 402",
+            "FREN 403",
+            "FREN 404",
+            "FREN 410",
+            "FREN 432",
+            "FREN 445",
+            "FREN 446",
+            "FREN 448m",
+            "FREN 449",
+            "FREN 464",
+            "FREN 490x",
+            "FREN 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "Of the additional five courses, at least two must be at the 400 level.",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "FREN-BA-ELECTIVES",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            40,
+            75
+          ]
+        ],
+        "source_quote": "plus an additional five courses to be selected",
+        "description": "Five additional upper-division French courses chosen in consultation with the adviser, selected from the suggested list, with at least two at the 400 level.",
+        "confidence": "medium",
+        "note": "The cap of no more than two courses in English cannot be checked since the list does not indicate which courses are taught in English; not encoded as a check."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          81,
+          81
+        ]
+      ],
+      "source_quote": "The BA in French with Honors is available",
+      "reason": "out_of_scope",
+      "why": "Honors program GPA eligibility is a GPA/residency-type rule."
+    },
+    {
+      "source_lines": [
+        [
+          81,
+          81
+        ]
+      ],
+      "source_quote": "To complete the honors program the student must",
+      "reason": "out_of_scope",
+      "why": "Honors thesis and additional 400-level courses are an optional honors track, not a base degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          81,
+          81
+        ]
+      ],
+      "source_quote": "The topic of the thesis must be agreed",
+      "reason": "advisory",
+      "why": "Procedural note about thesis topic approval, not a core requirement."
+    }
+  ]
+}

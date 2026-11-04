@@ -1,0 +1,252 @@
+{
+  "program": "Real Estate Development (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 117g"
+          }
+        ],
+        "id": "RED-BS-PREMAJOR",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics Units: 4",
+        "description": "Pre-major requirements: ECON 203g and MATH 117g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 410x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              },
+              {
+                "family": "specific_course",
+                "course": "RED 325"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 245g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 201"
+          }
+        ],
+        "id": "RED-BS-FOUNDCORE",
+        "source_lines": [
+          [
+            34,
+            53
+          ]
+        ],
+        "source_quote": "ACCT 410x Foundations of Accounting Units: 4",
+        "description": "Foundational core: ACCT 410x, one finance course from BUAD 306/BUAD 308/RED 325, PPD 245g, PPD 303, RED 200, RED 201.",
+        "confidence": "high",
+        "note": "PPD 245g may double-count as general education per the note, restated and not a separate node."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RED 362"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 375"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 417"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 435"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 437"
+          }
+        ],
+        "id": "RED-BS-CORE",
+        "source_lines": [
+          [
+            55,
+            64
+          ]
+        ],
+        "source_quote": "RED 362 Real Estate Development Fundamentals Units: 4",
+        "description": "Real Estate Core: six named RED courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "course work from the Price School or related fields, approved by the Price School academic adviser"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 11
+          }
+        ],
+        "id": "RED-BS-ELECTIVES",
+        "source_lines": [
+          [
+            70,
+            72
+          ]
+        ],
+        "source_quote": "Students select 11-12 units of course work",
+        "description": "11-12 units of elective course work from Price School or related fields, approved by the academic adviser.",
+        "confidence": "low",
+        "note": "No defined course list; adviser approval cannot be checked, kept as unresolved pool."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PPD 431"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 497a"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 497b"
+              },
+              {
+                "family": "manual_review",
+                "kind": "GATE",
+                "details": {
+                  "stage": "EMPHASIS_ENTRY",
+                  "basis": "NUMERIC_THRESHOLD",
+                  "requires": [
+                    "3.7 GPA in Price School courses",
+                    "3.5 overall GPA"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "id": "RED-BS-CAPSTONE",
+        "source_lines": [
+          [
+            74,
+            76
+          ]
+        ],
+        "source_quote": "Students will complete four units of a capstone",
+        "description": "Capstone: PPD 431, or PPD 497a and PPD 497b (requiring 3.7 Price GPA and 3.5 overall GPA).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RED 301"
+          },
+          {
+            "family": "manual_review",
+            "kind": "HOURS",
+            "details": {
+              "min_hours": 140,
+              "setting": "internship concurrent with RED 301"
+            }
+          }
+        ],
+        "id": "RED-BS-INTERNSHIP",
+        "source_lines": [
+          [
+            78,
+            80
+          ]
+        ],
+        "source_quote": "Students are required to complete 140 hours",
+        "description": "Internship: 140 hours concurrent with RED 301.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "must satisfy all university requirements for a",
+      "reason": "university_level",
+      "why": "University-wide second major rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "and complete 32 units unique to the",
+      "reason": "out_of_scope",
+      "why": "Double major unit-uniqueness rule; out of scope for core requirements."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          84
+        ]
+      ],
+      "source_quote": "Price School honors are available at graduation",
+      "reason": "out_of_scope",
+      "why": "Honors/GPA designation rule, not a degree requirement."
+    }
+  ]
+}

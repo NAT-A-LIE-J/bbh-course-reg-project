@@ -1,0 +1,300 @@
+{
+  "program": "Geodesign (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 114xg"
+          }
+        ],
+        "id": "GEOD-BS-PREMAJOR",
+        "source_lines": [
+          [
+            39,
+            44
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics Units: 4",
+        "description": "Two pre-major courses: ECON 203g and MATH 114xg.",
+        "confidence": "high",
+        "note": "Grade requirement for these courses listed separately (L033) is out of scope."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 227"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 417"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 201g"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 381"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 382L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 383L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 412"
+          }
+        ],
+        "id": "GEOD-BS-CORE-CAPSTONE",
+        "source_lines": [
+          [
+            46,
+            61
+          ],
+          [
+            67,
+            69
+          ]
+        ],
+        "source_quote": "ARCH 203 Visualizing and Experiencing the Built Environment",
+        "description": "Twelve required core courses (48 units) including the capstone.",
+        "confidence": "medium",
+        "note": "The core list labels SSCI 383L as the capstone, but the Additional Requirements Capstone Course passage (L67-69) describes the capstone as being fulfilled by SSCI 412L (4 units). Both courses are already included in the core list; no duplicate course added, but this conflict between the two passages could not be fully resolved and is flagged here."
+      },
+      {
+        "family": "sequencing",
+        "kind": "UNIT_WINDOW",
+        "details": {
+          "courses": "core courses",
+          "within_units": 16,
+          "condition": "before completion of the geodesign pre-major requirements"
+        },
+        "id": "GEOD-BS-CORE-TIMING",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "No more than 16 units of core courses",
+        "description": "No more than 16 units of core courses may be taken before completing the pre-major requirements.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 355",
+            "ENST 323",
+            "ENST 335",
+            "POSC 363",
+            "PPD 360",
+            "PPD 361",
+            "PPD 410",
+            "SOCI 242g",
+            "SSCI 165Lgw",
+            "SSCI 175gw",
+            "SSCI 214g",
+            "SSCI 265Lg",
+            "SSCI 350",
+            "ARCH 307",
+            "DES 102",
+            "DES 203",
+            "ENST 387",
+            "IR 323",
+            "POSC 265gw",
+            "POSC 436",
+            "PPD 430",
+            "SSCI 135g",
+            "SSCI 220L",
+            "SSCI 313",
+            "SSCI 314",
+            "SSCI 402"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 6
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                73,
+                73
+              ]
+            ],
+            "source_quote": "At least two courses must come from Group A",
+            "eligible_if": {
+              "courses": [
+                "ANTH 355",
+                "ENST 323",
+                "ENST 335",
+                "POSC 363",
+                "PPD 360",
+                "PPD 361",
+                "PPD 410",
+                "SOCI 242g",
+                "SSCI 165Lgw",
+                "SSCI 175gw",
+                "SSCI 214g",
+                "SSCI 265Lg",
+                "SSCI 350"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                73,
+                73
+              ]
+            ],
+            "source_quote": "and two courses from Group B",
+            "eligible_if": {
+              "courses": [
+                "ARCH 307",
+                "DES 102",
+                "DES 203",
+                "ENST 387",
+                "IR 323",
+                "POSC 265gw",
+                "POSC 363",
+                "POSC 436",
+                "PPD 430",
+                "SSCI 135g",
+                "SSCI 220L",
+                "SSCI 313",
+                "SSCI 314",
+                "SSCI 402"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "GEOD-BS-ELECTIVES",
+        "source_lines": [
+          [
+            71,
+            111
+          ]
+        ],
+        "source_quote": "Choose additional electives from the two lists equal to at least six courses",
+        "description": "At least six courses (24 units) from Group A and Group B combined, with at least two from each group.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          25
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent",
+      "reason": "university_level",
+      "why": "GE requirements are university-wide and come from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "A minimum grade of C, 2.0 (A",
+      "reason": "out_of_scope",
+      "why": "Grade and GPA requirements are out of scope for Phase 1."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Both pre-major requirements must be taken for",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          37
+        ]
+      ],
+      "source_quote": "Students in the BS in HSGI program can",
+      "reason": "out_of_scope",
+      "why": "Departmental honors is an optional honors designation, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          116,
+          118
+        ]
+      ],
+      "source_quote": "Candidates for the BS in Geodesign can receive",
+      "reason": "out_of_scope",
+      "why": "Honors degree designation with GPA and thesis requirements, not a degree requirement."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "program": "Law and Public Policy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 315"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "POSC 340"
+              },
+              {
+                "family": "specific_course",
+                "course": "LAW 300"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 357"
+              }
+            ]
+          }
+        ],
+        "id": "LPP-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            34
+          ]
+        ],
+        "source_quote": "PPD 225 Solving Public Problems Units: 4",
+        "description": "Required core: PPD 225, PPD 314, PPD 315, and one of POSC 340, LAW 300 or PPD 357.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FBE 403",
+            "LAW 200w",
+            "LAW 403",
+            "POSC 345",
+            "POSC 347",
+            "POSC 432",
+            "POSC 441m",
+            "POSC 444",
+            "POSC 452",
+            "PPD 342"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LPP-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            36,
+            49
+          ]
+        ],
+        "source_quote": "And one of the following:",
+        "description": "One elective course chosen from the specified list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students minoring in law and public policy take 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in law and public policy draws upon four fields",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The latter enables the student to focus on a specific area",
+      "reason": "out_of_scope",
+      "why": "Descriptive marketing text, not a rule."
+    }
+  ]
+}

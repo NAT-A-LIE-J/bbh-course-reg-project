@@ -1,0 +1,173 @@
+{
+  "program": "Earth Sciences (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "GEOL"
+              ]
+            },
+            {
+              "level_min": 100,
+              "level_max": 299
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "ES-BA-INTRO",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "Any GEOL 100- or 200-level course (4 units)",
+        "description": "Any GEOL 100- or 200-level course, 4 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "GEOL 315L",
+        "id": "ES-BA-REQUIRED",
+        "source_lines": [
+          [
+            31,
+            35
+          ]
+        ],
+        "source_quote": "GEOL 315L Minerals and Earth Systems",
+        "description": "GEOL 315L is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "MATH 225",
+                "MATH 226"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "GEOL"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ],
+        "id": "ES-BA-ELECTIVES",
+        "source_lines": [
+          [
+            37,
+            41
+          ]
+        ],
+        "source_quote": "28 additional units must be selected from MATH 225",
+        "description": "28 units from MATH 225, MATH 226, or any upper-division GEOL course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "ES-BA-OTHERDEPTS",
+        "source_lines": [
+          [
+            43,
+            50
+          ]
+        ],
+        "source_quote": "Required courses in other departments (8 units)",
+        "description": "CHEM 105aLg and (MATH 118gx or MATH 125g), 8 units total.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 120Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 105bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 135aLg"
+          }
+        ],
+        "id": "ES-BA-SCIENCECHOICE",
+        "source_lines": [
+          [
+            52,
+            58
+          ]
+        ],
+        "source_quote": "Choose any one of the following (4 units)",
+        "description": "One of BISC 120Lg, CHEM 105bL, or PHYS 135aLg.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          60,
+          60
+        ]
+      ],
+      "source_quote": "Total units: 48",
+      "reason": "university_level",
+      "why": "Total unit count for the degree is a university/program-wide figure, not a separate requirement to encode."
+    }
+  ]
+}

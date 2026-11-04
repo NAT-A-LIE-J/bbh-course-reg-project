@@ -1,0 +1,239 @@
+{
+  "program": "Resistance to Genocide Interdisciplinary Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HIST 237gp",
+            "HIST 271g",
+            "JS 211gw",
+            "POSC 248gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "RTG-LOWERDIV",
+        "source_lines": [
+          [
+            27,
+            40
+          ]
+        ],
+        "source_quote": "Choose one course (4 units) from the following list",
+        "description": "Choose one lower-division introductory course from List A.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COLT 379",
+            "COLT 485",
+            "ENGL 444m",
+            "FREN 373g",
+            "ITAL 352",
+            "JS 362",
+            "MUSC 430m",
+            "ANTH 315gw",
+            "ANTH 357g",
+            "COMM 479",
+            "HIST 321",
+            "HIST 323",
+            "HIST 364",
+            "HIST 448",
+            "IR 310",
+            "IR 313",
+            "IR 319",
+            "IR 423",
+            "LAW 310w",
+            "MDA 330",
+            "POSC 366",
+            "REL 334g",
+            "HIST 444",
+            "HIST 446",
+            "IR 437"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                46,
+                46
+              ]
+            ],
+            "source_quote": "at least one from each list",
+            "eligible_if": {
+              "courses": [
+                "COLT 379",
+                "COLT 485",
+                "ENGL 444m",
+                "FREN 373g",
+                "ITAL 352",
+                "JS 362",
+                "MUSC 430m"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                46,
+                46
+              ]
+            ],
+            "source_quote": "at least one from each list",
+            "eligible_if": {
+              "courses": [
+                "ANTH 315gw",
+                "ANTH 357g",
+                "COMM 479",
+                "HIST 321",
+                "HIST 323",
+                "HIST 364",
+                "HIST 448",
+                "IR 310",
+                "IR 313",
+                "IR 319",
+                "IR 423",
+                "LAW 310w",
+                "MDA 330",
+                "POSC 366",
+                "REL 334g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                46,
+                46
+              ]
+            ],
+            "source_quote": "at least one from each list",
+            "eligible_if": {
+              "courses": [
+                "HIST 444",
+                "HIST 446",
+                "IR 437"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "RTG-UPPERDIV",
+        "source_lines": [
+          [
+            42,
+            86
+          ]
+        ],
+        "source_quote": "Choose four courses (16 units) from the lists below",
+        "description": "Choose four upper-division courses from Lists B, C and D, with at least one from each list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor requires five courses (20 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "at least four must be at the upper-division level",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "As with all minors, students must choose at least four courses",
+      "reason": "university_level",
+      "why": "Standard university-wide minor rule about outside-department and non-double-counted courses, handled by the tool."
+    }
+  ]
+}

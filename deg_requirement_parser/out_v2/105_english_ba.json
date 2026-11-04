@@ -1,0 +1,473 @@
+{
+  "program": "English (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENGL 240"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENGL 491"
+          }
+        ],
+        "id": "ENGL-BA-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "All English majors must take an introductory course",
+        "description": "All majors take ENGL 240 and ENGL 491, plus a minimum of 40 units in the major with 24 upper-division.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_max": 299
+                    },
+                    {
+                      "unresolved": "lower-division course in early literatures"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "upper-division course in early literatures"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_max": 299
+                    },
+                    {
+                      "unresolved": "lower-division course in later literatures"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "upper-division course in later literatures"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "unresolved": "courses in interpretive lenses (race, gender, and/or sexuality, genre and media studies)"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "upper-division electives"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        23,
+                        23
+                      ]
+                    ],
+                    "source_quote": "with at least one in the 400–499 range",
+                    "eligible_if": {
+                      "all": [
+                        {
+                          "prefix": [
+                            "ENGL"
+                          ]
+                        },
+                        {
+                          "level_min": 400,
+                          "level_max": 499
+                        }
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "ENGL-BA-LIT-EMPHASIS",
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "In addition to ENGL 240 , majors emphasizing English literature",
+            "description": "Literature emphasis: early/later literatures courses, interpretive lenses, and upper-division electives.",
+            "confidence": "low",
+            "note": "Categories (early literatures, later literatures, interpretive lenses) have no catalogue-provided course list; encoded as unresolved pools."
+          },
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_max": 299
+                    },
+                    {
+                      "unresolved": "lower-division course in early literatures"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_max": 299
+                    },
+                    {
+                      "unresolved": "lower-division course in later literatures"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "unresolved": "course in interpretive lenses"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "unresolved": "introductory creative writing workshops in poetry and prose"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_min": 400,
+                      "level_max": 499
+                    },
+                    {
+                      "unresolved": "creative writing workshop at the 400-level"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "unresolved": "course in contemporary/modern literature"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ENGL"
+                      ]
+                    },
+                    {
+                      "level_min": 400,
+                      "level_max": 499
+                    },
+                    {
+                      "unresolved": "upper-division elective in the 400–499 range"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "id": "ENGL-BA-CW-EMPHASIS",
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "In addition to ENGL 240 , majors emphasizing creative writing",
+            "description": "Creative writing emphasis: early/later literatures courses, interpretive lenses, creative writing workshops, contemporary/modern literature, and upper-division elective.",
+            "confidence": "low",
+            "note": "Categories have no catalogue-provided course list; encoded as unresolved pools."
+          }
+        ],
+        "id": "ENGL-BA-EMPHASIS-CHOICE",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "In addition to ENGL 240 , majors emphasizing English literature",
+        "description": "Students choose one of two emphases: English literature or creative writing, each with its own course requirements.",
+        "confidence": "medium",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "complete a minimum of 40 units in the major",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "of which 24 units must be upper-division",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students should take ENGL 240 before enrolling",
+      "reason": "advisory",
+      "why": "Phrased as a recommendation about sequencing, not a strict requirement."
+    }
+  ]
+}

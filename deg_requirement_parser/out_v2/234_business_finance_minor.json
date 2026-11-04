@@ -1,0 +1,228 @@
+{
+  "program": "Business Finance Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 200x"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 201x"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 351"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 352"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 203g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 205g"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 303"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 305"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 351x"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 352x"
+              }
+            ]
+          }
+        ],
+        "id": "BUSFIN-MINOR-ECONOMICS",
+        "source_lines": [
+          [
+            29,
+            54
+          ]
+        ],
+        "source_quote": "Choose one of the following six options (units 2-8):",
+        "description": "Choose one of six economics foundation options, ranging from a single course to a pair of courses.",
+        "confidence": "high",
+        "note": "Students with AP scores of 4 or 5 on both AP Microeconomics and AP Macroeconomics exams are waived out of this requirement (L096); this exception cannot be checked from a course list and is not encoded as a node. Some options require prerequisites/corequisites per note ** (L097), not encoded."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 410x"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 305"
+          }
+        ],
+        "id": "BUSFIN-MINOR-ACCOUNTING",
+        "source_lines": [
+          [
+            56,
+            62
+          ]
+        ],
+        "source_quote": "ACCT 410x Foundations of Accounting",
+        "description": "One accounting foundation course: ACCT 410x, BUAD 280, or BUAD 305.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 308"
+          }
+        ],
+        "id": "BUSFIN-MINOR-FINANCE",
+        "source_lines": [
+          [
+            64,
+            69
+          ]
+        ],
+        "source_quote": "BUAD 306 Business Finance Units: 4 or",
+        "description": "One finance course: BUAD 306 or BUAD 308.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FBE 405",
+            "FBE 421",
+            "FBE 423",
+            "FBE 424",
+            "FBE 432",
+            "FBE 435",
+            "FBE 436",
+            "FBE 437",
+            "FBE 440",
+            "FBE 441",
+            "FBE 458",
+            "FBE 459",
+            "FBE 460",
+            "FBE 462"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "BUSFIN-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            71,
+            90
+          ]
+        ],
+        "source_quote": "Choose two from the list below:",
+        "description": "Choose two elective courses from a list of FBE finance electives.",
+        "confidence": "high",
+        "note": "Note ** (L097) indicates prerequisites or corequisites are required for most FBE courses; not encoded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Completion of this minor requires a minimum of",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To enroll students must have completed a minimum",
+      "reason": "out_of_scope",
+      "why": "Admission prerequisite in units and GPA, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          96,
+          96
+        ]
+      ],
+      "source_quote": "Students who have earned scores of 4 or",
+      "reason": "no_fit",
+      "why": "An AP-score-based waiver of a requirement cannot be expressed with eligible_if/thresholds."
+    },
+    {
+      "source_lines": [
+        [
+          97,
+          97
+        ]
+      ],
+      "source_quote": "Prerequisite or corequisite required. Almost all FBE",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/corequisite rule, not a degree requirement to encode."
+    }
+  ]
+}

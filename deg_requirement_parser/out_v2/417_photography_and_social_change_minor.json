@@ -1,0 +1,181 @@
+{
+  "program": "Photography and Social Change Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 255g",
+            "ANTH 240gm",
+            "SOCI 250gmw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PSC-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            27,
+            37
+          ]
+        ],
+        "source_quote": "Select one course, based on prior preparation",
+        "description": "Select one lower-division course from the given list, based on prior preparation.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 348m",
+            "AMST 357m",
+            "COLT 303",
+            "IR 371",
+            "JS 330",
+            "POSC 323",
+            "POSC 441m",
+            "REL 336w",
+            "REL 366",
+            "SOCI 360m",
+            "SOCI 470"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                43,
+                51
+              ]
+            ],
+            "source_quote": "each from a different department",
+            "thresholds": [
+              {
+                "count_by": "departments",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "PSC-MINOR-CULTURE-CHANGE",
+        "source_lines": [
+          [
+            39,
+            63
+          ]
+        ],
+        "source_quote": "Select two courses in each category below, from different departments",
+        "description": "Select two courses from the Understanding Culture and Change list, from different departments.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 373g",
+            "AHIS 469",
+            "ANTH 472",
+            "COLT 487",
+            "COMM 366",
+            "COMM 451",
+            "JOUR 422"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                65,
+                69
+              ]
+            ],
+            "source_quote": "each from a different department",
+            "thresholds": [
+              {
+                "count_by": "departments",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "PSC-MINOR-MEDIA-MESSAGE",
+        "source_lines": [
+          [
+            39,
+            77
+          ]
+        ],
+        "source_quote": "Select two courses in each category below, from different departments",
+        "description": "Select two courses from the Media and Message list, from different departments.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            85,
+            85
+          ]
+        ],
+        "source_quote": "Total requirements: 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "Students in this program will also have opportunities",
+      "reason": "advisory",
+      "why": "Describes an opportunity, not a requirement."
+    }
+  ]
+}

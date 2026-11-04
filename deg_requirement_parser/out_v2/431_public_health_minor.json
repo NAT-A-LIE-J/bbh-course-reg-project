@@ -1,0 +1,82 @@
+{
+  "program": "Public Health Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 330"
+          }
+        ],
+        "id": "PH-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "HP 200 Introduction to Health Promotion and Disease Prevention",
+        "description": "Two required core courses: HP 200 and PPD 330.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HP 365gmw",
+            "HP 370g",
+            "HP 401",
+            "HP 402",
+            "HP 408",
+            "HP 410",
+            "HP 420m",
+            "HP 421",
+            "HP 422",
+            "HP 430",
+            "HP 441",
+            "HP 442",
+            "HP 460"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "PH-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            30,
+            46
+          ]
+        ],
+        "source_quote": "Three of the following:",
+        "description": "Three courses selected from the listed Health Promotion elective list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor is designed for students interested",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

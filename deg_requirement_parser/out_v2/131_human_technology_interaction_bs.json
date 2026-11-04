@@ -1,0 +1,419 @@
+{
+  "program": "Human Technology Interaction (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 174"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACAD 376"
+              },
+              {
+                "family": "specific_course",
+                "course": "ACAD 419"
+              },
+              {
+                "family": "specific_course",
+                "course": "ACAD 450"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 475a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 475b"
+          }
+        ],
+        "id": "HTI-BS-CBRL",
+        "source_lines": [
+          [
+            29,
+            42
+          ]
+        ],
+        "source_quote": "Challenge Based Reflective Learning Required Courses (16 Units)",
+        "description": "ACAD 174 (taken twice), one of ACAD 376/419/450 (2-unit ones taken twice), and ACAD 475a+475b, totaling 16 units.",
+        "confidence": "medium",
+        "note": "ACAD 174, ACAD 419, and ACAD 450 are 2-unit courses that must be taken twice (4 units) per the stated rule; course_reuse not needed since it's the same course repeated for credit, not double-counting across requirements."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 176"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 360"
+          }
+        ],
+        "id": "HTI-BS-DESIGN",
+        "source_lines": [
+          [
+            44,
+            50
+          ]
+        ],
+        "source_quote": "HTI Design Sequence Required Courses (12 Units)",
+        "description": "ACAD 176, ACAD 325, and ACAD 360.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 183"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACAD 184"
+              },
+              {
+                "family": "specific_course",
+                "course": "ACAD 185"
+              }
+            ]
+          }
+        ],
+        "id": "HTI-BS-BUSINESS",
+        "source_lines": [
+          [
+            52,
+            59
+          ]
+        ],
+        "source_quote": "Business Courses in Product and Process Innovation",
+        "description": "ACAD 183 plus one of ACAD 184 or ACAD 185.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACAD 217",
+                "ACAD 288",
+                "IDSN 537",
+                "IDSN 539",
+                "IDSN 574"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "id": "HTI-BS-TECH-XR",
+            "source_lines": [
+              [
+                67,
+                75
+              ]
+            ],
+            "source_quote": "Extended Reality",
+            "description": "12 units from the Extended Reality course list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACAD 191",
+                "ACAD 220",
+                "ACAD 222",
+                "ACAD 490",
+                "IDSN 543",
+                "IDSN 544"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "id": "HTI-BS-TECH-AI",
+            "source_lines": [
+              [
+                77,
+                86
+              ]
+            ],
+            "source_quote": "Interactive AI",
+            "description": "12 units from the Interactive AI course list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACAD 230",
+                "ACAD 535",
+                "IDSN 567",
+                "IDSN 571",
+                "IDSN 572"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "id": "HTI-BS-TECH-IOT",
+            "source_lines": [
+              [
+                88,
+                96
+              ]
+            ],
+            "source_quote": "IoT and Physical Computing",
+            "description": "12 units from the IoT and Physical Computing course list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACAD 275",
+                "ACAD 276",
+                "ACAD 415",
+                "ACAD 404",
+                "ACAD 405",
+                "IDSN 533"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ],
+            "id": "HTI-BS-TECH-WEB",
+            "source_lines": [
+              [
+                98,
+                108
+              ]
+            ],
+            "source_quote": "Web and App Development",
+            "description": "12 units from the Web and App Development course list.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "HTI-BS-IYA-TECH",
+        "source_lines": [
+          [
+            61,
+            108
+          ]
+        ],
+        "source_quote": "Choose 12 units from ONE area below:",
+        "description": "Choose one technology area and complete 12 units from it.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 310"
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": "CSCI 102L, or prior introductory programming in Java/C++ and passing CSCI 102 challenge exam",
+              "after": "CSCI 103L"
+            }
+          }
+        ],
+        "id": "HTI-BS-SOFTWARE",
+        "source_lines": [
+          [
+            110,
+            121
+          ]
+        ],
+        "source_quote": "Software Development Requirements – Viterbi School of Engineering",
+        "description": "CSCI 103L, 104L, 170, 201, and 310, with CSCI 103L requiring a prerequisite.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 445L",
+            "DSCI 352",
+            "ISE 370L",
+            "ISE 440",
+            "ISE 470",
+            "TAC 359",
+            "TAC 449",
+            "TAC 459"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HTI-BS-VITERBI-ELECTIVE",
+        "source_lines": [
+          [
+            122,
+            136
+          ]
+        ],
+        "source_quote": "HTI Elective within Viterbi School of Engineering",
+        "description": "4 units from the Viterbi elective list.",
+        "confidence": "high",
+        "note": "Some courses have additional prerequisites (not individually checkable)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ARCG 305Lg",
+                "BIOC 581",
+                "BISC 408",
+                "BUAD 310g",
+                "DSO 470",
+                "ECON 415",
+                "MDA 423",
+                "MEDS 445",
+                "OHNS 303",
+                "PSYC 301L",
+                "PSYC 304L",
+                "PSYC 423",
+                "PSYC 440",
+                "PSYC 454"
+              ]
+            },
+            {
+              "unresolved": "other approved electives from Keck, Annenberg, Dornsife, Marshall, Rossier"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "HTI-BS-SCHOOLS-ELECTIVE",
+        "source_lines": [
+          [
+            137,
+            156
+          ]
+        ],
+        "source_quote": "Choose 12 units from the following (or other approved electives",
+        "description": "12 units from the listed HTI electives (or other approved electives from these schools).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "adviser-approved domain-specific elective course work"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "HTI-BS-DOMAIN-ELECTIVE",
+        "source_lines": [
+          [
+            158,
+            162
+          ]
+        ],
+        "source_quote": "Take an additional 8 units of elective course work",
+        "description": "8 units of additional elective course work with adviser approval.",
+        "confidence": "medium",
+        "note": "No defined course pool; adviser approval only, so marked unresolved."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "The degree requires at least 128 units for program completion.",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          164,
+          168
+        ]
+      ],
+      "source_quote": "The university requires eight courses in six Core Literacies",
+      "reason": "university_level",
+      "why": "University-wide GE and writing requirements, not programme-specific."
+    }
+  ]
+}

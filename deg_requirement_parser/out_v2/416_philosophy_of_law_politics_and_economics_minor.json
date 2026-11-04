@@ -1,0 +1,254 @@
+{
+  "program": "Philosophy of Law, Politics and Economics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 220",
+            "PHIL 222g",
+            "PHIL 350",
+            "PHIL 450",
+            "PHIL 452"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PLPE-MINOR-LOGIC",
+        "source_lines": [
+          [
+            23,
+            33
+          ]
+        ],
+        "source_quote": "Students must complete one course from this category.",
+        "description": "One course from the Logic category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 101g",
+            "PHIL 311",
+            "PHIL 314",
+            "PHIL 339",
+            "ECON 203g",
+            "ECON 238xg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PLPE-MINOR-ECON",
+        "source_lines": [
+          [
+            35,
+            46
+          ]
+        ],
+        "source_quote": "Students must complete at least one course from this category.",
+        "description": "At least one course from the Philosophy and Economics category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 103g",
+            "PHIL 174gw",
+            "PHIL 258g",
+            "PHIL 337",
+            "PHIL 437",
+            "PHIL 440",
+            "POSC 130g",
+            "POSC 370",
+            "POSC 371",
+            "POSC 375",
+            "POSC 380",
+            "POSC 476",
+            "POSC 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PLPE-MINOR-POLITICS",
+        "source_lines": [
+          [
+            48,
+            66
+          ]
+        ],
+        "source_quote": "Students must complete at least one course from this category.",
+        "description": "At least one course from the Philosophy and Politics category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 210p",
+            "PHIL 178gw",
+            "PHIL 430",
+            "PHIL 431",
+            "POSC 340"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PLPE-MINOR-LAW",
+        "source_lines": [
+          [
+            68,
+            78
+          ]
+        ],
+        "source_quote": "Students must complete at least one course from this category.",
+        "description": "At least one course from the Philosophy and Law category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "PHIL 220",
+                "PHIL 222g",
+                "PHIL 350",
+                "PHIL 450",
+                "PHIL 452",
+                "PHIL 101g",
+                "PHIL 311",
+                "PHIL 314",
+                "PHIL 339",
+                "PHIL 103g",
+                "PHIL 174gw",
+                "PHIL 258g",
+                "PHIL 337",
+                "PHIL 437",
+                "PHIL 440",
+                "PHIL 178gw",
+                "PHIL 430",
+                "PHIL 431"
+              ]
+            },
+            {
+              "courses": [
+                "ECON 203g",
+                "ECON 238xg",
+                "POSC 130g",
+                "POSC 370",
+                "POSC 371",
+                "POSC 375",
+                "POSC 380",
+                "POSC 476",
+                "POSC 479",
+                "LAW 210p",
+                "POSC 340"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "id": "PLPE-MINOR-TOTAL",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The Philosophy of Law, Politics and Economics minor requires a minimum of five courses",
+        "description": "The minor requires a minimum of five courses drawn from the four categories.",
+        "confidence": "high",
+        "note": "This node aggregates the overall five-course minimum; category minimums are separate nodes above."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "at least three of which must be philosophy courses",
+        "eligible_if": {
+          "prefix": [
+            "PHIL"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "at least four of which must be upper-division",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "Minimum Units Required: 20",
+      "reason": "university_level",
+      "why": "Total unit count is implied by the five-course, 4-unit-each structure and overlaps with university-wide unit accounting."
+    }
+  ]
+}

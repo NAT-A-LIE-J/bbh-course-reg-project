@@ -1,0 +1,368 @@
+{
+  "program": "Business Administration (World Program) (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 111"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 114"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "ge_category": "GE-D"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "ge_category": "GE-E"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "GESM 120g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "WBB-YEAR-ONE-USC",
+        "source_lines": [
+          [
+            42,
+            63
+          ]
+        ],
+        "source_quote": "BUAD 111 World Bachelor in Business Program Freshman Academy",
+        "description": "First-year USC coursework: BUAD 111, BUAD 114, BUAD 280, ECON 351x, GE-D, GE-E, GESM 120g, MATH 118gx, WRIT 150, WRIT 340.",
+        "confidence": "high",
+        "note": "GESM 120g also satisfies GE-B and MATH 118gx also satisfies GE-F per the footnotes; this does not create a separate requirement."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "description": "Year Two coursework taken at HKUST, using non-USC course codes (e.g., ECON 2123, FINA 1303, WBBA 2010) that cannot be mapped to a checkable USC course pool."
+        },
+        "id": "WBB-YEAR-TWO-HKUST",
+        "source_lines": [
+          [
+            65,
+            87
+          ]
+        ],
+        "source_quote": "C-Comm Chinese Communications Units: 3",
+        "description": "Second-year coursework at HKUST required under the WBB program.",
+        "confidence": "medium",
+        "note": "Course codes are not in USC's prefix+3-digit format and cannot be checked."
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "description": "Year Three coursework taken at Bocconi University, identified only by numeric codes (e.g., 30015, 30056) with no USC-style prefixes."
+        },
+        "id": "WBB-YEAR-THREE-BOCCONI",
+        "source_lines": [
+          [
+            89,
+            110
+          ]
+        ],
+        "source_quote": "30015 Marketing Units: 3",
+        "description": "Third-year coursework at Bocconi University required under the WBB program.",
+        "confidence": "medium",
+        "note": "Course codes are purely numeric and cannot be checked against the USC course taxonomy."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 311"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 313"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 425"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 427"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 490x"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 497"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "FBE 403"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "FBE 429"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUCO 425"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MOR 421"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "level_min": 0
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 9
+                  }
+                ]
+              }
+            ],
+            "id": "WBB-YEAR-FOUR-OPTION-ONE-USC",
+            "source_lines": [
+              [
+                112,
+                136
+              ]
+            ],
+            "source_quote": "BUAD 311 Operations Management Units: 4 or",
+            "description": "Fourth-year option at USC: operations course, analytics course, directed research, strategic management, legal environment course, ethics course, and free electives.",
+            "confidence": "high",
+            "note": "BUAD 490x is to be taken as 2 units total, split 1 unit fall and 1 unit spring; free electives range 9-16 units, lower bound used."
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "Fourth-year option at HKUST, using non-USC course codes (e.g., ACCT 3610, MGMT 4210, WBBA 4010) and unspecified electives."
+            },
+            "id": "WBB-YEAR-FOUR-OPTION-TWO-HKUST",
+            "source_lines": [
+              [
+                139,
+                150
+              ]
+            ],
+            "source_quote": "ACCT 3610 Function of Law in Society and Business",
+            "description": "Fourth-year option at HKUST required under the WBB program.",
+            "confidence": "medium",
+            "note": "Course codes are not in USC's prefix+3-digit format and electives are unspecified."
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "Fourth-year option at Bocconi University, identified only by numeric codes and unspecified electives."
+            },
+            "id": "WBB-YEAR-FOUR-OPTION-THREE-BOCCONI",
+            "source_lines": [
+              [
+                154,
+                165
+              ]
+            ],
+            "source_quote": "30012 Business Strategy Units: 4",
+            "description": "Fourth-year option at Bocconi University required under the WBB program.",
+            "confidence": "medium",
+            "note": "Course codes are purely numeric and electives are unspecified."
+          }
+        ],
+        "id": "WBB-YEAR-FOUR-CHOICE",
+        "source_lines": [
+          [
+            112,
+            165
+          ]
+        ],
+        "source_quote": "Year Four, Option One - USC",
+        "description": "Students complete one of three fourth-year location options: USC, HKUST, or Bocconi.",
+        "confidence": "medium",
+        "note": "Students choose their final-year location in consultation with program directors."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The World Bachelor in Business (WBB) Program offers",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "students must satisfy the academic standards and policies",
+      "reason": "no_fit",
+      "why": "Requires satisfying all partner institutions' academic policies, which cannot be expressed in the course-based taxonomy."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students should consult with the WBB program academic",
+      "reason": "advisory",
+      "why": "Advisory statement to consult an adviser."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "A minimum of 32 units must be taken",
+      "reason": "university_level",
+      "why": "Residency unit requirement, a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          32,
+          32
+        ]
+      ],
+      "source_quote": "In addition to meeting university GPA requirements, a",
+      "reason": "out_of_scope",
+      "why": "Grade/GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A minimum grade of C- for course work",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for transfer credit."
+    },
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "USC GPA calculations will be based on course",
+      "reason": "out_of_scope",
+      "why": "GPA calculation rule."
+    },
+    {
+      "source_lines": [
+        [
+          38,
+          40
+        ]
+      ],
+      "source_quote": "WBB students spend the first year taking classes",
+      "reason": "out_of_scope",
+      "why": "Descriptive sample-program narrative, not an enforceable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          56,
+          56
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled “Advanced Writing",
+      "reason": "advisory",
+      "why": "Recommendation for a specific section, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "program": "Arabic Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARAB 252"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARAB 322"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARAB 352"
+          }
+        ],
+        "id": "ARAB-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            31,
+            33
+          ]
+        ],
+        "source_quote": "All students must take ARAB 252 , ARAB 322",
+        "description": "Students must take ARAB 252, ARAB 322 and ARAB 352.",
+        "confidence": "high",
+        "note": "Prerequisite courses ARAB 122, ARAB 152, ARAB 222 or equivalent do not count toward the minor."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARAB 300",
+            "ARAB 333",
+            "ARAB 334"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ARAB-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            35,
+            43
+          ]
+        ],
+        "source_quote": "Two courses (8 units) from the following list",
+        "description": "Two upper-division Arabic elective courses (8 units) from the listed options, or pre-approved substitutes.",
+        "confidence": "high",
+        "note": "Substitutes pre-approved by the MDES Curriculum Committee are allowed but cannot be enumerated; discretionary approval noted here rather than as a separate node."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Five courses (20 units) are required for the minor.",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "For those with prior study of Arabic, a placement exam",
+      "reason": "no_fit",
+      "why": "Placement exam process has no corresponding leaf family for determining starting level."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "If student proficiency surpasses the third-semester college level",
+      "reason": "advisory",
+      "why": "Advisory guidance about consulting the Language Center, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students are encouraged to study abroad.",
+      "reason": "advisory",
+      "why": "Encouragement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Prior approval by the department is required of all courses",
+      "reason": "no_fit",
+      "why": "General approval rule for counted courses with no specific course pool to attach it to."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Equivalent courses from other universities will be assessed",
+      "reason": "no_fit",
+      "why": "Describes an external transfer-credit assessment process rather than a checkable course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "The prerequisite for ARAB 300 is either ARAB 252",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/sequencing detail already satisfied by core requirement; not a separate degree requirement to encode."
+    }
+  ]
+}

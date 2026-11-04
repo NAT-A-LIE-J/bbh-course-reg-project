@@ -1,0 +1,124 @@
+{
+  "program": "Physics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "PHYS-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            33
+          ]
+        ],
+        "source_quote": "Required Courses (28 Units)",
+        "description": "Seven required math and physics core courses totaling 28 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHYS 304",
+            "PHYS 316",
+            "PHYS 408a",
+            "PHYS 438a"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "PHYS-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            42
+          ]
+        ],
+        "source_quote": "Electives - Choose 3 (12 Units)",
+        "description": "Choose 3 of 4 listed upper-division physics electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "Engineering students",
+          "requires": "minimum of three upper-division courses unique to the minor"
+        },
+        "id": "PHYS-MIN-ENGINEERING-RULE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Engineering students must take a minimum of three upper-division courses",
+        "description": "Engineering students must have at least three upper-division courses unique to this minor.",
+        "confidence": "medium",
+        "note": "Depends on the student's other major (Engineering); cannot be checked against a general course list."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The physics minor is open to all students.",
+      "reason": "university_level",
+      "why": "General eligibility statement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          44,
+          44
+        ]
+      ],
+      "source_quote": "Total units: 40",
+      "reason": "university_level",
+      "why": "Restates the sum of required and elective units; not a separate requirement."
+    }
+  ]
+}

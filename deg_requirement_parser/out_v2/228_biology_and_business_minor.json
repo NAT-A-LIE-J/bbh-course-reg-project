@@ -1,0 +1,226 @@
+{
+  "program": "Biology and Business Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 406L"
+          }
+        ],
+        "id": "BIOBUS-BISC-CORE",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology and",
+        "description": "BISC 220Lg or 221Lg, plus BISC 320Lg, BISC 330L and BISC 406L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 105bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          }
+        ],
+        "id": "BIOBUS-CHEM-CORE",
+        "source_lines": [
+          [
+            48,
+            54
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "CHEM 105aL, CHEM 105bL and CHEM 322aL.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACCT 410x"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 280"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 281"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 305"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 304"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 307"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "FBE 403"
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROGRAM_RULE",
+            "details": {
+              "direction": "ROUTES",
+              "applies_to": "students pursuing a business degree",
+              "courses": [
+                "BUAD 280",
+                "BUAD 281",
+                "BUAD 306"
+              ]
+            }
+          }
+        ],
+        "id": "BIOBUS-FINANCE-CORE",
+        "source_lines": [
+          [
+            63,
+            83
+          ]
+        ],
+        "source_quote": "Students pursuing a business degree must enroll",
+        "description": "Accounting choice, finance choice, management/marketing choice, and FBE 403, with business-degree students routed to specific accounting/finance options.",
+        "confidence": "high",
+        "note": "Business-degree routing is encoded as a manual_review rule, not a checkable list restriction."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "This minor requires a varying number of",
+      "reason": "no_fit",
+      "why": "Unit requirement varies by the student's major program and cannot be expressed as a single checkable threshold."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students in other majors may be required",
+      "reason": "no_fit",
+      "why": "Variable unit requirement depending on overlap with the student's major; not a fixed checkable rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Please see a biological sciences or business",
+      "reason": "advisory",
+      "why": "Advisory suggestion to consult an adviser, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          40,
+          46
+        ]
+      ],
+      "source_quote": "Additional Recommended BISC Courses",
+      "reason": "advisory",
+      "why": "Recommended, not required, additional BISC courses."
+    },
+    {
+      "source_lines": [
+        [
+          56,
+          61
+        ]
+      ],
+      "source_quote": "Additional Recommended Collateral Science Courses",
+      "reason": "advisory",
+      "why": "Recommended, not required, collateral science courses."
+    },
+    {
+      "source_lines": [
+        [
+          85,
+          93
+        ]
+      ],
+      "source_quote": "Additional Recommended MATH Courses",
+      "reason": "advisory",
+      "why": "Recommended, not required, MATH courses."
+    }
+  ]
+}

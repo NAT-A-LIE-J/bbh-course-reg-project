@@ -1,0 +1,109 @@
+{
+  "program": "Technology Commercialization Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BAEP 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 301"
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": "BUAD 301",
+              "after": "BAEP 452"
+            }
+          }
+        ],
+        "id": "TC-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            36
+          ]
+        ],
+        "source_quote": "students are required to complete the two required courses",
+        "description": "BAEP 452 and BUAD 301, with BUAD 301 required before BAEP 452.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACCT 410x",
+            "BAEP 454",
+            "BAEP 455",
+            "BAEP 460",
+            "BAEP 469",
+            "BAEP 470",
+            "BAEP 474",
+            "BME 416L",
+            "BUAD 307",
+            "ENGR 493",
+            "ISE 344",
+            "ISE 440",
+            "ISE 460",
+            "TAC 310",
+            "TAC 466",
+            "TAC 476",
+            "MKT 445"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 9
+          }
+        ],
+        "id": "TC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            38,
+            59
+          ]
+        ],
+        "source_quote": "enough elective courses to achieve a total of 16 units",
+        "description": "Elective courses totaling enough units so that, combined with the 7 required-course units, the minor reaches 16 total units.",
+        "confidence": "medium",
+        "note": "The catalogue states Business majors must complete 23 total units (not just 16) to complete the minor, likely because required courses overlap with their major; this per-major variation cannot be checked from a course list and is listed in unclassified."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To enroll, students must have completed a minimum of 32 units",
+      "reason": "out_of_scope",
+      "why": "Admission prerequisite (unit count and GPA) for enrolling in the minor, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Business majors thus require 23 total units and other majors 16 total units",
+      "reason": "no_fit",
+      "why": "A unit total that varies by the student's declared major cannot be expressed as a single checkable threshold."
+    }
+  ]
+}

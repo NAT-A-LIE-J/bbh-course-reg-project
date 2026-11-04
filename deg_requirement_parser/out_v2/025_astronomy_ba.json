@@ -1,0 +1,162 @@
+{
+  "program": "Astronomy (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASTR 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 161Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 162L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 163L"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 151L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 152L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 153L"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 190"
+          }
+        ],
+        "id": "ASTR-BA-LOWER",
+        "source_lines": [
+          [
+            23,
+            35
+          ],
+          [
+            53,
+            53
+          ]
+        ],
+        "source_quote": "ASTR 110 The Universe for Astronomy Majors",
+        "description": "Required lower-division courses: ASTR 110, MATH 125g, 126g, 226g, 245, PHYS 190, and the PHYS 161L-162L-163L sequence (or its PHYS 151L-152L-153L substitute).",
+        "confidence": "high",
+        "note": "PHYS 151L, 152L, 153L may be substituted for PHYS 161L, 162L, 163L per the footnote on L053."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASTR 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTR 400"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTR 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASTR 424"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 316"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 492L"
+          }
+        ],
+        "id": "ASTR-BA-UPPER",
+        "source_lines": [
+          [
+            37,
+            47
+          ]
+        ],
+        "source_quote": "ASTR 350 Astrophysics I Units: 4",
+        "description": "Required upper-division courses: ASTR 350, 400, 422, 424, PHYS 304, 316, 492L.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            49,
+            49
+          ]
+        ],
+        "source_quote": "Total units: 64",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 64
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is intended for students with",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

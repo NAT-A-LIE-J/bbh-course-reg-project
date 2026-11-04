@@ -1,0 +1,361 @@
+{
+  "program": "Artificial Intelligence for Business (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "Business Administration or Engineering majors",
+          "effect": "cannot be combined as an additional major"
+        },
+        "id": "BUAI-BS-COMBINATION-RULE",
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "The degree cannot be combined as an additional major",
+        "description": "This degree cannot be combined as an additional major in Business Administration or Engineering.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BUAI-BS-WRITING",
+        "source_lines": [
+          [
+            41,
+            47
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "Composition/writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "MATH 125g",
+        "id": "BUAI-BS-MATH",
+        "source_lines": [
+          [
+            49,
+            55
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I",
+        "description": "Math requirement: MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          }
+        ],
+        "id": "BUAI-BS-BUSINESS",
+        "source_lines": [
+          [
+            61,
+            88
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting",
+        "description": "Business requirements: eight named courses plus three either/or pairs.",
+        "confidence": "high",
+        "note": "BUAD 312 and BUAD 313 are noted as preferred over their pair alternatives; this preference is advisory and not encoded as a restriction."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 113x"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 114x"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          }
+        ],
+        "id": "BUAI-BS-AI-INTRO",
+        "source_lines": [
+          [
+            94,
+            100
+          ]
+        ],
+        "source_quote": "CSCI 113x Programming Fundamentals for Computing",
+        "description": "AI Introductory Courses: CSCI 113x, CSCI 114x, CSCI 170.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 141L"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CSCI 444",
+                "CSCI 445L",
+                "CSCI 467",
+                "CSCI 468",
+                "CSCI 469",
+                "TAC 259",
+                "TAC 359",
+                "TAC 449",
+                "TAC 459"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "BUAI-BS-AI-FOUNDATIONAL",
+        "source_lines": [
+          [
+            102,
+            121
+          ]
+        ],
+        "source_quote": "CSCI 360 Artificial Intelligence: Principles and Foundations",
+        "description": "AI Foundational Courses: CSCI 360, EE 141L, plus at least three courses from a specified list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "EIS 370",
+        "id": "BUAI-BS-ETHICS",
+        "source_lines": [
+          [
+            123,
+            127
+          ]
+        ],
+        "source_quote": "EIS 370 Ethical Issues in Artificial Intelligence",
+        "description": "Ethics course: EIS 370.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 112"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 429"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 458"
+          }
+        ],
+        "id": "BUAI-BS-INTEGRATIVE",
+        "source_lines": [
+          [
+            129,
+            137
+          ]
+        ],
+        "source_quote": "BUAD 112 AI for Business Freshman Academy",
+        "description": "Integrative requirements: BUAD 112, DSO 429, DSO 488, and MOR 458 (2 units for this program).",
+        "confidence": "high",
+        "note": "MOR 458 is offered for 2 or 4 units, but the program requires only 2 units."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "This degree requires at least 128 units including",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade and repeat rule; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          36,
+          36
+        ]
+      ],
+      "source_quote": "Students who do not satisfy the degree",
+      "reason": "out_of_scope",
+      "why": "Disqualification/transfer policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "GPA rule; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommends a specific section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advisory note about possible subject credit and advising."
+    },
+    {
+      "source_lines": [
+        [
+          79,
+          79
+        ]
+      ],
+      "source_quote": "(BUAD 312 is preferred)",
+      "reason": "advisory",
+      "why": "Preference statement, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "(BUAD 313 is preferred)",
+      "reason": "advisory",
+      "why": "Preference statement, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "program": "Art History (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AHIS 120gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 121gp"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AHIS 125gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 127g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 128gp"
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                51,
+                51
+              ]
+            ],
+            "source_quote": "Total units: 8",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "AHIS-BA-LOWERDIV",
+        "source_lines": [
+          [
+            35,
+            51
+          ]
+        ],
+        "source_quote": "AHIS 120gp Foundations of Western Art: Prehistoric to Renaissance",
+        "description": "Choose AHIS 120gp or 121gp, plus one course from the Asia/Americas foundation list, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AHIS 494"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "AHIS 201g",
+                "AHIS 321",
+                "AHIS 322",
+                "AHIS 220g",
+                "AHIS 330",
+                "AHIS 331",
+                "AHIS 230",
+                "AHIS 304gm",
+                "AHIS 342",
+                "AHIS 343",
+                "AHIS 344",
+                "AHIS 345g",
+                "AHIS 215g",
+                "AHIS 250gm",
+                "AHIS 255g",
+                "AHIS 270",
+                "AHIS 361g",
+                "AHIS 363m",
+                "AHIS 364",
+                "AHIS 365m",
+                "AHIS 366g",
+                "AHIS 367g",
+                "AHIS 368",
+                "AHIS 369",
+                "AHIS 370g",
+                "AHIS 373g",
+                "AHIS 282",
+                "AHIS 319",
+                "AHIS 376",
+                "AHIS 381g",
+                "AHIS 384",
+                "AHIS 385",
+                "AHIS 386",
+                "AHIS 387",
+                "AHIS 388g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 7
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    65,
+                    65
+                  ]
+                ],
+                "source_quote": "only one of which may be at the 200 level",
+                "eligible_if": {
+                  "level_max": 299
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    126,
+                    126
+                  ]
+                ],
+                "source_quote": "and two that must be at the 400-level",
+                "eligible_if": {
+                  "level_min": 400
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "note": "Requirement that five of the seven courses include at least one from four of the five listed areas cannot be expressed as a check and is not encoded. AHIS 400x is excluded (elective credit only, may not apply to major)."
+          }
+        ],
+        "id": "AHIS-BA-ADDITIONAL",
+        "source_lines": [
+          [
+            55,
+            129
+          ]
+        ],
+        "source_quote": "AHIS 494 Undergraduate Proseminar in Art History Units: 4",
+        "description": "AHIS 494 plus seven additional courses (32 units total) drawn from five areas of study, with area/level and 400-level distribution checks.",
+        "confidence": "medium",
+        "note": "AHIS 494 capstone may be taken junior or senior year (sequencing note, not encoded as a separate constraint)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "The major requires 40 units as follows.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A grade of C or higher is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement, not course selection."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Art History requires",
+      "reason": "university_level",
+      "why": "Total degree unit count repeated from university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Candidates for the Bachelor of Arts in",
+      "reason": "university_level",
+      "why": "GE/diversity requirement comes from STARS, not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          127,
+          127
+        ]
+      ],
+      "source_quote": "AHIS 400x Undergraduate Apprenticeship Units: 2",
+      "reason": "no_fit",
+      "why": "Course explicitly excluded from major credit; noted but not a requirement to encode."
+    },
+    {
+      "source_lines": [
+        [
+          130,
+          138
+        ]
+      ],
+      "source_quote": "The following courses require the written permission",
+      "reason": "no_fit",
+      "why": "Discretionary approval for AHIS 490x/495a/495b with no stated quota or slot; cannot be checked as a course pool."
+    }
+  ]
+}

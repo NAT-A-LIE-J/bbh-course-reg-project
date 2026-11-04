@@ -1,0 +1,193 @@
+{
+  "program": "Media Economics and Entrepreneurship Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 451"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 209"
+          }
+        ],
+        "id": "MEE-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "BAEP 450 Fundamentals of Entrepreneurship Units: 4 or",
+        "description": "BAEP 450 or BAEP 451, plus COMM 209.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 452",
+            "BAEP 454",
+            "BAEP 455",
+            "BAEP 460",
+            "BAEP 465",
+            "BAEP 470",
+            "BAEP 475",
+            "BAEP 477"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MEE-MINOR-BAEP-ELECTIVE",
+        "source_lines": [
+          [
+            36,
+            47
+          ]
+        ],
+        "source_quote": "4 units must be in BAEP:",
+        "description": "At least 4 units of electives from the listed BAEP courses.",
+        "confidence": "high",
+        "note": "Prerequisite notes (BAEP 450/451 for BAEP 452; BAEP 452 for BAEP 454) are sequencing details not encoded as separate nodes."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 306",
+            "COMM 345",
+            "COMM 350",
+            "COMM 427",
+            "COMM 429",
+            "COMM 430",
+            "COMM 431",
+            "COMM 454",
+            "COMM 465m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "MEE-MINOR-COMM-ELECTIVE",
+        "source_lines": [
+          [
+            57,
+            69
+          ]
+        ],
+        "source_quote": "4-8 units must be in COMM:",
+        "description": "4 to 8 units of electives from the listed COMM courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "JOUR 380",
+            "JOUR 381",
+            "JOUR 469",
+            "JOUR 472",
+            "JOUR 489",
+            "PR 429",
+            "PR 487",
+            "PR 491",
+            "PR 492"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "MEE-MINOR-JOURPR-ELECTIVE",
+        "source_lines": [
+          [
+            71,
+            83
+          ]
+        ],
+        "source_quote": "4-8 units must be in JOUR or PR:",
+        "description": "4 to 8 units of electives from the listed JOUR or PR courses.",
+        "confidence": "high",
+        "note": "Prerequisite notes (PR 250 for PR courses, PR 351a for PR 429) are sequencing details not encoded as separate nodes."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This 24-unit minor equips students with the",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Requirements for admission are a minimum 3.0",
+      "reason": "out_of_scope",
+      "why": "GPA and standing requirement for admission to the minor."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard",
+      "reason": "out_of_scope",
+      "why": "Restates GPA admission standard, not a course requirement."
+    }
+  ]
+}

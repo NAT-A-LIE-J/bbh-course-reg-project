@@ -1,0 +1,118 @@
+{
+  "program": "Astronomy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "ASTR-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (24 Units)",
+        "description": "Six required courses in math and physics totaling 24 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ASTR 400",
+            "ASTR 422",
+            "ASTR 424",
+            "ASTR 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "ASTR-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            41
+          ]
+        ],
+        "source_quote": "Elective - Choose 3 (12 Units)",
+        "description": "Choose three astronomy elective courses totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            43,
+            43
+          ]
+        ],
+        "source_quote": "Total units: 36",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The astronomy minor is open to all students.",
+      "reason": "university_level",
+      "why": "General admission statement about minor eligibility, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A minimum of three courses taken toward the minor",
+      "reason": "university_level",
+      "why": "This is the standard university-wide minor uniqueness rule, handled automatically."
+    }
+  ]
+}

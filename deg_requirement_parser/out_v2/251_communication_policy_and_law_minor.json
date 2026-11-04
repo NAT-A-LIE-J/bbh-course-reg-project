@@ -1,0 +1,89 @@
+{
+  "program": "Communication Policy and Law Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ASCJ 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 322"
+          }
+        ],
+        "id": "CPL-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "Required Core Courses (8 units)",
+        "description": "Both core courses, ASCJ 210 and COMM 322, are required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 345",
+            "COMM 371",
+            "COMM 402",
+            "COMM 412",
+            "COMM 421",
+            "COMM 422",
+            "COMM 427",
+            "COMM 489",
+            "JOUR 462"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "CPL-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            30,
+            42
+          ]
+        ],
+        "source_quote": "Choose three electives (12 units)",
+        "description": "Choose three elective courses from the listed Communication, Journalism options.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Admission requirements are a minimum 3.0 grade point average",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit standing requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard and does not guarantee admission.",
+      "reason": "out_of_scope",
+      "why": "Admission policy clarification, not a course requirement."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "program": "Interdisciplinary Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "application reviewed by special admissions committee",
+          "requires": [
+            "GPA of 3.0 or above"
+          ]
+        },
+        "id": "INTD-BA-ADMISSION",
+        "source_lines": [
+          [
+            27,
+            29
+          ]
+        ],
+        "source_quote": "Admission to the interdisciplinary major is by",
+        "description": "Admission requires a committee-reviewed application and a minimum 3.0 GPA.",
+        "confidence": "high",
+        "note": "Exception clause about GPA below 3.3 is unclassified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 300
+            },
+            {
+              "unresolved": "courses defined by the student's individual academic contract"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 9
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                33,
+                33
+              ]
+            ],
+            "source_quote": "distributed in at least two fields",
+            "thresholds": [
+              {
+                "count_by": "departments",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "INTD-BA-CONTRACT",
+        "source_lines": [
+          [
+            31,
+            33
+          ]
+        ],
+        "source_quote": "The contract includes a minimum of nine",
+        "description": "A minimum of nine 4-unit upper-division courses, distributed across at least two fields, defined by the student's individual academic contract.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "NO_POOL",
+        "details": {
+          "requirement": "senior thesis integrating the areas of research comprising the interdisciplinary major, supervised by the Guidance Committee"
+        },
+        "id": "INTD-BA-THESIS",
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "These areas of concentration must then be",
+        "description": "A senior thesis integrating the areas of concentration, supervised by the Guidance Committee.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "those with less than a 3.3 are",
+      "reason": "out_of_scope",
+      "why": "GPA threshold nuance; grade/GPA rules are out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Students in the program must meet all",
+      "reason": "university_level",
+      "why": "General Dornsife graduation requirement, not specific to this major."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "The primary focus of the major should",
+      "reason": "advisory",
+      "why": "Soft guidance about focus area, not a strict checkable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "Course prerequisites cannot be waived; admission to",
+      "reason": "out_of_scope",
+      "why": "Procedural/administrative restriction, not a course requirement."
+    }
+  ]
+}

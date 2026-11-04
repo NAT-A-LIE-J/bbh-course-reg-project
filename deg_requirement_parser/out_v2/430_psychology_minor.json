@@ -1,0 +1,167 @@
+{
+  "program": "Psychology Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "PSYC 100",
+        "id": "PSYCMIN-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor requires six courses: PSYC 100 and",
+        "description": "PSYC 100 is required as part of the six-course minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "PSYC 314L"
+              ]
+            },
+            {
+              "unresolved": "five topic areas listed under Major Requirements"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "PSYCMIN-TOPICS",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "One course is required in each of three",
+        "description": "One course from each of three of the five Major Requirements topic areas; PSYC 314L may count toward one.",
+        "confidence": "medium",
+        "note": "The five topic areas are defined in the Major Requirements page, not reproduced here."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "PSYC"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ]
+            ],
+            "source_quote": "One must be upper-division, 300-level or higher.",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "PSYCMIN-ELECTIVES",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Two elective PSYC courses.",
+        "description": "Two elective PSYC courses, at least one upper-division (300+).",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Students must complete at least 16 upper-division",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "PSYC"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "No more than four units of PSYC 490x",
+        "eligible_if": {
+          "courses": [
+            "PSYC 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Each of the six courses must be at",
+      "reason": "no_fit",
+      "why": "A per-course minimum unit value cannot be expressed by the available threshold aggregations."
+    }
+  ]
+}

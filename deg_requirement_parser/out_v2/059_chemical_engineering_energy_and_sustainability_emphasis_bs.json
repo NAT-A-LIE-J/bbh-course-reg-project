@@ -1,0 +1,342 @@
+{
+  "program": "Chemical Engineering, Energy and Sustainability Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "CHE-ENERGY-COMPOSITION",
+        "source_lines": [
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic",
+        "description": "Composition/writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          }
+        ],
+        "id": "CHE-ENERGY-CHEMISTRY",
+        "source_lines": [
+          [
+            46,
+            57
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4 or",
+        "description": "Chemistry sequence: general chemistry pair, organic chemistry, and physical chemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "CHE-ENERGY-MATH",
+        "source_lines": [
+          [
+            59,
+            71
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Math sequence through Calculus III and Math of Physics and Engineering I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CHE-ENERGY-PHYSICS",
+        "source_lines": [
+          [
+            73,
+            78
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I: Mechanics,",
+        "description": "Physics sequence: PHYS 151Lg and PHYS 152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHE 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 443"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444cL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 447"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 460L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 485"
+          }
+        ],
+        "id": "CHE-ENERGY-CORE-ENGINEERING",
+        "source_lines": [
+          [
+            80,
+            96
+          ]
+        ],
+        "source_quote": "CHE 120 Introduction to Chemical Engineering Units:",
+        "description": "Common chemical engineering core courses required of all emphases.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHE 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PTE 463L"
+          }
+        ],
+        "id": "CHE-ENERGY-EMPHASIS-CORE",
+        "source_lines": [
+          [
+            98,
+            106
+          ]
+        ],
+        "source_quote": "Students must complete the following two courses:",
+        "description": "Energy and Sustainability emphasis core: CHE 450 and PTE 463L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CE 363L",
+            "CE 453",
+            "CHE 455",
+            "ENE 428",
+            "PTE 461",
+            "PTE 464L",
+            "PTE 465L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CHE-ENERGY-EMPHASIS-ELECTIVES",
+        "source_lines": [
+          [
+            107,
+            114
+          ]
+        ],
+        "source_quote": "Students must complete two electives from the",
+        "description": "Two elective courses from the Energy and Sustainability emphasis list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The Mork Family Department of Chemical Engineering offers",
+      "reason": "out_of_scope",
+      "why": "Programme description and emphasis listing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Sample student schedules are located on the",
+      "reason": "advisory",
+      "why": "Pointer to sample schedules, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "See also common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common degree requirements, handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          44,
+          44
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "General Education requirement is university-wide and tracked via STARS/GE categories."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "The requirement for the Bachelor of Science",
+      "reason": "university_level",
+      "why": "Total unit count (134 units) for the degree; overall unit totals are university-level."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement on upper-division courses; grade/GPA rules are out of scope."
+    }
+  ]
+}

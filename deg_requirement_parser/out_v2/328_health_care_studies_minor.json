@@ -1,0 +1,152 @@
+{
+  "program": "Health Care Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MEDS 220"
+          },
+          {
+            "family": "specific_course",
+            "course": "MEDS 225"
+          }
+        ],
+        "id": "HCS-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            30,
+            37
+          ]
+        ],
+        "source_quote": "Required Courses (8 Units)",
+        "description": "BISC 220Lg or BISC 221Lg, plus MEDS 220 and MEDS 225, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MEDS 260",
+            "MEDS 280",
+            "MEDS 405",
+            "MEDS 455",
+            "BISC 312x",
+            "CHEM 350",
+            "HBIO 301L",
+            "MEDS 305",
+            "MEDS 315",
+            "MEDS 330",
+            "MEDS 335",
+            "MEDS 340",
+            "MEDS 350",
+            "MEDS 355",
+            "MEDS 425",
+            "SCRM 380",
+            "MEDS 320",
+            "MEDS 370",
+            "MEDS 420",
+            "MEDS 440",
+            "MEDS 445",
+            "MEDS 450",
+            "MEDS 460",
+            "MEDS 465",
+            "MEDS 495",
+            "MEDS 499",
+            "MEDS 300g",
+            "MEDS 360",
+            "MEDS 490x",
+            "ACAD 260",
+            "ACAD 422",
+            "ACAD 431",
+            "ACAD 432"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                99,
+                99
+              ]
+            ],
+            "source_quote": "A maximum of 4 units from the following courses",
+            "eligible_if": {
+              "courses": [
+                "ACAD 260",
+                "ACAD 422",
+                "ACAD 431",
+                "ACAD 432"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "HCS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            105
+          ]
+        ],
+        "source_quote": "Students must choose a minimum of 12 units",
+        "description": "At least 12 units chosen from the five elective lists (Essential/Contemporary Topics, Science and Medicine, Clinical Medicine, Biomedical Research, Health Care Innovation), with ACAD courses capped at 4 units and only countable if the student is also enrolled in the Health Innovation Minor.",
+        "confidence": "medium",
+        "note": "The cap on ACAD courses is conditioned on enrollment in the Health Innovation Minor offered by the Iovine and Young Academy, which cannot be checked from a course list; the unit cap itself is encoded as a check."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Keck minor in Health Care Studies is",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          28
+        ]
+      ],
+      "source_quote": "The 20-unit minor in Health Care Studies will",
+      "reason": "out_of_scope",
+      "why": "Programme goals/learning outcomes, not a specific course requirement."
+    }
+  ]
+}

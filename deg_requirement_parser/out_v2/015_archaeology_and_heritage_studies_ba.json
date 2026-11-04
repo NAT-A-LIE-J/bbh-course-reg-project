@@ -1,0 +1,364 @@
+{
+  "program": "Archaeology and Heritage Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ANTH 202g",
+        "id": "AHS-BA-LOWER-REQUIRED",
+        "source_lines": [
+          [
+            33,
+            41
+          ]
+        ],
+        "source_quote": "ANTH 202g Archaeology: Our Human Past",
+        "description": "Lower-division required course ANTH 202g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 120gp",
+            "AHIS 125gp",
+            "AHIS 126g",
+            "AHIS 127g",
+            "AHIS 128gp",
+            "AHIS 201g",
+            "AHIS 220g",
+            "ANTH 140g",
+            "ANTH 207",
+            "ARCG 298aL",
+            "ARCG 298bL",
+            "CHEM 102",
+            "CHEM 103Lgx",
+            "CHEM 105aLg",
+            "CHEM 105bL",
+            "CHEM 107Lg",
+            "CHEM 205Lgx",
+            "CLAS 150gp",
+            "CLAS 151gp",
+            "CLAS 190g",
+            "CLAS 212",
+            "CLAS 280gp",
+            "CORE 101g",
+            "CORE 103g",
+            "ENST 100g",
+            "ENST 150gx",
+            "ENST 298aL",
+            "ENST 298bL",
+            "GESM 110g",
+            "GESM 111g",
+            "GESM 120g",
+            "GESM 121g",
+            "GESM 130g",
+            "GESM 131g",
+            "HBIO 200Lg",
+            "HIST 101gp",
+            "JS 100gp",
+            "JS 170gp",
+            "MASC 110L",
+            "REL 111g",
+            "REL 112g",
+            "REL 114g",
+            "REL 115g",
+            "REL 121g",
+            "REL 125gp",
+            "REL 132g",
+            "REL 134g",
+            "REL 135g",
+            "REL 136g",
+            "REL 137g",
+            "REL 141g",
+            "SSCI 135g",
+            "SSCI 165Lgw",
+            "SSCI 265Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "AHS-BA-LOWER-ELECTIVE",
+        "source_lines": [
+          [
+            43,
+            100
+          ]
+        ],
+        "source_quote": "Select either one 4-unit course or two 2-unit courses",
+        "description": "One 4-unit course or two 2-unit courses from the lower-division elective list.",
+        "confidence": "medium",
+        "note": "CORE 101, CORE 103 and all GESM courses listed are allowed for credit by individual petition only (L232); cannot be checked automatically."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "REL 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "AHIS 301"
+          }
+        ],
+        "id": "AHS-BA-ETHICS",
+        "source_lines": [
+          [
+            106,
+            111
+          ]
+        ],
+        "source_quote": "Select one course from Ethics and Heritage",
+        "description": "One course from Ethics and Heritage: REL 304 or AHIS 301.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 325",
+            "AHIS 415",
+            "AHIS 425",
+            "AHIS 427",
+            "ANTH 307",
+            "ANTH 343",
+            "ANTH 400",
+            "ANTH 410",
+            "ANTH 440",
+            "ANTH 450",
+            "ANTH 481L",
+            "ARCG 305Lg",
+            "ARCG 306L",
+            "ARCG 308L",
+            "ARCG 309",
+            "ARCG 323p",
+            "ARCG 490x",
+            "REL 303Lg",
+            "REL 403L",
+            "REL 494L",
+            "REL 495",
+            "ARCH 559",
+            "ARCH 550"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "AHS-BA-THEORY-METHODS",
+        "source_lines": [
+          [
+            113,
+            139
+          ]
+        ],
+        "source_quote": "Select one theory course and one practicum/experiential/research course",
+        "description": "One theory course and one practicum/experiential/research course from the Theories and Methods list.",
+        "confidence": "medium",
+        "note": "The list is not explicitly split into 'theory' vs 'practicum' subsets in the catalogue text, so which specific courses are theory vs practicum is unresolved; only the overall count and unit total are checked."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 321",
+            "AHIS 322",
+            "AHIS 330",
+            "AHIS 381g",
+            "AHIS 382",
+            "AHIS 420",
+            "ANTH 123gp",
+            "ANTH 124g",
+            "ANTH 312",
+            "ANTH 314g",
+            "ANTH 315gw",
+            "ANTH 321",
+            "ANTH 326g",
+            "ANTH 327",
+            "ANTH 329",
+            "ANTH 337",
+            "ANTH 340",
+            "ANTH 343",
+            "ANTH 344g",
+            "ANTH 360",
+            "ANTH 372",
+            "ANTH 377g",
+            "ARCG 321",
+            "ARCG 322",
+            "ARCG 323p",
+            "ARCG 370gp",
+            "CLAS 323",
+            "CLAS 324",
+            "CLAS 328",
+            "CLAS 338",
+            "CLAS 339",
+            "CLAS 349gp",
+            "CLAS 371",
+            "EALC 382",
+            "EALC 385",
+            "JS 370gp",
+            "JS 378gp",
+            "MDES 316p",
+            "MDA 330",
+            "MDA 333",
+            "REL 302",
+            "REL 317g",
+            "REL 323",
+            "REL 325g",
+            "REL 326gp",
+            "REL 339",
+            "REL 350",
+            "REL 394",
+            "REL 402",
+            "REL 485",
+            "REL 493",
+            "ANTH 376",
+            "ANTH 481L",
+            "ARCG 305Lg",
+            "ARCG 490x",
+            "BISC 363L",
+            "BISC 364L",
+            "CHEM 300L",
+            "ENST 320a",
+            "ENST 320b",
+            "GEOL 305L",
+            "GEOL 320L",
+            "GEOL 412",
+            "HBIO 300",
+            "HBIO 308",
+            "SSCI 301L",
+            "SSCI 382L",
+            "AHIS 325",
+            "AHIS 415",
+            "AHIS 425",
+            "AHIS 427",
+            "ANTH 307",
+            "ANTH 400",
+            "ANTH 410",
+            "ANTH 440",
+            "ANTH 450",
+            "ARCG 306L",
+            "ARCG 308L",
+            "ARCG 309",
+            "REL 303Lg",
+            "REL 403L",
+            "REL 494L",
+            "REL 495",
+            "ARCH 559",
+            "ARCH 550"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "AHS-BA-ELECTIVES",
+        "source_lines": [
+          [
+            141,
+            220
+          ]
+        ],
+        "source_quote": "Select at least three courses from the elective lists",
+        "description": "At least three courses (12 units) from the Cultural/Historical, Applied/Analytical, or Theories and Methods lists.",
+        "confidence": "high",
+        "note": "ARCG 490, ARCG 305, REL 494, and REL 403 may be counted in both the Theories and Methods requirement and here (L234), an explicit exception to the one-slot rule."
+      },
+      {
+        "family": "course_reuse",
+        "kind": "DOUBLE_COUNT",
+        "details": {
+          "courses": [
+            "ARCG 490x",
+            "ARCG 305Lg",
+            "REL 494L",
+            "REL 403L"
+          ],
+          "applies_to": "Theories and Methods and Upper-Division Elective distribution requirements"
+        },
+        "id": "AHS-BA-DOUBLECOUNT",
+        "source_lines": [
+          [
+            234,
+            234
+          ]
+        ],
+        "source_quote": "ARCG 490, ARCG 305, REL 494, and REL 403 may be taken multiple times",
+        "description": "Four specific courses may be double-counted between the Theories and Methods requirement and the general elective requirement.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CLAS 465",
+        "id": "AHS-BA-CAPSTONE",
+        "source_lines": [
+          [
+            222,
+            226
+          ]
+        ],
+        "source_quote": "Take Capstone Course",
+        "description": "Capstone course CLAS 465.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "students fulfill six requirements in this 36-unit BA program",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          29
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Archaeology and Heritage Studies",
+      "reason": "out_of_scope",
+      "why": "Programme description and marketing text, not a requirement."
+    }
+  ]
+}

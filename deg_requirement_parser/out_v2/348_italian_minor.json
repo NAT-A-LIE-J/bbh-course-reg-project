@@ -1,0 +1,191 @@
+{
+  "program": "Italian Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ITAL 120",
+            "ITAL 150",
+            "ITAL 220",
+            "ITAL 240"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "ITAL-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            25,
+            34
+          ]
+        ],
+        "source_quote": "Some or all of these courses may be waived",
+        "description": "Four lower-division Italian courses (ITAL 120, 150, 220, 240).",
+        "confidence": "high",
+        "note": "Some or all of these courses may be waived by examination; not checkable, noted here."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ITAL 300g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ITAL 350g"
+          }
+        ],
+        "id": "ITAL-MINOR-CORE",
+        "source_lines": [
+          [
+            40,
+            48
+          ]
+        ],
+        "source_quote": "Students may choose either ITAL 300 or ITAL",
+        "description": "One required core course: ITAL 300g or ITAL 350g.",
+        "confidence": "high",
+        "note": "Advisory note about completing core before 400-level courses handled as unclassified advisory."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ITAL 300g",
+            "ITAL 340g",
+            "ITAL 345",
+            "ITAL 347",
+            "ITAL 350g",
+            "ITAL 352",
+            "ITAL 360g",
+            "ITAL 374gm",
+            "ITAL 380",
+            "ITAL 381",
+            "ITAL 382g",
+            "ITAL 392",
+            "ITAL 393",
+            "ITAL 402",
+            "ITAL 403",
+            "ITAL 440",
+            "ITAL 461",
+            "ITAL 490x",
+            "ITAL 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ],
+              [
+                50,
+                50
+              ]
+            ],
+            "source_quote": "Of the additional four courses, at least one",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ],
+              [
+                54,
+                54
+              ]
+            ],
+            "source_quote": "No more than two courses conducted in English",
+            "eligible_if": {
+              "courses": [
+                "ITAL 300g",
+                "ITAL 350g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "ITAL-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            50,
+            74
+          ]
+        ],
+        "source_quote": "Three upper-division Italian courses to be chosen",
+        "description": "Three additional upper-division Italian courses, chosen in consultation with the adviser, including at least one 400-level course, with a cap on courses conducted in English.",
+        "confidence": "medium",
+        "note": "The 'in consultation with the department adviser' selection process cannot be checked beyond the provided course list; the English-language cap text appears both at L021 and L054 and is unified into one check here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Successful completion of the minor requires 32",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "Students may take the Core course as early",
+      "reason": "advisory",
+      "why": "Recommends timing of the core course relative to 400-level courses; not a strict requirement."
+    }
+  ]
+}

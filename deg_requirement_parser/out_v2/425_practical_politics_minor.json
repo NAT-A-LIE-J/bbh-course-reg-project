@@ -1,0 +1,183 @@
+{
+  "program": "Practical Politics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 100g",
+            "POSC 334",
+            "POSC 335",
+            "POSC 422",
+            "POSC 423",
+            "POSC 424m",
+            "POSC 425",
+            "POSC 435",
+            "POSC 437",
+            "POSC 449"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "PRACPOL-AMERICAN-POLITICS",
+        "source_lines": [
+          [
+            31,
+            44
+          ]
+        ],
+        "source_quote": "Two courses in American Politics from the following list",
+        "description": "Two courses from the American Politics list, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 323",
+            "POSC 325",
+            "POSC 420",
+            "POSC 439",
+            "POSC 452"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "PRACPOL-APPLIED-POLITICS",
+        "source_lines": [
+          [
+            46,
+            60
+          ]
+        ],
+        "source_quote": "Two courses in Applied Politics from the following list",
+        "description": "Two courses from the Applied Politics list, totaling 8 units.",
+        "confidence": "high",
+        "note": "Multiple sections of POSC 323 and POSC 420 may be offered and each counted; restates eligibility rather than adding a new requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "POSC 395"
+              ]
+            },
+            {
+              "unresolved": "Internship in Washington DC (part of the Washington DC Program) or Maymester in Washington DC"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PRACPOL-PRACTICAL-EXPERIENCE",
+        "source_lines": [
+          [
+            62,
+            68
+          ]
+        ],
+        "source_quote": "One course in Practical Experience from the following list",
+        "description": "One course from the Practical Experience list (POSC 395, or the DC internship/Maymester options), totaling 4 units.",
+        "confidence": "medium",
+        "note": "The Washington DC internship and Maymester options are not given course codes, so they are left unresolved."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "The Practical Politics minor requires students to take five courses (20 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "The minor requires 16 units of upper-division courses.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "Only 4 units of the 20 units may be fulfilled with",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,100 @@
+{
+  "program": "Designing for Digital Experiences Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 177"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 178"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 275"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 324g"
+          }
+        ],
+        "id": "DDEX-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            28,
+            38
+          ]
+        ],
+        "source_quote": "Students must complete the following 16 units:",
+        "description": "Five named required ACAD courses totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 180",
+            "ACAD 186",
+            "ACAD 207",
+            "ACAD 217",
+            "ACAD 276",
+            "ACAD 402",
+            "ACAD 415",
+            "DSCI 454"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "DDEX-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            53
+          ]
+        ],
+        "source_quote": "Students must complete 8 units from the",
+        "description": "8 units of electives from the listed ACAD/DSCI courses.",
+        "confidence": "high",
+        "note": "Additional electives from other schools may be considered through advisement but no checkable list is given."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Additional electives, including in other schools at",
+      "reason": "advisory",
+      "why": "Advisement-based option without a defined pool, not a stated requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          26
+        ]
+      ],
+      "source_quote": "Information on how to apply for the",
+      "reason": "out_of_scope",
+      "why": "Application/admission process information, not a course requirement."
+    }
+  ]
+}

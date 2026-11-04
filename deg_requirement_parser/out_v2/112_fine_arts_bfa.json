@@ -1,0 +1,314 @@
+{
+  "program": "Fine Arts (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 106"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 110"
+          }
+        ],
+        "id": "BFA-FOUNDATION",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "Three 4-unit foundation courses are required for students admitted",
+        "description": "Three required foundation studio courses: ART 105, ART 106, ART 110.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 380"
+          }
+        ],
+        "id": "BFA-STUDIO-CRITIQUE",
+        "source_lines": [
+          [
+            43,
+            48
+          ]
+        ],
+        "source_quote": "Two 2-unit Studio Critique courses are required in the second and third year",
+        "description": "ART 280 and ART 380, taken in the second and third years respectively.",
+        "confidence": "high",
+        "note": "Timing (second/third year) stated but not separately encoded as sequencing."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 485"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 494a"
+          }
+        ],
+        "id": "BFA-SENIOR-CAPSTONE",
+        "source_lines": [
+          [
+            50,
+            55
+          ]
+        ],
+        "source_quote": "In the senior year, a 4-unit capstone and one 2-unit thesis courses are required",
+        "description": "Senior-year capstone (ART 485) and thesis (ART 494a) courses.",
+        "confidence": "high",
+        "note": "Timing (senior year) stated but not separately encoded as sequencing."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CRIT 150gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 160g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 350gw"
+          }
+        ],
+        "id": "BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            57,
+            63
+          ]
+        ],
+        "source_quote": "The following 4-unit Critical Studies courses are required",
+        "description": "Three required Critical Studies courses: CRIT 150gp, CRIT 160g, CRIT 350gw.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ART"
+                      ]
+                    },
+                    {
+                      "level_min": 100,
+                      "level_max": 299
+                    }
+                  ]
+                },
+                {
+                  "prefix": [
+                    "DES"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    69,
+                    69
+                  ]
+                ],
+                "source_quote": "Up to 4 units of DES courses may be counted toward",
+                "eligible_if": {
+                  "prefix": [
+                    "DES"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "max",
+                    "value": 4
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ART"
+                      ]
+                    },
+                    {
+                      "level_min": 300,
+                      "level_max": 499
+                    }
+                  ]
+                },
+                {
+                  "prefix": [
+                    "DES"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 28
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    69,
+                    69
+                  ]
+                ],
+                "source_quote": "Up to 12 units of DES courses may be counted toward",
+                "eligible_if": {
+                  "prefix": [
+                    "DES"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "max",
+                    "value": 12
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "BFA-FINE-ARTS-ELECTIVES",
+        "source_lines": [
+          [
+            65,
+            69
+          ]
+        ],
+        "source_quote": "Select 16 additional units from any 100-299 ART courses, and 28 additional units",
+        "description": "16 units from 100-299 ART courses and 28 units from 300-499 ART courses, with limited DES substitution allowed in each.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 22
+          }
+        ],
+        "id": "BFA-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "BFA students have a minimum of 22 non-specific elective units",
+        "description": "A minimum of 22 non-specific elective units chosen from a variety of university courses.",
+        "confidence": "medium",
+        "note": "No restriction on eligible courses is given beyond free choice based on student goals and adviser consultation."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "The Bachelor of Fine Arts (BFA) requires a total of 128 units",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "including 78 units of major requirements (66 units in Art courses",
+      "reason": "out_of_scope",
+      "why": "Descriptive summary of unit breakdown already captured by the specific course and elective requirements."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "based on their personal and professional goals and in consultation with their academic adviser",
+      "reason": "advisory",
+      "why": "Advisory guidance on selecting electives, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Electives are typically clustered in a particular field as in a minor",
+      "reason": "advisory",
+      "why": "Describes a typical pattern, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          75,
+          75
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent, integrated introduction",
+      "reason": "university_level",
+      "why": "General Education requirements are university-wide and handled separately."
+    }
+  ]
+}

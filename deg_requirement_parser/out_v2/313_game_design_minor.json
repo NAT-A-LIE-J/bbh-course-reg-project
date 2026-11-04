@@ -1,0 +1,171 @@
+{
+  "program": "Game Design Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 190"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 289"
+          }
+        ],
+        "id": "GAMEDESIGN-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "Lower-division Core (10 Units)",
+        "description": "Lower-division core: CTIN 101, CTIN 190, CTIN 289.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 489L"
+          }
+        ],
+        "id": "GAMEDESIGN-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            37,
+            42
+          ]
+        ],
+        "source_quote": "Upper-division Core (8 Units)",
+        "description": "Upper-division core: CTIN 488, CTIN 489L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTIN 401L",
+            "CTIN 404L",
+            "CTIN 405L",
+            "CTIN 458",
+            "CTIN 464",
+            "CTIN 482",
+            "CTIN 486",
+            "CTIN 491L",
+            "CTIN 492L",
+            "CTIN 493L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "GAMEDESIGN-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            57
+          ]
+        ],
+        "source_quote": "Electives (6 Additional Units)",
+        "description": "6 additional units chosen from the listed elective CTIN courses.",
+        "confidence": "high",
+        "note": "CTIN 493L requires a prerequisite (note at L063); not separately encoded as it is part of the elective list."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 24 units is required for the game design minor, 10 lower-division units and 14 upper-division units.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 14
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To be eligible for the game design minor, a student must be in good academic standing",
+      "reason": "out_of_scope",
+      "why": "Academic standing / declared major eligibility rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To declare the game design minor a student must get permission from the Interactive Media Division",
+      "reason": "out_of_scope",
+      "why": "Procedural declaration/admission process, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A total of 24 units is required for the game design minor",
+      "reason": "university_level",
+      "why": "Total unit count for minor, handled by university-wide minor unit rules."
+    },
+    {
+      "source_lines": [
+        [
+          63,
+          63
+        ]
+      ],
+      "source_quote": "*Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note on a specific elective course, not a program-level sequencing rule."
+    },
+    {
+      "source_lines": [
+        [
+          67,
+          67
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each course is required.",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule; Phase 2."
+    }
+  ]
+}

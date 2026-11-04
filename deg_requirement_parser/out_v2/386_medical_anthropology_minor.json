@@ -1,0 +1,102 @@
+{
+  "program": "Medical Anthropology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 101g",
+            "ANTH 105g",
+            "ANTH 125g",
+            "ANTH 201g",
+            "HBIO 200Lg",
+            "ANTH 273g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MEDANTH-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            34
+          ]
+        ],
+        "source_quote": "Two lower-division Anthropology courses, selected from the following",
+        "description": "Two lower-division Anthropology courses from the given list, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 300",
+            "ANTH 301g",
+            "ANTH 305",
+            "ANTH 308",
+            "ANTH 325",
+            "ANTH 410",
+            "ANTH 332g",
+            "ANTH 338g",
+            "ANTH 357g",
+            "ANTH 360",
+            "ANTH 370",
+            "ANTH 373",
+            "ANTH 380",
+            "ANTH 385m",
+            "ANTH 393",
+            "ANTH 405",
+            "ANTH 440",
+            "ANTH 445",
+            "OT 375",
+            "SWMS 336"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "MEDANTH-MINOR-UPPER",
+        "source_lines": [
+          [
+            36,
+            62
+          ]
+        ],
+        "source_quote": "16 units of upper-division Anthropology coursework, selected from",
+        "description": "16 units of upper-division Anthropology coursework (or related courses) from the given list.",
+        "confidence": "medium",
+        "note": "ANTH 325 and ANTH 410 are listed as alternatives joined by 'or'; both are included in the eligible pool since either may be chosen without further encoding needed."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Medical anthropology examines the body, illness and healing",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

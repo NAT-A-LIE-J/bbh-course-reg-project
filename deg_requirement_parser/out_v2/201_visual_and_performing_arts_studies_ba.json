@@ -1,0 +1,193 @@
+{
+  "program": "Visual and Performing Arts Studies (BA)*",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AHIS 120gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 304x"
+          },
+          {
+            "family": "specific_course",
+            "course": "CRIT 150gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 393"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 280g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 115gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          }
+        ],
+        "id": "VPA-BA-CORE",
+        "source_lines": [
+          [
+            29,
+            41
+          ]
+        ],
+        "source_quote": "Required Core Courses (Survey of the Arts)",
+        "description": "Seven required core survey courses totaling 28 units.",
+        "confidence": "high",
+        "note": "Total of 28 units stated at L041 is automatically satisfied by the seven 4-unit courses."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "courses": [
+                "ARCH 314",
+                "ARCH 440m",
+                "ARCH 444",
+                "ARCH 454",
+                "ARCH 465",
+                "ARCH 549",
+                "CTAN 451",
+                "CTCS 392",
+                "CTCS 394",
+                "CTCS 406",
+                "CTCS 407",
+                "CTCS 409",
+                "CTCS 411",
+                "CTCS 412",
+                "CTCS 414",
+                "ENGL 371g",
+                "PHIL 446",
+                "AHIS 319",
+                "AHIS 321",
+                "AHIS 322",
+                "AHIS 330",
+                "AHIS 343",
+                "AHIS 364",
+                "AHIS 368",
+                "AHIS 369",
+                "AHIS 370g",
+                "AHIS 373g",
+                "AHIS 384",
+                "AHIS 385",
+                "ART 362",
+                "CRIT 350gw",
+                "DES 323g",
+                "MUHL 350g",
+                "MUHL 351",
+                "MUSC 320gmw",
+                "MUSC 371g",
+                "MUSC 372g",
+                "MUSC 373g",
+                "MUSC 444",
+                "MUSC 460",
+                "MUSC 465",
+                "THTR 301",
+                "THTR 302",
+                "THTR 310",
+                "THTR 312",
+                "THTR 313",
+                "THTR 314",
+                "THTR 400",
+                "THTR 401",
+                "THTR 403",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw",
+                "THTR 481",
+                "THTR 490x",
+                "DANC 302g",
+                "DANC 312gw",
+                "DANC 342gp",
+                "DANC 363g",
+                "DANC 432",
+                "DANC 442",
+                "COLT 381",
+                "PHIL 445",
+                "FREN 432",
+                "SPAN 464"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "VPA-BA-CASE-STUDIES",
+        "source_lines": [
+          [
+            45,
+            157
+          ]
+        ],
+        "source_quote": "12 units of upper division course work from the following:",
+        "description": "12 units of upper-division coursework chosen from the listed Case Studies in the Arts offerings across participating schools.",
+        "confidence": "medium",
+        "note": "List compiled from all sub-sections (Architecture, Cinematic Arts, Fine Arts, Music, Dramatic Arts, Dance, Other Courses, Overseas Study Opportunities)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A total of 128 units is required for completion",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Candidates for the degree must complete the university general",
+      "reason": "university_level",
+      "why": "General education requirement is university-wide, not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          25
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a coherent, integrated",
+      "reason": "university_level",
+      "why": "Describes the university-wide GE program, tracked via STARS, not a major requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Note that courses within the major may also satisfy",
+      "reason": "advisory",
+      "why": "Advises consulting an adviser about GE double-counting; not a requirement itself."
+    }
+  ]
+}

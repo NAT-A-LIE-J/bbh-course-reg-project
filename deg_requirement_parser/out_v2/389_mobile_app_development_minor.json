@@ -1,0 +1,153 @@
+{
+  "program": "Mobile App Development Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "application for the minor with the Viterbi School of Engineering; regular admissions standards and declared USC major required"
+        },
+        "id": "MOBILEAPP-MINOR-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students should meet the regular admissions standards and have",
+        "description": "Students must meet admission standards, have a declared major, and apply to the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "TAC 115"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 116"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 265"
+              }
+            ]
+          }
+        ],
+        "id": "MOBILEAPP-MINOR-CORE1",
+        "source_lines": [
+          [
+            31,
+            39
+          ]
+        ],
+        "source_quote": "Complete the following (6 units)",
+        "description": "Complete one of TAC 115, TAC 116, or TAC 265.",
+        "confidence": "high",
+        "note": "ITP 115 or 116 may be waived with demonstrated prior Python programming experience; not checkable, not encoded as a separate rule."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "TAC 341"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 342"
+          }
+        ],
+        "id": "MOBILEAPP-MINOR-CORE2",
+        "source_lines": [
+          [
+            41,
+            46
+          ]
+        ],
+        "source_quote": "Complete one of the following (4 units)",
+        "description": "Complete one of TAC 341 or TAC 342.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 303",
+            "TAC 310",
+            "TAC 341",
+            "TAC 342",
+            "TAC 344",
+            "TAC 345",
+            "TAC 368",
+            "TAC 382"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MOBILEAPP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            48,
+            59
+          ]
+        ],
+        "source_quote": "Choose two elective courses (8 units minimum)",
+        "description": "Choose two elective courses from the list, totaling at least 8 units.",
+        "confidence": "high",
+        "note": "TAC 341/TAC 342 appear both as a core option and an elective option; the one-slot rule means only the unused one of the pair can count here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor requires a minimum of 18 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "contact the Information Technology Program at (213)",
+      "reason": "out_of_scope",
+      "why": "Contact information, not a requirement."
+    }
+  ]
+}

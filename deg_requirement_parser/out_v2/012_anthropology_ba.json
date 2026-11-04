@@ -1,0 +1,223 @@
+{
+  "program": "Anthropology (Visual Anthropology) (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ANTH 263g",
+        "id": "ANTH-VA-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "Required Courses, Lower-Division (4 units)",
+        "description": "Requires ANTH 263g as the lower-division course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 410"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 440"
+          }
+        ],
+        "id": "ANTH-VA-UPPERDIV",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Required Courses, Upper-Division (8 units)",
+        "description": "Requires ANTH 410 and ANTH 440.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 470",
+            "ANTH 472",
+            "ANTH 476",
+            "ANTH 575"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ANTH-VA-VISUALCOURSES",
+        "source_lines": [
+          [
+            36,
+            51
+          ]
+        ],
+        "source_quote": "Students must complete two Visual Anthropology courses",
+        "description": "Two Visual Anthropology courses from the listed four, with ANTH 575 requiring extra approval and ANTH 470 double-use noted.",
+        "confidence": "high",
+        "note": "ANTH 575 requires departmental approval or an A- or higher in ANTH 410/440 (see manual_review). ANTH 470 may alternatively be used as the Senior Capstone option; if so used it cannot also fill this slot (one-slot rule)."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "COURSE_ENTRY",
+          "basis": "QUALITATIVE_OR_NUMERIC",
+          "requires": [
+            "departmental approval",
+            "or A- or higher in ANTH 410 or ANTH 440"
+          ]
+        },
+        "id": "ANTH-VA-575GATE",
+        "source_lines": [
+          [
+            47,
+            51
+          ]
+        ],
+        "source_quote": "ANTH 575 requires departmental approval, or an",
+        "description": "ANTH 575 enrollment requires departmental approval or a high grade in a prerequisite.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "ANTH"
+              ]
+            },
+            {
+              "courses": [
+                "AMST 395m",
+                "ANTH 203g",
+                "ANTH 275",
+                "ANTH 309Lg",
+                "ANTH 312",
+                "ANTH 316gmp",
+                "ANTH 321",
+                "ANTH 332g",
+                "ANTH 340",
+                "ANTH 344g",
+                "ANTH 372",
+                "ANTH 445"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ANTH-VA-ELECTIVE",
+        "source_lines": [
+          [
+            53,
+            72
+          ]
+        ],
+        "source_quote": "One additional elective in Anthropology is required",
+        "description": "One additional Anthropology elective, from any ANTH course or the recommended list (which also includes AMST 395m).",
+        "confidence": "high",
+        "note": "The recommended electives list is advisory in nature (some recommended electives) but names courses used to define the eligible pool."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "ANTH 470"
+          }
+        ],
+        "id": "ANTH-VA-CAPSTONE",
+        "source_lines": [
+          [
+            74,
+            90
+          ]
+        ],
+        "source_quote": "Students must submit a proposal for departmental",
+        "description": "Senior capstone seminar: ANTH 411 or ANTH 470 (if used as capstone, student must notify instructor by drop/add deadline).",
+        "confidence": "high",
+        "note": "ANTH 470 can be used either as a Visual Anthropology course option or as the Senior Capstone option, not both (one-slot rule); student must inform instructor by drop/add deadline to count it as capstone."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "CAPSTONE_ENTRY",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "proposal for departmental approval prior to enrolling in capstone seminar"
+        },
+        "id": "ANTH-VA-CAPSTONEGATE",
+        "source_lines": [
+          [
+            78,
+            78
+          ]
+        ],
+        "source_quote": "Students must submit a proposal for departmental",
+        "description": "Students must submit a proposal for departmental approval before enrolling in the capstone.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "In addition to the general education requirements",
+      "reason": "university_level",
+      "why": "References the university GE requirement, handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          59,
+          59
+        ]
+      ],
+      "source_quote": "The following are some recommended electives:",
+      "reason": "advisory",
+      "why": "Introduces a recommended, non-exhaustive list rather than a strict requirement."
+    },
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "Offered irregularly:",
+      "reason": "out_of_scope",
+      "why": "Scheduling note, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "program": "Health Promotion and Disease Prevention Studies (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 108g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          }
+        ],
+        "id": "HP-BS-NONHP-CORE",
+        "source_lines": [
+          [
+            46,
+            68
+          ]
+        ],
+        "source_quote": "Non-HP Courses (20 Units)",
+        "description": "Non-HP core: one biology intro pair, one cell biology pair, one chemistry course, one math course, and PSYC 100Lg.",
+        "confidence": "high",
+        "note": "MATH 125g also satisfies premed math requirement; the asterisk note (L068) is advisory and not a separate requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 350L"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 490x"
+          }
+        ],
+        "id": "HP-BS-HPCORE",
+        "source_lines": [
+          [
+            70,
+            80
+          ]
+        ],
+        "source_quote": "HP Courses (22 Units)",
+        "description": "Five required HP core courses plus HP 490x Directed Research, totaling 22 units.",
+        "confidence": "medium",
+        "note": "HP 490x has variable units (1-8, max 12); exact units needed to reach 22 total cannot be fixed from the text, so no unit threshold is encoded on this leaf."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ADSC 250",
+            "BISC 320Lg",
+            "BISC 330L",
+            "BISC 428",
+            "CHEM 105bL",
+            "CHEM 115bL",
+            "CHEM 322aL",
+            "CHEM 322bL",
+            "HBIO 301L",
+            "HP 365gmw",
+            "HP 370g",
+            "HP 401",
+            "HP 402",
+            "HP 405",
+            "HP 408",
+            "HP 410",
+            "HP 420m",
+            "HP 421",
+            "HP 422",
+            "HP 430",
+            "HP 431",
+            "HP 432",
+            "HP 440",
+            "HP 442",
+            "HP 446",
+            "HP 448",
+            "HP 450",
+            "HP 460",
+            "PHYS 135aLg",
+            "PHYS 135bL",
+            "PHYS 151Lg",
+            "PHYS 152L",
+            "PPD 325",
+            "PPD 330",
+            "PSYC 336L",
+            "PSYC 355",
+            "PSYC 437",
+            "SOCI 350",
+            "SOCI 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                86,
+                86
+              ]
+            ],
+            "source_quote": "at least 12 of the 24 must be HP courses",
+            "eligible_if": {
+              "prefix": [
+                "HP"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "id": "HP-BS-ELECTIVES",
+        "source_lines": [
+          [
+            82,
+            134
+          ]
+        ],
+        "source_quote": "A total of 24 units of electives are required",
+        "description": "24 units of electives from the listed pool, with at least 12 units from HP courses.",
+        "confidence": "medium",
+        "note": "Internal 'or' alternatives (CHEM 105bL/115bL; PHYS 135a+135b or PHYS 151+152) are left as individually eligible courses within the pool rather than forced pairs, since the elective count only requires total units."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "The Bachelor of Science degree is awarded after students successfully complete 128 units",
+      "reason": "university_level",
+      "why": "University-wide total unit count repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          34,
+          34
+        ]
+      ],
+      "source_quote": "fulfillment of USC general education requirements including third semester equivalency",
+      "reason": "university_level",
+      "why": "GE and foreign language requirements are university-wide and handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          38,
+          38
+        ]
+      ],
+      "source_quote": "It requires eight courses in six Core Literacies, plus two courses",
+      "reason": "university_level",
+      "why": "General Education structure is a university-wide requirement, not specific to this major."
+    },
+    {
+      "source_lines": [
+        [
+          68,
+          68
+        ]
+      ],
+      "source_quote": "MATH 125 allows students who have placed out of MATH 108",
+      "reason": "advisory",
+      "why": "Explanatory note about course substitution eligibility, not an additional requirement."
+    }
+  ]
+}

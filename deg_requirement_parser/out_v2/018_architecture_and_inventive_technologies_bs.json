@@ -1,0 +1,275 @@
+{
+  "program": "Architecture and Inventive Technologies (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 102a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 102bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 104"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 105aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 105bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 108"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 211"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 218"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 219"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 228"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 229"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 125Lg"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135bL"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "AIT-BS-LOWER-DIVISION",
+        "source_lines": [
+          [
+            29,
+            42
+          ],
+          [
+            73,
+            73
+          ]
+        ],
+        "source_quote": "Lower Division (43 units)",
+        "description": "Required lower-division core courses totaling 43 units, with PHYS 125Lg satisfiable by PHYS 135aLg/135bL instead.",
+        "confidence": "high",
+        "note": "The PHYS 135aLg/135bL alternative applies only 4 of its units toward the BS AIT lower division requirement; the remaining 4 units count as electives (see L073). This split cannot be fully checked and is noted here."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 318"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 319"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 328"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 329"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 470a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 470b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 521"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 581"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 588"
+          }
+        ],
+        "id": "AIT-BS-UPPER-DIVISION",
+        "source_lines": [
+          [
+            43,
+            53
+          ]
+        ],
+        "source_quote": "Upper Division (30 units)",
+        "description": "Required upper-division core courses totaling 30 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "school": "School of Architecture"
+            },
+            {
+              "school": "Iovine and Young Academy"
+            },
+            {
+              "school": "Dornsife College of Letters, Arts and Science"
+            },
+            {
+              "school": "Roski School of Art and Design"
+            },
+            {
+              "school": "Price School of Public Policy"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 9
+          }
+        ],
+        "id": "AIT-BS-ELECTIVES",
+        "source_lines": [
+          [
+            59,
+            59
+          ]
+        ],
+        "source_quote": "Nine units of electives are required, to be chosen from",
+        "description": "Nine units of electives from specified schools, approved by the School of Architecture Academic Adviser.",
+        "confidence": "medium",
+        "note": "Approval by the School of Architecture Academic Adviser cannot be checked from a course list; not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 0
+            },
+            {
+              "not": {
+                "courses": [
+                  "MATH 125g",
+                  "PHYS 125Lg",
+                  "PHYS 135aLg",
+                  "PHYS 135bL"
+                ]
+              }
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "AIT-BS-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            65,
+            65
+          ]
+        ],
+        "source_quote": "Six units of free electives are required, which may",
+        "description": "Six units of free electives from across the university, excluding MATH 125g, PHYS 125Lg, PHYS 135aLg and PHYS 135bL.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "The degree requires a total of 128 units, including",
+      "reason": "university_level",
+      "why": "Total unit count and GE/writing unit allocation are university-wide rules."
+    },
+    {
+      "source_lines": [
+        [
+          67,
+          72
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent",
+      "reason": "university_level",
+      "why": "General GE program description, not a programme-specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          73,
+          73
+        ]
+      ],
+      "source_quote": "For Category E: Physical Sciences, students must select",
+      "reason": "university_level",
+      "why": "GE category satisfaction rule; the specific course choice is already encoded in the lower division node."
+    },
+    {
+      "source_lines": [
+        [
+          75,
+          75
+        ]
+      ],
+      "source_quote": "For Category F: Quantitative Reasoning, students must select",
+      "reason": "university_level",
+      "why": "GE category satisfaction rule; MATH 125g is already required in the lower division node."
+    }
+  ]
+}

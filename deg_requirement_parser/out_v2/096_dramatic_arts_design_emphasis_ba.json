@@ -1,0 +1,343 @@
+{
+  "program": "Dramatic Arts, Design Emphasis (BA)*",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 241"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305a"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 397"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 407a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 493a"
+          }
+        ],
+        "id": "DRAMA-DESIGN-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            41
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "Core required courses totaling 25 units, including 3 units of THTR 397 practicum.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 231",
+            "THTR 232",
+            "THTR 236",
+            "THTR 335"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "DRAMA-DESIGN-SKILLS-I",
+        "source_lines": [
+          [
+            43,
+            52
+          ]
+        ],
+        "source_quote": "Select 2 courses (6 units)",
+        "description": "Select 2 courses (6 units) from Skills I list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 409",
+            "THTR 435"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "DRAMA-DESIGN-DRAFTING-I",
+        "source_lines": [
+          [
+            54,
+            61
+          ]
+        ],
+        "source_quote": "Select one course (3 units) from:",
+        "description": "Select one course from Drafting I list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 303",
+            "THTR 330",
+            "THTR 331",
+            "THTR 332",
+            "THTR 336"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "DRAMA-DESIGN-DESIGN-I",
+        "source_lines": [
+          [
+            63,
+            73
+          ]
+        ],
+        "source_quote": "Select one course (3 units)",
+        "description": "Select one course from Design I list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 303",
+            "THTR 330",
+            "THTR 331",
+            "THTR 332",
+            "THTR 336",
+            "THTR 402",
+            "THTR 407a",
+            "THTR 407b",
+            "THTR 409",
+            "THTR 432a",
+            "THTR 432b",
+            "THTR 433a",
+            "THTR 433b",
+            "THTR 434a",
+            "THTR 434b",
+            "THTR 435",
+            "THTR 436",
+            "THTR 441"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "DRAMA-DESIGN-ADVANCED-ELECTIVES",
+        "source_lines": [
+          [
+            75,
+            96
+          ]
+        ],
+        "source_quote": "Select 12 units from the following:",
+        "description": "Select 12 units from an advanced design elective list.",
+        "confidence": "medium",
+        "note": "Some courses (THTR 303, 330, 331, 332, 336, 407a, 409, 435) overlap with earlier lists; one-slot rule applies so a course used in an earlier slot cannot be reused here."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "DRAMA-DESIGN-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            98,
+            132
+          ]
+        ],
+        "source_quote": "Complete the two required courses below.",
+        "description": "Two required courses (THTR 125, THTR 225g), plus one course from List A, plus one more from List A or B, totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          23
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a coherent, integrated introduction",
+      "reason": "university_level",
+      "why": "University-wide GE requirement repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Note that courses within the major will also satisfy",
+      "reason": "advisory",
+      "why": "Advisory note about overlap with GE, not a distinct requirement."
+    },
+    {
+      "source_lines": [
+        [
+          133,
+          133
+        ]
+      ],
+      "source_quote": "Required General Education Units: 36",
+      "reason": "university_level",
+      "why": "University-wide GE unit total."
+    },
+    {
+      "source_lines": [
+        [
+          137,
+          137
+        ]
+      ],
+      "source_quote": "Elective Units: 27",
+      "reason": "university_level",
+      "why": "Free elective units counted toward total degree units, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          141,
+          141
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    }
+  ]
+}

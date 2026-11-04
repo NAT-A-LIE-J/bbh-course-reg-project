@@ -1,0 +1,95 @@
+{
+  "program": "Occupational Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "OT 250"
+          }
+        ],
+        "id": "OS-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "a required gateway course (OT 250 ) for 4 units",
+        "description": "Requires OT 250 as the gateway course for 4 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "OT 100",
+            "OT 101x",
+            "OT 213",
+            "OT 220",
+            "OT 251",
+            "OT 280",
+            "OT 300",
+            "OT 310",
+            "OT 312",
+            "OT 320",
+            "OT 325",
+            "OT 330",
+            "OT 333",
+            "OT 340",
+            "OT 350",
+            "OT 355",
+            "OT 360",
+            "OT 370",
+            "OT 375"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "OS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            57
+          ]
+        ],
+        "source_quote": "Elective Courses (16 units)",
+        "description": "16 units selected from the listed elective OT courses.",
+        "confidence": "high",
+        "note": "Only the 2-unit version of OT 100 counts toward this minor, not the 1-unit version."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "It is open to all majors at USC.",
+      "reason": "university_level",
+      "why": "Programme eligibility rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "An occupational therapy major cannot count any 300-level OT course",
+      "reason": "out_of_scope",
+      "why": "Cross-program restriction depending on another major, not checkable from this programme's course list alone."
+    }
+  ]
+}

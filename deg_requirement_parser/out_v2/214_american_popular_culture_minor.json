@@ -1,0 +1,309 @@
+{
+  "program": "American Popular Culture Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 150gw",
+            "AMST 205g",
+            "AMST 206gm",
+            "AMST 274mw",
+            "AMST 285gm"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "APC-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            35
+          ]
+        ],
+        "source_quote": "Choose one course (4 units)",
+        "description": "Choose one lower-division course from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 301gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "COLT 365"
+              },
+              {
+                "family": "specific_course",
+                "course": "COMM 384"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 392"
+              },
+              {
+                "family": "specific_course",
+                "course": "GESM 120g"
+              },
+              {
+                "family": "specific_course",
+                "course": "HIST 380"
+              }
+            ],
+            "id": "APC-MINOR-GROUP1",
+            "source_lines": [
+              [
+                45,
+                54
+              ]
+            ],
+            "source_quote": "Critical Approaches to Popular Culture: choose one",
+            "description": "Choose one course from the Critical Approaches to Popular Culture group.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 357m"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 365"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 385"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 395m"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 448m"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 449m"
+              },
+              {
+                "family": "specific_course",
+                "course": "ANTH 445"
+              },
+              {
+                "family": "specific_course",
+                "course": "GESM 130g"
+              }
+            ],
+            "id": "APC-MINOR-GROUP2",
+            "source_lines": [
+              [
+                56,
+                67
+              ]
+            ],
+            "source_quote": "Gender and Ethnicity in American Popular Culture: choose one",
+            "description": "Choose one course from the Gender and Ethnicity in American Popular Culture group.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AHIS 363m"
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 370g"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 305"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 392"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 393"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 394"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENGL 375"
+              },
+              {
+                "family": "specific_course",
+                "course": "HIST 481"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 320gmw"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 373g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 422"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 460"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 465"
+              }
+            ],
+            "id": "APC-MINOR-GROUP3",
+            "source_lines": [
+              [
+                69,
+                85
+              ]
+            ],
+            "source_quote": "Popular Culture in the Arts: choose one",
+            "description": "Choose one course from the Popular Culture in the Arts group.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "courses": [
+                    "AMST 301gp",
+                    "COLT 365",
+                    "COMM 384",
+                    "ENGL 392",
+                    "GESM 120g",
+                    "HIST 380",
+                    "AMST 357m",
+                    "AMST 365",
+                    "AMST 385",
+                    "AMST 395m",
+                    "AMST 448m",
+                    "AMST 449m",
+                    "ANTH 445",
+                    "GESM 130g",
+                    "AHIS 363m",
+                    "AHIS 370g",
+                    "AMST 305",
+                    "CTCS 392",
+                    "CTCS 393",
+                    "CTCS 394",
+                    "ENGL 375",
+                    "HIST 481",
+                    "MUSC 320gmw",
+                    "MUSC 373g",
+                    "MUSC 422",
+                    "MUSC 460",
+                    "MUSC 465"
+                  ]
+                },
+                {
+                  "unresolved": "in a department you have not already chosen for the minor"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "APC-MINOR-ELECTIVE",
+            "source_lines": [
+              [
+                87,
+                91
+              ]
+            ],
+            "source_quote": "Choose one additional upper-division course from the lists above",
+            "description": "One additional upper-division elective from the grouped lists, from a department not already used in the minor.",
+            "confidence": "medium",
+            "note": "The department-exclusivity condition cannot be checked against other selections; kept as unresolved."
+          }
+        ],
+        "id": "APC-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            37,
+            91
+          ]
+        ],
+        "source_quote": "Choose four courses (16 units), at least one from each",
+        "description": "Four upper-division courses: one from each of three thematic groups plus one elective from an unused department.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Twenty units are required, four at the lower-division",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "helps students to assess from a variety of perspectives",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing language, not a requirement."
+    }
+  ]
+}

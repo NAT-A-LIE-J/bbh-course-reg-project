@@ -1,0 +1,427 @@
+{
+  "program": "Business of Innovation (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BOI-BS-WRITING",
+        "source_lines": [
+          [
+            39,
+            46
+          ]
+        ],
+        "source_quote": "Composition/Writing Requirements (8 Units)",
+        "description": "WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          }
+        ],
+        "id": "BOI-BS-MATH",
+        "source_lines": [
+          [
+            48,
+            55
+          ]
+        ],
+        "source_quote": "Math Requirement (4 Units)",
+        "description": "MATH 125g or MATH 118gx.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 176"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ACAD 324g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ACAD 325"
+              }
+            ]
+          }
+        ],
+        "id": "BOI-BS-DESIGN-CORE",
+        "source_lines": [
+          [
+            61,
+            67
+          ]
+        ],
+        "source_quote": "Design Core (8 Units)",
+        "description": "ACAD 176 plus one of ACAD 324g or ACAD 325.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 274"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACAD 222",
+                "ACAD 230",
+                "ACAD 275",
+                "ACAD 276",
+                "ACAD 431",
+                "IDSN 539",
+                "IDSN 544"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "BOI-BS-TECH-CORE",
+        "source_lines": [
+          [
+            69,
+            86
+          ]
+        ],
+        "source_quote": "Technology Core (12 Units)",
+        "description": "ACAD 274 plus 8 units chosen from a list of technology courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 174",
+            "ACAD 360",
+            "ACAD 475a",
+            "ACAD 475b"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "BOI-BS-DESIGN-STRATEGY",
+        "source_lines": [
+          [
+            87,
+            96
+          ]
+        ],
+        "source_quote": "Complete 16 units from the following.",
+        "description": "16 units from the Design Strategy Core list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 187",
+            "ACAD 180",
+            "ACAD 207",
+            "ACAD 217",
+            "ACAD 281",
+            "ACAD 490",
+            "IDSN 537",
+            "IDSN 539",
+            "ACAD 230",
+            "ACAD 275",
+            "ACAD 276",
+            "ACAD 280",
+            "ACAD 415",
+            "ACAD 431",
+            "ACAD 535",
+            "AME 201",
+            "AME 204",
+            "AME 301",
+            "MASC 310L",
+            "TAC 344",
+            "TAC 365",
+            "TAC 382",
+            "TAC 388",
+            "TAC 404",
+            "TAC 405",
+            "TAC 425",
+            "TAC 460",
+            "TAC 468",
+            "TAC 476",
+            "ACAD 302",
+            "ACAD 307g",
+            "ACAD 325",
+            "ACAD 350",
+            "ACAD 377",
+            "ACAD 450",
+            "ACAD 480",
+            "IDSN 515",
+            "IDSN 522",
+            "IDSN 523",
+            "ACAD 260",
+            "ACAD 422",
+            "ACAD 432",
+            "ACAD 463",
+            "BPSI 411",
+            "SOWK 643",
+            "ACAD 177",
+            "ACAD 188",
+            "ACAD 189",
+            "ACAD 245",
+            "ACAD 288",
+            "ACAD 344",
+            "ACAD 445",
+            "TAC 308",
+            "ACAD 220",
+            "ACAD 222",
+            "IDSN 543",
+            "IDSN 544",
+            "TAC 449"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "BOI-BS-ACADEMY-ELECTIVES",
+        "source_lines": [
+          [
+            98,
+            202
+          ]
+        ],
+        "source_quote": "Complete 8 units from the elective areas below.",
+        "description": "8 units chosen from the elective category lists (Extended Reality, Interactive Technologies, Design Strategy, Health Innovation, Product Innovation, Transformative AI).",
+        "confidence": "medium",
+        "note": "Courses may not double-count as both a technical core course and an elective course; this restates the one-slot rule, not a new node."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 451"
+              }
+            ]
+          }
+        ],
+        "id": "BOI-BS-BUSINESS",
+        "source_lines": [
+          [
+            204,
+            231
+          ]
+        ],
+        "source_quote": "Business Requirements (44 Units)",
+        "description": "Required business courses including several either/or pairs.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 376"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          }
+        ],
+        "id": "BOI-BS-INTEGRATIVE",
+        "source_lines": [
+          [
+            233,
+            238
+          ]
+        ],
+        "source_quote": "Integrative Business Courses (8 Units)",
+        "description": "ACAD 376 and BUAD 497.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          36
+        ]
+      ],
+      "source_quote": "General Education (28-32 Units)",
+      "reason": "university_level",
+      "why": "General education requirement is university-wide and sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "several courses required for the degree may also be counted",
+      "reason": "advisory",
+      "why": "Advisory note about overlap with GE categories."
+    },
+    {
+      "source_lines": [
+        [
+          43,
+          43
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommends a specific section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          52,
+          52
+        ]
+      ],
+      "source_quote": "A-level mathematic examination scores of A or B may received subject credit",
+      "reason": "advisory",
+      "why": "Advisory information about credit eligibility, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          52,
+          52
+        ]
+      ],
+      "source_quote": "Either MATH 118gx or MATH 125g satisfy GE Category F",
+      "reason": "university_level",
+      "why": "Restates GE category satisfaction, a university-wide GE rule."
+    }
+  ]
+}

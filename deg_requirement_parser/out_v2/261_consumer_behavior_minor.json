@@ -1,0 +1,279 @@
+{
+  "program": "Consumer Behavior Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MKT 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          }
+        ],
+        "id": "CB-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "MKT 450 Consumer Behavior and Marketing Units: 4",
+        "description": "Two required courses: MKT 450 and PSYC 100Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 205g",
+            "AMST 274mw",
+            "AMST 285gm",
+            "AMST 380",
+            "AMST 385",
+            "ANTH 205g",
+            "ANTH 263g",
+            "ANTH 338g",
+            "ANTH 355",
+            "ANTH 370",
+            "ANTH 375",
+            "ANTH 460",
+            "BUAD 307",
+            "COMM 302",
+            "COMM 340",
+            "COMM 384",
+            "COMM 396g",
+            "DSO 427",
+            "DSO 455",
+            "ECON 340",
+            "ECON 346",
+            "ECON 405",
+            "ECON 415",
+            "ECON 420",
+            "ECON 432",
+            "ENGL 392",
+            "HIST 380",
+            "TAC 115",
+            "TAC 116",
+            "TAC 249",
+            "TAC 310",
+            "MKT 402",
+            "MKT 404",
+            "MKT 405",
+            "MKT 410",
+            "MKT 465",
+            "PPD 245g",
+            "PSYC 240gx",
+            "PSYC 355",
+            "PSYC 422",
+            "PSYC 451",
+            "PSYC 454",
+            "PSYC 456",
+            "SOCI 155gm",
+            "SOCI 210g",
+            "SOCI 242g",
+            "SOCI 305m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                43,
+                43
+              ]
+            ],
+            "source_quote": "At least one of the courses chosen below has a prefix other than",
+            "eligible_if": {
+              "not": {
+                "prefix": [
+                  "COMM",
+                  "MKT",
+                  "BUAD"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "CB-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            164
+          ]
+        ],
+        "source_quote": "Complete at least 10 units consisting of at least three courses",
+        "description": "At least 3 courses / 10 units from the elective list, subject to additional constraints.",
+        "confidence": "medium",
+        "note": "No more than two courses from the same department (L042) cannot be expressed as a threshold here since it is a per-department cap, not total; flagged for manual review. TAC 115/TAC 116 are alternatives (take only one) but both appear in the eligible list since the one-slot rule prevents double counting."
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_units": 18,
+          "applies_to": "the minor",
+          "includes": [
+            "MKT 450",
+            "PSYC 100Lg"
+          ]
+        },
+        "id": "CB-MINOR-UNIQUENESS",
+        "source_lines": [
+          [
+            40,
+            40
+          ]
+        ],
+        "source_quote": "A minimum of 18 units (including MKT 450 and PSYC",
+        "description": "At least 18 units must be unique to the minor, not countable toward the major.",
+        "confidence": "high",
+        "note": "Differs from the standard university 16-unit minor floor, so encoded explicitly."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "courses offered by the student's major department",
+          "min_units_outside": 16,
+          "note": "For Business Administration and Accounting majors, BUAD, DSO and MKT prefixes count as the major department."
+        },
+        "id": "CB-MINOR-OUTSIDE-MAJOR",
+        "source_lines": [
+          [
+            41,
+            41
+          ]
+        ],
+        "source_quote": "At least 16 units of all courses taken for the minor",
+        "description": "At least 16 units of minor courses must not be offered by the student's major department.",
+        "confidence": "medium",
+        "note": "Depends on student's major department; not checkable from a fixed course list."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "transfer and international exchange credit",
+          "effect": "cannot substitute for minor requirements"
+        },
+        "id": "CB-MINOR-TRANSFER",
+        "source_lines": [
+          [
+            44,
+            44
+          ]
+        ],
+        "source_quote": "Courses taken at institutions other than USC",
+        "description": "Courses taken outside USC cannot substitute for minor requirements.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            167,
+            167
+          ]
+        ],
+        "source_quote": "Total requirements: at least five courses: 18-20 units",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To enroll in this minor, students must have completed",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit prerequisite for enrolling in the minor."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          42
+        ]
+      ],
+      "source_quote": "No more than two of the courses chosen",
+      "reason": "no_fit",
+      "why": "A per-department cap on elective selections has no matching check structure (departments threshold applies to minimums, not caps per department)."
+    },
+    {
+      "source_lines": [
+        [
+          163,
+          163
+        ]
+      ],
+      "source_quote": "[*] Prerequisites required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          164,
+          164
+        ]
+      ],
+      "source_quote": "** Courses not offered regularly",
+      "reason": "out_of_scope",
+      "why": "Scheduling note, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          165,
+          165
+        ]
+      ],
+      "source_quote": "(Prerequisites will not be waived for upper-division",
+      "reason": "advisory",
+      "why": "Advisory note about prerequisites, not a minor requirement itself."
+    }
+  ]
+}

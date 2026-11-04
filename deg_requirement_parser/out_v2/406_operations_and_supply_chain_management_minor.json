@@ -1,0 +1,140 @@
+{
+  "program": "Operations and Supply Chain Management Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 311"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 313"
+          }
+        ],
+        "id": "OSCM-MINOR-INTRO",
+        "source_lines": [
+          [
+            27,
+            28
+          ]
+        ],
+        "source_quote": "BUAD 311 Operations Management Units: 4 or",
+        "description": "BUAD 311 or BUAD 313.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "DSO 482",
+        "id": "OSCM-MINOR-DSO482",
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "DSO 482 Supply Chain Management Units: 4",
+        "description": "DSO 482 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "DSO 427"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 455"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 483"
+          }
+        ],
+        "id": "OSCM-MINOR-ONEOF",
+        "source_lines": [
+          [
+            31,
+            34
+          ]
+        ],
+        "source_quote": "One of the following",
+        "description": "One of DSO 427, DSO 455 or DSO 483.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "DSO 401",
+            "DSO 424",
+            "DSO 427",
+            "DSO 433",
+            "DSO 455",
+            "DSO 462",
+            "DSO 470",
+            "DSO 483",
+            "DSO 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "OSCM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            53
+          ]
+        ],
+        "source_quote": "Choose from the following to achieve a total",
+        "description": "Electives totaling at least 8 units, excluding any of DSO 427/455/483 already used as the required course above.",
+        "confidence": "high",
+        "note": "DSO 427, DSO 455 and DSO 483 may only count here if not already used to satisfy the 'one of the following' requirement (one-slot rule); DSO 499 requires program director approval prior to registration (not checkable)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This minor requires 20 units to complete.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "To enroll, students must have completed a minimum of 32 units of college-level course work and have a minimum overall GPA of at least 2.75.",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit-completion requirement, not a course requirement."
+    }
+  ]
+}

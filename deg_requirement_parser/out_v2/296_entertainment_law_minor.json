@@ -1,0 +1,150 @@
+{
+  "program": "Entertainment Law Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 311"
+          }
+        ],
+        "id": "ENTLAW-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "Required Core Courses (8 units)",
+        "description": "Both core courses: LAW 210p and LAW 311.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 207",
+            "LAW 211",
+            "LAW 324",
+            "LAW 326",
+            "LAW 350"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "ENTLAW-MINOR-LAW-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            40
+          ]
+        ],
+        "source_quote": "Law Electives (minimum 4 units or maximum 8 units)",
+        "description": "4-8 units of LAW electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CNTV 457",
+            "CNTV 473",
+            "CNTV 475",
+            "CNTV 499",
+            "COMM 206",
+            "COMM 300",
+            "COMM 306",
+            "COMM 430",
+            "COMM 498",
+            "CTCS 468",
+            "CTPR 386",
+            "CTPR 410",
+            "CTPR 460",
+            "CTPR 485",
+            "CTWR 404",
+            "CTWR 409",
+            "CTWR 411",
+            "CTWR 416",
+            "CTWR 417",
+            "CTWR 422",
+            "CTWR 430",
+            "CTWR 431",
+            "CTWR 432"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 8
+          }
+        ],
+        "id": "ENTLAW-MINOR-OTHER-ELECTIVES",
+        "source_lines": [
+          [
+            42,
+            68
+          ]
+        ],
+        "source_quote": "Other Electives (minimum 4 units or maximum 8 units)",
+        "description": "4-8 units of other electives from the listed departments.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor in Entertainment Law totals 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Entertainment Law introduces the legal",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "program": "Human Resource Management Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "minimum 32 units of college-level courses",
+            "minimum overall GPA of 2.75"
+          ]
+        },
+        "id": "HRM-MINOR-GATE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "To enroll in this minor, students must have completed",
+        "description": "Entry to the minor requires 32 completed college-level units and a 2.75 overall GPA.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 471"
+          }
+        ],
+        "id": "HRM-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "BUAD 304 Organizational Behavior and Leadership Units: 4",
+        "description": "Two required core courses: BUAD 304 and MOR 471.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "FBE 428",
+            "MOR 421",
+            "MOR 469",
+            "MOR 472",
+            "MOR 473"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "HRM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            30,
+            40
+          ]
+        ],
+        "source_quote": "Choose three courses from the following (12 units):",
+        "description": "Choose three elective courses (12 units) from the listed FBE and MOR courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Completion of the human resource management minor requires a minimum GPA of 2.0",
+      "reason": "out_of_scope",
+      "why": "GPA requirement on minor courses."
+    }
+  ]
+}

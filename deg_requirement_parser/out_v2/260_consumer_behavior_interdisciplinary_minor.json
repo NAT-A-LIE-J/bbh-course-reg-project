@@ -1,0 +1,20 @@
+{
+  "program": "Consumer Behavior Interdisciplinary Minor",
+  "status": "failed",
+  "root": {
+    "all_of": []
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This interdisciplinary minor explores consumer thinking from",
+      "reason": "out_of_scope",
+      "why": "Marketing/descriptive text; no actual course requirements are stated in the catalogue text provided."
+    }
+  ]
+}

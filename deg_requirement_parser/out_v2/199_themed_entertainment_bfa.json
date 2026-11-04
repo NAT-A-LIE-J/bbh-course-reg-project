@@ -1,0 +1,234 @@
+{
+  "program": "Themed Entertainment (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 150gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 191"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 252"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 295"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 395"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 396"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 452L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 457"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 495"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 496"
+          }
+        ],
+        "id": "TE-BFA-CORE",
+        "source_lines": [
+          [
+            25,
+            42
+          ]
+        ],
+        "source_quote": "Required Core Sequence of Themed Entertainment Design and Production",
+        "description": "Twelve named required core courses in Themed Entertainment Design and Production.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 187",
+            "ACAD 188",
+            "ACAD 189",
+            "AME 101L",
+            "ARCH 106x",
+            "ART 207a",
+            "ART 207b",
+            "ART 260",
+            "CE 106",
+            "CTIN 101",
+            "CTIN 289",
+            "DES 123xg",
+            "EE 105",
+            "ISE 105",
+            "TAC 165",
+            "TAC 215L",
+            "THTR 130",
+            "THTR 241"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "TE-BFA-INTRO-ELECTIVE",
+        "source_lines": [
+          [
+            44,
+            67
+          ]
+        ],
+        "source_quote": "At least 8 units from the following courses:",
+        "description": "At least 8 units from the Introductory Elective Core list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 245",
+            "ARCH 207",
+            "BUCO 450",
+            "CTAN 420",
+            "CTIN 409",
+            "CTIN 444",
+            "CTPR 425",
+            "CTWR 410L",
+            "EE 109L",
+            "THTR 232",
+            "THTR 236",
+            "THTR 303",
+            "THTR 335"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "TE-BFA-INTERMEDIATE-ELECTIVE",
+        "source_lines": [
+          [
+            69,
+            87
+          ]
+        ],
+        "source_quote": "At least 8 units of the following courses:",
+        "description": "At least 8 units from the Intermediate Elective Core list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARCH 423",
+            "BUCO 445",
+            "CTAN 432",
+            "CTIN 480",
+            "CTIN 486",
+            "CTIN 489L",
+            "CTPR 406",
+            "CTPR 465",
+            "CTWR 541",
+            "THTR 308",
+            "THTR 438"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "TE-BFA-ADVANCED-ELECTIVE",
+        "source_lines": [
+          [
+            89,
+            105
+          ]
+        ],
+        "source_quote": "At least 6 units of the following courses:",
+        "description": "At least 6 units from the Advanced Elective Core list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The degree requires 128 units, including 62 units in the major.",
+      "reason": "university_level",
+      "why": "Total unit count is a university-wide rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "including the general education requirements",
+      "reason": "university_level",
+      "why": "GE requirements are university-wide and tracked separately."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Fine Arts in Themed Entertainment is a unique four-year program",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Undergraduate students take their pre-professional courses in the USC Dornsife",
+      "reason": "out_of_scope",
+      "why": "Describes course distribution, not an enforceable requirement."
+    }
+  ]
+}

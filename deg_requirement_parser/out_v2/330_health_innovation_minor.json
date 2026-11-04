@@ -1,0 +1,207 @@
+{
+  "program": "Health Innovation Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 220Lg",
+            "BISC 221Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "HI-MINOR-BIOSCI",
+        "source_lines": [
+          [
+            42,
+            49
+          ]
+        ],
+        "source_quote": "Complete one (1) course from the following:",
+        "description": "One course from BISC 220Lg or BISC 221Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MEDS 315",
+            "MEDS 355",
+            "MEDS 360",
+            "MEDS 440",
+            "MEDS 445",
+            "MEDS 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HI-MINOR-MEDSCI",
+        "source_lines": [
+          [
+            51,
+            62
+          ]
+        ],
+        "source_quote": "Complete four (4) units from the following:",
+        "description": "4 units from the Medical Science Requirement list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 176",
+            "ACAD 181g",
+            "ACAD 183",
+            "ACAD 220",
+            "ACAD 222",
+            "ACAD 230",
+            "ACAD 245",
+            "ACAD 360",
+            "BME 415",
+            "BKN 610L",
+            "BKN 611L",
+            "DANC 305g",
+            "DANC 362",
+            "HP 200",
+            "HP 300",
+            "HP 446",
+            "MEDS 220",
+            "MEDS 225",
+            "PPD 202",
+            "PPD 205",
+            "PPD 325",
+            "RXRS 406",
+            "RXRS 416",
+            "RXRS 417",
+            "RXRS 418",
+            "RXRS 422",
+            "SOWK 110",
+            "SOWK 210",
+            "SOWK 323",
+            "SOWK 417",
+            "SOWK 506",
+            "SOWK 605",
+            "SOWK 631",
+            "SOWK 637",
+            "SOWK 638",
+            "SOWK 644",
+            "SOWK 645",
+            "SOWK 660"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "HI-MINOR-CROSSTRAIN",
+        "source_lines": [
+          [
+            64,
+            107
+          ]
+        ],
+        "source_quote": "Cross-Training Courses (8 units)",
+        "description": "8 units from the Cross-Training Courses list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 230",
+            "ACAD 260",
+            "ACAD 572",
+            "BME 415",
+            "BPSI 411",
+            "RXRS 416",
+            "RXRS 418"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "HI-MINOR-INTERSECTIONAL",
+        "source_lines": [
+          [
+            109,
+            119
+          ]
+        ],
+        "source_quote": "Intersectional Courses (8 units)",
+        "description": "8 units from the Intersectional Courses list.",
+        "confidence": "high",
+        "note": "ACAD 230, BME 415, RXRS 416 and RXRS 418 also appear in the Cross-Training list; the one-slot rule prevents using the same course for both categories."
+      },
+      {
+        "family": "specific_course",
+        "course": "ACAD 432",
+        "id": "HI-MINOR-CAPSTONE",
+        "source_lines": [
+          [
+            121,
+            125
+          ]
+        ],
+        "source_quote": "Capstone (4 units)",
+        "description": "Capstone course ACAD 432.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            34,
+            34
+          ]
+        ],
+        "source_quote": "A total of 28 units is required for the minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          36,
+          36
+        ]
+      ],
+      "source_quote": "Application information for the minor can be found",
+      "reason": "out_of_scope",
+      "why": "Administrative application information, not a course requirement."
+    }
+  ]
+}

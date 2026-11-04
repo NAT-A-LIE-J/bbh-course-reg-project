@@ -1,0 +1,111 @@
+{
+  "program": "Technology Entrepreneurship Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 466"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 476"
+          }
+        ],
+        "id": "TECHENT-MIN-CORE",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "Required core (11 units)",
+        "description": "Core requires BUAD 301, TAC 466, and TAC 476.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 100g",
+            "TAC 125L",
+            "TAC 216",
+            "TAC 228",
+            "TAC 249",
+            "TAC 259",
+            "TAC 308",
+            "TAC 310",
+            "TAC 348"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "TECHENT-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            47
+          ]
+        ],
+        "source_quote": "A minimum of 6 units is required from",
+        "description": "At least 6 units from a list of elective TAC courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor requires at least 17 units for completion.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 17
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Technology Entrepreneurship minor prepares students to design,",
+      "reason": "advisory",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The minor supports a wide range of venture",
+      "reason": "advisory",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

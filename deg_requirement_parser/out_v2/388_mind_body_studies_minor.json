@@ -1,0 +1,144 @@
+{
+  "program": "Mind Body Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHED 120a"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHED 119"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHED 160"
+              }
+            ]
+          }
+        ],
+        "id": "MBS-CORE",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Core Courses (3 units)",
+        "description": "PHED 120a plus a choice of PHED 119 or PHED 160.",
+        "confidence": "high",
+        "note": "PHED 119 and PHED 160 cannot also be used as electives (see L073)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 472",
+            "DANC 362",
+            "GERO 411L",
+            "HBIO 301L",
+            "HBIO 309",
+            "HBIO 401L",
+            "MKT 404",
+            "OT 325",
+            "PSYC 339Lg",
+            "REL 340"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "MBS-UPPERDIV",
+        "source_lines": [
+          [
+            34,
+            47
+          ]
+        ],
+        "source_quote": "Upper-Division Courses (choose 12 units)",
+        "description": "Choose upper-division interdisciplinary courses totaling at least 12 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHED 106a",
+            "PHED 110a",
+            "PHED 118",
+            "PHED 119",
+            "PHED 120b",
+            "PHED 122",
+            "PHED 123",
+            "PHED 124",
+            "PHED 127",
+            "PHED 134",
+            "PHED 160",
+            "PHED 163",
+            "PHED 299"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "id": "MBS-ELECTIVE",
+        "source_lines": [
+          [
+            49,
+            65
+          ]
+        ],
+        "source_quote": "Elective (choose 5 units)",
+        "description": "Choose elective PHED courses totaling at least 5 units.",
+        "confidence": "high",
+        "note": "PHED 119 and PHED 160 are marked with * and may not be used here if already used as core courses (see L073); no more than 4 units of PE activity courses may count toward the overall degree (L071, out of scope for this minor's internal check)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Required Course Work (20 units)",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          71,
+          71
+        ]
+      ],
+      "source_quote": "No more than 4 units of physical education",
+      "reason": "university_level",
+      "why": "University-wide cap on PE activity units counting toward the degree, not specific to this minor's internal structure."
+    }
+  ]
+}

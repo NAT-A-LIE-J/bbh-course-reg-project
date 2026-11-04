@@ -1,0 +1,393 @@
+{
+  "program": "Choral Music (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "faculty selection committee screening via USC admission process"
+        },
+        "id": "CHOR-BM-ENTRANCE",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through the USC admission process.",
+        "description": "Admission requires USC application and faculty selection-committee screening.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "CHOR-BM-CORE-THORNTON",
+        "source_lines": [
+          [
+            78,
+            94
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "Thirteen required core Thornton academic courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MPVA 301"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6
+              }
+            ],
+            "id": "CHOR-BM-INDIVIDUAL-INSTRUCTION",
+            "source_lines": [
+              [
+                100,
+                105
+              ]
+            ],
+            "source_quote": "6 units total of MPVA 301 (Choral)",
+            "description": "6 units of individual instruction via MPVA 301 (Choral).",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "MUEN"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "id": "CHOR-BM-ENSEMBLES",
+            "source_lines": [
+              [
+                107,
+                111
+              ]
+            ],
+            "source_quote": "MUEN Choral Ensemble at the 300-level: eight 1-unit courses",
+            "description": "Eight 1-unit 300-level MUEN Choral Ensemble courses (8 units).",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPKS 250a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPKS 250b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPVA 260"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPVA 261"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPVA 262"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCD 340"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCD 441"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCM 320"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCM 440"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MUCO 441"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "CHOR-BM-PROGRAM-INTENSIVE",
+            "source_lines": [
+              [
+                113,
+                127
+              ]
+            ],
+            "source_quote": "Program Intensive (26 units)",
+            "description": "Nine named program-intensive courses plus 2 units of MUCO 441 (26 units total).",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CHOR-BM-PROGRAM-SPECIFIC",
+        "source_lines": [
+          [
+            96,
+            127
+          ]
+        ],
+        "source_quote": "Program Specific Courses (40 units)",
+        "description": "Program-specific requirements covering individual instruction, ensembles, and program-intensive coursework (40 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "MPGU 145",
+                    "MPGU 150",
+                    "MPPM 120",
+                    "MPPM 240",
+                    "MPPM 250",
+                    "MPPM 370",
+                    "MTEC 245",
+                    "MTEC 246",
+                    "MTEC 248",
+                    "MTEC 249",
+                    "MTEC 277x",
+                    "MUIN 272x",
+                    "MUIN 425",
+                    "MUJZ 141a",
+                    "MUJZ 150",
+                    "MUJZ 218a",
+                    "MUJZ 450",
+                    "MUSC 255"
+                  ]
+                },
+                {
+                  "unresolved": "other Contemporary Division courses in consultation with your chair and the Contemporary Division"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "CHOR-BM-CONTEMPORARY-ELECTIVES",
+            "source_lines": [
+              [
+                133,
+                158
+              ]
+            ],
+            "source_quote": "Select 4 units from the Contemporary Division",
+            "description": "4 units of electives from the Contemporary Division, from the listed courses or others approved by the chair.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "CHOR-BM-GENERAL-ELECTIVES",
+            "source_lines": [
+              [
+                160,
+                162
+              ]
+            ],
+            "source_quote": "General Electives (16 units)",
+            "description": "16 units of free general electives.",
+            "confidence": "medium",
+            "note": "No course list or restriction is given for general electives."
+          }
+        ],
+        "id": "CHOR-BM-ELECTIVES",
+        "source_lines": [
+          [
+            129,
+            162
+          ]
+        ],
+        "source_quote": "Electives (20 units)",
+        "description": "20 units of electives, split between Contemporary Division electives and general electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          }
+        ],
+        "id": "CHOR-BM-CAPSTONE",
+        "source_lines": [
+          [
+            164,
+            169
+          ]
+        ],
+        "source_quote": "Capstone Project (4 units)",
+        "description": "Capstone Project completed via MUSC 480 and MUSC 481 (4 units).",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Eight courses are required in six Core Literacies,",
+      "reason": "university_level",
+      "why": "General Education requirements are university-wide and tracked via STARS, not encoded per-programme."
+    },
+    {
+      "source_lines": [
+        [
+          175,
+          175
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "university_level",
+      "why": "Amendment clarifying GE unit overlap; part of the university-wide GE rule."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          37
+        ]
+      ],
+      "source_quote": "During the junior and senior years of the program,",
+      "reason": "advisory",
+      "why": "Descriptive overview of the capstone project experience, not a checkable rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Specific entrance requirements are reviewed on an annual basis",
+      "reason": "out_of_scope",
+      "why": "Entrance requirements vary annually and are published externally; not a checkable catalogue rule."
+    }
+  ]
+}

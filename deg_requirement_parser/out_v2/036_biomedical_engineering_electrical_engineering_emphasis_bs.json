@@ -1,0 +1,452 @@
+{
+  "program": "Biomedical Engineering, Electrical Engineering Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "BME-EE-MATH",
+        "source_lines": [
+          [
+            42,
+            54
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g, MATH 126g or 129, MATH 226g or 229, and MATH 245.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "BME-EE-PHYSICS",
+        "source_lines": [
+          [
+            56,
+            61
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "PHYS 151Lg and PHYS 152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "BME-EE-CHEMISTRY",
+        "source_lines": [
+          [
+            63,
+            71
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "CHEM 105a/115a and CHEM 105b/115b sequences.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 312x"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 320Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 301L"
+              }
+            ]
+          }
+        ],
+        "id": "BME-EE-BIOLOGY",
+        "source_lines": [
+          [
+            77,
+            85
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology",
+        "description": "BISC 220Lg plus one of BISC 312x, BISC 320Lg, or HBIO 301L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "manual_review",
+            "kind": "DISCRETIONARY",
+            "details": {
+              "action": "SUBSTITUTE",
+              "approver": "adviser",
+              "substitute_for": "CHEM 322aL",
+              "replacement": "4 units of additional upper-division BME course work"
+            }
+          }
+        ],
+        "id": "BME-EE-ORGANIC-CHEM",
+        "source_lines": [
+          [
+            87,
+            92
+          ]
+        ],
+        "source_quote": "CHEM 322aL Organic Chemistry Units: 4",
+        "description": "CHEM 322aL, which may be replaced by 4 units of upper-division BME coursework with adviser approval.",
+        "confidence": "high",
+        "note": "Replacement option encoded as a discretionary substitution on the same course."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BME 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 403L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 413"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 415"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 445aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "BME 445bL"
+          }
+        ],
+        "id": "BME-EE-BME-CORE",
+        "source_lines": [
+          [
+            94,
+            106
+          ]
+        ],
+        "source_quote": "BME 101 Introduction to Biomedical Engineering",
+        "description": "Nine required Biomedical Engineering core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EE 109L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 202L"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 165"
+          }
+        ],
+        "id": "BME-EE-ECE-CORE",
+        "source_lines": [
+          [
+            108,
+            114
+          ]
+        ],
+        "source_quote": "EE 109L Introduction to Embedded Systems",
+        "description": "EE 109L, EE 202L, and TAC 165.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "EE 338"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 348L"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "EE 447Lx"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BME 302L"
+                  }
+                ]
+              }
+            ],
+            "id": "BME-EE-TRACK-ANALOG",
+            "source_lines": [
+              [
+                120,
+                128
+              ]
+            ],
+            "source_quote": "EE 338 Physical Electronics Units: 4",
+            "description": "Analog Track: EE 338, EE 348L, plus EE 447Lx or BME 302L.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "EE 250L"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 354L"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "EE 454L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 459Lx"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "EE 477L"
+                  }
+                ]
+              }
+            ],
+            "id": "BME-EE-TRACK-DIGITAL",
+            "source_lines": [
+              [
+                130,
+                139
+              ]
+            ],
+            "source_quote": "EE 250L Distributed Systems for the Internet",
+            "description": "Digital Track: EE 250L, EE 354L, plus EE 454L, EE 459Lx, or EE 477L.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BME-EE-TRACK-CHOICE",
+        "source_lines": [
+          [
+            116,
+            139
+          ]
+        ],
+        "source_quote": "Complete one track from the following lists:",
+        "description": "Students complete one of the Analog or Digital tracks.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "approved list of technical electives available in the department office"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 9
+          }
+        ],
+        "id": "BME-EE-ELECTIVES",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            141,
+            145
+          ]
+        ],
+        "source_quote": "Technical Electives: Complete 9 units as needed",
+        "description": "9 units of technical electives from a department-approved list, as needed to reach 133 total units.",
+        "confidence": "medium",
+        "note": "No specific course list provided; eligibility is unresolved."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minimum requirement for the degree with",
+      "reason": "university_level",
+      "why": "Total unit minimum, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          30
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University-wide composition/writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          36,
+          36
+        ]
+      ],
+      "source_quote": "General education Units: 20",
+      "reason": "university_level",
+      "why": "University-wide general education requirement."
+    },
+    {
+      "source_lines": [
+        [
+          147,
+          147
+        ]
+      ],
+      "source_quote": "Total Units: 133",
+      "reason": "university_level",
+      "why": "Restates the programme's total unit requirement."
+    }
+  ]
+}

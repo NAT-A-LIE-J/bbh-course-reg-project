@@ -1,0 +1,167 @@
+{
+  "program": "Human Disease Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "HUMDIS-PREREQ",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "PSYC 100Lg Introduction to Psychology Units: 4",
+        "description": "PSYC 100Lg and either BISC 220Lg or BISC 221Lg as lower-division prerequisites.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HBIO 301L",
+            "HBIO 360L",
+            "HBIO 370",
+            "HBIO 405",
+            "HBIO 435"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "HUMDIS-HBIO",
+        "source_lines": [
+          [
+            34,
+            44
+          ]
+        ],
+        "source_quote": "Choose two from the following:",
+        "description": "Two upper-division courses chosen from the HBIO list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PSYC 360",
+            "PSYC 424",
+            "PSYC 426",
+            "PSYC 462m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "HUMDIS-PSYC",
+        "source_lines": [
+          [
+            46,
+            55
+          ]
+        ],
+        "source_quote": "Choose two from the following:",
+        "description": "Two upper-division courses chosen from the PSYC list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "for a total of four upper-division courses (16 units).",
+        "eligible_if": {
+          "courses": [
+            "HBIO 301L",
+            "HBIO 360L",
+            "HBIO 370",
+            "HBIO 405",
+            "HBIO 435",
+            "PSYC 360",
+            "PSYC 424",
+            "PSYC 426",
+            "PSYC 462m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            57,
+            57
+          ]
+        ],
+        "source_quote": "Minimum Upper-Division Units Required: 16",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Human Disease is an interdisciplinary program",
+      "reason": "advisory",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

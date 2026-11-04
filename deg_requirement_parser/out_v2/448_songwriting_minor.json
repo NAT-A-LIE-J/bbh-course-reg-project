@@ -1,0 +1,150 @@
+{
+  "program": "Songwriting Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MTEC 245"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 246"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 130ax"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 130bx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 255"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 355"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 455"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MTEC 443"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 446a"
+              }
+            ]
+          }
+        ],
+        "id": "SONGWRITING-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            38
+          ]
+        ],
+        "source_quote": "Required Courses (16 units)",
+        "description": "Seven named core courses plus a choice of one elective from MTEC 443 or MTEC 446a.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 306",
+            "COMM 307",
+            "COMM 384",
+            "COMM 440",
+            "MUSC 102gw",
+            "MUSC 115gp",
+            "MUSC 200gmw",
+            "MUSC 210g",
+            "MUSC 250gmw",
+            "MUSC 320gmw",
+            "MUSC 371g",
+            "MUSC 372g",
+            "MUSC 373g",
+            "MUSC 422",
+            "MUSC 423",
+            "MUSC 424",
+            "MUSC 444",
+            "MUSC 460",
+            "MUSC 465"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SONGWRITING-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            40,
+            62
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following:",
+        "description": "Choose 4 units from a list of approved music/communication electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            64,
+            64
+          ]
+        ],
+        "source_quote": "Total units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Those who are considering this program should enroll",
+      "reason": "advisory",
+      "why": "Suggests enrolling in MUSC 255 as preparation, not a binding requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Admission will be based on songwriting ability and",
+      "reason": "out_of_scope",
+      "why": "Admission gate based on faculty review of ability/potential."
+    }
+  ]
+}

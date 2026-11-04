@@ -1,0 +1,179 @@
+{
+  "program": "Human Rights Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "POSC 248gw",
+        "id": "HR-MIN-CORE",
+        "source_lines": [
+          [
+            25,
+            25
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "Students take one core course in human rights, POSC 248gw",
+        "description": "Core course POSC 248gw Human Rights.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 330m",
+            "HIST 456",
+            "HIST 365",
+            "IR 310",
+            "IR 315",
+            "IR 316",
+            "IR 318",
+            "IR 325",
+            "POSC 366",
+            "POSC 456",
+            "PPD 382",
+            "REL 335"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "HR-MIN-INTERNATIONAL",
+        "source_lines": [
+          [
+            33,
+            48
+          ]
+        ],
+        "source_quote": "Two international human rights courses selected from:",
+        "description": "Two courses selected from the international human rights list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 348m",
+            "COMM 412",
+            "FREN 370gm",
+            "GERO 435m",
+            "JOUR 466m",
+            "POSC 380",
+            "POSC 441m",
+            "POSC 444",
+            "PPD 342",
+            "PPD 439",
+            "SOCI 356m",
+            "SOCI 360m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "HR-MIN-DOMESTIC",
+        "source_lines": [
+          [
+            50,
+            65
+          ]
+        ],
+        "source_quote": "One domestic human rights course selected from:",
+        "description": "One course selected from the domestic human rights list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "POSC 395"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 490x"
+          }
+        ],
+        "id": "HR-MIN-COMMUNITY",
+        "source_lines": [
+          [
+            71,
+            75
+          ]
+        ],
+        "source_quote": "Students are required to take their learning outside the classroom",
+        "description": "Community involvement experience via internship (POSC 395) or independent project (POSC 490x), each requiring approval to enroll; Political Science majors must additionally take four courses (16 units) outside the department for a total of 22 units.",
+        "confidence": "medium",
+        "note": "Approval requirement for POSC 395/490x enrollment is not independently checkable; an amendment for Political Science majors (four courses, 16 units, outside the department, total 22 units) applies to this requirement, cited at L025 and L075.",
+        "all_of_extra": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Total unit requirements for the minor are 18",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "will be encouraged to join relevant student organizations",
+      "reason": "advisory",
+      "why": "Encouragement to join organizations, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          73,
+          73
+        ]
+      ],
+      "source_quote": "Approval is needed to enroll in POSC 395 and POSC 490x",
+      "reason": "out_of_scope",
+      "why": "Discretionary approval gate for enrollment; not independently checkable as a course-pool rule."
+    },
+    {
+      "source_lines": [
+        [
+          75,
+          75
+        ]
+      ],
+      "source_quote": "Political Science majors must take four courses",
+      "reason": "out_of_scope",
+      "why": "Program-specific amendment depending on the student's major, not checkable from a course list alone; folded into the community involvement node note."
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+  "program": "Performance (Studio Guitar) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 153"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 253"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 353"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 453"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  }
+                ],
+                "id": "GUITAR-TRAD-LESSONS",
+                "source_lines": [
+                  [
+                    78,
+                    89
+                  ]
+                ],
+                "source_quote": "MPGU 153 Individual Instruction Units: 1 or 2",
+                "description": "16 units of individual lessons: 4 units each of MPGU 153, 253, 353, 453.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MUEN 326"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "unresolved": "ensemble electives (four 1-unit courses)"
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 4
+                      },
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  }
+                ],
+                "id": "GUITAR-TRAD-ENSEMBLES",
+                "source_lines": [
+                  [
+                    91,
+                    97
+                  ]
+                ],
+                "source_quote": "MUEN 326 Guitar Ensemble Units: 1",
+                "description": "10 units of ensembles: 6 units MUEN 326 plus four 1-unit ensemble electives.",
+                "confidence": "medium",
+                "note": "No course list given for ensemble electives; treated as unresolved."
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 158"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 159"
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 258"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 358"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 415"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 416"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 426"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 428a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 428b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 458"
+                  }
+                ],
+                "id": "GUITAR-TRAD-INTENSIVE",
+                "source_lines": [
+                  [
+                    99,
+                    114
+                  ]
+                ],
+                "source_quote": "MPGU 158 Guitarists in the U.S. Units: 2",
+                "description": "27 units of program intensive courses, with MPGU 258 and MPGU 358 taken for 4 units total each.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MPKS 250a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPKS 250b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCD 343"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 232b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 233b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 338x"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 350g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 351"
+                  }
+                ],
+                "id": "GUITAR-TRAD-CORETHORNTON",
+                "source_lines": [
+                  [
+                    116,
+                    134
+                  ]
+                ],
+                "source_quote": "MPKS 250a Keyboard Instruction I Units: 2",
+                "description": "40 units of Core Thornton Academic Courses.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "Electives (7 units), no pool specified"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 7
+                  }
+                ],
+                "id": "GUITAR-TRAD-ELECTIVES",
+                "source_lines": [
+                  [
+                    136,
+                    138
+                  ]
+                ],
+                "source_quote": "Electives (7 units)",
+                "description": "7 units of electives with no specified pool.",
+                "confidence": "low",
+                "note": "No course list or prefix given for electives."
+              },
+              {
+                "family": "manual_review",
+                "kind": "NO_POOL",
+                "id": "GUITAR-TRAD-CAPSTONE",
+                "source_lines": [
+                  [
+                    140,
+                    146
+                  ]
+                ],
+                "source_quote": "Junior Recital: 0 units",
+                "description": "Junior and senior recitals required (0 units each).",
+                "confidence": "medium",
+                "note": "Recital content, format and venue are determined by faculty; not checkable from a course list.",
+                "details": {
+                  "stage": "CAPSTONE",
+                  "process": "junior and senior recitals under faculty supervision"
+                }
+              }
+            ],
+            "id": "GUITAR-TRADITIONAL-EMPHASIS",
+            "source_lines": [
+              [
+                39,
+                152
+              ]
+            ],
+            "source_quote": "Curriculum Requirements for Traditional Emphasis",
+            "description": "Full curriculum for the Traditional Emphasis track.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 153"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 253"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 301"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 353"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 453"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  }
+                ],
+                "id": "GUITAR-JAZZ-LESSONS",
+                "source_lines": [
+                  [
+                    193,
+                    206
+                  ]
+                ],
+                "source_quote": "MPGU 153 Individual Instruction Units: 1 or 2",
+                "description": "18 units of individual lessons including MPGU 301 (Classical Guitar).",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MUEN 326"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "unresolved": "ensemble electives (four 1-unit courses)"
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 4
+                      },
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  }
+                ],
+                "id": "GUITAR-JAZZ-ENSEMBLES",
+                "source_lines": [
+                  [
+                    208,
+                    214
+                  ]
+                ],
+                "source_quote": "MUEN 326 Guitar Ensemble Units: 1",
+                "description": "10 units of ensembles: 6 units MUEN 326 plus four 1-unit ensemble electives.",
+                "confidence": "medium",
+                "note": "No course list given for ensemble electives; treated as unresolved."
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 158"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 159"
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 258"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MPGU 358"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 415"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 416"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 426"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 428a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 428b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MPGU 458"
+                  }
+                ],
+                "id": "GUITAR-JAZZ-INTENSIVE",
+                "source_lines": [
+                  [
+                    216,
+                    231
+                  ]
+                ],
+                "source_quote": "MPGU 158 Guitarists in the U.S. Units: 2",
+                "description": "27 units of program intensive courses, with MPGU 258 and MPGU 358 taken for 4 units total each.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MUCD 343"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 132b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUCO 133b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUHL 250g"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 141a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 141b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 305a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 305b"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MUJZ 350g"
+                  },
+                  {
+                    "choose": 1,
+                    "from": [
+                      {
+                        "family": "specific_course",
+                        "course": "MPPM 350g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUHL 350g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUHL 351"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 102gw"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 115gp"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 200gmw"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 210g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 250gmw"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 320gmw"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 371g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 372g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 373g"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 460"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "MUSC 465"
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MTEC 245",
+                        "MTEC 246",
+                        "MUCO 338x"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "units",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "id": "GUITAR-JAZZ-CORETHORNTON",
+                "source_lines": [
+                  [
+                    233,
+                    266
+                  ]
+                ],
+                "source_quote": "MUCD 343 Instrumental Conducting I Units: 2",
+                "description": "34 units of Core Thornton Academic Courses for the Jazz Emphasis, including one elective history course and 2 units from a small technology/orchestration list.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "unresolved": "Electives (11 units), no pool specified"
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 11
+                  }
+                ],
+                "id": "GUITAR-JAZZ-ELECTIVES",
+                "source_lines": [
+                  [
+                    268,
+                    270
+                  ]
+                ],
+                "source_quote": "Electives (11 units)",
+                "description": "11 units of electives with no specified pool.",
+                "confidence": "low",
+                "note": "No course list or prefix given for electives."
+              },
+              {
+                "family": "manual_review",
+                "kind": "NO_POOL",
+                "id": "GUITAR-JAZZ-CAPSTONE",
+                "source_lines": [
+                  [
+                    272,
+                    278
+                  ]
+                ],
+                "source_quote": "Junior Recital: 0 units",
+                "description": "Junior and senior recitals required (0 units each).",
+                "confidence": "medium",
+                "note": "Recital content, format and venue are determined by faculty; not checkable from a course list.",
+                "details": {
+                  "stage": "CAPSTONE",
+                  "process": "junior and senior recitals under faculty supervision"
+                }
+              }
+            ],
+            "id": "GUITAR-JAZZ-EMPHASIS",
+            "source_lines": [
+              [
+                154,
+                284
+              ]
+            ],
+            "source_quote": "Curriculum Requirements for Jazz Emphasis",
+            "description": "Full curriculum for the Jazz Emphasis track.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "GUITAR-EMPHASIS-CHOICE",
+        "source_lines": [
+          [
+            39,
+            284
+          ]
+        ],
+        "source_quote": "Curriculum Requirements for Traditional Emphasis",
+        "description": "Students choose either the Traditional Emphasis or the Jazz Emphasis curriculum.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The Bachelor of Music in Studio Guitar consists",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Admission to Thornton programs is granted through",
+      "reason": "university_level",
+      "why": "Admission process, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "It requires eight courses in six Core Literacies,",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Note that courses within the major will also",
+      "reason": "advisory",
+      "why": "Advisory note about GE overlap with major courses."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "A junior and senior recital must be completed",
+      "reason": "out_of_scope",
+      "why": "Detailed recital logistics not checkable; core recital requirement encoded as manual_review."
+    },
+    {
+      "source_lines": [
+        [
+          51,
+          76
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE category requirements handled by university-wide GE/STARS system."
+    },
+    {
+      "source_lines": [
+        [
+          75,
+          76
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning",
+      "reason": "university_level",
+      "why": "University writing requirement, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          148,
+          148
+        ]
+      ],
+      "source_quote": "Total required for degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count for degree, university-level aggregate."
+    },
+    {
+      "source_lines": [
+        [
+          152,
+          152
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units",
+      "reason": "advisory",
+      "why": "Planning advice about GE/Writing overlap, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          162,
+          191
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE category requirements handled by university-wide GE/STARS system (Jazz Emphasis)."
+    },
+    {
+      "source_lines": [
+        [
+          280,
+          280
+        ]
+      ],
+      "source_quote": "Total required for degree: 132",
+      "reason": "university_level",
+      "why": "Total unit count for degree, university-level aggregate (Jazz Emphasis)."
+    },
+    {
+      "source_lines": [
+        [
+          284,
+          284
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units",
+      "reason": "advisory",
+      "why": "Planning advice about GE/Writing overlap, not a requirement (Jazz Emphasis)."
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "program": "Urban Studies and Planning (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 117g"
+          }
+        ],
+        "id": "USP-BS-PREMAJOR",
+        "source_lines": [
+          [
+            29,
+            32
+          ]
+        ],
+        "source_quote": "Students must complete the pre-major requirements.",
+        "description": "Pre-major requirements: ECON 203g and MATH 117g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 227"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 245g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 345"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 346"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 427L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 417"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 425"
+          }
+        ],
+        "id": "USP-BS-CORE",
+        "source_lines": [
+          [
+            34,
+            47
+          ]
+        ],
+        "source_quote": "Core Curriculum (36 units)",
+        "description": "Ten required core courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 360"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "any": [
+                    {
+                      "courses": [
+                        "PPD 348",
+                        "PPD 422",
+                        "RED 351"
+                      ]
+                    },
+                    {
+                      "unresolved": "additional electives selected in consultation with the adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "USP-BS-SPEC1-TRANSPORTATION",
+            "source_lines": [
+              [
+                55,
+                71
+              ]
+            ],
+            "source_quote": "Specialization 1: Transforming Transportation",
+            "description": "PPD 360 required, plus two additional electives from the list or chosen with an adviser.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 439"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "any": [
+                    {
+                      "courses": [
+                        "PPD 347",
+                        "PPD 357",
+                        "PPD 414",
+                        "PPD 438",
+                        "RED 351",
+                        "RED 362"
+                      ]
+                    },
+                    {
+                      "unresolved": "additional electives selected in consultation with the adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "USP-BS-SPEC2-HOUSING",
+            "source_lines": [
+              [
+                73,
+                92
+              ]
+            ],
+            "source_quote": "Specialization 2: Housing and Community Development",
+            "description": "PPD 439 required, plus two additional electives from the list or chosen with an adviser.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "PPD 344",
+                    "PPD 361",
+                    "PPD 410",
+                    "PPD 478"
+                  ]
+                },
+                {
+                  "unresolved": "courses selected in consultation with the adviser"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ],
+            "id": "USP-BS-SPEC3-CLIMATE",
+            "source_lines": [
+              [
+                94,
+                105
+              ]
+            ],
+            "source_quote": "Courses are selected in consultation with the adviser",
+            "description": "Climate change specialization: 20 units of courses chosen with an adviser, from the list or otherwise.",
+            "confidence": "medium",
+            "note": "No fixed required course named; all units chosen in consultation with adviser."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                49,
+                53
+              ]
+            ],
+            "source_quote": "Students take 20 units of specialization courses.",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        "id": "USP-BS-SPECIALIZATION",
+        "source_lines": [
+          [
+            49,
+            105
+          ]
+        ],
+        "source_quote": "There are three specializations in the major",
+        "description": "Students choose one of three specializations and complete 20 units within it.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "PPD 400",
+        "id": "USP-BS-CROSSCUTTING",
+        "source_lines": [
+          [
+            111,
+            113
+          ]
+        ],
+        "source_quote": "Students will be required to take 4 units",
+        "description": "4 units of cross-cutting topics course PPD 400.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PPD 431"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 497a"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 497b"
+              },
+              {
+                "family": "manual_review",
+                "kind": "GATE",
+                "details": {
+                  "stage": "EMPHASIS_ENTRY",
+                  "basis": "NUMERIC_THRESHOLD",
+                  "requires": [
+                    "3.7 GPA in PPD courses",
+                    "3.5 overall GPA"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "id": "USP-BS-CAPSTONE",
+        "source_lines": [
+          [
+            115,
+            117
+          ]
+        ],
+        "source_quote": "All students will take 4 units of a",
+        "description": "Capstone: PPD 431, or PPD 497a and PPD 497b (requiring 3.7 PPD GPA and 3.5 overall GPA).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "HOURS",
+        "details": {
+          "min_hours": 140,
+          "setting": "internship via PPD 301 or the Washington, D.C., Semester"
+        },
+        "id": "USP-BS-INTERNSHIP",
+        "source_lines": [
+          [
+            119,
+            121
+          ]
+        ],
+        "source_quote": "Urban Studies and Planning majors are required to",
+        "description": "140 hours of internship completed through PPD 301 or the D.C. Semester internship.",
+        "confidence": "high",
+        "note": "PPD 301 is already counted in the core curriculum; the internship hours requirement itself is not double-counted course-wise."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The program requires 72 units toward the major",
+      "reason": "university_level",
+      "why": "Overall unit totals are university/college-wide rules."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "A minimum grade of C, 2.0 (A=4.0), must",
+      "reason": "out_of_scope",
+      "why": "Grade requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "All pre-major requirements must be taken for a",
+      "reason": "out_of_scope",
+      "why": "Grading mode rule."
+    },
+    {
+      "source_lines": [
+        [
+          113,
+          113
+        ]
+      ],
+      "source_quote": "preferably in junior year after they have completed",
+      "reason": "advisory",
+      "why": "Timing suggestion, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          125,
+          127
+        ]
+      ],
+      "source_quote": "Price School honors are available at graduation to",
+      "reason": "out_of_scope",
+      "why": "Honors designation rule, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          123,
+          123
+        ]
+      ],
+      "source_quote": "PPD 301 and the internship in a position",
+      "reason": "advisory",
+      "why": "Descriptive/marketing statement about internship benefits."
+    },
+    {
+      "source_lines": [
+        [
+          129,
+          131
+        ]
+      ],
+      "source_quote": "The Washington, D.C., Semester program provides an intensive",
+      "reason": "advisory",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

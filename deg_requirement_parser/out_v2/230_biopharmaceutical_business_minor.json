@@ -1,0 +1,199 @@
+{
+  "program": "Biopharmaceutical Business Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BPSI 410",
+            "BPSI 411",
+            "BPSI 414"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "BPB-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "Three courses (10 units).",
+        "description": "Three required courses: BPSI 410, BPSI 411, and BPSI 414.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BPSI 402",
+            "BPSI 403",
+            "BPSI 405",
+            "BPSI 406",
+            "BPSI 407",
+            "BPSI 408",
+            "BPSI 412"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "BPB-MINOR-CORE",
+        "source_lines": [
+          [
+            39,
+            51
+          ]
+        ],
+        "source_quote": "Minimum 8 units.",
+        "description": "At least 8 units from the second Biopharmaceutical Sciences Requirement list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BPSI 413",
+                "BPSI 415",
+                "BPSI 490x",
+                "RXRS 200",
+                "RXRS 407",
+                "RXRS 412",
+                "RXRS 413w",
+                "RXRS 416",
+                "RXRS 421",
+                "RXRS 422"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                61,
+                62
+              ]
+            ],
+            "source_quote": "A maximum of 4 units can be met by taking Directed Research",
+            "eligible_if": {
+              "courses": [
+                "BPSI 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "BPB-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            53,
+            69
+          ]
+        ],
+        "source_quote": "Select from the following courses to complete the requirements for the minor.",
+        "description": "Remaining units from the electives list to reach the 22-unit total, with Directed Research capped at 4 units.",
+        "confidence": "medium",
+        "note": "Elective units needed depend on how many units the first two sections total; exact remaining amount not explicitly stated beyond the 22-unit total check at root."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor in Biopharmaceutical Business is 22 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 22
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Course work must not overlap with the major, another minor",
+      "reason": "university_level",
+      "why": "General overlap/double-counting rule for minors, handled at university level."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Only students with a declared major are eligible to apply.",
+      "reason": "out_of_scope",
+      "why": "Admission eligibility rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students must be in sophomore standing and have completed",
+      "reason": "out_of_scope",
+      "why": "Standing/unit-completion admission requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students will select course work in consultation with an academic adviser.",
+      "reason": "advisory",
+      "why": "Procedural advising note, not a hard requirement."
+    }
+  ]
+}

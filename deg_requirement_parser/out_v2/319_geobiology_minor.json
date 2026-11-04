@@ -1,0 +1,275 @@
+{
+  "program": "Geobiology Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 2,
+        "from": [
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 105Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 107Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 108Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 125Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 130Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 150Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 240Lg"
+                  }
+                ],
+                "id": "GEOBIO-INTRO-GEOL",
+                "source_lines": [
+                  [
+                    42,
+                    52
+                  ]
+                ],
+                "source_quote": "One introductory GEOL course:",
+                "description": "One introductory-level GEOL course, required of students majoring in biological sciences.",
+                "confidence": "medium",
+                "note": "This track applies to students majoring in biological sciences per L021 example."
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 433L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 483"
+                  }
+                ],
+                "id": "GEOBIO-TRACK-A-CAPSTONE",
+                "source_lines": [
+                  [
+                    37,
+                    38
+                  ]
+                ],
+                "source_quote": "BISC 483 Geobiology and Astrobiology Units: 4 * or",
+                "description": "GEOL 433L or BISC 483, cross-listed alternatives.",
+                "confidence": "high",
+                "note": "BISC 483 is cross-listed under GEOL per the note at L071."
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "BISC 474L",
+                    "BISC 483",
+                    "GEOL 320L",
+                    "GEOL 412",
+                    "GEOL 433L",
+                    "GEOL 450L",
+                    "GEOL 460L",
+                    "GEOL 470L"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ],
+                "id": "GEOBIO-TRACK-A-ELECTIVES",
+                "source_lines": [
+                  [
+                    54,
+                    65
+                  ]
+                ],
+                "source_quote": "Two courses from the following (8 units):",
+                "description": "Two additional upper-division elective courses from the designated list.",
+                "confidence": "high",
+                "note": null
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "GEOL 433L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "BISC 483"
+                  }
+                ],
+                "id": "GEOBIO-TRACK-B-CAPSTONE",
+                "source_lines": [
+                  [
+                    37,
+                    38
+                  ]
+                ],
+                "source_quote": "BISC 483 Geobiology and Astrobiology Units: 4 * or",
+                "description": "GEOL 433L or BISC 483, cross-listed alternatives.",
+                "confidence": "high",
+                "note": "BISC 483 is cross-listed under GEOL per the note at L071."
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "BISC"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 3
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 12
+                  }
+                ],
+                "id": "GEOBIO-TRACK-B-ELECTIVES",
+                "source_lines": [
+                  [
+                    40,
+                    40
+                  ],
+                  [
+                    73,
+                    73
+                  ]
+                ],
+                "source_quote": "Three upper-division BISC courses ** Units: 12",
+                "description": "Three additional upper-division BISC elective courses; must carry credit for a biology major.",
+                "confidence": "medium",
+                "note": "The note '**Must carry credit for a biology major' (L073) cannot be independently verified and is left as guidance."
+              }
+            ],
+            "id": "GEOBIO-TRACK-B",
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "Students majoring in earth or geological sciences must take BISC 120Lg",
+            "description": "Path for students majoring in earth or geological sciences: BISC 120Lg, BISC 220Lg, GEOL 433L or BISC 483, plus three additional BISC electives.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "GEOBIO-TRACKS",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "For example, students majoring in biological sciences might take",
+        "description": "Students majoring in biology take an intro GEOL course, GEOL 433L/BISC 483, and two upper-division electives; students majoring in earth/geological sciences take BISC 120Lg, BISC 220Lg, GEOL 433L/BISC 483, and three additional electives.",
+        "confidence": "medium",
+        "note": "The catalogue describes two different pathways depending on the student's major rather than a single fixed list; encoded as a choice between the two paths."
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_units": 16,
+          "applies_to": "the minor"
+        },
+        "id": "GEOBIO-UNIQUE-UNITS",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Courses selected must include at least 16 units unique to the minor",
+        "description": "At least 16 units must be unique to the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "REQUIRES",
+          "applies_to": "student's major department",
+          "requirement": "at least 16 units in a department outside the major"
+        },
+        "id": "GEOBIO-OUTSIDE-MAJOR-UNITS",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "at least 16 units in a department outside the major",
+        "description": "At least 16 units of the minor must be in a department outside the student's major.",
+        "confidence": "low",
+        "note": "Depends on the student's declared major, which cannot be checked from a course list alone."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students with majors offered by biological or earth or geological",
+      "reason": "no_fit",
+      "why": "Describes a variable total unit count (16-24 or up to 48 units) depending on the student's major, not a checkable course rule."
+    }
+  ]
+}

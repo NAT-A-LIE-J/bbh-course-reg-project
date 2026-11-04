@@ -1,0 +1,281 @@
+{
+  "program": "Dance (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DANC 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 103"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 107"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 120L"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 131"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 160"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 218"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 220L"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 230"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 231"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 305g"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 312gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 342gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 401"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 470"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 485"
+          }
+        ],
+        "id": "DANC-BFA-CORE",
+        "source_lines": [
+          [
+            41,
+            76
+          ]
+        ],
+        "source_quote": "Core Requirements (66 units)",
+        "description": "All lower- and upper-division core Dance courses totaling 66 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARTL 310",
+            "DANC 140",
+            "DANC 143",
+            "DANC 150",
+            "DANC 155",
+            "DANC 170",
+            "DANC 172",
+            "DANC 175",
+            "DANC 177",
+            "DANC 190",
+            "DANC 191",
+            "DANC 212g",
+            "DANC 285",
+            "DANC 302g",
+            "DANC 308g",
+            "DANC 333gw",
+            "DANC 347",
+            "DANC 349",
+            "DANC 350",
+            "DANC 355",
+            "DANC 362",
+            "DANC 363g",
+            "DANC 370",
+            "DANC 372",
+            "DANC 399",
+            "DANC 432",
+            "DANC 442",
+            "DANC 490x",
+            "DANC 495",
+            "DANC 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 14
+          }
+        ],
+        "id": "DANC-BFA-KAUFMAN-ELECTIVES",
+        "source_lines": [
+          [
+            37,
+            37
+          ],
+          [
+            78,
+            113
+          ]
+        ],
+        "source_quote": "Kaufman Electives (minimum 14 units)",
+        "description": "At least 14 units of dance-specific electives from the Kaufman elective list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "not": {
+                "prefix": [
+                  "DANC"
+                ]
+              }
+            },
+            {
+              "unresolved": "courses taken outside of Kaufman, including minor courses, extra GE electives and other university offerings"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "id": "DANC-BFA-GENERAL-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            39
+          ],
+          [
+            115,
+            119
+          ]
+        ],
+        "source_quote": "General Electives (minimum 24 units)",
+        "description": "At least 24 units of general electives taken outside USC Kaufman, with no fixed catalogue list.",
+        "confidence": "medium",
+        "note": "Catalogue gives no fixed course list for this category, only a description; encoded as unresolved pool outside DANC."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ],
+          [
+            121,
+            121
+          ]
+        ],
+        "source_quote": "The Bachelor of Fine Arts in Dance requires a total of 132 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 132
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Candidates must submit the USC Undergraduate Application",
+      "reason": "out_of_scope",
+      "why": "Admission/audition process is a gate, treated as out of scope for curriculum encoding here."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students are mentored by faculty and assisted",
+      "reason": "advisory",
+      "why": "Advisory statement about advising, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "All students in the dance program are required",
+      "reason": "university_level",
+      "why": "University-wide GE and Writing requirements, not program-specific."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "Students are encouraged to use these units",
+      "reason": "advisory",
+      "why": "Encouragement to pursue a minor, not a requirement."
+    }
+  ]
+}

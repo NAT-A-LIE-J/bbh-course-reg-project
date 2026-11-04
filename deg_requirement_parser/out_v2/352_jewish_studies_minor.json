@@ -1,0 +1,99 @@
+{
+  "program": "Jewish Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "JS 100"
+              },
+              {
+                "family": "specific_course",
+                "course": "JS 180"
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "JS"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "Judaism as a Religious Tradition track and the Jewish History and Culture track listed in the Jewish studies major description"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "JS-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students taking the Jewish studies minor must enroll in either",
+        "description": "JS 100 or JS 180, plus four upper-division courses from the two tracks of the Jewish studies major.",
+        "confidence": "medium",
+        "note": "The specific course lists for the two tracks are not given in this text; pool is unresolved beyond prefix/level."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The total unit requirement for the minor is 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "16 of those units must be upper-division",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,184 @@
+{
+  "program": "Sociology (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SOCI 200gm"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 270g"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 313L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 314Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "SOCI 325"
+              },
+              {
+                "family": "specific_course",
+                "course": "SSCI 301L"
+              }
+            ]
+          }
+        ],
+        "id": "SOCI-BA-CORE",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "source_quote": "All sociology majors must complete five core",
+        "description": "Five core sociology courses: SOCI 200gm, 270g, 313L, 314Lg, and either SOCI 325 or SSCI 301L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 357m",
+            "JS 379gm",
+            "JS 382g",
+            "SOCI 305m",
+            "SOCI 335",
+            "SOCI 340",
+            "SOCI 342m",
+            "SOCI 345",
+            "SOCI 350",
+            "SOCI 351",
+            "SOCI 353",
+            "SOCI 355m",
+            "SOCI 356m",
+            "SOCI 360m",
+            "SOCI 362",
+            "SOCI 369",
+            "SOCI 376m",
+            "SWMS 385m",
+            "REL 468",
+            "SOCI 402",
+            "SOCI 408",
+            "SOCI 410",
+            "SOCI 415",
+            "SOCI 425",
+            "SOCI 429",
+            "SOCI 431",
+            "SOCI 432m",
+            "SOCI 435m",
+            "SOCI 440",
+            "SOCI 445",
+            "SOCI 450",
+            "SOCI 460",
+            "SOCI 464",
+            "SOCI 465",
+            "SOCI 470",
+            "SOCI 475",
+            "SOCI 480",
+            "SOCI 490x",
+            "SOCI 494",
+            "SOCI 495",
+            "SOCI 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                25,
+                25
+              ],
+              [
+                43,
+                43
+              ]
+            ],
+            "source_quote": "At least 8 of the 20 elective units",
+            "eligible_if": {
+              "courses": [
+                "REL 468",
+                "SOCI 402",
+                "SOCI 408",
+                "SOCI 410",
+                "SOCI 415",
+                "SOCI 425",
+                "SOCI 429",
+                "SOCI 431",
+                "SOCI 432m",
+                "SOCI 435m",
+                "SOCI 440",
+                "SOCI 445",
+                "SOCI 450",
+                "SOCI 460",
+                "SOCI 464",
+                "SOCI 465",
+                "SOCI 470",
+                "SOCI 475",
+                "SOCI 480",
+                "SOCI 490x",
+                "SOCI 494",
+                "SOCI 495",
+                "SOCI 499"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "SOCI-BA-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            94
+          ]
+        ],
+        "source_quote": "20 elective units are required to complete",
+        "description": "20 units of electives from the 300- and 400-level elective lists, at least 8 units at the 400 level.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "All students must achieve an overall average",
+      "reason": "out_of_scope",
+      "why": "GPA rule, not a course selection requirement."
+    }
+  ]
+}

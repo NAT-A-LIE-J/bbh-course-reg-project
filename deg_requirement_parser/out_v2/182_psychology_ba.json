@@ -1,0 +1,359 @@
+{
+  "program": "Psychology (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 114xg"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 265"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          }
+        ],
+        "id": "PSYC-BA-LOWER",
+        "source_lines": [
+          [
+            25,
+            37
+          ]
+        ],
+        "source_quote": "MATH 114xg Foundations of Statistics Units",
+        "description": "Lower-division required courses: a statistics-qualifying math course, PSYC 100Lg, and PSYC 274Lg.",
+        "confidence": "high",
+        "note": "Amendment: footnote * expands MATH 114xg into a choice of MATH 114x, MATH 208x, or MATH 265."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PSYC 314L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 316L"
+          },
+          {
+            "choose": 4,
+            "from": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "PSYC 301L",
+                    "PSYC 305"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ],
+                "id": "PSYC-BA-COGNITIVE",
+                "source_lines": [
+                  [
+                    60,
+                    65
+                  ]
+                ],
+                "source_quote": "Cognitive",
+                "description": "One course from the Cognitive list.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "PSYC 336L",
+                    "PSYC 337L",
+                    "PSYC 339Lg"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ],
+                "id": "PSYC-BA-DEVELOPMENTAL",
+                "source_lines": [
+                  [
+                    67,
+                    73
+                  ]
+                ],
+                "source_quote": "Developmental",
+                "description": "One course from the Developmental list.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "PSYC 360",
+                    "PSYC 361",
+                    "PSYC 367g"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ],
+                "id": "PSYC-BA-CLINICAL",
+                "source_lines": [
+                  [
+                    75,
+                    81
+                  ]
+                ],
+                "source_quote": "Clinical",
+                "description": "One course from the Clinical list.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "PSYC 304L",
+                    "PSYC 326",
+                    "PSYC 372",
+                    "PSYC 420"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ],
+                "id": "PSYC-BA-BIOLOGICAL",
+                "source_lines": [
+                  [
+                    83,
+                    90
+                  ]
+                ],
+                "source_quote": "Biological",
+                "description": "One course from the Biological list.",
+                "confidence": "high",
+                "note": "PSYC 420 used here cannot also count toward the 400-level additional requirement."
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "PSYC 355",
+                    "PSYC 353g"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ],
+                "id": "PSYC-BA-SOCIAL",
+                "source_lines": [
+                  [
+                    92,
+                    97
+                  ]
+                ],
+                "source_quote": "Social",
+                "description": "One course from the Social list.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "PSYC-BA-FIVELISTS",
+            "source_lines": [
+              [
+                56,
+                97
+              ]
+            ],
+            "source_quote": "One course from each of four of the",
+            "description": "One course from each of four of the five topical lists (Cognitive, Developmental, Clinical, Biological, Social).",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "PSYC"
+                  ]
+                },
+                {
+                  "level_min": 400,
+                  "level_max": 499
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "PSYC 490x"
+                    ]
+                  }
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "id": "PSYC-BA-400LEVEL",
+            "source_lines": [
+              [
+                103,
+                103
+              ]
+            ],
+            "source_quote": "Two 400-level psychology courses other than 490x",
+            "description": "Two 400-level psychology courses (excluding PSYC 490x) totaling 8 units.",
+            "confidence": "high",
+            "note": "PSYC 420 may not count here if it was used to satisfy the Biological category above (one-slot rule)."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                39,
+                39
+              ]
+            ],
+            "source_quote": "Thirty-two upper-division psychology units are required",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "PSYC"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 32
+              }
+            ]
+          }
+        ],
+        "id": "PSYC-BA-UPPER",
+        "source_lines": [
+          [
+            39,
+            103
+          ]
+        ],
+        "source_quote": "Thirty-two upper-division psychology units are required",
+        "description": "32 units of upper-division psychology coursework including PSYC 314L, PSYC 316L, one course from four of five topical lists, and two 400-level courses totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "PSYC"
+              ]
+            },
+            {
+              "unresolved": "at least 2.67 units, upper- or lower-division"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PSYC-BA-ADDITIONAL-ELECTIVE",
+        "source_lines": [
+          [
+            105,
+            105
+          ]
+        ],
+        "source_quote": "An additional psychology course, either upper- or",
+        "description": "One additional psychology course, upper- or lower-division, of at least 2.67 units.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          23
+        ]
+      ],
+      "source_quote": "A grade of C- or higher is required",
+      "reason": "out_of_scope",
+      "why": "Grade rule, not a course-selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "It is recommended that no more than two",
+      "reason": "advisory",
+      "why": "A recommendation about sequencing, not a requirement."
+    }
+  ]
+}

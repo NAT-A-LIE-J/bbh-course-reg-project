@@ -1,0 +1,125 @@
+{
+  "program": "LGBTQ Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "SWMS 210gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 212gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 215gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 221g"
+          }
+        ],
+        "id": "LGBTQ-MINOR-LOWER-DIV",
+        "source_lines": [
+          [
+            23,
+            32
+          ]
+        ],
+        "source_quote": "Choose one:",
+        "description": "Choose one lower-division course from SWMS 210gmw, SWMS 212gp, SWMS 215gw, or SWMS 221g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "SWMS 306",
+        "id": "LGBTQ-MINOR-UPPER-REQ",
+        "source_lines": [
+          [
+            34,
+            38
+          ]
+        ],
+        "source_quote": "SWMS 306 Contemporary Issues in LGBTQ Studies",
+        "description": "Required upper-division course SWMS 306.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ENGL 344gm",
+            "ITAL 350g",
+            "SWMS 308",
+            "SWMS 310",
+            "SWMS 311",
+            "SWMS 355",
+            "SWMS 358",
+            "SWMS 385m",
+            "SWMS 425"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "LGBTQ-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            54
+          ]
+        ],
+        "source_quote": "Choose three:",
+        "description": "Choose three upper-division electives from the listed list, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Twenty units of course work are required for completion",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "focuses on how sexuality and sexual orientation shape",
+      "reason": "out_of_scope",
+      "why": "Program description, not a requirement."
+    }
+  ]
+}

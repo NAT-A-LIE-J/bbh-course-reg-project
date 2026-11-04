@@ -1,0 +1,217 @@
+{
+  "program": "Economics and Data Science (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ECON 317"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 307"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 308"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 407"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 408"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 318"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 460"
+          }
+        ],
+        "id": "EDS-BS-ECONOMICS",
+        "source_lines": [
+          [
+            27,
+            43
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics",
+        "description": "28 units of core economics courses, with MATH 307/308 or 407/408 substitutable for ECON 317.",
+        "confidence": "high",
+        "note": "Amendment at L043 encoded as alternative to ECON 317."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          }
+        ],
+        "id": "EDS-BS-MATH",
+        "source_lines": [
+          [
+            45,
+            51
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "12 units of mathematics: MATH 125g, 126g, 225.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          }
+        ],
+        "id": "EDS-BS-CS",
+        "source_lines": [
+          [
+            53,
+            58
+          ]
+        ],
+        "source_quote": "CSCI 102L Introduction to Programming Units: 2",
+        "description": "6 units of computer science: CSCI 102L and CSCI 103L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DSCI 250"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSCI 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 115"
+          }
+        ],
+        "id": "EDS-BS-ITDS",
+        "source_lines": [
+          [
+            60,
+            66
+          ]
+        ],
+        "source_quote": "DSCI 250 Introduction to Data Science Units: 4",
+        "description": "10 units in Information Technology and Data Science: DSCI 250, DSCI 351, TAC 115.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "DSCI 352",
+            "DSCI 454",
+            "ECON 419",
+            "ECON 470",
+            "MATH 226g",
+            "QBIO 401"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "EDS-BS-ELECTIVE",
+        "source_lines": [
+          [
+            68,
+            77
+          ]
+        ],
+        "source_quote": "DSCI 352 Applied Machine Learning and Data Mining",
+        "description": "4 units of elective chosen from a specified list of six courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Please visit the economics department website",
+      "reason": "out_of_scope",
+      "why": "Procedural reference to external admissions guidelines, not a checkable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This 60-unit major blends core economics instruction",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

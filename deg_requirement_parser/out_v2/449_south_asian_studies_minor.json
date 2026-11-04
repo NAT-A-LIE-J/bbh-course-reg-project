@@ -1,0 +1,164 @@
+{
+  "program": "South Asian Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MDA 340p",
+            "REL 340"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SAS-MINOR-INTRO",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "4 units, select one course:",
+        "description": "Select one introductory course from MDA 340p or REL 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 125gp",
+            "DANC 187",
+            "HIST 108g",
+            "LING 125",
+            "PHED 120a",
+            "PHED 120b",
+            "PHED 122",
+            "REL 130g",
+            "REL 134g",
+            "REL 136g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SAS-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            36,
+            51
+          ]
+        ],
+        "source_quote": "4 units, select at least one course:",
+        "description": "Select at least one lower-division course from the listed options, totaling 4 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 381g",
+            "AMST 449m",
+            "ANTH 330m",
+            "ENGL 333g",
+            "HIST 391",
+            "HIST 394p",
+            "HIST 430",
+            "IR 361",
+            "IR 384",
+            "POSC 328",
+            "REL 330",
+            "REL 336w"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "SAS-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            53,
+            70
+          ]
+        ],
+        "source_quote": "12 units, select three courses:",
+        "description": "Select three upper-division courses from the listed options, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor requires a minimum of 20 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This interdisciplinary minor offers students a framework",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students may select courses that provide an",
+      "reason": "advisory",
+      "why": "Describes student choice flexibility, not a binding rule."
+    }
+  ]
+}

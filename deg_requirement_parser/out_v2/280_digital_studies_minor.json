@@ -1,0 +1,225 @@
+{
+  "program": "Digital Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IML 104"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "IML 140"
+              },
+              {
+                "family": "specific_course",
+                "course": "IML 201"
+              }
+            ]
+          }
+        ],
+        "id": "DIGST-MIN-INTRO",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "IML 104 Introduction to Digital Studies Units: 2 and",
+        "description": "IML 104, plus either IML 140 or IML 201.",
+        "confidence": "medium",
+        "note": "Formatting with 'and'/'or' interpreted as IML 104 required and a choice between IML 140 and IML 201."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IML 230",
+            "IML 288",
+            "IML 300",
+            "IML 328",
+            "IML 335",
+            "IML 354",
+            "IML 400",
+            "IML 404",
+            "IML 428",
+            "IML 430",
+            "IML 435",
+            "IML 436",
+            "IML 454",
+            "IML 481"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "DIGST-MIN-PLATFORM",
+        "source_lines": [
+          [
+            41,
+            61
+          ]
+        ],
+        "source_quote": "Choose 8 units from the following courses:",
+        "description": "8 units from Media Arts Platform Courses list.",
+        "confidence": "high",
+        "note": "Several listed courses require a prerequisite; not independently checkable."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IML 310",
+            "IML 418",
+            "IML 419",
+            "IML 420m",
+            "IML 421",
+            "IML 422",
+            "IML 423",
+            "IML 425",
+            "IML 424",
+            "IML 450",
+            "IML 452",
+            "IML 453",
+            "IML 455",
+            "IML 456",
+            "IML 458",
+            "IML 460",
+            "IML 466",
+            "IML 475",
+            "IML 477",
+            "IML 493",
+            "IML 499",
+            "IML 427"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "DIGST-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            63,
+            91
+          ]
+        ],
+        "source_quote": "Choose 8 units from the following courses:",
+        "description": "8 units from Media Arts Electives list.",
+        "confidence": "high",
+        "note": "Some listed courses require a prerequisite; not independently checkable."
+      },
+      {
+        "all_of": [
+          {
+            "family": "manual_review",
+            "kind": "GATE",
+            "details": {
+              "stage": "EMPHASIS_ENTRY",
+              "basis": "QUALITATIVE_REVIEW",
+              "process": "application to minor adviser, approval required for honors track"
+            }
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 346"
+          },
+          {
+            "family": "specific_course",
+            "course": "IML 440"
+          }
+        ],
+        "id": "DIGST-MIN-HONORS",
+        "source_lines": [
+          [
+            93,
+            101
+          ]
+        ],
+        "source_quote": "Students who wish to pursue the honors track",
+        "description": "Optional honors thesis track requiring adviser approval and completion of IML 346 and IML 440.",
+        "confidence": "medium",
+        "note": "This track is optional and not part of the base 20-unit minor requirement; courses require prerequisites."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            31,
+            31
+          ]
+        ],
+        "source_quote": "A minimum of 20 units is required to",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "All courses must be taken for a letter",
+      "reason": "out_of_scope",
+      "why": "Grading-mode rule, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Digital Studies explores the rich",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All Digital Studies courses combine theory and practice",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Information about courses and other program offerings",
+      "reason": "out_of_scope",
+      "why": "Contact information, not a requirement."
+    }
+  ]
+}

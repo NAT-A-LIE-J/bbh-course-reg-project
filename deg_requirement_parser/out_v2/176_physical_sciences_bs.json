@@ -1,0 +1,281 @@
+{
+  "program": "Physical Sciences (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 105Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "PHYSCI-BS-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            32
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "source_quote": "CHEM 115aLg Advanced General Chemistry Units: 4",
+        "description": "Lower-division courses: CHEM 115a/115b (or substitute CHEM 105a/105b), GEOL 105Lg, PHYS 151L, 152L, 153L.",
+        "confidence": "high",
+        "note": "CHEM 105aL/105bL may substitute for CHEM 115aL/115bL per the note on L050."
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ASTR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "astronomy elective applicable to majors in the department"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "CHEM"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "chemistry elective applicable to majors in the department"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "GEOL"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "earth science elective applicable to majors in the department"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "PHYS"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "physics elective applicable to majors in the department"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ASTR",
+                    "CHEM",
+                    "GEOL",
+                    "PHYS"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "three additional upper-division electives from astronomy, chemistry, earth science, or physics, applicable to majors in their respective departments"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "id": "PHYSCI-BS-UPPERDIV",
+        "source_lines": [
+          [
+            34,
+            48
+          ]
+        ],
+        "source_quote": "Astronomy elective* Units: 4",
+        "description": "Upper-division electives: one each in astronomy, chemistry, earth science, and physics, plus three additional electives from these fields, all applicable to majors in their respective departments.",
+        "confidence": "medium",
+        "note": "No specific course lists given; department-approved upper-division courses per the footnote on L048."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          }
+        ],
+        "id": "PHYSCI-BS-MATH",
+        "source_lines": [
+          [
+            52,
+            58
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Required math courses: MATH 125g, MATH 126g, MATH 226g.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            60,
+            60
+          ]
+        ],
+        "source_quote": "Total units: 64",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 64
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This program is intended for students with an interest",
+      "reason": "advisory",
+      "why": "Programme description, not a requirement."
+    }
+  ]
+}

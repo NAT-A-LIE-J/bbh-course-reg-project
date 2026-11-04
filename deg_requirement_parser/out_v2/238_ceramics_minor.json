@@ -1,0 +1,128 @@
+{
+  "program": "Ceramics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ART 130",
+        "id": "CERAMICS-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "Required lower-division course (4 units)",
+        "description": "ART 130 Ceramics I is the required lower-division course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 330",
+            "ART 432",
+            "ART 430"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "CERAMICS-MINOR-UPPER-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "Three required upper-division courses (10 units)",
+        "description": "Three required upper-division ceramics courses totaling 10 units: ART 330, ART 432, ART 430.",
+        "confidence": "high",
+        "note": "ART 430 lists 'Units: 4 max 12', indicating it may be repeated for credit; not separately encoded."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 441",
+            "ART 442",
+            "ART 443",
+            "ART 444",
+            "ART 445"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "CERAMICS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            37,
+            45
+          ]
+        ],
+        "source_quote": "Upper-division electives (6 units)",
+        "description": "6 units of upper-division electives chosen from a listed set of art courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The total number of units is required for this minor is 20.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students enrolled in this minor will be introduced",
+      "reason": "advisory",
+      "why": "Programme description and marketing language, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The goal is to create a strong foundation",
+      "reason": "advisory",
+      "why": "Programme goal statement, not a requirement."
+    }
+  ]
+}

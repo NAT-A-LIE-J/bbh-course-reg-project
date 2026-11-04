@@ -1,0 +1,252 @@
+{
+  "program": "Cultures and Politics of the Pacific Rim Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ECON 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 470"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 345"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 451"
+          }
+        ],
+        "id": "PACRIM-MINOR-TRADE",
+        "source_lines": [
+          [
+            29,
+            40
+          ]
+        ],
+        "source_quote": "choose one course from the list below",
+        "description": "Choose one International Trade course from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AHIS 319"
+              },
+              {
+                "family": "specific_course",
+                "course": "ANTH 314g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ANTH 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "HIST 374"
+              },
+              {
+                "family": "specific_course",
+                "course": "HIST 451"
+              },
+              {
+                "family": "specific_course",
+                "course": "HIST 473"
+              },
+              {
+                "family": "specific_course",
+                "course": "IR 364"
+              },
+              {
+                "family": "specific_course",
+                "course": "IR 365"
+              },
+              {
+                "family": "specific_course",
+                "course": "POSC 350"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 320"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 321"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 372"
+              },
+              {
+                "family": "specific_course",
+                "course": "SPAN 380g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ANTH 323"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 343"
+              },
+              {
+                "family": "specific_course",
+                "course": "IR 360"
+              },
+              {
+                "family": "specific_course",
+                "course": "IR 361"
+              },
+              {
+                "family": "specific_course",
+                "course": "IR 384"
+              },
+              {
+                "family": "specific_course",
+                "course": "POSC 352"
+              },
+              {
+                "family": "specific_course",
+                "course": "POSC 355"
+              },
+              {
+                "family": "specific_course",
+                "course": "POSC 453"
+              },
+              {
+                "family": "specific_course",
+                "course": "REL 331"
+              }
+            ]
+          }
+        ],
+        "id": "PACRIM-MINOR-AREASTUDIES",
+        "source_lines": [
+          [
+            42,
+            78
+          ]
+        ],
+        "source_quote": "choose two courses, each from a different list",
+        "description": "Choose two Area Studies courses, one from the Latin America list and one from the East Asia list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 384",
+            "AHIS 385",
+            "ANTH 324gw",
+            "EALC 350gp",
+            "EALC 352g",
+            "EALC 354g",
+            "EALC 355",
+            "EALC 375",
+            "HIST 338",
+            "HIST 339",
+            "HIST 340",
+            "IR 333",
+            "POSC 356",
+            "AHIS 386",
+            "AHIS 387",
+            "EALC 340gp",
+            "EALC 342gp",
+            "EALC 365",
+            "EALC 428",
+            "EALC 460",
+            "HIST 335",
+            "HIST 336",
+            "HIST 337",
+            "HIST 438",
+            "HIST 464",
+            "IR 442",
+            "EALC 332",
+            "EALC 335m",
+            "EALC 345",
+            "HIST 333"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PACRIM-MINOR-COUNTRYSTUDY",
+        "source_lines": [
+          [
+            80,
+            129
+          ]
+        ],
+        "source_quote": "choose two courses from the lists below",
+        "description": "Choose two courses from the China, Japan, or Korea country-study lists.",
+        "confidence": "medium",
+        "note": "No explicit requirement that the two courses come from different countries, unlike Area Studies."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Requirements (Five Courses, 20 Units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "As with all minors, students must choose",
+      "reason": "university_level",
+      "why": "University-wide minor rule about courses outside the major department, handled by the tool."
+    }
+  ]
+}

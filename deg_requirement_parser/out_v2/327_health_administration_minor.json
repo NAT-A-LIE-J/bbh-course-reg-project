@@ -1,0 +1,116 @@
+{
+  "program": "Health Administration Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "PPD 202"
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 205"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 330"
+          }
+        ],
+        "id": "HADMIN-MINOR-INTRO",
+        "source_lines": [
+          [
+            27,
+            30
+          ]
+        ],
+        "source_quote": "PPD 202 Health and Health Care in America Today",
+        "description": "Either PPD 202 and PPD 205 together, or PPD 330.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 413"
+          }
+        ],
+        "id": "HADMIN-MINOR-CORE",
+        "source_lines": [
+          [
+            31,
+            33
+          ]
+        ],
+        "source_quote": "PPD 325 Fundamentals of Health Policy and Management",
+        "description": "PPD 325 and PPD 413 are both required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 260",
+            "MEDS 220",
+            "MEDS 405",
+            "PPD 320",
+            "PPD 407",
+            "PPD 414"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HADMIN-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            44
+          ]
+        ],
+        "source_quote": "Electives (4 units)",
+        "description": "4 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This 16-unit minor in health administration provides students",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

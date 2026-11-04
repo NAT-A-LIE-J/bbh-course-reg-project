@@ -1,0 +1,95 @@
+{
+  "program": "Sculpture Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ART 140",
+        "id": "SCULPT-MIN-LOWER",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "Required Lower-Division Course (4 Units)",
+        "description": "Requires ART 140 Sculpture I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 440"
+          }
+        ],
+        "id": "SCULPT-MIN-UPPER-REQ",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Required Upper-Division Courses (8 units)",
+        "description": "Requires ART 340 Sculpture II and ART 440 Topics in Advanced Sculpture.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 441",
+            "ART 442",
+            "ART 443",
+            "ART 444",
+            "ART 445"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "SCULPT-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            36,
+            44
+          ]
+        ],
+        "source_quote": "Upper-Division Electives (8 units)",
+        "description": "8 units of upper-division sculpture electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The total number of units required for the minor is 20.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

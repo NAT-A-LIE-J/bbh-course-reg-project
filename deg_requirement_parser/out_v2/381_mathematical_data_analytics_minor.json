@@ -1,0 +1,219 @@
+{
+  "program": "Mathematical Data Analytics Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "TAC 115"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 116"
+          }
+        ],
+        "id": "MDA-MINOR-PROGRAMMING",
+        "source_lines": [
+          [
+            29,
+            30
+          ]
+        ],
+        "source_quote": "TAC 115 Programming in Python Units: 2 or",
+        "description": "TAC 115 or TAC 116.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 226g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 227"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 229"
+          }
+        ],
+        "id": "MDA-MINOR-CALC3",
+        "source_lines": [
+          [
+            32,
+            34
+          ]
+        ],
+        "source_quote": "MATH 226g Calculus III Units: 4 or",
+        "description": "MATH 226g, MATH 227, or MATH 229.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 235"
+          }
+        ],
+        "id": "MDA-MINOR-LINALG",
+        "source_lines": [
+          [
+            36,
+            37
+          ]
+        ],
+        "source_quote": "MATH 225 Linear Algebra and Linear Differential",
+        "description": "MATH 225 or MATH 235.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 307"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 308"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 407"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 408"
+              }
+            ]
+          }
+        ],
+        "id": "MDA-MINOR-PROBSTAT",
+        "source_lines": [
+          [
+            43,
+            49
+          ]
+        ],
+        "source_quote": "Choose one of the following sequences:",
+        "description": "Either MATH 307 and MATH 308, or MATH 407 and MATH 408.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 446"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 447"
+          }
+        ],
+        "id": "MDA-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            51,
+            56
+          ]
+        ],
+        "source_quote": "MATH 446 Data Science with Python Units: 4",
+        "description": "MATH 446 and MATH 447.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            58,
+            58
+          ]
+        ],
+        "source_quote": "Minimum Units: 26",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 26
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "students must enroll in at least four upper-division courses",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "and four courses specifically selected for this minor",
+      "reason": "university_level",
+      "why": "Restates the university-wide minor rule about four courses unique to the minor, handled by the tool."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students who use courses required by this minor for the satisfaction",
+      "reason": "no_fit",
+      "why": "Allows substitution with an unspecified alternative list maintained by the department; no checkable pool or fixed rule given."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The “big data deluge” continues to change the fabric",
+      "reason": "advisory",
+      "why": "Programme marketing/description, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "program": "Data Science (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 115"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 116"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 216"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 265"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 113x"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 114x"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 102L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 103L"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 116"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 216"
+              }
+            ]
+          }
+        ],
+        "id": "DS-BA-PROGRAMMING",
+        "source_lines": [
+          [
+            52,
+            81
+          ]
+        ],
+        "source_quote": "Option One: (8 units)",
+        "description": "One of three programming fundamentals options (TAC-based or CSCI-based course sequences).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DSCI 250"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSCI 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSCI 352"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSCI 454"
+          }
+        ],
+        "id": "DS-BA-CORE",
+        "source_lines": [
+          [
+            83,
+            90
+          ]
+        ],
+        "source_quote": "DSCI 250 Introduction to Data Science Units",
+        "description": "Four named Data Science Core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 310g"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 408"
+          }
+        ],
+        "id": "DS-BA-STATISTICS",
+        "source_lines": [
+          [
+            92,
+            102
+          ]
+        ],
+        "source_quote": "Choose one course from the following:",
+        "description": "One statistics/probability course from a fixed list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          }
+        ],
+        "id": "DS-BA-BASICMATH",
+        "source_lines": [
+          [
+            104,
+            111
+          ]
+        ],
+        "source_quote": "Choose one from the following:",
+        "description": "One basic math course: MATH 118gx or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 4,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "DSCI 429"
+          },
+          {
+            "family": "specific_course",
+            "course": "EIS 370"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 301"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 304"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 303"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 342"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 349"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 365"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 368"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 419"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 459"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 479"
+          }
+        ],
+        "id": "DS-BA-ELECTIVES",
+        "source_lines": [
+          [
+            113,
+            134
+          ]
+        ],
+        "source_quote": "Data Science Electives – Choose Four Courses",
+        "description": "Choose four data science electives from the listed courses (one option being the TAC 301/304 pair or TAC 303 alternative).",
+        "confidence": "medium",
+        "note": "The TAC 301+304 vs TAC 303 web-development sequence is treated as one elective slot regardless of its two-course form."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "school": "Dornsife"
+            },
+            {
+              "unresolved": "adviser-approved disciplinary specialization forming a coherent focus on a discipline relevant to data science"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                139,
+                139
+              ]
+            ],
+            "source_quote": "At least 16 units must be at the upper-division level.",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          }
+        ],
+        "id": "DS-BA-SPECIALIZATION",
+        "source_lines": [
+          [
+            135,
+            139
+          ]
+        ],
+        "source_quote": "Complete at least 24 units of courses in",
+        "description": "At least 24 units in an adviser-approved Dornsife disciplinary specialization, at least 16 upper-division.",
+        "confidence": "medium",
+        "note": "No fixed course list is given; the specialization pool depends on adviser approval."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "at least 70 units of courses in Dornsife College",
+        "eligible_if": {
+          "school": "Dornsife"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 70
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "at least 38 units of courses in Viterbi",
+        "eligible_if": {
+          "school": "Viterbi"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 38
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students complete 128 units, including at least",
+      "reason": "university_level",
+      "why": "Total 128-unit degree requirement is a university-wide rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "permitting students to satisfy most or all",
+      "reason": "out_of_scope",
+      "why": "Describes double-major overlap/substitution rules handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          38
+        ]
+      ],
+      "source_quote": "All students undertaking this degree program must",
+      "reason": "no_fit",
+      "why": "Lists general knowledge domains, not distinct checkable course requirements beyond those already encoded."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          42
+        ]
+      ],
+      "source_quote": "Admissions are made by the USC Dornsife",
+      "reason": "out_of_scope",
+      "why": "Admissions process description, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          42
+        ]
+      ],
+      "source_quote": "Students normally apply to the program in",
+      "reason": "advisory",
+      "why": "Describes typical timing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          50,
+          50
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade requirement; handled outside course-selection taxonomy."
+    }
+  ]
+}

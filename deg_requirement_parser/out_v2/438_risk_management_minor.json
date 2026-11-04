@@ -1,0 +1,164 @@
+{
+  "program": "Risk Management Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "RISK 380",
+        "id": "RISK-MINOR-CORE",
+        "source_lines": [
+          [
+            39,
+            39
+          ]
+        ],
+        "source_quote": "RISK 380 Introduction to Enterprise Risk Management Units: 4",
+        "description": "Students must take RISK 380.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ECON 361"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 258g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "RISK 385"
+          }
+        ],
+        "id": "RISK-MINOR-REQUIRED-CHOICE",
+        "source_lines": [
+          [
+            41,
+            45
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "Choose one of ECON 361, PHIL 258g, PPD 407, or RISK 385.",
+        "confidence": "high",
+        "note": "ECON 361 has a prerequisite not part of the minor (footnote *)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUAD 315x",
+            "COMM 309",
+            "COMM 422",
+            "DSO 427",
+            "DSO 455",
+            "ECON 340",
+            "ECON 361",
+            "FBE 437",
+            "FBE 443",
+            "FBE 458",
+            "FBE 459",
+            "PHIL 258g",
+            "PPD 357",
+            "PPD 358",
+            "PPD 407",
+            "RISK 385",
+            "RISK 386",
+            "RISK 387",
+            "RISK 388",
+            "RISK 498",
+            "RISK 499",
+            "TAC 125L",
+            "TAC 325",
+            "TAC 370",
+            "TAC 375",
+            "TAC 471",
+            "TAC 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "RISK-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            51,
+            79
+          ]
+        ],
+        "source_quote": "Complete at least 8 units from the following:",
+        "description": "At least 8 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": "ECON 361, PHIL 258g, PPD 407, and RISK 385 may only count as electives if not already used to satisfy the required-course choice (one-slot rule, footnote ***). PPD 357's prerequisite is waived by PPD (footnote **); ECON 340, ECON 361, FBE 443, FBE 459, TAC 325, TAC 375 require prerequisites not part of the minor (footnote *)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "The minor is available to students in all schools",
+      "reason": "no_fit",
+      "why": "Exclusion of students in a specific other emphasis; not a course requirement for enrolled minors."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "To declare this minor, students must have completed",
+      "reason": "out_of_scope",
+      "why": "Declaration prerequisites (unit count and GPA) are admission-type rules, not course requirements."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Successful completion of the Risk Management Minor requires",
+      "reason": "out_of_scope",
+      "why": "Minimum GPA requirement is a grade rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A student declaring the minor in Risk Management also",
+      "reason": "advisory",
+      "why": "Describes an optional mentorship opportunity, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Industries currently seeking risk management professionals include",
+      "reason": "advisory",
+      "why": "Marketing/informational text about career fields, not a requirement."
+    }
+  ]
+}

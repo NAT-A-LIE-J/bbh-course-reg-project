@@ -1,0 +1,33 @@
+{
+  "program": "Nonprofits, Philanthropy and Volunteerism Interdisciplinary Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "courses described in the USC Price School of Public Policy section; no list given"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "NPV-MINOR-COURSES",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This four-course minor enables students to learn about",
+        "description": "Complete four courses related to nonprofits, philanthropy and volunteerism, as detailed in the Price School section.",
+        "confidence": "low",
+        "note": "No course list is given in this text; the catalogue refers to a full description elsewhere."
+      }
+    ]
+  },
+  "unclassified": []
+}

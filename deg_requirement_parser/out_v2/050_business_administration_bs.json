@@ -1,0 +1,282 @@
+{
+  "program": "Business Administration (Marketing) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "at least one semester in residence at USC",
+            "credit for BUAD 307"
+          ]
+        },
+        "id": "BMKT-BS-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Admission to the Marketing emphasis requires sophomore standing, one semester in residence, and BUAD 307 credit.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "BS in Business Administration",
+          "effect": "only one emphasis may be earned"
+        },
+        "id": "BMKT-BS-ONE-EMPHASIS",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within",
+        "description": "Students may earn only one emphasis within the BS in Business Administration.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BMKT-BS-WRITING",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BMKT-BS-CORE",
+        "source_lines": [
+          [
+            41,
+            74
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units: 3",
+        "description": "Business core courses required for the BS in Business Administration (Marketing).",
+        "confidence": "high",
+        "note": "Placement/waiver conditions for MATH 118gx and A-level credit for MATH 125g are advising/placement rules, not encoded here."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MKT"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BMKT-BS-EMPHASIS",
+        "source_lines": [
+          [
+            31,
+            31
+          ],
+          [
+            84,
+            88
+          ]
+        ],
+        "source_quote": "Complete 12 units of upper-division elective courses",
+        "description": "At least 12 upper-division units of MKT courses (300- or 400-level) in the Marketing emphasis.",
+        "confidence": "high",
+        "note": "Amends/duplicates the 'at least 12 upper-division units in the area of emphasis' phrase in the Requirements for Completion section (L031)."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students who wish to transfer to this program",
+      "reason": "advisory",
+      "why": "Procedural advice about where to go to transfer, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "students must satisfy all requirements for the",
+      "reason": "university_level",
+      "why": "References USC General Education requirements, which are university-wide and tracked via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled “Advanced Writing",
+      "reason": "advisory",
+      "why": "Recommendation of a specific section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement/prerequisite and AP/IB waiver rule, not a course selection requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advises students to speak with advisers about subject credit; not a binding requirement."
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "program": "Biological Sciences (Ecology, Evolution and Environment) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BEEE-BS-LOWER-CORE",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "Lower-Division BISC Core Courses (8 units)",
+        "description": "Two intro biology sequences: BISC 120Lg or 121Lg, and 220Lg or 221Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 107Lg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 105bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 108L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ],
+            "id": "BEEE-BS-GENCHEM",
+            "source_lines": [
+              [
+                37,
+                47
+              ]
+            ],
+            "source_quote": "General Chemistry Requirement: 8 units",
+            "description": "Two-semester general chemistry sequence.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 322aL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 325aL"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 322bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 325bL"
+                  }
+                ]
+              }
+            ],
+            "id": "BEEE-BS-ORGCHEM",
+            "source_lines": [
+              [
+                49,
+                57
+              ]
+            ],
+            "source_quote": "Organic Chemistry Requirement: 8 units",
+            "description": "Two-semester organic chemistry sequence.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g",
+            "id": "BEEE-BS-CALC",
+            "source_lines": [
+              [
+                59,
+                63
+              ]
+            ],
+            "source_quote": "Calculus Requirement: 4 units",
+            "description": "MATH 125g Calculus I.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 305g"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              }
+            ],
+            "id": "BEEE-BS-STATS",
+            "source_lines": [
+              [
+                65,
+                71
+              ]
+            ],
+            "source_quote": "Statistics Requirement: 4 units",
+            "description": "One statistics course from MATH 208x, QBIO 305g or QBIO 310.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 151Lg"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 152L"
+                  }
+                ]
+              }
+            ],
+            "id": "BEEE-BS-PHYSICS",
+            "source_lines": [
+              [
+                73,
+                81
+              ]
+            ],
+            "source_quote": "Physics Requirement: 8 units",
+            "description": "Two-semester physics sequence.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BEEE-BS-COLLATERAL",
+        "source_lines": [
+          [
+            33,
+            81
+          ]
+        ],
+        "source_quote": "Collateral Sciences Courses (32 units)",
+        "description": "Chemistry, calculus, statistics and physics requirements totaling 32 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 193",
+            "BISC 194",
+            "BISC 199"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 2
+          }
+        ],
+        "id": "BEEE-BS-INTRO-RESEARCH",
+        "source_lines": [
+          [
+            83,
+            91
+          ]
+        ],
+        "source_quote": "Enroll in one or two of the courses below.",
+        "description": "Enroll in one or two of BISC 193, 194, or 199.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 313L",
+            "BISC 315L",
+            "BISC 404L",
+            "BISC 326L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BEEE-BS-UPPER-CORE",
+        "source_lines": [
+          [
+            93,
+            102
+          ]
+        ],
+        "source_quote": "Select three courses from the options listed below.",
+        "description": "Three upper-division core courses from a fixed list.",
+        "confidence": "high",
+        "note": "Courses cannot count toward more than one degree requirement; restated one-slot rule."
+      },
+      {
+        "family": "specific_course",
+        "course": "BISC 444",
+        "id": "BEEE-BS-RESEARCH-LEARNING",
+        "source_lines": [
+          [
+            104,
+            108
+          ]
+        ],
+        "source_quote": "Research-Based Learning Requirement (2 units)",
+        "description": "BISC 444 Practical Analysis of Biological Data in R.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "BISC 460",
+        "id": "BEEE-BS-SEMINAR",
+        "source_lines": [
+          [
+            110,
+            116
+          ]
+        ],
+        "source_quote": "Enroll in an emphasis-relevant section of the",
+        "description": "BISC 460 Seminar in Ecology, Evolution and Environment.",
+        "confidence": "high",
+        "note": "Must be the emphasis-relevant section; not independently checkable."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "BEEE-BS-CAPSTONE",
+        "source_lines": [
+          [
+            118,
+            124
+          ]
+        ],
+        "source_quote": "Enroll in 4 units of BISC 490.",
+        "description": "4 units of BISC 490x Directed Research as capstone.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 303L",
+            "BISC 315L",
+            "BISC 320Lg",
+            "BISC 325",
+            "BISC 330L",
+            "BISC 363L",
+            "BISC 364L",
+            "BISC 365",
+            "BISC 369L",
+            "BISC 379L",
+            "BISC 404L",
+            "BISC 434",
+            "BISC 445L",
+            "BISC 480L",
+            "BISC 491L",
+            "BISC 493x",
+            "BISC 494x",
+            "HBIO 301L",
+            "QBIO 401",
+            "QBIO 475",
+            "QBIO 482"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          },
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 12
+          }
+        ],
+        "id": "BEEE-BS-ELECTIVES",
+        "source_lines": [
+          [
+            126,
+            152
+          ]
+        ],
+        "source_quote": "Select three or four electives from the course",
+        "description": "Three or four upper-division electives from a fixed list, totaling 10-12 units.",
+        "confidence": "high",
+        "note": "Courses cannot count toward more than one degree requirement; restated one-slot rule."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The general education, writing, foreign language and diversity",
+      "reason": "university_level",
+      "why": "GE and university-wide requirements referenced but not detailed here."
+    },
+    {
+      "source_lines": [
+        [
+          158,
+          158
+        ]
+      ],
+      "source_quote": "The department requires that students receive a grade",
+      "reason": "out_of_scope",
+      "why": "Grade and GPA rules."
+    },
+    {
+      "source_lines": [
+        [
+          160,
+          172
+        ]
+      ],
+      "source_quote": "The department offers an honors program to",
+      "reason": "out_of_scope",
+      "why": "Optional honors program with GPA-based admission, not a degree requirement."
+    }
+  ]
+}

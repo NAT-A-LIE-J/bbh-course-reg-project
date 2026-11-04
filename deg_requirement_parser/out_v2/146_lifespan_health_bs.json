@@ -1,0 +1,217 @@
+{
+  "program": "Lifespan Health (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "foreign language or programming skills requirement matching the Bachelor of Science in Human Development and Aging default Social Science track"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "LH-BS-LANGUAGE-SKILLS",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The same foreign language or programming skills requirement",
+        "description": "Students must satisfy the same foreign language or programming skills requirement (12 units) as the HDA Social Science track.",
+        "confidence": "low",
+        "note": "No explicit course list given for this requirement; encoded as unresolved."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERO 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 320g"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 416"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 483"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 492"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 495"
+          }
+        ],
+        "id": "LH-BS-GERO-CORE",
+        "source_lines": [
+          [
+            38,
+            49
+          ]
+        ],
+        "source_quote": "Gerontology Required Courses (28 units)",
+        "description": "Seven required 4-unit Gerontology core courses totaling 28 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GERO 414",
+            "GERO 437",
+            "GERO 440",
+            "GERO 470",
+            "GERO 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "LH-BS-GERO-THREE-OF-FIVE",
+        "source_lines": [
+          [
+            50,
+            59
+          ],
+          [
+            72,
+            72
+          ]
+        ],
+        "source_quote": "Choose Three from the Following Five Courses",
+        "description": "Choose three of five listed GERO courses for a total of 12 units.",
+        "confidence": "high",
+        "note": "GERO 437 must be taken for 4 units of credit (not 2), per note at L072."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "GERO"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "LH-BS-GERO-ELECTIVES",
+        "source_lines": [
+          [
+            60,
+            63
+          ]
+        ],
+        "source_quote": "Gerontology Electives (12 units)",
+        "description": "12 units of upper-division Gerontology elective courses.",
+        "confidence": "medium",
+        "note": "Honors Program's 10 units (GERO 497a, 497b, 497c, GERO 593) may be applied toward these upper-division gerontology elective units, per L032; honors program itself is optional and not encoded as a required node."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ],
+        "id": "LH-BS-ELECTIVES",
+        "source_lines": [
+          [
+            64,
+            67
+          ]
+        ],
+        "source_quote": "Electives (32 units)",
+        "description": "32 units of free electives.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Lifespan Health prepares",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing language, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Admission to this program is granted through",
+      "reason": "university_level",
+      "why": "General university admission process reference, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "the USC General Education program.",
+      "reason": "university_level",
+      "why": "GE requirement is university-wide and comes from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          36
+        ]
+      ],
+      "source_quote": "USC Davis offers an honors program to",
+      "reason": "out_of_scope",
+      "why": "Honors Program is an optional track with its own GPA eligibility rules, not a requirement for the BS degree itself."
+    }
+  ]
+}

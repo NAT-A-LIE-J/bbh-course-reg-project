@@ -1,0 +1,389 @@
+{
+  "program": "Civil Engineering, Building Science Emphasis (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 115aLg"
+          }
+        ],
+        "id": "CE-BS-CHEMISTRY",
+        "source_lines": [
+          [
+            40,
+            45
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "Choose CHEM 105aLg or CHEM 115aLg.",
+        "confidence": "high",
+        "note": "Satisfies GE requirement per asterisk."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "CE-BS-MATH",
+        "source_lines": [
+          [
+            47,
+            57
+          ]
+        ],
+        "source_quote": "MATH 126g Calculus II Units: 4",
+        "description": "Calculus II (126g or 129), Calculus III (226g or 229), and MATH 245.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CE-BS-PHYSICS",
+        "source_lines": [
+          [
+            59,
+            64
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "PHYS 151Lg and PHYS 152L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 104Lgx",
+            "BISC 120Lg",
+            "BISC 121Lg",
+            "BISC 220Lg",
+            "BISC 221Lg",
+            "BISC 230Lgx",
+            "HBIO 205Lgx"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CE-BS-BIOLOGY",
+        "source_lines": [
+          [
+            66,
+            79
+          ]
+        ],
+        "source_quote": "Each of the following courses will satisfy both",
+        "description": "Choose one biology course from the list, which also satisfies GE-D.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ENGR 102",
+        "id": "CE-BS-ENGINEERING",
+        "source_lines": [
+          [
+            85,
+            89
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "ENGR 102 required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CE 106"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 108"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 119"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 215"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 334L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 358L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 456"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 457"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 460"
+          },
+          {
+            "family": "specific_course",
+            "course": "CE 467L"
+          }
+        ],
+        "id": "CE-BS-CIVILENGINEERING",
+        "source_lines": [
+          [
+            91,
+            109
+          ]
+        ],
+        "source_quote": "CE 106 Introduction to Civil Engineering Units: 2",
+        "description": "All listed Civil Engineering core courses.",
+        "confidence": "high",
+        "note": "A minimum grade of C is required in CE 215, CE 225, and CE 309 (see L021); grade rule not encoded here."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 205aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 205bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214ag"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214bg"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 305aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 305bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 405aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 405bL"
+          }
+        ],
+        "id": "CE-BS-ARCHITECTURE",
+        "source_lines": [
+          [
+            111,
+            122
+          ]
+        ],
+        "source_quote": "ARCH 205aL Building Science I Units: 4",
+        "description": "All listed Architecture building science sequence courses.",
+        "confidence": "high",
+        "note": "A minimum grade of C is required in ARCH 205a, 205b, 305a, 305b, 405a, 405b to continue in the sequence (L142); grade rule not encoded here. ARCH 214ag/bg satisfy GE per asterisk."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CE 423"
+              },
+              {
+                "family": "specific_course",
+                "course": "ENE 440"
+              },
+              {
+                "family": "specific_course",
+                "course": "CE 427"
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROGRAM_RULE",
+            "details": {
+              "direction": "EXCLUDES",
+              "applies_to": "students who must take MATH 125g Calculus I",
+              "effect": "waived from Advanced Computing requirement"
+            }
+          }
+        ],
+        "id": "CE-BS-ADVCOMPUTING",
+        "source_lines": [
+          [
+            124,
+            134
+          ]
+        ],
+        "source_quote": "Select one course from the following list:",
+        "description": "Choose one Advanced Computing course from CE 423, ENE 440, or CE 427; waived for students required to take MATH 125g.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The requirement for the degree with an emphasis",
+      "reason": "university_level",
+      "why": "Total unit count for the degree is a university/school-wide figure."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "In addition, a minimum grade of C must",
+      "reason": "out_of_scope",
+      "why": "Course-specific grade minimum rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          28
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+      "reason": "university_level",
+      "why": "University-wide composition/writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          30,
+          34
+        ]
+      ],
+      "source_quote": "General Education Units: 16",
+      "reason": "university_level",
+      "why": "University-wide GE requirement."
+    },
+    {
+      "source_lines": [
+        [
+          142,
+          142
+        ]
+      ],
+      "source_quote": "The School of Architecture requires a minimum grade",
+      "reason": "out_of_scope",
+      "why": "Grade minimum rule for sequence continuation."
+    },
+    {
+      "source_lines": [
+        [
+          144,
+          144
+        ]
+      ],
+      "source_quote": "All curricula leading to a degree must be",
+      "reason": "university_level",
+      "why": "Administrative approval/transfer credit process, not a course requirement."
+    }
+  ]
+}

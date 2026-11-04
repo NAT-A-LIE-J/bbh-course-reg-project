@@ -1,0 +1,126 @@
+{
+  "program": "Landscape Architecture Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 531"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 565"
+          }
+        ],
+        "id": "LARCH-MIN-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "The minor in landscape architecture consists of three required courses",
+        "description": "Three required courses: ARCH 203, ARCH 531, ARCH 565.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARCH 303",
+            "ARCH 432",
+            "ARCH 536",
+            "ARCH 544",
+            "ARCH 545",
+            "ARCH 547",
+            "ARCH 566"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "LARCH-MIN-UPPERDIV",
+        "source_lines": [
+          [
+            29,
+            50
+          ]
+        ],
+        "source_quote": "a minimum of 10 units of upper-division courses",
+        "description": "Minimum 10 units of upper-division courses from the listed pool.",
+        "confidence": "high",
+        "note": "ARCH 531 appears on both lists but is already used as a required course; it cannot be double-counted here, so it is excluded from this pool."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "good academic standing and completion of freshman year"
+        },
+        "id": "LARCH-MIN-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Students in good academic standing who have completed",
+        "description": "Admission requires good academic standing and completion of the freshman year.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "architecture majors"
+        },
+        "id": "LARCH-MIN-EXCLUSION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This minor is not available to architecture majors.",
+        "description": "The minor is not available to architecture majors.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "APPROVAL_FOR_500_LEVEL",
+          "approver": "academic unit"
+        },
+        "id": "LARCH-MIN-500APPROVAL",
+        "source_lines": [
+          [
+            56,
+            56
+          ]
+        ],
+        "source_quote": "Non-architecture students must obtain written approval from",
+        "description": "Non-architecture students need written approval from their academic unit to take a 500-level course.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

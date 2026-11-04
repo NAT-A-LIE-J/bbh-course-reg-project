@@ -1,0 +1,135 @@
+{
+  "program": "Foundations of Data Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DSCI 250"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 115"
+          }
+        ],
+        "id": "DSCI-MINOR-INTRO",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required Introductory Courses (6 units)",
+        "description": "Required introductory courses DSCI 250 and TAC 115.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 310g"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 408"
+          }
+        ],
+        "id": "DSCI-MINOR-STATS",
+        "source_lines": [
+          [
+            30,
+            46
+          ]
+        ],
+        "source_quote": "Statistics/Probability Requirement (4 units)",
+        "description": "Choose one statistics/probability course from the listed options.",
+        "confidence": "high",
+        "note": "Some options (EE 364, MATH 208x, MATH 407, MATH 408) require a prerequisite per the note on L046; this is a sequencing/approval detail that cannot be verified from a course list alone."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "DSCI 351",
+            "DSCI 352",
+            "DSCI 429",
+            "DSCI 454",
+            "TAC 249",
+            "TAC 265",
+            "TAC 489"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "DSCI-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            48,
+            60
+          ]
+        ],
+        "source_quote": "Data Science Electives (12 units)",
+        "description": "Choose three courses from the Data Science Electives list, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            62,
+            62
+          ]
+        ],
+        "source_quote": "Total Units: 22",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 22
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          46,
+          46
+        ]
+      ],
+      "source_quote": "*Requires prerequisite.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite requirement for some elective statistics options; sequencing detail not tied to a checkable pool."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "program": "Communication Design Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "DES 102",
+        "id": "CDM-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "DES 102 Design Fundamentals Units: 4",
+        "description": "Students must take DES 102.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 150",
+            "ART 260",
+            "CRIT 150gp",
+            "DES 202"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CDM-LOWER-DIV",
+        "source_lines": [
+          [
+            29,
+            36
+          ]
+        ],
+        "source_quote": "One lower-division course (4 units), chosen from the following",
+        "description": "One lower-division course chosen from a list of four.",
+        "confidence": "high",
+        "note": "DES 202 has a corequisite of DES 203 or former FADN 203, noted but not encoded as separate requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACCT 410x",
+            "ART 360",
+            "ART 361",
+            "ART 362",
+            "BAEP 423",
+            "BAEP 451",
+            "BAEP 452",
+            "BUAD 307",
+            "COMM 321",
+            "COMM 339",
+            "COMM 340",
+            "COMM 375",
+            "DES 302",
+            "DES 303",
+            "DES 313",
+            "DES 323g",
+            "DES 332a",
+            "DES 332b",
+            "DES 333",
+            "DES 402",
+            "DES 432",
+            "DES 433",
+            "MKT 405",
+            "MKT 406",
+            "MKT 450",
+            "PR 340"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "CDM-UPPER-DIV",
+        "source_lines": [
+          [
+            38,
+            67
+          ]
+        ],
+        "source_quote": "Four upper-division courses (16 units), chosen from the following",
+        "description": "Four upper-division courses totaling at least 16 units, chosen from the given list.",
+        "confidence": "high",
+        "note": "DES 402 can be repeated up to 12 units max; this cap is not separately checkable and is noted here."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The total number of units required for the minor is 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "allowing students to translate their design foundation in ways",
+      "reason": "advisory",
+      "why": "Descriptive marketing language about the minor's purpose, not a requirement."
+    }
+  ]
+}

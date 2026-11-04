@@ -1,0 +1,163 @@
+{
+  "program": "Music Industry Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "MUIN 272x",
+        "id": "MUIN-MINOR-CORE",
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "MUIN 272x Basics of the Music Industry Units: 4",
+        "description": "Required core course MUIN 272x.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MUSC 115gp",
+            "MUSC 210g",
+            "MUSC 250gmw",
+            "MUSC 320gmw",
+            "MUSC 422",
+            "MUSC 423",
+            "MUSC 424",
+            "MUSC 444",
+            "MUSC 460",
+            "MUSC 465"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MUIN-MINOR-MUSC-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            48
+          ]
+        ],
+        "source_quote": "Select 4 units from the following:",
+        "description": "4 units from a list of MUSC survey courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MTEC 245",
+            "MTEC 246",
+            "MTEC 277x",
+            "MTEC 446a",
+            "MTEC 446b",
+            "MUIN 280",
+            "MUIN 370",
+            "MUIN 372",
+            "MUIN 410",
+            "MUIN 420",
+            "MUIN 425",
+            "MUIN 430",
+            "MUIN 443",
+            "MUIN 444",
+            "MUIN 495",
+            "MUIN 497"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "MUIN-MINOR-TECH-BUSINESS",
+        "source_lines": [
+          [
+            50,
+            69
+          ]
+        ],
+        "source_quote": "Select 12 units from the following:",
+        "description": "12 units from a list of music technology and business courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "A minimum of 20 units is required for",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor is not available to music industry majors.",
+      "reason": "out_of_scope",
+      "why": "Program-combination restriction, not a course requirement to check here."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Acceptance into the program might require a",
+      "reason": "out_of_scope",
+      "why": "Admission interview gate, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students admitted to this minor will be",
+      "reason": "out_of_scope",
+      "why": "GPA and grade rule; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          71,
+          71
+        ]
+      ],
+      "source_quote": "Total units: 20",
+      "reason": "university_level",
+      "why": "Restates total unit count already captured in root check."
+    }
+  ]
+}

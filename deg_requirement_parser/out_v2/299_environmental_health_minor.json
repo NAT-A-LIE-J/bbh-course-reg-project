@@ -1,0 +1,67 @@
+{
+  "program": "Environmental Health Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HP 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 446"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 448"
+          }
+        ],
+        "id": "ENVHEALTH-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "Required Courses (20 Units)",
+        "description": "Five required courses: HP 200, HP 320, HP 408, HP 446, HP 448.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor provides students with a basic understanding",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note, not a selection requirement; sequencing details not specified."
+    }
+  ]
+}

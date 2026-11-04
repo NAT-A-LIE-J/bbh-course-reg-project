@@ -1,0 +1,123 @@
+{
+  "program": "Gender and Social Justice Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "SWMS 210gmw"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 212gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 215gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 219gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "SWMS 221g"
+          }
+        ],
+        "id": "GSJ-MINOR-LOWER-DIV",
+        "source_lines": [
+          [
+            25,
+            35
+          ]
+        ],
+        "source_quote": "Choose one:",
+        "description": "Choose one lower-division required course from the listed SWMS options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "SWMS 310",
+        "id": "GSJ-MINOR-UPPER-DIV-CORE",
+        "source_lines": [
+          [
+            37,
+            41
+          ]
+        ],
+        "source_quote": "SWMS 310 Gender and Social Justice Units: 4",
+        "description": "SWMS 310 is required as the upper-division core course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 316",
+            "POSC 381",
+            "SOCI 402",
+            "SWMS 308",
+            "SWMS 311",
+            "SWMS 336",
+            "SWMS 349",
+            "SWMS 385m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "GSJ-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            56
+          ]
+        ],
+        "source_quote": "Choose three:",
+        "description": "Choose three upper-division elective courses from the listed options.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Twenty units of course work are required",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in gender and social justice provides",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

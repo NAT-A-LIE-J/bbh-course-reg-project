@@ -1,0 +1,214 @@
+{
+  "program": "Foundation in Regulatory Sciences Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RXRS 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 413w"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 416"
+          }
+        ],
+        "id": "RXRS-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "Required Courses (12 units)",
+        "description": "Three required RXRS courses totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "BPSI"
+              ]
+            },
+            {
+              "courses": [
+                "RXRS 200",
+                "RXRS 201p",
+                "RXRS 202w",
+                "RXRS 403",
+                "RXRS 405",
+                "RXRS 406",
+                "RXRS 407",
+                "RXRS 408",
+                "RXRS 410",
+                "RXRS 411",
+                "RXRS 412",
+                "RXRS 414",
+                "RXRS 417",
+                "RXRS 418",
+                "RXRS 421",
+                "RXRS 422",
+                "RXRS 424",
+                "RXRS 490x"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "RXRS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            65
+          ]
+        ],
+        "source_quote": "Select a minimum of two RXRS or BPSI courses totaling a minimum of 8 units.",
+        "description": "At least two RXRS/BPSI elective courses totaling at least 8 units.",
+        "confidence": "high",
+        "note": "Lower-division cap and RXRS 490x cap restated here (L039) are encoded as program-wide checks in root of_which, citing both L023 and L039."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "declared major",
+            "sophomore standing",
+            "32 USC units as entering freshman or 16 units as entering transfer student"
+          ]
+        },
+        "id": "RXRS-MINOR-ADMISSION",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Only students with a declared major are eligible to apply.",
+        "description": "Admission gate requiring declared major, sophomore standing, and minimum unit completion.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "must take a minimum of five RXRS or BPSI courses, totaling at least 20 units",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "RXRS"
+              ]
+            },
+            {
+              "prefix": [
+                "BPSI"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "source_quote": "A maximum of 4 units of lower-division course work permitted.",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "source_quote": "A maximum of 4 units can be met by taking Directed Research (RXRS 490x )",
+        "eligible_if": {
+          "courses": [
+            "RXRS 490x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Courses must be unique to the minor and not overlap with the major or another minor.",
+      "reason": "university_level",
+      "why": "Restates the university-wide minor uniqueness rule, handled by the tool."
+    }
+  ]
+}

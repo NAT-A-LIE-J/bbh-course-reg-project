@@ -1,0 +1,83 @@
+{
+  "program": "Creating Dramatic Writing Content Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "THTR 365",
+        "id": "CDWC-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "THTR 365 Playwriting I Units: 4",
+        "description": "Required course THTR 365 Playwriting I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 122",
+            "THTR 125",
+            "THTR 305a",
+            "THTR 309",
+            "THTR 312",
+            "THTR 318",
+            "THTR 366",
+            "THTR 395m",
+            "THTR 424",
+            "THTR 465",
+            "THTR 467",
+            "THTR 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "CDWC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            29,
+            46
+          ]
+        ],
+        "source_quote": "Elective Courses (12 units)",
+        "description": "12 units of elective courses from the listed THTR offerings (THTR 365 excluded here as it fills the required slot).",
+        "confidence": "high",
+        "note": "THTR 365 also appears on the elective list but is used to satisfy the Required Course node and cannot be double-counted, per the one-slot rule."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "source_quote": "The minor is a 16-unit program.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

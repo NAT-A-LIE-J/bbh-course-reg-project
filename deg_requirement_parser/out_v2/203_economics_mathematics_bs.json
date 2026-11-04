@@ -1,0 +1,238 @@
+{
+  "program": "Economics/Mathematics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125"
+          }
+        ],
+        "id": "ECONMATH-BS-PREMAJOR",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Pre-major requirement: MATH 125 or equivalent.",
+        "description": "Pre-major requirement of MATH 125 or an equivalent course.",
+        "confidence": "medium",
+        "note": "Catalogue allows 'or equivalent' but gives no rule to check which courses qualify; MATH 125 is the only checkable option."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 318"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "ECONMATH-BS-ECON",
+        "source_lines": [
+          [
+            21,
+            23
+          ]
+        ],
+        "source_quote": "In Economics: ECON 203 , ECON 205 ,",
+        "description": "Five named ECON core courses plus at least two more ECON courses at the 400 level or above.",
+        "confidence": "high",
+        "note": "Electives must be approved by the program advisers (L031); cannot be checked, noted here."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 407"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 408"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 307"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "MATH 308"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "MATH"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "ECONMATH-BS-MATH",
+        "source_lines": [
+          [
+            21,
+            25
+          ]
+        ],
+        "source_quote": "In Mathematics: MATH 126 or MATH 127",
+        "description": "Choice of MATH course pairs plus a required sequence (407/408 or 307/308) and at least two more MATH courses at the 400 level or above.",
+        "confidence": "high",
+        "note": "Electives must be approved by the program advisers (L031); cannot be checked, noted here."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "TAC 115"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 116"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 165"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 249"
+          }
+        ],
+        "id": "ECONMATH-BS-IT",
+        "source_lines": [
+          [
+            21,
+            27
+          ]
+        ],
+        "source_quote": "In Information Technology: Two courses required.",
+        "description": "One course from TAC 115, TAC 116, or TAC 165, plus TAC 249.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for specific core courses; grade rules are out of scope."
+    }
+  ]
+}

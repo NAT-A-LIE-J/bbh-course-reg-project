@@ -1,0 +1,142 @@
+{
+  "program": "Law and Regulation of Artificial Intelligence Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 210p"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 306"
+          }
+        ],
+        "id": "AILAW-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "Required Core Courses (8 units)",
+        "description": "Both required core courses LAW 210p and LAW 306.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 206",
+            "LAW 207",
+            "LAW 208w",
+            "LAW 211",
+            "LAW 407"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "AILAW-MINOR-LAWELECTIVES",
+        "source_lines": [
+          [
+            32,
+            40
+          ]
+        ],
+        "source_quote": "Law Electives (8 units)",
+        "description": "8 units of LAW electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 113x"
+          },
+          {
+            "family": "specific_course",
+            "course": "EIS 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 265g"
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 115"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 116"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 216"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 259"
+          }
+        ],
+        "id": "AILAW-MINOR-OTHERELECTIVES",
+        "source_lines": [
+          [
+            42,
+            56
+          ]
+        ],
+        "source_quote": "Other Electives (4 units)",
+        "description": "4 units of other electives: one of COMM 309, CSCI 113x, EIS 370, PHIL 265g, TAC 259, or the TAC 115/116 plus TAC 216 combination.",
+        "confidence": "medium",
+        "note": "TAC 115 or TAC 116 (2 units) must be paired with TAC 216 (2 units) to total 4 units; other options are single 4-unit courses."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The Law and Regulation of Artificial Intelligence minor totals 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

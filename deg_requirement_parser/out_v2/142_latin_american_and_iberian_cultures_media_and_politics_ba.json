@@ -1,0 +1,236 @@
+{
+  "program": "Latin American and Iberian Cultures, Media and Politics (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "SPAN 260"
+              },
+              {
+                "family": "manual_review",
+                "kind": "DISCRETIONARY",
+                "details": {
+                  "action": "WAIVE",
+                  "approver": "department",
+                  "basis": "AP score of 5, IBHL score of 6/7, SAT subject score of 800, or demonstrated advanced proficiency in spoken and written Spanish"
+                }
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "SPAN 290gp"
+          }
+        ],
+        "id": "LAIC-BA-LOWERDIV",
+        "source_lines": [
+          [
+            27,
+            30
+          ]
+        ],
+        "source_quote": "Majors and minors may request a waiver of SPAN 260",
+        "description": "SPAN 260 (or departmental waiver) and SPAN 290gp.",
+        "confidence": "high",
+        "note": "Students granted a waiver of SPAN 260 must take five upper-division courses instead of four; see LAIC-BA-UPPERDIV."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PORT 300",
+            "PORT 302",
+            "PORT 342",
+            "PORT 390",
+            "SPAN 301",
+            "SPAN 302",
+            "SPAN 304",
+            "SPAN 306",
+            "SPAN 308",
+            "SPAN 311",
+            "SPAN 320",
+            "SPAN 321",
+            "SPAN 341",
+            "SPAN 350",
+            "SPAN 352",
+            "SPAN 372",
+            "SPAN 373",
+            "SPAN 375",
+            "SPAN 380g",
+            "SPAN 381",
+            "SPAN 382",
+            "SPAN 385",
+            "SPAN 390",
+            "SPAN 391",
+            "SPAN 405",
+            "SPAN 413m",
+            "SPAN 455",
+            "SPAN 460",
+            "SPAN 462",
+            "SPAN 464",
+            "SPAN 465",
+            "SPAN 466",
+            "SPAN 469",
+            "SPAN 470",
+            "SPAN 471",
+            "SPAN 472",
+            "SPAN 481",
+            "SPAN 482",
+            "SPAN 483",
+            "SPAN 484",
+            "SPAN 490x",
+            "SPAN 495",
+            "SPAN 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                36,
+                36
+              ]
+            ],
+            "source_quote": "including at least one 400-level course.",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "LAIC-BA-UPPERDIV",
+        "source_lines": [
+          [
+            36,
+            86
+          ]
+        ],
+        "source_quote": "Choose four of the following courses, including at least one 400-level",
+        "description": "Four upper-division Spanish/Portuguese courses including at least one 400-level course (five required if SPAN 260 is waived).",
+        "confidence": "high",
+        "note": "Amended by the SPAN 260 waiver clause (L027, L036): students with a waiver must take five upper-division courses instead of four."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AHIS 127g",
+                "AHIS 128gp",
+                "AHIS 318",
+                "AHIS 319",
+                "AHIS 328",
+                "AHIS 428",
+                "AHIS 496",
+                "AMST 135gmw",
+                "AMST 305",
+                "ANTH 124g",
+                "ANTH 140g",
+                "ANTH 314g",
+                "ANTH 400",
+                "ANTH 425",
+                "ANTH 450",
+                "COLT 250g",
+                "HIST 273g",
+                "HIST 353m",
+                "HIST 369",
+                "HIST 370",
+                "HIST 371",
+                "HIST 372",
+                "HIST 374",
+                "HIST 451",
+                "HIST 473",
+                "IR 364",
+                "IR 365",
+                "IR 366",
+                "IR 425",
+                "IR 465",
+                "IR 466",
+                "PORT 250g",
+                "POSC 350",
+                "POSC 430",
+                "POSC 431",
+                "REL 334g"
+              ]
+            },
+            {
+              "unresolved": "other courses, including courses in other departments, chosen in consultation with faculty adviser"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                92,
+                92
+              ]
+            ],
+            "source_quote": "including at least two 300- or 400-level courses.",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "LAIC-BA-ELECTIVES",
+        "source_lines": [
+          [
+            88,
+            129
+          ]
+        ],
+        "source_quote": "Choose three of the following courses, including at least two 300-",
+        "description": "Three elective courses from the list (or adviser-approved substitutes), including at least two at the 300/400 level.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          86,
+          86
+        ]
+      ],
+      "source_quote": "*Four units required.",
+      "reason": "no_fit",
+      "why": "A per-course unit floor for variable-unit courses (PORT 390, SPAN 390, SPAN 490x, SPAN 499); thresholds apply to whole nodes, not individual variable-unit courses."
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "program": "Computer Science (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ENGR 102",
+        "id": "CSCI-BS-ENGR",
+        "source_lines": [
+          [
+            52,
+            56
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "Requires ENGR 102.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 235"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "CSCI-BS-MATH",
+        "source_lines": [
+          [
+            58,
+            74
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125, then MATH 126/129, MATH 225/235, MATH 226/229.",
+        "confidence": "high",
+        "note": "Note that both MATH 125 and MATH 126 also satisfy GE-F is informational, not a separate requirement."
+      },
+      {
+        "family": "specific_course",
+        "course": "EE 364",
+        "id": "CSCI-BS-STATS",
+        "source_lines": [
+          [
+            75,
+            79
+          ]
+        ],
+        "source_quote": "EE 364 Probability and Statistics for Engineers",
+        "description": "Requires EE 364.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 120Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 121Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 220Lg"
+          }
+        ],
+        "id": "CSCI-BS-LIFESCI",
+        "source_lines": [
+          [
+            81,
+            89
+          ]
+        ],
+        "source_quote": "Take one of the following life science courses",
+        "description": "One life science course satisfying GE-D.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 115aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 161Lg"
+          }
+        ],
+        "id": "CSCI-BS-PHYSSCI",
+        "source_lines": [
+          [
+            91,
+            100
+          ]
+        ],
+        "source_quote": "Take one of the following science courses",
+        "description": "One physical science course satisfying GE-E.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 102L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 103L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 104L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 170"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 353"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 356"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 401"
+          }
+        ],
+        "id": "CSCI-BS-CORECS",
+        "source_lines": [
+          [
+            106,
+            121
+          ]
+        ],
+        "source_quote": "CSCI 102L Introduction to Programming Units: 2",
+        "description": "Twelve named required Computer Science core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "EE 109L",
+        "id": "CSCI-BS-EE109",
+        "source_lines": [
+          [
+            123,
+            127
+          ]
+        ],
+        "source_quote": "EE 109L Introduction to Embedded Systems Units: 4",
+        "description": "Requires EE 109L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "CSCI"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "CSCI-BS-CORE-ELECTIVES",
+        "source_lines": [
+          [
+            129,
+            133
+          ]
+        ],
+        "source_quote": "Take at least four 300- or 400- level",
+        "description": "At least four 300- or 400-level CSCI courses totaling at least 16 units.",
+        "confidence": "high",
+        "note": "Courses already used in the Computer Science core list cannot be reused here, per the one-slot rule."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CSCI-BS-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            135,
+            139
+          ]
+        ],
+        "source_quote": "Free Electives (4 Units)",
+        "description": "4 units of unrestricted free electives.",
+        "confidence": "medium",
+        "note": "No restriction stated in the text."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "General admission requirements for the undergraduate program are",
+      "reason": "university_level",
+      "why": "University/school-wide admission rule."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The minimum requirement for the degree is 128",
+      "reason": "university_level",
+      "why": "University-wide unit total."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is",
+      "reason": "out_of_scope",
+      "why": "Grade rule for core courses."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Courses with a grade of C- or below",
+      "reason": "out_of_scope",
+      "why": "Grade/repeat policy."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Departmental approval is required in order to",
+      "reason": "out_of_scope",
+      "why": "Approval process for retaking a course."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Students who do not satisfy the degree",
+      "reason": "out_of_scope",
+      "why": "Disqualification policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Candidates must complete general education requirements;",
+      "reason": "university_level",
+      "why": "General education requirement, handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          40
+        ]
+      ],
+      "source_quote": "Composition/Writing Requirements (8 Units)",
+      "reason": "university_level",
+      "why": "University-wide composition/writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          46
+        ]
+      ],
+      "source_quote": "General Education (20 Units)",
+      "reason": "university_level",
+      "why": "General education units, handled by STARS."
+    },
+    {
+      "source_lines": [
+        [
+          143,
+          143
+        ]
+      ],
+      "source_quote": "WRIT 340 Advanced Writing and Critical Engagement (Communication",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          139,
+          139
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit count."
+    }
+  ]
+}

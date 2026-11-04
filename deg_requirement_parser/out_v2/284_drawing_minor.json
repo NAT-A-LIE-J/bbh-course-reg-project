@@ -1,0 +1,100 @@
+{
+  "program": "Drawing Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ART 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "ART 120"
+          }
+        ],
+        "id": "DRAWING-MINOR-LOWER-DIV",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required Lower-Division Courses (8 Units)",
+        "description": "Two required lower-division courses, ART 110 and ART 120.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ART 310",
+            "ART 311",
+            "ART 312",
+            "ART 370",
+            "ART 410",
+            "ART 415",
+            "ART 470",
+            "CRIT 350gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "DRAWING-MINOR-UPPER-DIV",
+        "source_lines": [
+          [
+            30,
+            43
+          ]
+        ],
+        "source_quote": "Three upper-division courses (12 units) chosen from the following",
+        "description": "Three upper-division courses (12 units) chosen from a list of ART and CRIT courses.",
+        "confidence": "high",
+        "note": "ART 410 and ART 470 are listed with a max of 12 units each (repeatable); not separately encoded as a check since no additional threshold is stated."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "A total of 20 units are required for this minor.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students enrolled in the minor in drawing will develop their creativity",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "program": "Electrical and Computer Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "ECE-BS-MATH",
+        "source_lines": [
+          [
+            44,
+            56
+          ],
+          [
+            134,
+            134
+          ]
+        ],
+        "source_quote": "MATH 126g Calculus II Units: 4 or",
+        "description": "Calculus II, Calculus III (each with alternatives), and MATH 245.",
+        "confidence": "high",
+        "note": "L134 preferred-sequence note and unit-reduction consequence are advisory/informational; listed in unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 162L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 153L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 163L"
+              }
+            ]
+          }
+        ],
+        "id": "ECE-BS-PHYSICS",
+        "source_lines": [
+          [
+            58,
+            69
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I: Mechanics,",
+        "description": "Three physics course pairs (Mechanics, E&M, Optics/Thermo/Modern) with honors alternatives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 104Lgx",
+            "BISC 120Lg",
+            "BISC 121Lg",
+            "BISC 220Lg",
+            "BISC 221Lg",
+            "BISC 230Lgx",
+            "HBIO 205Lgx"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ECE-BS-BIOLOGY",
+        "source_lines": [
+          [
+            71,
+            83
+          ]
+        ],
+        "source_quote": "Each of the following courses will satisfy both",
+        "description": "One biology course from the listed set, which also satisfies GE-D.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ENGR 102",
+        "id": "ECE-BS-ENGR102",
+        "source_lines": [
+          [
+            85,
+            89
+          ]
+        ],
+        "source_quote": "ENGR 102 Viterbi First-Year Academy Units: 2",
+        "description": "ENGR 102 Viterbi First-Year Academy.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "EE 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 109L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 141L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 155L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 202L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 250L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 355x"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 370L"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 460"
+          }
+        ],
+        "id": "ECE-BS-CORE",
+        "source_lines": [
+          [
+            95,
+            109
+          ]
+        ],
+        "source_quote": "EE 105 Introduction to Electrical Engineering Units: 4",
+        "description": "Eleven required core Electrical and Computer Engineering courses (44 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "EE 496"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "EE 494a"
+              },
+              {
+                "family": "specific_course",
+                "course": "EE 494b"
+              },
+              {
+                "family": "manual_review",
+                "kind": "DISCRETIONARY",
+                "details": {
+                  "action": "SUBSTITUTE",
+                  "approver": "department"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "ECE-BS-CAPSTONE",
+        "source_lines": [
+          [
+            111,
+            116
+          ]
+        ],
+        "source_quote": "EE 496 Capstone Design Units: 4",
+        "description": "EE 496 Capstone Design, or EE 494a/494b Undergraduate Thesis with department approval.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "EE"
+              ]
+            },
+            {
+              "level_min": 300
+            },
+            {
+              "unresolved": "adviser-approved upper-division elective courses in electrical engineering"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "ECE-BS-ELECTIVES",
+        "source_lines": [
+          [
+            118,
+            122
+          ]
+        ],
+        "source_quote": "Students must fulfill a minimum requirement of 16",
+        "description": "16 units of adviser-approved upper-division EE electives.",
+        "confidence": "medium",
+        "note": "No explicit course list given; adviser approval cannot be checked, captured via unresolved."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "ECE-BS-FREEELECTIVES",
+        "source_lines": [
+          [
+            124,
+            128
+          ]
+        ],
+        "source_quote": "Free elective courses are used to complete the",
+        "description": "6 units of free electives to complete the 128-unit total.",
+        "confidence": "high",
+        "note": "Advisory sentence about investigating minors not encoded; see unclassified."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The requirement for the degree is 128 units.",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "Grade/GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See also the common requirements for undergraduate",
+      "reason": "out_of_scope",
+      "why": "Cross-reference to university-wide common requirements, not a programme-specific rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          32
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic",
+      "reason": "university_level",
+      "why": "University writing requirement, repeated on programme page."
+    },
+    {
+      "source_lines": [
+        [
+          34,
+          38
+        ]
+      ],
+      "source_quote": "General education Units: 20",
+      "reason": "university_level",
+      "why": "University GE requirement, repeated on programme page."
+    },
+    {
+      "source_lines": [
+        [
+          128,
+          128
+        ]
+      ],
+      "source_quote": "Students are encouraged to investigate minor options",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          130,
+          130
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "Restates the university-wide unit total."
+    },
+    {
+      "source_lines": [
+        [
+          134,
+          134
+        ]
+      ],
+      "source_quote": "MATH 129 and MATH 229 is the preferred",
+      "reason": "advisory",
+      "why": "Recommends preferred calculus sequence and notes consequence for free electives; not a hard requirement."
+    }
+  ]
+}

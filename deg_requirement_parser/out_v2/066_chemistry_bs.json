@@ -1,0 +1,259 @@
+{
+  "program": "Chemistry (Research) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 107Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 108L"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 115bL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 126g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 153L"
+          }
+        ],
+        "id": "CHEM-BS-LOWER-CORE",
+        "source_lines": [
+          [
+            23,
+            40
+          ]
+        ],
+        "source_quote": "Required Core Courses, Lower-Division",
+        "description": "Lower-division required courses: CHEM 107Lg and CHEM 108L or CHEM 115aLg/115bL, MATH 125g/126g and a choice of MATH 225 or MATH 226g, and PHYS 151Lg, 152L, 153L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 300L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 325bL"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 426"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 455"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 461"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 453"
+          }
+        ],
+        "id": "CHEM-BS-UPPER-CORE",
+        "source_lines": [
+          [
+            42,
+            58
+          ]
+        ],
+        "source_quote": "Required Core Courses, Upper-Division",
+        "description": "Upper-division required courses: CHEM 300L, 325aL, 325bL, one of CHEM 426/455/461, and CHEM 430, 431, 453.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 332L",
+            "CHEM 423L",
+            "CHEM 462L",
+            "CHEM 463L",
+            "CHEM 467L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CHEM-BS-ADVLAB-ELECTIVE",
+        "source_lines": [
+          [
+            60,
+            68
+          ]
+        ],
+        "source_quote": "Advanced Laboratory Elective, 4 Units From Among",
+        "description": "4 units from the listed advanced laboratory elective courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CHEM 292"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CHEM 294"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CHEM 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CHEM 494x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "note": null
+          }
+        ],
+        "id": "CHEM-BS-RESEARCH",
+        "source_lines": [
+          [
+            70,
+            77
+          ]
+        ],
+        "source_quote": "Required Research Courses",
+        "description": "Required research coursework: 4 units of CHEM 292, 2 units of CHEM 294, 4 units of CHEM 490x, and 4 units of CHEM 494x.",
+        "confidence": "high",
+        "note": "Each research course has a variable per-section unit value; thresholds expressed as minimum total units rather than course counts."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "In addition to the general education, writing, foreign language",
+      "reason": "university_level",
+      "why": "References university-wide GE, writing, foreign language and diversity requirements handled elsewhere."
+    }
+  ]
+}

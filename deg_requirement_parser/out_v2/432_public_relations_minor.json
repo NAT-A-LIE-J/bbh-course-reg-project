@@ -1,0 +1,71 @@
+{
+  "program": "Public Relations Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PR 209"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 250"
+          },
+          {
+            "family": "specific_course",
+            "course": "PR 352"
+          }
+        ],
+        "id": "PR-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "PR 209 Effective Writing for Strategic Public Relations",
+        "description": "Three required courses: PR 209, PR 250, and PR 352.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "PR",
+                "JOUR"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "PR-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            31,
+            35
+          ]
+        ],
+        "source_quote": "Choose 12 units of PR and/or JOUR 300-499",
+        "description": "Twelve units of PR and/or JOUR electives at the 300-499 level.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

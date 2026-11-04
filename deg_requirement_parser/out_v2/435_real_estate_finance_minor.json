@@ -1,0 +1,247 @@
+{
+  "program": "Real Estate Finance Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "real estate development majors"
+        },
+        "id": "REF-MINOR-ELIGIBILITY",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor in real estate finance is available to all students except",
+        "description": "This minor is open to all students except real estate development majors.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 308"
+          }
+        ],
+        "id": "REF-MINOR-BUSINESS-FINANCE",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "Business Finance: 4 units",
+        "description": "BUAD 306 or BUAD 308.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "FBE 391"
+          },
+          {
+            "family": "specific_course",
+            "course": "FBE 400x"
+          }
+        ],
+        "id": "REF-MINOR-REAL-ESTATE-FINANCE",
+        "source_lines": [
+          [
+            41,
+            46
+          ]
+        ],
+        "source_quote": "Real Estate Finance: 4 units",
+        "description": "FBE 391 or FBE 400x.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "FBE 427",
+                "FBE 465",
+                "FBE 466",
+                "FBE 467",
+                "FBE 468",
+                "FBE 470",
+                "FBE 489",
+                "FBE 491"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "id": "REF-MINOR-RE-ELECTIVES",
+            "source_lines": [
+              [
+                52,
+                65
+              ]
+            ],
+            "source_quote": "Choose 8 - 12 units from the following.",
+            "description": "8-12 units of Real Estate electives from the listed FBE courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BAEP 423",
+                "DSO 455",
+                "FBE 421",
+                "FBE 423",
+                "FBE 435",
+                "FBE 437",
+                "FBE 441",
+                "FBE 459",
+                "MOR 469"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ],
+            "id": "REF-MINOR-NON-RE-ELECTIVES",
+            "source_lines": [
+              [
+                67,
+                81
+              ]
+            ],
+            "source_quote": "Choose 0 - 4 units from the following",
+            "description": "0-4 units of Non-Real Estate electives from the listed courses.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                48,
+                48
+              ]
+            ],
+            "source_quote": "Electives (12 Units with no more than 4 units of",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "id": "REF-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            48,
+            56
+          ]
+        ],
+        "source_quote": "Electives (12 Units with no more than 4 units of non-Real Estate electives)",
+        "description": "12 units of electives total, combining Real Estate electives (8-12 units) and Non-Real Estate electives (0-4 units).",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Successful completion of this minor requires 20 units including",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Successful completion of this minor requires 20 units including",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "To enroll, students must have completed a minimum of 32 units",
+      "reason": "out_of_scope",
+      "why": "Entry GPA and unit prerequisite rule for enrollment, not a major requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "a cumulative GPA of 2.0 for the 20 units",
+      "reason": "out_of_scope",
+      "why": "GPA rule; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          87,
+          87
+        ]
+      ],
+      "source_quote": "Prerequisites required. Plan carefully.",
+      "reason": "advisory",
+      "why": "Advisory note about prerequisites, not an enumerated requirement."
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "program": "American Popular Culture (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 205g",
+            "AMST 206gm",
+            "AMST 285gm"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "AMPOPCULT-BA-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "Choose one lower-division course (4 units).",
+        "description": "Choose one lower-division core course from AMST 205g, 206gm, or 285gm.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 492",
+            "AMST 493",
+            "AMST 498"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "AMPOPCULT-BA-SENIORCORE",
+        "source_lines": [
+          [
+            33,
+            42
+          ]
+        ],
+        "source_quote": "Choose one senior course based on departmental offerings (4 units).",
+        "description": "Choose one senior core course from AMST 492, 493, or 498.",
+        "confidence": "high",
+        "note": "Honors students completing a thesis in this course is noted in unclassified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 301gp",
+            "COLT 365",
+            "COMM 384",
+            "ENGL 392",
+            "HIST 380",
+            "AMST 325gw",
+            "AMST 330m",
+            "AMST 343",
+            "AMST 357m",
+            "AMST 365",
+            "AMST 385",
+            "AMST 395m",
+            "AMST 448m",
+            "AMST 449m",
+            "ENGL 343m",
+            "AHIS 363m",
+            "AHIS 370g",
+            "AMST 305",
+            "AMST 446",
+            "CTCS 392",
+            "CTCS 393",
+            "CTCS 394",
+            "ENGL 371g",
+            "ENGL 375",
+            "ENGL 381",
+            "HIST 481",
+            "MUJZ 419m",
+            "MUSC 422"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                44,
+                48
+              ]
+            ],
+            "source_quote": "at least one from each of the groups below.",
+            "eligible_if": {
+              "courses": [
+                "AMST 301gp",
+                "COLT 365",
+                "COMM 384",
+                "ENGL 392",
+                "HIST 380"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                44,
+                48
+              ]
+            ],
+            "source_quote": "at least one from each of the groups below.",
+            "eligible_if": {
+              "courses": [
+                "AMST 325gw",
+                "AMST 330m",
+                "AMST 343",
+                "AMST 357m",
+                "AMST 365",
+                "AMST 385",
+                "AMST 395m",
+                "AMST 448m",
+                "AMST 449m",
+                "ENGL 343m"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                44,
+                48
+              ]
+            ],
+            "source_quote": "at least one from each of the groups below.",
+            "eligible_if": {
+              "courses": [
+                "AHIS 363m",
+                "AHIS 370g",
+                "AMST 305",
+                "AMST 446",
+                "CTCS 392",
+                "CTCS 393",
+                "CTCS 394",
+                "ENGL 371g",
+                "ENGL 375",
+                "ENGL 381",
+                "HIST 481",
+                "MUJZ 419m",
+                "MUSC 422"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "AMPOPCULT-BA-UPPERDIV",
+        "source_lines": [
+          [
+            44,
+            91
+          ]
+        ],
+        "source_quote": "Choose four courses (16 units), at least one",
+        "description": "Choose four upper-division courses (16 units), at least one from each of three thematic groups.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 205g",
+            "AMST 206gm",
+            "AMST 285gm",
+            "AMST 492",
+            "AMST 493",
+            "AMST 498",
+            "AMST 301gp",
+            "COLT 365",
+            "COMM 384",
+            "ENGL 392",
+            "HIST 380",
+            "AMST 325gw",
+            "AMST 330m",
+            "AMST 343",
+            "AMST 357m",
+            "AMST 365",
+            "AMST 385",
+            "AMST 395m",
+            "AMST 448m",
+            "AMST 449m",
+            "ENGL 343m",
+            "AHIS 363m",
+            "AHIS 370g",
+            "AMST 305",
+            "AMST 446",
+            "CTCS 392",
+            "CTCS 393",
+            "CTCS 394",
+            "ENGL 371g",
+            "ENGL 375",
+            "ENGL 381",
+            "HIST 481",
+            "MUJZ 419m",
+            "MUSC 422",
+            "AHIS 100g",
+            "AHIS 250gm",
+            "AHIS 255g",
+            "AHIS 270",
+            "AHIS 364",
+            "AHIS 365m",
+            "AMST 274mw",
+            "ANTH 240gm",
+            "ANTH 263g",
+            "ANTH 380",
+            "ANTH 470",
+            "COMM 206",
+            "COMM 307",
+            "COMM 310",
+            "COMM 312",
+            "COMM 360",
+            "COMM 366",
+            "COMM 371",
+            "COMM 396g",
+            "COMM 413",
+            "COMM 415m",
+            "COMM 426",
+            "COMM 432",
+            "COMM 456",
+            "COMM 458m",
+            "COMM 465m",
+            "CRIT 371",
+            "CTCS 192mg",
+            "CTCS 403",
+            "CTCS 404",
+            "CTCS 406",
+            "CTCS 407",
+            "CTCS 408",
+            "CTCS 409",
+            "CTCS 411",
+            "CTCS 412",
+            "CTCS 414",
+            "CTCS 462",
+            "CTCS 478",
+            "DANC 212g",
+            "DANC 302g",
+            "ENGL 341",
+            "ENGL 342g",
+            "JOUR 467",
+            "SOCI 342m",
+            "SOCI 410",
+            "THTR 488mw",
+            "THTR 295"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                97,
+                97
+              ]
+            ],
+            "source_quote": "One must be an upper-division course in a department",
+            "eligible_if": {
+              "unresolved": "upper-division course in a department not already chosen for the major"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "AMPOPCULT-BA-ELECTIVES",
+        "source_lines": [
+          [
+            93,
+            148
+          ]
+        ],
+        "source_quote": "Choose four additional courses (16 units) from the lists",
+        "description": "Choose four additional elective courses (16 units) from the lists above or below, with at least one upper-division course from a new department.",
+        "confidence": "medium",
+        "note": "THTR 295 is listed as 2 units but '4 units required', implying it must be taken twice or paired with another THTR 295-equivalent; this nuance is not separately encoded."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Forty units are required, with a minimum of 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "with a minimum of 24 at the upper-division level.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "helps students to assess from a variety of perspectives",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing language, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          42,
+          42
+        ]
+      ],
+      "source_quote": "Honors students will complete an Honors Thesis",
+      "reason": "out_of_scope",
+      "why": "Honors program rule, not a general degree requirement."
+    }
+  ]
+}

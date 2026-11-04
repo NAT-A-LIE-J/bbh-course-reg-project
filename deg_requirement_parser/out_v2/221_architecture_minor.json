@@ -1,0 +1,109 @@
+{
+  "program": "Architecture Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "good academic standing and completion of freshman year"
+        },
+        "id": "ARCH-MINOR-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "Students in good academic standing who have completed",
+        "description": "Students must be in good academic standing and have completed their freshman year to be admitted.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 106x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 114"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 304x"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ARCH"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "id": "ARCH-MINOR-COURSES",
+        "source_lines": [
+          [
+            27,
+            37
+          ]
+        ],
+        "source_quote": "The requirements for the minor include three required courses",
+        "description": "Three required courses (ARCH 106x, ARCH 114, ARCH 304x) totaling 8 units, plus a minimum of 12 units of upper-division courses.",
+        "confidence": "high",
+        "note": "Note on area-of-specialization electives (line 43) is advisory guidance on which upper-division courses to pick, not a separate requirement."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "architecture majors"
+        },
+        "id": "ARCH-MINOR-EXCLUSION",
+        "source_lines": [
+          [
+            43,
+            43
+          ]
+        ],
+        "source_quote": "This minor is not available to architecture majors.",
+        "description": "The minor is not available to students majoring in architecture.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          43,
+          43
+        ]
+      ],
+      "source_quote": "Students may elect to take the upper division",
+      "reason": "advisory",
+      "why": "Suggests areas of specialization but does not add a requirement."
+    }
+  ]
+}

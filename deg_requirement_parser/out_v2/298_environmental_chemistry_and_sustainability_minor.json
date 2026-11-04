@@ -1,0 +1,129 @@
+{
+  "program": "Environmental Chemistry and Sustainability Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "ENVCHEM-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "Either CHEM 105aLg and CHEM 105bL, or CHEM 115aLg and CHEM 115bL.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 300L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320b"
+          }
+        ],
+        "id": "ENVCHEM-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "CHEM 300L Analytical Chemistry Units: 4",
+        "description": "CHEM 300L, ENST 320a and ENST 320b required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 322aL",
+            "BISC 315L",
+            "BISC 419L",
+            "BISC 427",
+            "GEOL 412"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ENVCHEM-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            41,
+            49
+          ]
+        ],
+        "source_quote": "One Elective Course Chosen From:",
+        "description": "One elective course chosen from a list of five options.",
+        "confidence": "high",
+        "note": "Some options require a prerequisite or corequisite (lines 55, 57); these are advisory course-sequencing notes, not separately encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          55,
+          55
+        ]
+      ],
+      "source_quote": "*Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Prerequisite enforcement is a course-level registration rule, not a program requirement to encode."
+    },
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "**Corequisite required",
+      "reason": "out_of_scope",
+      "why": "Corequisite enforcement is a course-level registration rule, not a program requirement to encode."
+    }
+  ]
+}

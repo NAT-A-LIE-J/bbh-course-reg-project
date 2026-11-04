@@ -1,0 +1,86 @@
+{
+  "program": "Behavioral Economics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BEHECON-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Required Lower-Division Courses (8 units)",
+        "description": "ECON 203g plus either MATH 118gx or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "ECON 303",
+        "id": "BEHECON-MINOR-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            31,
+            35
+          ]
+        ],
+        "source_quote": "Required Upper-Division Course (4 units)",
+        "description": "ECON 303 is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 404",
+            "ECON 405",
+            "ECON 415",
+            "ECON 420",
+            "ECON 432"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "BEHECON-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            37,
+            47
+          ]
+        ],
+        "source_quote": "Choose any three of the following courses:",
+        "description": "Choose three upper-division electives from the given list.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

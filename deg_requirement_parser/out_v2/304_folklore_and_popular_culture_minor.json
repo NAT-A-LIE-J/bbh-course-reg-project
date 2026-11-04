@@ -1,0 +1,139 @@
+{
+  "program": "Folklore and Popular Culture Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ANTH 123gp",
+        "id": "FPC-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            31
+          ]
+        ],
+        "source_quote": "ANTH 123gp Forms of Folklore Units: 4",
+        "description": "Core requirement: ANTH 123gp.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 205g",
+            "AMST 285gm",
+            "ANTH 101g",
+            "ANTH 140g",
+            "ANTH 203g",
+            "ANTH 207",
+            "ANTH 240gm",
+            "ANTH 255g",
+            "ANTH 263g",
+            "ANTH 273g",
+            "CLAS 280gp",
+            "COMM 206",
+            "HIST 271g",
+            "MUSC 102gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "FPC-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            33,
+            50
+          ]
+        ],
+        "source_quote": "Lower-Division Courses (Choose One)",
+        "description": "Choose one lower-division course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 330m",
+            "AMST 395m",
+            "ANTH 301g",
+            "ANTH 312",
+            "ANTH 326g",
+            "ANTH 332g",
+            "ANTH 360",
+            "ANTH 370",
+            "ANTH 372",
+            "ANTH 373",
+            "ANTH 409",
+            "ANTH 445",
+            "ANTH 490x",
+            "CLAS 325",
+            "CLAS 380",
+            "COLT 311",
+            "COLT 312",
+            "COLT 365",
+            "COMM 307",
+            "COMM 384",
+            "COMM 440",
+            "DANC 302g",
+            "GERM 346",
+            "JS 378gp",
+            "MDA 330",
+            "MUSC 444",
+            "POSC 441m",
+            "SPAN 385"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "FPC-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            52,
+            83
+          ]
+        ],
+        "source_quote": "Upper-Division Courses (Choose Three)",
+        "description": "Choose three upper-division courses from the listed options.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "students must complete five courses (20 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

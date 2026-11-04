@@ -1,0 +1,184 @@
+{
+  "program": "Sports Business and Management Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 201x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MOR 479"
+          }
+        ],
+        "id": "SBM-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses (8 units)",
+        "description": "Two required courses: BUAD 201x and MOR 479.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACCT 410x",
+            "BAEP 450",
+            "BAEP 451",
+            "BUAD 302",
+            "BUAD 304",
+            "BUAD 307",
+            "BUAD 315x",
+            "BUCO 333mw",
+            "DSO 428",
+            "DSO 443",
+            "FBE 400x",
+            "FBE 403",
+            "MOR 469",
+            "BAEP 465",
+            "BAEP 470",
+            "BAEP 472",
+            "DSO 478",
+            "JOUR 380",
+            "LAW 324",
+            "MKT 479",
+            "MOR 480",
+            "RISK 387"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                38,
+                58
+              ]
+            ],
+            "source_quote": "Select at least 4 units from the following:",
+            "eligible_if": {
+              "courses": [
+                "ACCT 410x",
+                "BAEP 450",
+                "BAEP 451",
+                "BUAD 302",
+                "BUAD 304",
+                "BUAD 307",
+                "BUAD 315x",
+                "BUCO 333mw",
+                "DSO 428",
+                "DSO 443",
+                "FBE 400x",
+                "FBE 403",
+                "MOR 469"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                60,
+                74
+              ]
+            ],
+            "source_quote": "Select at least 4 units from the following:",
+            "eligible_if": {
+              "courses": [
+                "BAEP 465",
+                "BAEP 470",
+                "BAEP 472",
+                "DSO 478",
+                "JOUR 380",
+                "LAW 324",
+                "MKT 479",
+                "MOR 480",
+                "RISK 387"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "SBM-ELECTIVES",
+        "source_lines": [
+          [
+            34,
+            74
+          ]
+        ],
+        "source_quote": "Elective Courses (12 units)",
+        "description": "12 units of electives, with at least 4 units from each of the General Business and Sports Business lists, and the remaining units from either list.",
+        "confidence": "medium",
+        "note": "BAEP 450/BAEP 451 are presented as an 'or' pair but both are included as eligible alternatives in the combined pool since only one slot can be used per the one-slot rule."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Successful completion of the Sports Business and Management minor requires a minimum of 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To enroll in this minor, students must have completed 32 units",
+      "reason": "out_of_scope",
+      "why": "Enrollment eligibility rule based on prior units and GPA, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "a minimum cumulative GPA of 2.0 in the courses applied to the minor",
+      "reason": "out_of_scope",
+      "why": "GPA requirement, not a course selection rule."
+    }
+  ]
+}

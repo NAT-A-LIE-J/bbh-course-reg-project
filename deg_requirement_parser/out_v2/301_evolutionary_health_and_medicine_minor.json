@@ -1,0 +1,90 @@
+{
+  "program": "Evolutionary Health and Medicine Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HBIO 200Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "EHM-MINOR-LOWER",
+        "source_lines": [
+          [
+            25,
+            32
+          ]
+        ],
+        "source_quote": "Lower-division courses (8 units)",
+        "description": "HBIO 200Lg plus one of BISC 220Lg or BISC 221Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HBIO 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 405"
+          },
+          {
+            "family": "specific_course",
+            "course": "HBIO 406"
+          }
+        ],
+        "id": "EHM-MINOR-UPPER",
+        "source_lines": [
+          [
+            34,
+            41
+          ]
+        ],
+        "source_quote": "Upper-division courses (16 units)",
+        "description": "Four required upper-division HBIO courses totaling 16 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor requires at least 24 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

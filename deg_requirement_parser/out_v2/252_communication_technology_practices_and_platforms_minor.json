@@ -1,0 +1,115 @@
+{
+  "program": "Communication Technology Practices and Platforms Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "COMM 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 339"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 340"
+          }
+        ],
+        "id": "CTPP-CORE",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "Required Core Communication Courses",
+        "description": "Three required core courses: COMM 309, COMM 339, COMM 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 310",
+            "COMM 321",
+            "COMM 345",
+            "COMM 350",
+            "COMM 422",
+            "COMM 431",
+            "COMM 449",
+            "COMM 465m",
+            "COMM 486",
+            "COMM 498",
+            "CTIN 462",
+            "CTIN 463",
+            "CTIN 488"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CTPP-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            49
+          ]
+        ],
+        "source_quote": "Electives-Choose Two From The Following",
+        "description": "Choose two elective courses from the listed COMM/CTIN options.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            51,
+            51
+          ]
+        ],
+        "source_quote": "Total units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Requirements for admission are a minimum 3.0 GPA",
+      "reason": "out_of_scope",
+      "why": "GPA and standing requirement for admission; grade/GPA rules are out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "students are encouraged to utilize skills and foundational",
+      "reason": "advisory",
+      "why": "Advisory statement, not a requirement."
+    }
+  ]
+}

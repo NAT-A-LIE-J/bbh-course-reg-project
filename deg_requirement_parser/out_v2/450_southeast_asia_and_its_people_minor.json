@@ -1,0 +1,178 @@
+{
+  "program": "Southeast Asia and its People Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 220gmw",
+            "ANTH 250g",
+            "ANTH 273g",
+            "POSC 120g",
+            "HIST 265gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "SEAP-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            35
+          ]
+        ],
+        "source_quote": "Choose one class (4 units)",
+        "description": "Choose one lower-division course from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 322",
+            "ANTH 373",
+            "COLT 379",
+            "IR 315",
+            "POSC 352",
+            "REL 330",
+            "REL 334g",
+            "HIST 344",
+            "IR 424w",
+            "POSC 328",
+            "REL 336w"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                41,
+                41
+              ]
+            ],
+            "source_quote": "including at least one class from each list",
+            "eligible_if": {
+              "courses": [
+                "ANTH 322",
+                "ANTH 373",
+                "COLT 379",
+                "IR 315",
+                "POSC 352",
+                "REL 330",
+                "REL 334g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                41,
+                41
+              ]
+            ],
+            "source_quote": "including at least one class from each list",
+            "eligible_if": {
+              "courses": [
+                "HIST 344",
+                "IR 424w",
+                "POSC 328",
+                "REL 336w"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "SEAP-MINOR-UPPER",
+        "source_lines": [
+          [
+            37,
+            65
+          ]
+        ],
+        "source_quote": "Choose four classes (16 units), including at least",
+        "description": "Choose four upper-division courses (16 units), with at least one from each of the two topical lists.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "There is no language requirement and no required",
+      "reason": "out_of_scope",
+      "why": "Describes absence of requirements, not itself a constraint."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This minor allows students to supplement more narrowly",
+      "reason": "out_of_scope",
+      "why": "Marketing/descriptive text about the minor's purpose."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The focus of this new minor is on",
+      "reason": "out_of_scope",
+      "why": "Descriptive marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          70,
+          70
+        ]
+      ],
+      "source_quote": "Courses have no prerequisites.",
+      "reason": "out_of_scope",
+      "why": "Statement about prerequisites, not a requirement to encode."
+    }
+  ]
+}

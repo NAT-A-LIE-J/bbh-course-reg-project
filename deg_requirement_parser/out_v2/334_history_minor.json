@@ -1,0 +1,131 @@
+{
+  "program": "History Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "HIST"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "One course may be at the lower-division level",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "Four courses must be at the upper-division level",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "at least one of those must be at the 400-level",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "HIST-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor in history requires 20 units, a total of five courses",
+        "description": "Five History courses (20 units): at most one lower-division (HIST 201 preferred), four upper-division with at least one at the 400-level.",
+        "confidence": "high",
+        "note": "HIST 201 as preferred lower-division course is advisory, not a strict requirement."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "MINOR_ENTRY",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "meeting with the department undergraduate adviser for approval"
+        },
+        "id": "HIST-MINOR-ADVISER",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "must meet with the department undergraduate adviser for approval",
+        "description": "Students must meet with the department undergraduate adviser for approval before completing the minor.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "among which HIST 201 is the preferred course",
+      "reason": "advisory",
+      "why": "Preference, not a hard requirement."
+    }
+  ]
+}

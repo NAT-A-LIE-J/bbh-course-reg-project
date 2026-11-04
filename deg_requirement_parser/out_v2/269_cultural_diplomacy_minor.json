@@ -1,0 +1,127 @@
+{
+  "program": "Cultural Diplomacy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "PUBD 369w",
+        "id": "CULTDIPL-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "PUBD 369w Public Diplomacy and Global Citizenship",
+        "description": "Required core course PUBD 369w.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PUBD 417"
+          },
+          {
+            "family": "specific_course",
+            "course": "PUBD 418"
+          },
+          {
+            "family": "specific_course",
+            "course": "PUBD 419"
+          },
+          {
+            "family": "specific_course",
+            "course": "PUBD 420"
+          }
+        ],
+        "id": "CULTDIPL-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "Choose one of the following courses:",
+        "description": "Choose one of PUBD 417, 418, 419, or 420.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 486",
+            "ANTH 205g",
+            "COMM 206",
+            "COMM 308",
+            "COMM 310",
+            "COMM 324mw",
+            "COMM 366",
+            "COMM 392",
+            "COMM 405",
+            "COMM 412",
+            "COMM 413",
+            "COMM 430",
+            "COMM 445",
+            "COMM 475",
+            "CRIT 350gw",
+            "CTCS 367",
+            "DANC 342gp",
+            "IR 101gxw",
+            "JOUR 484",
+            "MUSC 372g",
+            "PUBD 418",
+            "PUBD 419",
+            "PUBD 420"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "CULTDIPL-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            40,
+            68
+          ]
+        ],
+        "source_quote": "Choose 12 units from the following:",
+        "description": "Choose 12 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": "PUBD 418, 419, and 420 also appear as options for the Required Course slot; the one-slot rule prevents double counting a single course for both slots."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Requirements for admission are a minimum 3.0 GPA",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and unit/standing requirements are gate/grade rules, not course requirements."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard and",
+      "reason": "out_of_scope",
+      "why": "Restates admission GPA is a minimum standard, not a course requirement."
+    }
+  ]
+}

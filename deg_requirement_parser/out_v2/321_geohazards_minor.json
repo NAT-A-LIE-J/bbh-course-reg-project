@@ -1,0 +1,157 @@
+{
+  "program": "Geohazards Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "GEOL 315L"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              },
+              {
+                "family": "specific_course",
+                "course": "GEOL 450L"
+              }
+            ]
+          }
+        ],
+        "id": "GEOHAZ-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            21,
+            31
+          ]
+        ],
+        "source_quote": "the introductory course CHEM 105aLg (a corequisite for GEOL 315L",
+        "description": "Choose CHEM 105aLg with GEOL 315L, or MATH 125g with GEOL 450L as the required introductory pair.",
+        "confidence": "high",
+        "note": "GEOL 315L and GEOL 450L fill a slot here and cannot also be used to satisfy the three elective courses below."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "GEOL 105Lg",
+            "GEOL 107Lg",
+            "GEOL 108Lg",
+            "GEOL 125Lg",
+            "GEOL 130Lg",
+            "GEOL 150Lg",
+            "GEOL 240Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "GEOHAZ-MINOR-INTRO-GEOL",
+        "source_lines": [
+          [
+            37,
+            47
+          ]
+        ],
+        "source_quote": "One introductory GEOL course:",
+        "description": "One introductory-level GEOL course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 427",
+            "GEOL 305L",
+            "GEOL 315L",
+            "GEOL 316L",
+            "GEOL 320L",
+            "GEOL 321L",
+            "GEOL 412",
+            "GEOL 433L",
+            "GEOL 440L",
+            "GEOL 450L",
+            "GEOL 460L",
+            "GEOL 470L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "GEOHAZ-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            49,
+            64
+          ]
+        ],
+        "source_quote": "Three of the following (12 units):",
+        "description": "Three elective courses (12 units) from the upper-division geology list, not reusing the required introductory pair.",
+        "confidence": "high",
+        "note": "GEOL 315L or GEOL 450L already used in the required pair cannot be reused here, per the one-slot rule."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minimum number of units to complete the minor is 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The remaining courses listed have additional prerequisites.",
+      "reason": "advisory",
+      "why": "Notes prerequisite considerations rather than stating a distinct requirement."
+    }
+  ]
+}

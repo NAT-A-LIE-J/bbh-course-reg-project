@@ -1,0 +1,453 @@
+{
+  "program": "Music Industry (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 410x"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BAEP 450"
+              },
+              {
+                "family": "specific_course",
+                "course": "BAEP 451"
+              }
+            ]
+          }
+        ],
+        "id": "MUSIND-BS-BUSINESS",
+        "source_lines": [
+          [
+            80,
+            88
+          ]
+        ],
+        "source_quote": "Business Related Courses (12 units)",
+        "description": "ACCT 410x, one ECON course, and one of BAEP 450 or BAEP 451.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPPM 100"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 175"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 176"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 270"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 425"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MUIN 450"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "eq",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MUIN 497"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "eq",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "MUSIND-BS-PROGRAM-INTENSIVE",
+        "source_lines": [
+          [
+            90,
+            104
+          ]
+        ],
+        "source_quote": "Program Intensive Courses (27 units)",
+        "description": "Seven named core courses plus 4 units each of MUIN 450 and MUIN 497.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MUIN 280",
+            "MUIN 430",
+            "MUIN 443",
+            "MUIN 444",
+            "MUIN 445",
+            "MUIN 450",
+            "MUIN 475",
+            "MUIN 490x",
+            "MUIN 495",
+            "MUIN 496"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "MUSIND-BS-SELECT12",
+        "source_lines": [
+          [
+            106,
+            119
+          ]
+        ],
+        "source_quote": "Select 12 units from the following:",
+        "description": "12 units from the listed MUIN courses.",
+        "confidence": "high",
+        "note": "MUIN 450 may appear here or in Program Intensive; one-slot rule applies, cannot double-count."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MTEC 245",
+            "MTEC 246",
+            "MTEC 248",
+            "MTEC 275",
+            "MTEC 389",
+            "MTEC 392a",
+            "MTEC 442",
+            "MTEC 443",
+            "MTEC 446a",
+            "MTEC 446b",
+            "MTEC 474a",
+            "MTEC 474b",
+            "MTEC 477",
+            "MTEC 478",
+            "MTEC 479",
+            "MTEC 486",
+            "MTEC 493"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MUSIND-BS-SELECT8",
+        "source_lines": [
+          [
+            121,
+            141
+          ]
+        ],
+        "source_quote": "Select 8 units from the following:",
+        "description": "8 units from the listed MTEC courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BUAD 307",
+            "MUIN 410",
+            "MUIN 420"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MUSIND-BS-SELECT4-MARKETING",
+        "source_lines": [
+          [
+            143,
+            149
+          ]
+        ],
+        "source_quote": "Select 4 units from the following:",
+        "description": "4 units from BUAD 307, MUIN 410, or MUIN 420.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MPPM 350g",
+            "MUHL 250g",
+            "MUHL 350g",
+            "MUHL 351",
+            "MUJZ 350g",
+            "MUSC 102gw",
+            "MUSC 115gp",
+            "MUSC 200gmw",
+            "MUSC 210g",
+            "MUSC 250gmw",
+            "MUSC 320gmw",
+            "MUSC 371g",
+            "MUSC 372g",
+            "MUSC 373g",
+            "MUSC 423",
+            "MUSC 424",
+            "MUSC 444",
+            "MUSC 460",
+            "MUSC 465"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "MUSIND-BS-SELECT4-HISTORY",
+        "source_lines": [
+          [
+            151,
+            173
+          ]
+        ],
+        "source_quote": "Select 4 units from the following:",
+        "description": "4 units from the listed music history/culture courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MPGU 120a",
+            "MPGU 120b",
+            "MPGU 120c",
+            "MPGU 121",
+            "MPKS 150a",
+            "MPKS 150b",
+            "MPPM 240",
+            "MPPM 250",
+            "MPPM 340",
+            "MPVA 141",
+            "MPVA 241",
+            "MUCO 101x",
+            "MUCO 130ax",
+            "MUCO 130bx",
+            "MUSC 255",
+            "MUSC 355",
+            "MUSC 455"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "MUSIND-BS-SELECT6-PERFORMANCE",
+        "source_lines": [
+          [
+            175,
+            195
+          ]
+        ],
+        "source_quote": "Select 6 units from the following:",
+        "description": "6 units from the listed performance/skills courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "electives, no list given"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 21
+          }
+        ],
+        "id": "MUSIND-BS-ELECTIVES",
+        "source_lines": [
+          [
+            197,
+            199
+          ]
+        ],
+        "source_quote": "Electives (21 units)",
+        "description": "21 units of electives, no specific list provided.",
+        "confidence": "low",
+        "note": "No course list or pool definition given; left unresolved."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUIN 498a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUIN 498b"
+          }
+        ],
+        "id": "MUSIND-BS-CAPSTONE",
+        "source_lines": [
+          [
+            37,
+            39
+          ],
+          [
+            201,
+            206
+          ]
+        ],
+        "source_quote": "Capstone Projects (2 units)",
+        "description": "Final capstone project, MUIN 498a and MUIN 498b.",
+        "confidence": "high",
+        "note": "Overview capstone passage (L039) describes general supervision requirements, not a separate requirement."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students must fulfill a series of core",
+      "reason": "out_of_scope",
+      "why": "Marketing/overview statement, not a specific rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Admission to Thornton programs is granted through",
+      "reason": "university_level",
+      "why": "University/school-wide admission process, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Eight courses are required in six Core",
+      "reason": "university_level",
+      "why": "General education requirement, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "A capstone project must be completed under",
+      "reason": "out_of_scope",
+      "why": "Describes supervision/approval process, not a checkable course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          53,
+          79
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "General education category requirements, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          208,
+          208
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          212,
+          212
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units",
+      "reason": "advisory",
+      "why": "Planning note about overlapping GE and major requirements."
+    }
+  ]
+}

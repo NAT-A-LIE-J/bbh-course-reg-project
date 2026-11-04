@@ -1,0 +1,156 @@
+{
+  "program": "Game User Research Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "PROCEDURAL",
+          "process": "good academic standing, declared major, permission from the Interactive Media and Games Division, and a Change of Major/Minor form"
+        },
+        "id": "GUR-MINOR-ELIGIBILITY",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To be eligible for the game user research minor, a student must be in good academic standing",
+        "description": "Students must be in good academic standing, have a declared major, get divisional permission and file a change of major/minor form.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CTIN 291",
+        "id": "GUR-MINOR-LOWER-CORE",
+        "source_lines": [
+          [
+            29,
+            33
+          ]
+        ],
+        "source_quote": "CTIN 291 Crew for Advanced Game Project Units: 2",
+        "description": "Lower-division core requires CTIN 291.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "COMM 301Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 401L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 404L"
+          }
+        ],
+        "id": "GUR-MINOR-UPPER-CORE",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "COMM 301Lg Empirical Research in Communication Units: 4",
+        "description": "Upper-division core requires COMM 301Lg, CTIN 401L and CTIN 404L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTIN 110",
+            "CTIN 432",
+            "CTIN 458",
+            "CTIN 463",
+            "CTIN 482",
+            "CTIN 488",
+            "CTIN 490x",
+            "CTIN 491L",
+            "CTIN 493L",
+            "CTIN 510",
+            "PSYC 301L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "GUR-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            57
+          ]
+        ],
+        "source_quote": "6 Additional Units",
+        "description": "6 additional elective units from the listed CTIN/PSYC courses.",
+        "confidence": "high",
+        "note": "CTIN 491L, CTIN 493L and PSYC 301L require a prerequisite; CTIN 510 requires special permission; these are procedural notes, not separate requirements."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 16 units is required for the game user research minor",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "a minimum of 12 upper-division units",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          69,
+          69
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each course is required",
+      "reason": "out_of_scope",
+      "why": "Grade rule, not encoded in Phase 1."
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "program": "Forensics and Criminality Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 101gmw",
+            "LAW 200w",
+            "POSC 130g",
+            "PSYC 100Lg",
+            "PSYC 165Lg",
+            "SOCI 142gm",
+            "SOCI 150gm",
+            "SOCI 200gm"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "FORCRIM-MINOR-LOWER",
+        "source_lines": [
+          [
+            29,
+            44
+          ]
+        ],
+        "source_quote": "Choose one course from:",
+        "description": "Choose one lower-division course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "LAW 404"
+          },
+          {
+            "family": "specific_course",
+            "course": "LING 412"
+          },
+          {
+            "family": "specific_course",
+            "course": "LING 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 355"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 441m"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 360"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 363"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 365"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 341"
+          }
+        ],
+        "id": "FORCRIM-MINOR-INDIVIDUAL",
+        "source_lines": [
+          [
+            54,
+            73
+          ]
+        ],
+        "source_quote": "The Individual in Society",
+        "description": "Choose one course from the Individual in Society group.",
+        "confidence": "high",
+        "note": "Some courses marked with * have a prerequisite of PSYC 100, which is advisory/prerequisite information, not encoded as a node."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ANTH 371gm"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 360m"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 350"
+          }
+        ],
+        "id": "FORCRIM-MINOR-SOCIALCLASS",
+        "source_lines": [
+          [
+            75,
+            83
+          ]
+        ],
+        "source_quote": "Social Class and Criminality",
+        "description": "Choose one course from the Social Class and Criminality group.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "LAW 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 403"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 437"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 426"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 444"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 415"
+          }
+        ],
+        "id": "FORCRIM-MINOR-SYSTEM",
+        "source_lines": [
+          [
+            85,
+            97
+          ]
+        ],
+        "source_quote": "The System of Criminal Justice",
+        "description": "Choose one course from the System of Criminal Justice group.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "POSC 432"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 342"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOCI 353"
+          }
+        ],
+        "id": "FORCRIM-MINOR-PUNISHMENT",
+        "source_lines": [
+          [
+            99,
+            105
+          ]
+        ],
+        "source_quote": "Crime and Punishment",
+        "description": "Choose one course from the Crime and Punishment group.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            107,
+            107
+          ]
+        ],
+        "source_quote": "Total requirements: five courses (20 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Contact Dornsife College Advising for further details.",
+      "reason": "advisory",
+      "why": "Contact/advising information, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students should choose a curriculum for their minor",
+      "reason": "advisory",
+      "why": "Advisory guidance on choosing courses by interest area, not a binding requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Those who are interested in the criminal justice system",
+      "reason": "advisory",
+      "why": "Advisory example of course selection, not a binding requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Those interested in individual and social determinants of deviancy",
+      "reason": "advisory",
+      "why": "Advisory example of course selection, not a binding requirement."
+    },
+    {
+      "source_lines": [
+        [
+          73,
+          73
+        ]
+      ],
+      "source_quote": "*Prerequisite: PSYC 100",
+      "reason": "out_of_scope",
+      "why": "Prerequisite rule, not a degree requirement to be checked here."
+    }
+  ]
+}

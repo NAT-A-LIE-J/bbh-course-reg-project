@@ -1,0 +1,39 @@
+{
+  "program": "Social Work and Juvenile Justice Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "SOWK 200xm",
+            "SOWK 324",
+            "SOWK 350",
+            "SOWK 417",
+            "SOWK 424"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SWJJ-MINOR-COURSES",
+        "source_lines": [
+          [
+            23,
+            35
+          ]
+        ],
+        "source_quote": "Select four courses from the following course options",
+        "description": "Select four courses from the five listed SOWK courses, totaling a minimum of 16 units.",
+        "confidence": "high",
+        "note": "The 16-unit minimum is implied by four 4-unit courses; not separately checked."
+      }
+    ]
+  },
+  "unclassified": []
+}

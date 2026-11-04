@@ -1,0 +1,326 @@
+{
+  "program": "Jewish Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "REL 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "REL 401"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "JS 100gp"
+              },
+              {
+                "family": "specific_course",
+                "course": "JS 180gp"
+              }
+            ]
+          }
+        ],
+        "id": "JS-BA-CORE",
+        "source_lines": [
+          [
+            29,
+            29
+          ],
+          [
+            39,
+            44
+          ]
+        ],
+        "source_quote": "Three core courses are required: REL 301 Approaches",
+        "description": "REL 301, REL 401, and either JS 100gp or JS 180gp.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "JS 180gp",
+                "JS 258gp",
+                "JS 314gp",
+                "JS 321",
+                "JS 361gp",
+                "JS 374",
+                "JS 378gp",
+                "JS 382g",
+                "JS 467",
+                "REL 111g",
+                "REL 112g",
+                "REL 114g",
+                "REL 115g",
+                "REL 121g",
+                "REL 132g",
+                "REL 311g",
+                "REL 312",
+                "REL 317g",
+                "REL 359g",
+                "REL 364",
+                "REL 394",
+                "REL 473"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "JS-BA-TRACKB",
+            "source_lines": [
+              [
+                46,
+                71
+              ]
+            ],
+            "source_quote": "Judaism as a Religious Tradition (at least one course required)",
+            "description": "At least one course from the Judaism as a Religious Tradition list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "HEBR 315",
+                "HIST 305",
+                "HIST 323",
+                "HIST 402",
+                "HIST 443",
+                "HIST 444",
+                "HIST 446",
+                "ITAL 352",
+                "JS 100gp",
+                "JS 211gw",
+                "JS 214",
+                "JS 300",
+                "JS 315g",
+                "JS 330",
+                "JS 340",
+                "JS 342",
+                "JS 360m",
+                "JS 362",
+                "JS 370gp",
+                "JS 379gm",
+                "JS 381",
+                "JS 383gp",
+                "JS 389",
+                "JS 390",
+                "JS 415",
+                "JS 490x",
+                "JS 499",
+                "MSCR 475",
+                "REL 324g",
+                "SPAN 350"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "JS-BA-TRACKC",
+            "source_lines": [
+              [
+                73,
+                106
+              ]
+            ],
+            "source_quote": "Jewish History and Culture (at least one course required)",
+            "description": "At least one course from the Jewish History and Culture list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "JS 180gp",
+                    "JS 258gp",
+                    "JS 314gp",
+                    "JS 321",
+                    "JS 361gp",
+                    "JS 374",
+                    "JS 378gp",
+                    "JS 382g",
+                    "JS 467",
+                    "REL 111g",
+                    "REL 112g",
+                    "REL 114g",
+                    "REL 115g",
+                    "REL 121g",
+                    "REL 132g",
+                    "REL 311g",
+                    "REL 312",
+                    "REL 317g",
+                    "REL 359g",
+                    "REL 364",
+                    "REL 394",
+                    "REL 473"
+                  ]
+                },
+                {
+                  "courses": [
+                    "HEBR 315",
+                    "HIST 305",
+                    "HIST 323",
+                    "HIST 402",
+                    "HIST 443",
+                    "HIST 444",
+                    "HIST 446",
+                    "ITAL 352",
+                    "JS 100gp",
+                    "JS 211gw",
+                    "JS 214",
+                    "JS 300",
+                    "JS 315g",
+                    "JS 330",
+                    "JS 340",
+                    "JS 342",
+                    "JS 360m",
+                    "JS 362",
+                    "JS 370gp",
+                    "JS 379gm",
+                    "JS 381",
+                    "JS 383gp",
+                    "JS 389",
+                    "JS 390",
+                    "JS 415",
+                    "JS 490x",
+                    "JS 499",
+                    "MSCR 475",
+                    "REL 324g",
+                    "SPAN 350"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "id": "JS-BA-ELECTIVES",
+            "source_lines": [
+              [
+                108,
+                112
+              ]
+            ],
+            "source_quote": "In addition to the three core courses in",
+            "description": "Three additional courses chosen from Area B or Area C lists.",
+            "confidence": "high",
+            "note": "Restates that core courses and the B/C track selections above cannot be reused as electives (one-slot rule)."
+          }
+        ],
+        "id": "JS-BA-TRACKS",
+        "source_lines": [
+          [
+            31,
+            33
+          ],
+          [
+            112,
+            112
+          ]
+        ],
+        "source_quote": "Students must choose one course from the Judaism",
+        "description": "One course from Track B, one from Track C, and three more from either track, with a cap on lower-division courses.",
+        "confidence": "high",
+        "note": null,
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                33,
+                33
+              ],
+              [
+                112,
+                112
+              ]
+            ],
+            "source_quote": "No more than two courses in total may",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "A total of eight courses are required for",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 8
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          114,
+          114
+        ]
+      ],
+      "source_quote": "Jewish Studies majors are encouraged to take HEBR",
+      "reason": "advisory",
+      "why": "Encouragement to take language courses, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students choose among courses that focus on Judaism",
+      "reason": "advisory",
+      "why": "Descriptive framing of the major's structure, not a distinct rule."
+    }
+  ]
+}

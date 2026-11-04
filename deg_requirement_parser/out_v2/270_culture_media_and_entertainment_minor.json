@@ -1,0 +1,127 @@
+{
+  "program": "Culture, Media and Entertainment Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "COMM 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 384"
+          }
+        ],
+        "id": "CME-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "Required Core Courses (8 Units)",
+        "description": "Two required core courses: COMM 300 and COMM 384.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 306",
+            "COMM 307",
+            "COMM 310",
+            "COMM 312",
+            "COMM 326",
+            "COMM 350",
+            "COMM 355",
+            "COMM 360",
+            "COMM 363",
+            "COMM 395m",
+            "COMM 396g",
+            "COMM 426",
+            "COMM 430",
+            "COMM 432",
+            "COMM 433",
+            "COMM 440",
+            "COMM 456",
+            "COMM 457",
+            "COMM 458m",
+            "COMM 465m",
+            "COMM 498",
+            "CTCS 482",
+            "JOUR 381",
+            "JOUR 493"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "CME-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            59
+          ]
+        ],
+        "source_quote": "Choose Three Electives (12 units)",
+        "description": "Choose three elective courses (12 units) from the listed Communication, Journalism and Cinema courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            61,
+            61
+          ]
+        ],
+        "source_quote": "Total units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Admission requirements are a minimum 3.0 grade point",
+      "reason": "out_of_scope",
+      "why": "Admission GPA and standing requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The 3.0 GPA is a minimum standard and",
+      "reason": "out_of_scope",
+      "why": "GPA clarification, out of scope."
+    }
+  ]
+}

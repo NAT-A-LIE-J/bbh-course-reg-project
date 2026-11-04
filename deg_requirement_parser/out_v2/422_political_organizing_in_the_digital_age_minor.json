@@ -1,0 +1,272 @@
+{
+  "program": "Political Organizing in the Digital Age Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "POSC 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 335"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 424m"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 437"
+          }
+        ],
+        "id": "POLORG-MINOR-LIST1",
+        "source_lines": [
+          [
+            35,
+            43
+          ]
+        ],
+        "source_quote": "I. Domestic Political Organizing:",
+        "description": "Choose one course from the Domestic Political Organizing list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "IR 305w"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 324"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 371"
+          }
+        ],
+        "id": "POLORG-MINOR-LIST2",
+        "source_lines": [
+          [
+            45,
+            52
+          ]
+        ],
+        "source_quote": "II. Transnational Social Movements:",
+        "description": "Choose one course from the Transnational Social Movements list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "New Technologies in Organizing course list (not provided in catalogue text)"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "POLORG-MINOR-LIST3",
+        "source_lines": [
+          [
+            54,
+            56
+          ]
+        ],
+        "source_quote": "III. New Technologies in Organizing:",
+        "description": "Choose one course from the New Technologies in Organizing list; no courses were listed in the catalogue text.",
+        "confidence": "low",
+        "note": "The catalogue heading for this list has no courses under it."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 321"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 489"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 308gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 444w"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 345"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 371"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 427"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 428"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 456"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 372m"
+          }
+        ],
+        "id": "POLORG-MINOR-LIST4",
+        "source_lines": [
+          [
+            58,
+            74
+          ]
+        ],
+        "source_quote": "IV. The Context of Political Organizing:",
+        "description": "Choose one course from the Context of Political Organizing list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 487"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 395"
+          }
+        ],
+        "id": "POLORG-MINOR-LIST5",
+        "source_lines": [
+          [
+            76,
+            83
+          ]
+        ],
+        "source_quote": "V. Capstone Class:",
+        "description": "Choose one capstone course.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            85,
+            85
+          ]
+        ],
+        "source_quote": "Total: Five courses, 20 units",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The digital environment is changing the face",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "This minor should be of interest to",
+      "reason": "out_of_scope",
+      "why": "Advisory/marketing framing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "As with all minors, students must choose",
+      "reason": "university_level",
+      "why": "University-wide minor rule about courses outside the major, handled separately from this minor's own course list."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "This minor is intended to help students",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "The capstone class allows students to engage",
+      "reason": "out_of_scope",
+      "why": "Descriptive text about the capstone, not a requirement."
+    }
+  ]
+}

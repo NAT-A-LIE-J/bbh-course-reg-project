@@ -1,0 +1,313 @@
+{
+  "program": "Architectural Studies (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 102a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 102b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 105aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 105bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 114"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 202a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 202b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 211"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 213a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 213b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214b"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 108"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          }
+        ],
+        "id": "ARCHBS-CORE",
+        "source_lines": [
+          [
+            185,
+            189
+          ]
+        ],
+        "source_quote": "Students MUST complete the following core courses",
+        "description": "Core courses required as a prelude to upper-division professional electives.",
+        "confidence": "high",
+        "note": "ARCH 214a/214b fulfill GE-A; ARCH 213a/213b fulfill GE-F (noted at L171, L175); PHYS 125 may also be fulfilled by PHYS 135a/135b (L173), not separately encoded."
+      },
+      {
+        "family": "specific_course",
+        "course": "WRIT 340",
+        "id": "ARCHBS-WRIT340",
+        "source_lines": [
+          [
+            115,
+            125
+          ]
+        ],
+        "source_quote": "WRIT 340 Advanced Writing and Critical Engagement",
+        "description": "WRIT 340 required in Third Year, First Semester.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 215"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 313"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 525"
+          }
+        ],
+        "id": "ARCHBS-UPPER-DIVISION-COURSES",
+        "source_lines": [
+          [
+            115,
+            139
+          ]
+        ],
+        "source_quote": "ARCH 215 Design for the Thermal and Atmospheric Environment",
+        "description": "Additional required upper-division ARCH courses in the third and fourth years.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 470a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 470b"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "accepted professional elective offerings in the School of Architecture, or with consultation and approval of the program adviser"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 19
+              }
+            ]
+          }
+        ],
+        "id": "ARCHBS-PROFESSIONAL-ELECTIVES",
+        "source_lines": [
+          [
+            181,
+            183
+          ]
+        ],
+        "source_quote": "A total of 23 units of professional electives, including ARCH 470 Capstone Seminar",
+        "description": "23 units of professional electives in an area of specialization, including the ARCH 470a/470b Capstone Seminar, selected from approved offerings or adviser-approved substitutes; replaces the BArch design studios ARCH 302a/302b and ARCH 402a/402b in years three and four.",
+        "confidence": "medium",
+        "note": "Pool for the remaining 19 units is not an explicit course list; approval by program adviser cannot be checked."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ARCHBS-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            159,
+            163
+          ]
+        ],
+        "source_quote": "Electives Units: 8",
+        "description": "8 units of free electives in the Fourth Year, Second Semester.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "All applicants to the School of Architecture must complete",
+      "reason": "out_of_scope",
+      "why": "Admission process, not a degree-completion requirement."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "Advanced placement applicants are required to submit",
+      "reason": "out_of_scope",
+      "why": "Admission process."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "It is possible, in selected instances, that a transfer student",
+      "reason": "out_of_scope",
+      "why": "Transfer admission policy."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "A summer design studio allows highly qualified students",
+      "reason": "out_of_scope",
+      "why": "Transfer/admission evaluation process."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "The School of Architecture maintains student advisers",
+      "reason": "advisory",
+      "why": "Advising description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          45,
+          45
+        ]
+      ],
+      "source_quote": "Students must receive a grade of C (2.0) or above",
+      "reason": "out_of_scope",
+      "why": "Grade rule for design studio continuation."
+    },
+    {
+      "source_lines": [
+        [
+          49,
+          49
+        ]
+      ],
+      "source_quote": "Architecture students are permitted to take a maximum of 24 units",
+      "reason": "out_of_scope",
+      "why": "Pass/no pass unit cap rule."
+    },
+    {
+      "source_lines": [
+        [
+          53,
+          53
+        ]
+      ],
+      "source_quote": "While there are no specific time limits for completing",
+      "reason": "out_of_scope",
+      "why": "Time-limit/degree-progress rule."
+    },
+    {
+      "source_lines": [
+        [
+          167,
+          167
+        ]
+      ],
+      "source_quote": "Total minimum units required: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          195,
+          215
+        ]
+      ],
+      "source_quote": "All students who begin college in fall 2015 or later",
+      "reason": "university_level",
+      "why": "General Education requirements handled by STARS/university-wide GE program."
+    }
+  ]
+}

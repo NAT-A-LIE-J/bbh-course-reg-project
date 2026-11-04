@@ -1,0 +1,252 @@
+{
+  "program": "Political Science (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "POSC 100g",
+                "POSC 110g",
+                "POSC 120g",
+                "POSC 130g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "id": "POSC-BA-INTRO",
+            "source_lines": [
+              [
+                23,
+                32
+              ]
+            ],
+            "source_quote": "All students must take at least three of the following four",
+            "description": "At least three of the four 100-level core courses covering American, Comparative, Law and Public Policy, and Political Thought.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "POSC 311",
+                "POSC 315",
+                "POSC 320",
+                "POSC 321",
+                "POSC 323",
+                "POSC 325",
+                "POSC 328",
+                "POSC 334",
+                "POSC 335",
+                "POSC 364",
+                "POSC 418",
+                "POSC 419",
+                "POSC 420",
+                "POSC 421",
+                "POSC 422",
+                "POSC 423",
+                "POSC 424m",
+                "POSC 425",
+                "POSC 427",
+                "POSC 428",
+                "POSC 437",
+                "POSC 438",
+                "POSC 439",
+                "POSC 445",
+                "POSC 449",
+                "POSC 350",
+                "POSC 351",
+                "POSC 352",
+                "POSC 355",
+                "POSC 356",
+                "POSC 357",
+                "POSC 358",
+                "POSC 359",
+                "POSC 360",
+                "POSC 363",
+                "POSC 366",
+                "POSC 429",
+                "POSC 430",
+                "POSC 431",
+                "POSC 451",
+                "POSC 453",
+                "POSC 456",
+                "POSC 457",
+                "POSC 463",
+                "POSC 469",
+                "POSC 470",
+                "POSC 472",
+                "POSC 248gw",
+                "POSC 265gw",
+                "POSC 270",
+                "POSC 340",
+                "POSC 345",
+                "POSC 347",
+                "POSC 426",
+                "POSC 432",
+                "POSC 435",
+                "POSC 436",
+                "POSC 441m",
+                "POSC 442m",
+                "POSC 443",
+                "POSC 444",
+                "POSC 446",
+                "POSC 447",
+                "POSC 448a",
+                "POSC 448b",
+                "POSC 452",
+                "POSC 370",
+                "POSC 371",
+                "POSC 375",
+                "POSC 380",
+                "POSC 381",
+                "POSC 476",
+                "POSC 479",
+                "POSC 480"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    38,
+                    38
+                  ]
+                ],
+                "source_quote": "No more than one lower division (200 level) course",
+                "eligible_if": {
+                  "level_max": 299
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "id": "POSC-BA-DISTRIBUTION",
+            "source_lines": [
+              [
+                34,
+                133
+              ]
+            ],
+            "source_quote": "Students fulfill the distribution requirement by completing one course",
+            "description": "One course in three of the four political science sub-fields (American, Comparative, Law and Public Policy, Political Thought), with no more than one at the 200 level.",
+            "confidence": "medium",
+            "note": "The requirement that the three courses come from three distinct sub-fields (rather than any three from the combined list) cannot be fully expressed as a check; only the min-3-courses and max-one-200-level parts are encoded."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "prefix": [
+                "POSC"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    138,
+                    138
+                  ]
+                ],
+                "source_quote": "two of which must be upper division (300 or 400 level courses)",
+                "eligible_if": {
+                  "level_min": 300
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "POSC-BA-ELECTIVES",
+            "source_lines": [
+              [
+                134,
+                138
+              ]
+            ],
+            "source_quote": "Students must complete four additional elective courses",
+            "description": "Four additional POSC elective courses, at least two of which are upper division; POSC 395, POSC 398L, POSC 490x, and the POSC 391/392 Honors Seminar sequence are eligible as electives.",
+            "confidence": "high",
+            "note": "POSC 395, POSC 398L, POSC 490x, and POSC 391/POSC 392 are already covered by the POSC prefix pool; the text's statement that only one of these may count and that courses already used cannot be double-counted is a restatement of the one-slot rule."
+          }
+        ],
+        "id": "POSC-BA-MAJOR",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Department majors are required to take ten courses (40 units) in political science.",
+        "description": "Ten political science courses (40 units): three of four intro core courses, one course in three of four sub-fields, and four additional electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "SUBSTITUTE",
+          "approver": "department undergraduate adviser",
+          "condition": "double major in political science and another social science department"
+        },
+        "id": "POSC-BA-DOUBLE-MAJOR-SUB",
+        "source_lines": [
+          [
+            140,
+            140
+          ]
+        ],
+        "source_quote": "Students who have a double major in political science",
+        "description": "Students double-majoring with another social science department may, with adviser approval, substitute one upper-division course from the second major for one upper-division POSC course.",
+        "confidence": "medium",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          140,
+          140
+        ]
+      ],
+      "source_quote": "students should consult periodically with the political science",
+      "reason": "advisory",
+      "why": "Advisory statement recommending consultation with an adviser, not a requirement."
+    }
+  ]
+}

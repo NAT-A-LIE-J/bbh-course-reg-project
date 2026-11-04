@@ -1,0 +1,169 @@
+{
+  "program": "Russian Area Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "RUSS 120",
+                "RUSS 140",
+                "RUSS 150",
+                "RUSS 220",
+                "RUSS 250",
+                "RUSS 255",
+                "SLL 110g",
+                "SLL 199",
+                "SLL 210",
+                "SLL 299"
+              ]
+            },
+            {
+              "unresolved": "a lower-division course selected in consultation with an adviser"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "RUSS-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            21,
+            36
+          ]
+        ],
+        "source_quote": "One lower-division course from the courses detailed below",
+        "description": "One lower-division course from the listed Russian/Slavic courses, or one chosen with an adviser.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "SLL 330gp",
+        "id": "RUSS-MINOR-CORE",
+        "source_lines": [
+          [
+            42,
+            46
+          ]
+        ],
+        "source_quote": "SLL 330gp Russian Thought and Civilization",
+        "description": "The required core course, SLL 330gp.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "SLL 300",
+                "SLL 301",
+                "SLL 302g",
+                "SLL 303",
+                "SLL 310gw",
+                "SLL 321",
+                "SLL 344g",
+                "SLL 345g",
+                "SLL 346",
+                "SLL 348g",
+                "SLL 378",
+                "SLL 397p"
+              ]
+            },
+            {
+              "courses": [
+                "HIST 415",
+                "HIST 416",
+                "HIST 417",
+                "HIST 424",
+                "IR 345",
+                "IR 346",
+                "IR 439",
+                "MDA 333",
+                "HIST 323"
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                48,
+                60
+              ]
+            ],
+            "source_quote": "Students may take 4 units outside the Slavic department",
+            "eligible_if": {
+              "courses": [
+                "HIST 415",
+                "HIST 416",
+                "HIST 417",
+                "HIST 424",
+                "IR 345",
+                "IR 346",
+                "IR 439",
+                "MDA 333",
+                "HIST 323"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "RUSS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            62,
+            77
+          ]
+        ],
+        "source_quote": "And a minimum of two electives, to be chosen from",
+        "description": "At least two upper-division electives in Russian/Eastern European literature, art, or culture, with at most 4 units from courses outside the Slavic department.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            79,
+            79
+          ]
+        ],
+        "source_quote": "Minimum units required: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

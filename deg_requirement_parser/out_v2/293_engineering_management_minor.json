@@ -1,0 +1,141 @@
+{
+  "program": "Engineering Management Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BME 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 310g"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 312g"
+          },
+          {
+            "family": "specific_course",
+            "course": "EE 364"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          }
+        ],
+        "id": "EM-MINOR-PREREQ",
+        "source_lines": [
+          [
+            31,
+            39
+          ]
+        ],
+        "source_quote": "Prerequisite (complete any one of the following)",
+        "description": "Complete one statistics/probability prerequisite course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ISE 315L"
+          },
+          {
+            "family": "specific_course",
+            "course": "ISE 440"
+          }
+        ],
+        "id": "EM-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            41,
+            46
+          ]
+        ],
+        "source_quote": "Required Courses",
+        "description": "Complete ISE 315L and ISE 440.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "DSO 459",
+            "ISE 330",
+            "ISE 344",
+            "ISE 350",
+            "ISE 370L",
+            "ISE 410",
+            "ISE 460"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "EM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            48,
+            58
+          ]
+        ],
+        "source_quote": "Electives (select two from the following)",
+        "description": "Select two elective courses from the listed set.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            60,
+            60
+          ]
+        ],
+        "source_quote": "Minimum Units: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Applicants must be upper division students in good",
+      "reason": "out_of_scope",
+      "why": "Admission standing and form-filing procedural requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "The minor is not open to industrial and",
+      "reason": "no_fit",
+      "why": "Exclusion based on student's other major, not a course requirement this taxonomy handles via manual_review PROGRAM_RULE candidate but no course pool stated."
+    }
+  ]
+}

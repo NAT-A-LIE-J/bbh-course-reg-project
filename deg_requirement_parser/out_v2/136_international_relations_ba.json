@@ -1,0 +1,433 @@
+{
+  "program": "International Relations (Global Business) (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "EMPHASIS_ENTRY",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "GPA of 3.0 or above",
+            "B average in IR 210",
+            "a second 300-level or above IR course"
+          ]
+        },
+        "id": "IRGB-BA-ADMISSION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students who have earned a GPA of 3.0",
+        "description": "Students must earn a 3.0 GPA and B average in IR 210 plus a second 300+ IR course to apply.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "any business administration degree",
+          "effect": "cannot be combined"
+        },
+        "id": "IRGB-BA-COMBINATION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The degree cannot also be combined as",
+        "description": "This degree cannot be combined as an additional major in any business administration degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ECON 203g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 351x"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "ECON 205g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 352x"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "IRGB-BA-PREREQS",
+        "source_lines": [
+          [
+            25,
+            39
+          ]
+        ],
+        "source_quote": "In addition to the IR requirements, students need",
+        "description": "Prerequisite courses: one micro course, one macro course, and one calculus course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "a regional course"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "IR"
+                  ]
+                },
+                {
+                  "level_min": 400
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "IR 324",
+                "IR 325",
+                "IR 326",
+                "IR 328",
+                "IR 329",
+                "IR 330",
+                "IR 331",
+                "IR 332",
+                "IR 420"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "IRGB-BA-IPE",
+            "source_lines": [
+              [
+                47,
+                47
+              ],
+              [
+                50,
+                62
+              ]
+            ],
+            "source_quote": "an international political economy course",
+            "description": "One international political economy course from the listed IR courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "IR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                40,
+                40
+              ]
+            ],
+            "source_quote": "The international relations course work consists of 28",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 28
+              }
+            ]
+          }
+        ],
+        "id": "IRGB-BA-IRCOURSEWORK",
+        "source_lines": [
+          [
+            40,
+            62
+          ]
+        ],
+        "source_quote": "The international relations course work consists of 28",
+        "description": "28 units of IR coursework: IR 210gw, a regional course, a 400-level IR course, an international political economy course, and three upper-division IR electives.",
+        "confidence": "medium",
+        "note": "The 'regional course' pool has no checkable criteria; left unresolved."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 410x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 317"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "choose": 1,
+                    "from": [
+                      {
+                        "family": "specific_course",
+                        "course": "BUAD 306"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "BUAD 308"
+                      }
+                    ]
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "FBE 402",
+                        "FBE 403",
+                        "FBE 421",
+                        "FBE 423",
+                        "FBE 429",
+                        "FBE 432",
+                        "FBE 436",
+                        "FBE 437",
+                        "FBE 440",
+                        "FBE 441",
+                        "FBE 443",
+                        "FBE 458",
+                        "FBE 459",
+                        "FBE 460",
+                        "FBE 462"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "id": "IRGB-BA-TRACK-FINANCE",
+                "source_lines": [
+                  [
+                    77,
+                    99
+                  ]
+                ],
+                "source_quote": "International Finance:",
+                "description": "International Finance concentration: BUAD 306 or 308, plus three FBE electives.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 307"
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MKT 402",
+                        "MKT 405",
+                        "MKT 410",
+                        "MKT 425",
+                        "MKT 445",
+                        "MKT 450",
+                        "MKT 465"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "id": "IRGB-BA-TRACK-MARKETING",
+                "source_lines": [
+                  [
+                    101,
+                    113
+                  ]
+                ],
+                "source_quote": "Global Marketing:",
+                "description": "Global Marketing concentration: BUAD 307 plus three MKT electives.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "BUAD 304"
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "MOR 421",
+                        "MOR 451",
+                        "MOR 462",
+                        "MOR 466",
+                        "MOR 467",
+                        "MOR 469",
+                        "MOR 470",
+                        "MOR 471",
+                        "MOR 472",
+                        "MOR 473",
+                        "MOR 492"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "id": "IRGB-BA-TRACK-MANAGEMENT",
+                "source_lines": [
+                  [
+                    115,
+                    131
+                  ]
+                ],
+                "source_quote": "Global Management:",
+                "description": "Global Management concentration: BUAD 304 plus three MOR electives.",
+                "confidence": "high",
+                "note": null
+              }
+            ]
+          }
+        ],
+        "id": "IRGB-BA-MARSHALL",
+        "source_lines": [
+          [
+            64,
+            76
+          ]
+        ],
+        "source_quote": "Course work at the USC Marshall School",
+        "description": "Marshall coursework: ACCT 410x, a statistics course, and 16 units in one of three concentration areas.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The degree is administered by the School",
+      "reason": "out_of_scope",
+      "why": "Administrative notice, not a requirement."
+    }
+  ]
+}

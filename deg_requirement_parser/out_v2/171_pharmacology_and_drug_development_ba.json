@@ -1,0 +1,418 @@
+{
+  "program": "Pharmacology and Drug Development (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 108g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          }
+        ],
+        "id": "PDD-BA-CALCULUS",
+        "source_lines": [
+          [
+            39,
+            47
+          ]
+        ],
+        "source_quote": "Select one course.",
+        "description": "One calculus course from MATH 108g, MATH 118gx, or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BME 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 305g"
+          }
+        ],
+        "id": "PDD-BA-STATISTICS",
+        "source_lines": [
+          [
+            49,
+            60
+          ]
+        ],
+        "source_quote": "Select one course.",
+        "description": "One statistics course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 105aLg",
+            "CHEM 105bL",
+            "CHEM 115aLg",
+            "CHEM 115bL"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PDD-BA-CHEMISTRY",
+        "source_lines": [
+          [
+            62,
+            71
+          ]
+        ],
+        "source_quote": "Select two courses from either the general chemistry",
+        "description": "Two chemistry courses from either the general or advanced general chemistry series.",
+        "confidence": "high",
+        "note": "Must be from one series (general or advanced), but the taxonomy's count leaf cannot express this pairing constraint; left as a simple pool."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 120Lg",
+            "BISC 220Lg",
+            "BISC 121Lg",
+            "BISC 221Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PDD-BA-BIOLOGY",
+        "source_lines": [
+          [
+            73,
+            82
+          ]
+        ],
+        "source_quote": "Select two courses from either the general biology",
+        "description": "Two biology courses from either the general or advanced general biology series.",
+        "confidence": "high",
+        "note": "Must be from one series (general or advanced), but the taxonomy's count leaf cannot express this pairing constraint; left as a simple pool."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RXRS 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 402"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "RXRS 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "RXRS 413w"
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "RXRS 403",
+                "RXRS 407",
+                "RXRS 408",
+                "RXRS 411",
+                "RXRS 412",
+                "RXRS 414",
+                "RXRS 416",
+                "RXRS 421",
+                "RXRS 424"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "RXRS 405",
+                "RXRS 406",
+                "RXRS 410",
+                "RXRS 417",
+                "RXRS 418",
+                "RXRS 422",
+                "RXRS 430",
+                "RXRS 431",
+                "RXRS 490x",
+                "BPSI 405",
+                "BPSI 412",
+                "BPSI 413",
+                "BPSI 414",
+                "BPSI 415"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                88,
+                88
+              ]
+            ],
+            "source_quote": "Students must complete a minimum of 36 units",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 36
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                88,
+                88
+              ]
+            ],
+            "source_quote": "A maximum of 4 units can be met by taking Directed Research",
+            "eligible_if": {
+              "courses": [
+                "RXRS 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                29,
+                29
+              ]
+            ],
+            "source_quote": "A minimum number of 32 units of upper-division",
+            "eligible_if": {
+              "not": {
+                "courses": [
+                  "RXRS 200"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 32
+              }
+            ]
+          }
+        ],
+        "id": "PDD-BA-RXRS-BPSI",
+        "source_lines": [
+          [
+            84,
+            150
+          ]
+        ],
+        "source_quote": "Students must complete a minimum of 36 units",
+        "description": "RXRS/BPSI coursework totaling at least 36 units, including RXRS 200, RXRS 402, one of RXRS 302/413w, four Part 4 courses, and at least two Part 5 courses totaling 8 units, with at least 32 units upper-division and a 4-unit cap on RXRS 490x.",
+        "confidence": "medium",
+        "note": "The 32-unit upper-division threshold is approximated by excluding the single lower-division RXRS 200 course; the catalogue does not give an exact separate accounting."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 300L",
+            "BISC 307L",
+            "BISC 320Lg",
+            "BISC 330L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "PDD-BA-BISC",
+        "source_lines": [
+          [
+            152,
+            161
+          ]
+        ],
+        "source_quote": "Select two courses.",
+        "description": "Two upper-division Biological Sciences (BISC) courses from the listed options, unique to the major.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Pharmacology and Drug",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students complete 128 units, including at least 70",
+      "reason": "university_level",
+      "why": "Total unit count and school-of-origin unit split, a university/college-wide accounting rule."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Pharmacology and Drug",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Pharmacology and Drug",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Pharmacology and Drug",
+      "reason": "out_of_scope",
+      "why": "Introductory summary sentence restating requirements covered elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "General education, foreign language and writing requirements",
+      "reason": "university_level",
+      "why": "University-wide GE, language, and writing requirements, sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          32,
+          32
+        ]
+      ],
+      "source_quote": "Foundational courses designed to prepare students",
+      "reason": "out_of_scope",
+      "why": "General statement covered by the specific calculus/statistics/chemistry/biology nodes."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "The Bachelor of Arts in Pharmacology and Drug",
+      "reason": "out_of_scope",
+      "why": "Administrative statement about conferring school, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          163,
+          170
+        ]
+      ],
+      "source_quote": "The undergraduate honors in Pharmacology and Drug",
+      "reason": "out_of_scope",
+      "why": "Optional honors program, not a degree requirement."
+    }
+  ]
+}

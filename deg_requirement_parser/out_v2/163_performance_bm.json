@@ -1,0 +1,507 @@
+{
+  "program": "Performance (Classical Guitar) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "faculty selection committee screening"
+        },
+        "id": "GUITARBM-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission requires screening by faculty selection committees.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "GUITARBM-CORE-ACADEMIC",
+        "source_lines": [
+          [
+            82,
+            98
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "Thirteen required core Thornton academic courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPGU 153"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPGU 253"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPGU 353"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPGU 453"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPEM 301",
+                    "MPGU 301",
+                    "MPPM 301",
+                    "MUJZ 301"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "GUITARBM-INDIV-INSTRUCTION",
+            "source_lines": [
+              [
+                104,
+                120
+              ]
+            ],
+            "source_quote": "Individual Instruction (20 units)",
+            "description": "4 units each of MPGU 153/253/353/453 plus 4 units from secondary style electives.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MUEN 326"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "MUEN"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ],
+                  "not": {
+                    "courses": [
+                      "MUEN 326"
+                    ]
+                  }
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  },
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 2
+                  }
+                ],
+                "note": "Excludes MUEN 326, which already fills its own slot above."
+              }
+            ],
+            "id": "GUITARBM-ENSEMBLES",
+            "source_lines": [
+              [
+                122,
+                128
+              ]
+            ],
+            "source_quote": "Ensembles (10 units)",
+            "description": "8 units of MUEN 326 Guitar Ensemble plus two 1-unit 300-level MUEN ensemble electives.",
+            "confidence": "medium",
+            "note": "eligible_if combining 'not' with 'all' at top level is a simplification; intent is to exclude MUEN 326."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPGU 417"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPGU 426"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPGU 427"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPGU 459"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 250a",
+                    "MPPM 240",
+                    "MPPM 250",
+                    "MUJZ 141a"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 2
+                  }
+                ]
+              }
+            ],
+            "id": "GUITARBM-PROGRAM-INTENSIVE",
+            "source_lines": [
+              [
+                130,
+                142
+              ]
+            ],
+            "source_quote": "Program Intensive (10 units)",
+            "description": "Four named program intensive courses plus two units from a keyboard/skills list.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "GUITARBM-PROGRAM-SPECIFIC",
+        "source_lines": [
+          [
+            100,
+            142
+          ]
+        ],
+        "source_quote": "Program Specific Courses (40 units)",
+        "description": "40 units across Individual Instruction, Ensembles, and Program Intensive.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "MPGU 145",
+                    "MPGU 150",
+                    "MPPM 120",
+                    "MPPM 240",
+                    "MPPM 250",
+                    "MPPM 370",
+                    "MTEC 245",
+                    "MTEC 246",
+                    "MTEC 248",
+                    "MTEC 249",
+                    "MTEC 277x",
+                    "MUIN 272x",
+                    "MUIN 425",
+                    "MUJZ 141a",
+                    "MUJZ 150",
+                    "MUJZ 218a",
+                    "MUJZ 450",
+                    "MUSC 255"
+                  ]
+                },
+                {
+                  "unresolved": "other Contemporary Division courses in consultation with chair and Contemporary Division"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "GUITARBM-CONTEMP-ELECTIVES",
+            "source_lines": [
+              [
+                148,
+                174
+              ]
+            ],
+            "source_quote": "Select four units from the Contemporary Division",
+            "description": "Four units of Contemporary Division electives from the listed courses or others approved by the chair.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "GUITARBM-GENERAL-ELECTIVES",
+            "source_lines": [
+              [
+                175,
+                177
+              ]
+            ],
+            "source_quote": "General Electives (16 units)",
+            "description": "16 units of unrestricted general electives.",
+            "confidence": "medium",
+            "note": "No restricting course list given; treated as free electives."
+          }
+        ],
+        "id": "GUITARBM-ELECTIVES",
+        "source_lines": [
+          [
+            144,
+            177
+          ]
+        ],
+        "source_quote": "Electives (20 units)",
+        "description": "20 units of electives: 4 Contemporary Division units plus 16 general elective units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          },
+          {
+            "family": "manual_review",
+            "kind": "PROCEDURAL",
+            "details": {
+              "procedure": "Junior and Senior Recitals completed under approved faculty supervision"
+            },
+            "id": null
+          }
+        ],
+        "id": "GUITARBM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            41
+          ],
+          [
+            179,
+            186
+          ]
+        ],
+        "source_quote": "During the junior and senior years of the program",
+        "description": "Young Artist Project (MUSC 480, 481) plus a Junior and Senior Recital under faculty supervision.",
+        "confidence": "medium",
+        "note": "Recital requirements are determined by major department faculty and cannot be checked from a course list."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          47,
+          81
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "General Education categories and writing requirement are university-wide rules reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "Describes the university-wide GE program, not a program-specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          188,
+          188
+        ]
+      ],
+      "source_quote": "Total Required For Degree: 132",
+      "reason": "university_level",
+      "why": "Total degree unit count is a university-wide computed figure, not an independently encodable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          192,
+          192
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "advisory",
+      "why": "Advisory planning note about overlapping GE and major requirements."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Specific entrance requirements are reviewed on an",
+      "reason": "advisory",
+      "why": "Refers students to an external website for current entrance requirements, not a stated rule."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "In cases in which a performance venue is",
+      "reason": "out_of_scope",
+      "why": "Procedural venue-reservation detail, not a degree requirement."
+    }
+  ]
+}

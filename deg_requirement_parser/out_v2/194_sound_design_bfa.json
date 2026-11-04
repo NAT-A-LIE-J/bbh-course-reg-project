@@ -1,0 +1,361 @@
+{
+  "program": "Sound Design (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MTEC 175"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 176"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 275"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "MTEC 446a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 232"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 236"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 241"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 332"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 333"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 336"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 346"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 397"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 409"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 431"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 435"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 436"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 441"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 497"
+          }
+        ],
+        "id": "SOUNDDESIGN-BFA-REQUIRED-COURSES",
+        "source_lines": [
+          [
+            33,
+            62
+          ]
+        ],
+        "source_quote": "MTEC 175 Fundamentals of Audio Recording Units: 2",
+        "description": "The required 73-unit list of MTEC and THTR courses for the Sound Design BFA, including 5 units of THTR 397 Theatre Practicum.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "THTR 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 331"
+          }
+        ],
+        "id": "SOUNDDESIGN-BFA-DESIGN-CHOICE",
+        "source_lines": [
+          [
+            64,
+            69
+          ]
+        ],
+        "source_quote": "One course (4 units) from:",
+        "description": "One 4-unit design course from THTR 330 or THTR 331.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 401",
+                    "THTR 403",
+                    "THTR 404"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    75,
+                    75
+                  ]
+                ],
+                "source_quote": "take one course from List A and one",
+                "eligible_if": {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "SOUNDDESIGN-BFA-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            71,
+            105
+          ]
+        ],
+        "source_quote": "Complete the two required courses below.",
+        "description": "Critical Studies core: THTR 125 and THTR 225g, plus one course from List A and one course from List A or B.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A total of 128 units of course work is",
+      "reason": "university_level",
+      "why": "Total unit count for the degree is a university-wide figure."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "including a 16-unit Critical Studies core in",
+      "reason": "university_level",
+      "why": "Restates the unit total already encoded structurally."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All BFA students are required to earn a",
+      "reason": "out_of_scope",
+      "why": "GPA requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "BFA students who fail to earn a GPA",
+      "reason": "out_of_scope",
+      "why": "Probation rule based on GPA."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students who remain on probation for a consecutive",
+      "reason": "out_of_scope",
+      "why": "Disqualification rule based on GPA/probation."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "A student disqualified from continued study in",
+      "reason": "out_of_scope",
+      "why": "Degree transfer option upon disqualification, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          29
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, handled via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Note that courses within the program will also",
+      "reason": "advisory",
+      "why": "Advises working with an adviser; not itself a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          106,
+          106
+        ]
+      ],
+      "source_quote": "Total units: 128",
+      "reason": "university_level",
+      "why": "Restates the university-wide 128-unit total."
+    },
+    {
+      "source_lines": [
+        [
+          110,
+          110
+        ]
+      ],
+      "source_quote": "In addition to GE requirements, total minimum units",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement for the degree."
+    }
+  ]
+}

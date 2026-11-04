@@ -1,0 +1,199 @@
+{
+  "program": "Chinese for the Professions Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "completion of EALC 206 at USC or its equivalent"
+          ]
+        },
+        "id": "CFP-MINOR-PREREQ",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The language prerequisite for admission to the program is",
+        "description": "Admission to the minor requires completion of EALC 206 or its equivalent.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "EALC 366",
+        "id": "CFP-MINOR-INTERNSHIP",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            29,
+            33
+          ]
+        ],
+        "source_quote": "and 4 units of EALC 366 are required",
+        "description": "EALC 366 Chinese Professional Internship is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "EALC 404",
+                "EALC 406",
+                "EALC 407",
+                "EALC 409"
+              ]
+            },
+            {
+              "unresolved": "the equivalent of EALC 404, 406, or 407"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "The four upper-division courses must include at least two",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "EALC 404",
+                    "EALC 406",
+                    "EALC 407"
+                  ]
+                },
+                {
+                  "unresolved": "the equivalent of EALC 404, 406, or 407"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "CFP-MINOR-ADVANCED",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            35,
+            42
+          ]
+        ],
+        "source_quote": "Choose two of the following (8 units)",
+        "description": "Choose two advanced EALC courses from EALC 404, 406, 407, or 409, with at least two of the four upper-division courses overall coming from 404/406/407 or equivalent.",
+        "confidence": "high",
+        "note": "Course selections must be approved by the faculty adviser for the minor; not encoded as it cannot be checked."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "EALC 304",
+            "EALC 306",
+            "EALC 334",
+            "EALC 336",
+            "EALC 350gp",
+            "EALC 355",
+            "EALC 374"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CFP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            56
+          ]
+        ],
+        "source_quote": "Choose two of the following:",
+        "description": "Choose two elective EALC courses from the listed options.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Four EALC upper-division courses (16 units) and 4",
+        "eligible_if": {
+          "prefix": [
+            "EALC"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Department of East Asian Languages and Cultures offers a minor",
+      "reason": "advisory",
+      "why": "Programme description and marketing text, not a requirement."
+    }
+  ]
+}

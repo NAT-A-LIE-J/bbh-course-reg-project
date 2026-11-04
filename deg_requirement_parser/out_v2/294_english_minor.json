@@ -1,0 +1,128 @@
+{
+  "program": "English Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ENGL 240",
+        "id": "ENGL-MINOR-INTRO",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "All English minors must take an introductory course",
+        "description": "All minors must take the introductory course ENGL 240.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "ENGL 240",
+          "after": "upper-division literature courses or creative writing workshops"
+        },
+        "id": "ENGL-MINOR-SEQUENCING",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students should take ENGL 240 before enrolling in upper-division literature courses",
+        "description": "ENGL 240 should be taken before upper-division literature courses or creative writing workshops.",
+        "confidence": "medium",
+        "note": "Phrased as advisory ('should'), but kept as sequencing since it concerns course order."
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "one course in early literatures"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "one course in later literatures"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "one course in interpretive lenses (categories include race, gender, and/or sexuality, and genre and media studies)"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ENGL-MINOR-CATEGORIES",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Minors must take one course in early literatures",
+        "description": "One course each in early literatures, later literatures, interpretive lenses, plus one elective.",
+        "confidence": "low",
+        "note": "No course lists are given for the category courses; pools are unresolved. The elective is treated as any course since no restriction is stated."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "complete a minimum of 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

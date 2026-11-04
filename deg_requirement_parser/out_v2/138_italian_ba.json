@@ -1,0 +1,225 @@
+{
+  "program": "Italian (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ITAL 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "ITAL 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "ITAL 220"
+          },
+          {
+            "family": "specific_course",
+            "course": "ITAL 240"
+          }
+        ],
+        "id": "ITAL-BA-LOWER-DIVISION",
+        "source_lines": [
+          [
+            23,
+            32
+          ]
+        ],
+        "source_quote": "Required Courses — Lower Division",
+        "description": "Four lower-division Italian language courses: ITAL 120, 150, 220, 240.",
+        "confidence": "high",
+        "note": "Some or all of these courses may be waived by examination (L027); not encodable as a course requirement."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ITAL 300g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ITAL 350g"
+          }
+        ],
+        "id": "ITAL-BA-CORE",
+        "source_lines": [
+          [
+            40,
+            48
+          ]
+        ],
+        "source_quote": "Students may choose either ITAL 300g or",
+        "description": "One core course: ITAL 300g or ITAL 350g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ITAL 300g",
+            "ITAL 340g",
+            "ITAL 345",
+            "ITAL 347",
+            "ITAL 350g",
+            "ITAL 352",
+            "ITAL 360g",
+            "ITAL 374gm",
+            "ITAL 380",
+            "ITAL 381",
+            "ITAL 382g",
+            "ITAL 392",
+            "ITAL 393",
+            "ITAL 401",
+            "ITAL 402",
+            "ITAL 403",
+            "ITAL 440",
+            "ITAL 461",
+            "ITAL 490x",
+            "ITAL 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "Of the additional five courses, at least two must be at the 400 level.",
+            "eligible_if": {
+              "level_min": 400
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                21,
+                21
+              ]
+            ],
+            "source_quote": "no more than three of which may be in English",
+            "eligible_if": {
+              "courses": [
+                "ITAL 300g",
+                "ITAL 350g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "ITAL-BA-UPPER-ELECTIVES",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            50,
+            73
+          ]
+        ],
+        "source_quote": "Five upper-division Italian courses to be chosen",
+        "description": "Five upper-division Italian courses selected in consultation with the adviser, from the listed offerings, with at least two at the 400 level and no more than three conducted in English.",
+        "confidence": "medium",
+        "note": "'In consultation with the department adviser' cannot be checked beyond the provided list."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            38,
+            38
+          ]
+        ],
+        "source_quote": "No more than three courses conducted in English may be counted toward the major.",
+        "eligible_if": {
+          "courses": [
+            "ITAL 300g",
+            "ITAL 350g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 3
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Some or all of these courses may be waived",
+      "reason": "out_of_scope",
+      "why": "Waiver-by-examination policy, not a course selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "Students may take the Core course as early",
+      "reason": "advisory",
+      "why": "Encourages timing of enrollment but does not require it."
+    },
+    {
+      "source_lines": [
+        [
+          79,
+          79
+        ]
+      ],
+      "source_quote": "The BA in Italian with Honors is available",
+      "reason": "out_of_scope",
+      "why": "Honors program GPA eligibility rule, not a core degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          79,
+          79
+        ]
+      ],
+      "source_quote": "To complete the Honors Program the student must",
+      "reason": "out_of_scope",
+      "why": "Optional honors thesis requirement, separate from the base degree requirements."
+    }
+  ]
+}

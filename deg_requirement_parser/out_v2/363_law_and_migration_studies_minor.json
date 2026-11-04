@@ -1,0 +1,106 @@
+{
+  "program": "Law and Migration Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LAW 212"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "LAW 101w",
+                "LAW 150w",
+                "LAW 200w",
+                "LAW 300",
+                "LAW 310w",
+                "LAW 352"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "LMS-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            44
+          ]
+        ],
+        "source_quote": "Students must enroll in this course:",
+        "description": "LAW 212 required plus 8 units chosen from a list of six LAW courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 101gmw",
+            "AMST 140gw",
+            "AMST 320",
+            "COLT 303",
+            "HIST 100mg",
+            "LAW 222",
+            "LAW 223",
+            "LAW 490x",
+            "LAW 492",
+            "LAW 498",
+            "PPD 240g",
+            "PPD 485m",
+            "SOCI 155gm",
+            "SOCI 355m",
+            "SOCI 460"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LMS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            46,
+            67
+          ]
+        ],
+        "source_quote": "Students must enroll in 8 units of elective courses",
+        "description": "8 units of elective courses chosen from the listed set.",
+        "confidence": "high",
+        "note": "Sociology courses (SOCI 355m, SOCI 460) taken as part of this minor will have prerequisites waived by the Sociology Department; this is an administrative waiver, not a checkable requirement."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The Law and Migration Studies minor totals 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

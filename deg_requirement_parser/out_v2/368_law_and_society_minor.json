@@ -1,0 +1,257 @@
+{
+  "program": "Law and Society Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "POSC 130g"
+          }
+        ],
+        "id": "LAWSOC-CORE",
+        "source_lines": [
+          [
+            31,
+            35
+          ]
+        ],
+        "source_quote": "POSC 130g Law, Politics and Public Policy",
+        "description": "Core course POSC 130g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 340",
+            "POSC 426",
+            "POSC 444"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LAWSOC-CAT2-CONSTLAW",
+        "source_lines": [
+          [
+            37,
+            43
+          ]
+        ],
+        "source_quote": "POSC 340 Constitutional Law Units: 4",
+        "description": "One course from the Constitutional Law category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 345",
+            "POSC 448a"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LAWSOC-CAT3-INTLLAW",
+        "source_lines": [
+          [
+            45,
+            50
+          ]
+        ],
+        "source_quote": "POSC 345 International Law Units: 4",
+        "description": "One course from the International Law category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "POSC 347",
+            "POSC 395",
+            "POSC 432",
+            "POSC 435",
+            "POSC 436",
+            "POSC 441m",
+            "POSC 442m",
+            "POSC 443",
+            "POSC 448b",
+            "POSC 452"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LAWSOC-CAT4-POLICY",
+        "source_lines": [
+          [
+            52,
+            65
+          ]
+        ],
+        "source_quote": "POSC 347 Environmental Law Units: 4",
+        "description": "One course from the Policy Analysis category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 340",
+            "PHIL 430",
+            "PHIL 440"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LAWSOC-CAT5-HUMANISTIC",
+        "source_lines": [
+          [
+            67,
+            73
+          ]
+        ],
+        "source_quote": "PHIL 340 Ethics Units: 4",
+        "description": "One elective course from the Humanistic/Historical category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 345",
+            "COMM 421",
+            "ECON 434",
+            "LAW 200w",
+            "LAW 320p",
+            "LAW 402",
+            "PHIL 431",
+            "PHIL 437"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LAWSOC-CAT6-SOCIETY",
+        "source_lines": [
+          [
+            75,
+            86
+          ]
+        ],
+        "source_quote": "ANTH 345 Law, Power and Culture Units: 4",
+        "description": "Two elective courses from the Society category.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "course_reuse",
+        "kind": "UNIQUENESS_FLOOR",
+        "details": {
+          "min_courses": 4,
+          "applies_to": "the minor"
+        },
+        "id": "LAWSOC-UNIQUE",
+        "source_lines": [
+          [
+            92,
+            92
+          ]
+        ],
+        "source_quote": "At least four classes must be unique to",
+        "description": "At least four classes must be unique to the minor.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "seven courses (28 units), including at least four",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 7
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "including at least four upper-division courses (16 units)",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This interdisciplinary program focuses on the effect",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

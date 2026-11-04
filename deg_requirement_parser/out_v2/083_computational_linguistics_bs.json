@@ -1,0 +1,295 @@
+{
+  "program": "Computational Linguistics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "LING 210g",
+        "id": "CL-LOWER-LING-A",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Two in Linguistics (8 units)",
+        "description": "LING 210g is a required lower-division linguistics course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "LING 285Lg",
+        "id": "CL-LOWER-LING-B",
+        "source_lines": [
+          [
+            29,
+            34
+          ]
+        ],
+        "source_quote": "Two in Linguistics (8 units)",
+        "description": "LING 285Lg is a required lower-division linguistics course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 103L",
+            "CSCI 104L",
+            "CSCI 113x",
+            "CSCI 114x",
+            "CSCI 170",
+            "CSCI 201",
+            "CSCI 270"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 14
+          }
+        ],
+        "id": "CL-LOWER-CS",
+        "source_lines": [
+          [
+            36,
+            46
+          ]
+        ],
+        "source_quote": "Four to five courses in Computer Science (14-18 units)",
+        "description": "Four to five lower-division computer science courses from the listed CSCI options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LING 385Lg"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 301"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 415"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 450"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 405"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 406"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 408"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 410"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 303"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 486"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 487"
+              }
+            ]
+          }
+        ],
+        "id": "CL-UPPER-LING",
+        "source_lines": [
+          [
+            52,
+            95
+          ]
+        ],
+        "source_quote": "Five courses in Linguistics (20 units)",
+        "description": "LING 385Lg plus one course chosen from each of four thematic groups (phonetics, psycholinguistics, syntax/semantics, advanced computational linguistics).",
+        "confidence": "high",
+        "note": "Asterisks after LING 385Lg and LING 303 appear in the catalogue text with no accompanying footnote explaining them; not encoded as an amendment."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 360"
+          }
+        ],
+        "id": "CL-UPPER-CS",
+        "source_lines": [
+          [
+            97,
+            108
+          ]
+        ],
+        "source_quote": "One course in Computer Science (4 units)",
+        "description": "One upper-division computer science course, CSCI 310 or CSCI 360.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 497"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 490"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "LING"
+                      ]
+                    },
+                    {
+                      "level_min": 400
+                    },
+                    {
+                      "unresolved": "a Linguistics 400-level course research paper"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "poster presented at the USC UG symposium or at a conference"
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "summer internship related to the degree"
+            }
+          }
+        ],
+        "id": "CL-CAPSTONE",
+        "source_lines": [
+          [
+            110,
+            120
+          ]
+        ],
+        "source_quote": "The Computational Linguistics major requires a capstone experience",
+        "description": "A capstone fulfilled by a research paper (Honors Thesis, Directed Research, or 400-level course paper), a symposium/conference poster, or a related summer internship.",
+        "confidence": "medium",
+        "note": "Options (B) and (C) have no checkable course pool, encoded as manual_review."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "a total of 46-50 units.",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 46
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          122,
+          126
+        ]
+      ],
+      "source_quote": "The Computational Linguistics major with honors requires",
+      "reason": "out_of_scope",
+      "why": "Optional honors variant requiring a GPA threshold and grade requirement; GPA/grade rules are out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          126,
+          126
+        ]
+      ],
+      "source_quote": "Intent to complete the major with honors",
+      "reason": "advisory",
+      "why": "Procedural advice about registering intent with an adviser, not a degree requirement."
+    }
+  ]
+}

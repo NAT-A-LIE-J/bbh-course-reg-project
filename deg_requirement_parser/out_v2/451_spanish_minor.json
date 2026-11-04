@@ -1,0 +1,104 @@
+{
+  "program": "Spanish Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "SPAN 260",
+        "id": "SPAN-MINOR-LOWER",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "SPAN 260 Advanced Spanish: Arts and Sciences",
+        "description": "Requires SPAN 260 (4 units lower-division requirement).",
+        "confidence": "high",
+        "note": "Waiver possible per Note section below; see SPAN-MINOR-WAIVER."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 300
+            },
+            {
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                36,
+                36
+              ]
+            ],
+            "source_quote": "Only one section of SPAN 316x may be",
+            "eligible_if": {
+              "courses": [
+                "SPAN 316x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "SPAN-MINOR-UPPER",
+        "source_lines": [
+          [
+            31,
+            36
+          ]
+        ],
+        "source_quote": "Any five courses at the 300 or 400",
+        "description": "Five courses at the 300 or 400 level, with at most one section of SPAN 316x counted.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "WAIVE_COURSE",
+          "approver": "department",
+          "course": "SPAN 260",
+          "basis": [
+            "AP score of 5",
+            "IB HL score of 6 or 7",
+            "SAT subject test score of 800",
+            "demonstrated advanced proficiency"
+          ]
+        },
+        "id": "SPAN-MINOR-WAIVER",
+        "source_lines": [
+          [
+            38,
+            42
+          ]
+        ],
+        "source_quote": "Minors may request a waiver of SPAN",
+        "description": "SPAN 260 may be waived with departmental approval given qualifying exam scores or proficiency.",
+        "confidence": "medium",
+        "note": "Modifies the SPAN 260 requirement above; waiver requires departmental approval in every case."
+      }
+    ]
+  },
+  "unclassified": []
+}

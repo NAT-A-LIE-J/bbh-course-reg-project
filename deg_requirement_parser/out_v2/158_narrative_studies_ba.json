@@ -1,0 +1,568 @@
+{
+  "program": "Narrative Studies (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ENGL 270g",
+        "id": "NARR-BA-INTRO",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "an introductory course ENGL 270g",
+        "description": "Introductory course ENGL 270g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ANTH 203g",
+                "COLT 373",
+                "COLT 365",
+                "CTCS 190g",
+                "CTCS 191",
+                "CTIN 190",
+                "ENGL 371g",
+                "ENGL 372",
+                "ENGL 392",
+                "THTR 125",
+                "THTR 195g",
+                "THTR 403"
+              ]
+            },
+            {
+              "unresolved": "other appropriate course work as determined by the department"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NARR-BA-MEDIA",
+        "source_lines": [
+          [
+            37,
+            53
+          ]
+        ],
+        "source_quote": "Narrative Media (choose one course):",
+        "description": "Choose one course from the Narrative Media list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "CTWR 409",
+                "CTWR 412",
+                "CTWR 415a",
+                "ENGL 300",
+                "ENGL 302",
+                "ENGL 303",
+                "ENGL 305",
+                "THTR 365",
+                "THTR 366"
+              ]
+            },
+            {
+              "unresolved": "other appropriate course work as determined by the department"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "courses",
+            "op": "max",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "NARR-BA-CREATING",
+        "source_lines": [
+          [
+            55,
+            68
+          ]
+        ],
+        "source_quote": "Creating Narrative (choose one or two courses, totaling 4 units):",
+        "description": "Choose one or two courses from the Creating Narrative list totaling 4 units.",
+        "confidence": "high",
+        "note": "Choosing CTWR 412/414 affects the later 'two additional courses' requirement (becomes three)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AHIS 366g",
+                "COLT 303",
+                "COLT 476",
+                "COMM 206",
+                "COMM 384",
+                "COMM 412",
+                "CTCS 192mg",
+                "CTCS 412",
+                "ENGL 280g",
+                "ENGL 344gm",
+                "ENGL 373g",
+                "ENGL 475",
+                "MUSC 200gmw",
+                "MUSC 372g",
+                "MUSC 374g",
+                "POSC 437",
+                "THTR 395m",
+                "THTR 405m"
+              ]
+            },
+            {
+              "unresolved": "other appropriate course work as determined by the department"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NARR-BA-POLITICS",
+        "source_lines": [
+          [
+            70,
+            92
+          ]
+        ],
+        "source_quote": "Politics of Narrative (choose one course):",
+        "description": "Choose one course from the Politics of Narrative list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AMST 204g",
+                "AMST 274mw",
+                "AMST 285gm",
+                "AMST 325gw",
+                "AMST 448m",
+                "AMST 449m",
+                "ANTH 123gp",
+                "ANTH 263g",
+                "ANTH 365",
+                "ANTH 372",
+                "COLT 102g",
+                "COLT 250g",
+                "COLT 264gp",
+                "COLT 303",
+                "COLT 360gp",
+                "COLT 375",
+                "COLT 382gw",
+                "CTCS 200g",
+                "CTCS 201",
+                "DANC 312gw",
+                "DANC 342gp",
+                "EALC 110gp",
+                "EALC 125g",
+                "EALC 145g",
+                "EALC 150gw",
+                "EALC 332",
+                "EALC 333g",
+                "EALC 342gp",
+                "EALC 358g",
+                "EALC 380",
+                "EALC 385",
+                "EALC 452",
+                "EALC 455",
+                "ENGL 333g",
+                "ENGL 374m",
+                "ENGL 444m",
+                "ENGL 445m",
+                "ENGL 447m",
+                "ENGL 450",
+                "ENGL 451",
+                "FREN 320g",
+                "FREN 375gmw",
+                "GERM 360g",
+                "ITAL 360g",
+                "MDES 343g",
+                "MUSC 320gmw",
+                "SLL 397p",
+                "SPAN 301",
+                "SPAN 302",
+                "SPAN 380g",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            {
+              "unresolved": "other appropriate course work as determined by the department"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NARR-BA-GLOBAL",
+        "source_lines": [
+          [
+            94,
+            151
+          ]
+        ],
+        "source_quote": "Narrative and Global Cultures (choose one course):",
+        "description": "Choose one course from the Narrative and Global Cultures list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ANTH 140g",
+                "CLAS 151gp",
+                "CLAS 280gp",
+                "CLAS 325",
+                "CLAS 337gp",
+                "CLAS 380",
+                "COLT 251g",
+                "COLT 312",
+                "COLT 324",
+                "COLT 374gm",
+                "ENGL 261g",
+                "ENGL 262g",
+                "ENGL 263g",
+                "ENGL 352g",
+                "ENGL 341",
+                "ENGL 342g",
+                "ENGL 364",
+                "ENGL 422",
+                "ENGL 423",
+                "ENGL 424",
+                "ENGL 425",
+                "ENGL 426",
+                "ENGL 430",
+                "ENGL 440",
+                "ENGL 441",
+                "ENGL 461",
+                "ENGL 465",
+                "ENGL 466",
+                "GERM 340",
+                "GERM 372g",
+                "ITAL 350g",
+                "ITAL 381",
+                "MDES 320g",
+                "SLL 302g",
+                "SLL 344g",
+                "SLL 345g",
+                "SPAN 304",
+                "THTR 301",
+                "THTR 302"
+              ]
+            },
+            {
+              "unresolved": "other appropriate course work as determined by the department"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NARR-BA-HISTORY",
+        "source_lines": [
+          [
+            153,
+            196
+          ]
+        ],
+        "source_quote": "Narrative Across History (choose one course):",
+        "description": "Choose one course from the Narrative Across History list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "COLT 348",
+                "COLT 420",
+                "COLT 472",
+                "CTCS 394",
+                "EALC 332",
+                "EALC 354g",
+                "ENGL 361g",
+                "ENGL 363g",
+                "ENGL 375",
+                "ENGL 376g",
+                "ENGL 442",
+                "SLL 303",
+                "SPAN 372",
+                "THTR 314",
+                "THTR 401"
+              ]
+            },
+            {
+              "unresolved": "other appropriate course work as determined by the department"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NARR-BA-CONTEMPORARY",
+        "source_lines": [
+          [
+            198,
+            217
+          ]
+        ],
+        "source_quote": "Contemporary Narrative (choose one course):",
+        "description": "Choose one course from the Contemporary Narrative list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 300
+            },
+            {
+              "unresolved": "chosen from the lists above (the six category lists)"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          },
+          {
+            "count_by": "departments",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "NARR-BA-ADDITIONAL",
+        "source_lines": [
+          [
+            219,
+            223
+          ]
+        ],
+        "source_quote": "Two additional courses",
+        "description": "Two additional upper-division (300/400) courses from different departments, chosen from the category lists above, totaling 8 units.",
+        "confidence": "medium",
+        "note": "If CTWR 412/CTWR 414 are chosen in the Creating Narrative requirement, three additional courses are required instead of two; cannot be fully checked."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ENGL 492"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDA 490x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDA 494"
+          }
+        ],
+        "id": "NARR-BA-CAPSTONE",
+        "source_lines": [
+          [
+            225,
+            234
+          ]
+        ],
+        "source_quote": "Capstone Enrollment:",
+        "description": "Capstone: ENGL 492, or MDA 490x (4 units required), or MDA 494 (4 units required).",
+        "confidence": "high",
+        "note": "MDA 490x and MDA 494 require 4 units be taken even though their unit ranges vary; 'other appropriate course work' option not encoded as no list given."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "The Narrative Studies major requires 40 units distributed across",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "only 12 units can be from schools outside of Dornsife",
+        "eligible_if": {
+          "not": {
+            "school": "Dornsife"
+          }
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 12
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "only 12 units can be lower-division (100-200 level)",
+        "eligible_if": {
+          "level_max": 299
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 12
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            240,
+            240
+          ]
+        ],
+        "source_quote": "Ten courses, including at least seven at the upper-division level",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            240,
+            240
+          ]
+        ],
+        "source_quote": "including at least seven at the upper-division level",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 7
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          242,
+          242
+        ]
+      ],
+      "source_quote": "*Prerequisite required",
+      "reason": "out_of_scope",
+      "why": "Footnote marker about prerequisites with no specific course context given."
+    },
+    {
+      "source_lines": [
+        [
+          244,
+          244
+        ]
+      ],
+      "source_quote": "**Corequisite required",
+      "reason": "out_of_scope",
+      "why": "Footnote marker about corequisites with no specific course context given."
+    },
+    {
+      "source_lines": [
+        [
+          246,
+          246
+        ]
+      ],
+      "source_quote": "***Recommend preparation suggested",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    }
+  ]
+}

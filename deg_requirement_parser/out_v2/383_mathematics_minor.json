@@ -1,0 +1,174 @@
+{
+  "program": "Mathematics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 235"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "MATH-MINOR-LOWER",
+        "source_lines": [
+          [
+            23,
+            41
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g plus one each from the Calculus II, Linear Algebra, and Calculus III option sets.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "MATH"
+              ]
+            },
+            {
+              "level_min": 400
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                46,
+                52
+              ]
+            ],
+            "source_quote": "At least one of the following courses must be taken",
+            "eligible_if": {
+              "courses": [
+                "MATH 410",
+                "MATH 425a",
+                "MATH 435",
+                "MATH 440",
+                "MATH 471"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "MATH-MINOR-UPPER",
+        "source_lines": [
+          [
+            42,
+            58
+          ]
+        ],
+        "source_quote": "Four MATH courses are required at the 400-level",
+        "description": "Four MATH courses at 400-level or above, each at least 3 units, totaling at least 16 units, with at least one drawn from a listed group.",
+        "confidence": "high",
+        "note": "The required grade of C or better for the listed course cannot be checked and is listed as unclassified."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The minor in mathematics requires at least 32 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          46,
+          46
+        ]
+      ],
+      "source_quote": "must be taken with a grade of C or better",
+      "reason": "out_of_scope",
+      "why": "Grade requirement on a specific course; grade rules are out of scope."
+    }
+  ]
+}

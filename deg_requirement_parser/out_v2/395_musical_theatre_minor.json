@@ -1,0 +1,155 @@
+{
+  "program": "Musical Theatre Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPVA 140"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPVA 412"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 200gmw"
+          }
+        ],
+        "id": "MTM-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            30
+          ]
+        ],
+        "source_quote": "Required Courses (12 units)",
+        "description": "Four required courses totaling 12 units: MPVA 140, MPVA 402, MPVA 412, MUSC 200gmw.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "DANC 175",
+                "MPVA 301",
+                "THTR 101",
+                "THTR 216",
+                "THTR 252a",
+                "THTR 252b",
+                "THTR 316",
+                "THTR 343",
+                "THTR 352a",
+                "THTR 352b"
+              ]
+            },
+            {
+              "unresolved": "DANC 181-189 range of individually numbered dance courses"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "MTM-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            46
+          ]
+        ],
+        "source_quote": "Select 8 units from the following",
+        "description": "Select 8 units from a list of dance, theatre and music performance courses.",
+        "confidence": "medium",
+        "note": "DANC 181-189 is printed as a range, not a single course code, so it is left unresolved."
+      },
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "music audition required; no audition required for theatre"
+        },
+        "id": "MTM-ADMISSION",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Admission to the minor requires an audition for music",
+        "description": "Admission requires an audition for the music component but not for theatre.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "dance, music and theatre majors",
+          "courses": [
+            "THTR 216",
+            "THTR 316"
+          ]
+        },
+        "id": "MTM-MAJOR-RESTRICTION",
+        "source_lines": [
+          [
+            52,
+            52
+          ]
+        ],
+        "source_quote": "Note for dance, music and theatre majors: dance majors must select",
+        "description": "Dance, music and theatre majors must distribute the 8-unit elective requirement across the other two disciplines, with theatre majors allowed to count THTR 216 and/or THTR 316.",
+        "confidence": "medium",
+        "note": "This amends the elective selection (MTM-ELECTIVES) for students who are dance, music or theatre majors."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            48,
+            48
+          ]
+        ],
+        "source_quote": "Total units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in musical theatre, interdisciplinary in nature, is a 20-unit program",
+      "reason": "university_level",
+      "why": "Programme description restating total unit count, not a separate requirement."
+    }
+  ]
+}

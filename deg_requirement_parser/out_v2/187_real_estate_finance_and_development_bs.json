@@ -1,0 +1,504 @@
+{
+  "program": "Real Estate Finance and Development (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "REFD-WRITING",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "L035 note about a recommended WRIT 340 section is advisory, see unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "REFD-FOUNDATION-CORE",
+        "source_lines": [
+          [
+            41,
+            65
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting Units: 3",
+        "description": "Foundation core: accounting, finance, statistics, economics and calculus courses.",
+        "confidence": "high",
+        "note": "L063-65 notes on MATH 118gx placement/waiver, AP/IB credit, A-level exam credit, and GE category F are informational and not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          }
+        ],
+        "id": "REFD-MARSHALL-CORE",
+        "source_lines": [
+          [
+            67,
+            83
+          ]
+        ],
+        "source_quote": "BUAD 302 Communication Strategy in Business",
+        "description": "Marshall core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 245g"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 417"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 425"
+          }
+        ],
+        "id": "REFD-PRICE-CORE",
+        "source_lines": [
+          [
+            85,
+            93
+          ]
+        ],
+        "source_quote": "PPD 245g The Urban Context Units: 4",
+        "description": "Price School core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 113"
+          },
+          {
+            "family": "specific_course",
+            "course": "FBE 391"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 362"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 435"
+          },
+          {
+            "family": "specific_course",
+            "course": "RED 437"
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": [
+                "BUAD 310/312",
+                "RED 362"
+              ],
+              "after": "RED 435",
+              "note": "FBE 391 before or concurrent with RED 435"
+            }
+          }
+        ],
+        "id": "REFD-REAL-ESTATE-CORE",
+        "source_lines": [
+          [
+            95,
+            106
+          ]
+        ],
+        "source_quote": "BUAD 113 Real Estate Finance and Development",
+        "description": "Real estate core courses with a recommended course sequence.",
+        "confidence": "high",
+        "note": "L106 notes RED 435 has an external prerequisite/corequisite waivable by the program advisor; treated as discretionary, not separately encoded."
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "FBE"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ACCT",
+                        "BAEP",
+                        "BUAD",
+                        "BUCO",
+                        "DSO",
+                        "FBE",
+                        "MKT",
+                        "MOR",
+                        "RISK"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    }
+                  ]
+                },
+                {
+                  "courses": [
+                    "ARCH 306m",
+                    "ARCH 404",
+                    "ARCH 432",
+                    "ARCH 442m",
+                    "ARCH 444",
+                    "ARCH 480",
+                    "CE 412",
+                    "CE 460",
+                    "CE 461",
+                    "CE 462",
+                    "CE 469",
+                    "CE 470",
+                    "LAW 355",
+                    "MDES 441w",
+                    "POSC 436",
+                    "PPD 300",
+                    "PPD 344",
+                    "PPD 357",
+                    "PPD 358",
+                    "PPD 360",
+                    "PPD 361",
+                    "PPD 410",
+                    "PPD 422",
+                    "PPD 439",
+                    "PPD 478",
+                    "RED 351",
+                    "RED 398",
+                    "RED 469",
+                    "RED 499",
+                    "SOCI 431",
+                    "SSCI 301L",
+                    "SSCI 313",
+                    "SSCI 314",
+                    "SSCI 350"
+                  ]
+                },
+                {
+                  "unresolved": "other elective(s) approved by the program director"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "REFD-ELECTIVES",
+        "source_lines": [
+          [
+            108,
+            150
+          ]
+        ],
+        "source_quote": "Two 4-unit upper-division (300- or 400-",
+        "description": "Two upper-division FBE electives plus at least 4 units from approved Marshall or non-Marshall electives.",
+        "confidence": "medium",
+        "note": "FBE 427, FBE 467 and RED 469 'recommended' mentions (L112, L114) are advisory, not separate requirements; the non-Marshall list and director-approved option are included in the elective pool."
+      },
+      {
+        "family": "specific_course",
+        "course": "RED 301",
+        "id": "REFD-INTERNSHIP",
+        "source_lines": [
+          [
+            152,
+            156
+          ]
+        ],
+        "source_quote": "RED 301 Real Estate Internship Seminar",
+        "description": "Real estate internship seminar RED 301.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "accounting or business administration majors",
+          "effect": "cannot be combined"
+        },
+        "id": "REFD-COMBINATION",
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "cannot be combined as an additional major",
+        "description": "This degree cannot be combined as an additional major in accounting or business administration.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          23
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Real Estate Finance",
+      "reason": "out_of_scope",
+      "why": "Programme marketing/description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students are admitted to the program as freshmen",
+      "reason": "university_level",
+      "why": "Admission process detail, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "This degree requires at least 128 units including",
+      "reason": "university_level",
+      "why": "University-wide total unit/GE rule reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommends a specific section, not required."
+    },
+    {
+      "source_lines": [
+        [
+          63,
+          63
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver policy, not a course requirement to check."
+    },
+    {
+      "source_lines": [
+        [
+          64,
+          64
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A",
+      "reason": "advisory",
+      "why": "Advises students to speak with advisers; credit policy, not a required course."
+    },
+    {
+      "source_lines": [
+        [
+          65,
+          65
+        ]
+      ],
+      "source_quote": "BUAD 310, BUAD 312, MATH 118 and MATH",
+      "reason": "university_level",
+      "why": "Restates GE category satisfaction, handled by GE rules elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          106,
+          106
+        ]
+      ],
+      "source_quote": "RED 435 requires a prerequisite and a corequisite",
+      "reason": "out_of_scope",
+      "why": "External prerequisite/waiver process not checkable from a course list."
+    },
+    {
+      "source_lines": [
+        [
+          112,
+          112
+        ]
+      ],
+      "source_quote": "FBE 427 Real Estate Law is recommended",
+      "reason": "advisory",
+      "why": "Course recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          114,
+          114
+        ]
+      ],
+      "source_quote": "FBE 467 Real Estate Investment Trust",
+      "reason": "advisory",
+      "why": "Course recommendation, not a requirement."
+    }
+  ]
+}

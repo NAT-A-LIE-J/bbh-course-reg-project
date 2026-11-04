@@ -1,0 +1,286 @@
+{
+  "program": "Social Work (BSW)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SOWK 300"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 306"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 336"
+          }
+        ],
+        "id": "SOWK-BSW-FOUNDATIONS",
+        "source_lines": [
+          [
+            32,
+            42
+          ]
+        ],
+        "source_quote": "Provides students with a grounding in the social work profession",
+        "description": "Four foundations courses in social work and human well-being.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SOWK 110"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 210"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 323"
+          }
+        ],
+        "id": "SOWK-BSW-WELLNESS",
+        "source_lines": [
+          [
+            43,
+            52
+          ]
+        ],
+        "source_quote": "Deepens students' understanding of human well-being",
+        "description": "Three wellness courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SOWK 346"
+          }
+        ],
+        "id": "SOWK-BSW-RESEARCH",
+        "source_lines": [
+          [
+            53,
+            59
+          ]
+        ],
+        "source_quote": "Introduces students to evidence-based social work practice",
+        "description": "One research course, SOWK 346.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "SOWK 423a"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 423b"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 425a"
+          },
+          {
+            "family": "specific_course",
+            "course": "SOWK 425b"
+          }
+        ],
+        "id": "SOWK-BSW-PRACTICE",
+        "source_lines": [
+          [
+            61,
+            70
+          ]
+        ],
+        "source_quote": "Develops the applied skills and competencies required",
+        "description": "Four practice courses across macro and micro/mezzo social work practice.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "SOWK 491"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "SOWK-BSW-PRACTICUM",
+        "source_lines": [
+          [
+            72,
+            78
+          ]
+        ],
+        "source_quote": "Provides applied, supervised field/internship experience in social work settings",
+        "description": "SOWK 491 repeated for a total of 8 units of practicum placement.",
+        "confidence": "high",
+        "note": "Course may be repeated for variable credit; counted here as a unit total rather than distinct course slots. Adviser consultation noted but not checkable."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "additional coursework offered by the School of Social Work, selected in consultation with an adviser"
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "SOWK-BSW-ELECTIVE",
+        "source_lines": [
+          [
+            30,
+            30
+          ],
+          [
+            80,
+            84
+          ]
+        ],
+        "source_quote": "Allows students to deepen their interests through additional coursework",
+        "description": "One SOWK elective course (4 units), selected in consultation with an adviser.",
+        "confidence": "medium",
+        "note": "No explicit course list given; adviser consultation and 'selecting one elective course' (L030) are amendments merged here."
+      },
+      {
+        "family": "manual_review",
+        "kind": "HOURS",
+        "details": {
+          "min_hours": 440,
+          "setting": "social work practicum internship"
+        },
+        "id": "SOWK-BSW-PRACTICUM-HOURS",
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "fulfilling 440 hours of social work practicum internship",
+        "description": "Students must complete 440 hours of social work practicum internship.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            30,
+            30
+          ]
+        ],
+        "source_quote": "with 60 units specifically allocated to courses in the social work major",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 60
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          30,
+          30
+        ]
+      ],
+      "source_quote": "students must successfully complete a total of 128 units",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          30,
+          30
+        ]
+      ],
+      "source_quote": "fulfilling lower-division general education requisites",
+      "reason": "university_level",
+      "why": "GE requirement handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          30,
+          30
+        ]
+      ],
+      "source_quote": "mandatory prerequisite courses",
+      "reason": "no_fit",
+      "why": "No specific prerequisite courses or list given to encode."
+    },
+    {
+      "source_lines": [
+        [
+          30,
+          30
+        ]
+      ],
+      "source_quote": "All students must achieve an overall average of C (2.0) or better",
+      "reason": "out_of_scope",
+      "why": "Grade/GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          30,
+          30
+        ]
+      ],
+      "source_quote": "Students must also demonstrate a strong commitment to ethical practice and professionalism",
+      "reason": "advisory",
+      "why": "A qualitative expectation, not a checkable course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Social Work (BSW) program is designed to cultivate",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          28
+        ]
+      ],
+      "source_quote": "Through a comprehensive curriculum, the program equips students",
+      "reason": "out_of_scope",
+      "why": "Programme goals/objectives, not requirements."
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "program": "Applied Analytics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 249"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 349"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 449"
+          }
+        ],
+        "id": "APPAN-MIN-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "TAC 249 Introduction to Data Analytics Units: 4",
+        "description": "Three required TAC courses totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CSCI 113x"
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 115"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "TAC 116"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 216"
+              }
+            ],
+            "note": "TAC 115 or TAC 116 may be waived with demonstrated prior Python programming experience."
+          }
+        ],
+        "id": "APPAN-MIN-PROGRAMMING",
+        "source_lines": [
+          [
+            33,
+            54
+          ]
+        ],
+        "source_quote": "Choose either the CSCI programming course or",
+        "description": "Either CSCI 113x, or the TAC sequence of TAC 115/116 followed by TAC 216.",
+        "confidence": "high",
+        "note": "Waiver of TAC 115/116 with prior Python experience affects sequencing but not course count; encoded as a note."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "DSCI 351",
+            "DSO 424",
+            "DSO 428",
+            "TAC 259",
+            "TAC 419",
+            "TAC 489"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "APPAN-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            56,
+            66
+          ]
+        ],
+        "source_quote": "Electives (Choose a minimum of 4 units)",
+        "description": "At least 4 units from the elective list of analytics courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "BUAD 310g",
+          "after": "DSO 424"
+        },
+        "id": "APPAN-MIN-DSO424-PREREQ",
+        "source_lines": [
+          [
+            62,
+            62
+          ]
+        ],
+        "source_quote": "Students must take BUAD 310g prior to taking DSO 424",
+        "description": "DSO 424 requires BUAD 310g as a prerequisite.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Requirements for minor completion: Minimum units 18-20",
+      "reason": "university_level",
+      "why": "Overall unit total is a university-wide rule covered elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Applied Analytics prepares undergraduate",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

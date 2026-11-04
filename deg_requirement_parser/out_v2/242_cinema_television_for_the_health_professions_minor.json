@@ -1,0 +1,97 @@
+{
+  "program": "Cinema-Television for the Health Professions Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 345"
+          }
+        ],
+        "id": "CTVHP-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "Required Courses (24 Units)",
+        "description": "Two required named courses: CTCS 190g and HP 345.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "HP 370g",
+            "HP 401",
+            "HP 408",
+            "HP 410",
+            "HP 420m",
+            "HP 421",
+            "HP 422"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CTVHP-MINOR-HPELECTIVES",
+        "source_lines": [
+          [
+            30,
+            40
+          ]
+        ],
+        "source_quote": "Two of the following:",
+        "description": "Two courses from a list of health-related HP electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 451",
+            "CTCS 400",
+            "CTPR 375",
+            "CTPR 385",
+            "CTPR 474",
+            "CTWR 315x",
+            "CTWR 412",
+            "CTWR 416"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CTVHP-MINOR-CTELECTIVES",
+        "source_lines": [
+          [
+            42,
+            53
+          ]
+        ],
+        "source_quote": "Eight additional units from the following:",
+        "description": "Eight additional units from a list of cinema-television elective courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

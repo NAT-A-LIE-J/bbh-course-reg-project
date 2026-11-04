@@ -1,0 +1,101 @@
+{
+  "program": "Disruptive Innovation Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACAD 181g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 182"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 220"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 324g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACAD 360"
+          }
+        ],
+        "id": "DISRUPT-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            31,
+            41
+          ]
+        ],
+        "source_quote": "Students must complete the following 20 units:",
+        "description": "Five named ACAD core courses totaling 20 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 222",
+            "ACAD 245",
+            "ACAD 260",
+            "ACAD 274",
+            "ACAD 275",
+            "ACAD 402",
+            "ACAD 406",
+            "IDSN 577",
+            "TAC 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "DISRUPT-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            43,
+            57
+          ]
+        ],
+        "source_quote": "Students must complete 4 units from the following:",
+        "description": "4 units of electives from the listed ACAD/IDSN/TAC courses.",
+        "confidence": "high",
+        "note": "Additional electives from other schools may be considered through advisement but no pool is defined for them."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Additional electives, including in other schools at USC,",
+      "reason": "no_fit",
+      "why": "No defined pool or threshold for these additional electives; approval-based without checkable criteria."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          29
+        ]
+      ],
+      "source_quote": "Information on how to apply for the minor",
+      "reason": "out_of_scope",
+      "why": "Administrative/application instructions, not a degree requirement."
+    }
+  ]
+}

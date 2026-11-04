@@ -1,0 +1,202 @@
+{
+  "program": "Political Economy (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "POLECON-BA-LOWERDIV-ECONMATH",
+        "source_lines": [
+          [
+            27,
+            35
+          ]
+        ],
+        "source_quote": "Complete two ECON and one MATH course",
+        "description": "ECON 203g, ECON 205g, and MATH 118gx or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 120g"
+          },
+          {
+            "family": "specific_course",
+            "course": "POSC 130g"
+          }
+        ],
+        "id": "POLECON-BA-LOWERDIV-SOCIALSCIENCE",
+        "source_lines": [
+          [
+            37,
+            43
+          ]
+        ],
+        "source_quote": "Choose one (4 units):",
+        "description": "One course from IR 210gw, POSC 120g, or POSC 130g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "ECON 351x",
+                      "ECON 352x"
+                    ]
+                  }
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "source_lines": [
+              [
+                50,
+                50
+              ]
+            ],
+            "source_quote": "Choose three Economics (ECON) courses numbered 300-499"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "IR"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "source_lines": [
+              [
+                51,
+                51
+              ]
+            ],
+            "source_quote": "Choose two International Relations (IR) courses numbered"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "POSC"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "source_lines": [
+              [
+                52,
+                52
+              ]
+            ],
+            "source_quote": "Choose two Political Economy in Political Science"
+          }
+        ],
+        "id": "POLECON-BA-UPPERDIV",
+        "source_lines": [
+          [
+            45,
+            52
+          ]
+        ],
+        "source_quote": "Upper-Division Requirements (32 Units)",
+        "description": "ECON 303 plus three ECON electives (300-499, excluding ECON 351x/352x), two IR electives, and two POSC electives, all 300-499 level.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          54,
+          54
+        ]
+      ],
+      "source_quote": "Total: 48 units required for the major",
+      "reason": "university_level",
+      "why": "Total unit count restates the sum of already-encoded requirements and is a university-wide unit accounting rule."
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "program": "Cinematic Arts, Film and Television Production (BFA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "supplemental application and materials to the Undergraduate Production Program"
+        },
+        "id": "CA-BFA-SUPPLEMENTAL-APPLICATION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Applicants must submit a supplemental application and materials",
+        "description": "Admission requires a supplemental application to the Undergraduate Production Program.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTPR 285"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 290"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 294"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 295L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 310"
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": [
+                "CTPR 285",
+                "CTPR 290",
+                "CTPR 294",
+                "CTPR 295L"
+              ],
+              "after": "CTPR 310"
+            }
+          }
+        ],
+        "id": "CA-BFA-PRODUCTION-SEQUENCE-CORE",
+        "source_lines": [
+          [
+            33,
+            33
+          ],
+          [
+            43,
+            45
+          ],
+          [
+            61,
+            61
+          ]
+        ],
+        "source_quote": "Candidates for the Bachelor of Fine Arts degree in Film",
+        "description": "Five core production-sequence courses (CTPR 285, 290, 294, 295L, then 310), taken in order.",
+        "confidence": "high",
+        "note": "CTPR 285, 290, 294, 295L, 310 (and later 480/484/486/547L) cannot be waived or substituted with another course or transfer credit."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CNTV 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 150gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 200g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 413"
+          }
+        ],
+        "id": "CA-BFA-ADDITIONAL-CORE-COURSES",
+        "source_lines": [
+          [
+            67,
+            77
+          ]
+        ],
+        "source_quote": "CNTV 101 Reality Starts Here Units: 2",
+        "description": "Additional required core courses in cinema/media studies and writing.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTWR 414"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 431"
+          }
+        ],
+        "id": "CA-BFA-SCRIPT-CHOICE-1",
+        "source_lines": [
+          [
+            79,
+            84
+          ]
+        ],
+        "source_quote": "One course from the following:",
+        "description": "One course: CTWR 414 or CTPR 431.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTWR 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 416"
+          }
+        ],
+        "id": "CA-BFA-SCRIPT-CHOICE-2",
+        "source_lines": [
+          [
+            86,
+            91
+          ]
+        ],
+        "source_quote": "and a choice of:",
+        "description": "One course: CTWR 411 or CTWR 416.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTCS 367",
+            "CTCS 392",
+            "CTCS 393",
+            "CTCS 394",
+            "CTCS 400",
+            "CTCS 402",
+            "CTCS 403",
+            "CTCS 404",
+            "CTCS 406",
+            "CTCS 407",
+            "CTCS 409",
+            "CTCS 411",
+            "CTCS 412",
+            "CTCS 414",
+            "CTCS 417",
+            "CTCS 464",
+            "CTCS 469",
+            "CTCS 478",
+            "CTCS 482"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "CA-BFA-MEDIA-STUDIES",
+        "source_lines": [
+          [
+            93,
+            115
+          ]
+        ],
+        "source_quote": "One of the following cinema and media studies courses:",
+        "description": "One cinema and media studies course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTPR 421",
+            "CTPR 424",
+            "CTPR 438",
+            "CTPR 440",
+            "CTPR 465",
+            "CTPR 478"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "CA-BFA-PRACTICUM",
+        "source_lines": [
+          [
+            47,
+            47
+          ],
+          [
+            117,
+            126
+          ]
+        ],
+        "source_quote": "Three of the following production practicum courses:",
+        "description": "Three production practicum courses chosen from the listed disciplines.",
+        "confidence": "high",
+        "note": "L047's description of refining areas of interest via advanced-level practicum courses is the same requirement as this list."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTPR 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 484"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 486"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 547L"
+          }
+        ],
+        "id": "CA-BFA-FINAL-PRODUCTION",
+        "source_lines": [
+          [
+            47,
+            47
+          ],
+          [
+            128,
+            136
+          ]
+        ],
+        "source_quote": "Thereafter students complete the final phase of the production sequence",
+        "description": "One final production course: CTPR 480, 484, 486 or 547L.",
+        "confidence": "high",
+        "note": "Enrollment in CTPR 547L requires special permission from the school (not independently checkable)."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTPR 458"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 466"
+          },
+          {
+            "family": "specific_course",
+            "course": "CNTV 495"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 496"
+          }
+        ],
+        "id": "CA-BFA-INDUSTRY-COURSE",
+        "source_lines": [
+          [
+            138,
+            145
+          ]
+        ],
+        "source_quote": "One course from the following:",
+        "description": "One industry-oriented course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 436",
+            "CTAN 452",
+            "CTAN 462",
+            "CTAN 495",
+            "CTIN 401L",
+            "CTIN 463",
+            "CTIN 464",
+            "CTIN 482",
+            "IML 420m",
+            "IML 423",
+            "IML 455",
+            "IML 456",
+            "IML 460"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "CA-BFA-ANIMATION-ELECTIVE",
+        "source_lines": [
+          [
+            147,
+            164
+          ]
+        ],
+        "source_quote": "Four units from the following:",
+        "description": "Four units from the listed animation, interactive media, or related courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The degree requires 128 units, including 68 units",
+      "reason": "university_level",
+      "why": "Total and departmental unit counts are university/school-wide figures, not a specific checkable list."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          27
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent,",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, handled separately from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          171,
+          171
+        ]
+      ],
+      "source_quote": "A minimum grade of C, 2.0 (A =",
+      "reason": "out_of_scope",
+      "why": "Grade requirement, Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          173,
+          173
+        ]
+      ],
+      "source_quote": "Students who do not earn the minimum grade",
+      "reason": "out_of_scope",
+      "why": "Grade/disqualification rule, Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          177,
+          177
+        ]
+      ],
+      "source_quote": "Registration in graduate-level courses (numbered 500) for",
+      "reason": "out_of_scope",
+      "why": "Approval-based enrollment limitation, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          181,
+          181
+        ]
+      ],
+      "source_quote": "Cinematic Arts majors are expected to meet with",
+      "reason": "advisory",
+      "why": "Advising recommendation, not a degree requirement."
+    }
+  ]
+}

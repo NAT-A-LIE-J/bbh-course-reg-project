@@ -1,0 +1,225 @@
+{
+  "program": "Cinematic Arts Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTCS 191"
+          }
+        ],
+        "id": "CTAN-MINOR-LOWERDIV",
+        "source_lines": [
+          [
+            29,
+            40
+          ]
+        ],
+        "source_quote": "CTCS 190g Introduction to Cinema Units: 4",
+        "description": "One lower-division course: CTCS 190g or CTCS 191.",
+        "confidence": "high",
+        "note": "Asterisk marks these as gateway courses; not a separate requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 432",
+            "CTAN 451",
+            "CTAN 452",
+            "CTAN 462",
+            "CTCS 303",
+            "CTCS 400",
+            "CTCS 407",
+            "CTCS 411",
+            "CTCS 412",
+            "CTCS 414",
+            "CTCS 464",
+            "CTCS 466",
+            "CTCS 467",
+            "CTCS 469",
+            "CTIN 482",
+            "CTPR 327",
+            "CTPR 335",
+            "CTPR 385",
+            "CTPR 409",
+            "CTPR 460",
+            "CTPR 461",
+            "CTPR 484",
+            "CTWR 409",
+            "CTWR 411",
+            "CTWR 416",
+            "CTWR 431",
+            "CTWR 432",
+            "IML 420m",
+            "IML 421",
+            "IML 423",
+            "IML 455",
+            "IML 456",
+            "IML 458"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CTAN-MINOR-UPPERDIV-LIST",
+        "source_lines": [
+          [
+            42,
+            82
+          ]
+        ],
+        "source_quote": "8 units from the following:",
+        "description": "8 units from the listed upper-division Cinematic Arts courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "CTAN 432",
+                "CTAN 451",
+                "CTAN 452",
+                "CTAN 462",
+                "CTCS 303",
+                "CTCS 400",
+                "CTCS 407",
+                "CTCS 411",
+                "CTCS 412",
+                "CTCS 414",
+                "CTCS 464",
+                "CTCS 466",
+                "CTCS 467",
+                "CTCS 469",
+                "CTIN 482",
+                "CTPR 327",
+                "CTPR 335",
+                "CTPR 385",
+                "CTPR 409",
+                "CTPR 460",
+                "CTPR 461",
+                "CTPR 484",
+                "CTWR 409",
+                "CTWR 411",
+                "CTWR 416",
+                "CTWR 431",
+                "CTWR 432",
+                "IML 420m",
+                "IML 421",
+                "IML 423",
+                "IML 455",
+                "IML 456",
+                "IML 458"
+              ]
+            },
+            {
+              "all": [
+                {
+                  "prefix": [
+                    "CTAN",
+                    "CTCS",
+                    "CTIN",
+                    "CTPR",
+                    "CTWR",
+                    "IML"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CTAN-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            84,
+            84
+          ]
+        ],
+        "source_quote": "Plus 8 additional upper-division units of Cinematic",
+        "description": "8 additional upper-division units of Cinematic Arts electives.",
+        "confidence": "medium",
+        "note": "No explicit elective list given; interpreted as any upper-division course in the School of Cinematic Arts prefixes, including those listed above."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 20 units is required for",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To be eligible for the cinematic arts minor,",
+      "reason": "out_of_scope",
+      "why": "Good academic standing and declared major requirement for eligibility."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "To declare the cinematic arts minor a student",
+      "reason": "university_level",
+      "why": "Administrative declaration procedure, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          94,
+          94
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    }
+  ]
+}

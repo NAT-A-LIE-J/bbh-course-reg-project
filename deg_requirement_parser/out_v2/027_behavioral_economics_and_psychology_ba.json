@@ -1,0 +1,193 @@
+{
+  "program": "Behavioral Economics and Psychology (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          }
+        ],
+        "id": "BEEP-BA-FOUNDATIONAL",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "12 units total",
+        "description": "Three foundational theory courses: ECON 203g, ECON 303, PSYC 100Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "TAC 115"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 116"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 314L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 316L"
+          }
+        ],
+        "id": "BEEP-BA-TECHNIQUES",
+        "source_lines": [
+          [
+            39,
+            50
+          ]
+        ],
+        "source_quote": "18 units total",
+        "description": "ECON 317, TAC 115 or TAC 116, MATH 125g, PSYC 314L and PSYC 316L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 318",
+            "ECON 404",
+            "ECON 405",
+            "ECON 415",
+            "ECON 420",
+            "ECON 432",
+            "ECON 620L",
+            "ECON 621L",
+            "PSYC 305",
+            "PSYC 326",
+            "PSYC 355",
+            "PSYC 422",
+            "PSYC 423",
+            "PSYC 434",
+            "PSYC 452",
+            "PSYC 459"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 7
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 28
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                56,
+                56
+              ]
+            ],
+            "source_quote": "with no more than four courses (16 units) from",
+            "eligible_if": {
+              "prefix": [
+                "ECON"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                56,
+                56
+              ]
+            ],
+            "source_quote": "with no more than four courses (16 units) from",
+            "eligible_if": {
+              "prefix": [
+                "PSYC"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "BEEP-BA-ELECTIVES",
+        "source_lines": [
+          [
+            52,
+            73
+          ]
+        ],
+        "source_quote": "28 units: seven 4-unit electives with no more",
+        "description": "Seven 4-unit electives from the listed ECON/PSYC courses, with no more than four from either prefix.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Completion of the program requires a minimum of",
+      "reason": "university_level",
+      "why": "University-wide 128-unit total, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          25
+        ]
+      ],
+      "source_quote": "The Behavioral Economics and Psychology (BEEP) program aims",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing and learning outcomes, not a requirement."
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "program": "Modern Art Markets and Ethics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 120gp",
+            "AHIS 121gp",
+            "AHIS 125gp",
+            "AHIS 126g",
+            "AHIS 127g",
+            "AHIS 128gp",
+            "AHIS 250gm",
+            "AHIS 255g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "MAME-LOWER-DIV",
+        "source_lines": [
+          [
+            27,
+            40
+          ]
+        ],
+        "source_quote": "Choose one. The lower division course provides students with a broad knowledge",
+        "description": "Choose one lower-division art history course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 368",
+            "AHIS 369",
+            "AHIS 370g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "MAME-UPPER-MODERN-ART",
+        "source_lines": [
+          [
+            42,
+            50
+          ]
+        ],
+        "source_quote": "Choose two. These courses will introduce students to the development",
+        "description": "Choose two upper-division courses on modern art.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 470",
+            "AHIS 488",
+            "AMST 342m",
+            "AMST 446",
+            "BUAD 304",
+            "COMM 454",
+            "ECON 434",
+            "ECON 450",
+            "FBE 458",
+            "IR 308gw",
+            "IR 309",
+            "IR 324",
+            "MOR 385gm",
+            "MOR 421",
+            "POSC 444",
+            "REL 304",
+            "REL 365"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "MAME-CRITICAL-ELECTIVES",
+        "source_lines": [
+          [
+            52,
+            74
+          ]
+        ],
+        "source_quote": "Choose two.",
+        "description": "Choose two critical elective courses from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "AHIS 301",
+        "id": "MAME-CAPSTONE",
+        "source_lines": [
+          [
+            76,
+            80
+          ]
+        ],
+        "source_quote": "AHIS 301 Guardians of the Past? Art Preservation,",
+        "description": "Capstone course AHIS 301.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "ECON 238xg",
+                "id": "MAME-AHIS-LOWER-DIV",
+                "source_lines": [
+                  [
+                    90,
+                    94
+                  ]
+                ],
+                "source_quote": "ECON 238xg Political Economy and Social Issues",
+                "description": "Lower-division requirement for Art History majors: ECON 238xg.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "AHIS 488",
+                    "AMST 342m",
+                    "BUAD 304",
+                    "ECON 450",
+                    "FBE 458",
+                    "IR 309",
+                    "IR 324",
+                    "MOR 385gm",
+                    "POSC 444",
+                    "REL 304",
+                    "REL 365"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ],
+                "id": "MAME-AHIS-ETHICS-INSTITUTIONS",
+                "source_lines": [
+                  [
+                    96,
+                    112
+                  ],
+                  [
+                    127,
+                    131
+                  ]
+                ],
+                "source_quote": "Choose two.",
+                "description": "Art History majors choose two electives on Ethics and Modern Institutions.",
+                "confidence": "high",
+                "note": "Max one AHIS elective across this list and the Markets and Social Relations list (see *note L131)."
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "AHIS 470",
+                    "AMST 446",
+                    "COMM 454",
+                    "ECON 434",
+                    "IR 308gw",
+                    "MOR 421"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 2
+                  }
+                ],
+                "id": "MAME-AHIS-MARKETS-SOCIAL",
+                "source_lines": [
+                  [
+                    114,
+                    126
+                  ],
+                  [
+                    127,
+                    131
+                  ]
+                ],
+                "source_quote": "Choose two.",
+                "description": "Art History majors choose two electives on Markets and Social Relations.",
+                "confidence": "high",
+                "note": "Max one AHIS elective across this list and the Ethics and Modern Institutions list (see *note L131).",
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        131,
+                        131
+                      ]
+                    ],
+                    "source_quote": "Art History majors may choose a maximum of one elective",
+                    "eligible_if": {
+                      "courses": [
+                        "AHIS 488",
+                        "AHIS 470"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "AHIS 301",
+                "id": "MAME-AHIS-CAPSTONE",
+                "source_lines": [
+                  [
+                    133,
+                    137
+                  ]
+                ],
+                "source_quote": "AHIS 301 Guardians of the Past? Art Preservation,",
+                "description": "Capstone course AHIS 301 for Art History majors.",
+                "confidence": "high",
+                "note": null
+              }
+            ],
+            "id": "MAME-AHIS-TRACK",
+            "source_lines": [
+              [
+                86,
+                139
+              ]
+            ],
+            "source_quote": "Requirements for Art History Majors",
+            "description": "Alternate requirement set for Art History majors.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [],
+            "id": "MAME-GENERAL-TRACK-PLACEHOLDER",
+            "source_lines": [
+              [
+                23,
+                82
+              ]
+            ],
+            "source_quote": "## Requirements",
+            "description": "General track requirements (non-Art-History majors), as encoded in the main nodes above.",
+            "confidence": "low",
+            "note": "This placeholder represents the already-encoded general requirements (lower-division, upper-division modern art, critical electives, capstone) as one path, versus the Art History majors' alternate requirement set."
+          }
+        ],
+        "id": "MAME-TRACK-CHOICE",
+        "source_lines": [
+          [
+            23,
+            139
+          ]
+        ],
+        "source_quote": "## Requirements",
+        "description": "Students follow either the general minor requirements or the Art History majors' alternate requirements.",
+        "confidence": "low",
+        "note": "Catalogue presents two parallel requirement sets without explicit 'choose one' language; modeled as alternates since Art History majors have a distinct path."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            82,
+            82
+          ]
+        ],
+        "source_quote": "Total Units: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          139,
+          139
+        ]
+      ],
+      "source_quote": "Total Units: 24",
+      "reason": "out_of_scope",
+      "why": "Duplicate total unit statement for Art History majors path, already reflected in root check."
+    }
+  ]
+}

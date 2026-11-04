@@ -1,0 +1,446 @@
+{
+  "program": "Business Administration (International Relations) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BAIR-WRITING",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "Composition/Writing Requirements (8 units)",
+        "description": "WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": "A WRIT 340 section titled Advanced Writing for Business is recommended, not required."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ACCT",
+                    "BAEP",
+                    "BUCO",
+                    "FBE",
+                    "DSO",
+                    "MKT",
+                    "MOR",
+                    "RISK"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                70,
+                70
+              ]
+            ],
+            "source_quote": "Total business units: 60",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 60
+              }
+            ]
+          }
+        ],
+        "id": "BAIR-BUSINESS",
+        "source_lines": [
+          [
+            37,
+            70
+          ]
+        ],
+        "source_quote": "Business Requirements",
+        "description": "Core Marshall business courses, choice pairs, and 12 units of upper-division business electives, totaling 60 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "IR 324",
+                "IR 325",
+                "IR 326",
+                "IR 330"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "BAIR-IPE",
+            "source_lines": [
+              [
+                87,
+                94
+              ]
+            ],
+            "source_quote": "International Political Economy Courses (4 units)",
+            "description": "At least one course (4 units) from the International Political Economy list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "IR 333",
+                "IR 345",
+                "IR 360",
+                "IR 361",
+                "IR 362",
+                "IR 363",
+                "IR 364",
+                "IR 365",
+                "IR 367",
+                "IR 369",
+                "IR 383",
+                "IR 385",
+                "IR 439",
+                "IR 442",
+                "IR 465",
+                "IR 468"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "id": "BAIR-REGIONAL",
+            "source_lines": [
+              [
+                96,
+                115
+              ]
+            ],
+            "source_quote": "International Relations Regional Courses (8 units)",
+            "description": "At least two courses (8 units) from the Regional Courses list.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "IR 305w",
+                    "IR 306",
+                    "IR 310",
+                    "IR 315",
+                    "IR 316",
+                    "IR 323",
+                    "IR 341",
+                    "IR 344",
+                    "IR 381",
+                    "IR 382w",
+                    "IR 402",
+                    "IR 427",
+                    "IR 444w"
+                  ]
+                },
+                {
+                  "courses": [
+                    "IR 324",
+                    "IR 325",
+                    "IR 326",
+                    "IR 330",
+                    "IR 333",
+                    "IR 345",
+                    "IR 360",
+                    "IR 361",
+                    "IR 362",
+                    "IR 363",
+                    "IR 364",
+                    "IR 365",
+                    "IR 367",
+                    "IR 369",
+                    "IR 383",
+                    "IR 385",
+                    "IR 439",
+                    "IR 442",
+                    "IR 465",
+                    "IR 468"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "id": "BAIR-IR-ELECTIVES",
+            "source_lines": [
+              [
+                117,
+                136
+              ]
+            ],
+            "source_quote": "Choose two from the list below or the",
+            "description": "Two additional courses (8 units) from the IR Electives list or the two lists above (not already used there).",
+            "confidence": "medium",
+            "note": "One-slot rule applies: a course used for IPE or Regional cannot also be counted here."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                137,
+                137
+              ]
+            ],
+            "source_quote": "Total international relations units: 24",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 24
+              }
+            ]
+          }
+        ],
+        "id": "BAIR-IR",
+        "source_lines": [
+          [
+            81,
+            137
+          ]
+        ],
+        "source_quote": "International Relations Requirements",
+        "description": "IR 210gw plus IPE, Regional, and Elective IR courses totaling 24 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students may earn only one emphasis within",
+      "reason": "out_of_scope",
+      "why": "Restriction on combining emphases, not a course requirement to encode here."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "USC's General Education requirements and an additional",
+      "reason": "university_level",
+      "why": "GE requirements are university-wide and reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommendation about which WRIT 340 section to take, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          78,
+          78
+        ]
+      ],
+      "source_quote": "Placement into MATH 118 is contingent on",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver policy, not a degree requirement to check."
+    },
+    {
+      "source_lines": [
+        [
+          79,
+          79
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "out_of_scope",
+      "why": "Exam credit substitution policy, not a checkable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          141,
+          141
+        ]
+      ],
+      "source_quote": "Total program units: 84",
+      "reason": "university_level",
+      "why": "Overall program unit total overlapping GE and university-wide unit rules."
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "program": "Human Security and Geospatial Intelligence (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 114xg"
+          },
+          {
+            "family": "sequencing",
+            "kind": "UNIT_WINDOW",
+            "details": {
+              "courses": "IR 210gw and MATH 114xg",
+              "within_units": null,
+              "note": "must be completed within first two semesters of enrolling in the major"
+            }
+          }
+        ],
+        "id": "HSGI-PRE-MAJOR",
+        "source_lines": [
+          [
+            27,
+            34
+          ]
+        ],
+        "source_quote": "Pre-Major Requirement (8)",
+        "description": "Two pre-major courses (IR 210gw, MATH 114xg) completed within the first two semesters.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 225"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 202"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 214g"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 220L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 381"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 382L"
+          },
+          {
+            "family": "specific_course",
+            "course": "SSCI 383L"
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "SSCI 420"
+              }
+            ],
+            "id": "HSGI-PRACTICUM",
+            "source_lines": [
+              [
+                50,
+                56
+              ]
+            ],
+            "source_quote": "Course to be completed as culminating requirement.",
+            "description": "SSCI 420 Practicum, the culminating capstone experience.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "HSGI-MAJOR-REQUIREMENTS",
+        "source_lines": [
+          [
+            36,
+            56
+          ]
+        ],
+        "source_quote": "Major Requirements (40)",
+        "description": "Nine required major core courses plus the SSCI 420 practicum capstone.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 150gw",
+            "DSCI 250",
+            "DSCI 429",
+            "GEOL 150Lg",
+            "IR 150",
+            "IR 210gw",
+            "IR 211g",
+            "IR 212",
+            "IR 304",
+            "IR 310",
+            "IR 319",
+            "IR 320",
+            "IR 314",
+            "IR 341",
+            "IR 342",
+            "IR 343",
+            "IR 381",
+            "IR 382w",
+            "IR 386",
+            "IR 387",
+            "MATH 114xg",
+            "MDES 201w",
+            "POSC 110g",
+            "POSC 130g",
+            "POSC 248gw",
+            "POSC 265gw",
+            "POSC 270",
+            "POSC 347",
+            "POSC 363",
+            "POSC 418",
+            "POSC 435",
+            "POSC 436",
+            "POSC 444",
+            "POSC 451",
+            "POSC 452",
+            "PPD 225",
+            "PPD 245g",
+            "PPD 300",
+            "PPD 320",
+            "PPD 344",
+            "PPD 345",
+            "PPD 348",
+            "PPD 361",
+            "PPD 373",
+            "PPD 402",
+            "SOCI 210g",
+            "SSCI 175gw",
+            "SSCI 265Lg",
+            "SSCI 350",
+            "TAC 125L",
+            "TAC 259",
+            "TAC 325",
+            "TAC 370",
+            "TAC 375",
+            "TAC 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "HSGI-ELECTIVES",
+        "source_lines": [
+          [
+            58,
+            120
+          ]
+        ],
+        "source_quote": "Choose four courses from the general list",
+        "description": "Four elective courses (16 units) chosen from the approved general elective list.",
+        "confidence": "high",
+        "note": "Students may optionally follow a structured elective track (Environment, Policy or Cyber); the track course lists (L122-L196) are subsets of the general elective list and do not add any courses beyond it, so choosing a track is not a separate requirement. Choosing a track is explicitly not mandatory."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The program requires 10 core courses including",
+      "reason": "university_level",
+      "why": "Restates total units (128), a university-wide total handled by STARS."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The BS in HSGI degree can be completed",
+      "reason": "advisory",
+      "why": "Descriptive marketing statement about typical time to degree, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students in the BS in HSGI program can",
+      "reason": "out_of_scope",
+      "why": "Departmental honors GPA and presentation requirements are an optional honors track, not core degree requirements."
+    }
+  ]
+}

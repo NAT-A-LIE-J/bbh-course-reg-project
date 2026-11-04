@@ -1,0 +1,138 @@
+{
+  "program": "Social Sciences, with an Emphasis in Economics (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "ECON"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "id": "SOCSCI-ECON-BA-CORE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students are required to take ECON 203 ,",
+        "description": "ECON 203, 205, 303, 305, plus three ECON electives numbered 300 or 400.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125"
+          }
+        ],
+        "id": "SOCSCI-ECON-BA-MATH",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "MATH 118gx or MATH 125 is required",
+        "description": "MATH 118gx or MATH 125.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "ANTH",
+                "GEOG",
+                "IR",
+                "HIST",
+                "POSC",
+                "PSYC",
+                "SOCI"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "id": "SOCSCI-ECON-BA-SOCSCI-ELECTIVES",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "an additional 12 units of upper-division courses from departments in the social sciences",
+        "description": "12 units of upper-division courses from social science departments (anthropology, geography, international relations, history, political science, psychology, sociology).",
+        "confidence": "medium",
+        "note": "Exact courses not listed; pool defined by department prefixes and upper-division level as stated in text.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A grade of C (2.0) or better is required",
+      "reason": "out_of_scope",
+      "why": "Grade requirement for core courses; not encoded per Phase 2 scope."
+    }
+  ]
+}

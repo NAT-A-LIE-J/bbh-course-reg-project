@@ -1,0 +1,363 @@
+{
+  "program": "Aerospace Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "AE-BS-WRITING",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340 composition/writing requirement.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "AE-BS-MATH",
+        "source_lines": [
+          [
+            40,
+            56
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "MATH 125g, a Calculus II option, a Calculus III option, and MATH 245.",
+        "confidence": "high",
+        "note": "Recommendation to take the 129/229 sequence is advisory, not required."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 171Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 162L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 172L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 153L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 163L"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 173L"
+              }
+            ]
+          }
+        ],
+        "id": "AE-BS-PHYSICS",
+        "source_lines": [
+          [
+            58,
+            72
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I: Mechanics,",
+        "description": "Three physics sequence courses, each with alternate options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "CHEM 105aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 115aLg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MASC 110L"
+          }
+        ],
+        "id": "AE-BS-CHEM-ELECTIVE",
+        "source_lines": [
+          [
+            74,
+            82
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4",
+        "description": "One chemistry/materials elective from CHEM 105aLg, CHEM 115aLg, or MASC 110L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AME 105"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 204"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 208"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 261"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 301"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 302a"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 302b"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 308"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 341aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 341bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 436"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 441aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "AME 481"
+          }
+        ],
+        "id": "AE-BS-AME-CORE",
+        "source_lines": [
+          [
+            88,
+            108
+          ]
+        ],
+        "source_quote": "AME 105 Introduction to Aerospace Engineering Units:",
+        "description": "Required Aerospace and Mechanical Engineering core courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "MASC 310L",
+        "id": "AE-BS-MATERIALS",
+        "source_lines": [
+          [
+            110,
+            114
+          ]
+        ],
+        "source_quote": "MASC 310L Materials Behavior and Processing Units:",
+        "description": "MASC 310L Materials Behavior and Processing.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "TAC 168",
+        "id": "AE-BS-IT",
+        "source_lines": [
+          [
+            116,
+            120
+          ]
+        ],
+        "source_quote": "TAC 168 Introduction to MATLAB Units: 2",
+        "description": "TAC 168 Introduction to MATLAB.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The requirement for this degree is 134",
+      "reason": "university_level",
+      "why": "Overall degree unit total, handled by STARS."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "GPA rule; not encoded in Phase 1."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "See the common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Pointer to university-wide common requirements."
+    },
+    {
+      "source_lines": [
+        [
+          30,
+          34
+        ]
+      ],
+      "source_quote": "General education Units: 24 +",
+      "reason": "university_level",
+      "why": "General education requirement, handled by STARS."
+    },
+    {
+      "source_lines": [
+        [
+          56,
+          56
+        ]
+      ],
+      "source_quote": "The AME Department recommends that AME students",
+      "reason": "advisory",
+      "why": "Recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          122,
+          122
+        ]
+      ],
+      "source_quote": "Total units: 134",
+      "reason": "university_level",
+      "why": "Restates overall degree unit total."
+    }
+  ]
+}

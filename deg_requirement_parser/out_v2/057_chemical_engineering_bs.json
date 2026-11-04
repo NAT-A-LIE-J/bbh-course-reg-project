@@ -1,0 +1,420 @@
+{
+  "program": "Chemical Engineering (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "CHE-BS-WRITING",
+        "source_lines": [
+          [
+            33,
+            38
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 322aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 430"
+          }
+        ],
+        "id": "CHE-BS-CHEMISTRY",
+        "source_lines": [
+          [
+            46,
+            57
+          ]
+        ],
+        "source_quote": "CHEM 105aLg General Chemistry Units: 4 or",
+        "description": "General chemistry I and II (with advanced alternatives), organic chemistry, and physical chemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 245"
+          }
+        ],
+        "id": "CHE-BS-MATH",
+        "source_lines": [
+          [
+            59,
+            71
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Calculus I, II (or engineering variant), III (or engineering variant), and Math of Physics and Engineering I.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PHYS 151Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHYS 152L"
+          }
+        ],
+        "id": "CHE-BS-PHYSICS",
+        "source_lines": [
+          [
+            73,
+            78
+          ]
+        ],
+        "source_quote": "PHYS 151Lg Fundamentals of Physics I:",
+        "description": "Fundamentals of Physics I and II.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CHE 120"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 443"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 444cL"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 447"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 460L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHE 485"
+          }
+        ],
+        "id": "CHE-BS-CORE-ENGINEERING",
+        "source_lines": [
+          [
+            80,
+            96
+          ]
+        ],
+        "source_quote": "CHE 120 Introduction to Chemical Engineering Units: 4",
+        "description": "Thirteen named chemical engineering courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "CHE"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "CHE",
+                    "AME",
+                    "EE",
+                    "ISE",
+                    "CE",
+                    "BME",
+                    "ASTE",
+                    "CSCI",
+                    "ENGR"
+                  ]
+                },
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "adviser-approved upper-division Engineering course work"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "level_min": 300
+                },
+                {
+                  "unresolved": "any upper-division course in Math, Science or Engineering"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 300L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 431"
+              }
+            ],
+            "id": "CHE-BS-CHEMISTRY-OPTION",
+            "source_lines": [
+              [
+                108,
+                116
+              ]
+            ],
+            "source_quote": "Choose one:",
+            "description": "One additional chemistry course from CHEM 300L, CHEM 322bL, or CHEM 431.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "CHE-BS-ELECTIVES",
+        "source_lines": [
+          [
+            98,
+            106
+          ]
+        ],
+        "source_quote": "In addition to the previously listed common requirements",
+        "description": "Additional upper-division CHE, engineering, and math/science/engineering elective courses, plus a chemistry option course.",
+        "confidence": "medium",
+        "note": "Adviser approval for the engineering elective and the specification of 'Math, Science or Engineering' for the third elective cannot be fully checked from a course list; left as unresolved conditions."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "there are four possible areas of emphasis within",
+      "reason": "out_of_scope",
+      "why": "Describes optional emphasis tracks with their own unit totals, not encoded as part of base BS requirements."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Sample student schedules are located on the",
+      "reason": "out_of_scope",
+      "why": "Marketing/advisory pointer to sample schedules, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "See also common requirements for undergraduate degrees",
+      "reason": "university_level",
+      "why": "Reference to university-wide common requirements, handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          44,
+          44
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "GE requirement is university-wide and tracked via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Chemical Engineering requires 133 units.",
+      "reason": "university_level",
+      "why": "Total unit count for the degree, a university-wide style rule."
+    },
+    {
+      "source_lines": [
+        [
+          102,
+          102
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C (2.0)",
+      "reason": "out_of_scope",
+      "why": "GPA requirement; grade rules are out of scope for Phase 1."
+    }
+  ]
+}

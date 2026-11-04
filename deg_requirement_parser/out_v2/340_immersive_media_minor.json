@@ -1,0 +1,205 @@
+{
+  "program": "Immersive Media Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "good academic standing, declared major, permission from Interactive Media Division, change of major/minor form"
+        },
+        "id": "IM-MINOR-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To be eligible for the immersive media minor,",
+        "description": "Students must be in good standing, have a declared major, and get divisional permission to declare the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 289"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 290"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 165"
+          }
+        ],
+        "id": "IM-MINOR-LOWER",
+        "source_lines": [
+          [
+            27,
+            33
+          ]
+        ],
+        "source_quote": "CTIN 289 Game Development Fundamentals Units: 4",
+        "description": "Lower division requirements: CTIN 289, CTIN 290, TAC 165.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CTAN 452",
+        "id": "IM-MINOR-UPPER",
+        "source_lines": [
+          [
+            35,
+            39
+          ]
+        ],
+        "source_quote": "CTAN 452 Introduction to 3-D Computer Animation",
+        "description": "Upper division requirement: CTAN 452.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTAN 502L",
+            "CTAN 504L",
+            "CTIN 492L",
+            "IML 436"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "IM-MINOR-CAPSTONE",
+        "source_lines": [
+          [
+            41,
+            50
+          ]
+        ],
+        "source_quote": "Take four units from the following list:",
+        "description": "Four units from the capstone course list.",
+        "confidence": "high",
+        "note": "Some capstone courses require prerequisites (*) or special permission for graduate-level courses (+); not encoded as checkable conditions."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 420",
+            "CTAN 443L",
+            "CTAN 462",
+            "CTAN 464L",
+            "CTAN 465L",
+            "CTAN 485",
+            "CTAN 495",
+            "CTAN 497L",
+            "CTAN 508",
+            "CTAN 564L",
+            "CTIN 404L",
+            "CTIN 444",
+            "CTIN 479",
+            "CTIN 486",
+            "CTIN 489L",
+            "CTIN 490x",
+            "CTIN 492L",
+            "CTIN 503",
+            "CTWR 405",
+            "CTXA 410",
+            "IML 335",
+            "IML 354",
+            "IML 475",
+            "IML 490x",
+            "IML 543",
+            "IML 575",
+            "TAC 380",
+            "TAC 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "IM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            52,
+            85
+          ]
+        ],
+        "source_quote": "A minimum of eight units is required.",
+        "description": "A minimum of eight units from the electives list.",
+        "confidence": "high",
+        "note": "CTIN 492L also appears in the capstone list; one-slot rule applies so it can satisfy at most one of the two nodes. Some electives require prerequisites (*) or special permission for graduate-level courses (+); not encoded as checkable conditions."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "The minor in immersive media requires a minimum of 24 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Students can add depth within a specific area",
+      "reason": "advisory",
+      "why": "Describes a stylistic choice, not a binding requirement."
+    },
+    {
+      "source_lines": [
+        [
+          91,
+          91
+        ]
+      ],
+      "source_quote": "*Prerequisite Required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite notations on individual courses are not programme-level requirements to encode here."
+    },
+    {
+      "source_lines": [
+        [
+          93,
+          93
+        ]
+      ],
+      "source_quote": "+Enrollment in graduate-level courses requires special permission.",
+      "reason": "out_of_scope",
+      "why": "Permission requirement for specific courses is not checkable from a course list."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "program": "Connected Devices and Making Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "TAC 115"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 116"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 165"
+          }
+        ],
+        "id": "CDM-MINOR-INTRO",
+        "source_lines": [
+          [
+            31,
+            37
+          ]
+        ],
+        "source_quote": "Choose one introductory programming course (2 units)",
+        "description": "Choose one introductory programming course: TAC 115, TAC 116, or TAC 165.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 228"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 348"
+          }
+        ],
+        "id": "CDM-MINOR-CORE",
+        "source_lines": [
+          [
+            39,
+            45
+          ]
+        ],
+        "source_quote": "Complete the following (6 units)",
+        "description": "Complete TAC 228 and TAC 348.",
+        "confidence": "high",
+        "note": "Prerequisite sequencing for TAC 348 (ITP 109, TAC 115, TAC 116 or TAC 165) listed separately."
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "ITP 109",
+            "TAC 115",
+            "TAC 116",
+            "TAC 165"
+          ],
+          "after": "TAC 348"
+        },
+        "id": "CDM-MINOR-SEQ-TAC348",
+        "source_lines": [
+          [
+            45,
+            45
+          ]
+        ],
+        "source_quote": "Prerequisite: ITP 109 , TAC 115 , TAC",
+        "description": "ITP 109, TAC 115, TAC 116, or TAC 165 must be completed before TAC 348.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 249",
+            "TAC 341",
+            "TAC 342",
+            "TAC 388",
+            "TAC 466",
+            "TAC 468",
+            "TAC 476"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CDM-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            47,
+            61
+          ]
+        ],
+        "source_quote": "Choose electives from the following (8 units)",
+        "description": "Choose electives totaling at least 8 units from the listed TAC courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "TAC 265",
+            "CSCI 103L"
+          ],
+          "after": "TAC 341"
+        },
+        "id": "CDM-MINOR-SEQ-TAC341",
+        "source_lines": [
+          [
+            53,
+            53
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 265 or CSCI 103L must",
+        "description": "TAC 265 or CSCI 103L must be completed before TAC 341.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "TAC 265",
+            "CSCI 103L"
+          ],
+          "after": "TAC 342"
+        },
+        "id": "CDM-MINOR-SEQ-TAC342",
+        "source_lines": [
+          [
+            55,
+            55
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 265 or CSCI 103L must",
+        "description": "TAC 265 or CSCI 103L must be completed before TAC 342.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "TAC 348"
+          ],
+          "after": "TAC 388"
+        },
+        "id": "CDM-MINOR-SEQ-TAC388",
+        "source_lines": [
+          [
+            57,
+            57
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 348 must be completed before",
+        "description": "TAC 348 must be completed before TAC 388.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "TAC 228",
+            "TAC 348"
+          ],
+          "after": "TAC 468"
+        },
+        "id": "CDM-MINOR-SEQ-TAC468",
+        "source_lines": [
+          [
+            60,
+            60
+          ]
+        ],
+        "source_quote": "Prerequisite: TAC 228 and TAC 348 must",
+        "description": "TAC 228 and TAC 348 must be completed before TAC 468.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            29,
+            29
+          ]
+        ],
+        "source_quote": "The minor requires a minimum of 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students should meet the regular USC admissions",
+      "reason": "university_level",
+      "why": "General admissions standard and declared major requirement, not minor-specific."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students will complete an application for the",
+      "reason": "out_of_scope",
+      "why": "Application procedure, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Students with a declared major in Electrical",
+      "reason": "no_fit",
+      "why": "Exclusion based on another major has no taxonomy slot other than PROGRAM_RULE; but this is a binary eligibility rule not course-based requirement, best captured as manual_review not present here."
+    }
+  ]
+}

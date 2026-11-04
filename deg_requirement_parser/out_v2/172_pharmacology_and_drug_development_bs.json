@@ -1,0 +1,471 @@
+{
+  "program": "Pharmacology and Drug Development (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 108g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 118gx"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          }
+        ],
+        "id": "PDD-BS-CALCULUS",
+        "source_lines": [
+          [
+            37,
+            45
+          ]
+        ],
+        "source_quote": "Select one course.",
+        "description": "One calculus/precalculus course from MATH 108g, 118gx, or 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BME 423"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "HP 340Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 208x"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 305g"
+          }
+        ],
+        "id": "PDD-BS-STATISTICS",
+        "source_lines": [
+          [
+            47,
+            58
+          ]
+        ],
+        "source_quote": "Select one course.",
+        "description": "One statistics course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ]
+          }
+        ],
+        "id": "PDD-BS-CHEMISTRY",
+        "source_lines": [
+          [
+            60,
+            74
+          ]
+        ],
+        "source_quote": "Select two courses.",
+        "description": "The general chemistry series (105aLg+105bL) or the advanced series (115aLg+115bL).",
+        "confidence": "high",
+        "note": "Line 74 restates that the two series cannot be mixed; no separate node needed."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "PDD-BS-BIOLOGY",
+        "source_lines": [
+          [
+            76,
+            90
+          ]
+        ],
+        "source_quote": "Select two courses.",
+        "description": "The general biology series (120Lg+220Lg) or the advanced series (121Lg+221Lg).",
+        "confidence": "high",
+        "note": "Line 90 restates that the two series cannot be mixed; no separate node needed."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "RXRS 200",
+            "id": "PDD-BS-RXRS-PART1",
+            "source_lines": [
+              [
+                98,
+                104
+              ]
+            ],
+            "source_quote": "One course.",
+            "description": "RXRS 200, the introductory lower-division course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "RXRS 402",
+            "id": "PDD-BS-RXRS-PART2",
+            "source_lines": [
+              [
+                106,
+                112
+              ]
+            ],
+            "source_quote": "One course.",
+            "description": "RXRS 402, required upper-division course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "RXRS 302"
+              },
+              {
+                "family": "specific_course",
+                "course": "RXRS 413w"
+              }
+            ],
+            "id": "PDD-BS-RXRS-PART3",
+            "source_lines": [
+              [
+                114,
+                121
+              ]
+            ],
+            "source_quote": "Select one course.",
+            "description": "RXRS 302 or RXRS 413w.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BPSI 405",
+                "RXRS 403",
+                "RXRS 407",
+                "RXRS 408",
+                "RXRS 410",
+                "RXRS 411",
+                "RXRS 414",
+                "RXRS 416",
+                "RXRS 421",
+                "RXRS 424"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "PDD-BS-RXRS-PART4",
+            "source_lines": [
+              [
+                123,
+                139
+              ]
+            ],
+            "source_quote": "Select four courses.",
+            "description": "Four courses from the listed RXRS/BPSI 400-level pool.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "BPSI 412",
+                    "BPSI 413",
+                    "BPSI 414",
+                    "BPSI 415",
+                    "RXRS 405",
+                    "RXRS 406",
+                    "RXRS 412",
+                    "RXRS 417",
+                    "RXRS 418",
+                    "RXRS 422",
+                    "RXRS 430",
+                    "RXRS 431",
+                    "RXRS 490x",
+                    "BPSI 490x"
+                  ]
+                },
+                {
+                  "unresolved": "other RXRS and/or BPSI courses, not limited to the listed examples"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    159,
+                    159
+                  ]
+                ],
+                "source_quote": "A maximum of 4 units can be met by taking Directed Research (RXRS 490)",
+                "eligible_if": {
+                  "courses": [
+                    "RXRS 490x"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "max",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    96,
+                    96
+                  ]
+                ],
+                "source_quote": "A maximum of 4 units can be met by taking Directed Research (BPSI 490x",
+                "eligible_if": {
+                  "courses": [
+                    "BPSI 490x"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "max",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "PDD-BS-RXRS-PART5",
+            "source_lines": [
+              [
+                140,
+                159
+              ]
+            ],
+            "source_quote": "The remaining units may be selected from the following RXRS and/or BPSI courses",
+            "description": "Remaining units (at least 8) from additional RXRS/BPSI courses, capped at 4 units each of RXRS 490x and BPSI 490x Directed Research.",
+            "confidence": "medium",
+            "note": "Open-ended list ('including, but not limited to') encoded with unresolved alongside the named courses; remaining-units minimum inferred from the 36-unit total minus the other four RXRS parts."
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                92,
+                96
+              ]
+            ],
+            "source_quote": "Students must complete a minimum of 36 units of BPSI or RXRS course work",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 36
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                92,
+                96
+              ]
+            ],
+            "source_quote": "a minimum of 32 units of upper-division (300 level and above) BPSI or RXRS course work",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 32
+              }
+            ]
+          }
+        ],
+        "id": "PDD-BS-RXRS-BPSI-UNIT-REQ",
+        "source_lines": [
+          [
+            92,
+            159
+          ]
+        ],
+        "source_quote": "Students must complete a minimum of 36 units of BPSI or RXRS course work",
+        "description": "At least 36 total units of RXRS/BPSI course work (at least 32 upper-division), built from the five specified parts.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 300L",
+            "BISC 307L",
+            "BISC 320Lg",
+            "BISC 330L"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "PDD-BS-BISC-REQ",
+        "source_lines": [
+          [
+            29,
+            31
+          ],
+          [
+            161,
+            170
+          ]
+        ],
+        "source_quote": "A minimum of 8 units of upper-division (300 level and above) courses in Biological Sciences (BISC) unique to the major",
+        "description": "Two upper-division BISC courses from the listed pool, totaling at least 8 units, unique to the major.",
+        "confidence": "high",
+        "note": "Unique-to-major restatement from L031 means these BISC courses cannot overlap with other electives; one-slot rule already enforces this."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "General education and writing requirements",
+      "reason": "university_level",
+      "why": "GE and writing requirements are university-wide and tracked separately."
+    },
+    {
+      "source_lines": [
+        [
+          28,
+          28
+        ]
+      ],
+      "source_quote": "Foundational courses designed to prepare students for the major",
+      "reason": "no_fit",
+      "why": "No specific courses or pool given for this category beyond the calculus/stats/chem/bio sections already encoded."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "requires the completion of a minimum of 128 units",
+      "reason": "university_level",
+      "why": "The 128-unit total is the university-wide degree minimum."
+    },
+    {
+      "source_lines": [
+        [
+          172,
+          177
+        ]
+      ],
+      "source_quote": "Undergraduate Honors Program (optional)",
+      "reason": "advisory",
+      "why": "The honors seminar sequence is optional, not a degree requirement."
+    }
+  ]
+}

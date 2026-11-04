@@ -1,0 +1,320 @@
+{
+  "program": "Non-Governmental Organizations and Social Change (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 252gmw",
+            "ECON 238xg",
+            "ENST 150gx",
+            "ENST 270",
+            "GEOL 108Lg",
+            "IR 101gxw",
+            "IR 210gw",
+            "PHIL 141g",
+            "POSC 130g",
+            "POSC 248gw",
+            "POSC 265gw",
+            "SOCI 100gmw",
+            "SOCI 150gm",
+            "SOCI 200gm",
+            "SOCI 255g",
+            "SWMS 215gw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NGO-BA-LOWERDIV",
+        "source_lines": [
+          [
+            29,
+            52
+          ]
+        ],
+        "source_quote": "Choose one course (4 units) from the following list:",
+        "description": "Choose one lower-division course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "SOCI 313L",
+            "SOCI 314Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NGO-BA-METHODS",
+        "source_lines": [
+          [
+            54,
+            63
+          ]
+        ],
+        "source_quote": "Choose one course (4 units) from the following two:",
+        "description": "Choose one core methods course from the two listed.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 337",
+            "PHIL 437",
+            "POSC 380",
+            "SOCI 270g",
+            "SOCI 445"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NGO-BA-THEORY",
+        "source_lines": [
+          [
+            65,
+            77
+          ]
+        ],
+        "source_quote": "Choose one course (4 units) from the following five:",
+        "description": "Choose one core theory course from the five listed.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 371",
+            "PPD 371",
+            "SOCI 250gmw",
+            "SOCI 408"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "NGO-BA-PERSPECTIVES",
+        "source_lines": [
+          [
+            79,
+            90
+          ]
+        ],
+        "source_quote": "Choose one course (4 units) from the following four:",
+        "description": "Choose one course on perspectives on NGOs from the four listed.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 355",
+            "ANTH 316gmp",
+            "ANTH 357g",
+            "ANTH 371gm",
+            "ANTH 380",
+            "BISC 427",
+            "ECON 340",
+            "ECON 344",
+            "ECON 350",
+            "GERO 340",
+            "GERO 483",
+            "HIST 323",
+            "HIST 372",
+            "IR 308gw",
+            "IR 310",
+            "IR 315",
+            "IR 316",
+            "IR 323",
+            "IR 324",
+            "IR 325",
+            "IR 344",
+            "IR 349",
+            "IR 364",
+            "IR 367",
+            "MOR 385gm",
+            "MOR 466",
+            "PHIL 340",
+            "POSC 320",
+            "POSC 321",
+            "POSC 345",
+            "POSC 347",
+            "POSC 350",
+            "POSC 363",
+            "POSC 381",
+            "POSC 436",
+            "SOCI 362",
+            "SOCI 402",
+            "SOCI 429",
+            "SOCI 430m",
+            "SOCI 432m",
+            "SOCI 440",
+            "SOCI 460",
+            "SOCI 464"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "NGO-BA-CONFLICT-ANALYSIS",
+        "source_lines": [
+          [
+            92,
+            148
+          ]
+        ],
+        "source_quote": "Choose two courses (8 units):",
+        "description": "Choose two courses analyzing roots of social conflict; some require prerequisites.",
+        "confidence": "high",
+        "note": "ECON 340, ECON 344, ECON 350 require a prerequisite per catalogue note; not independently checkable."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AMST 357m",
+            "BAEP 491",
+            "BUCO 485",
+            "COMM 322",
+            "COMM 366",
+            "COMM 400",
+            "COMM 402",
+            "COMM 412",
+            "COMM 413",
+            "COMM 487",
+            "GERO 350",
+            "IR 306",
+            "IR 318",
+            "JS 360m",
+            "POSC 323",
+            "PPD 318",
+            "PPD 353",
+            "REL 468",
+            "SOCI 340",
+            "SOCI 425",
+            "SOWK 350",
+            "THTR 488mw"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "NGO-BA-ADVOCACY",
+        "source_lines": [
+          [
+            150,
+            179
+          ]
+        ],
+        "source_quote": "Choose two courses (8 units):",
+        "description": "Choose two courses addressing social conflict and organizing advocacy.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "SOCI 450",
+        "id": "NGO-BA-INTERNSHIP",
+        "source_lines": [
+          [
+            181,
+            189
+          ]
+        ],
+        "source_quote": "One course (4 units) required",
+        "description": "SOCI 450 Non-Governmental Organizations/Non-profits Field Practicum is required.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "course_reuse",
+        "kind": "DOUBLE_COUNT",
+        "id": "NGO-BA-DOUBLECOUNT",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "students may double-count no more than three courses",
+        "description": "No more than three courses from this degree may be double-counted toward another major.",
+        "confidence": "high",
+        "note": null,
+        "details": {
+          "max_courses": 3,
+          "applies_to": "any other major"
+        }
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The major requires nine courses (36 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 9
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 36
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This interdisciplinary program focuses on the roots",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

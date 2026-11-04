@@ -1,0 +1,362 @@
+{
+  "program": "Cinematic Arts, Film and Television Production (BA)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "supplemental application and materials to the Undergraduate Production Program"
+        },
+        "id": "CAFTVP-ADMISSION-GATE",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Applicants must submit a supplemental application and materials",
+        "description": "Admission requires a supplemental application to the Undergraduate Production Program.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTCS 190g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CTCS 200g"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTCS 201"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 294"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 295L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 413"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CTPR 431"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 411"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 414"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTWR 416"
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CTCS 367",
+                "CTCS 392",
+                "CTCS 393",
+                "CTCS 394",
+                "CTCS 400",
+                "CTCS 402",
+                "CTCS 403",
+                "CTCS 404",
+                "CTCS 406",
+                "CTCS 407",
+                "CTCS 409",
+                "CTCS 411",
+                "CTCS 412",
+                "CTCS 414",
+                "CTCS 417",
+                "CTCS 464",
+                "CTCS 469",
+                "CTCS 478",
+                "CTCS 482"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CTPR 421",
+                "CTPR 424",
+                "CTPR 438",
+                "CTPR 440",
+                "CTPR 465",
+                "CTPR 478"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CTPR 480"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTPR 484"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTPR 486"
+              },
+              {
+                "family": "specific_course",
+                "course": "CTPR 547L"
+              }
+            ]
+          }
+        ],
+        "id": "CAFTVP-COURSE-REQUIREMENTS",
+        "source_lines": [
+          [
+            59,
+            124
+          ]
+        ],
+        "source_quote": "CTCS 190g Introduction to Cinema Units: 4",
+        "description": "Core CTCS/CTPR/CTWR courses, a choice of short production electives, one cinema/media studies course, three practicum courses, and one final production course.",
+        "confidence": "high",
+        "note": "CTPR 310, CTPR 480, CTPR 484, CTPR 486 and CTPR 547L cannot be waived or substituted with another course or transfer credit. Enrollment in CTPR 547 requires special permission."
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": [
+            "CTPR 294",
+            "CTPR 295L"
+          ],
+          "after": "CTPR 310",
+          "note": "CTPR 294 and CTPR 295L must be taken the first semester enrolled; CTPR 310 is the second phase; advanced practicum courses and one of CTPR 480/484/486/547 follow."
+        },
+        "id": "CAFTVP-PRODUCTION-SEQUENCE",
+        "source_lines": [
+          [
+            33,
+            43
+          ]
+        ],
+        "source_quote": "Candidates for the Bachelor of Arts degree in Cinematic",
+        "description": "Students must take CTPR 294 and CTPR 295L in their first semester, then CTPR 310, then advanced practicum courses, then a final production course.",
+        "confidence": "medium",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The degree requires 128 units, including 16 lower-division",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 128
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "including 16 lower-division units and 26 upper-division",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "CTCS",
+                "CTPR",
+                "CTWR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 26
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "A maximum of 40 School of Cinematic Arts upper-division",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "CTCS",
+                "CTPR",
+                "CTWR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "max",
+            "value": 40
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          27
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent",
+      "reason": "university_level",
+      "why": "GE requirements are university-wide and sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "To qualify for enrollment in CTPR 310",
+      "reason": "no_fit",
+      "why": "References undefined guidelines with no checkable course list."
+    },
+    {
+      "source_lines": [
+        [
+          49,
+          49
+        ]
+      ],
+      "source_quote": "To qualify for enrollment in CTPR 480",
+      "reason": "no_fit",
+      "why": "References undefined guidelines with no checkable course list."
+    },
+    {
+      "source_lines": [
+        [
+          138,
+          138
+        ]
+      ],
+      "source_quote": "A minimum grade of C, 2.0 (A =",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    },
+    {
+      "source_lines": [
+        [
+          140,
+          140
+        ]
+      ],
+      "source_quote": "Students who do not earn the minimum grade",
+      "reason": "out_of_scope",
+      "why": "Disqualification/grade policy."
+    },
+    {
+      "source_lines": [
+        [
+          144,
+          144
+        ]
+      ],
+      "source_quote": "No more than 40 upper-division units can be",
+      "reason": "out_of_scope",
+      "why": "Approval-based enrollment cap, not a course selection rule."
+    },
+    {
+      "source_lines": [
+        [
+          146,
+          146
+        ]
+      ],
+      "source_quote": "Registration in graduate level courses (numbered 500)",
+      "reason": "out_of_scope",
+      "why": "Approval procedure for graduate-level enrollment."
+    },
+    {
+      "source_lines": [
+        [
+          150,
+          150
+        ]
+      ],
+      "source_quote": "Cinematic arts majors are expected to meet",
+      "reason": "advisory",
+      "why": "Advising recommendation, not a degree requirement."
+    }
+  ]
+}

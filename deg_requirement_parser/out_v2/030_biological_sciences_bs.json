@@ -1,0 +1,453 @@
+{
+  "program": "Biological Sciences (Biotechnology) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BIOTECH-BS-LOWER-CORE",
+        "source_lines": [
+          [
+            25,
+            33
+          ]
+        ],
+        "source_quote": "Lower-Division BISC Core Courses (8 units)",
+        "description": "Two intro biology sequences: BISC 120Lg or 121Lg, and BISC 220Lg or 221Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "choose": 1,
+                    "from": [
+                      {
+                        "family": "specific_course",
+                        "course": "CHEM 105aLg"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "CHEM 107Lg"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "CHEM 115aLg"
+                      }
+                    ]
+                  },
+                  {
+                    "choose": 1,
+                    "from": [
+                      {
+                        "family": "specific_course",
+                        "course": "CHEM 105bL"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "CHEM 108L"
+                      },
+                      {
+                        "family": "specific_course",
+                        "course": "CHEM 115bL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "BIOTECH-BS-GENCHEM",
+            "source_lines": [
+              [
+                39,
+                49
+              ]
+            ],
+            "source_quote": "General Chemistry Requirement: 8 units",
+            "description": "Two-semester general chemistry sequence with lab.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 322aL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 325aL"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 322bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "CHEM 325bL"
+                  }
+                ]
+              }
+            ],
+            "id": "BIOTECH-BS-ORGCHEM",
+            "source_lines": [
+              [
+                51,
+                59
+              ]
+            ],
+            "source_quote": "Organic Chemistry Requirement: 8 units",
+            "description": "Two-semester organic chemistry sequence.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g",
+            "id": "BIOTECH-BS-CALC",
+            "source_lines": [
+              [
+                61,
+                65
+              ]
+            ],
+            "source_quote": "Calculus Requirement: 4 units",
+            "description": "MATH 125g Calculus I.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 305g"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              }
+            ],
+            "id": "BIOTECH-BS-STATS",
+            "source_lines": [
+              [
+                67,
+                73
+              ]
+            ],
+            "source_quote": "Statistics Requirement: 4 units",
+            "description": "One statistics course: MATH 208x, QBIO 305g, or QBIO 310.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135aLg"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 151Lg"
+                  }
+                ]
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135bL"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 152L"
+                  }
+                ]
+              }
+            ],
+            "id": "BIOTECH-BS-PHYSICS",
+            "source_lines": [
+              [
+                75,
+                83
+              ]
+            ],
+            "source_quote": "Physics Requirement: 8 units",
+            "description": "Two-semester physics sequence.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BIOTECH-BS-COLLATERAL",
+        "source_lines": [
+          [
+            35,
+            83
+          ]
+        ],
+        "source_quote": "Collateral Sciences Courses (32 units)",
+        "description": "Collateral science courses in chemistry, calculus, statistics, and physics.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 193",
+            "BISC 194",
+            "BISC 199"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "BIOTECH-BS-INTRO-RESEARCH",
+        "source_lines": [
+          [
+            85,
+            93
+          ]
+        ],
+        "source_quote": "Enroll in one or two of the courses below.",
+        "description": "Enroll in one or two of BISC 193, 194, or 199.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 301"
+          }
+        ],
+        "id": "BIOTECH-BS-UD-CORE",
+        "source_lines": [
+          [
+            95,
+            101
+          ]
+        ],
+        "source_quote": "Upper-Division Core Courses (11 units)",
+        "description": "BISC 320Lg, BISC 325, and BUAD 301.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 321"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 461"
+          }
+        ],
+        "id": "BIOTECH-BS-SEMINAR",
+        "source_lines": [
+          [
+            103,
+            110
+          ]
+        ],
+        "source_quote": "Biotechnology Seminar Requirement (2 units)",
+        "description": "BISC 321 or BISC 461, with section emphasis requirement if BISC 461.",
+        "confidence": "medium",
+        "note": "If enrolling in BISC 461, student must select a biotechnology emphasis-relevant section; this cannot be checked from course codes alone."
+      },
+      {
+        "family": "specific_course",
+        "course": "BISC 406L",
+        "id": "BIOTECH-BS-CAPSTONE",
+        "source_lines": [
+          [
+            112,
+            116
+          ]
+        ],
+        "source_quote": "Biotechnology Capstone Course Requirement (4 units)",
+        "description": "BISC 406L Biotechnology.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACCT 410x",
+            "BAEP 450",
+            "BAEP 474",
+            "BISC 300L",
+            "BISC 314L",
+            "BISC 330L",
+            "BISC 372",
+            "BISC 402",
+            "BISC 403",
+            "BISC 410",
+            "BISC 411",
+            "BISC 414",
+            "BISC 429",
+            "BISC 434",
+            "BISC 444",
+            "BISC 450L",
+            "BISC 451",
+            "BISC 490x",
+            "BISC 491L",
+            "BISC 493x",
+            "BISC 494x",
+            "BME 406",
+            "BME 410L",
+            "BME 459L",
+            "CHE 489",
+            "CHEM 467L",
+            "HBIO 301L",
+            "MOR 458",
+            "PHYS 444",
+            "QBIO 401",
+            "QBIO 478",
+            "QBIO 481",
+            "QBIO 482",
+            "SCRM 487"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "BIOTECH-BS-ELECTIVES",
+        "source_lines": [
+          [
+            118,
+            157
+          ]
+        ],
+        "source_quote": "Select three electives from the course options",
+        "description": "Three upper-division electives from the listed options.",
+        "confidence": "high",
+        "note": "Honors students must choose BISC 490x as one of these electives (L169); already included in list."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The general education, writing, foreign language and diversity",
+      "reason": "university_level",
+      "why": "GE, writing, language, diversity requirements are university/school-wide, not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          163,
+          163
+        ]
+      ],
+      "source_quote": "The department requires that students receive a grade",
+      "reason": "out_of_scope",
+      "why": "Grade and GPA requirements are out of scope."
+    },
+    {
+      "source_lines": [
+        [
+          165,
+          169
+        ]
+      ],
+      "source_quote": "The department offers an honors program to",
+      "reason": "out_of_scope",
+      "why": "Optional honors program with its own course and GPA requirements, not part of base degree."
+    },
+    {
+      "source_lines": [
+        [
+          171,
+          173
+        ]
+      ],
+      "source_quote": "Students may apply to the department for",
+      "reason": "out_of_scope",
+      "why": "Honors admission GPA requirement, optional program."
+    },
+    {
+      "source_lines": [
+        [
+          175,
+          177
+        ]
+      ],
+      "source_quote": "For continuation in the honors programs, students",
+      "reason": "out_of_scope",
+      "why": "Honors continuation GPA requirement, optional program."
+    }
+  ]
+}

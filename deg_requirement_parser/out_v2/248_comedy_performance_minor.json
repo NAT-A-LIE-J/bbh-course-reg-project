@@ -1,0 +1,102 @@
+{
+  "program": "Comedy (Performance) Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "THTR 197g",
+        "id": "COMEDY-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "THTR 197g Comedy and Performance Units: 4",
+        "description": "Required foundation course THTR 197g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 122",
+            "THTR 202",
+            "THTR 290",
+            "THTR 304",
+            "THTR 307",
+            "THTR 310",
+            "THTR 313",
+            "THTR 317",
+            "THTR 322",
+            "THTR 355",
+            "THTR 413",
+            "THTR 421",
+            "THTR 422",
+            "THTR 423",
+            "THTR 424",
+            "THTR 467",
+            "THTR 469",
+            "THTR 470",
+            "THTR 473",
+            "THTR 474",
+            "THTR 479",
+            "THTR 482",
+            "THTR 483"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "COMEDY-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            29,
+            55
+          ]
+        ],
+        "source_quote": "Required Elective Courses (12 units)",
+        "description": "12 units of elective courses chosen from the listed THTR comedy electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            57,
+            57
+          ]
+        ],
+        "source_quote": "Total Units: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Comedy (Performance) is a",
+      "reason": "advisory",
+      "why": "Programme description and marketing, not a requirement."
+    }
+  ]
+}

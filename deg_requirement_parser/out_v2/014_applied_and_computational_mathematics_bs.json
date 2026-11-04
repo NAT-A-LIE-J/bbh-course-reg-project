@@ -1,0 +1,407 @@
+{
+  "program": "Applied and Computational Mathematics (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 126g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 127"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 129"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 225"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 245"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 226g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 227"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 229"
+              }
+            ]
+          }
+        ],
+        "id": "ACM-BS-PREMAJOR",
+        "source_lines": [
+          [
+            21,
+            36
+          ]
+        ],
+        "source_quote": "MATH 125g Calculus I Units: 4",
+        "description": "Pre-major calculus and linear algebra sequence: MATH 125g, one of MATH 126g/127/129, one of MATH 225/245, one of MATH 226g/227/229.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "MATH 290"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 430"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 432"
+          }
+        ],
+        "id": "ACM-BS-LOGICAL-REASONING",
+        "source_lines": [
+          [
+            38,
+            46
+          ]
+        ],
+        "source_quote": "A course taken to satisfy this requirement may not also",
+        "description": "Choose one course in logical reasoning from MATH 290, MATH 430, or MATH 432.",
+        "confidence": "high",
+        "note": "A course used here cannot also be used as an upper-division elective; since MATH 430/432 also appear in the upper-division electives list, this is reflected by the one-slot rule."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MATH 407"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 425a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 458"
+          }
+        ],
+        "id": "ACM-BS-UD-MATH-CORE",
+        "source_lines": [
+          [
+            48,
+            57
+          ]
+        ],
+        "source_quote": "The following four courses are required with a grade of C",
+        "description": "Four required upper-division MATH core courses with a grade of C or better.",
+        "confidence": "high",
+        "note": "Grade requirement (C or better) is out of scope; see unclassified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MATH 410",
+            "MATH 425b",
+            "MATH 430",
+            "MATH 432",
+            "MATH 435",
+            "MATH 445",
+            "MATH 446",
+            "MATH 447",
+            "MATH 465",
+            "MATH 466",
+            "MATH 467",
+            "MATH 471",
+            "MATH 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "ACM-BS-UD-MATH-ELECTIVES",
+        "source_lines": [
+          [
+            59,
+            77
+          ]
+        ],
+        "source_quote": "Three MATH courses at the 400-level or above are required",
+        "description": "Three upper-division (400+) MATH electives chosen from the given list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CSCI 102L",
+            "CSCI 103L",
+            "CSCI 113x",
+            "CSCI 114x",
+            "TAC 115",
+            "TAC 116",
+            "TAC 165",
+            "TAC 168"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ACM-BS-COMPUTING",
+        "source_lines": [
+          [
+            79,
+            92
+          ]
+        ],
+        "source_quote": "At least one dedicated programming course.",
+        "description": "At least one programming course from the listed computing courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AME 301",
+                "AME 404",
+                "ASTE 331a",
+                "ASTE 331b",
+                "ASTR 400",
+                "ASTR 422",
+                "ASTR 424",
+                "BUAD 311",
+                "BUAD 313",
+                "CHE 330",
+                "CHEM 430",
+                "CHEM 431",
+                "CHEM 432",
+                "CSCI 360",
+                "CSCI 467",
+                "CSCI 475",
+                "DSO 424",
+                "DSO 428",
+                "ECON 303",
+                "ECON 305",
+                "ECON 318",
+                "ECON 404",
+                "ECON 419",
+                "ECON 457",
+                "FBE 435",
+                "FBE 441",
+                "FBE 459",
+                "GEOL 425L",
+                "GEOL 440L",
+                "GEOL 450L",
+                "ISE 330",
+                "ISE 331",
+                "PHYS 304",
+                "PHYS 316",
+                "PHYS 408a",
+                "PHYS 408b",
+                "PSYC 421L",
+                "QBIO 401",
+                "QBIO 478"
+              ]
+            },
+            {
+              "courses": [
+                "AME 201",
+                "AME 204",
+                "ASTE 101L",
+                "ASTE 280",
+                "BME 210",
+                "CE 215",
+                "CE 225",
+                "CHE 120",
+                "CSCI 170",
+                "CSCI 270",
+                "EE 202L",
+                "ISE 220",
+                "ISE 225",
+                "PHYS 151Lg",
+                "PHYS 152L",
+                "PHYS 153L"
+              ]
+            },
+            {
+              "unresolved": "other fields approved by the department with significant quantitative content"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                98,
+                98
+              ]
+            ],
+            "source_quote": "At least three of the four must be outside the mathematics department",
+            "eligible_if": {
+              "not": {
+                "prefix": [
+                  "MATH"
+                ]
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                98,
+                98
+              ]
+            ],
+            "source_quote": "and at least one must be upper-division.",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "AME 301",
+                    "AME 404",
+                    "ASTE 331a",
+                    "ASTE 331b",
+                    "ASTR 400",
+                    "ASTR 422",
+                    "ASTR 424",
+                    "BUAD 311",
+                    "BUAD 313",
+                    "CHE 330",
+                    "CHEM 430",
+                    "CHEM 431",
+                    "CHEM 432",
+                    "CSCI 360",
+                    "CSCI 467",
+                    "CSCI 475",
+                    "DSO 424",
+                    "DSO 428",
+                    "ECON 303",
+                    "ECON 305",
+                    "ECON 318",
+                    "ECON 404",
+                    "ECON 419",
+                    "ECON 457",
+                    "FBE 435",
+                    "FBE 441",
+                    "FBE 459",
+                    "GEOL 425L",
+                    "GEOL 440L",
+                    "GEOL 450L",
+                    "ISE 330",
+                    "ISE 331",
+                    "PHYS 304",
+                    "PHYS 316",
+                    "PHYS 408a",
+                    "PHYS 408b",
+                    "PSYC 421L",
+                    "QBIO 401",
+                    "QBIO 478"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ACM-BS-QUANT-ELECTIVES",
+        "source_lines": [
+          [
+            94,
+            142
+          ]
+        ],
+        "source_quote": "At least four additional courses with significant quantitative content",
+        "description": "Four electives with significant quantitative content, at least three outside the math department and at least one upper-division, drawn from List A (upper-division) or List B (lower-division) or department-approved courses.",
+        "confidence": "medium",
+        "note": "FBE courses marked with * require prerequisites or a waiver from the FBE department; this approval condition is not separately checkable and is noted here rather than as a node."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          52,
+          52
+        ]
+      ],
+      "source_quote": "The following four courses are required with a grade of C",
+      "reason": "out_of_scope",
+      "why": "Grade requirement (C or better) is a grade rule, out of scope per taxonomy."
+    },
+    {
+      "source_lines": [
+        [
+          148,
+          148
+        ]
+      ],
+      "source_quote": "*FBE courses have prerequisites that must be satisfied",
+      "reason": "out_of_scope",
+      "why": "Prerequisite/waiver condition on specific courses is a procedural/substitution matter not checkable from course list."
+    }
+  ]
+}

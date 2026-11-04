@@ -1,0 +1,121 @@
+{
+  "program": "Korean Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "EASC 150gp"
+          },
+          {
+            "family": "specific_course",
+            "course": "HIST 105g"
+          }
+        ],
+        "id": "KOREAN-MINOR-GATEWAY",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "source_quote": "All students must take EASC 150gp East Asian",
+        "description": "Gateway course: EASC 150gp or HIST 105g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CTCS 403",
+            "CTCS 494",
+            "EALC 315",
+            "EALC 317",
+            "EALC 332",
+            "EALC 344gp",
+            "EALC 415",
+            "EALC 417",
+            "EALC 418",
+            "EALC 419",
+            "EALC 429",
+            "EALC 499",
+            "HIST 333",
+            "HIST 404",
+            "HIST 498",
+            "IR 499"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "KOREAN-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            23,
+            23
+          ],
+          [
+            32,
+            51
+          ],
+          [
+            57,
+            59
+          ]
+        ],
+        "source_quote": "as well as four upper-division four-unit courses",
+        "description": "Four upper-division 4-unit courses from the list, with prerequisites and repeat-course restrictions noted.",
+        "confidence": "high",
+        "note": "EALC 315, EALC 418, EALC 419 require prerequisite EALC 217 (not checkable). CTCS 403, CTCS 494, EALC 499, HIST 498, IR 499 are repeatable up to 8 units but only Korean-focused sections count (not checkable)."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Twenty units (five courses) are required.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "There is no language requirement for the minor.",
+      "reason": "out_of_scope",
+      "why": "States absence of a requirement rather than a requirement."
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "program": "Intelligence and Cyber Operations (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "IR 213"
+              },
+              {
+                "family": "specific_course",
+                "course": "ECON 203g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "TAC 115"
+              },
+              {
+                "family": "specific_course",
+                "course": "TAC 165"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 125L"
+          }
+        ],
+        "id": "ICO-BA-LOWER-DIVISION",
+        "source_lines": [
+          [
+            23,
+            35
+          ]
+        ],
+        "source_quote": "Lower-Division Required Courses (12 units)",
+        "description": "IR 210gw; IR 213 or ECON 203g; TAC 115 or TAC 165; TAC 125L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 304"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 375"
+          }
+        ],
+        "id": "ICO-BA-UPPER-DIVISION",
+        "source_lines": [
+          [
+            37,
+            44
+          ]
+        ],
+        "source_quote": "Upper-Division Required Courses (16 units)",
+        "description": "IR 304, IR 320, TAC 325, TAC 375.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "IR 310"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 313"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 318"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 319"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 321"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 323"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 332"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 342"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 379"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 381"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 382w"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 383"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 386"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 387"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 422"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 427"
+          }
+        ],
+        "id": "ICO-BA-SECURITY-VIOLENCE",
+        "source_lines": [
+          [
+            46,
+            68
+          ]
+        ],
+        "source_quote": "Security and Violence (4 units)",
+        "description": "Choose one course from the Security and Violence list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ECON 452"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 457"
+          },
+          {
+            "family": "specific_course",
+            "course": "FBE 462"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 328"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 329"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 331"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 431"
+          }
+        ],
+        "id": "ICO-BA-INTL-FINANCE",
+        "source_lines": [
+          [
+            70,
+            84
+          ]
+        ],
+        "source_quote": "International Finance (4 units)",
+        "description": "Choose one course from the International Finance list.",
+        "confidence": "high",
+        "note": "ECON 452 and ECON 457 have stated prerequisites (ECON 305 and ECON 303 respectively); prerequisite enforcement is university-level advising, not encoded."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "DSCI 429"
+          },
+          {
+            "family": "specific_course",
+            "course": "LAW 401"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 479"
+          }
+        ],
+        "id": "ICO-BA-CYBER-LAW",
+        "source_lines": [
+          [
+            86,
+            95
+          ]
+        ],
+        "source_quote": "Cyber Law, Policy and Management (4 units)",
+        "description": "Choose one course from the Cyber Law, Policy and Management list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 357",
+            "TAC 425",
+            "TAC 443",
+            "TAC 445",
+            "TAC 457",
+            "TAC 458",
+            "TAC 475"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ICO-BA-TECH-ELECTIVE",
+        "source_lines": [
+          [
+            97,
+            109
+          ]
+        ],
+        "source_quote": "Technical Elective (8 units)",
+        "description": "Choose two courses from the Technical Elective list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 350",
+            "IR 359",
+            "IR 362",
+            "IR 367",
+            "IR 463",
+            "MDES 301g",
+            "MDES 340g",
+            "POSC 351",
+            "POSC 358",
+            "REL 402",
+            "IR 345",
+            "IR 346",
+            "IR 439",
+            "EALC 361",
+            "HIST 366",
+            "IR 333",
+            "IR 340",
+            "IR 360",
+            "IR 384",
+            "IR 407",
+            "IR 442",
+            "IR 365",
+            "IR 425",
+            "IR 466",
+            "POSC 350"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                115,
+                115
+              ]
+            ],
+            "source_quote": "Choose two courses, each from a different category",
+            "eligible_if": {
+              "courses": [
+                "IR 350",
+                "IR 359",
+                "IR 362",
+                "IR 367",
+                "IR 463",
+                "MDES 301g",
+                "MDES 340g",
+                "POSC 351",
+                "POSC 358",
+                "REL 402"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                115,
+                115
+              ]
+            ],
+            "source_quote": "Choose two courses, each from a different category",
+            "eligible_if": {
+              "courses": [
+                "IR 345",
+                "IR 346",
+                "IR 439"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                115,
+                115
+              ]
+            ],
+            "source_quote": "Choose two courses, each from a different category",
+            "eligible_if": {
+              "courses": [
+                "EALC 361",
+                "HIST 366",
+                "IR 333",
+                "IR 340",
+                "IR 360",
+                "IR 384",
+                "IR 407",
+                "IR 442"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                115,
+                115
+              ]
+            ],
+            "source_quote": "Choose two courses, each from a different category",
+            "eligible_if": {
+              "courses": [
+                "IR 365",
+                "IR 425",
+                "IR 466",
+                "POSC 350"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ICO-BA-REGIONAL-ELECTIVES",
+        "source_lines": [
+          [
+            111,
+            160
+          ]
+        ],
+        "source_quote": "Choose two courses, each from a different category",
+        "description": "Choose two courses, each from a different regional category (Middle East and Africa; Russia, Eastern Europe and Eurasia; East Asia; Central and Latin America).",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This interdisciplinary major requires 56 units in",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 56
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "44 at the upper-division level",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 44
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "brings scholarship in international relations together with",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing text, not a requirement."
+    }
+  ]
+}

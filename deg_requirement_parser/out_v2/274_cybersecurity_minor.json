@@ -1,0 +1,88 @@
+{
+  "program": "Cybersecurity Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "TAC 125L"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "TAC 357"
+          }
+        ],
+        "id": "CYBERSEC-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            31
+          ]
+        ],
+        "source_quote": "Core Requirements (10 units)",
+        "description": "Three required core courses: TAC 125L, TAC 325, and TAC 357.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "TAC 370",
+            "TAC 375",
+            "TAC 425",
+            "TAC 443",
+            "TAC 445",
+            "TAC 447",
+            "TAC 457",
+            "TAC 458",
+            "TAC 479"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "CYBERSEC-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            47
+          ]
+        ],
+        "source_quote": "Choose two of the following:",
+        "description": "Choose two elective courses from the list of nine TAC cybersecurity electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor requires at least 18 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

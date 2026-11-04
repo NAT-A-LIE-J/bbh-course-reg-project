@@ -1,0 +1,592 @@
+{
+  "program": "Architecture (BArch)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 102a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 102bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 105aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 105bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 114"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 202aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 202bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 211"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 213ag"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 213bg"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214ag"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 214bg"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 215"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 314"
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 108g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 125Lg"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135a"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PHYS 135b"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          }
+        ],
+        "id": "ARCH-BARCH-CORE",
+        "source_lines": [
+          [
+            219,
+            219
+          ],
+          [
+            211,
+            211
+          ]
+        ],
+        "source_quote": "students MUST complete the following courses before the end of",
+        "description": "Core foundation courses that must be completed before the end of the integrative semester (third year, second semester); PHYS 125 may be replaced by PHYS 135a/135b with 4 units applied to the degree and 4 as electives.",
+        "confidence": "high",
+        "note": "ARCH 214a/214b fulfill GE Category A and ARCH 213a/213b fulfill GE Category F (university-level GE mapping, not separately encoded)."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ARCH 302aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 313"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 302bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 315"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 411"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 402aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 402bL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 525"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 500aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 501"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 502aL"
+          },
+          {
+            "family": "specific_course",
+            "course": "ARCH 526"
+          }
+        ],
+        "id": "ARCH-BARCH-UPPER-SEQUENCE",
+        "source_lines": [
+          [
+            129,
+            201
+          ]
+        ],
+        "source_quote": "ARCH 302aL Architectural Design III Units: 6",
+        "description": "Upper-division design studio, structures, history, and professional practice courses required in the third through fifth years of the curriculum.",
+        "confidence": "medium",
+        "note": "Course list derived from the five-year curriculum table rather than a single prose rule."
+      },
+      {
+        "family": "sequencing",
+        "kind": "BEFORE_MILESTONE",
+        "id": "ARCH-BARCH-CORE-TIMING",
+        "source_lines": [
+          [
+            219,
+            219
+          ]
+        ],
+        "source_quote": "students MUST complete the following courses before the end of",
+        "description": "All core courses must be completed before the end of the integrative semester to take advantage of upper-division electives.",
+        "confidence": "high",
+        "note": null,
+        "details": {
+          "before": [
+            "ARCH-BARCH-CORE courses"
+          ],
+          "milestone": "end of third year, second semester (integrative semester)"
+        }
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "ARCH"
+              ]
+            },
+            {
+              "unresolved": "professional architecture elective offerings"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "ARCH-BARCH-PROF-ELECTIVES",
+        "source_lines": [
+          [
+            227,
+            229
+          ]
+        ],
+        "source_quote": "A minimum of 10 units in architecture is required.",
+        "description": "At least 10 units of professional architecture electives.",
+        "confidence": "medium",
+        "note": "No specific elective list given in the catalogue text."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "ARCH"
+              ]
+            },
+            {
+              "unresolved": "architecture history elective offerings"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "ARCH-BARCH-HISTORY-ELECTIVE",
+        "source_lines": [
+          [
+            231,
+            233
+          ],
+          [
+            174,
+            174
+          ]
+        ],
+        "source_quote": "A minimum of 2 units in architecture history is required.",
+        "description": "At least 2 units in an architecture history elective.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "level_min": 0
+            },
+            {
+              "not": {
+                "courses": [
+                  "MATH 108g",
+                  "PHYS 125Lg",
+                  "PHYS 135a",
+                  "PHYS 135b"
+                ]
+              }
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ARCH-BARCH-FREE-ELECTIVES",
+        "source_lines": [
+          [
+            235,
+            237
+          ]
+        ],
+        "source_quote": "A minimum of 8 units in any area of liberal arts",
+        "description": "At least 8 units of free electives in any area of liberal arts or sciences, excluding MATH 108, PHYS 125 and PHYS 135a/135b.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            205,
+            205
+          ]
+        ],
+        "source_quote": "Total minimum units required: 160",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 160
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The bachelor's degree program begins intensively with",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "All applicants to the School of Architecture must complete",
+      "reason": "university_level",
+      "why": "University admissions process, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          33
+        ]
+      ],
+      "source_quote": "It is possible, in selected instances, that a transfer",
+      "reason": "out_of_scope",
+      "why": "Transfer/advanced-placement admission policy."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "A summer design studio and drawing course allows highly",
+      "reason": "out_of_scope",
+      "why": "Transfer-credit policy, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "Transfer students who are admitted with fewer than 32",
+      "reason": "out_of_scope",
+      "why": "Transfer placement policy."
+    },
+    {
+      "source_lines": [
+        [
+          43,
+          43
+        ]
+      ],
+      "source_quote": "The School of Architecture maintains academic advisers for",
+      "reason": "advisory",
+      "why": "Advisement description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "Accredited degree programs awarding the BArch degree must",
+      "reason": "university_level",
+      "why": "Accreditation minimum unit rule, superseded by the 160-unit total already encoded."
+    },
+    {
+      "source_lines": [
+        [
+          51,
+          51
+        ]
+      ],
+      "source_quote": "Students must receive a grade of C (2.0) or",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule."
+    },
+    {
+      "source_lines": [
+        [
+          55,
+          55
+        ]
+      ],
+      "source_quote": "School of Architecture majors enrolling for a semester of",
+      "reason": "out_of_scope",
+      "why": "Transfer-credit limit for off-campus study."
+    },
+    {
+      "source_lines": [
+        [
+          59,
+          59
+        ]
+      ],
+      "source_quote": "Architecture students are permitted to take a maximum of",
+      "reason": "out_of_scope",
+      "why": "Pass/no-pass unit limit rule."
+    },
+    {
+      "source_lines": [
+        [
+          63,
+          63
+        ]
+      ],
+      "source_quote": "Students in upper division (ARCH 402a , ARCH 402b",
+      "reason": "out_of_scope",
+      "why": "Scheduling substitution policy, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          67,
+          67
+        ]
+      ],
+      "source_quote": "While there are no specific time limits for completing",
+      "reason": "out_of_scope",
+      "why": "Time-to-degree policy."
+    },
+    {
+      "source_lines": [
+        [
+          80,
+          80
+        ]
+      ],
+      "source_quote": "General Education Seminar Units: 4",
+      "reason": "university_level",
+      "why": "GE requirement reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          110,
+          110
+        ]
+      ],
+      "source_quote": "General Education Units: 4",
+      "reason": "university_level",
+      "why": "GE requirement reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          161,
+          162
+        ]
+      ],
+      "source_quote": "General Education Units: 4",
+      "reason": "university_level",
+      "why": "GE requirement reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          162,
+          162
+        ]
+      ],
+      "source_quote": "Electives Units: 2",
+      "reason": "no_fit",
+      "why": "Unspecified elective units overlapping with the general elective allocation nodes; no distinct pool given."
+    },
+    {
+      "source_lines": [
+        [
+          175,
+          175
+        ]
+      ],
+      "source_quote": "Electives Units: 3-5",
+      "reason": "no_fit",
+      "why": "Unspecified elective units with a range, no distinct pool given."
+    },
+    {
+      "source_lines": [
+        [
+          187,
+          187
+        ]
+      ],
+      "source_quote": "Electives Units: 8",
+      "reason": "no_fit",
+      "why": "Unspecified elective units, no distinct pool given beyond the allocation section already encoded."
+    },
+    {
+      "source_lines": [
+        [
+          199,
+          199
+        ]
+      ],
+      "source_quote": "Electives Units: 7",
+      "reason": "no_fit",
+      "why": "Unspecified elective units, no distinct pool given."
+    },
+    {
+      "source_lines": [
+        [
+          209,
+          209
+        ]
+      ],
+      "source_quote": "ARCH 214a , ARCH 214b fulfill the General Education",
+      "reason": "university_level",
+      "why": "GE category mapping note."
+    },
+    {
+      "source_lines": [
+        [
+          213,
+          213
+        ]
+      ],
+      "source_quote": "ARCH 213a , ARCH 213b fulfills the General Education",
+      "reason": "university_level",
+      "why": "GE category mapping note."
+    },
+    {
+      "source_lines": [
+        [
+          241,
+          259
+        ]
+      ],
+      "source_quote": "All students who begin college in fall 2015 or",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement, reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          257,
+          257
+        ]
+      ],
+      "source_quote": "In addition, all entering freshmen are expected to",
+      "reason": "advisory",
+      "why": "Expectation/advisory statement about GE seminars."
+    },
+    {
+      "source_lines": [
+        [
+          259,
+          259
+        ]
+      ],
+      "source_quote": "To fulfill a minimum 160 units for the Bachelor",
+      "reason": "university_level",
+      "why": "Advice on combining GE categories, a GE/university-level note."
+    }
+  ]
+}

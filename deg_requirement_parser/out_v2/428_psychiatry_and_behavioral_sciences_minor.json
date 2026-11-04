@@ -1,0 +1,60 @@
+{
+  "program": "Psychiatry and Behavioral Sciences Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PBHS 301g",
+            "PBHS 302",
+            "PBHS 303",
+            "PBHS 304",
+            "PBHS 305",
+            "PBHS 306",
+            "PBHS 307",
+            "PBHS 310w"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PBHS-MINOR-COURSES",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "Choose four of the following courses:",
+        "description": "Choose four courses from the listed PBHS offerings.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "A minimum of 16 units is required.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,225 @@
+{
+  "program": "Linguistics and Philosophy (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "LING 210g",
+        "id": "LINGPHIL-BA-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "LING 210g Introduction to Linguistics Units: 4",
+        "description": "Lower division requires LING 210g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LING 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "LING 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 350"
+          },
+          {
+            "family": "specific_course",
+            "course": "PHIL 465"
+          }
+        ],
+        "id": "LINGPHIL-BA-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            29,
+            36
+          ]
+        ],
+        "source_quote": "For the upper division the following courses are required",
+        "description": "Upper division core: LING 302, LING 303, PHIL 350, PHIL 465.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LING 301",
+            "LING 380",
+            "LING 401",
+            "LING 402",
+            "LING 403",
+            "LING 405",
+            "LING 406",
+            "LING 407",
+            "LING 410",
+            "LING 415",
+            "LING 466",
+            "LING 467",
+            "LING 485"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LINGPHIL-BA-LING-ELECTIVES",
+        "source_lines": [
+          [
+            38,
+            54
+          ]
+        ],
+        "source_quote": "Two courses selected from",
+        "description": "Two courses selected from the listed LING electives.",
+        "confidence": "high",
+        "note": "LING 467 'Language, Linguistics and Mind' is the same course as PHIL 467; per the Note (L070), it may count toward only one program requirement (this list or the PHIL list, not both)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 450",
+            "PHIL 460",
+            "PHIL 462",
+            "PHIL 467",
+            "PHIL 470"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "LINGPHIL-BA-PHIL-ELECTIVES",
+        "source_lines": [
+          [
+            56,
+            64
+          ]
+        ],
+        "source_quote": "And three courses selected from",
+        "description": "Three courses selected from the listed PHIL electives.",
+        "confidence": "high",
+        "note": "PHIL 467 'Language, Linguistics and Mind' is the same course as LING 467; per the Note (L070), it may count toward only one program requirement."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 497"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 490"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "LING"
+                      ]
+                    },
+                    {
+                      "level_min": 400
+                    },
+                    {
+                      "unresolved": "400-level Linguistics course research paper"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "A poster presented at the USC UG symposium or at a conference."
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "A summer internship related to the degree."
+            }
+          }
+        ],
+        "id": "LINGPHIL-BA-CAPSTONE",
+        "source_lines": [
+          [
+            72,
+            82
+          ]
+        ],
+        "source_quote": "The Linguistics and Philosophy major requires a capstone experience",
+        "description": "Capstone fulfilled by a research paper (Honors Thesis, Directed Research, or 400-level course paper), a conference/symposium poster, or a summer internship.",
+        "confidence": "medium",
+        "note": "Options B and C have no checkable course pool; encoded as manual_review."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          70,
+          70
+        ]
+      ],
+      "source_quote": "This course may count toward only one program requirement.",
+      "reason": "out_of_scope",
+      "why": "Restates the one-slot rule for the LING/PHIL 467 cross-listed course; handled via notes on both elective lists, no separate node needed."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          88
+        ]
+      ],
+      "source_quote": "The Linguistics and Philosophy major with honors requires",
+      "reason": "out_of_scope",
+      "why": "Honors track with GPA and grade requirements; out of scope for base major requirements."
+    },
+    {
+      "source_lines": [
+        [
+          88,
+          88
+        ]
+      ],
+      "source_quote": "Intent to complete the major with honors should be registered",
+      "reason": "advisory",
+      "why": "Advisory/procedural note about registering honors intent, not a core requirement."
+    }
+  ]
+}

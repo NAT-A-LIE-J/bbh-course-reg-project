@@ -1,0 +1,98 @@
+{
+  "program": "American Studies and Ethnicity Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AMST 200gm"
+          },
+          {
+            "family": "specific_course",
+            "course": "AMST 350"
+          }
+        ],
+        "id": "ASE-MINOR-CORE",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "AMST 200gm Introduction to American Studies and Ethnicity",
+        "description": "Two core courses: AMST 200gm and AMST 350.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "unresolved": "courses on the American Studies and Ethnicity major lists at the 300 level or higher"
+            },
+            {
+              "unresolved": "other American Studies and Ethnicity courses approved by the director, at the 300 level or higher"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                36,
+                36
+              ]
+            ],
+            "source_quote": "No more than one course in the minor may be taken outside the college.",
+            "eligible_if": {
+              "not": {
+                "school": "Dornsife"
+              }
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "ASE-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            36
+          ]
+        ],
+        "source_quote": "Three courses from the American Studies and Ethnicity major lists",
+        "description": "Three upper-division elective courses from the major lists or director-approved courses at the 300 level or higher, with no more than one taken outside the college.",
+        "confidence": "medium",
+        "note": "No explicit course list given for the major lists; left unresolved."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "For the minor in American Studies and Ethnicity, five courses",
+      "reason": "no_fit",
+      "why": "Restates the overall structure already captured by the core and elective nodes; no additional constraint to encode."
+    }
+  ]
+}

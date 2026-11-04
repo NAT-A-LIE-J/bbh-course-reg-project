@@ -1,0 +1,166 @@
+{
+  "program": "Themed Entertainment Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "permission from the Interactive Media and Games Division and Change of Major/Minor form"
+        },
+        "id": "TE-MINOR-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "To be eligible for the themed entertainment minor",
+        "description": "Students must be in good academic standing with a declared major, get division permission, and submit a Change of Major/Minor form to declare the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CTIN 191",
+        "id": "TE-MINOR-LOWER-CORE",
+        "source_lines": [
+          [
+            29,
+            33
+          ]
+        ],
+        "source_quote": "CTIN 191 Survey of Themed Entertainment Units",
+        "description": "Lower-division core requirement: CTIN 191 (4 units).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "CTIN 452L"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTIN 488"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTPR 456"
+          },
+          {
+            "family": "specific_course",
+            "course": "CTWR 410L"
+          }
+        ],
+        "id": "TE-MINOR-UPPER-CORE",
+        "source_lines": [
+          [
+            35,
+            42
+          ]
+        ],
+        "source_quote": "CTIN 452L Themed Entertainment Design Units",
+        "description": "Upper-division core: CTIN 452L, CTIN 488, CTPR 456, CTWR 410L (14 units total).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 306",
+            "COMM 430",
+            "CTAN 420",
+            "CTAN 460",
+            "CTCS 482",
+            "CTIN 404L",
+            "CTIN 406L",
+            "CTIN 444",
+            "CTIN 486",
+            "CTIN 492L",
+            "CTPR 423",
+            "CTPR 458",
+            "THTR 330",
+            "THTR 331",
+            "THTR 332",
+            "THTR 407a",
+            "THTR 407b"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "TE-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            44,
+            64
+          ]
+        ],
+        "source_quote": "COMM 306 Innovation, Entertainment, and the Arts",
+        "description": "6 additional units chosen from the elective course list.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "A total of 24 units is required for",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "20 upper-division units.",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          70,
+          70
+        ]
+      ],
+      "source_quote": "A minimum grade of C (2.0) in each",
+      "reason": "out_of_scope",
+      "why": "Grade requirement rule, not encoded in Phase 1."
+    }
+  ]
+}

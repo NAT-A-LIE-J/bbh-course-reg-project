@@ -1,0 +1,227 @@
+{
+  "program": "Performance Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BAEP 470"
+          },
+          {
+            "family": "specific_course",
+            "course": "BAEP 472"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "GERO 315g",
+                "OT 325",
+                "PSYC 440"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "note": "PSYC 440 requires a prerequisite; not independently checkable."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BAEP 455",
+                "BUCO 333mw",
+                "MOR 451"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "BISC 230Lgx",
+                "HP 440",
+                "PSYC 367g"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "note": "PSYC 367g has prerequisite and major-restriction limits; not independently checkable."
+          }
+        ],
+        "id": "PERFSCI-MINOR-CORE",
+        "source_lines": [
+          [
+            27,
+            49
+          ]
+        ],
+        "source_quote": "Complete at least 4 units from each of the following categories",
+        "description": "Core requirement: BAEP 470, BAEP 472, plus at least 4 units each from Mind, Business and Body category lists, totaling 16 units.",
+        "confidence": "high",
+        "note": null,
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                49,
+                49
+              ]
+            ],
+            "source_quote": "Total Core: 16 units",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 258g",
+            "PSYC 301L",
+            "BAEP 450",
+            "BAEP 451",
+            "DSO 478",
+            "MOR 469",
+            "MOR 471",
+            "HBIO 202Lg",
+            "HBIO 205Lgx",
+            "PHED 106a",
+            "PHED 160",
+            "GERO 315g",
+            "OT 325",
+            "PSYC 440",
+            "BAEP 455",
+            "BUCO 333mw",
+            "MOR 451",
+            "BISC 230Lgx",
+            "HP 440",
+            "PSYC 367g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "PERFSCI-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            53,
+            75
+          ]
+        ],
+        "source_quote": "Complete at least 4 units from the list of courses below",
+        "description": "At least 4 units of electives from the listed elective courses or unused core-list courses.",
+        "confidence": "medium",
+        "note": "PSYC 301L requires a prerequisite; not independently checkable. Courses used above as required core courses cannot be double-counted as electives."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Completion of the minor requires 20 units.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            77,
+            77
+          ]
+        ],
+        "source_quote": "Total Units Required: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "students must have completed 32 units of college-level courses",
+      "reason": "out_of_scope",
+      "why": "Admission/unit-completion and GPA threshold for enrolling in the minor, a gating rule rather than a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          46,
+          46
+        ]
+      ],
+      "source_quote": "*Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note, not a selectable requirement to encode as a course pool."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          47
+        ]
+      ],
+      "source_quote": "**Registration restricted to the following majors",
+      "reason": "out_of_scope",
+      "why": "Registration restriction by major, not part of degree requirement structure."
+    },
+    {
+      "source_lines": [
+        [
+          64,
+          65
+        ]
+      ],
+      "source_quote": "or BAEP 451 The Management of New Enterprises",
+      "reason": "out_of_scope",
+      "why": "Alternative pairing already captured within elective eligible course list; no separate rule to encode."
+    }
+  ]
+}

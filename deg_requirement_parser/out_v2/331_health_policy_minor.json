@@ -1,0 +1,97 @@
+{
+  "program": "Health Policy Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 202"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 205"
+                  }
+                ]
+              },
+              {
+                "family": "specific_course",
+                "course": "PPD 330"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "PPD 415"
+          }
+        ],
+        "id": "HPOL-MIN-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            33
+          ]
+        ],
+        "source_quote": "PPD 202 Health and Health Care in America",
+        "description": "Either PPD 202 and PPD 205, or PPD 330, plus PPD 325 and PPD 415.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ACAD 260",
+            "HP 408",
+            "LAW 403",
+            "MEDS 220",
+            "MEDS 405",
+            "PPD 357",
+            "PPD 414"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HPOL-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            35,
+            45
+          ]
+        ],
+        "source_quote": "ACAD 260 Introduction to Healthcare Innovation Units",
+        "description": "4 units of electives from the listed courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "This 16-unit minor in health policy provides",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

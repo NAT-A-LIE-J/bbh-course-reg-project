@@ -1,0 +1,377 @@
+{
+  "program": "Accounting and Finance (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "ACFN-BS-WRITING",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning",
+        "description": "WRIT 150 and WRIT 340 (8 units of writing requirement).",
+        "confidence": "high",
+        "note": "A recommended WRIT 340 section for ACFN majors is advisory, not a requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "ACFN-BS-FOUNDATION",
+        "source_lines": [
+          [
+            41,
+            76
+          ]
+        ],
+        "source_quote": "BUAD 280 Introduction to Financial Accounting",
+        "description": "Accounting/Business Foundation courses (48 units), including paired choices for finance, marketing, statistics, operations, analytics and calculus.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ACCT 370"
+          },
+          {
+            "family": "specific_course",
+            "course": "ACCT 416"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ACCT 371",
+                "ACCT 377",
+                "ACCT 405",
+                "ACCT 451",
+                "ACCT 456",
+                "ACCT 462",
+                "ACCT 470",
+                "ACCT 493",
+                "ACCT 494"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "ACFN-BS-ACCOUNTING",
+        "source_lines": [
+          [
+            87,
+            102
+          ]
+        ],
+        "source_quote": "ACCT 370 External Financial Reporting Issues",
+        "description": "Required Accounting courses: ACCT 370, ACCT 416, plus 4 units from an accounting elective list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "FBE 421"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "FBE 423",
+                "FBE 432",
+                "FBE 460"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "FBE"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 499
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "FBE 421",
+                      "FBE 423",
+                      "FBE 432",
+                      "FBE 460"
+                    ]
+                  }
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "ACFN-BS-FINANCE-ELECTIVE",
+            "source_lines": [
+              [
+                113,
+                113
+              ]
+            ],
+            "source_quote": "Complete 4 units of upper-division elective course work",
+            "description": "An additional 4 units of upper-division FBE elective coursework not used elsewhere in the major.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "ACFN-BS-FINANCE",
+        "source_lines": [
+          [
+            104,
+            113
+          ]
+        ],
+        "source_quote": "FBE 421 Financial Analysis and Valuation",
+        "description": "Required Finance courses: FBE 421, 4 units from a finance elective list, plus 4 additional units of upper-division FBE elective coursework.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            37,
+            37
+          ]
+        ],
+        "source_quote": "Major Requirements (72 units)",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 72
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science degree program in",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The degree cannot be combined as an",
+      "reason": "no_fit",
+      "why": "Combination restriction; not captured by current families list (could be manual_review but combining categories unclear in scope)."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "This degree requires at least 128 units",
+      "reason": "university_level",
+      "why": "University-wide 128 unit total rule."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "A cumulative grade point average of C",
+      "reason": "out_of_scope",
+      "why": "GPA/grade requirement."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled",
+      "reason": "advisory",
+      "why": "Recommendation of a specific section, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          81,
+          81
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver policy, not a course requirement to check."
+    },
+    {
+      "source_lines": [
+        [
+          83,
+          83
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advising guidance for subject credit, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          85,
+          85
+        ]
+      ],
+      "source_quote": "BUAD 310g , BUAD 312g , MATH 118gx",
+      "reason": "university_level",
+      "why": "GE category satisfaction note, handled by GE/STARS rules."
+    }
+  ]
+}

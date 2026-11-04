@@ -1,0 +1,151 @@
+{
+  "program": "Law and Social Justice Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 101w",
+            "LAW 210p",
+            "LAW 300"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LSJ-MIN-CORE",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "Students must enroll in 8 units from the following courses",
+        "description": "8 units from the required core course list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LAW 150w",
+            "LAW 200w",
+            "LAW 202",
+            "LAW 203",
+            "LAW 205",
+            "LAW 250w",
+            "LAW 275p",
+            "LAW 310w",
+            "LAW 320p",
+            "LAW 355",
+            "LAW 403",
+            "LAW 404",
+            "LAW 406",
+            "LAW 498"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "LSJ-MIN-LAWELEC",
+        "source_lines": [
+          [
+            39,
+            58
+          ]
+        ],
+        "source_quote": "Students must enroll in 4 units of law elective courses",
+        "description": "4 units of law elective courses from the list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COMM 366",
+            "COMM 367",
+            "COMM 412",
+            "LAW 222",
+            "LAW 223",
+            "LAW 225",
+            "LAW 490x",
+            "LAW 492",
+            "LAW 498",
+            "MDA 300",
+            "PHIL 174gw",
+            "POSC 248gw",
+            "POSC 441m",
+            "POSC 444",
+            "SOCI 150gm",
+            "SOCI 250gmw",
+            "SOCI 425",
+            "SOWK 324",
+            "SOWK 424",
+            "SWMS 349"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "LSJ-MIN-OTHERELEC",
+        "source_lines": [
+          [
+            60,
+            86
+          ]
+        ],
+        "source_quote": "Students must enroll in 8 units of social justice elective courses",
+        "description": "8 units of social justice elective courses from the list.",
+        "confidence": "high",
+        "note": "Sociology courses (SOCI 150gm, SOCI 250gmw, SOCI 425) taken as part of this minor have prerequisites waived by the Sociology Department; not a checkable requirement."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The Law and Social Justice minor totals 20 units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Law and Social Justice minor provides foundational knowledge",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    }
+  ]
+}

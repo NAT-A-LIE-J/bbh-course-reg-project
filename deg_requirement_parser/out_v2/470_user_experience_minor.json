@@ -1,0 +1,313 @@
+{
+  "program": "User Experience Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ACAD 280",
+                "ART 141xg",
+                "CRIT 150gp",
+                "DES 123xg",
+                "ECON 203g",
+                "LING 275Lg",
+                "PSYC 100Lg"
+              ]
+            },
+            {
+              "all_of": [
+                {
+                  "courses": [
+                    "DES 203"
+                  ]
+                },
+                {
+                  "courses": [
+                    "DES 303"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "UX-MINOR-GROUPA",
+        "source_lines": [
+          [
+            31,
+            52
+          ]
+        ],
+        "source_quote": "Choose 4 units from the following:",
+        "description": "4 units from Group A lower-division courses, with DES 203+DES 303 as a combined 4-unit option.",
+        "confidence": "medium",
+        "note": "DES 203 and DES 303 must be taken together (2+2 units) if that option is chosen; DES 303 requires DES 203 as prerequisite (sequencing not separately encoded)."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 450"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 355"
+          }
+        ],
+        "id": "UX-MINOR-GROUPB",
+        "source_lines": [
+          [
+            54,
+            69
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "One course from Group B upper-division courses.",
+        "confidence": "high",
+        "note": "PSYC 355 requires PSYC 100Lg (prerequisite, not separately encoded)."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 309"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 339"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 425"
+          },
+          {
+            "family": "specific_course",
+            "course": "MKT 445"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 422"
+          }
+        ],
+        "id": "UX-MINOR-GROUPC",
+        "source_lines": [
+          [
+            71,
+            93
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "One course from Group C upper-division courses.",
+        "confidence": "high",
+        "note": "DES 302 requires DES 202, MKT 445 requires BUAD 307, PSYC 422 requires PSYC 314L (prerequisites, not separately encoded)."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 408"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 415"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 301L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 304L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 454"
+          }
+        ],
+        "id": "UX-MINOR-GROUPD",
+        "source_lines": [
+          [
+            95,
+            116
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "One course from Group D upper-division courses.",
+        "confidence": "high",
+        "note": "Prerequisites noted for each option (BISC 421, ECON 303, PSYC 100Lg) are not separately encoded."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ART 361"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 473"
+          },
+          {
+            "family": "specific_course",
+            "course": "CSCI 534"
+          },
+          {
+            "family": "specific_course",
+            "course": "DES 402"
+          },
+          {
+            "family": "specific_course",
+            "course": "MDA 423"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "PSYC 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "UX-MINOR-GROUPE",
+        "source_lines": [
+          [
+            118,
+            139
+          ]
+        ],
+        "source_quote": "Choose one of the following:",
+        "description": "One capstone course from Group E, with PSYC 490x requiring 4 units.",
+        "confidence": "high",
+        "note": "COMM 473 requires COMM 301Lg, DES 402 requires DES 302 (prerequisites, not separately encoded)."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "the student's own major; psychology majors must choose outside psychology, art and design majors outside Roski, Business Administration majors outside Marshall"
+        },
+        "id": "UX-MINOR-OUTSIDE-MAJOR",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Students must also include four courses outside their major.",
+        "description": "Four courses must be outside the student's major, with specific exclusion rules for psychology, art and design, and business majors.",
+        "confidence": "medium",
+        "note": "Depends on the student's declared major; cannot be checked from a course list alone."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "students must include courses from at least three departments.",
+        "thresholds": [
+          {
+            "count_by": "departments",
+            "op": "min",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            140,
+            140
+          ]
+        ],
+        "source_quote": "Minimum Units Required: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "students must choose at least four upper-division 4-unit courses and four courses dedicated exclusively to this minor",
+      "reason": "university_level",
+      "why": "Restates the university-wide minor rules about upper-division and exclusive courses, handled by the tool."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "For advisement, contact the Dornsife Advising Office.",
+      "reason": "advisory",
+      "why": "Contact/advisory information, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Please note that prerequisites will not be waived for upper-division courses",
+      "reason": "advisory",
+      "why": "Advisory note about prerequisites, not an additional requirement."
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "program": "Marine Biology Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 469L"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 473L"
+          }
+        ],
+        "id": "MARBIO-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            25,
+            30
+          ]
+        ],
+        "source_quote": "Required Courses (8 units)",
+        "description": "Two required core courses: BISC 469L and BISC 473L.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 431L",
+            "BISC 457L",
+            "ENST 298aL",
+            "ENST 483L",
+            "BISC 140g",
+            "BISC 313L",
+            "BISC 315L",
+            "BISC 419L",
+            "BISC 427",
+            "BISC 483",
+            "BISC 485",
+            "BISC 490x",
+            "ENST 310",
+            "ENST 370",
+            "ENST 490x",
+            "GEOL 107Lg",
+            "GEOL 412",
+            "GEOL 490x",
+            "SSCI 265Lg"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                36,
+                36
+              ]
+            ],
+            "source_quote": "No more than one lower-division course may count",
+            "eligible_if": {
+              "level_max": 299
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "MARBIO-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            32,
+            58
+          ]
+        ],
+        "source_quote": "Field Courses and Other Electives (12 units)",
+        "description": "12 units of electives from the field-based and non-field-based course list, with at most one lower-division course.",
+        "confidence": "high",
+        "note": "BISC 490x, ENST 490x and GEOL 490x (Directed Research) require the research topic to relate to the marine environment and permission from the minor adviser; this approval condition cannot be checked."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "courses required by the student's major or GE requirements"
+        },
+        "id": "MARBIO-MINOR-NO-MAJOR-GE-OVERLAP",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Courses required by the student's major or general education",
+        "description": "Courses already required by the student's major or GE may not also count toward the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "sequencing",
+        "kind": "BEFORE_MILESTONE",
+        "details": {
+          "before": [
+            "BISC 120Lg",
+            "BISC 121Lg",
+            "BISC 103Lgx"
+          ],
+          "milestone": "declaring the Marine Biology minor"
+        },
+        "id": "MARBIO-MINOR-PREREQ",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Prior to declaring the minor, students must have completed",
+        "description": "Students must complete BISC 120Lg, BISC 121Lg, or BISC 103Lgx before declaring the minor.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "DISCRETIONARY",
+        "details": {
+          "action": "SUBSTITUTE",
+          "approver": "minor in Marine Biology program director"
+        },
+        "id": "MARBIO-MINOR-SUBSTITUTION",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Courses may be substituted with approval of the minor",
+        "description": "Courses may be substituted with the program director's approval, filed with the Registrar.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The minor consists of 24 units of course work.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "At least 16 must be upper-division and unique",
+        "eligible_if": {
+          "level_min": 300
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Basic chemistry, such as CHEM 103Lgx or",
+      "reason": "advisory",
+      "why": "Recommended preparation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students are encouraged enroll in at least one",
+      "reason": "advisory",
+      "why": "Encouragement to take a field-based course, not a requirement."
+    }
+  ]
+}

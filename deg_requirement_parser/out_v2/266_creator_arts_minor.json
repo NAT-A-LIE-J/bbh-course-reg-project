@@ -1,0 +1,77 @@
+{
+  "program": "Creator Arts Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "THTE 226gw",
+        "id": "CREATORARTS-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "THTE 226gw The History of Content Creation",
+        "description": "Required course THTE 226gw.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTE 101",
+            "THTR 101",
+            "THTR 125",
+            "THTR 205g",
+            "THTE 310",
+            "THTR 318",
+            "THTR 410",
+            "THTR 424",
+            "THTR 467",
+            "THTE 494"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "CREATORARTS-ELECTIVES",
+        "source_lines": [
+          [
+            29,
+            42
+          ]
+        ],
+        "source_quote": "Required Elective Courses (12 units)",
+        "description": "12 units from the listed elective courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            44,
+            44
+          ]
+        ],
+        "source_quote": "Total Units: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

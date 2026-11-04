@@ -1,0 +1,205 @@
+{
+  "program": "Statistics Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 307"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 308"
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MATH 407"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 408"
+              }
+            ]
+          }
+        ],
+        "id": "STATMIN-REQUIRED",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "MATH 307 Statistical Inference and Data Analysis I",
+        "description": "Either the MATH 307/308 sequence or the MATH 407/408 sequence.",
+        "confidence": "high",
+        "note": "MATH 307 has prerequisite MATH 118 or MATH 125, not encoded as a slot."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "BME 210",
+                "BME 423",
+                "BUAD 311",
+                "DSO 424",
+                "DSO 427",
+                "ECON 318",
+                "ECON 419",
+                "HP 350L",
+                "ISE 426",
+                "MATH 447",
+                "PM 522a",
+                "PM 522b",
+                "PPD 504",
+                "PSYC 421L",
+                "QBIO 478"
+              ]
+            },
+            {
+              "unresolved": "any upper-division or graduate level class not appearing in the list that involves the theory or application of statistics, approved by the Department of Mathematics"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "STATMIN-ELECTIVES",
+        "source_lines": [
+          [
+            39,
+            67
+          ]
+        ],
+        "source_quote": "Select 8 units from the following:",
+        "description": "8 units of electives from the listed courses, or an approved upper-division/graduate statistics course.",
+        "confidence": "high",
+        "note": "BUAD 311 and DSO 424 require a prerequisite per the asterisk note; prerequisite not separately encoded."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "ROUTES",
+          "applies_to": "Math BA and BS economics/mathematics students",
+          "courses": [
+            "MATH 407",
+            "MATH 408"
+          ],
+          "note": "plus at least 16 additional upper-division units approved by the Department of Mathematics, not in their major department and not used for their major"
+        },
+        "id": "STATMIN-MATHBA-EXCEPTION",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Note that Math BA and BS economics/mathematics students may complete this minor",
+        "description": "Alternate pathway for Math BA/BS economics-mathematics students using MATH 407/408 plus approved additional units.",
+        "confidence": "low",
+        "note": "Alternate unit count (16 additional units) cannot be reconciled with the standard 16-unit total check; flagged as a special case."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            69,
+            69
+          ]
+        ],
+        "source_quote": "Total Units: 16",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "The only prerequisite for this minor is one semester of elementary calculus.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite rule, not a credit-bearing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "This interdisciplinary minor should appeal to students from any discipline",
+      "reason": "advisory",
+      "why": "Program marketing/advisory text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "As with all minors, students must include at least four upper-division courses",
+      "reason": "university_level",
+      "why": "Standard university-wide minor rule (upper-division and exclusivity requirements) handled at university level."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Finally, students must select four courses outside their major department.",
+      "reason": "university_level",
+      "why": "Standard university-wide minor rule about courses outside the major, handled at university level."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Note also that if calculus must be taken to satisfy the prerequisite for MATH 307",
+      "reason": "no_fit",
+      "why": "A conditional unit increase tied to a prerequisite situation, which the taxonomy has no way to express as a threshold."
+    },
+    {
+      "source_lines": [
+        [
+          65,
+          65
+        ]
+      ],
+      "source_quote": "*Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "A prerequisite note for certain elective courses, not a credit requirement."
+    }
+  ]
+}

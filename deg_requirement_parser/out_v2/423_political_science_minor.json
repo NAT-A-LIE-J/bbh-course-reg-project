@@ -1,0 +1,204 @@
+{
+  "program": "Political Science Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "POSC 100"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "POSC 110"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "POSC 120"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "POSC 130"
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "POSC"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "predetermined list of upper-division courses divided by subfield, approved by the department's undergraduate adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 4
+                  }
+                ],
+                "of_which": [
+                  {
+                    "source_lines": [
+                      [
+                        25,
+                        25
+                      ]
+                    ],
+                    "source_quote": "three of which must be in the chosen subfield",
+                    "eligible_if": {
+                      "unresolved": "courses in the chosen subfield"
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "id": "POSC-MINOR-SUBFIELD-TRACK",
+            "source_lines": [
+              [
+                23,
+                25
+              ]
+            ],
+            "source_quote": "Those who focus their studies on a traditional subfield",
+            "description": "Take the intro course of the chosen subfield plus four upper-division courses, three of which in that subfield, approved by the adviser.",
+            "confidence": "medium",
+            "note": "Course list for subfield electives and chosen-subfield check are approval-based and not enumerated in the catalogue."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "POSC 120"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "POSC"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "upper-division courses in the issue area of concentration, approved by the department's undergraduate adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "POSC"
+                      ]
+                    },
+                    {
+                      "level_min": 300
+                    },
+                    {
+                      "unresolved": "a fourth upper-division course in the issue area of concentration or a complementary area, approved by the department's undergraduate adviser"
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "id": "POSC-MINOR-ISSUE-AREA-TRACK",
+            "source_lines": [
+              [
+                27,
+                27
+              ]
+            ],
+            "source_quote": "Those who pursue a specific issue area of concentration",
+            "description": "Take POSC 120 as gateway course, at least three upper-division courses in the issue area, plus a fourth upper-division course in the issue area or a complementary area, approved by the adviser.",
+            "confidence": "medium",
+            "note": "Course lists for issue-area electives are approval-based and not enumerated in the catalogue."
+          }
+        ],
+        "id": "POSC-MINOR-TRACK-CHOICE",
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "Students can either pursue course work in a traditional subfield",
+        "description": "Students choose either a traditional subfield track or an issue-area-of-concentration track for the minor.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "must take five courses, 20 units, in political science",
+        "eligible_if": {
+          "prefix": [
+            "POSC"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,180 @@
+{
+  "program": "German Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERM 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERM 102"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERM 201"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERM 221"
+          }
+        ],
+        "id": "GERMAN-MINOR-LOWER",
+        "source_lines": [
+          [
+            21,
+            28
+          ]
+        ],
+        "source_quote": "GERM 101 German I Units: 4",
+        "description": "Four lower-division German courses: GERM 101, 102, 201, and 221 (or equivalent by test).",
+        "confidence": "high",
+        "note": "GERM 221 may be satisfied by equivalent test; not independently checkable."
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "GERM 310"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERM 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "GERM 470"
+              }
+            ],
+            "id": "GERMAN-MINOR-UPPER-ONE",
+            "source_lines": [
+              [
+                36,
+                48
+              ]
+            ],
+            "source_quote": "One course from the following:",
+            "description": "One course from GERM 310, GERM 311, or GERM 470.",
+            "confidence": "high",
+            "note": "GERM 310 and GERM 311 require GERM 201 or equivalent as a prerequisite (sequencing, not separately encoded as a leaf)."
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "GERM 320",
+                "GERM 325",
+                "GERM 330",
+                "GERM 346",
+                "GERM 352",
+                "GERM 353",
+                "GERM 360g",
+                "GERM 410",
+                "GERM 420",
+                "HIST 323",
+                "HIST 414",
+                "HIST 427",
+                "IR 369",
+                "IR 385",
+                "IR 468",
+                "POSC 463"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 3
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    54,
+                    54
+                  ]
+                ],
+                "source_quote": "only one course each from HIST and IR may be counted",
+                "eligible_if": {
+                  "prefix": [
+                    "HIST"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "source_lines": [
+                  [
+                    54,
+                    54
+                  ]
+                ],
+                "source_quote": "only one course each from HIST and IR may be counted",
+                "eligible_if": {
+                  "prefix": [
+                    "IR"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "id": "GERMAN-MINOR-UPPER-ELECTIVES",
+            "source_lines": [
+              [
+                50,
+                71
+              ]
+            ],
+            "source_quote": "Three elective courses from the following:",
+            "description": "Three elective upper-division courses from the given German, History, IR, and Political Science list, with at most one each from HIST and IR.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "GERMAN-MINOR-UPPER",
+        "source_lines": [
+          [
+            30,
+            34
+          ]
+        ],
+        "source_quote": "Four courses — 16 units in the two areas",
+        "description": "Four upper-division courses (16 units) across two areas of concentration: one course plus three electives.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          48,
+          48
+        ]
+      ],
+      "source_quote": "Prerequisite: GERM 201 or the equivalent by test.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite timing rule for specific courses; not a selection requirement."
+    }
+  ]
+}

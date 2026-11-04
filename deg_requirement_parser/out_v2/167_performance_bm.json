@@ -1,0 +1,470 @@
+{
+  "program": "Performance (Popular Music) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "USC admission process reviewed by faculty selection committees"
+        },
+        "id": "PPM-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission to the program is through USC admission and faculty selection committee review.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPPM 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 131a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 131b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "MUHL 350g",
+                "MUHL 351",
+                "MUJZ 350g",
+                "MUSC 102gw",
+                "MUSC 115gp",
+                "MUSC 200gmw",
+                "MUSC 210g",
+                "MUSC 250gmw",
+                "MUSC 320gmw",
+                "MUSC 371g",
+                "MUSC 372g",
+                "MUSC 373g",
+                "MUSC 460",
+                "MUSC 465"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "PPM-CORE-THORNTON",
+        "source_lines": [
+          [
+            76,
+            104
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (30 units)",
+        "description": "Ten named core Thornton courses plus a 4-unit selection from a list of music history/culture electives.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPPM 100"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPPM 120"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPPM 153"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPPM 220"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPPM 253"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPPM 320"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "PPM-FORUM-PERFORMANCE",
+            "source_lines": [
+              [
+                110,
+                124
+              ]
+            ],
+            "source_quote": "Forum, Individual Instruction, and Performance Class (21",
+            "description": "MPPM 100 Forum plus 4 units each of MPPM 120, 153, 220, 253 and 320.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "Music Ensemble courses at the 300 level"
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 2
+              }
+            ],
+            "id": "PPM-ENSEMBLES",
+            "source_lines": [
+              [
+                126,
+                130
+              ]
+            ],
+            "source_quote": "Music Ensemble at the 300-level: two 1-unit",
+            "description": "Two 1-unit 300-level Music Ensemble courses.",
+            "confidence": "low",
+            "note": "No specific ensemble course list or prefix given in the catalogue text."
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPPM 240"
+              },
+              {
+                "family": "manual_review",
+                "kind": "PROGRAM_RULE",
+                "details": {
+                  "direction": "ROUTES",
+                  "applies_to": "drummers",
+                  "courses": [
+                    "guitar or voice class"
+                  ]
+                }
+              },
+              {
+                "family": "specific_course",
+                "course": "MPPM 250"
+              },
+              {
+                "family": "manual_review",
+                "kind": "PROGRAM_RULE",
+                "details": {
+                  "direction": "ROUTES",
+                  "applies_to": "keyboardists",
+                  "courses": [
+                    "guitar or voice class"
+                  ]
+                }
+              },
+              {
+                "family": "specific_course",
+                "course": "MPPM 325a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPPM 325b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MTEC 448"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUIN 270"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 255"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUSC 496"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MTEC 245",
+                    "MTEC 246",
+                    "MTEC 378",
+                    "MTEC 443",
+                    "MTEC 444",
+                    "MTEC 445",
+                    "MTEC 446a",
+                    "MTEC 446b"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "manual_review",
+                "kind": "PROGRAM_RULE",
+                "details": {
+                  "direction": "ROUTES",
+                  "applies_to": "Songwriting emphasis students whose primary instrument is guitar",
+                  "courses": [
+                    "MPGU 145"
+                  ]
+                }
+              }
+            ],
+            "id": "PPM-INTENSIVE",
+            "source_lines": [
+              [
+                132,
+                152
+              ],
+              [
+                175,
+                175
+              ]
+            ],
+            "source_quote": "Program Intensive Courses (22 units)",
+            "description": "Named program intensive courses, with substitutions for drummers/keyboardists and a 4-unit selection from MTEC electives; guitar-primary songwriting students may need an additional course.",
+            "confidence": "medium",
+            "note": "Footnotes [**], [***] and [****] encode substitution rules for drummers, keyboardists, and guitar-primary songwriting students."
+          }
+        ],
+        "id": "PPM-PROGRAM-SPECIFIC",
+        "source_lines": [
+          [
+            106,
+            152
+          ]
+        ],
+        "source_quote": "Program Specific Courses (45 units)",
+        "description": "Forum/performance, ensemble, and program intensive course requirements totaling 45 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 23
+          }
+        ],
+        "id": "PPM-ELECTIVES",
+        "source_lines": [
+          [
+            154,
+            156
+          ]
+        ],
+        "source_quote": "Electives (23 units)",
+        "description": "23 units of free electives with no list specified.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPPM 450a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPPM 450b"
+          }
+        ],
+        "id": "PPM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            35
+          ],
+          [
+            158,
+            163
+          ]
+        ],
+        "source_quote": "Capstone Projects (2 units)",
+        "description": "Final capstone project, MPPM 450a and MPPM 450b, under approved faculty supervision.",
+        "confidence": "high",
+        "note": "The Capstone Project section (L033-035) describes supervision requirements for these same courses."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            165,
+            165
+          ]
+        ],
+        "source_quote": "Total Required for Degree: 132",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 132
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          29,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "General education requirements are university-wide and tracked separately via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          74
+        ]
+      ],
+      "source_quote": "General Education",
+      "reason": "university_level",
+      "why": "GE core literacies, global perspectives, and writing requirements are university-wide."
+    },
+    {
+      "source_lines": [
+        [
+          169,
+          169
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (six GE",
+      "reason": "advisory",
+      "why": "Advisory planning note about overlapping GE and major requirements."
+    },
+    {
+      "source_lines": [
+        [
+          35,
+          35
+        ]
+      ],
+      "source_quote": "The faculty of the department of the student's",
+      "reason": "out_of_scope",
+      "why": "Procedural description of how capstone content/format is determined by faculty."
+    }
+  ]
+}

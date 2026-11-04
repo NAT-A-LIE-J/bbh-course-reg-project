@@ -1,0 +1,118 @@
+{
+  "program": "Classics Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "CLAS 101gp",
+                "CLAS 150gp",
+                "CLAS 151gp",
+                "CLAS 160gp",
+                "CLAS 180g",
+                "CLAS 275gp",
+                "CLAS 280gp"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "GR 220",
+                "LAT 222"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "CLASMIN-LOWERDIV",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            51
+          ]
+        ],
+        "source_quote": "one lower-division Classics course or one third-semester Latin or Greek course",
+        "description": "One lower-division Classics course, or one third-semester Latin or Greek course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "CLAS",
+                "LAT",
+                "GR"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "id": "CLASMIN-UPPERDIV",
+        "source_lines": [
+          [
+            52,
+            56
+          ]
+        ],
+        "source_quote": "Four upper-division courses (16 units) drawn from classics course offerings",
+        "description": "Four upper-division courses (16 units) in Classics, Latin or Greek.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          58,
+          58
+        ]
+      ],
+      "source_quote": "Total: 5 courses",
+      "reason": "out_of_scope",
+      "why": "Restates the total course count already captured by the component requirements."
+    }
+  ]
+}

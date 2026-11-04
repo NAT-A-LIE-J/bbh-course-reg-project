@@ -1,0 +1,376 @@
+{
+  "program": "Human Development and Aging (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "GERO 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 320g"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 330"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 416"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 491"
+          },
+          {
+            "family": "specific_course",
+            "course": "GERO 492"
+          }
+        ],
+        "id": "HDA-REQUIRED-COURSES",
+        "source_lines": [
+          [
+            47,
+            57
+          ]
+        ],
+        "source_quote": "GERO 200 Gerontology: The Science of Adult Development",
+        "description": "Seven named GERO core courses, including a practicum and senior seminar.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "requirement": "satisfy the skill level requirement in one foreign language"
+            }
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "TAC 101"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "ITP"
+                      ]
+                    },
+                    {
+                      "level_min": 100,
+                      "level_max": 199
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 8
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "id": "HDA-FOREIGN-LANG-OR-PROGRAMMING",
+        "source_lines": [
+          [
+            39,
+            41
+          ]
+        ],
+        "source_quote": "Students must satisfy the skill level requirement in one language",
+        "description": "Satisfy a foreign language skill level, or complete TAC 101 plus ITP 100-level programming courses totaling 12 units.",
+        "confidence": "medium",
+        "note": "No checkable course list exists for the foreign-language option."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "GERO"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "id": "HDA-GERO-ELECTIVES",
+        "source_lines": [
+          [
+            61,
+            61
+          ]
+        ],
+        "source_quote": "Gerontology electives Units: 20",
+        "description": "20 units of gerontology electives.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "one approved statistics course"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "HDA-STATISTICS",
+        "source_lines": [
+          [
+            62,
+            62
+          ]
+        ],
+        "source_quote": "One approved statistics course Units: 4",
+        "description": "One approved statistics course, no fixed list given.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "prefix": [
+                "GERO"
+              ]
+            },
+            {
+              "courses": [
+                "ANTH 305",
+                "GERO 481",
+                "HP 402",
+                "LING 405",
+                "PSYC 100Lg",
+                "PSYC 336L",
+                "PSYC 437",
+                "SOCI 305m",
+                "SOCI 369"
+              ]
+            },
+            {
+              "unresolved": "related disciplines"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 32
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                63,
+                63
+              ]
+            ],
+            "source_quote": "(8 units upper division)",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "HDA-GENERAL-ELECTIVES",
+        "source_lines": [
+          [
+            63,
+            63
+          ],
+          [
+            69,
+            87
+          ]
+        ],
+        "source_quote": "General electives in gerontology or related disciplines",
+        "description": "32 units of general electives in gerontology or related disciplines, of which 8 units must be upper division.",
+        "confidence": "low",
+        "note": "Recommended General Electives list (L73-82) used as part of the eligible pool; two courses require prerequisites (PSYC 336L, PSYC 437), not otherwise encoded."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Human Development and Aging",
+      "reason": "out_of_scope",
+      "why": "Programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students may also specialize in a health",
+      "reason": "out_of_scope",
+      "why": "Optional track description, not a stated requirement with checkable courses."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Students planning to pursue a BS are urged",
+      "reason": "advisory",
+      "why": "Advisory to notify the school early."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "During the freshman and sophomore years, students enroll",
+      "reason": "out_of_scope",
+      "why": "Descriptive text about enrollment pattern, not an additional requirement."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "During their junior and senior years, students enroll",
+      "reason": "out_of_scope",
+      "why": "Descriptive text, not a distinct requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "The honors program is available to juniors",
+      "reason": "advisory",
+      "why": "Describes an optional honors program, not a required component."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A grade point average of at least C",
+      "reason": "out_of_scope",
+      "why": "University-wide GPA rule."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "The School of Gerontology requires a minimum 2.0",
+      "reason": "out_of_scope",
+      "why": "Program GPA rule on upper-division courses."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "The university's general education program provides a coherent,",
+      "reason": "university_level",
+      "why": "General education requirements are university-wide and tracked via STARS."
+    },
+    {
+      "source_lines": [
+        [
+          58,
+          58
+        ]
+      ],
+      "source_quote": "General Education Units: 24",
+      "reason": "university_level",
+      "why": "GE unit total is university-wide."
+    },
+    {
+      "source_lines": [
+        [
+          59,
+          59
+        ]
+      ],
+      "source_quote": "Writing Requirement Units: 8",
+      "reason": "university_level",
+      "why": "University writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          65,
+          65
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          87,
+          87
+        ]
+      ],
+      "source_quote": "[*]Prerequisite required.",
+      "reason": "out_of_scope",
+      "why": "Prerequisite note on recommended electives, not a major requirement."
+    }
+  ]
+}

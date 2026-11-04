@@ -1,0 +1,115 @@
+{
+  "program": "Environmental Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ENST 100g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320a"
+          },
+          {
+            "family": "specific_course",
+            "course": "ENST 320b"
+          }
+        ],
+        "id": "ENST-MINOR-CORE",
+        "source_lines": [
+          [
+            21,
+            27
+          ]
+        ],
+        "source_quote": "Required Core Courses",
+        "description": "Three required core courses: ENST 100g, ENST 320a, ENST 320b.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "BISC 103Lgx"
+          },
+          {
+            "family": "specific_course",
+            "course": "CHEM 103Lgx"
+          },
+          {
+            "family": "specific_course",
+            "course": "GEOL 160Lg"
+          }
+        ],
+        "id": "ENST-MINOR-ELECTIVE",
+        "source_lines": [
+          [
+            29,
+            35
+          ]
+        ],
+        "source_quote": "One Elective Course Chosen From:",
+        "description": "One elective course from BISC 103Lgx, CHEM 103Lgx, or GEOL 160Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "ENST"
+              ]
+            },
+            {
+              "level_min": 300
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "ENST-MINOR-UPPERDIV",
+        "source_lines": [
+          [
+            37,
+            37
+          ]
+        ],
+        "source_quote": "Take 8 Units from Any Upper-Division ENST Course",
+        "description": "8 units from any upper-division ENST course.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            41,
+            41
+          ]
+        ],
+        "source_quote": "Total units: 24",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 24
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

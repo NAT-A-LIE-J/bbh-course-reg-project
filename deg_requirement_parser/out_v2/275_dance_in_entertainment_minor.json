@@ -1,0 +1,169 @@
+{
+  "program": "Dance in Entertainment Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "DANC 280g",
+        "id": "DANCE-MINOR-LOWER",
+        "source_lines": [
+          [
+            25,
+            29
+          ]
+        ],
+        "source_quote": "DANC 280g Introduction to Dance as an Art Form",
+        "description": "One lower-division course: DANC 280g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "DANC 333gw"
+          },
+          {
+            "family": "specific_course",
+            "course": "DANC 363g"
+          }
+        ],
+        "id": "DANCE-MINOR-UPPER",
+        "source_lines": [
+          [
+            31,
+            36
+          ]
+        ],
+        "source_quote": "DANC 333gw Origins of Jazz Dance Units: 4 or",
+        "description": "One upper-division course: DANC 333gw or DANC 363g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ARTL 310",
+            "DANC 103",
+            "DANC 107",
+            "DANC 140",
+            "DANC 143",
+            "DANC 150",
+            "DANC 155",
+            "DANC 170",
+            "DANC 172",
+            "DANC 175",
+            "DANC 177",
+            "DANC 190",
+            "DANC 191",
+            "DANC 212g",
+            "DANC 285",
+            "DANC 302g",
+            "DANC 305g",
+            "DANC 308g",
+            "DANC 312gw",
+            "DANC 342gp",
+            "DANC 347",
+            "DANC 349",
+            "DANC 350",
+            "DANC 355",
+            "DANC 362",
+            "DANC 370",
+            "DANC 372",
+            "DANC 399",
+            "DANC 432",
+            "DANC 442",
+            "DANC 483",
+            "DANC 490x",
+            "DANC 495",
+            "DANC 499",
+            "DANC 180",
+            "DANC 181a",
+            "DANC 181b",
+            "DANC 181c",
+            "DANC 183a",
+            "DANC 183b",
+            "DANC 183c",
+            "DANC 183d",
+            "DANC 184a",
+            "DANC 184b",
+            "DANC 184c",
+            "DANC 184d",
+            "DANC 185a",
+            "DANC 185b",
+            "DANC 186",
+            "DANC 187",
+            "DANC 188a",
+            "DANC 188b",
+            "DANC 189a",
+            "DANC 189b",
+            "DANC 189c"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 10
+          }
+        ],
+        "id": "DANCE-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            38,
+            107
+          ]
+        ],
+        "source_quote": "ARTL 310 Music and Dance In Paris Salon Culture",
+        "description": "10 units of elective courses from the listed dance and related courses, including the expanded Dance Technique Courses list.",
+        "confidence": "high",
+        "note": "DANC 333gw and DANC 363g are also printed in this list but are already used by the upper-division requirement above (one-slot rule), so they are excluded here. DANC 180-189c is expanded using the Dance Technique Courses list below."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            108,
+            108
+          ]
+        ],
+        "source_quote": "Total Units Required: 18",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Students must be in good academic standing to be admitted.",
+      "reason": "university_level",
+      "why": "Admission/standing rule applied university-wide, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "Such students must submit a Prerequisite Waiver Form, which requires",
+      "reason": "out_of_scope",
+      "why": "Placement procedure for technique courses, not a degree requirement checkable via course list."
+    }
+  ]
+}

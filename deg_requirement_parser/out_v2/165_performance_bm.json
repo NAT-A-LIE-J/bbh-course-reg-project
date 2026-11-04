@@ -1,0 +1,520 @@
+{
+  "program": "Performance (Organ) (BM)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "faculty selection committee screening"
+        },
+        "id": "ORGAN-BM-ENTRANCE",
+        "source_lines": [
+          [
+            25,
+            27
+          ]
+        ],
+        "source_quote": "Admission to Thornton programs is granted through",
+        "description": "Admission requires USC admission plus faculty selection committee screening.",
+        "confidence": "medium",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUCD 348"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 496"
+          }
+        ],
+        "id": "ORGAN-BM-CORE-ACADEMIC",
+        "source_lines": [
+          [
+            82,
+            98
+          ]
+        ],
+        "source_quote": "Core Thornton Academic Courses (36 units)",
+        "description": "Thirteen named core Thornton academic music courses totaling 36 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "all_of": [
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 153"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 253"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 353"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 453"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "courses": [
+                    "MPKS 301"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "min",
+                    "value": 4
+                  }
+                ]
+              }
+            ],
+            "id": "ORGAN-BM-INDIVIDUAL-INSTRUCTION",
+            "source_lines": [
+              [
+                104,
+                117
+              ]
+            ],
+            "source_quote": "Individual Instruction (20 units)",
+            "description": "4 units each of MPKS 153, 253, 353, 453 (Organ) and MPKS 301 (Organ Service Playing), totaling 20 units.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "MUEN"
+                  ]
+                },
+                {
+                  "level_min": 300,
+                  "level_max": 399
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 6
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6
+              }
+            ],
+            "id": "ORGAN-BM-ENSEMBLES",
+            "source_lines": [
+              [
+                119,
+                123
+              ]
+            ],
+            "source_quote": "MUEN Ensemble Electives at the 300-level: six",
+            "description": "Six 1-unit MUEN ensemble electives at the 300 level.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "MPKS 160a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPKS 160b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPKS 260a"
+              },
+              {
+                "family": "specific_course",
+                "course": "MPKS 260b"
+              },
+              {
+                "family": "specific_course",
+                "course": "MUCD 340"
+              }
+            ],
+            "id": "ORGAN-BM-PROGRAM-INTENSIVE",
+            "source_lines": [
+              [
+                125,
+                133
+              ]
+            ],
+            "source_quote": "Program Intensive (10 units)",
+            "description": "MPKS 160a, 160b, 260a, 260b and MUCD 340, totaling 10 units.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "unresolved": "Music Electives (4 units), no list or criteria given"
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "ORGAN-BM-MUSIC-ELECTIVES",
+            "source_lines": [
+              [
+                135,
+                137
+              ]
+            ],
+            "source_quote": "Music Electives (4 units)",
+            "description": "4 units of music electives, pool not specified in catalogue.",
+            "confidence": "low",
+            "note": "No list or rule given for this elective category; encoded as unresolved."
+          }
+        ],
+        "id": "ORGAN-BM-PROGRAM-SPECIFIC",
+        "source_lines": [
+          [
+            100,
+            137
+          ]
+        ],
+        "source_quote": "Program Specific Courses (40 units)",
+        "description": "Individual instruction, ensembles, program intensive, and music electives totaling 40 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "MPGU 145",
+                    "MPGU 150",
+                    "MPPM 120",
+                    "MPPM 240",
+                    "MPPM 250",
+                    "MPPM 370",
+                    "MTEC 245",
+                    "MTEC 246",
+                    "MTEC 248",
+                    "MTEC 249",
+                    "MTEC 277x",
+                    "MUIN 272x",
+                    "MUIN 425",
+                    "MUJZ 141a",
+                    "MUJZ 150",
+                    "MUJZ 218a",
+                    "MUJZ 450",
+                    "MUSC 255"
+                  ]
+                },
+                {
+                  "unresolved": "other Contemporary Division courses in consultation with chair and Contemporary Division"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ],
+            "id": "ORGAN-BM-CONTEMPORARY-ELECTIVES",
+            "source_lines": [
+              [
+                143,
+                169
+              ]
+            ],
+            "source_quote": "Select 4 units from the Contemporary Division",
+            "description": "4 units of Contemporary Division electives, from the listed courses or others approved by the chair.",
+            "confidence": "medium",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "level_min": 0
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "id": "ORGAN-BM-GENERAL-ELECTIVES",
+            "source_lines": [
+              [
+                170,
+                172
+              ]
+            ],
+            "source_quote": "General Electives (16 units)",
+            "description": "16 units of general electives with no stated restriction.",
+            "confidence": "medium",
+            "note": null
+          }
+        ],
+        "id": "ORGAN-BM-ELECTIVES",
+        "source_lines": [
+          [
+            139,
+            172
+          ]
+        ],
+        "source_quote": "Electives (20 units)",
+        "description": "Contemporary Division electives (4 units) and general electives (16 units), totaling 20 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MUSC 480"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUSC 481"
+          },
+          {
+            "family": "manual_review",
+            "kind": "GATE",
+            "details": {
+              "stage": "CAPSTONE_RECITAL",
+              "basis": "QUALITATIVE_REVIEW",
+              "process": "senior recital under approved faculty supervision"
+            }
+          }
+        ],
+        "id": "ORGAN-BM-CAPSTONE",
+        "source_lines": [
+          [
+            33,
+            41
+          ],
+          [
+            174,
+            180
+          ]
+        ],
+        "source_quote": "Young Artist Project",
+        "description": "MUSC 480 and MUSC 481 (Young Artist Project) plus a faculty-supervised senior recital.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            182,
+            182
+          ]
+        ],
+        "source_quote": "Total Required For Degree: 132",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 132
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "All USC Thornton undergraduate programs in classical",
+      "reason": "out_of_scope",
+      "why": "Marketing/overview text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Specific entrance requirements are reviewed on an",
+      "reason": "advisory",
+      "why": "Points to externally published, non-catalogue requirements."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "USC's General Education program, revised in fall",
+      "reason": "university_level",
+      "why": "University-wide GE requirement reused from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          55,
+          81
+        ]
+      ],
+      "source_quote": "GE-A: The Arts (one course)",
+      "reason": "university_level",
+      "why": "GE category and writing requirements are university-wide, not programme-specific."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "During the junior and senior years of the",
+      "reason": "out_of_scope",
+      "why": "Descriptive narrative of capstone project content, not an added requirement."
+    },
+    {
+      "source_lines": [
+        [
+          41,
+          41
+        ]
+      ],
+      "source_quote": "In cases in which a performance venue is",
+      "reason": "out_of_scope",
+      "why": "Procedural venue-reservation detail, not a degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          186,
+          186
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6 GE",
+      "reason": "advisory",
+      "why": "Planning note about overlapping GE units, not an added requirement."
+    }
+  ]
+}

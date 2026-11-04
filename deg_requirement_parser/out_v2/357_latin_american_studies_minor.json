@@ -1,0 +1,174 @@
+{
+  "program": "Latin American Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "COLT 250g",
+            "HIST 273g",
+            "HIST 372",
+            "IR 364",
+            "IR 365",
+            "POSC 350"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "LAS-MINOR-GATEWAY",
+        "source_lines": [
+          [
+            29,
+            38
+          ]
+        ],
+        "source_quote": "One of the following 4-unit gateway introductory courses",
+        "description": "Choose one 4-unit gateway introductory course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "AHIS 127g",
+            "AHIS 128gp",
+            "AHIS 318",
+            "AHIS 319",
+            "AMST 448m",
+            "ANTH 425",
+            "COLT 250g",
+            "ECON 340",
+            "HIST 370",
+            "HIST 371",
+            "HIST 372",
+            "HIST 374",
+            "HIST 451",
+            "HIST 456",
+            "HIST 470",
+            "HIST 473",
+            "IR 364",
+            "IR 365",
+            "IR 408",
+            "IR 454",
+            "IR 465",
+            "IR 466",
+            "PORT 250g",
+            "POSC 350",
+            "POSC 430",
+            "POSC 431",
+            "SPAN 320",
+            "SPAN 321",
+            "SPAN 372",
+            "SPAN 462",
+            "SPAN 495"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 4
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "these elective courses must be spread across at least two disciplines",
+            "thresholds": [
+              {
+                "count_by": "departments",
+                "op": "min",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "id": "LAS-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            46,
+            85
+          ]
+        ],
+        "source_quote": "Four courses (16 units) from the following list",
+        "description": "Four elective courses (16 units) from the designated list, spread across at least two disciplines/departments, and not duplicating the gateway course slot.",
+        "confidence": "high",
+        "note": "A course may appear on both the gateway and elective lists but may only fill one slot (one-slot rule). If the gateway course chosen is lower-division (100/200 level), all electives must be upper-division (300/400 level); this conditional cannot be expressed as a standard check and is only noted here."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "the student's major department",
+          "note": "The four required classes dedicated to the minor (which may be the same four) must be outside the student's major department."
+        },
+        "id": "LAS-MINOR-OUTSIDE-MAJOR",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "a student must choose four classes outside of his or her major department",
+        "description": "The courses used for the minor must be outside the student's major department.",
+        "confidence": "medium",
+        "note": "Depends on the student's declared major, which cannot be checked from a course list alone."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "The purpose of this 20-unit minor is to deepen",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The overriding goal is to encourage students to learn",
+      "reason": "advisory",
+      "why": "General programme description, not a requirement."
+    }
+  ]
+}

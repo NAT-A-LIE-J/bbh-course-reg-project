@@ -1,0 +1,106 @@
+{
+  "program": "Business Technology Fusion Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "DSO 428"
+          },
+          {
+            "family": "specific_course",
+            "course": "DSO 435"
+          }
+        ],
+        "id": "BTF-MINOR-CORE",
+        "source_lines": [
+          [
+            23,
+            28
+          ]
+        ],
+        "source_quote": "DSO 428 Essentials and Digital Frontiers of Big Data",
+        "description": "Required core courses DSO 428 and DSO 435.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BAEP 465",
+            "DSO 401",
+            "DSO 431",
+            "DSO 443",
+            "DSO 455",
+            "DSO 462",
+            "DSO 464",
+            "MOR 458"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BTF-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            30,
+            43
+          ]
+        ],
+        "source_quote": "Choose from the following to achieve a total of at least 12 units",
+        "description": "Electives chosen from a given list totaling at least 12 units.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            21,
+            21
+          ]
+        ],
+        "source_quote": "This minor requires 20 units to complete.",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "students must have completed a minimum of 32 units of college-level course work",
+      "reason": "out_of_scope",
+      "why": "Admission/enrollment prerequisite, not a degree course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "have a minimum overall GPA of at least 2.75",
+      "reason": "out_of_scope",
+      "why": "GPA rule, out of scope."
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "program": "Linguistics and Cognitive Science (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "LING 210g"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 100Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 274Lg"
+          }
+        ],
+        "id": "LCS-BA-LOWERDIV",
+        "source_lines": [
+          [
+            23,
+            29
+          ]
+        ],
+        "source_quote": "Lower-Division Courses (12 units)",
+        "description": "Three required lower-division courses: LING 210g, PSYC 100Lg, PSYC 274Lg.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LING 301",
+            "LING 302",
+            "LING 303",
+            "LING 415"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          }
+        ],
+        "id": "LCS-BA-UD-LINGCORE",
+        "source_lines": [
+          [
+            35,
+            42
+          ]
+        ],
+        "source_quote": "Two among the following (8 units)",
+        "description": "Two courses from LING 301, 302, 303, 415.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "PSYC 301L",
+        "id": "LCS-BA-UD-PSYC301L",
+        "source_lines": [
+          [
+            44,
+            48
+          ]
+        ],
+        "source_quote": "One among the following (4 units)",
+        "description": "PSYC 301L required (sole option in this one-of-one group).",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "LING 401",
+            "LING 402",
+            "LING 403",
+            "LING 322g",
+            "LING 325g",
+            "LING 385Lg",
+            "LING 405",
+            "LING 406",
+            "LING 407",
+            "LING 410",
+            "LING 412",
+            "LING 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "LCS-BA-UD-LINGADV",
+        "source_lines": [
+          [
+            50,
+            67
+          ]
+        ],
+        "source_quote": "Three among the following (12 units)",
+        "description": "Three courses from the listed advanced LING courses.",
+        "confidence": "high",
+        "note": "The 'or' markers between LING 401/402/403 are formatting only; all twelve courses form one pool."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "PSYC 336L"
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 433"
+          }
+        ],
+        "id": "LCS-BA-UD-DEVPSYC",
+        "source_lines": [
+          [
+            69,
+            74
+          ]
+        ],
+        "source_quote": "One among the following (4 units)",
+        "description": "One of PSYC 336L or PSYC 433.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "LING 301",
+                "LING 302",
+                "LING 303",
+                "LING 415",
+                "PSYC 301L",
+                "LING 401",
+                "LING 402",
+                "LING 403",
+                "LING 322g",
+                "LING 325g",
+                "LING 385Lg",
+                "LING 405",
+                "LING 406",
+                "LING 407",
+                "LING 410",
+                "LING 412",
+                "LING 450",
+                "PSYC 336L",
+                "PSYC 433"
+              ]
+            },
+            {
+              "unresolved": "an upper-division course from a related field"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "LCS-BA-UD-ADDITIONAL",
+        "source_lines": [
+          [
+            76,
+            80
+          ]
+        ],
+        "source_quote": "An additional upper-division course from the above",
+        "description": "One additional upper-division course beyond those used above, from the same lists or a related field.",
+        "confidence": "medium",
+        "note": "Since each course fills one slot, this must be a course not already used to satisfy the prior groups."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "LING 497"
+              },
+              {
+                "family": "specific_course",
+                "course": "LING 490"
+              },
+              {
+                "family": "count",
+                "eligible_if": {
+                  "all": [
+                    {
+                      "prefix": [
+                        "LING"
+                      ]
+                    },
+                    {
+                      "level_min": 400
+                    }
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "courses",
+                    "op": "min",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "A poster presented at the USC UG symposium or at a conference."
+            }
+          },
+          {
+            "family": "manual_review",
+            "kind": "NO_POOL",
+            "details": {
+              "description": "A summer internship related to the degree."
+            }
+          }
+        ],
+        "id": "LCS-BA-CAPSTONE",
+        "source_lines": [
+          [
+            82,
+            92
+          ]
+        ],
+        "source_quote": "The Linguistics and Cognitive Science major requires a capstone",
+        "description": "Capstone experience: a research paper (LING 497, LING 490, or 400-level LING course paper), a conference/symposium poster, or a summer internship.",
+        "confidence": "medium",
+        "note": "Options (B) and (C) are not checkable from a course list and are encoded as manual review."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Combined major program between the Department of",
+      "reason": "out_of_scope",
+      "why": "Administrative/programme description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          94,
+          98
+        ]
+      ],
+      "source_quote": "The Linguistics and Cognitive Science major with honors",
+      "reason": "out_of_scope",
+      "why": "Optional honors track with GPA and grade thresholds; out of scope for Phase 1."
+    },
+    {
+      "source_lines": [
+        [
+          98,
+          98
+        ]
+      ],
+      "source_quote": "Intent to complete the major with honors should",
+      "reason": "advisory",
+      "why": "Advisory procedural note about registering intent with an adviser."
+    }
+  ]
+}

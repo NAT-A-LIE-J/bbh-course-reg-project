@@ -1,0 +1,179 @@
+{
+  "program": "Archaeology and Heritage Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ANTH 202g",
+        "id": "ARCH-MINOR-FOUNDATION",
+        "source_lines": [
+          [
+            29,
+            37
+          ]
+        ],
+        "source_quote": "ANTH 202g Archaeology: Our Human Past Units: 4",
+        "description": "Required foundation course ANTH 202g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "Theories and Methods list of the Archaeology and Heritage Studies Major"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ARCH-MINOR-THEORIES-METHODS",
+        "source_lines": [
+          [
+            43,
+            43
+          ]
+        ],
+        "source_quote": "Select one course from the Theories and Methods list",
+        "description": "One course from the Theories and Methods list of the Archaeology and Heritage Studies Major.",
+        "confidence": "low",
+        "note": "No course list given in this text; pool is the cited major's list, not resolvable here."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "any upper-division course listed under Archaeology and Heritage Studies Major"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ARCH-MINOR-UPPERDIV-ELECTIVE",
+        "source_lines": [
+          [
+            44,
+            44
+          ]
+        ],
+        "source_quote": "Select any one upper-division course from those listed",
+        "description": "One additional upper-division course from the Archaeology and Heritage Studies Major list.",
+        "confidence": "low",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "Ethics and Heritage list of the Archaeology and Heritage Studies Major"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "ARCH-MINOR-ETHICS-HERITAGE",
+        "source_lines": [
+          [
+            45,
+            45
+          ]
+        ],
+        "source_quote": "Take one course from the Ethics and Heritage list",
+        "description": "One course from the Ethics and Heritage list of the Archaeology and Heritage Studies Major.",
+        "confidence": "low",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "CLAS 465",
+        "id": "ARCH-MINOR-CAPSTONE",
+        "source_lines": [
+          [
+            46,
+            47
+          ]
+        ],
+        "source_quote": "Take Capstone Course (4 units):",
+        "description": "Capstone course CLAS 465.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            49,
+            49
+          ]
+        ],
+        "source_quote": "Total Requirement: Five courses (20 units)",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The minor in Archaeology and Heritage Studies broadens the",
+      "reason": "out_of_scope",
+      "why": "Descriptive/marketing text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "Discovery and investigations of heritage occur in diverse",
+      "reason": "out_of_scope",
+      "why": "Descriptive text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Through archaeology and heritage studies we deepen our",
+      "reason": "out_of_scope",
+      "why": "Descriptive text, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "The minor in Archaeology and Heritage Studies is available",
+      "reason": "university_level",
+      "why": "Eligibility statement about which students may take the minor, not a course requirement."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "program": "Native American Studies Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "AMST 204g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "AMST 200gm"
+              },
+              {
+                "family": "specific_course",
+                "course": "AMST 350"
+              }
+            ]
+          }
+        ],
+        "id": "NAS-MIN-CORE",
+        "source_lines": [
+          [
+            27,
+            35
+          ]
+        ],
+        "source_quote": "Core Requirements - 8 Units",
+        "description": "AMST 204g plus either AMST 200gm or AMST 350.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "AMST 140gw",
+                "AMST 320",
+                "AMST 342m",
+                "AMST 345",
+                "AMST 365",
+                "ENGL 444m",
+                "HIST 271g"
+              ]
+            },
+            {
+              "unresolved": "courses certified for American Studies and Ethnicity credit"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "NAS-MIN-ELECTIVES",
+        "source_lines": [
+          [
+            25,
+            25
+          ],
+          [
+            37,
+            47
+          ]
+        ],
+        "source_quote": "Elective Courses - 12 Units",
+        "description": "Three elective courses (12 units) from the listed AMST/ENGL/HIST courses or other certified AMST courses.",
+        "confidence": "medium",
+        "note": "Line 25 allows courses certified for American Studies and Ethnicity credit beyond the printed list; encoded as unresolved alternative."
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "Minimum Required Units: 20",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "Students choose five classes in American Studies",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

@@ -1,0 +1,126 @@
+{
+  "program": "Food and Society Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "ANTH 338g",
+        "id": "FOODSOC-CORE",
+        "source_lines": [
+          [
+            23,
+            27
+          ]
+        ],
+        "source_quote": "ANTH 338g Food in Culture and Society",
+        "description": "Core requirement: ANTH 338g, 4 units.",
+        "confidence": "high",
+        "note": "ANTH 338g also appears on the upper-division elective list (L067); since it is used here it cannot be reused there (one-slot rule)."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ANTH 101g",
+                "ANTH 123gp",
+                "ANTH 201g",
+                "ANTH 205g",
+                "ANTH 220g",
+                "ANTH 263g",
+                "BISC 102Lgx",
+                "BISC 115Lxg",
+                "HP 230",
+                "JS 258gp",
+                "REL 136g"
+              ]
+            },
+            {
+              "unresolved": "courses outside of ANTH approved by an adviser or the faculty"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 4
+          }
+        ],
+        "id": "FOODSOC-LOWER-DIV-ELECTIVE",
+        "source_lines": [
+          [
+            37,
+            53
+          ]
+        ],
+        "source_quote": "One elective from the following list of lower-division courses",
+        "description": "One lower-division elective from the approved list (4 units).",
+        "confidence": "high",
+        "note": "Courses outside ANTH may count with adviser/faculty approval (L035); no specific list given, so encoded as unresolved alternative."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "any": [
+            {
+              "courses": [
+                "ANTH 301g",
+                "ANTH 300",
+                "ANTH 302",
+                "ANTH 303",
+                "ANTH 312",
+                "ANTH 313w",
+                "AMST 343",
+                "ANTH 360",
+                "ANTH 393",
+                "ANTH 460",
+                "HBIO 300",
+                "JOUR 458",
+                "PPD 416",
+                "REL 303Lg",
+                "SPAN 316x",
+                "SPAN 385",
+                "SWMS 389"
+              ]
+            },
+            {
+              "unresolved": "courses outside of ANTH approved by an adviser or the faculty"
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "FOODSOC-UPPER-DIV-ELECTIVE",
+        "source_lines": [
+          [
+            55,
+            78
+          ]
+        ],
+        "source_quote": "Three courses (12 units) from the following list of upper-division electives",
+        "description": "Three upper-division electives (12 units) from the approved list.",
+        "confidence": "high",
+        "note": "ANTH 338g excluded from this list because it already fulfills the Core Requirement (one-slot rule, L027 and L067). Courses outside ANTH may count with adviser/faculty approval (L035)."
+      }
+    ]
+  },
+  "unclassified": []
+}

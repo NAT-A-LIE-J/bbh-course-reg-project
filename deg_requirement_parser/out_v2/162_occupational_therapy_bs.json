@@ -1,0 +1,365 @@
+{
+  "program": "Occupational Therapy (BS)",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "MAJOR_CHANGE_ADMISSION",
+          "basis": "QUALITATIVE_REVIEW",
+          "process": "personal statement, academic plan with OT Major Adviser, materials to Chan Division admissions office"
+        },
+        "id": "OT-BS-MAJORCHANGE-GATE",
+        "source_lines": [
+          [
+            27,
+            29
+          ]
+        ],
+        "source_quote": "Current USC freshmen and sophomores may apply to change",
+        "description": "Admission process for current USC students changing major into OT-BS-OTD.",
+        "confidence": "medium",
+        "note": "3.0 GPA threshold is out_of_scope (unclassified)."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "BS degree unit count",
+          "courses": [
+            "300-level OT courses"
+          ]
+        },
+        "id": "OT-BS-NO300LEVEL",
+        "source_lines": [
+          [
+            33,
+            33
+          ]
+        ],
+        "source_quote": "An occupational therapy major cannot count any 300-level",
+        "description": "No 300-level OT course may count toward the BS degree.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "OT 200"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "OT 250"
+              },
+              {
+                "family": "specific_course",
+                "course": "SOCI 200gm"
+              },
+              {
+                "family": "specific_course",
+                "course": "ANTH 201g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "OT 251"
+              },
+              {
+                "family": "specific_course",
+                "course": "EDUC 589"
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PSYC 336L"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "PSYC 337L"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "OT 260"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 301L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "OT 261"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 307L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 420L"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "PSYC 360"
+          },
+          {
+            "family": "sequencing",
+            "kind": "BEFORE_MILESTONE",
+            "details": {
+              "before": "all pre-professional courses",
+              "milestone": "the start of the senior year"
+            }
+          },
+          {
+            "family": "sequencing",
+            "kind": "PREREQUISITE",
+            "details": {
+              "before": "pre-professional required courses",
+              "after": "advanced professional courses"
+            }
+          }
+        ],
+        "id": "OT-BS-PREPROFESSIONAL",
+        "source_lines": [
+          [
+            39,
+            85
+          ]
+        ],
+        "source_quote": "Students must successfully complete the pre-professional required courses",
+        "description": "Pre-professional courses: OT 200, plus one each from four alternative groups, plus PSYC 360, completed before professional courses and before senior year.",
+        "confidence": "high",
+        "note": "GPA, time limit, and institutional requirements for pre-professional courses are out_of_scope/university_level and listed in unclassified."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "OT 509"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 510"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 511"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 514"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 516"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 517"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 519"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 521"
+          },
+          {
+            "family": "specific_course",
+            "course": "OT 526"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "OT 501L"
+              },
+              {
+                "family": "specific_course",
+                "course": "OT 502L"
+              },
+              {
+                "family": "specific_course",
+                "course": "OT 503L"
+              },
+              {
+                "family": "specific_course",
+                "course": "OT 504L"
+              }
+            ]
+          },
+          {
+            "family": "manual_review",
+            "kind": "GATE",
+            "details": {
+              "stage": "PROFESSIONAL_COURSE_ENROLLMENT",
+              "basis": "CLASS_STANDING",
+              "requires": [
+                "junior or senior standing",
+                "OT major"
+              ]
+            }
+          }
+        ],
+        "id": "OT-BS-PROFESSIONAL",
+        "source_lines": [
+          [
+            87,
+            114
+          ]
+        ],
+        "source_quote": "Enrollment in professional occupational therapy courses is limited",
+        "description": "Nine required professional OT courses plus one practice immersion course from a list; enrollment limited to junior/senior OT majors.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROCEDURAL",
+        "details": {
+          "procedure": "ADVISING",
+          "frequency": "each semester"
+        },
+        "id": "OT-BS-ADVISING",
+        "source_lines": [
+          [
+            124,
+            126
+          ]
+        ],
+        "source_quote": "Students enrolled in the occupational therapy major are required",
+        "description": "Students must meet with an academic adviser each semester.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "Successful completion of an Occupational Therapy Doctorate (OTD)",
+      "reason": "out_of_scope",
+      "why": "Describes graduate-level licensure/certification pathway, not a BS requirement."
+    },
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "See the Undergraduate Admission section of this",
+      "reason": "university_level",
+      "why": "Refers to university-wide freshman admission criteria."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "Applicants must have a minimum USC GPA of",
+      "reason": "out_of_scope",
+      "why": "GPA threshold rule."
+    },
+    {
+      "source_lines": [
+        [
+          33,
+          33
+        ]
+      ],
+      "source_quote": "A total of 128 units is required for",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          37,
+          37
+        ]
+      ],
+      "source_quote": "The general education (GE) program requires eight courses",
+      "reason": "university_level",
+      "why": "University-wide GE requirement, sourced from STARS."
+    },
+    {
+      "source_lines": [
+        [
+          43,
+          43
+        ]
+      ],
+      "source_quote": "Students in the Occupational Therapy major are required",
+      "reason": "no_fit",
+      "why": "Advising requirement restated here duplicates OT-BS-ADVISING but phrased as generic adviser contact; already captured there."
+    },
+    {
+      "source_lines": [
+        [
+          47,
+          51
+        ]
+      ],
+      "source_quote": "Within the last seven years",
+      "reason": "out_of_scope",
+      "why": "Time limit, GPA, and institutional accreditation conditions on pre-professional courses."
+    },
+    {
+      "source_lines": [
+        [
+          55,
+          55
+        ]
+      ],
+      "source_quote": "Students who wish to transfer credit for courses",
+      "reason": "university_level",
+      "why": "Transfer credit approval process is a university-level procedural rule."
+    },
+    {
+      "source_lines": [
+        [
+          122,
+          122
+        ]
+      ],
+      "source_quote": "Undergraduate occupational therapy students must maintain a GPA",
+      "reason": "out_of_scope",
+      "why": "GPA/scholastic standards rule."
+    }
+  ]
+}

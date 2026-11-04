@@ -1,0 +1,305 @@
+{
+  "program": "Communication (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 313"
+          }
+        ],
+        "id": "COMM-BA-INTERACTION",
+        "source_lines": [
+          [
+            35,
+            41
+          ]
+        ],
+        "source_quote": "Communication Interaction, Influence and Impact (4 units)",
+        "description": "COMM 200 or COMM 313.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 206"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 311"
+          }
+        ],
+        "id": "COMM-BA-CIVIC",
+        "source_lines": [
+          [
+            43,
+            49
+          ]
+        ],
+        "source_quote": "Communication, Civic Life and Culture (4 units)",
+        "description": "COMM 206 or COMM 311.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 209"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 309"
+          }
+        ],
+        "id": "COMM-BA-ECON-TECH",
+        "source_lines": [
+          [
+            51,
+            57
+          ]
+        ],
+        "source_quote": "Economics and Technologies of Communication (4 units)",
+        "description": "COMM 209 or COMM 309.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 204"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 322"
+          }
+        ],
+        "id": "COMM-BA-ARGUMENT",
+        "source_lines": [
+          [
+            65,
+            71
+          ]
+        ],
+        "source_quote": "Four units that center on the design and execution of arguments",
+        "description": "COMM 204 or COMM 322.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "COMM 301Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "COMM 305"
+          }
+        ],
+        "id": "COMM-BA-EMPIRICAL",
+        "source_lines": [
+          [
+            73,
+            79
+          ]
+        ],
+        "source_quote": "Four units that center on the design, execution and interpretation of empirical evidence",
+        "description": "COMM 301Lg or COMM 305.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "ASCJ 200"
+          },
+          {
+            "family": "specific_course",
+            "course": "ASCJ 210"
+          }
+        ],
+        "id": "COMM-BA-ANNENBERG",
+        "source_lines": [
+          [
+            81,
+            89
+          ]
+        ],
+        "source_quote": "Students are required to take one 4-unit course",
+        "description": "ASCJ 200 or ASCJ 210, a 4-unit Annenberg Experience course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "COMM"
+                  ]
+                },
+                {
+                  "level_min": 300
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ],
+            "of_which": [
+              {
+                "source_lines": [
+                  [
+                    114,
+                    114
+                  ]
+                ],
+                "source_quote": "No more than 4 units of COMM 380",
+                "eligible_if": {
+                  "courses": [
+                    "COMM 380"
+                  ]
+                },
+                "thresholds": [
+                  {
+                    "count_by": "units",
+                    "op": "max",
+                    "value": 4
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "prefix": [
+                    "COMM"
+                  ]
+                },
+                {
+                  "prefix": [
+                    "ASCJ"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "all": [
+                {
+                  "prefix": [
+                    "COMM"
+                  ]
+                },
+                {
+                  "level_min": 400
+                },
+                {
+                  "not": {
+                    "courses": [
+                      "COMM 490",
+                      "COMM 494",
+                      "COMM 499"
+                    ]
+                  }
+                },
+                {
+                  "unresolved": "non-cross-listed COMM course"
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "id": "COMM-BA-ELECTIVES",
+        "source_lines": [
+          [
+            91,
+            108
+          ]
+        ],
+        "source_quote": "Electives (24 units total)",
+        "description": "24 units of electives: 16 units upper-division COMM, 4 units lower/upper COMM or ASCJ, and one 4-unit 400-level non-cross-listed COMM course excluding COMM 490/494/499.",
+        "confidence": "medium",
+        "note": "Sample elective list (COMM 307, 320, 350, 355, 383m, 451, 458m, 476) illustrative, not exhaustive, so pools encoded by prefix/level rules instead of the sample list; 'non-cross-listed' cannot be fully checked."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          114,
+          114
+        ]
+      ],
+      "source_quote": "Students must maintain a minimum 2.0 overall GPA",
+      "reason": "out_of_scope",
+      "why": "GPA requirement; Phase 2."
+    },
+    {
+      "source_lines": [
+        [
+          116,
+          116
+        ]
+      ],
+      "source_quote": "Mandatory advisement is required of all communication",
+      "reason": "out_of_scope",
+      "why": "Advising/procedural requirement, not a course requirement."
+    },
+    {
+      "source_lines": [
+        [
+          116,
+          116
+        ]
+      ],
+      "source_quote": "All students taking communication classes are held",
+      "reason": "university_level",
+      "why": "University-wide academic integrity/conduct policy."
+    }
+  ]
+}

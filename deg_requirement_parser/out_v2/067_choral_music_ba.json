@@ -1,0 +1,294 @@
+{
+  "program": "Choral Music (BA)*",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MPVA 301"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 6
+          }
+        ],
+        "id": "CHORAL-BA-LESSONS",
+        "source_lines": [
+          [
+            57,
+            62
+          ]
+        ],
+        "source_quote": "6 units total of MPVA 301 (Choral)",
+        "description": "6 units of MPVA 301 individual instruction in Choral.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "Choral Music Ensemble at the 300-level"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 8
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "CHORAL-BA-ENSEMBLES",
+        "source_lines": [
+          [
+            64,
+            68
+          ]
+        ],
+        "source_quote": "Choral Music Ensemble at the 300-level: eight",
+        "description": "Eight 1-unit Choral Music Ensemble courses at the 300 level.",
+        "confidence": "medium",
+        "note": "No specific course code given for the ensemble, only a description."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPVA 442"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCD 340"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCD 441"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCM 320"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCM 440"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 441"
+          }
+        ],
+        "id": "CHORAL-BA-PROGRAM-INTENSIVE",
+        "source_lines": [
+          [
+            70,
+            79
+          ]
+        ],
+        "source_quote": "MPVA 442 Introduction to the International Phonetic Alphabet",
+        "description": "Six program intensive courses totaling 12 units.",
+        "confidence": "high",
+        "note": "MUCO 441 is taken for 2 units total (two 1-unit sections)."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "MPKS 250a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MPKS 250b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 132b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 133b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 232b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233a"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 233b"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUCO 338x"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 250g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 350g"
+          },
+          {
+            "family": "specific_course",
+            "course": "MUHL 351"
+          }
+        ],
+        "id": "CHORAL-BA-CORE-ACADEMIC",
+        "source_lines": [
+          [
+            81,
+            98
+          ]
+        ],
+        "source_quote": "MPKS 250a Keyboard Instruction I Units: 2",
+        "description": "Fourteen core Thornton academic courses totaling 38 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "unresolved": "three 4-unit courses in the same language"
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "CHORAL-BA-FOREIGN-LANGUAGE",
+        "source_lines": [
+          [
+            100,
+            104
+          ]
+        ],
+        "source_quote": "Three 4-unit courses in the same language",
+        "description": "Three 4-unit courses in the same foreign language.",
+        "confidence": "medium",
+        "note": "No course list or language options given; pool cannot be fully specified."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "level_min": 0
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 20
+          }
+        ],
+        "id": "CHORAL-BA-ELECTIVES",
+        "source_lines": [
+          [
+            106,
+            106
+          ]
+        ],
+        "source_quote": "Electives (20 units)",
+        "description": "20 units of free electives.",
+        "confidence": "medium",
+        "note": "No restriction or list given for electives."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "Admission to Thornton programs is granted through",
+      "reason": "university_level",
+      "why": "General USC/Thornton admission process, not a curriculum requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          33
+        ]
+      ],
+      "source_quote": "The university's General Education program provides a",
+      "reason": "university_level",
+      "why": "University-wide GE requirement description."
+    },
+    {
+      "source_lines": [
+        [
+          43,
+          53
+        ]
+      ],
+      "source_quote": "Core Literacies GE-A: The Arts",
+      "reason": "university_level",
+      "why": "GE category requirements come from STARS, not programme-specific."
+    },
+    {
+      "source_lines": [
+        [
+          54,
+          55
+        ]
+      ],
+      "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches",
+      "reason": "university_level",
+      "why": "University-wide writing requirement."
+    },
+    {
+      "source_lines": [
+        [
+          110,
+          110
+        ]
+      ],
+      "source_quote": "Total required for degree: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement."
+    },
+    {
+      "source_lines": [
+        [
+          114,
+          114
+        ]
+      ],
+      "source_quote": "With correct planning, only 32 units (6",
+      "reason": "advisory",
+      "why": "Planning advice about overlapping GE and major requirements."
+    }
+  ]
+}

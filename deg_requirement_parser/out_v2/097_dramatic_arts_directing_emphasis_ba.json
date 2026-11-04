@@ -1,0 +1,247 @@
+{
+  "program": "Dramatic Arts, Directing Emphasis (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 101"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 130"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 152"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 230"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 232"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305a"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 305b"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 397"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 451"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 495"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 496"
+          }
+        ],
+        "id": "DA-DIR-REQUIRED",
+        "source_lines": [
+          [
+            23,
+            37
+          ]
+        ],
+        "source_quote": "THTR 101 Introduction to Acting Units: 4",
+        "description": "Eleven required directing-emphasis courses in Dramatic Arts.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 309",
+            "THTR 395m",
+            "THTR 401",
+            "THTR 403"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "DA-DIR-WORLDVIEW",
+        "source_lines": [
+          [
+            39,
+            48
+          ]
+        ],
+        "source_quote": "Select one course from the following: (4",
+        "description": "One worldview elective course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "THTR 303",
+            "THTR 331",
+            "THTR 336"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "DA-DIR-DESIGN",
+        "source_lines": [
+          [
+            50,
+            58
+          ]
+        ],
+        "source_quote": "Select one course from the following: (3",
+        "description": "One design elective course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "THTR 125"
+          },
+          {
+            "family": "specific_course",
+            "course": "THTR 225g"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "THTR 310",
+                "THTR 312",
+                "THTR 395m",
+                "THTR 405m",
+                "THTR 406",
+                "THTR 456",
+                "THTR 460",
+                "THTR 476mw"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "THTR 310",
+                    "THTR 312",
+                    "THTR 395m",
+                    "THTR 405m",
+                    "THTR 406",
+                    "THTR 456",
+                    "THTR 460",
+                    "THTR 476mw"
+                  ]
+                },
+                {
+                  "courses": [
+                    "THTR 301",
+                    "THTR 302",
+                    "THTR 313",
+                    "THTR 314",
+                    "THTR 400",
+                    "THTR 403"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                60,
+                60
+              ]
+            ],
+            "source_quote": "Required Critical Studies Core (16 units)",
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          }
+        ],
+        "id": "DA-DIR-CRITICAL-STUDIES",
+        "source_lines": [
+          [
+            60,
+            91
+          ]
+        ],
+        "source_quote": "Complete the two required courses below. In",
+        "description": "Two required critical studies courses, plus one from List A, plus one from List A or B, totaling 16 units.",
+        "confidence": "high",
+        "note": "THTR 395m and THTR 403 appear in multiple lists (Worldview Elective, List A, List B); one-slot rule prevents double counting the same course instance."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          93,
+          93
+        ]
+      ],
+      "source_quote": "Required General Education Units: 36",
+      "reason": "university_level",
+      "why": "University-wide General Education requirement, not major-specific."
+    },
+    {
+      "source_lines": [
+        [
+          97,
+          97
+        ]
+      ],
+      "source_quote": "Total Units: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement for the degree."
+    }
+  ]
+}

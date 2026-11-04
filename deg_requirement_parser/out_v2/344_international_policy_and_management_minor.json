@@ -1,0 +1,262 @@
+{
+  "program": "International Policy and Management Minor",
+  "status": "partial",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "IR 305w"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "IR 333",
+                "IR 345",
+                "IR 360",
+                "IR 361",
+                "IR 362",
+                "IR 363",
+                "IR 365",
+                "IR 367",
+                "IR 369",
+                "IR 383",
+                "IR 385",
+                "IR 439",
+                "IR 442",
+                "IR 468"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "IPM-IR-REGIONAL",
+            "source_lines": [
+              [
+                31,
+                48
+              ]
+            ],
+            "source_quote": "One regional course selected from:",
+            "description": "One regional course chosen from the listed IR regional courses.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "any": [
+                {
+                  "courses": [
+                    "IR 333",
+                    "IR 345",
+                    "IR 360",
+                    "IR 361",
+                    "IR 362",
+                    "IR 363",
+                    "IR 365",
+                    "IR 367",
+                    "IR 369",
+                    "IR 383",
+                    "IR 385",
+                    "IR 439",
+                    "IR 442",
+                    "IR 468"
+                  ]
+                },
+                {
+                  "courses": [
+                    "IR 306",
+                    "IR 307",
+                    "IR 310",
+                    "IR 315",
+                    "IR 316",
+                    "IR 318",
+                    "IR 323",
+                    "IR 324",
+                    "IR 325",
+                    "IR 326",
+                    "IR 330",
+                    "IR 341",
+                    "IR 343",
+                    "IR 344",
+                    "IR 381",
+                    "IR 382w",
+                    "IR 427",
+                    "IR 444w"
+                  ]
+                }
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ],
+            "id": "IPM-IR-ADDITIONAL",
+            "source_lines": [
+              [
+                50,
+                71
+              ]
+            ],
+            "source_quote": "One course from either the regional course list or the following:",
+            "description": "One additional IR course from the regional list or an expanded IR elective list.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "IPM-IR-CORE",
+        "source_lines": [
+          [
+            23,
+            71
+          ]
+        ],
+        "source_quote": "Students take three courses in international relations, including the gateway course",
+        "description": "Three IR courses: IR 305w, one regional course, and one additional course from regional or expanded list.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "PPD 225"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "all_of": [
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "PPD 357",
+                        "PPD 371",
+                        "PPD 373",
+                        "PPD 476",
+                        "PPD 482"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "id": "IPM-PP-TRACK",
+                "source_lines": [
+                  [
+                    81,
+                    89
+                  ]
+                ],
+                "source_quote": "Two additional courses from the following:",
+                "description": "Public Policy track: two additional courses from the listed PPD courses.",
+                "confidence": "high",
+                "note": null
+              },
+              {
+                "all_of": [
+                  {
+                    "family": "specific_course",
+                    "course": "PPD 402"
+                  },
+                  {
+                    "family": "count",
+                    "eligible_if": {
+                      "courses": [
+                        "PPD 313",
+                        "PPD 407",
+                        "PPD 411a",
+                        "PPD 476"
+                      ]
+                    },
+                    "thresholds": [
+                      {
+                        "count_by": "courses",
+                        "op": "min",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "id": "IPM-PM-TRACK",
+                "source_lines": [
+                  [
+                    91,
+                    104
+                  ]
+                ],
+                "source_quote": "Or from Public Management:",
+                "description": "Public Management track: PPD 402 plus two additional courses from the listed PPD courses.",
+                "confidence": "high",
+                "note": null
+              }
+            ]
+          }
+        ],
+        "id": "IPM-PP-CORE",
+        "source_lines": [
+          [
+            73,
+            104
+          ]
+        ],
+        "source_quote": "The public policy component requires the completion of the following three options:",
+        "description": "PPD 225 required, plus a choice between a Public Policy track or a Public Management track, each adding two more PPD courses.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "specific_course",
+        "course": "IR 491x",
+        "id": "IPM-INTERNSHIP",
+        "source_lines": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            110,
+            112
+          ]
+        ],
+        "source_quote": "Each student is required to complete an approved internship with an international focus.",
+        "description": "A 2-unit approved international-focus internship through the School of International Relations (IR 491x / IR 491).",
+        "confidence": "medium",
+        "note": "The course code appears as IR 491x in L023 and as IR 491 in L112; treated as the same required internship course."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "students must complete a semester-long internship either in Washington, D.C. or Los Angeles",
+      "reason": "no_fit",
+      "why": "Location requirement for the internship (D.C. or L.A.) has no taxonomy term for geographic constraints."
+    }
+  ]
+}

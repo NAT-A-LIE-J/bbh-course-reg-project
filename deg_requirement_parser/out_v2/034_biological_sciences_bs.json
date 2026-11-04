@@ -1,0 +1,486 @@
+{
+  "program": "Biological Sciences (Molecular, Cellular and Developmental Biology) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BISC-MCDB-LOWERDIV-CORE",
+        "source_lines": [
+          [
+            23,
+            31
+          ]
+        ],
+        "source_quote": "Lower-Division BISC Core Courses (8 units)",
+        "description": "Two lower-division BISC core sequence courses (organismal/evolution and cell biology/physiology), each with a standard or advanced option.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 107Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ],
+            "id": "BISC-MCDB-GENCHEM1",
+            "source_lines": [
+              [
+                37,
+                43
+              ]
+            ],
+            "source_quote": "General Chemistry Requirement: 8 units",
+            "description": "First semester general chemistry course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 108L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115bL"
+              }
+            ],
+            "id": "BISC-MCDB-GENCHEM2",
+            "source_lines": [
+              [
+                37,
+                47
+              ]
+            ],
+            "source_quote": "General Chemistry Requirement: 8 units",
+            "description": "Second semester general chemistry course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322aL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 325aL"
+              }
+            ],
+            "id": "BISC-MCDB-ORGCHEM1",
+            "source_lines": [
+              [
+                49,
+                55
+              ]
+            ],
+            "source_quote": "Organic Chemistry Requirement: 8 units",
+            "description": "First semester organic chemistry course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 322bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 325bL"
+              }
+            ],
+            "id": "BISC-MCDB-ORGCHEM2",
+            "source_lines": [
+              [
+                49,
+                57
+              ]
+            ],
+            "source_quote": "Organic Chemistry Requirement: 8 units",
+            "description": "Second semester organic chemistry course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g",
+            "id": "BISC-MCDB-CALC",
+            "source_lines": [
+              [
+                59,
+                63
+              ]
+            ],
+            "source_quote": "Calculus Requirement: 4 units",
+            "description": "Calculus I.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 208x"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 305g"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              }
+            ],
+            "id": "BISC-MCDB-STATS",
+            "source_lines": [
+              [
+                65,
+                71
+              ]
+            ],
+            "source_quote": "Statistics Requirement: 4 units",
+            "description": "One statistics course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              }
+            ],
+            "id": "BISC-MCDB-PHYS1",
+            "source_lines": [
+              [
+                73,
+                78
+              ]
+            ],
+            "source_quote": "Physics Requirement: 8 units",
+            "description": "First semester physics course.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135bL"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 152L"
+              }
+            ],
+            "id": "BISC-MCDB-PHYS2",
+            "source_lines": [
+              [
+                73,
+                81
+              ]
+            ],
+            "source_quote": "Physics Requirement: 8 units",
+            "description": "Second semester physics course.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "BISC-MCDB-COLLATERAL",
+        "source_lines": [
+          [
+            33,
+            81
+          ]
+        ],
+        "source_quote": "Collateral Sciences Courses (32 units)",
+        "description": "32 units of collateral science courses in chemistry, calculus, statistics and physics.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 193",
+            "BISC 194",
+            "BISC 199"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "BISC-MCDB-INTRORESEARCH",
+        "source_lines": [
+          [
+            83,
+            91
+          ]
+        ],
+        "source_quote": "Enroll in one or two of the courses below.",
+        "description": "Enroll in one or two Introduction to Research-Active Faculty courses.",
+        "confidence": "high",
+        "note": "Upper bound of two courses stated but not encoded as a max threshold since op min already captures the requirement."
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BISC 320Lg"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 325"
+          },
+          {
+            "family": "specific_course",
+            "course": "BISC 330L"
+          }
+        ],
+        "id": "BISC-MCDB-UPPERDIV-CORE",
+        "source_lines": [
+          [
+            93,
+            99
+          ]
+        ],
+        "source_quote": "Upper-Division Core Courses (12 units)",
+        "description": "Three named upper-division core courses: Molecular Biology, Genetics, Biochemistry.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 410",
+            "BISC 411",
+            "BISC 414",
+            "BISC 425",
+            "BISC 434",
+            "BISC 461",
+            "BISC 480L",
+            "BISC 490x",
+            "BISC 493x",
+            "BISC 494x"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "BISC-MCDB-RESEARCH-SEMINAR",
+        "source_lines": [
+          [
+            101,
+            116
+          ]
+        ],
+        "source_quote": "Select one MCDB-relevant seminar course from the options listed below.",
+        "description": "One MCDB-relevant research or research-based seminar course from the listed options.",
+        "confidence": "high",
+        "note": "Courses cannot count toward more than one degree requirement restates the one-slot rule; BISC 490x may be taken for 2 or 4 units per catalogue note."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 403",
+            "BISC 435",
+            "BISC 444"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "BISC-MCDB-CAPSTONE",
+        "source_lines": [
+          [
+            118,
+            126
+          ]
+        ],
+        "source_quote": "Select at least one course from the course options below.",
+        "description": "At least one capstone course from the listed options.",
+        "confidence": "high",
+        "note": "Courses cannot count toward more than one degree requirement restates the one-slot rule."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 300L",
+            "BISC 314L",
+            "BISC 372",
+            "BISC 402",
+            "BISC 403",
+            "BISC 410",
+            "BISC 411",
+            "BISC 414",
+            "BISC 419L",
+            "BISC 425",
+            "BISC 429",
+            "BISC 434",
+            "BISC 435",
+            "BISC 444",
+            "BISC 450L",
+            "BISC 451",
+            "BISC 480L",
+            "BISC 488",
+            "BISC 490x",
+            "BISC 493x",
+            "BISC 494x",
+            "GERO 440",
+            "HBIO 301L",
+            "HBIO 320",
+            "QBIO 478",
+            "QBIO 481",
+            "QBIO 482"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "id": "BISC-MCDB-ELECTIVES",
+        "source_lines": [
+          [
+            128,
+            160
+          ]
+        ],
+        "source_quote": "Select three electives from the course options listed below.",
+        "description": "Select three upper-division elective courses from the listed options.",
+        "confidence": "high",
+        "note": "Courses cannot count toward more than one degree requirement restates the one-slot rule."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The general education, writing, foreign language and diversity requirements",
+      "reason": "university_level",
+      "why": "College-wide GE/writing/language/diversity requirements, not programme-specific."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "All students will take foundational courses in biological",
+      "reason": "out_of_scope",
+      "why": "Marketing/overview sentence, not a specific requirement."
+    },
+    {
+      "source_lines": [
+        [
+          105,
+          105
+        ]
+      ],
+      "source_quote": "Courses cannot count toward more than one degree requirement.",
+      "reason": "advisory",
+      "why": "Restates the one-slot rule, already noted on the relevant node."
+    },
+    {
+      "source_lines": [
+        [
+          166,
+          166
+        ]
+      ],
+      "source_quote": "The department requires that students receive a grade",
+      "reason": "out_of_scope",
+      "why": "Grade and GPA requirements."
+    },
+    {
+      "source_lines": [
+        [
+          168,
+          180
+        ]
+      ],
+      "source_quote": "The department offers an honors program to outstanding",
+      "reason": "out_of_scope",
+      "why": "Optional honors program with its own GPA/admission rules, not part of base degree requirements."
+    }
+  ]
+}

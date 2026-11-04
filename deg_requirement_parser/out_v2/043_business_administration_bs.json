@@ -1,0 +1,278 @@
+{
+  "program": "Business Administration (Business Analytics) (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "manual_review",
+        "kind": "GATE",
+        "details": {
+          "stage": "INITIAL_ADMISSION",
+          "basis": "NUMERIC_THRESHOLD",
+          "requires": [
+            "sophomore standing",
+            "one semester in residence at USC",
+            "credit for BUAD 311 or BUAD 313"
+          ]
+        },
+        "id": "BALT-BS-ADMISSION",
+        "source_lines": [
+          [
+            23,
+            25
+          ]
+        ],
+        "source_quote": "This program is available only to current Marshall",
+        "description": "Admission requires sophomore standing, one semester in residence, and credit for BUAD 311 or BUAD 313.",
+        "confidence": "high",
+        "note": "Transfer process sentence is procedural, not separately encoded."
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "EXCLUDES",
+          "applies_to": "other emphases within the BS in Business Administration",
+          "effect": "only one emphasis allowed"
+        },
+        "id": "BALT-BS-ONE-EMPHASIS",
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "Students may earn only one emphasis within the",
+        "description": "Students may earn only one emphasis within the BS in Business Administration.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "WRIT 150"
+          },
+          {
+            "family": "specific_course",
+            "course": "WRIT 340"
+          }
+        ],
+        "id": "BALT-BS-WRITING",
+        "source_lines": [
+          [
+            33,
+            39
+          ]
+        ],
+        "source_quote": "WRIT 150 Writing and Critical Reasoning–Thematic Approaches Units",
+        "description": "Composition/Writing requirement: WRIT 150 and WRIT 340.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "BUAD 280"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 281"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 302"
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 304"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 306"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 308"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 307"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 310g"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 312g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 311"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 313"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BUAD 425"
+              },
+              {
+                "family": "specific_course",
+                "course": "BUAD 427"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "BUAD 497"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 351x"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 352x"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "BALT-BS-CORE",
+        "source_lines": [
+          [
+            41,
+            76
+          ]
+        ],
+        "source_quote": "Business Administration majors must complete the business core.",
+        "description": "Business core: required accounting, communication, organizational behavior, finance, marketing, statistics, operations, analytics, strategy, economics, and calculus courses, several with alternate options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "all": [
+            {
+              "prefix": [
+                "DSO"
+              ]
+            },
+            {
+              "level_min": 300,
+              "level_max": 499
+            }
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "BALT-BS-EMPHASIS",
+        "source_lines": [
+          [
+            86,
+            90
+          ]
+        ],
+        "source_quote": "Complete 12 units of upper-division elective courses",
+        "description": "12 units of upper-division (300/400-level) DSO elective courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Bachelor of Science in Business Administration with",
+      "reason": "out_of_scope",
+      "why": "Marketing/program description, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "including USC's General Education requirements and 12 upper",
+      "reason": "university_level",
+      "why": "General Education requirement is university-wide, handled elsewhere."
+    },
+    {
+      "source_lines": [
+        [
+          39,
+          39
+        ]
+      ],
+      "source_quote": "A section of WRIT 340 titled \"Advanced Writing",
+      "reason": "advisory",
+      "why": "Recommendation about which section to take, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          82,
+          82
+        ]
+      ],
+      "source_quote": "Placement into MATH 118gx is contingent on successful",
+      "reason": "out_of_scope",
+      "why": "Placement/waiver policy for a course, not a selectable requirement."
+    },
+    {
+      "source_lines": [
+        [
+          84,
+          84
+        ]
+      ],
+      "source_quote": "A-level mathematics examination scores of A or",
+      "reason": "advisory",
+      "why": "Advisory note about transfer credit; suggests speaking to adviser."
+    }
+  ]
+}

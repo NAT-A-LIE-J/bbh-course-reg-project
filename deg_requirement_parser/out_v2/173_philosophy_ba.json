@@ -1,0 +1,357 @@
+{
+  "program": "Philosophy (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "prefix": [
+            "PHIL"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                23,
+                23
+              ]
+            ],
+            "source_quote": "six of these must be at the upper-division level",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 6
+              }
+            ]
+          }
+        ],
+        "id": "PHIL-BA-TOTAL",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The major in philosophy requires eight courses in philosophy",
+        "description": "Eight philosophy courses total, six of which must be upper-division.",
+        "confidence": "high",
+        "note": "Gateway, logic, and distribution requirements below are satisfied from within these eight courses, per the one-slot rule."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 315",
+            "PHIL 320",
+            "PHIL 336",
+            "PHIL 337",
+            "PHIL 340",
+            "PHIL 360",
+            "PHIL 362",
+            "PHIL 363",
+            "PHIL 385"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PHIL-BA-GATEWAY",
+        "source_lines": [
+          [
+            27,
+            41
+          ]
+        ],
+        "source_quote": "One course must be a gateway course:",
+        "description": "One gateway course from the listed set.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 220",
+            "PHIL 222g",
+            "PHIL 350",
+            "PHIL 450",
+            "PHIL 452"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "PHIL-BA-LOGIC",
+        "source_lines": [
+          [
+            43,
+            51
+          ]
+        ],
+        "source_quote": "One course must be in logic:",
+        "description": "One logic course from the listed set.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "PHIL 311",
+            "PHIL 314",
+            "PHIL 315",
+            "PHIL 317",
+            "PHIL 320",
+            "PHIL 337",
+            "PHIL 410",
+            "PHIL 411",
+            "PHIL 415",
+            "PHIL 416",
+            "PHIL 421",
+            "PHIL 422",
+            "PHIL 423",
+            "PHIL 424",
+            "PHIL 427",
+            "PHIL 428",
+            "PHIL 442",
+            "PHIL 473",
+            "PHIL 347",
+            "PHIL 361",
+            "PHIL 430",
+            "PHIL 431",
+            "PHIL 437",
+            "PHIL 440",
+            "PHIL 443",
+            "PHIL 445",
+            "PHIL 446",
+            "PHIL 336",
+            "PHIL 350",
+            "PHIL 360",
+            "PHIL 362",
+            "PHIL 363",
+            "PHIL 381",
+            "PHIL 385",
+            "PHIL 450",
+            "PHIL 452",
+            "PHIL 460",
+            "PHIL 462",
+            "PHIL 463",
+            "PHIL 465",
+            "PHIL 467",
+            "PHIL 470",
+            "PHIL 480",
+            "PHIL 484",
+            "PHIL 485",
+            "PHIL 486"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                57,
+                80
+              ]
+            ],
+            "source_quote": "Students must take at least one course from each",
+            "eligible_if": {
+              "courses": [
+                "PHIL 311",
+                "PHIL 314",
+                "PHIL 315",
+                "PHIL 317",
+                "PHIL 320",
+                "PHIL 337",
+                "PHIL 410",
+                "PHIL 411",
+                "PHIL 415",
+                "PHIL 416",
+                "PHIL 421",
+                "PHIL 422",
+                "PHIL 423",
+                "PHIL 424",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 442",
+                "PHIL 473"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                57,
+                57
+              ],
+              [
+                82,
+                98
+              ]
+            ],
+            "source_quote": "Students must take at least one course from each",
+            "eligible_if": {
+              "courses": [
+                "PHIL 337",
+                "PHIL 340",
+                "PHIL 347",
+                "PHIL 361",
+                "PHIL 430",
+                "PHIL 431",
+                "PHIL 437",
+                "PHIL 440",
+                "PHIL 442",
+                "PHIL 443",
+                "PHIL 445",
+                "PHIL 446"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "source_lines": [
+              [
+                57,
+                57
+              ],
+              [
+                99,
+                123
+              ]
+            ],
+            "source_quote": "Students must take at least one course from each",
+            "eligible_if": {
+              "courses": [
+                "PHIL 336",
+                "PHIL 350",
+                "PHIL 360",
+                "PHIL 362",
+                "PHIL 363",
+                "PHIL 381",
+                "PHIL 385",
+                "PHIL 427",
+                "PHIL 428",
+                "PHIL 450",
+                "PHIL 452",
+                "PHIL 460",
+                "PHIL 462",
+                "PHIL 463",
+                "PHIL 465",
+                "PHIL 467",
+                "PHIL 470",
+                "PHIL 480",
+                "PHIL 484",
+                "PHIL 485",
+                "PHIL 486"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "id": "PHIL-BA-DISTRIBUTION",
+        "source_lines": [
+          [
+            53,
+            123
+          ]
+        ],
+        "source_quote": "Students must take at least one course from each of the three categories",
+        "description": "At least one course from each of the three distribution categories: History of Philosophy, Ethics/Law/Value Theory, and Systematic Philosophy.",
+        "confidence": "high",
+        "note": "PHIL 340 is missing from the printed Ethics, Law and Value Theory list header rows but appears in its course list (L87); included."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          25,
+          25
+        ]
+      ],
+      "source_quote": "Total units for degree: 128",
+      "reason": "university_level",
+      "why": "University-wide total unit requirement repeated on the programme page."
+    },
+    {
+      "source_lines": [
+        [
+          31,
+          31
+        ]
+      ],
+      "source_quote": "Completing a gateway course is recommended prior to enrolling",
+      "reason": "advisory",
+      "why": "A recommendation, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          129,
+          129
+        ]
+      ],
+      "source_quote": "Majors may graduate with departmental honors by doing",
+      "reason": "out_of_scope",
+      "why": "Honors GPA and capstone rule; not a core degree requirement."
+    },
+    {
+      "source_lines": [
+        [
+          129,
+          129
+        ]
+      ],
+      "source_quote": "To take PHIL 494 or PHIL 495",
+      "reason": "advisory",
+      "why": "Recommendation about completing other 400-level courses first."
+    }
+  ]
+}

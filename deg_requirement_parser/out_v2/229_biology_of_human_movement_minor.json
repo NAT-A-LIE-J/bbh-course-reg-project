@@ -1,0 +1,142 @@
+{
+  "program": "Biology of Human Movement Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 108g"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              }
+            ]
+          }
+        ],
+        "id": "BHM-MINOR-PREREQS",
+        "source_lines": [
+          [
+            23,
+            34
+          ]
+        ],
+        "source_quote": "BISC 220Lg General Biology: Cell Biology and Physiology",
+        "description": "Prerequisite courses: one biology course, one math course, and one physics course.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "HBIO 301L"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 401L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 408L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 309"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 400L"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "HBIO 439L"
+              },
+              {
+                "family": "specific_course",
+                "course": "HBIO 442L"
+              }
+            ]
+          }
+        ],
+        "of_which": [
+          {
+            "source_lines": [
+              [
+                53,
+                53
+              ]
+            ],
+            "source_quote": "Minimum Upper-Division Core Units Required: 16",
+            "eligible_if": {
+              "level_min": 300
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 16
+              }
+            ]
+          }
+        ],
+        "id": "BHM-MINOR-CORE",
+        "source_lines": [
+          [
+            36,
+            53
+          ]
+        ],
+        "source_quote": "Four courses for a total 16 units from",
+        "description": "Four core courses totaling 16 units: HBIO 301L plus one option from each of three paired choices, with at least 16 upper-division units.",
+        "confidence": "high",
+        "note": null
+      }
+    ]
+  },
+  "unclassified": []
+}

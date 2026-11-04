@@ -1,0 +1,486 @@
+{
+  "program": "Quantitative Biology (BS)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "QBIO 105",
+        "id": "QBIO-BS-INTRO",
+        "source_lines": [
+          [
+            31,
+            35
+          ]
+        ],
+        "source_quote": "QBIO 105 Introduction to Quantitative Biology Seminar",
+        "description": "Required introductory seminar QBIO 105.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 120Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 121Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "BISC 220Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "BISC 221Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "CHEM 105aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "CHEM 115aLg"
+              }
+            ]
+          },
+          {
+            "family": "specific_course",
+            "course": "MATH 125g"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "PHYS 135aLg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 151Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 161Lg"
+              },
+              {
+                "family": "specific_course",
+                "course": "PHYS 171Lg"
+              }
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "QBIO 310"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 307"
+              }
+            ]
+          }
+        ],
+        "id": "QBIO-BS-FOUNDSCI",
+        "source_lines": [
+          [
+            37,
+            58
+          ]
+        ],
+        "source_quote": "Required Foundational Science Courses (24 units)",
+        "description": "Six foundational science requirements, each with alternative course options, totaling 24 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 103L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 104L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 170"
+              }
+            ],
+            "id": "QBIO-BS-COMP-TRACK1",
+            "source_lines": [
+              [
+                66,
+                72
+              ]
+            ],
+            "source_quote": "CSCI 103L Object Oriented Programming Units: 4",
+            "description": "Computing track 1: CSCI 103L, 104L, 170.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 113x"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 114x"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "QBIO 401"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "QBIO 460"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "QBIO 465"
+                  }
+                ]
+              }
+            ],
+            "id": "QBIO-BS-COMP-TRACK2",
+            "source_lines": [
+              [
+                74,
+                83
+              ]
+            ],
+            "source_quote": "CSCI 113x Programming Fundamentals for Computing Units",
+            "description": "Computing track 2: CSCI 113x, 114x, and one of QBIO 401/460/465.",
+            "confidence": "high",
+            "note": null
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "CSCI 103L"
+              },
+              {
+                "family": "specific_course",
+                "course": "CSCI 114x"
+              },
+              {
+                "choose": 1,
+                "from": [
+                  {
+                    "family": "specific_course",
+                    "course": "QBIO 401"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "QBIO 460"
+                  },
+                  {
+                    "family": "specific_course",
+                    "course": "QBIO 465"
+                  }
+                ]
+              }
+            ],
+            "id": "QBIO-BS-COMP-TRACK3",
+            "source_lines": [
+              [
+                85,
+                94
+              ]
+            ],
+            "source_quote": "CSCI 103L Object Oriented Programming Units: 4",
+            "description": "Computing track 3: CSCI 103L, 114x, and one of QBIO 401/460/465.",
+            "confidence": "high",
+            "note": null
+          }
+        ],
+        "id": "QBIO-BS-FOUNDCOMP",
+        "source_lines": [
+          [
+            60,
+            94
+          ]
+        ],
+        "source_quote": "Choose one of the following tracks, with three",
+        "description": "Choose one of three computing tracks, each with three courses, totaling 12 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "CHEM 105bL",
+            "CHEM 115bL",
+            "CHEM 322aL",
+            "CHEM 322bL",
+            "CSCI 270",
+            "MATH 126g",
+            "MATH 127",
+            "MATH 129",
+            "MATH 225",
+            "MATH 245",
+            "MATH 226g",
+            "MATH 227",
+            "MATH 229",
+            "MATH 407",
+            "MATH 308",
+            "MATH 408",
+            "PHYS 135bL",
+            "PHYS 152L",
+            "PHYS 162L",
+            "PHYS 172L",
+            "QBIO 401",
+            "QBIO 460",
+            "QBIO 465"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 3
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "QBIO-BS-SPECIALIZATION",
+        "source_lines": [
+          [
+            96,
+            132
+          ]
+        ],
+        "source_quote": "Choose three of the following courses. Note:",
+        "description": "Choose three specialization courses from the given list, totaling 12 units.",
+        "confidence": "high",
+        "note": "Courses used for the Foundational Computing requirement cannot also count here (one-slot rule); several entries are alternative course options grouped by 'or'."
+      },
+      {
+        "choose": 2,
+        "from": [
+          {
+            "family": "specific_course",
+            "course": "QBIO 475"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 478"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 481"
+          },
+          {
+            "family": "specific_course",
+            "course": "QBIO 482"
+          }
+        ],
+        "id": "QBIO-BS-CAPSTONE",
+        "source_lines": [
+          [
+            134,
+            143
+          ]
+        ],
+        "source_quote": "Choose two of the following four capstone",
+        "description": "Choose two of four capstone courses, totaling 8 units.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "BISC 300L",
+            "BISC 307L",
+            "BISC 313L",
+            "BISC 315L",
+            "BISC 320Lg",
+            "BISC 325",
+            "BISC 330L",
+            "BISC 312x",
+            "CHEM 350",
+            "BISC 403",
+            "BISC 406L",
+            "BISC 407",
+            "BISC 408",
+            "BISC 410",
+            "BISC 411",
+            "BISC 421",
+            "BISC 423",
+            "BISC 424",
+            "BISC 434",
+            "BISC 435",
+            "BISC 450L",
+            "BISC 473L",
+            "BME 430",
+            "CSCI 360",
+            "CSCI 467",
+            "ECON 460",
+            "LING 486",
+            "LING 487",
+            "MATH 447",
+            "MATH 466",
+            "MATH 467",
+            "PHYS 444",
+            "PSYC 450",
+            "QBIO 401",
+            "QBIO 460",
+            "QBIO 465",
+            "QBIO 475",
+            "QBIO 478",
+            "QBIO 479L",
+            "QBIO 481",
+            "QBIO 482",
+            "QBIO 499",
+            "SCRM 487"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 2
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 8
+          }
+        ],
+        "id": "QBIO-BS-UPPERDIV-ELECTIVES",
+        "source_lines": [
+          [
+            145,
+            196
+          ]
+        ],
+        "source_quote": "Choose two to three of the following courses",
+        "description": "Choose two to three upper-division elective courses totaling at least 8 units.",
+        "confidence": "high",
+        "note": "Courses used for Foundational Computing, Specialization, or Capstone requirements cannot double-count here (one-slot rule); starred courses are shared with those lists."
+      },
+      {
+        "choose": 1,
+        "from": [
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "QBIO 490x"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "all_of": [
+              {
+                "family": "specific_course",
+                "course": "QBIO 493"
+              },
+              {
+                "family": "specific_course",
+                "course": "QBIO 494"
+              },
+              {
+                "family": "manual_review",
+                "kind": "PROGRAM_RULE",
+                "details": {
+                  "direction": "ROUTES",
+                  "applies_to": "students in the honors program",
+                  "courses": [
+                    "QBIO 493",
+                    "QBIO 494"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "id": "QBIO-BS-RESEARCH",
+        "source_lines": [
+          [
+            198,
+            207
+          ]
+        ],
+        "source_quote": "Students are required to enroll in a total",
+        "description": "6 units of directed research, approved by the Executive Committee or faculty adviser; honors students take QBIO 493 and QBIO 494 instead.",
+        "confidence": "medium",
+        "note": "Approval by the Quantitative Biology Executive Committee or faculty adviser cannot be checked from a course list."
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The Department of Quantitative and Computational Biology offers",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The students will take an introductory seminar,",
+      "reason": "out_of_scope",
+      "why": "Narrative description already captured by specific requirement nodes."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The general education, writing, language and diversity",
+      "reason": "university_level",
+      "why": "University/school-wide GE and writing requirements, handled separately from STARS."
+    }
+  ]
+}

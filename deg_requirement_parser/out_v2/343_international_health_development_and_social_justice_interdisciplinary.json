@@ -1,0 +1,300 @@
+{
+  "program": "International Health, Development, and Social Justice Interdisciplinary Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 101g",
+            "ANTH 105g",
+            "ANTH 125g",
+            "ANTH 205g",
+            "BISC 102Lgx",
+            "BISC 103Lgx",
+            "BISC 150Lgx",
+            "ECON 205g",
+            "GEOL 108Lg",
+            "IR 101gxw",
+            "IR 213",
+            "PHIL 166gw",
+            "PHIL 172gmw",
+            "SOCI 225gw",
+            "SOCI 242g"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IHDSJ-LOWER-DIVISION",
+        "source_lines": [
+          [
+            31,
+            51
+          ]
+        ],
+        "source_quote": "Students should have some experience with engaging ethical questions",
+        "description": "Choose one lower-division course from the listed options.",
+        "confidence": "high",
+        "note": "IR 213 requires prerequisite IR 210 and SOCI 242g requires BISC 120 or BISC 220; these prerequisite notes are not encoded as minor requirements."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 238xg",
+            "ECON 340",
+            "ECON 350",
+            "POSC 435"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IHDSJ-POLITICAL-ECONOMY",
+        "source_lines": [
+          [
+            61,
+            76
+          ]
+        ],
+        "source_quote": "The courses in this and the following categories provide",
+        "description": "Choose one course introducing political economy.",
+        "confidence": "high",
+        "note": "ECON 340 and ECON 350 require ECON 203 or ECON 205 as prerequisite; not encoded as a minor requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "IR 325",
+            "IR 344",
+            "IR 454",
+            "POSC 456",
+            "SOCI 314Lg",
+            "SOCI 362",
+            "SOCI 470"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IHDSJ-THEORIES-OF-DEVELOPMENT",
+        "source_lines": [
+          [
+            78,
+            88
+          ]
+        ],
+        "source_quote": "Theories of Development: Choose One Course (4 Units)",
+        "description": "Choose one course on theories of development.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 301g",
+            "ANTH 305",
+            "ANTH 405",
+            "IR 339",
+            "PSYC 367g",
+            "PSYC 462m",
+            "REL 460",
+            "SOCI 475",
+            "SWMS 336"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IHDSJ-CROSS-CULTURAL-HEALTH",
+        "source_lines": [
+          [
+            90,
+            112
+          ]
+        ],
+        "source_quote": "These courses explore cultural attitudes and differences about health",
+        "description": "Choose one course on cross-cultural perspectives on health and wellness.",
+        "confidence": "high",
+        "note": "PSYC 367g requires PSYC 100 as prerequisite; PSYC 462m has recommended preparation PSYC 100 (advisory); neither encoded as a minor requirement."
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ANTH 300",
+            "IR 316",
+            "IR 401",
+            "PHIL 431",
+            "PHIL 437",
+            "REL 366",
+            "SOCI 360m"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IHDSJ-SOCIAL-JUSTICE",
+        "source_lines": [
+          [
+            114,
+            126
+          ]
+        ],
+        "source_quote": "These courses familiarize students with the application of legal",
+        "description": "Choose one course on perspectives on social justice.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "MDA 320",
+            "SOCI 408",
+            "SOCI 450"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IHDSJ-CAPSTONE",
+        "source_lines": [
+          [
+            128,
+            136
+          ]
+        ],
+        "source_quote": "These capstone courses examine efforts to introduce issues",
+        "description": "Choose one capstone course.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            27,
+            27
+          ]
+        ],
+        "source_quote": "students must choose courses from at least two different departments",
+        "thresholds": [
+          {
+            "count_by": "departments",
+            "op": "min",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          27,
+          27
+        ]
+      ],
+      "source_quote": "students should include four courses outside their major",
+      "reason": "university_level",
+      "why": "Standard university-wide minor rule about outside-major, upper-division, and non-double-counted courses."
+    },
+    {
+      "source_lines": [
+        [
+          29,
+          29
+        ]
+      ],
+      "source_quote": "REQUIRED COURSE WORK: 24 units",
+      "reason": "university_level",
+      "why": "Restates the total unit count implied by the six 4-unit course categories; not a separate requirement."
+    },
+    {
+      "source_lines": [
+        [
+          57,
+          57
+        ]
+      ],
+      "source_quote": "*Prerequisite: IR 210",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          59,
+          59
+        ]
+      ],
+      "source_quote": "**Prerequisite: BISC 120 or BISC 220",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          76,
+          76
+        ]
+      ],
+      "source_quote": "*Prerequisite: ECON 203 or ECON 205",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          110,
+          110
+        ]
+      ],
+      "source_quote": "*Prerequisite: PSYC 100",
+      "reason": "out_of_scope",
+      "why": "Course-level prerequisite, not a minor requirement."
+    },
+    {
+      "source_lines": [
+        [
+          112,
+          112
+        ]
+      ],
+      "source_quote": "**Recommended preparation: PSYC 100",
+      "reason": "advisory",
+      "why": "Recommended preparation, not a requirement."
+    }
+  ]
+}

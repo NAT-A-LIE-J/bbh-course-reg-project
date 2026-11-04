@@ -1,0 +1,71 @@
+{
+  "program": "Speech-Language and Hearing Professions Minor",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "family": "specific_course",
+        "course": "OHNS 200",
+        "id": "SLHP-MINOR-REQUIRED",
+        "source_lines": [
+          [
+            27,
+            31
+          ]
+        ],
+        "source_quote": "OHNS 200 Communication Development and Disorders Across the Life Span",
+        "description": "Required course: OHNS 200.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "OHNS 301",
+            "OHNS 303",
+            "OHNS 401",
+            "OHNS 402"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 12
+          }
+        ],
+        "id": "SLHP-MINOR-ELECTIVES",
+        "source_lines": [
+          [
+            33,
+            42
+          ]
+        ],
+        "source_quote": "Select 12 units of electives from the following",
+        "description": "12 units of electives chosen from the four listed OHNS courses.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            25,
+            25
+          ]
+        ],
+        "source_quote": "This minor requires 16 units, consisting of 4 required units and 12 elective units",
+        "thresholds": [
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 16
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": []
+}

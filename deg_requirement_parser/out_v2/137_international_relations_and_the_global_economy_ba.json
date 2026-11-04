@@ -1,0 +1,277 @@
+{
+  "program": "International Relations and the Global Economy (BA)",
+  "status": "ok",
+  "root": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 203g"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 205g"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 210gw"
+          },
+          {
+            "choose": 1,
+            "from": [
+              {
+                "family": "specific_course",
+                "course": "MATH 118gx"
+              },
+              {
+                "family": "specific_course",
+                "course": "MATH 125g"
+              }
+            ]
+          }
+        ],
+        "id": "IRGE-BA-LOWER-DIVISION",
+        "source_lines": [
+          [
+            25,
+            34
+          ]
+        ],
+        "source_quote": "ECON 203g Principles of Microeconomics",
+        "description": "Lower-division requirements: ECON 203g, ECON 205g, IR 210gw, and MATH 118gx or MATH 125g.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "all_of": [
+          {
+            "family": "specific_course",
+            "course": "ECON 303"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 305"
+          },
+          {
+            "family": "specific_course",
+            "course": "ECON 317"
+          },
+          {
+            "family": "specific_course",
+            "course": "IR 330"
+          },
+          {
+            "family": "count",
+            "eligible_if": {
+              "courses": [
+                "ECON 318",
+                "IR 324",
+                "IR 325",
+                "IR 326",
+                "IR 328",
+                "IR 329",
+                "IR 331",
+                "IR 332"
+              ]
+            },
+            "thresholds": [
+              {
+                "count_by": "courses",
+                "op": "min",
+                "value": 2
+              },
+              {
+                "count_by": "units",
+                "op": "min",
+                "value": 8
+              }
+            ]
+          }
+        ],
+        "id": "IRGE-BA-CORE-SKILLS",
+        "source_lines": [
+          [
+            36,
+            56
+          ]
+        ],
+        "source_quote": "ECON 303 Intermediate Microeconomic Theory",
+        "description": "Core courses ECON 303, ECON 305, ECON 317, IR 330, plus two courses from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 340",
+            "ECON 342",
+            "ECON 343",
+            "ECON 344",
+            "ECON 346",
+            "IR 317",
+            "IR 340",
+            "IR 360",
+            "IR 363",
+            "IR 364",
+            "IR 384",
+            "IR 425",
+            "IR 428",
+            "IR 439",
+            "IR 468",
+            "POSC 430",
+            "POSC 431",
+            "POSC 435",
+            "POSC 451"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IRGE-BA-REGIONAL-STUDY",
+        "source_lines": [
+          [
+            58,
+            82
+          ]
+        ],
+        "source_quote": "Choose one course (4 units):",
+        "description": "One regional study course from the listed options.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "count",
+        "eligible_if": {
+          "courses": [
+            "ECON 404",
+            "ECON 415",
+            "ECON 450",
+            "ECON 452",
+            "ECON 457",
+            "ECON 474",
+            "ECON 487",
+            "IR 412",
+            "IR 413",
+            "IR 420",
+            "IR 427",
+            "IR 430",
+            "IR 431",
+            "IR 454",
+            "IR 455",
+            "IR 470"
+          ]
+        },
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 1
+          }
+        ],
+        "id": "IRGE-BA-SENIOR-EMPHASIS",
+        "source_lines": [
+          [
+            84,
+            105
+          ]
+        ],
+        "source_quote": "Choose one course (4 units):",
+        "description": "One senior emphasis course from the listed options.",
+        "confidence": "high",
+        "note": "ECON 450 has a stated prerequisite of ECON 303, which is encoded separately as a sequencing note."
+      },
+      {
+        "family": "sequencing",
+        "kind": "PREREQUISITE",
+        "details": {
+          "before": "ECON 303",
+          "after": "ECON 450"
+        },
+        "id": "IRGE-BA-ECON450-PREREQ",
+        "source_lines": [
+          [
+            92,
+            92
+          ]
+        ],
+        "source_quote": "ECON 450 International Trade Units: 4 (prerequisite: ECON 303 )",
+        "description": "ECON 450 requires ECON 303 as a prerequisite.",
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "family": "manual_review",
+        "kind": "PROGRAM_RULE",
+        "details": {
+          "direction": "COMBINATION",
+          "applies_to": "economics degree majors",
+          "effect": "cannot be combined"
+        },
+        "id": "IRGE-BA-NO-ECON-DOUBLE-MAJOR",
+        "source_lines": [
+          [
+            23,
+            23
+          ]
+        ],
+        "source_quote": "The degree cannot also be combined as",
+        "description": "This degree cannot be combined as an additional major with any economics degree.",
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "of_which": [
+      {
+        "source_lines": [
+          [
+            107,
+            107
+          ]
+        ],
+        "source_quote": "Total: 12 courses, 48 units",
+        "thresholds": [
+          {
+            "count_by": "courses",
+            "op": "min",
+            "value": 12
+          },
+          {
+            "count_by": "units",
+            "op": "min",
+            "value": 48
+          }
+        ]
+      }
+    ]
+  },
+  "unclassified": [
+    {
+      "source_lines": [
+        [
+          21,
+          21
+        ]
+      ],
+      "source_quote": "The BA in International Relations and the",
+      "reason": "out_of_scope",
+      "why": "Programme description/marketing, not a requirement."
+    },
+    {
+      "source_lines": [
+        [
+          23,
+          23
+        ]
+      ],
+      "source_quote": "The degree is administered by the School",
+      "reason": "out_of_scope",
+      "why": "Administrative note, not a requirement."
+    }
+  ]
+}
