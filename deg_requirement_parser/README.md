@@ -128,10 +128,15 @@ requirement. For the rest, some part needs a person. In order of how much that m
    prints every error.
 2. **The checks test shape and citations, not meaning.** A tree can pass every check and still
    misread a sentence (a wrong count, a missing course, `all_of` where the text says "or").
-   Hand review so far: the 15-programme test set, History, Interdisciplinary, Occupational
-   Therapy, Computer Science, Business Administration (042), Animation and Digital Arts (BFA)
-   and the 3-D Animation minor. The golden students (`golden/`, 15 cases on 3 programmes) all
-   get the right answer from the model's trees. That is a small sample of 470.
+   The full run redid every programme, so a tree reviewed on the 15-programme test run is not
+   the tree in the file. On the full run, Computer Science, Business Administration (042),
+   Animation and Digital Arts (BFA) and the 3-D Animation minor read right. History (124) did
+   not: it puts geographic and temporal breadth in separate slots, though the catalogue says
+   "a single course may fulfill both a geographic and temporal requirement", and it drops
+   "at least two must be 400-levels". The solver would tell a History major who used one course
+   for both that they need more courses. No check flags it. The golden students (`golden/`,
+   15 cases on 3 programmes) all get the right answer from the full run's trees. That is a
+   small sample of 470.
    `spot_check.py --out-dir out_v2` writes `out_v2/review_sheet.md`, every node next to the
    text it cites, for more reading.
 3. **Requirements the model couldn't encode (`no_fit`).** 56 programmes (12%) have at least one
@@ -176,6 +181,23 @@ requirement. For the rest, some part needs a person. In order of how much that m
     `university_level` and are checked elsewhere. The `school` header field is empty in the
     scrape, so it is `null` in the file.
 
+## Demo page
+
+`demo/` builds a static page for showing the pipeline: pick a programme, see the catalogue
+text next to its tree, hover a requirement to highlight the lines it cites, and for five
+programmes try a made-up student. The page has no degree logic. `demo/build_demo.py` runs each
+student in `demo/students.json` through `bip.py` and writes every verdict into
+`demo/data/` (generated, not committed). Students marked `golden` reuse a `golden/` case
+unchanged; `--check` compares them with the golden answers.
+
+```bash
+python demo/build_demo.py --check                # writes demo/data/, needs the combined file
+cd demo && python -m http.server 8000            # then open http://localhost:8000
+```
+
+`index.html` is written as a page body for publishing as a claude.ai Artifact, which adds the
+`<!doctype html>` and viewport tags. To host it anywhere else, add those two lines at the top.
+
 ## Changing the taxonomy
 
 When the output gets a sentence wrong, add that sentence as a new example in
@@ -208,6 +230,7 @@ Change one thing at a time so you can tell what helped. Questions waiting on Vis
 | `build_catalogue.py` | Combines a checked run into the single catalogue file. |
 | `out_v2/` | The run behind the combined file: one JSON per programme, `summary.csv` (from `check_results.py`), `run_meta.csv` (model, cost, time) and `run_log.csv` (one row per call; overwritten by each run, so after a re-run it covers only that run). |
 | `catalogue/` | The combined file. |
+| `demo/` | The demo page, its made-up students and the script that precomputes their verdicts. |
 | `FEEDBACK_phase1.md`, `taxonomy_rewrite_plan.md`, `taxonomy_open_questions.md` | Vishal's feedback with the task list ticked, the rewrite plan, open questions. |
 | `out_sonnet5_40/` | The earlier 40-programme run in the old list format. Kept for comparison only. |
 

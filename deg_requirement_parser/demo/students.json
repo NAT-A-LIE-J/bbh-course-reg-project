@@ -1,0 +1,77 @@
+{
+ "about": "Made-up students for the demo page. None of them is a real person and none of the course lists comes from a real STARS report. Cases marked golden reuse a golden/ case's course list unchanged, so their verdicts can be compared with check_bip.py. Each course is 4 units unless given as [code, units].",
+ "programmes": {
+  "102_economics_ba": [
+   {"name": "Jordan", "golden": "Complete major",
+    "summary": "Six core courses, four 300+ ECON electives, MATH 125 and TAC 101."},
+   {"name": "Priya", "golden": "Priya (FEEDBACK_phase1.md, Example 3)",
+    "summary": "Four ECON electives, all at 300 level. The major needs at least two at 400 level or above."},
+   {"name": "Sam", "golden": "Missing computing",
+    "summary": "Everything except a computing course (TAC 101 or CSCI 101L)."}
+  ],
+  "183_public_policy_bs": [
+   {"name": "Maria", "golden": "Maria, Health track (FEEDBACK_phase1.md, Example 1)",
+    "summary": "Health Policy and Management track, PPD 431 capstone, PPD 342 as the cross-cutting course."},
+   {"name": "Dana", "golden": "Dana, 2-unit electives (FEEDBACK_phase1.md 2.2)",
+    "summary": "Health track, but two of the track electives are 2-unit courses."},
+   {"name": "Luis", "golden": "Urban track, adviser-selected courses",
+    "summary": "Urban track, where two courses are chosen with an adviser. Code can't tell which courses those are."}
+  ],
+  "086_computer_science_bs": [
+   {"name": "Alex",
+    "summary": "All core courses, four 300-400 CSCI electives and one free elective.",
+    "courses": ["ENGR 102", "MATH 125g", "MATH 126g", "MATH 225", "MATH 226g", "EE 364",
+                "BISC 120Lg", "PHYS 151Lg",
+                "CSCI 102L", "CSCI 103L", "CSCI 104L", "CSCI 170", "CSCI 201", "CSCI 270",
+                "CSCI 310", "CSCI 350", "CSCI 353", "CSCI 356", "CSCI 360", "CSCI 401", "EE 109L",
+                "CSCI 455x", "CSCI 467", "CSCI 485", "CSCI 499", "ARLT 100g"]},
+   {"name": "Wei",
+    "summary": "Took the MATH 129 and 229 route. Missing CSCI 350 and has only three CSCI electives.",
+    "courses": ["ENGR 102", "MATH 125g", "MATH 129", "MATH 225", "MATH 229", "EE 364",
+                "BISC 121Lg", "CHEM 105aLg",
+                "CSCI 102L", "CSCI 103L", "CSCI 104L", "CSCI 170", "CSCI 201", "CSCI 270",
+                "CSCI 310", "CSCI 353", "CSCI 356", "CSCI 360", "CSCI 401", "EE 109L",
+                "CSCI 455x", "CSCI 467", "CSCI 485", "ARLT 100g"]},
+   {"name": "Rosa",
+    "summary": "Everything except the physical science course and the free elective.",
+    "courses": ["ENGR 102", "MATH 125g", "MATH 126g", "MATH 225", "MATH 226g", "EE 364",
+                "BISC 220Lg",
+                "CSCI 102L", "CSCI 103L", "CSCI 104L", "CSCI 170", "CSCI 201", "CSCI 270",
+                "CSCI 310", "CSCI 350", "CSCI 353", "CSCI 356", "CSCI 360", "CSCI 401", "EE 109L",
+                "CSCI 455x", "CSCI 467", "CSCI 485", "CSCI 499"]}
+  ],
+  "042_business_administration_bs": [
+   {"name": "Kai",
+    "summary": "Business core, writing, 12 units of Marshall electives and 32 units of free electives.",
+    "courses": ["WRIT 150", "WRIT 340",
+                "BUAD 280", "BUAD 281", "BUAD 302", "BUAD 304", "BUAD 306", "BUAD 307", "BUAD 310g",
+                "BUAD 311", "BUAD 425", "BUAD 497", "ECON 351x", "ECON 352x", "MATH 118gx",
+                "FBE 324", "MKT 405", "DSO 428",
+                "ARLT 100g", "PSYC 100Lg", "HIST 109g", "PHIL 140g", "SOCI 200gm", "ITAL 120",
+                "ITAL 150", "ITAL 220"]},
+   {"name": "Noor",
+    "summary": "Took the other option in each either/or of the core (BUAD 308, 312g, 313, 427, MATH 125g), but not BUAD 497 Strategic Management.",
+    "courses": ["WRIT 150", "WRIT 340",
+                "BUAD 280", "BUAD 281", "BUAD 302", "BUAD 304", "BUAD 308", "BUAD 307", "BUAD 312g",
+                "BUAD 313", "BUAD 427", "ECON 351x", "ECON 352x", "MATH 125g",
+                "FBE 324", "MKT 405", "ACCT 410",
+                "ARLT 100g", "PSYC 100Lg", "HIST 109g", "PHIL 140g", "SOCI 200gm", "ITAL 120",
+                "ITAL 150", "ITAL 220"]},
+   {"name": "Theo",
+    "summary": "Did a Marshall exchange semester abroad instead of the Marshall electives. Only an adviser can confirm that.",
+    "courses": ["WRIT 150", "WRIT 340",
+                "BUAD 280", "BUAD 281", "BUAD 302", "BUAD 304", "BUAD 306", "BUAD 307", "BUAD 310g",
+                "BUAD 311", "BUAD 425", "BUAD 497", "ECON 351x", "ECON 352x", "MATH 118gx",
+                "ARLT 100g", "PSYC 100Lg", "HIST 109g", "PHIL 140g", "SOCI 200gm", "ITAL 120",
+                "ITAL 150", "ITAL 220", "EXCH 300", "EXCH 301", "EXCH 302"]}
+  ],
+  "188_religion_ba": [
+   {"name": "Avery", "golden": "Mostly upper-division",
+    "summary": "REL 301, REL 401 and six more REL courses, mostly 300 and 400 level."},
+   {"name": "Mina", "golden": "Mostly lower-division",
+    "summary": "Enough REL courses, but too many of them at 100 and 200 level."},
+   {"name": "Chris", "golden": "Five electives",
+    "summary": "REL 301, REL 401 and five more REL courses. The major needs six."}
+  ]
+ }
+}

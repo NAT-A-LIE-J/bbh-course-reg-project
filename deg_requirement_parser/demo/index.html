@@ -1,0 +1,666 @@
+<title>USC Requirement Trees</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: summary band (coverage + picker), then catalogue text beside its tree; stacks on phones.
+   Tokens follow design/bbh.css (BBH design guide): warm off-white, white cards, cardinal accent, light only. */
+:root {
+  --cardinal: #990000;
+  --cardinal-hover: #7d0000;
+  --cardinal-06: rgba(153, 0, 0, 0.06);
+  --cardinal-10: rgba(153, 0, 0, 0.10);
+  --cardinal-14: rgba(153, 0, 0, 0.14);
+  --gold: #D4AF37;
+  --gold-text: #8a6d1f;
+  --gold-bg: #FEFAEC;
+  --gold-line: rgba(212, 175, 55, 0.55);
+  --page: #F7F7F5;
+  --surface: #FFFFFF;
+  --sunk: #FAFAF9;
+  --ink: #1C1C1F;
+  --ink-2: #3F3F46;
+  --body: #52525B;
+  --muted: #5B5B63;
+  --faint: #71717A;
+  --line-hair: rgba(0, 0, 0, 0.06);
+  --line: rgba(0, 0, 0, 0.08);
+  --line-strong: rgba(0, 0, 0, 0.15);
+  --ok: #15803D;
+  --ok-fill: #16A34A;
+  --ok-bg: #F0FAF3;
+  --ok-border: rgba(22, 163, 74, 0.3);
+  --bad: #B91C1C;
+  --bad-fill: #C1121F;
+  --bad-bg: #FDF2F2;
+  --bad-border: rgba(193, 18, 31, 0.25);
+  --hl: #FFF4C2;
+  --hl-edge: #D4AF37;
+  --font-head: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --r-sm: 7px;
+  --r-md: 8px;
+  --r-lg: 10px;
+  --r-xl: 14px;
+  --shadow: 0 18px 40px -24px rgba(28, 28, 31, 0.25);
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--page); }
+body {
+  color: var(--body);
+  font: 14.5px/1.55 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 48px;
+}
+::selection { background: rgba(153, 0, 0, 0.2); }
+.wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 22px; }
+h1, h2, h3 { font-family: var(--font-head); color: var(--ink); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; line-height: 1.1; }
+h2 { font-size: 19px; font-weight: 600; }
+h3 { font-size: 15px; font-weight: 600; }
+p { margin: 0; }
+a { color: var(--cardinal); }
+button { font: inherit; }
+:focus-visible { outline: 2px solid var(--cardinal); outline-offset: 2px; }
+.eyebrow { font: 600 10.5px/1.2 var(--font-head); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); box-shadow: var(--shadow); }
+
+/* Header */
+header.top { display: grid; gap: 10px; }
+header.top .lead { max-width: 68ch; font-size: 16px; color: var(--ink-2); }
+header.top .eyebrow span { color: var(--cardinal); }
+
+/* Coverage */
+.coverage { padding: 20px 22px; display: grid; gap: 14px; }
+.coverage-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+.coverage-head .src { font-size: 12.5px; color: var(--faint); }
+.bar { display: flex; gap: 2px; height: 28px; border-radius: 6px; overflow: hidden; }
+.bar .seg { position: relative; min-width: 4px; display: flex; align-items: center; padding: 0 10px; color: #fff; font: 600 12.5px/1 var(--font-head); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; cursor: default; }
+.bar .seg.ok { background: var(--ok-fill); }
+.bar .seg.warn { background: var(--gold); color: #3b2f0b; }
+.bar .seg.bad { background: var(--bad-fill); }
+.bar .seg:hover, .bar .seg:focus-visible { filter: brightness(1.08); }
+.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px 20px; }
+.legend .item { display: grid; grid-template-columns: 12px 1fr; gap: 2px 10px; align-items: start; align-content: start; }
+.legend .sw { width: 12px; height: 12px; border-radius: 3px; margin-top: 4px; }
+.legend .n { font: 600 15px/1.3 var(--font-head); color: var(--ink); font-variant-numeric: tabular-nums; }
+.legend .d { grid-column: 2; font-size: 13px; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line-hair); padding-top: 12px; }
+.facts b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Picker */
+.picker { display: grid; gap: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 14px; font: 500 13px/1.3 var(--font-head); cursor: pointer; }
+.chip:hover { border-color: var(--cardinal); color: var(--cardinal); }
+.chip[aria-pressed="true"] { background: var(--cardinal); border-color: var(--cardinal); color: #fff; }
+.search { position: relative; max-width: 520px; }
+.search input { width: 100%; border: 1px solid var(--line-strong); border-radius: var(--r-lg); padding: 10px 12px; font: 14px var(--font-body); color: var(--ink); background: var(--surface); }
+.search input:focus { outline: none; border-color: var(--cardinal); box-shadow: 0 0 0 3px var(--cardinal-14); }
+.results { position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 4px); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow); max-height: 320px; overflow-y: auto; padding: 4px; }
+.results button { display: flex; justify-content: space-between; gap: 12px; width: 100%; text-align: left; border: 0; background: none; padding: 8px 10px; border-radius: var(--r-sm); color: var(--ink); cursor: pointer; font-size: 13.5px; }
+.results button:hover, .results button.active { background: var(--cardinal-06); }
+.results .st { font-size: 12px; color: var(--faint); white-space: nowrap; }
+.results .empty { padding: 10px; color: var(--faint); font-size: 13px; }
+
+/* Workspace */
+.prog-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.prog-head h2 { font-size: clamp(20px, 3vw, 26px); }
+.prog-head .meta { font-size: 13px; color: var(--muted); }
+.work { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 18px; align-items: start; }
+.panel { display: grid; grid-template-rows: auto 1fr; min-width: 0; }
+.panel-head { padding: 14px 18px 12px; border-bottom: 1px solid var(--line-hair); display: grid; gap: 4px; }
+.panel-head p { font-size: 12.5px; color: var(--faint); }
+
+.text { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); }
+.lines { max-height: calc(100vh - 140px); overflow: auto; padding: 8px 0 14px; font-size: 13px; line-height: 1.55; }
+.ln { display: grid; grid-template-columns: 3.4em minmax(0, 1fr); gap: 10px; padding: 1px 16px 1px 0; border-left: 3px solid transparent; }
+.ln .no { font: 400 11.5px/1.9 var(--font-mono); color: var(--faint); text-align: right; user-select: none; font-variant-numeric: tabular-nums; }
+.ln .tx { color: var(--ink-2); overflow-wrap: anywhere; min-height: 1.2em; }
+.ln.hdr .tx { color: var(--faint); font-size: 12px; }
+.ln.h .tx { font: 600 14px/1.5 var(--font-head); color: var(--ink); }
+.ln.on { background: var(--hl); border-left-color: var(--hl-edge); }
+.ln.on .no { color: var(--gold-text); font-weight: 500; }
+
+.tree-panel .controls { padding: 14px 18px; border-bottom: 1px solid var(--line-hair); display: grid; gap: 10px; }
+.students { display: flex; flex-wrap: wrap; gap: 6px; }
+.stu { border: 1px solid var(--line-strong); background: var(--surface); border-radius: var(--r-md); padding: 6px 12px; cursor: pointer; font: 500 13px/1.3 var(--font-head); color: var(--ink); display: inline-flex; align-items: center; gap: 7px; }
+.stu:hover { border-color: var(--cardinal); }
+.stu[aria-pressed="true"] { border-color: var(--cardinal); background: var(--cardinal-06); color: var(--cardinal); }
+.stu .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line-strong); }
+.stu .dot.met { background: var(--ok-fill); }
+.stu .dot.needed { background: var(--bad-fill); }
+.stu .dot.adviser, .stu .dot.unknown { background: var(--gold); }
+.verdict { border-radius: var(--r-lg); padding: 12px 14px; display: grid; gap: 4px; border: 1px solid; }
+.verdict .v { font: 600 15px/1.35 var(--font-head); }
+.verdict p { font-size: 13px; }
+.verdict.met { background: var(--ok-bg); border-color: var(--ok-border); }
+.verdict.met .v { color: var(--ok); }
+.verdict.needed { background: var(--bad-bg); border-color: var(--bad-border); }
+.verdict.needed .v { color: var(--bad); }
+.verdict.adviser, .verdict.unknown { background: var(--gold-bg); border-color: var(--gold-line); }
+.verdict.adviser .v, .verdict.unknown .v { color: var(--gold-text); }
+.verdict .courses { font: 12px/1.6 var(--font-mono); color: var(--muted); overflow-wrap: anywhere; }
+.note { font-size: 13px; color: var(--muted); }
+
+.tree { padding: 10px 12px 16px; display: grid; gap: 6px; }
+.node { border-radius: var(--r-md); }
+.node > .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: start; padding: 8px 10px; border-radius: var(--r-md); border: 1px solid transparent; cursor: default; }
+.node.anchored > .row { cursor: pointer; }
+.node > .row:hover, .node.focus > .row { background: var(--sunk); border-color: var(--line); }
+.node.anchored.focus > .row { border-color: var(--hl-edge); background: #FFFCEB; }
+.node .kids { margin-left: 12px; padding-left: 10px; border-left: 1px solid var(--line); display: grid; gap: 2px; }
+.node.top { border: 1px solid var(--line); background: var(--surface); }
+.node.top > .row { padding: 10px 12px; }
+.node .title { color: var(--ink); font-weight: 500; overflow-wrap: anywhere; }
+.node.top > .row .title { font: 600 14.5px/1.4 var(--font-head); }
+.node .sub { grid-column: 1; font-size: 12.5px; color: var(--muted); overflow-wrap: anywhere; }
+.node .sub code, .node .title code { font: 12px var(--font-mono); }
+.node .used { grid-column: 1; font: 12px/1.5 var(--font-mono); color: var(--ok); overflow-wrap: anywhere; }
+.node .idtag { font: 400 11px var(--font-mono); color: var(--faint); margin-left: 6px; }
+.group-label { font: 600 10.5px/1.2 var(--font-head); letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+.pill { grid-column: 2; grid-row: 1; font: 600 11.5px/1 var(--font-head); padding: 5px 9px; border-radius: 999px; white-space: nowrap; border: 1px solid; display: inline-flex; align-items: center; gap: 5px; }
+.pill::before { font-size: 11px; }
+.pill.met { color: var(--ok); background: var(--ok-bg); border-color: var(--ok-border); }
+.pill.met::before { content: "✓"; }
+.pill.needed { color: var(--bad); background: var(--bad-bg); border-color: var(--bad-border); }
+.pill.needed::before { content: "✕"; }
+.pill.adviser, .pill.unknown { color: var(--gold-text); background: var(--gold-bg); border-color: var(--gold-line); }
+.pill.adviser::before, .pill.unknown::before { content: "?"; }
+.pill.skip { color: var(--faint); background: transparent; border-color: var(--line); }
+.pill.skip::before { content: "–"; }
+.checks { grid-column: 1 / -1; display: grid; gap: 2px; font-size: 12.5px; color: var(--muted); }
+.checks .bad { color: var(--bad); }
+details.more { margin-top: 2px; }
+details.more summary { cursor: pointer; color: var(--cardinal); font-size: 12.5px; }
+details.more .list { font: 12px/1.6 var(--font-mono); color: var(--muted); overflow-wrap: anywhere; }
+
+.unc { padding: 4px 18px 18px; display: grid; gap: 8px; }
+.unc-list { display: grid; gap: 4px; }
+.unc-item { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px; align-items: baseline; padding: 6px 8px; border-radius: var(--r-sm); border: 1px solid transparent; cursor: pointer; font-size: 13px; }
+.unc-item:hover, .unc-item.focus { background: #FFFCEB; border-color: var(--hl-edge); }
+.reason { font: 600 10.5px/1.4 var(--font-head); letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; background: var(--sunk); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.reason.no_fit { color: var(--bad); border-color: var(--bad-border); background: var(--bad-bg); }
+
+footer { font-size: 12.5px; color: var(--faint); display: grid; gap: 6px; max-width: 90ch; }
+.err { padding: 16px; color: var(--bad); }
+
+@media (max-width: 860px) {
+  .work { grid-template-columns: minmax(0, 1fr); }
+  .text { position: static; }
+  .lines { max-height: 42vh; }
+}
+@media (max-width: 480px) {
+  .bar .seg { padding: 0 6px; font-size: 11.5px; }
+  .node .kids { margin-left: 4px; padding-left: 8px; }
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">USC BBH · Catalogue pipeline · <span>Proof of concept</span></div>
+    <h1>USC Requirement Trees</h1>
+    <p class="lead">Every USC undergraduate programme page, turned into a requirement tree that code can check. Pick a programme to see the catalogue text next to its tree. Hover a requirement to see the lines it came from. For five programmes you can try a sample student.</p>
+  </header>
+
+  <section class="card coverage" aria-labelledby="cov-h">
+    <div class="coverage-head">
+      <h2 id="cov-h">How much of the 2026-27 catalogue code can check</h2>
+      <span class="src" id="cov-src"></span>
+    </div>
+    <div class="bar" id="cov-bar" role="img"></div>
+    <div class="legend" id="cov-legend"></div>
+    <div class="facts" id="cov-facts"></div>
+  </section>
+
+  <section class="picker" aria-label="Choose a programme">
+    <div class="eyebrow">Programmes with sample students</div>
+    <div class="chips" id="chips"></div>
+    <div class="search">
+      <label class="eyebrow" for="q" style="display:block;margin:6px 0 6px">Or search all programmes in the file</label>
+      <input id="q" type="search" autocomplete="off" placeholder="e.g. Neuroscience, Jazz, Data Science minor" aria-controls="results">
+      <div class="results" id="results" hidden role="listbox"></div>
+    </div>
+  </section>
+
+  <section id="workspace" aria-live="polite">
+    <div class="card err" id="loading">Loading the catalogue…</div>
+  </section>
+
+  <footer>
+    <p>The students are made up. None of them is a real person and no course list comes from a real STARS report. Their verdicts were worked out ahead of time by the project's Python solver (<code>bip.py</code>), the same one the golden-case checks use. This page only displays them.</p>
+    <p>Not an official USC source. The trees were written by an LLM from the catalogue text and checked for shape and citations, not reviewed line by line. See <code>deg_requirement_parser/README.md</code>, “Where it might be wrong”.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var SHOWCASE = ["086_computer_science_bs", "183_public_policy_bs", "102_economics_ba", "042_business_administration_bs", "188_religion_ba"];
+  var STATUS_TEXT = { met: "Met", needed: "Still needed", adviser: "Ask your adviser", unknown: "Ask your adviser", skip: "Not used" };
+  var state = { index: null, students: null, chunks: {}, stem: null, student: 0 };
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function getJSON(url) {
+    return fetch(url).then(function (r) {
+      if (!r.ok) throw new Error(url + " returned " + r.status);
+      return r.json();
+    });
+  }
+  function fmtNum(n) { return Number(n).toLocaleString("en-US"); }
+  function stemNo(stem) { return stem.split("_")[0]; }
+
+  // ---------- Coverage ----------
+  function renderCoverage(c) {
+    var needsPerson = c.included - c.fully_checkable;
+    var segs = [
+      { cls: "ok", n: c.fully_checkable, label: "Fully checkable by code", d: "Every requirement can come out met or still needed. No adviser-only items, no adviser-approved pools, nothing the model couldn't encode." },
+      { cls: "warn", n: needsPerson, label: "Checkable, with some items for an adviser", d: "In the file, but at least one requirement needs a person: an adviser-approved pool, a gate or portfolio review, or a sentence the model couldn't encode." },
+      { cls: "bad", n: c.not_included, label: "Failed a check, not in the file yet", d: "The tree broke the schema or cited the wrong lines. Each needs a re-run." }
+    ];
+    var bar = document.getElementById("cov-bar");
+    bar.setAttribute("aria-label", segs.map(function (s) { return s.n + " " + s.label; }).join(", ") + ", of " + c.scraped + " programmes");
+    segs.forEach(function (s) {
+      var seg = el("div", "seg " + s.cls);
+      seg.style.flex = s.n + " 1 0";
+      var pct = Math.round(100 * s.n / c.scraped);
+      if (pct >= 8) seg.textContent = fmtNum(s.n) + " · " + pct + "%";
+      seg.title = s.label + ": " + s.n + " of " + c.scraped + " (" + pct + "%)";
+      seg.tabIndex = 0;
+      bar.appendChild(seg);
+    });
+    var legend = document.getElementById("cov-legend");
+    var colors = { ok: "var(--ok-fill)", warn: "var(--gold)", bad: "var(--bad-fill)" };
+    segs.forEach(function (s) {
+      var it = el("div", "item");
+      var sw = el("span", "sw"); sw.style.background = colors[s.cls];
+      it.appendChild(sw);
+      it.appendChild(el("span", "n", fmtNum(s.n) + " " + s.label.toLowerCase()));
+      it.appendChild(el("span", "d", s.d));
+      legend.appendChild(it);
+    });
+    var facts = document.getElementById("cov-facts");
+    [[c.scraped, "programme pages scraped"], [c.no_fit_sentences, "sentences the model couldn't encode, in " + c.partial + " programmes"],
+     [c.unresolved_terms, "adviser-approved pools, in " + c.with_unresolved + " programmes"],
+     [c.with_placeholders, "programmes with a gate, order rule or other adviser-only item"]].forEach(function (f) {
+      var s = el("span"); var b = el("b", null, fmtNum(f[0])); s.appendChild(b); s.appendChild(document.createTextNode(" " + f[1])); facts.appendChild(s);
+    });
+    var d = new Date(c.run_started_at);
+    document.getElementById("cov-src").textContent = "Model run of " + d.toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "America/Los_Angeles" }) + " · " + c.model;
+  }
+
+  // ---------- Picker ----------
+  function renderChips() {
+    var box = document.getElementById("chips");
+    SHOWCASE.forEach(function (stem) {
+      var p = state.byStem[stem]; if (!p) return;
+      var b = el("button", "chip", p.name);
+      b.type = "button"; b.dataset.stem = stem;
+      b.addEventListener("click", function () { go(stem); });
+      box.appendChild(b);
+    });
+  }
+  function updateChips() {
+    document.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.stem === state.stem)); });
+  }
+  function setupSearch() {
+    var q = document.getElementById("q"), res = document.getElementById("results"), active = -1, items = [];
+    function close() { res.hidden = true; active = -1; }
+    function draw() {
+      var term = q.value.trim().toLowerCase();
+      res.innerHTML = ""; active = -1;
+      if (!term) { close(); return; }
+      items = state.index.programmes.filter(function (p) { return p.name.toLowerCase().indexOf(term) !== -1; }).slice(0, 40);
+      if (!items.length) {
+        var none = el("div", "empty", "No programme in the file matches “" + q.value.trim() + "”. 27 programmes failed a check and aren't in the file yet.");
+        res.appendChild(none);
+      }
+      items.forEach(function (p, i) {
+        var b = el("button"); b.type = "button"; b.setAttribute("role", "option");
+        b.appendChild(el("span", null, p.name));
+        b.appendChild(el("span", "st", p.status === "ok" ? "" : p.status));
+        b.addEventListener("mousedown", function (e) { e.preventDefault(); });
+        b.addEventListener("click", function () { q.value = ""; close(); go(p.stem); });
+        res.appendChild(b);
+      });
+      res.hidden = false;
+    }
+    q.addEventListener("input", draw);
+    q.addEventListener("blur", function () { setTimeout(close, 120); });
+    q.addEventListener("keydown", function (e) {
+      var bs = res.querySelectorAll("button");
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        if (!bs.length) return;
+        e.preventDefault();
+        active = (active + (e.key === "ArrowDown" ? 1 : -1) + bs.length) % bs.length;
+        bs.forEach(function (b, i) { b.classList.toggle("active", i === active); });
+        bs[active].scrollIntoView({ block: "nearest" });
+      } else if (e.key === "Enter") {
+        if (bs.length) { e.preventDefault(); (bs[active >= 0 ? active : 0]).click(); }
+      } else if (e.key === "Escape") { close(); }
+    });
+  }
+
+  // ---------- Describing nodes (display only; no checking happens here) ----------
+  function kind(n) {
+    if (n.all_of) return "all_of";
+    if (n.from) return "choose";
+    return n.family || "unknown";
+  }
+  function plural(v, word) { return v + " " + word + (v === 1 ? "" : "s"); }
+  function describeCond(c) {
+    if (!c) return "any course";
+    if (c.any) return c.any.map(describeCond).join(", or ");
+    if (c.all) return c.all.map(describeCond).join(", ");
+    var parts = [];
+    if (c.courses) parts.push(c.courses.length === 1 ? c.courses[0] : "one of " + c.courses.length + " listed courses");
+    if (c.prefix) parts.push(c.prefix.join("/") + " courses");
+    if (c.level_min != null || c.level_max != null) {
+      if (c.level_min === 0 && c.level_max == null && parts.length === 0) return "any course";
+      if (c.level_min != null && c.level_max != null) parts.push("numbered " + c.level_min + "–" + c.level_max);
+      else if (c.level_min != null) parts.push("at " + c.level_min + " level or above");
+      else parts.push("at " + c.level_max + " level or below");
+    }
+    if (c.school) parts.push("in " + [].concat(c.school).join(" or "));
+    if (c.ge_category) parts.push("GE " + [].concat(c.ge_category).join("/"));
+    if (c.unresolved) parts.push("“" + c.unresolved + "” (an adviser decides)");
+    return parts.length ? parts.join(", ") : "courses matching a rule";
+  }
+  function describeThresholds(ts) {
+    return (ts || []).map(function (t) {
+      var w = t.count_by === "units" ? "unit" : t.count_by === "courses" ? "course" : t.count_by.replace(/s$/, "");
+      var op = t.op === "min" ? "at least " : t.op === "max" ? "at most " : "exactly ";
+      return op + plural(t.value, w);
+    }).join(" and ");
+  }
+  function listedCourses(c, out) {
+    out = out || [];
+    if (!c) return out;
+    if (c.courses) out.push.apply(out, c.courses);
+    (c.any || []).concat(c.all || []).forEach(function (x) { listedCourses(x, out); });
+    return out;
+  }
+  var PLACEHOLDER = { manual_review: "Checked by a person", sequencing: "Order rule", course_reuse: "Course reuse rule" };
+  function placeholderText(n) {
+    var d = n.details || {};
+    var bits = [];
+    ["procedure", "process", "effect", "setting", "note", "stage"].forEach(function (k) { if (typeof d[k] === "string") bits.push(d[k]); });
+    if (d.requires) bits.push([].concat(d.requires).join("; "));
+    if (d.min_hours) bits.push(d.min_hours + " hours");
+    if (typeof d.courses === "string") bits.push(d.courses);
+    return bits.slice(0, 2).join(" · ").replace(/_/g, " ").toLowerCase().replace(/^./, function (m) { return m.toUpperCase(); });
+  }
+
+  // ---------- Catalogue text ----------
+  var lineEls = [];
+  function renderText(prog, host) {
+    var box = el("div", "lines"); box.id = "lines"; box.tabIndex = 0;
+    box.setAttribute("aria-label", "Catalogue text with line numbers");
+    var start = prog.lines.indexOf("OFFICIAL CATALOGUE CONTENT");
+    lineEls = [null];
+    prog.lines.forEach(function (t, i) {
+      var row = el("div", "ln");
+      if (i <= start) row.classList.add("hdr");
+      if (/^#{1,6} /.test(t)) { row.classList.add("h"); t = t.replace(/^#+ /, ""); }
+      if (t === "---") t = "";
+      row.appendChild(el("span", "no", String(i + 1)));
+      row.appendChild(el("span", "tx", t));
+      box.appendChild(row); lineEls.push(row);
+    });
+    host.appendChild(box);
+  }
+  var lit = [];
+  function highlight(ranges) {
+    lit.forEach(function (r) { r.classList.remove("on"); }); lit = [];
+    if (!ranges || !ranges.length) return;
+    ranges.forEach(function (r) {
+      for (var i = r[0]; i <= r[1]; i++) if (lineEls[i]) { lineEls[i].classList.add("on"); lit.push(lineEls[i]); }
+    });
+    var box = document.getElementById("lines"), first = lineEls[ranges[0][0]];
+    if (box && first) {
+      var b = box.getBoundingClientRect(), f = first.getBoundingClientRect();
+      if (f.top < b.top || f.bottom > b.bottom) box.scrollTop += f.top - b.top - 24;
+    }
+  }
+
+  // ---------- Tree ----------
+  function statusFor(path, parentChoose, parentStatus) {
+    var s = state.current && state.current.nodes[path];
+    if (!s) return null;
+    if (s !== "met" && (parentStatus === "skip" || (parentChoose && parentStatus === "met"))) return "skip";
+    return s;
+  }
+  function attachFocus(node, row, ranges) {
+    if (!ranges) return;
+    node.classList.add("anchored");
+    row.tabIndex = 0;
+    function on() { document.querySelectorAll(".node.focus, .unc-item.focus").forEach(function (x) { x.classList.remove("focus"); }); node.classList.add("focus"); highlight(ranges); }
+    row.addEventListener("mouseenter", on);
+    row.addEventListener("focus", on);
+    row.addEventListener("click", on);
+  }
+  function renderNode(n, path, depth, parentChoose, parentStatus) {
+    var k = kind(n);
+    var wrap = el("div", "node" + (depth === 0 ? " top" : ""));
+    var row = el("div", "row");
+    var status = statusFor(path, parentChoose, parentStatus);
+    var main = el("div");
+    var title = el("div", "title");
+    var sub = null;
+
+    if (k === "all_of" || k === "choose") {
+      var gl = el("div", "group-label", k === "all_of" ? "All of these" : "Choose " + n.choose + " of these");
+      if (n.description) { title.textContent = n.description; main.appendChild(gl); }
+      else { title.appendChild(gl); }
+    } else if (k === "specific_course") {
+      title.textContent = n.description && depth === 0 ? n.description : n.course;
+      if (n.description && depth === 0) sub = n.course;
+    } else if (k === "count") {
+      var rule = describeThresholds(n.thresholds) + " from " + describeCond(n.eligible_if);
+      title.textContent = n.description || rule.replace(/^./, function (m) { return m.toUpperCase(); });
+      if (n.description) sub = rule.replace(/^./, function (m) { return m.toUpperCase(); });
+    } else if (PLACEHOLDER[k]) {
+      title.textContent = n.description || PLACEHOLDER[k];
+      sub = PLACEHOLDER[k] + (placeholderText(n) ? ": " + placeholderText(n) : "") + ". Code treats this as met; a person has to confirm it.";
+    } else {
+      title.textContent = n.description || k;
+    }
+    if (n.id && depth === 0) title.appendChild(el("span", "idtag", n.id));
+    main.appendChild(title);
+    if (sub) main.appendChild(el("div", "sub", sub));
+    if (k === "count") {
+      var listed = listedCourses(n.eligible_if);
+      if (listed.length > 1) {
+        var det = el("details", "more"); det.appendChild(el("summary", null, "Show the " + listed.length + " listed courses"));
+        det.appendChild(el("div", "list", listed.join(", "))); main.appendChild(det);
+      }
+    }
+    var used = state.current && state.current.assignment[path];
+    if (used && (k === "count" || (depth === 0 && k === "specific_course"))) main.appendChild(el("div", "used", "Counted: " + used.join(", ")));
+    row.appendChild(main);
+    if (status) row.appendChild(el("span", "pill " + status, STATUS_TEXT[status]));
+
+    if (n.of_which && n.of_which.length) {
+      var checks = el("div", "checks");
+      var failed = state.current && state.current.checks_failed.indexOf(path) !== -1;
+      n.of_which.forEach(function (c) {
+        var t = "Of the courses counted here: " + describeThresholds(c.thresholds) + (c.eligible_if ? " " + describeCond(c.eligible_if) : "");
+        checks.appendChild(el("div", failed ? "bad" : null, (failed ? "✕ " : "") + t));
+      });
+      if (failed) checks.appendChild(el("div", "bad", "One of these checks is not met."));
+      row.appendChild(checks);
+    }
+    wrap.appendChild(row);
+    attachFocus(wrap, row, n.source_lines);
+
+    var kids = n.all_of || n.from;
+    if (kids) {
+      var box = el("div", "kids");
+      kids.forEach(function (c, i) { box.appendChild(renderNode(c, path + (n.all_of ? "/all_of/" : "/from/") + i, depth + 1, k === "choose", status)); });
+      wrap.appendChild(box);
+    }
+    return wrap;
+  }
+  function renderTreeBody(prog, host) {
+    host.innerHTML = "";
+    var root = prog.root;
+    if (root.of_which && root.of_which.length) {
+      var rc = el("div", "node top whole"); var row = el("div", "row"); var m = el("div");
+      m.appendChild(el("div", "group-label", "Whole programme"));
+      var failed = state.current && state.current.checks_failed.indexOf("root") !== -1;
+      root.of_which.forEach(function (c) {
+        m.appendChild(el("div", "title" + (failed ? "" : ""), (c.eligible_if ? describeThresholds(c.thresholds) + " " + describeCond(c.eligible_if) : describeThresholds(c.thresholds) + " in total").replace(/^./, function (x) { return x.toUpperCase(); })));
+      });
+      row.appendChild(m);
+      if (state.current) row.appendChild(el("span", "pill " + (failed ? "needed" : "met"), failed ? "Still needed" : "Met"));
+      rc.appendChild(row); attachFocus(rc, row, root.of_which[0].source_lines); host.appendChild(rc);
+    }
+    (root.all_of || [root]).forEach(function (c, i) { host.appendChild(renderNode(c, root.all_of ? "root/all_of/" + i : "root", 0, false, null)); });
+  }
+
+  function verdictBox(stu, prog) {
+    var s = stu.nodes.root;
+    var box = el("div", "verdict " + s);
+    var tops = (prog.root.all_of || []).map(function (_, i) { return stu.nodes["root/all_of/" + i]; });
+    var nNeeded = tops.filter(function (x) { return x === "needed"; }).length;
+    var nAsk = tops.filter(function (x) { return x === "adviser" || x === "unknown"; }).length;
+    var head, text;
+    if (s === "met") { head = "All requirements met"; text = "Every requirement in the tree is met by these courses, with each course counted once."; }
+    else if (s === "adviser" || s === "unknown") {
+      head = "Course requirements met, " + plural(nAsk, "item") + " to confirm with an adviser";
+      text = s === "unknown" ? "Part of this depends on courses an adviser approves, which code can't check." : "The courses fit. Some requirements are checked by a person, not by code.";
+    } else {
+      head = nNeeded ? plural(nNeeded, "requirement") + " still needed" : "Not complete yet";
+      text = nNeeded ? "Marked below." : (stu.checks_failed.length ? "Each requirement looks met on its own, but a check on the whole programme fails. It is marked below." : "Each requirement looks met on its own, but there aren't enough courses to fill all of them at once: each course counts toward one requirement.");
+    }
+    box.appendChild(el("div", "v", head));
+    box.appendChild(el("p", null, stu.summary + " " + text));
+    box.appendChild(el("div", "courses", stu.courses.map(function (c) { return c[1] === 4 ? c[0] : c[0] + " (" + c[1] + "u)"; }).join(" · ")));
+    return box;
+  }
+
+  function renderUnclassified(prog, host) {
+    var u = prog.unclassified || [];
+    if (!u.length) return;
+    var sec = el("div", "unc");
+    sec.appendChild(el("h3", null, "Not in the tree (" + u.length + ")"));
+    sec.appendChild(el("p", "note", "Sentences the model read and left out, with its reason. Grades, GPA, admission and university-wide rules are out of scope for now. “Couldn't encode” means a real requirement the format can't express yet."));
+    var list = el("div", "unc-list");
+    var LABEL = { out_of_scope: "Out of scope", university_level: "University-wide", advisory: "Advice only", no_fit: "Couldn't encode" };
+    u.forEach(function (x) {
+      var it = el("div", "unc-item"); it.tabIndex = 0;
+      it.appendChild(el("span", "reason " + x.reason, LABEL[x.reason] || x.reason));
+      it.appendChild(el("span", null, x.why || x.source_quote));
+      function on() { document.querySelectorAll(".node.focus, .unc-item.focus").forEach(function (y) { y.classList.remove("focus"); }); it.classList.add("focus"); highlight(x.source_lines); }
+      it.addEventListener("mouseenter", on); it.addEventListener("focus", on); it.addEventListener("click", on);
+      list.appendChild(it);
+    });
+    sec.appendChild(list);
+    host.appendChild(sec);
+  }
+
+  function renderProgramme(stem, prog) {
+    var ws = document.getElementById("workspace");
+    ws.innerHTML = "";
+    var entry = state.byStem[stem];
+    var head = el("div", "prog-head");
+    head.appendChild(el("h2", null, prog.name));
+    var meta = el("span", "meta");
+    var rv = prog.review;
+    var bits = [];
+    if (rv.unresolved_terms) bits.push(plural(rv.unresolved_terms, "adviser-approved pool"));
+    if (rv.not_checked_by_code.length) bits.push(rv.not_checked_by_code.length + " adviser-only item" + (rv.not_checked_by_code.length === 1 ? "" : "s"));
+    if (rv.unclassified_by_reason.no_fit) bits.push(rv.unclassified_by_reason.no_fit + " sentence" + (rv.unclassified_by_reason.no_fit === 1 ? "" : "s") + " the model couldn't encode");
+    meta.textContent = (bits.length ? bits.join(" · ") : "Fully checkable by code") + " · ";
+    if (prog.url) { var a = el("a", null, "Catalogue page"); a.href = prog.url; a.target = "_blank"; a.rel = "noopener"; meta.appendChild(a); }
+    head.appendChild(meta);
+    ws.appendChild(head);
+
+    var work = el("div", "work"); work.style.marginTop = "14px";
+    var text = el("div", "card panel text");
+    var th = el("div", "panel-head"); th.appendChild(el("div", "eyebrow", "Catalogue text")); th.appendChild(el("p", null, "As scraped, " + prog.lines.length + " lines. Highlighted lines are the ones the selected requirement cites."));
+    text.appendChild(th); renderText(prog, text);
+
+    var tree = el("div", "card panel tree-panel");
+    var controls = el("div", "controls");
+    var people = (state.students.programmes[stem] || []);
+    controls.appendChild(el("div", "eyebrow", people.length ? "Try a sample student" : "Requirement tree"));
+    var treeBody = el("div", "tree");
+    var vslot = el("div");
+    if (people.length) {
+      var row = el("div", "students");
+      var none = el("button", "stu", "Just the tree"); none.type = "button";
+      none.addEventListener("click", function () { pick(-1); });
+      row.appendChild(none);
+      people.forEach(function (s, i) {
+        var b = el("button", "stu"); b.type = "button";
+        b.appendChild(el("span", "dot " + s.nodes.root)); b.appendChild(document.createTextNode(s.name));
+        b.title = STATUS_TEXT[s.nodes.root];
+        b.addEventListener("click", function () { pick(i); });
+        row.appendChild(b);
+      });
+      controls.appendChild(row);
+      controls.appendChild(vslot);
+    } else {
+      controls.appendChild(el("p", "note", "Sample students are set up for " + SHOWCASE.length + " programmes (the buttons above). Here you can read the tree against the catalogue text."));
+    }
+    function pick(i) {
+      state.student = i;
+      state.current = i >= 0 ? people[i] : null;
+      controls.querySelectorAll(".stu").forEach(function (b, j) { b.setAttribute("aria-pressed", String(j === i + 1)); });
+      vslot.innerHTML = "";
+      if (state.current) vslot.appendChild(verdictBox(state.current, prog));
+      renderTreeBody(prog, treeBody);
+    }
+    tree.appendChild(controls);
+    tree.appendChild(treeBody);
+    renderUnclassified(prog, tree);
+    work.appendChild(text); work.appendChild(tree);
+    ws.appendChild(work);
+    pick(people.length ? 0 : -1);
+  }
+
+  function go(stem, fromHash) {
+    var entry = state.byStem[stem];
+    if (!entry) return;
+    state.stem = stem; updateChips();
+    var h = "p" + stemNo(stem);
+    if (!fromHash && location.hash !== "#" + h) { try { history.replaceState(null, "", "#" + h); } catch (e) { location.hash = h; } }
+    var load = state.chunks[entry.chunk];
+    if (!load) {
+      load = state.chunks[entry.chunk] = getJSON("data/p-" + String(entry.chunk).padStart(2, "0") + ".json");
+      load.catch(function () { delete state.chunks[entry.chunk]; });
+    }
+    load.then(function (d) { if (state.stem === stem) renderProgramme(stem, d[stem]); }).catch(showError);
+  }
+  function fromHash() {
+    var m = /^#p(\d{3})$/.exec(location.hash);
+    if (!m) return null;
+    var hit = state.index.programmes.filter(function (p) { return stemNo(p.stem) === m[1]; })[0];
+    return hit ? hit.stem : null;
+  }
+  function showError(e) {
+    var ws = document.getElementById("workspace");
+    ws.innerHTML = "";
+    ws.appendChild(el("div", "card err", "Couldn't load the catalogue data (" + e.message + "). The page needs its data/ files next to it; reload to try again."));
+  }
+
+  Promise.all([getJSON("data/index.json"), getJSON("data/students.json")]).then(function (r) {
+    state.index = r[0]; state.students = r[1];
+    state.byStem = {};
+    state.index.programmes.forEach(function (p) { state.byStem[p.stem] = p; });
+    renderCoverage(state.index.coverage);
+    renderChips(); setupSearch();
+    go(fromHash() || SHOWCASE[0], true);
+    window.addEventListener("hashchange", function () { var s = fromHash(); if (s && s !== state.stem) go(s, true); });
+  }).catch(showError);
+})();
+</script>
