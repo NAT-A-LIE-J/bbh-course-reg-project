@@ -44,7 +44,7 @@ listed in `unclassified` with a reason, so nothing is dropped silently.
 ```json
 {
   "catalogue_year": "2026-2027", "model": "claude-sonnet-5", "taxonomy_version": "2026-11-03",
-  "counts": {"programmes_in_catalogue": 470, "classified": 470, "included": 0, "not_included": 0},
+  "counts": {"programmes_in_catalogue": 470, "classified": 470, "included": 443, "not_included": 27},
   "programmes": [
     {"stem": "102_economics_ba", "name": "Economics (BA)", "credential": "BA",
      "catalogue_url": "https://catalogue.usc.edu/preview_program.php?catoid=22&poid=31776",
@@ -54,7 +54,7 @@ listed in `unclassified` with a reason, so nothing is dropped silently.
                 "unclassified_by_reason": {"no_fit": 0, "out_of_scope": 1, "university_level": 0, "advisory": 1},
                 "low_confidence_nodes": 0, "warnings": []}}
   ],
-  "not_included": [{"stem": "…", "errors": ["…"]}]
+  "not_included": [{"stem": "153_music_ba", "errors": ["…"], "error_count": 6}]
 }
 ```
 
@@ -69,8 +69,8 @@ that exact version.
 
 ## Regenerating it
 
-Everything runs from this folder. One full run costs about $30 on Sonnet 5 and takes about an
-hour.
+Everything runs from this folder. The full run behind the current file cost $13.98 on Sonnet 5
+(effort `low`, 6 calls at a time) and took 23 minutes for all 470 programmes.
 
 ```bash
 cd deg_requirement_parser
@@ -85,7 +85,7 @@ python check_results.py --out-dir out_v2         # every file must pass
 python check_bip.py --program-dir out_v2         # test students get the right answers
 python spot_check.py --out-dir out_v2            # out_v2/review_sheet.md, to read by hand
 
-python run_classifier.py --all --force --out-dir out_v2 --budget 45 --concurrency 6   # all 470
+python run_classifier.py --all --force --out-dir out_v2 --budget 25 --concurrency 6   # all 470
 python check_results.py --out-dir out_v2
 python build_catalogue.py --out-dir out_v2       # writes catalogue/usc_degree_requirements_2026_2027.json
 ```
@@ -103,9 +103,78 @@ new scrape: the content hash will have changed.
 ## Where it might be wrong
 
 The checks catch wrong *shapes* and wrong *citations* automatically. They can't catch a wrong
-*reading* of a sentence. These are the known limits, roughly most to least important:
+*reading* of a sentence.
 
-RESULTS_PLACEHOLDER
+**The run, in numbers** (`out_v2/summary.csv`, 3 November 2026):
+
+| | Programmes | Share |
+|---|---|---|
+| In the catalogue scrape | 470 | |
+| Pass every check, so in the combined file | 443 | 94% |
+| Fail a check, so listed under `not_included` | 27 | 6% |
+| Fully checkable by code: status `ok`, nothing `unresolved`, no `school`/`ge_category` lookups, no placeholder leaves | 220 | 47% |
+
+So for about half the catalogue a planner can say "done" or "still needed" for every
+requirement. For the rest, some part needs a person. In order of how much that matters:
+
+1. **27 programmes failed a check and aren't in the file.** Nine have a `source_quote` that
+   isn't on the cited lines. Most of the rest break the schema: `all_of` and `choose` on the
+   same node, `not` inside `eligible_if`, a nested node with `source_lines` but no `id`, or a
+   placeholder course code like `MPxx 153`. Occupational Therapy (162) and Music (153) are
+   among them. A re-run usually gives a different answer, so try
+   `python run_classifier.py --out-dir out_v2 --only <stem> --force`, then
+   `check_results.py` and `build_catalogue.py` again. The current list is under
+   `not_included` in the combined file, and `check_results.py --out-dir out_v2 --verbose`
+   prints every error.
+2. **The checks test shape and citations, not meaning.** A tree can pass every check and still
+   misread a sentence (a wrong count, a missing course, `all_of` where the text says "or").
+   Hand review so far: the 15-programme test set, History, Interdisciplinary, Occupational
+   Therapy, Computer Science, Business Administration (042), Animation and Digital Arts (BFA)
+   and the 3-D Animation minor. The golden students (`golden/`, 15 cases on 3 programmes) all
+   get the right answer from the model's trees. That is a small sample of 470.
+   `spot_check.py --out-dir out_v2` writes `out_v2/review_sheet.md`, every node next to the
+   text it cites, for more reading.
+3. **Requirements the model couldn't encode (`no_fit`).** 56 programmes (12%) have at least one
+   sentence in `unclassified` with reason `no_fit`, 68 sentences in all, and so have status
+   `partial`. Some are real gaps: per-category caps inside a pool ("at most 4 units of 490x"),
+   fractions ("no more than half from one department", Q3), mutual exclusions between two
+   courses, hours of fieldwork, location rules. Others only restate requirements encoded
+   elsewhere, so `partial` overstates a few. Read each programme's `no_fit` entries before
+   trusting it.
+4. **Placeholder leaves the solver treats as met.** 146 programmes have at least one
+   `manual_review` (183 leaves: gates, portfolio reviews, internships), `sequencing` (33) or
+   `course_reuse` (13) leaf. The solver adds no constraint for these, so they always come out
+   met. They are listed per programme in `review.not_checked_by_code`. Show them as "ask your
+   adviser", never "done".
+5. **Pools code can't evaluate yet.** 185 `unresolved` pool terms in 110 programmes ("courses
+   approved by the adviser", "any course from DANC 180-189") can't be checked. A few more need
+   a lookup table that doesn't exist yet: `school` (10 leaves) and `ge_category` (3 leaves),
+   Q5. These are in `review.needs_data`; the solver answers "unknown" for them.
+6. **Course codes are matched exactly.** The catalogue writes GE and other designations as
+   suffixes (`MATH 118gx`, `BUAD 310g`, `AMST 101gmw`); 830 distinct suffixed codes appear in
+   the file. `eligibility.py` compares the whole string, so a course list has to use the same
+   spelling. Check how STARS and any other source write these codes, normalise both sides the
+   same way before matching, and keep `L` (lab) and `a`/`b` (sequence) suffixes, which name
+   different courses.
+7. **Department limits and fractions aren't encoded.** `count_by: "departments"` needs a
+   prefix-to-department table (Q5), and a threshold takes an absolute value, so a share of a
+   total can't be written (Q3). Rules like these are in `unclassified` or in a node's `note`.
+8. **"Any course" is `{"level_min": 0}`.** Free electives ("32 units of free electives") are a
+   count leaf that every course passes (40 leaves). Because each course fills one slot, these
+   leaves take only courses that nothing else uses, which is the intended reading. A dedicated
+   term would read better (Q7).
+9. **Possible double counting (warnings).** 129 warnings in 77 included programmes say two
+   count leaves accept the same course. Each course fills one slot, so if the catalogue meant
+   "these may overlap", the solver will ask for more courses than the student needs. If it
+   meant one requirement is a subset of another, the right encoding is an `of_which` check.
+   Either way the tree needs a human look. 63 more warnings flag nesting deeper than four
+   levels, which is legal but harder to read.
+10. **One programme was empty.** Consumer Behavior (Interdisciplinary) minor (260) came back
+    with no nodes at all, status `failed`.
+11. **What the file leaves out by design.** Grades, GPA, residency, admission, placement and
+    exam waivers are `out_of_scope` (Phase 2). University-wide rules (128 units, GE) are
+    `university_level` and are checked elsewhere. The `school` header field is empty in the
+    scrape, so it is `null` in the file.
 
 ## Changing the taxonomy
 
@@ -137,20 +206,22 @@ Change one thing at a time so you can tell what helped. Questions waiting on Vis
 | `eligibility.py` | `is_eligible(eligible_if, course_code)`: True, False or "unknown". |
 | `spot_check.py` | `review_sheet.md`: each node next to the catalogue text it cites, for reading by hand. |
 | `build_catalogue.py` | Combines a checked run into the single catalogue file. |
-| `out_v2/` | The run behind the combined file: one JSON and raw reply per programme, `summary.csv`, `run_log.csv`. |
+| `out_v2/` | The run behind the combined file: one JSON per programme, `summary.csv` (from `check_results.py`), `run_meta.csv` (model, cost, time) and `run_log.csv` (one row per call; overwritten by each run, so after a re-run it covers only that run). |
 | `catalogue/` | The combined file. |
 | `FEEDBACK_phase1.md`, `taxonomy_rewrite_plan.md`, `taxonomy_open_questions.md` | Vishal's feedback with the task list ticked, the rewrite plan, open questions. |
 | `out_sonnet5_40/` | The earlier 40-programme run in the old list format. Kept for comparison only. |
 
 ## Choosing a model
 
-Prices per million tokens (input / output). The test set and the full run used Sonnet 5.
+Prices per million tokens (input / output). The test set and the full run used Sonnet 5. The
+other estimates scale its actual $13.98 by price and assume the same token counts, which a
+different model won't exactly have.
 
-| Model | Price | Full run (estimate) |
+| Model | Price | Full run |
 |---|---|---|
-| `claude-haiku-4-5` | $1 / $5 | ~$15 |
-| `claude-sonnet-5` (default) | $2 / $10 | ~$30 |
-| `claude-opus-5` | $5 / $25 | ~$75 |
+| `claude-haiku-4-5` | $1 / $5 | ~$7 (estimate) |
+| `claude-sonnet-5` (default) | $2 / $10 | $13.98 (actual, effort `low`) |
+| `claude-opus-5` | $5 / $25 | ~$35 (estimate) |
 
 The prices only drive the local estimate and `--budget`; check the pricing page when they
 change. To compare models, give each run its own `--out-dir`.
